@@ -1,0 +1,13 @@
+[project]
+name = "kurguasistan"
+version = "0.1.0"
+description = "Gençlere yönelik kariyer keşif asistanı: ilgi testi + gerçek iş ilanı verisiyle gelecek skoru"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "gradio>=6.22.0",
+    "openai>=2.52.1",
+    "python-dotenv>=1.2.2",
+    "requests>=2.34.2",
+    "spaces>=0.51.1",
+]

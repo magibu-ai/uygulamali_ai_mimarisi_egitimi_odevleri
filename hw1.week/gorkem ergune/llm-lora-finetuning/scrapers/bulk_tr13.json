@@ -1,0 +1,260 @@
+{
+    "train": [
+        [
+            {
+                "content": "staj nasıl bulunur yazılım alanında?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Staj bulmak için stratejik yaklaşım gerekli. Portfolio hazırla: GitHub'da en az 3-5 kaliteli proje (README'li, çalışan), kişisel website, LinkedIn profili güncel. Başvuru kanalları: şirketlerin kariyer sayfaları, LinkedIn Jobs, Kariyer.net, Indeed, üniversite kariyer merkezi, staj platformları (Intern Turkey, StajYeri). Networking: tech meetup'lara katıl, Twitter/LinkedIn'de aktif ol, tanıdıklar aracılığıyla referans. Cold email/DM: ilgilendiğin şirkete direkt ulaş — küçük şirketler bu yolla stajyer alır. CV: tek sayfa, projelerini ve teknik becerilerini öne çıkar, GPA'yı ancak iyiyse yaz. Mülakat hazırlığı: temel veri yapıları ve algoritma, projelerin hakkında detaylı konuşabilmek, şirketi araştırmak. Zamanlaması: yaz stajları için Şubat-Mart'ta başvur. İlk stajın mükemmel olmak zorunda değil — deneyim kazanmak ve sektörü tanımak önemli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Staj, portfolio, LinkedIn, networking, CV, mülakat, başvuru stratejisi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem'in en sevdiği programlama dili hangisi?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem birden fazla dilde çalışıyor ama Python muhtemelen favorisi — AI/ML projelerinin çoğu Python ile. Python'un avantajları: kolay syntax, devasa ekosistem (NumPy, PyTorch, scikit-learn, FastAPI), hızlı prototipleme, topluluk desteği. Ama dil fanatizmi yok — projeye göre doğru aracı seçer. C ile gorkem-os gibi düşük seviye projeler, JavaScript/TypeScript ile web projeleri, belki Rust ile sistem programlama denemeleri. 'En iyi programlama dili' sorusu anlamsız — en iyi araç probleme göre değişir. Çekiç her zaman en iyi araç değil, bazen tornavida lazım. Polyglot developer olmak (birden fazla dil bilmek) çok değerli — farklı paradigmalar (OOP, fonksiyonel, prosedürel) farklı düşünme biçimleri kazandırır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Görkem, Python, polyglot, dil seçimi, AI/ML, C, JavaScript, paradigma.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "DNS nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "DNS (Domain Name System) domain adını IP adresine çevirir — internetin telefon rehberi. Adımlar: 1) Tarayıcı cache'e bakar (önceden çözüldü mü?). 2) OS cache'e bakar. 3) Router cache. 4) ISP'nin recursive resolver'ına sorar. 5) Root DNS server (.com, .org gibi TLD'yi yönlendirir). 6) TLD server (google.com için yetkili name server'ı söyler). 7) Authoritative name server IP adresini döner. Sonuç cache'lenir (TTL süresince). Record türleri: A (IPv4 adresi), AAAA (IPv6), CNAME (alias), MX (mail server), TXT (doğrulama, SPF, DKIM), NS (name server). DNS propagation: değişiklikler dünya genelinde yayılması zaman alır (TTL'e bağlı). Güvenlik: DNSSEC (DNS yanıt doğrulama), DNS over HTTPS (DoH). Cloudflare DNS (1.1.1.1) ve Google DNS (8.8.8.8) hızlı ve güvenli alternatifler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "DNS, recursive resolver, root server, A record, CNAME, TTL, DNSSEC, DoH.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "TCP ve UDP farkı ne hangisini ne zaman kullanmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TCP (Transmission Control Protocol): güvenilir, sıralı, bağlantı odaklı. 3-way handshake ile bağlantı kurar, her paket onaylanır (ACK), kayıp paket tekrar gönderilir, sıralama garanti. Yavaş ama güvenilir. Kullanım: web (HTTP), email (SMTP), dosya transferi (FTP), veritabanı bağlantıları. UDP (User Datagram Protocol): hızlı, bağlantısız, güvenilir değil. Paket kaybı olabilir, sıralama garanti değil, overhead düşük. Kullanım: video streaming, online oyunlar, VoIP, DNS sorguları. Seçim kriteri: veri kaybı kabul edilemezse TCP (bankacılık), düşük latency öncelikliyse UDP (gerçek zamanlı ses/video). QUIC (HTTP/3): UDP üzerine kurulu ama güvenilirlik eklenmiş — TCP'nin avantajları UDP'nin hızıyla. WebRTC video chat için UDP kullanır çünkü eski kareyi tekrar göndermek anlamsız.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TCP, UDP, 3-way handshake, ACK, güvenilirlik, latency, QUIC, WebRTC.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "virtual memory nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Virtual memory fiziksel RAM'den bağımsız olarak her process'e kendi adres alanını verir. Process fiziksel adresi bilmez — sanal adresler kullanır, OS ve MMU (Memory Management Unit) bu adresleri fiziksel adrese çevirir. Page: bellek sabit boyutlu sayfalara bölünür (genelde 4KB). Page table: sanal-fiziksel adres eşlemesini tutar. Page fault: erişilen sayfa RAM'de yoksa disk'ten yüklenir (swap). TLB (Translation Lookaside Buffer): sık kullanılan çevirileri cache'ler — çok hızlı. Avantajları: her process izole adres alanı (güvenlik), fiziksel RAM'den daha büyük adres alanı, bellek paylaşımı (shared libraries), lazy allocation. Thrashing: sürekli page fault olursa performans çöker — RAM yetersiz demektir. Görkem'in gorkem-os projesinde bu kavramları implemente etmesi harika bir öğrenme deneyimi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Virtual memory, page, page table, page fault, TLB, MMU, swap, thrashing.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "dynamic programming nasıl öğrenilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "DP en zorlandıran algoritmik konu ama sistematik yaklaşımla öğrenilebilir. Temel fikir: büyük problemi alt problemlere böl, alt problemlerin çözümlerini sakla (memoization veya tabulation), tekrar hesaplama yapma. İki yaklaşım: Top-down (memoization — recursive + cache) ve Bottom-up (tabulation — iterative + tablo doldur). Adımlar: 1) Recursive çözümü yaz. 2) Tekrarlayan alt problemleri bul. 3) Memoization ekle. 4) İstersen bottom-up'a çevir. 5) Space optimization (sadece önceki satır gerekiyorsa 2D tablo yerine 1D kullan). Klasik problemler: Fibonacci, Climbing Stairs, Coin Change, Longest Common Subsequence, Knapsack, House Robber, Edit Distance. Her gün 1-2 DP problemi çöz, pattern'leri tanı: 1D DP, 2D DP, interval DP, bitmask DP, tree DP. Sabır gerektirir ama interview'larda çok soruluyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Dynamic Programming, memoization, tabulation, Knapsack, LCS, pattern, interview.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "OCR teknolojisi nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OCR (Optical Character Recognition) görüntüdeki metni dijital metne çevirir. Geleneksel pipeline: preprocessing (gürültü azaltma, binarization, deskew), text detection (metin bölgelerini bul), character segmentation, character recognition, post-processing (spell check). Modern yaklaşım: end-to-end deep learning — CRNN (CNN + RNN), Transformer-based modeller. Araçlar: Tesseract (açık kaynak, Google destekli), PaddleOCR (çok dilli, hızlı), EasyOCR, Google Cloud Vision API, AWS Textract. Zorluklar: el yazısı tanıma (handwriting — çok zor), düşük kalite görüntüler, farklı fontlar, çok dilli metin. Uygulama alanları: belge dijitalleştirme, fatura okuma, plaka tanıma, arşiv tarama. Türkçe OCR için Tesseract'ın Türkçe modeli veya PaddleOCR kullanılabilir. Görkem'in computer vision projeleriyle yakından ilgili bir alan.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OCR, Tesseract, PaddleOCR, CRNN, text detection, character recognition, CV.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem yazılıma nasıl başladı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in yazılım yolculuğu merakla başladı — bilgisayarların nasıl çalıştığını anlamak istedi. İlk programlama deneyimi muhtemelen basit bir 'Hello World' ile oldu ama bu küçük adım büyük bir tutkuya dönüştü. Yeditepe Üniversitesi Bilgisayar Mühendisliği'ni seçti çünkü hem teorik temeli hem pratik uygulamayı bir arada istiyordu. GitHub'daki 30+ projesi bu tutkuyu yansıtıyor — NLP'den computer vision'a, işletim sistemlerinden web uygulamalarına geniş bir yelpaze. Her proje bir öğrenme fırsatıydı: miniature-transformers ile transformer mimarisini derinlemesine anladı, gorkem-os ile düşük seviye programlamayı keşfetti. Hackathon'lara katılarak ekip çalışması ve zaman baskısı altında geliştirme deneyimi kazandı. Yazılıma başlamak için mükemmel zaman diye bir şey yok — en iyi zaman şimdi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Görkem, yazılıma başlangıç, motivasyon, Yeditepe, projeler, hackathon.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "LeetCode'da nasıl ilerlemeli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "LeetCode stratejisi çok önemli — rastgele problem çözmek verimsiz. Önce pattern'leri öğren: Two Pointers, Sliding Window, Binary Search, BFS/DFS, Dynamic Programming, Backtracking. Her pattern için 5-10 problem çöz, çözümü iyice anla. Zorluk sırası: Easy'den başla (temel pattern'ler), Medium'a geç (interview'ların çoğu buradan), Hard sadece hedef şirket soruyorsa. Blind 75 veya NeetCode 150 listesiyle başla — en önemli problemleri kapsar. Problem çözerken: 20 dakika düşün, çözemediysen çözüme bak, anla ve sonra kendim yaz. Spaced repetition: çözdüğün problemi 1 gün, 3 gün, 1 hafta sonra tekrar çöz. Zaman hedefi: Medium'u 20-30 dakikada çözebilmek. Interview'da önemli olan: düşünce sürecini sesli paylaşmak, edge case'leri düşünmek, time/space complexity analizi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LeetCode, pattern, Two Pointers, Sliding Window, DP, Blind 75, NeetCode, interview.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "chatbot mimarisi nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Modern chatbot mimarisi birkaç katmandan oluşur. NLU (Natural Language Understanding): kullanıcının niyetini anla (intent classification) ve önemli bilgileri çıkar (entity extraction). Rasa, Dialogflow, Amazon Lex veya custom BERT/GPT model. Dialog Management: konuşma akışını yönet — state machine veya ML tabanlı. Response Generation: template-based (kurallar), retrieval-based (önceden hazırlanmış cevaplardan seç), generative (LLM ile üret). LLM-based chatbot: RAG (Retrieval Augmented Generation) ile özel veri üzerinde cevap üret — vektör veritabanından ilgili dokümanları çek, context olarak LLM'e ver. Memory: konuşma geçmişini tut, uzun vadeli kullanıcı tercihleri. Guardrails: uygunsuz içerik filtreleme, hallucination kontrolü. ayarlicazhocam tam da bir chatbot — fine-tuning ile Görkem'in bilgi ve stilini yansıtıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Chatbot, NLU, intent, entity, dialog management, RAG, LLM, ayarlicazhocam.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "graph algoritmaları hangileri önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Graph algoritmaları interview ve gerçek uygulamalarda çok kullanılır. Traversal: BFS (level-by-level, shortest path unweighted), DFS (derinlik öncelikli, connected components, cycle detection). Shortest Path: Dijkstra (non-negative weights, O(V+E log V)), Bellman-Ford (negative weights, O(VE)), Floyd-Warshall (tüm çiftler, O(V³)). Minimum Spanning Tree: Prim (dense graph), Kruskal (sparse graph, Union-Find ile). Topological Sort: DAG'da görevlerin sırasını bul (ders önkoşulları, build dependency). Strongly Connected Components: Tarjan veya Kosaraju. Network Flow: Ford-Fulkerson. Pratikte: sosyal ağ analizi, harita navigasyon (Google Maps — Dijkstra variant), dependency resolution, öneri sistemleri, web crawler (BFS). Graph'ları adjacency list veya adjacency matrix ile temsil et — çoğu durumda list daha verimli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Graph, BFS, DFS, Dijkstra, Bellman-Ford, MST, Topological Sort, shortest path.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "load testing nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Load testing uygulamanın yük altında performansını ölçer. Araçlar: k6 (JavaScript ile test yaz, modern ve hızlı), JMeter (Java, GUI var, eski ama güçlü), Locust (Python, kolay), Artillery (Node.js). Test türleri: load test (beklenen yük), stress test (sınırları zorla), spike test (ani yük artışı), soak test (uzun süreli yük — bellek sızıntısı tespiti). Metrikler: response time (p50, p95, p99), throughput (requests/second), error rate, concurrent users. k6 örneği: import http from 'k6/http'; export default function() { http.get('https://api.example.com'); } — k6 run --vus 100 --duration 30s script.js. Sonuçları analiz et: bottleneck nerede? (CPU, RAM, DB, network). CI/CD'ye entegre et — her deploy öncesi performance regression yakala. Production'a yakın ortamda test et — staging.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Load testing, k6, JMeter, Locust, stress test, p95, throughput, bottleneck.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "recommendation system nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Öneri sistemleri Netflix, Spotify, Amazon'un temelinde — kullanıcılara ilgili içerik/ürün önerir. İki ana yaklaşım: Collaborative Filtering (benzer kullanıcılar benzer şeyleri beğenir — user-based veya item-based), Content-Based Filtering (ürün özelliklerine göre öner — aksiyon filmi seviyorsan başka aksiyon filmleri). Hibrit: ikisini birleştir (Netflix bunu yapıyor). Matrix Factorization: kullanıcı-ürün matrisini düşük boyutlu temsillere ayır (SVD). Deep Learning: embedding'ler ile kullanıcı ve ürün temsilleri, neural collaborative filtering. Cold start problemi: yeni kullanıcı/ürün hakkında veri yok — content-based veya demografik bilgi ile başla. Evaluation: precision, recall, NDCG, offline A/B testing. Implicit feedback (tıklama, izleme süresi) vs explicit (yıldız puanlama). Görkem'in Spotify playlist analyzer projesi bu konuyla yakından ilgili.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Recommendation system, collaborative filtering, content-based, matrix factorization, cold start.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "process ve thread farkı ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Process bağımsız çalışan program — kendi bellek alanı var, birbirinden izole. Thread process içinde çalışan hafif birim — aynı bellek alanını paylaşır. Thread oluşturmak process'e göre çok daha hızlı ve hafif. Thread'ler arası iletişim kolay (paylaşılan bellek) ama race condition riski var — mutex, semaphore ile senkronizasyon gerekli. Process'ler arası iletişim (IPC): pipe, shared memory, message queue, socket. Web server örneği: her istek için process açmak maliyetli, thread veya async I/O daha verimli. Context switch: CPU bir thread/process'ten diğerine geçmek — process switch daha maliyetli. Modern yaklaşım: async I/O (Node.js event loop, Python asyncio) veya goroutine (Go) gibi hafif concurrency modelleri.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Process, thread, izolasyon, race condition, mutex, context switch, IPC.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "unit testing best practices neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İyi unit test: hızlı (milisaniye), bağımsız (sıralamadan etkilenmez), tekrarlanabilir (her çalıştırıldığında aynı sonuç), self-validating (assert ile otomatik kontrol). AAA pattern: Arrange (hazırlık), Act (işlem), Assert (doğrulama). Test adları açıklayıcı olsun: test_user_login_with_invalid_password_returns_401. Bir test bir şeyi test etsin — birden fazla assert olabilir ama aynı davranış için. Mock'ları dikkatli kullan — her şeyi mock'larsan gerçek davranışı test etmezsin. Test piramidi: çok unit test, biraz integration test, az E2E test. Edge case'leri test et: null, boş string, sınır değerler, hata durumları. TDD (Test-Driven Development): önce test yaz, sonra kodu yaz — disiplin gerektirir ama tasarımı iyileştirir. Coverage %100 hedefleme — anlamlı testler yaz, her satırı test etmek değil doğru davranışları test etmek önemli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Unit testing, AAA, mock, test piramidi, TDD, coverage, edge case, best practice.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Türkiye'de yazılımcı olmak nasıl?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Türkiye'de yazılımcı olmak hem fırsatlar hem zorluklar barındırıyor. Avantajlar: artan talep (dijital dönüşüm), remote çalışma ile yurt dışı maaş imkanı, güçlü üniversiteler (ODTÜ, Boğaziçi, İTÜ, Yeditepe), aktif topluluklar (Kommunity, Deep Learning Türkiye). Zorluklar: yerel maaşlar küçük şirketlerde düşük (ama hızla artıyor), bazı şirketlerde iş kültürü sorunlu (fazla mesai beklentisi), limited senior mentorship. Fırsatlar: remote çalışma ile Avrupa/ABD şirketlerinde çalışabilirsin, freelance olarak döviz kazanabilirsin, Türkiye'nin startup ekosistemi büyüyor (Getir, Trendyol, Hepsiburada gibi başarı hikayeleri). Kariyer tavsiyesi: İngilizce'ni geliştir (zorunlu), GitHub portfolio'nu güçlendir, open source'a katkıda bulun, networking yap, global düşün. Görkem gibi genç geliştiriciler Türkiye'nin tech geleceğini şekillendiriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Türkiye, yazılımcı, remote, maaş, startup ekosistemi, İngilizce, kariyer.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

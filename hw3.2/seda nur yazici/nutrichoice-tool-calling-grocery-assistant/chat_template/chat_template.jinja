@@ -1,0 +1,100 @@
+{#
+  NutriChoice custom chat template for Qwen3.5.
+  It is intentionally smaller than the model's stock template, but preserves
+  Qwen3.5's native role tokens and XML tool-call protocol.
+#}
+
+{%- macro render_text(content) -%}
+  {%- if content is string -%}
+    {{- content -}}
+  {%- elif content is none or content is undefined -%}
+    {{- '' -}}
+  {%- else -%}
+    {{- raise_exception('NutriChoice expects text-only message content.') -}}
+  {%- endif -%}
+{%- endmacro -%}
+
+{%- if not messages -%}
+  {{- raise_exception('No messages provided.') -}}
+{%- endif -%}
+
+{# Render the system turn, including tool schemas when supplied. #}
+{%- if tools and tools is iterable and tools is not mapping -%}
+  {{- '<|im_start|>system\n' -}}
+  {{- '# Tools\n\nYou have access to the following functions:\n\n<tools>' -}}
+  {%- for tool in tools -%}
+    {{- '\n' -}}
+    {{- tool | tojson -}}
+  {%- endfor -%}
+  {{- '\n</tools>\n\n' -}}
+  {{- 'When a function is needed, output only this XML structure and nothing after it:\n' -}}
+  {{- '<tool_call>\n<function=function_name>\n<parameter=parameter_name>\nvalue\n</parameter>\n</function>\n</tool_call>\n\n' -}}
+  {{- 'Use exact function and parameter names. Include every required parameter.' -}}
+  {%- if messages[0].role == 'system' -%}
+    {%- set system_content = render_text(messages[0].content) | trim -%}
+    {%- if system_content -%}
+      {{- '\n\n' + system_content -}}
+    {%- endif -%}
+  {%- endif -%}
+  {{- '<|im_end|>\n' -}}
+{%- elif messages[0].role == 'system' -%}
+  {{- '<|im_start|>system\n' + (render_text(messages[0].content) | trim) + '<|im_end|>\n' -}}
+{%- endif -%}
+
+{# Render conversation turns. The first system message was emitted above. #}
+{%- for message in messages -%}
+  {%- set content = render_text(message.content) | trim -%}
+  {%- if message.role == 'system' -%}
+    {%- if not loop.first -%}
+      {{- raise_exception('System message must be the first message.') -}}
+    {%- endif -%}
+  {%- elif message.role == 'user' -%}
+    {{- '<|im_start|>user\n' + content + '<|im_end|>\n' -}}
+  {%- elif message.role == 'assistant' -%}
+    {{- '<|im_start|>assistant\n' -}}
+    {%- if content -%}
+      {{- content -}}
+    {%- endif -%}
+    {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping -%}
+      {%- for call in message.tool_calls -%}
+        {%- set function = call.function if call.function is defined else call -%}
+        {%- if content or not loop.first -%}
+          {{- '\n' -}}
+        {%- endif -%}
+        {{- '<tool_call>\n<function=' + function.name + '>\n' -}}
+        {%- if function.arguments is defined -%}
+          {%- for argument_name, argument_value in function.arguments | items -%}
+            {{- '<parameter=' + argument_name + '>\n' -}}
+            {%- if argument_value is mapping or (argument_value is sequence and argument_value is not string) -%}
+              {{- argument_value | tojson -}}
+            {%- else -%}
+              {{- argument_value | string -}}
+            {%- endif -%}
+            {{- '\n</parameter>\n' -}}
+          {%- endfor -%}
+        {%- endif -%}
+        {{- '</function>\n</tool_call>' -}}
+      {%- endfor -%}
+    {%- endif -%}
+    {{- '<|im_end|>\n' -}}
+  {%- elif message.role == 'tool' -%}
+    {%- if loop.previtem is undefined or loop.previtem.role != 'tool' -%}
+      {{- '<|im_start|>user' -}}
+    {%- endif -%}
+    {{- '\n<tool_response>\n' + content + '\n</tool_response>' -}}
+    {%- if loop.nextitem is undefined or loop.nextitem.role != 'tool' -%}
+      {{- '<|im_end|>\n' -}}
+    {%- endif -%}
+  {%- else -%}
+    {{- raise_exception('Unsupported message role: ' + message.role) -}}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if add_generation_prompt -%}
+  {{- '<|im_start|>assistant\n' -}}
+  {%- if enable_thinking is defined and enable_thinking is false -%}
+    {{- '<think>\n\n</think>\n\n' -}}
+  {%- else -%}
+    {{- '<think>\n' -}}
+  {%- endif -%}
+{%- endif -%}

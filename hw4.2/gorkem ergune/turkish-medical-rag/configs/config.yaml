@@ -1,0 +1,117 @@
+# Central configuration for the Turkish Medical Vector Search & RAG project.
+#
+# This is the SINGLE SOURCE OF TRUTH for all reproducibility-relevant
+# parameters. Modules must read values from here rather than hard-coding them.
+# Values marked as placeholders (null) are finalized in later phases.
+
+# Fixed random seed for all stochastic operations (document selection, etc.).
+seed: 42
+
+dataset:
+  # Hugging Face dataset id (confirmed in Phase 1).
+  #
+  # NOTE: The originally-configured `umutertugrul/turkish-medical-articles` is
+  # a GATED dataset and could not be accessed with the available credentials.
+  # CLAUDE.md explicitly permits either dataset, so Phase 1 uses the accessible
+  # alternate below (confirmed loadable; clean UTF-8 url/title/text schema).
+  name: "umutertugrul/turkish-hospital-medical-articles"
+  # This dataset has NO single "train" split; it exposes 14 hospital splits.
+  # `split: null` means "pool all available splits into one corpus"; the split
+  # name is preserved per document as the `source` metadata field.
+  split: null
+  # Number of documents to select. Must be between 100 and 1000 (assignment).
+  document_count: 300
+  # Column names confirmed against the real dataset (Phase 1 inspection).
+  text_field: "text"
+  url_field: "url"
+  title_field: "title"
+  # Per-document `source` is derived from the HF split (hospital) name, not a
+  # dataset column. `publish_date`/`update_date`/`scrape_date` also exist but
+  # are not required by the schema and are not carried into the selection.
+  # Output artifacts (kept in config so paths are not hard-coded across files).
+  selected_output: "data/processed/selected_documents.jsonl"
+  statistics_output: "artifacts/dataset_statistics.json"
+
+chunking:
+  # Deterministic mixed strategy (Phase 2):
+  #   1. Split each document into paragraph units on newline boundaries
+  #      (this corpus uses single '\n' separators, not blank lines).
+  #   2. Greedily group consecutive units until `max_tokens` is reached.
+  #   3. If a single unit alone exceeds `max_tokens`, fall back to a
+  #      token-measured, WORD-boundary window split (word boundaries avoid
+  #      splitting multi-byte Turkish characters) with `overlap_tokens` overlap.
+  #   4. Merge any sub-`min_tokens` chunk into a neighbour (never drop text).
+  strategy: "paragraph_then_token"
+  max_tokens: 512
+  overlap_tokens: 64
+  min_tokens: 30
+  # Explicit, documented tokenizer used ONLY for chunk-size measurement.
+  # (The embedding model and its own tokenizer are chosen later, in Phase 3.)
+  tokenizer:
+    backend: "tiktoken"
+    encoding: "cl100k_base"
+  # Output artifacts (paths kept in config, not hard-coded across files).
+  chunks_output: "data/processed/chunks.jsonl"
+  statistics_output: "artifacts/chunk_statistics.json"
+
+embedding:
+  # LOCKED in Phase 3 after the embedding-model pilot (turkish-e5-large vs
+  # bge-m3). turkish-e5-large gave cleaner positive/negative separation for the
+  # threshold gate while matching bge-m3 on retrieval relevance. Same model must
+  # embed both chunks and queries.
+  model_name: "ytu-ce-cosmos/turkish-e5-large"
+  expected_dim: 1024
+  batch_size: 32
+  normalize: true
+  # e5-instruct encoding convention (implemented centrally in the embedder):
+  #   * document/chunk passages: RAW text, no prefix
+  #   * queries: "Instruct: {query_instruction}\nQuery: {question}"
+  query_instruction: "Given a Turkish search query, retrieve relevant passages written in Turkish that best answer the query"
+  # Output artifacts (paths kept in config, not hard-coded across files).
+  embeddings_output: "artifacts/embeddings.npz"
+  statistics_output: "artifacts/embedding_statistics.json"
+
+vectorstore:
+  provider: "chromadb"
+  # Local persistence directory (gitignored).
+  persist_path: "artifacts/chroma"
+  collection_name: "turkish_medical_chunks"
+  # Chroma collection distance metric; retrieval uses cosine similarity.
+  distance: "cosine"
+
+retrieval:
+  top_k: 5
+  # CALIBRATED in Phase 6 on the frozen 30-question benchmark (top-1 cosine).
+  # Positives (min 0.583) and negatives (max 0.567) were perfectly separable;
+  # threshold set to the separating-gap midpoint (~0.5749, rounded to 0.575),
+  # giving TP=20/TN=10/FP=0/FN=0 on the benchmark. NOTE: this is a calibration
+  # threshold on a narrow (~0.016) gap — NOT an independently validated
+  # production/generalization value. Decision rule: accept if score >= threshold.
+  threshold: 0.575
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  data_benchmark: "data/benchmark"
+  artifacts: "artifacts"
+
+# RAG answering layer (Phase 7). All runtime knobs live here — nothing hard-coded.
+llm:
+  # "anthropic" uses the Claude API (requires `pip install anthropic` and an API
+  # key in the env var named by `api_key_env`). "fake" returns a canned answer
+  # with no network call — useful for offline/dry runs.
+  provider: "anthropic"
+  model: "claude-opus-4-8"        # configurable; latest capable Claude model
+  max_output_tokens: 1024
+  # Optional sampling temperature. Left null because Opus 4.x reject sampling
+  # params (400); set a value only for a sampling-capable model.
+  temperature: null
+  # API key is read from this environment variable (never written to source).
+  api_key_env: "ANTHROPIC_API_KEY"
+
+rag:
+  # Cap on retrieved-context characters passed to the LLM (context limit).
+  max_context_chars: 6000
+
+# Exact rejection message returned when the top score is below threshold.
+rejection_message: "Bu sorunun cevabı dokümanlarımda yer almamaktadır."

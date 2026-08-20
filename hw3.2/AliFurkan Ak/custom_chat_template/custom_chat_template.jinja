@@ -1,0 +1,50 @@
+{%- if messages[0]['role'] == 'system' %}
+    {%- set system_message = messages[0]['content'] %}
+    {%- set loop_messages = messages[1:] %}
+{%- else %}
+    {%- set system_message = 'You are a helpful AI assistant.' %}
+    {%- set loop_messages = messages %}
+{%- endif %}
+
+₺₺₺System₺₺₺
+{{ system_message }}
+{%- if tools is defined and tools != none and tools|length > 0 %}
+
+You can use the following functions/tools. When you want to call a tool, respond with the appropriate JSON format.
+₺₺₺ToolsSchema₺₺₺
+{{ tools | tojson(indent=2) }}
+₺₺₺ToolsSchema₺₺₺
+{%- endif %}
+₺₺₺System₺₺₺
+
+{%- for message in loop_messages %}
+{%- if message['role'] == 'user' %}
+₺₺₺User₺₺₺
+{{ message['content'] }}
+₺₺₺User₺₺₺
+{%- elif message['role'] == 'assistant' %}
+₺₺₺Assistant₺₺₺
+{%- if message.content is defined and message.content %}
+{{ message['content'] }}
+{%- endif %}
+{%- if message.tool_calls is defined and message.tool_calls %}
+{%- for tool_call in message.tool_calls %}
+{%- if tool_call.function is defined %}
+{%- set tool_call = tool_call.function %}
+{%- endif %}
+₺₺₺ToolCall₺₺₺
+{"name": "{{ tool_call.name }}", "arguments": {{ tool_call.arguments | tojson }}}
+₺₺₺ToolCall₺₺₺
+{%- endfor %}
+{%- endif %}
+₺₺₺Assistant₺₺₺
+{%- elif message['role'] == 'tool' %}
+₺₺₺ToolResponse₺₺₺
+{"name": "{{ message.name if message.name is defined else 'tool' }}", "content": {{ message.content | tojson }}}
+₺₺₺ToolResponse₺₺₺
+{%- endif %}
+{%- endfor %}
+
+{%- if add_generation_prompt %}
+₺₺₺Assistant₺₺₺
+{%- endif %}

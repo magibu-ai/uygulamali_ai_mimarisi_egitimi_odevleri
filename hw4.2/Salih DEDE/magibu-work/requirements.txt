@@ -1,0 +1,6 @@
+openai>=1.0
+sentence-transformers>=3.0
+torch
+psycopg2-binary>=2.9
+python-dotenv
+datasets>=2.19

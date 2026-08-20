@@ -1,0 +1,16 @@
+TURKISH MEDICAL RAG - THRESHOLD SELECTION
+============================================================
+
+Selected threshold: 0.570000
+Exact midpoint     : 0.569566
+Selection method   : midpoint_between_max_negative_and_min_positive
+
+Positive min       : 0.604484
+Negative max       : 0.534648
+Observed gap       : 0.069836
+
+Accuracy           : 1.000000
+Precision          : 1.000000
+Recall             : 1.000000
+Specificity        : 1.000000
+F1                 : 1.000000

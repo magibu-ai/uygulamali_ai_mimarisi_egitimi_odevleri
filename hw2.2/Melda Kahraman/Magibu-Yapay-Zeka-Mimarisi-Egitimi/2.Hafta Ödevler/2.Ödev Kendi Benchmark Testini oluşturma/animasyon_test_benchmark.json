@@ -1,0 +1,1890 @@
+[
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde filminin konusu aşağıdakilerden hangisidir?\n\nA) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nB) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nC) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nD) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde animasyonu neyi anlatmaktadır?\n\nA) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nB) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nC) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nD) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde filminin hikaye özeti hangi seçenekte doğru verilmiştir?\n\nA) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nB) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nC) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nD) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde yapımının temel kurgusu ve ana izleği nedir?\n\nA) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nB) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nC) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nD) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda kimler yer almaktadır?\n\nA) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nB) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nC) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nD) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde animasyonundaki karakterleri seslendiren sanatçılar kimlerdir?\n\nA) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nB) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nC) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nD) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Aşağıdakilerden hangisi Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunu doğru yansıtır?\n\nA) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nB) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nC) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nD) Örümcek-Adam: Örümcek Evreninde filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde hangi stüdyo bünyesinde üretilmiştir?\n\nA) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nD) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde animasyonunun yapım yeri ve stüdyosu neresidir?\n\nA) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nC) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nD) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hangi prodüksiyon şirketi Örümcek-Adam: Örümcek Evreninde yapımını hayata geçirmiştir?\n\nA) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nC) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nD) Örümcek-Adam: Örümcek Evreninde filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde filminin kazandığı veya aday olduğu ödüller hangileridir?\n\nA) Örümcek-Adam: Örümcek Evreninde filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nB) Örümcek-Adam: Örümcek Evreninde filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nC) Örümcek-Adam: Örümcek Evreninde filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\nD) Örümcek-Adam: Örümcek Evreninde filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde yapımının resmi festival ve ödül geçmişi nasıldır?\n\nA) Örümcek-Adam: Örümcek Evreninde filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nB) Örümcek-Adam: Örümcek Evreninde filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\nC) Örümcek-Adam: Örümcek Evreninde filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\nD) Örümcek-Adam: Örümcek Evreninde filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde animasyonu hakkında seyircilerin ve eleştirmenlerin genel görüşleri nelerdir?\n\nA) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\nB) Çizgi roman estetiğini 3D animasyonla harmanlayan görsel dili tam anlamıyla bir devrimdir. Yüksek temposu, muazzam müzikleri ve Miles Morales'in kendi potansiyelini keşfetme hikayesi animasyon tarihinin en parlak işlerinden biridir.\nC) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\nD) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Eleştirmenler ve izleyiciler Örümcek-Adam: Örümcek Evreninde filmini sanatsal ve teknik açıdan nasıl değerlendirmektedir?\n\nA) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nB) Çizgi roman estetiğini 3D animasyonla harmanlayan görsel dili tam anlamıyla bir devrimdir. Yüksek temposu, muazzam müzikleri ve Miles Morales'in kendi potansiyelini keşfetme hikayesi animasyon tarihinin en parlak işlerinden biridir.\nC) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\nD) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul filminin konusu aşağıdakilerden hangisidir?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nC) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nD) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul animasyonu neyi anlatmaktadır?\n\nA) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nB) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nC) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nD) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul filminin hikaye özeti hangi seçenekte doğru verilmiştir?\n\nA) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nB) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nC) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nD) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul yapımının temel kurgusu ve ana izleği nedir?\n\nA) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nB) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nC) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nD) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul filminin seslendirme kadrosunda kimler yer almaktadır?\n\nA) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nB) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nC) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Engin Alkan, Aysun Topar, Jamie Foxx, Tina Fey, Graham Norton.\nD) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul animasyonundaki karakterleri seslendiren sanatçılar kimlerdir?\n\nA) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Engin Alkan, Aysun Topar, Jamie Foxx, Tina Fey, Graham Norton.\nB) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nC) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nD) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Aşağıdakilerden hangisi Soul filminin seslendirme kadrosunu doğru yansıtır?\n\nA) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Engin Alkan, Aysun Topar, Jamie Foxx, Tina Fey, Graham Norton.\nB) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nC) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nD) Soul filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul hangi stüdyo bünyesinde üretilmiştir?\n\nA) Soul filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nB) Soul filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Soul filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nD) Soul filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul animasyonunun yapım yeri ve stüdyosu neresidir?\n\nA) Soul filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Soul filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nC) Soul filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nD) Soul filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hangi prodüksiyon şirketi Soul yapımını hayata geçirmiştir?\n\nA) Soul filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nB) Soul filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nC) Soul filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nD) Soul filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul filminin kazandığı veya aday olduğu ödüller hangileridir?\n\nA) Soul filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nB) Soul filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nC) Soul filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nD) Soul filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul yapımının resmi festival ve ödül geçmişi nasıldır?\n\nA) Soul filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nB) Soul filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nC) Soul filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nD) Soul filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul animasyonu hakkında seyircilerin ve eleştirmenlerin genel görüşleri nelerdir?\n\nA) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\nB) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nC) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\nD) Görsel efekt ve fizik simülasyonu açısından teknik bir zirve olan yapım, göçmen ailelerin çocukları üzerindeki beklentilerini, uyum çabalarını ve kültürel önyargıları elementler metaforu üzerinden son derece zarif bir dille işler.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Eleştirmenler ve izleyiciler Soul filmini sanatsal ve teknik açıdan nasıl değerlendirmektedir?\n\nA) Çizgi roman estetiğini 3D animasyonla harmanlayan görsel dili tam anlamıyla bir devrimdir. Yüksek temposu, muazzam müzikleri ve Miles Morales'in kendi potansiyelini keşfetme hikayesi animasyon tarihinin en parlak işlerinden biridir.\nB) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nC) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\nD) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana filminin konusu aşağıdakilerden hangisidir?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nC) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nD) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana animasyonu neyi anlatmaktadır?\n\nA) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nB) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nC) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nD) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana filminin hikaye özeti hangi seçenekte doğru verilmiştir?\n\nA) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nB) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nC) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nD) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana yapımının temel kurgusu ve ana izleği nedir?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nC) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nD) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana filminin seslendirme kadrosunda kimler yer almaktadır?\n\nA) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nB) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nC) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nD) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana animasyonundaki karakterleri seslendiren sanatçılar kimlerdir?\n\nA) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nB) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nC) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nD) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Aşağıdakilerden hangisi Moana filminin seslendirme kadrosunu doğru yansıtır?\n\nA) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nB) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nC) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Engin Alkan, Aysun Topar, Jamie Foxx, Tina Fey, Graham Norton.\nD) Moana filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana hangi stüdyo bünyesinde üretilmiştir?\n\nA) Moana filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nB) Moana filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Moana filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nD) Moana filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana animasyonunun yapım yeri ve stüdyosu neresidir?\n\nA) Moana filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nB) Moana filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Moana filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nD) Moana filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hangi prodüksiyon şirketi Moana yapımını hayata geçirmiştir?\n\nA) Moana filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Moana filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Moana filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nD) Moana filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana filminin kazandığı veya aday olduğu ödüller hangileridir?\n\nA) Moana filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nB) Moana filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\nC) Moana filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nD) Moana filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana yapımının resmi festival ve ödül geçmişi nasıldır?\n\nA) Moana filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nB) Moana filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nC) Moana filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\nD) Moana filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana animasyonu hakkında seyircilerin ve eleştirmenlerin genel görüşleri nelerdir?\n\nA) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\nB) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nC) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\nD) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Eleştirmenler ve izleyiciler Moana filmini sanatsal ve teknik açıdan nasıl değerlendirmektedir?\n\nA) Suluboya arka plan çizimlerinin samimiyeti, Elvis Presley şarkılarıyla bezenmiş Hawaii atmosferi ve aile bağlarını masalsı kalıpların ötesinde, gerçekçi kardeş çatışmaları üzerinden ele alması bakımından son derece sıcak ve kült bir Disney klasiğidir.\nB) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nC) Görsel efekt ve fizik simülasyonu açısından teknik bir zirve olan yapım, göçmen ailelerin çocukları üzerindeki beklentilerini, uyum çabalarını ve kültürel önyargıları elementler metaforu üzerinden son derece zarif bir dille işler.\nD) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch filminin konusu aşağıdakilerden hangisidir?\n\nA) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nB) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nC) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nD) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch animasyonu neyi anlatmaktadır?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nC) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nD) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch filminin hikaye özeti hangi seçenekte doğru verilmiştir?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nC) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nD) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch yapımının temel kurgusu ve ana izleği nedir?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nC) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nD) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch filminin seslendirme kadrosunda kimler yer almaktadır?\n\nA) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nB) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nC) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Engin Alkan, Aysun Topar, Jamie Foxx, Tina Fey, Graham Norton.\nD) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch animasyonundaki karakterleri seslendiren sanatçılar kimlerdir?\n\nA) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nB) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nC) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nD) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Engin Alkan, Aysun Topar, Jamie Foxx, Tina Fey, Graham Norton.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Aşağıdakilerden hangisi Lilo ve Stitch filminin seslendirme kadrosunu doğru yansıtır?\n\nA) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nB) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nC) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nD) Lilo ve Stitch filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch hangi stüdyo bünyesinde üretilmiştir?\n\nA) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nB) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nD) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch animasyonunun yapım yeri ve stüdyosu neresidir?\n\nA) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nC) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nD) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hangi prodüksiyon şirketi Lilo ve Stitch yapımını hayata geçirmiştir?\n\nA) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nB) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nC) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nD) Lilo ve Stitch filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch filminin kazandığı veya aday olduğu ödüller hangileridir?\n\nA) Lilo ve Stitch filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\nB) Lilo ve Stitch filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\nC) Lilo ve Stitch filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nD) Lilo ve Stitch filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch yapımının resmi festival ve ödül geçmişi nasıldır?\n\nA) Lilo ve Stitch filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nB) Lilo ve Stitch filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\nC) Lilo ve Stitch filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nD) Lilo ve Stitch filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch animasyonu hakkında seyircilerin ve eleştirmenlerin genel görüşleri nelerdir?\n\nA) Suluboya arka plan çizimlerinin samimiyeti, Elvis Presley şarkılarıyla bezenmiş Hawaii atmosferi ve aile bağlarını masalsı kalıpların ötesinde, gerçekçi kardeş çatışmaları üzerinden ele alması bakımından son derece sıcak ve kült bir Disney klasiğidir.\nB) Görsel efekt ve fizik simülasyonu açısından teknik bir zirve olan yapım, göçmen ailelerin çocukları üzerindeki beklentilerini, uyum çabalarını ve kültürel önyargıları elementler metaforu üzerinden son derece zarif bir dille işler.\nC) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\nD) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Eleştirmenler ve izleyiciler Lilo ve Stitch filmini sanatsal ve teknik açıdan nasıl değerlendirmektedir?\n\nA) Suluboya arka plan çizimlerinin samimiyeti, Elvis Presley şarkılarıyla bezenmiş Hawaii atmosferi ve aile bağlarını masalsı kalıpların ötesinde, gerçekçi kardeş çatışmaları üzerinden ele alması bakımından son derece sıcak ve kült bir Disney klasiğidir.\nB) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\nC) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\nD) Çizgi roman estetiğini 3D animasyonla harmanlayan görsel dili tam anlamıyla bir devrimdir. Yüksek temposu, muazzam müzikleri ve Miles Morales'in kendi potansiyelini keşfetme hikayesi animasyon tarihinin en parlak işlerinden biridir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental filminin konusu aşağıdakilerden hangisidir?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nC) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nD) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental animasyonu neyi anlatmaktadır?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nC) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nD) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental filminin hikaye özeti hangi seçenekte doğru verilmiştir?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nC) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nD) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental yapımının temel kurgusu ve ana izleği nedir?\n\nA) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nB) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nC) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nD) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental filminin seslendirme kadrosunda kimler yer almaktadır?\n\nA) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nB) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nC) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nD) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental animasyonundaki karakterleri seslendiren sanatçılar kimlerdir?\n\nA) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nB) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nC) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nD) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Aşağıdakilerden hangisi Elemental filminin seslendirme kadrosunu doğru yansıtır?\n\nA) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nB) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nC) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nD) Elemental filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Engin Alkan, Aysun Topar, Jamie Foxx, Tina Fey, Graham Norton.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental hangi stüdyo bünyesinde üretilmiştir?\n\nA) Elemental filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nB) Elemental filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nC) Elemental filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nD) Elemental filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental animasyonunun yapım yeri ve stüdyosu neresidir?\n\nA) Elemental filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Elemental filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nC) Elemental filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nD) Elemental filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hangi prodüksiyon şirketi Elemental yapımını hayata geçirmiştir?\n\nA) Elemental filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nB) Elemental filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Elemental filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nD) Elemental filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental filminin kazandığı veya aday olduğu ödüller hangileridir?\n\nA) Elemental filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nB) Elemental filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nC) Elemental filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\nD) Elemental filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental yapımının resmi festival ve ödül geçmişi nasıldır?\n\nA) Elemental filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\nB) Elemental filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nC) Elemental filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\nD) Elemental filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental animasyonu hakkında seyircilerin ve eleştirmenlerin genel görüşleri nelerdir?\n\nA) Çizgi roman estetiğini 3D animasyonla harmanlayan görsel dili tam anlamıyla bir devrimdir. Yüksek temposu, muazzam müzikleri ve Miles Morales'in kendi potansiyelini keşfetme hikayesi animasyon tarihinin en parlak işlerinden biridir.\nB) Görsel efekt ve fizik simülasyonu açısından teknik bir zirve olan yapım, göçmen ailelerin çocukları üzerindeki beklentilerini, uyum çabalarını ve kültürel önyargıları elementler metaforu üzerinden son derece zarif bir dille işler.\nC) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nD) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Eleştirmenler ve izleyiciler Elemental filmini sanatsal ve teknik açıdan nasıl değerlendirmektedir?\n\nA) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\nB) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nC) Görsel efekt ve fizik simülasyonu açısından teknik bir zirve olan yapım, göçmen ailelerin çocukları üzerindeki beklentilerini, uyum çabalarını ve kültürel önyargıları elementler metaforu üzerinden son derece zarif bir dille işler.\nD) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı filminin konusu aşağıdakilerden hangisidir?\n\nA) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nB) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nC) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nD) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı animasyonu neyi anlatmaktadır?\n\nA) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nB) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nC) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nD) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı filminin hikaye özeti hangi seçenekte doğru verilmiştir?\n\nA) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nB) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nC) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nD) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı yapımının temel kurgusu ve ana izleği nedir?\n\nA) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nB) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nC) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nD) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı filminin seslendirme kadrosunda kimler yer almaktadır?\n\nA) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nB) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nC) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nD) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı animasyonundaki karakterleri seslendiren sanatçılar kimlerdir?\n\nA) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nB) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nC) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nD) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Aşağıdakilerden hangisi Kırmızı filminin seslendirme kadrosunu doğru yansıtır?\n\nA) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nB) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nC) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Rosalie Chiang, Sandra Oh, Harun Can, Aysun Topar, Ava Morse.\nD) Kırmızı filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı hangi stüdyo bünyesinde üretilmiştir?\n\nA) Kırmızı filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nB) Kırmızı filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nC) Kırmızı filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nD) Kırmızı filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı animasyonunun yapım yeri ve stüdyosu neresidir?\n\nA) Kırmızı filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Kırmızı filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nC) Kırmızı filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nD) Kırmızı filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hangi prodüksiyon şirketi Kırmızı yapımını hayata geçirmiştir?\n\nA) Kırmızı filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nB) Kırmızı filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nC) Kırmızı filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nD) Kırmızı filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı filminin kazandığı veya aday olduğu ödüller hangileridir?\n\nA) Kırmızı filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\nB) Kırmızı filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nC) Kırmızı filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nD) Kırmızı filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı yapımının resmi festival ve ödül geçmişi nasıldır?\n\nA) Kırmızı filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi ve En İyi Film Müziği dallarında olmak üzere 2 Akademi (Oscar) Ödülü kazanmıştır.\nB) Kırmızı filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nC) Kırmızı filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\nD) Kırmızı filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı animasyonu hakkında seyircilerin ve eleştirmenlerin genel görüşleri nelerdir?\n\nA) Suluboya arka plan çizimlerinin samimiyeti, Elvis Presley şarkılarıyla bezenmiş Hawaii atmosferi ve aile bağlarını masalsı kalıpların ötesinde, gerçekçi kardeş çatışmaları üzerinden ele alması bakımından son derece sıcak ve kült bir Disney klasiğidir.\nB) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\nC) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\nD) Çizgi roman estetiğini 3D animasyonla harmanlayan görsel dili tam anlamıyla bir devrimdir. Yüksek temposu, muazzam müzikleri ve Miles Morales'in kendi potansiyelini keşfetme hikayesi animasyon tarihinin en parlak işlerinden biridir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Eleştirmenler ve izleyiciler Kırmızı filmini sanatsal ve teknik açıdan nasıl değerlendirmektedir?\n\nA) Görsel efekt ve fizik simülasyonu açısından teknik bir zirve olan yapım, göçmen ailelerin çocukları üzerindeki beklentilerini, uyum çabalarını ve kültürel önyargıları elementler metaforu üzerinden son derece zarif bir dille işler.\nB) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\nC) Suluboya arka plan çizimlerinin samimiyeti, Elvis Presley şarkılarıyla bezenmiş Hawaii atmosferi ve aile bağlarını masalsı kalıpların ötesinde, gerçekçi kardeş çatışmaları üzerinden ele alması bakımından son derece sıcak ve kült bir Disney klasiğidir.\nD) Varoluşsal kaygıları, tutku kavramını ve hayatın sadece büyük hedeflerden değil küçük anlardan ibaret olduğunu mükemmel bir felsefi dille anlatan, yetişkinlere yönelik derin bir Pixar şaheseridir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 filminin konusu aşağıdakilerden hangisidir?\n\nA) Ortaokul müzik öğretmeni olan ve en büyük hayali ünlü bir caz grubunda piyanistlik yapmak olan Joe Gardner'ın, beklediği büyük fırsatı yakaladığı gün kazara bir kanalizasyon çukuruna düşerek ruhlar alemine (Great Before) geçmesini anlatır. Joe, dünyaya dönmek için insan olmaktan nefret eden henüz doğmamış ruh '22' ile işbirliği yapar ve hayatın kıvılcımını keşfetme yolculuğuna çıkar.\nB) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\nC) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nD) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 animasyonu neyi anlatmaktadır?\n\nA) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nB) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nC) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nD) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 filminin hikaye özeti hangi seçenekte doğru verilmiştir?\n\nA) 13 yaşındaki Çin kökenli Kanadalı Meilin 'Mei' Lee'nin, ergenlik döneminin getirdiği duygusal çalkantılar ve aile baskısı altında ne zaman aşırı heyecanlansa veya stres yapsa devasa bir kırmızı pandaya dönüşmesini ve arkadaşlarıyla en sevdikleri müzik grubunun konserine gitmeye çalışırken yaşadığı büyüme sancılarını anlatır.\nB) Hawaii'de ablası Nani ile birlikte yaşayan ve uyum sağlamakta zorlanan yetim, yalnız bir kız çocuğu olan Lilo'nun, barınaktan köpek sandığı sıradışı mavi bir yaratığı (Stitch) sahiplenmesini anlatır. Ancak Stitch aslında genetiği değiştirilmiş, galaksiden kaçmış yıkıcı bir uzaylı deneyidir (Deney 626). Lilo, Stitch'e Hawaii kültüründeki 'Ohana' (aile demektir ve aile kimseyi geride bırakmaz) felsefesini öğretirken, Stitch de sevginin gücüyle yıkıcı içgüdülerini bastırıp ailesini galaktik avcılardan korumayı öğrenecektir.\nC) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nD) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 yapımının temel kurgusu ve ana izleği nedir?\n\nA) Brooklyn'li genç Miles Morales'in radyoaktif bir örümcek tarafından ısırılmasıyla süper güçler kazanmasını ve radyoaktif boyut kapılarının açılması sonucu farklı evrenlerden gelen alternatif Örümcek-Adam'larla (Peter B. Parker, Gwen Stacy vb.) bir araya gelerek tüm gerçekliği yok etmek isteyen Kingpin'e karşı verdikleri mücadeleyi anlatır.\nB) Ateş, Su, Toprak ve Hava elementlerinin bir arada yaşadığı Element Şehri'nde (Element City) geçen hikaye, sert ve çabuk parlayan ateş elementi Ember ile hayatı akışına bırakan, duygusal su elementi Wade'in tesadüfen tanışmasını anlatır. Birbirlerine dokunmaları bile fiziksel olarak imkansız olan ve zıt toplumsal sınıflardan gelen bu iki gencin, hem şehirdeki bürokratik bir krizle mücadele etmelerini hem de aralarındaki engellere rağmen filizlenen aşkı kabullenme süreçlerini konu alır.\nC) Antik Polinezya'da bir adada yaşayan ve okyanus tarafından seçilen cesur kabile reisi kızı Moana'nın, adasındaki bitki ve balık kıtlığını bitirmek amacıyla yarı tanrı Maui'yi bularak doğanın kalbi olan Te Fiti'nin sihirli taşını ait olduğu yere geri götürmek için açık okyanusa yelken açmasını konu alır.\nD) 13 yaşına basan ve ergenlik dönemine adım atan Riley'nin zihnindeki ana kumanda merkezine Kaygı, Gıpta, Utanç ve Bıkkınlık gibi yeni ergenlik duygularının gelmesiyle Neşe, Üzüntü, Öfke, Korku ve Tiksinti'nin yerinden edilerek Riley'nin benlik hissini ve kişiliğini koruma mücadelesini anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Konu sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 filminin seslendirme kadrosunda kimler yer almaktadır?\n\nA) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nB) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nC) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nD) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 animasyonundaki karakterleri seslendiren sanatçılar kimlerdir?\n\nA) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\nB) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nC) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Leah Lewis, Mamoudou Athie, Harun Can, Aysun Topar.\nD) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Aşağıdakilerden hangisi Ters Yüz 2 filminin seslendirme kadrosunu doğru yansıtır?\n\nA) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Daveigh Chase, Chris Sanders, Tia Carrere, Harun Can, Aysun Topar.\nB) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Ezgi Mola, Harun Can, Auli'i Cravalho, Dwayne Johnson.\nC) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Gupse Özay, Aysun Topar, Yeliz Gerçek, Harun Can, Maya Hawke, Amy Poehler.\nD) Ters Yüz 2 filminin seslendirme kadrosunda yer alan başlıca sanatçılar şunlardır: Harun Can, Aysun Topar, Arda Aydın, Shameik Moore, Jake Johnson, Hailee Steinfeld.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Seslendirme sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 hangi stüdyo bünyesinde üretilmiştir?\n\nA) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nB) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nC) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nD) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 animasyonunun yapım yeri ve stüdyosu neresidir?\n\nA) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nB) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\nD) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hangi prodüksiyon şirketi Ters Yüz 2 yapımını hayata geçirmiştir?\n\nA) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Walt Disney Animation Studios gerçekleştirilmiştir.\nB) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Pixar Animation Studios gerçekleştirilmiştir.\nC) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Sony Pictures Animation / Marvel Entertainment gerçekleştirilmiştir.\nD) Ters Yüz 2 filminin prodüksiyonu ve çekim aşamaları Walt Disney Feature Animation gerçekleştirilmiştir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Stüdyo sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 filminin kazandığı veya aday olduğu ödüller hangileridir?\n\nA) Ters Yüz 2 filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\nB) Ters Yüz 2 filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nC) Ters Yüz 2 filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\nD) Ters Yüz 2 filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 yapımının resmi festival ve ödül geçmişi nasıldır?\n\nA) Ters Yüz 2 filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nB) Ters Yüz 2 filmi resmi ödül geçmişine bakıldığında hiç ödül kazanmamıştır.\nC) Ters Yüz 2 filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü adaylığı bulunmaktadır.\nD) Ters Yüz 2 filminin kazandığı veya aday gösterildiği başlıca ödüller şu şekildedir: En İyi Animasyon Filmi dalında Akademi (Oscar) Ödülü kazanmıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Ödül sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 animasyonu hakkında seyircilerin ve eleştirmenlerin genel görüşleri nelerdir?\n\nA) Suluboya arka plan çizimlerinin samimiyeti, Elvis Presley şarkılarıyla bezenmiş Hawaii atmosferi ve aile bağlarını masalsı kalıpların ötesinde, gerçekçi kardeş çatışmaları üzerinden ele alması bakımından son derece sıcak ve kült bir Disney klasiğidir.\nB) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nC) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\nD) Ergenliğe geçiş sancılarını, anne-kız ilişkisindeki beklenti çatışmalarını ve doğu kültürünü anime estetiğiyle birleştiren son derece eğlenceli, cesur ve özgün bir Pixar yapımıdır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Eleştirmenler ve izleyiciler Ters Yüz 2 filmini sanatsal ve teknik açıdan nasıl değerlendirmektedir?\n\nA) Görsel efekt ve fizik simülasyonu açısından teknik bir zirve olan yapım, göçmen ailelerin çocukları üzerindeki beklentilerini, uyum çabalarını ve kültürel önyargıları elementler metaforu üzerinden son derece zarif bir dille işler.\nB) Çizgi roman estetiğini 3D animasyonla harmanlayan görsel dili tam anlamıyla bir devrimdir. Yüksek temposu, muazzam müzikleri ve Miles Morales'in kendi potansiyelini keşfetme hikayesi animasyon tarihinin en parlak işlerinden biridir.\nC) Kaygı (Anxiety) mekanizmasını ve ergenlik psikolojisini soyut kavramları harika görsellerle somutlaştırarak anlatma başarısı gösteren son derece olgun ve duygu dolu bir devam halkasıdır.\nD) Okyanus suyunun çizim kalitesi, Polinezya kültürünün büyüleyici müzikleri (Lin-Manuel Miranda imzalı) ve Moana'nın kendi ayakları üzerinde duran güçlü kadın figürü anlatısı görsel ve işitsel bir şölendir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Yorum sorusu şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch filmindeki 'Ohana' kelimesi ne anlama gelmektedir?\n\nA) Stitch'in laboratuvarda üretildiği tüpün üzerindeki seri numarasının adıdır.\nB) Hawaii dilinde sörf tahtasına verilen geleneksel ve kutsal bir isimdir.\nC) 'Ohana', Hawaii kültüründe 'aile' anlamına gelir ve 'Aile kimseyi geride bırakmaz ya da unutmaz' felsefesini temsil eder.\nD) 'Ohana', uzaylıların galaktik konseyindeki en üst düzey yasal yetkiyi ifade eder.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul ve Örümcek-Adam: Örümcek Evreninde filmlerinin kazandığı ortak ve en prestijli sinema ödülü nedir?\n\nA) Her iki film de Cannes Film Festivali'nde 'Altın Palmiye' ödülünü paylaşmıştır.\nB) Uluslararası Animasyon Film Derneği'nden ödül alamamışlardır.\nC) Her iki film de kendi yıllarında Akademi Ödülleri'nde (Oscar) 'En İyi Animasyon Filmi' ödülünü kazanmıştır.\nD) Her iki yapım da En İyi Orijinal Senaryo dalında Oscar ödülü almıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental filminde fiziksel olarak birbirine dokunması imkansız olan iki ana karakter hangi elementleri temsil etmektedir?\n\nA) Her ikisi de farklı yoğunluktaki Hava elementindendir.\nB) Ana karakterlerden Ember 'Ateş' elementini, Wade ise 'Su' elementini temsil etmektedir.\nC) Biri Buz diğeri Metal elementini temsil eder.\nD) Karakterler Toprak ve Hava elementlerini temsil etmektedir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Pixar stüdyolarının ürettiği Kırmızı (Turning Red) ve Soul filmlerinin ortak tematik derinliği nedir?\n\nA) Her iki yapım da bireysel kimlik arayışını, toplumsal ve ailevi beklentilerin getirdiği baskıları ve insanın kendi öz benliğiyle barışma sürecini işler.\nB) Sadece müzik sektöründeki rekabeti ve konser organizasyonlarını anlatırlar.\nC) Tamamen uzay yolculuğunu ve galaktik savaşları ele alırlar.\nD) Deniz altındaki ekosistemi ve okyanus kirliliğini konu alırlar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde filminin görsel tarzını diğer geleneksel 3D animasyonlardan ayıran en temel sanatsal yenilik nedir?\n\nA) Sadece canlı oyuncuların dijital makyajla filme monte edilmesidir.\nB) Hiçbir bilgisayar teknolojisi kullanılmadan tamamen el yapımı kil kuklalarla çekilmesidir.\nC) Tamamen siyah-beyaz tonlarda çekilmiş ilk 3D animasyon olmasıdır.\nD) Film, klasik 3D bilgisayar animasyonunu geleneksel çizgi roman matbaa baskı teknikleri ve karesel çizim oranlarıyla harmanlamıştır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana filminde doğanın kalbini temsil eden sihirli nesne kime aittir?\n\nA) Yarı tanrı Maui'nin sihirli olta kancasının parçasıdır.\nB) Adadaki kabile reisinin antik taç mücevheridir.\nC) Sihirli taş yaşam tanrıçası Te Fiti'nin kalbidir.\nD) Okyanusun kralı olan dev yengecin kabuğudur.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 filminde Riley'nin zihnine ergenlikle birlikte katılan en baskın yeni duygu hangisidir?\n\nA) Zihne katılan yeni duygu sadece 'Mutluluk ve Coşku'dur.\nB) Doğrudan 'Tembellik ve Uyku' mekanizması devreye girer.\nC) Ergenlikle birlikte gelen en baskın yeni duygu 'Kaygı'dır (Anxiety).\nD) Hiçbir yeni duygu eklenmemiştir, eskiler devam eder.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Test setimizdeki filmlerden hangisi doğrudan bir çizgi roman uyarlamasıdır?\n\nA) Moana karakteri haftalık bir gazete çizgi romanından alınmıştır.\nB) Test setindeki filmlerden 'Örümcek-Adam: Örümcek Evreninde' Marvel Comics karakterlerine dayanan bir uyarlamadır.\nC) Soul filmi popüler bir süper kahraman çizgi romanından uyarlanmıştır.\nD) Elemental hikayesi klasik bir Japon mangasının uyarlamasıdır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch filmindeki ana karakterlerin yaşadığı coğrafi bölge veya ada neresidir?\n\nA) Hikaye Hawaii adalarında geçmektedir.\nB) Olaylar Alaska'nın karlı dağlarında geçmektedir.\nC) Mekan olarak Akdeniz'deki küçük bir ada seçilmiştir.\nD) Hikaye tamamen Avustralya'nın iç kesimlerinde yer alır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul filmindeki ana karakter olan Joe Gardner'ın hayalini kurduğu müzik türü nedir?\n\nA) Klasik batı müziği alanında opera söylemeyi hayal eder.\nB) Rock ve Heavy Metal müziği icra etmek istemektedir.\nC) Joe Gardner'ın en büyük hayali ünlü bir caz grubunda piyanistlik yapmaktır.\nD) Elektronik dans müzikleri üreten bir DJ olmaktır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı (Turning Red) filminde ana karakter Mei Lee, hangi duygusal durumda devasa bir kırmızı pandaya dönüşmektedir?\n\nA) Mei Lee, ne zaman aşırı heyecanlansa, öfkelense veya stres yapsa kırmızı pandaya dönüşmektedir.\nB) Sadece dolunay çıktığı gece havaya baktığında dönüşür.\nC) Yalnızca uyurken ve kabus gördüğünde dönüşüm geçirir.\nD) Suyla temasa geçtiği anda bu değişimi yaşar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana filminin ana kahramanı Moana'nın denize açılmasındaki temel motivasyon nedir?\n\nA) Deniz korsanlarıyla savaşıp hazine bulmaktır.\nB) Adasındaki bitki örtüsünün ve balık kaynaklarının kıtlığa uğramasını durdurmak ve Te Fiti'nin kalbini yerine ulaştırmaktır.\nC) Kayıp olan anne ve babasını okyanusun ötesinde aramaktır.\nD) Kendi krallığını genişletmek için yeni topraklar fethetmektir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Elemental filminde Element Şehri'nde bir araya gelen temel elementler ana akışta hangi toplumsal mesajı verir?\n\nA) Farklı kültürlerin ve sınıfların önyargıları aşarak bir arada uyum içinde yaşayabileceğini vurgular.\nB) Sadece su elementlerinin diğerlerinden üstün olduğunu gösterir.\nC) Teknolojinin doğaya karşı üstünlüğünü kanıtlar.\nD) Doğal kaynakların hızla tüketilmesi gerektiğini savunur.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 filminde eski duyguların (Neşe, Üzüntü vb.) yeni ergenlik duygularıyla mücadelesi neyi simgeler?\n\nA) Beyin hücrelerinin yaşlanma sürecini bilimsel olarak ele alır.\nB) Zihinsel bir hastalığın başlangıç evresini anlatır.\nC) Belleğin tamamen sıfırlanması olayını gösterir.\nD) Çocukluktan çıkış sürecindeki kimlik karmaşasını ve kişilik yapısının karmaşıklaşmasını simgeler.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Örümcek-Adam: Örümcek Evreninde filminde Miles Morales'e mentorluk eden ana alternatif karakter kimdir?\n\nA) Farklı bir evrenden gelen, yorgun ve deneyimsiz Peter B. Parker mentorluk etmektedir.\nB) Doğrudan Tony Stark (Iron Man) karakteri yardım eder.\nC) Hiçbir alternatif karakter filmde yer almaz.\nD) Klasik uzaylı kahramanlar ekibe liderlik yapar.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Soul filmindeki 'Great Before' (Öncesi Dünyası) kavramı neyi ifade eder?\n\nA) Sadece müzisyenlerin gittiği özel bir konser alanıdır.\nB) Tarih öncesi dinozor çağındaki ruhsal evrimi simgeler.\nC) Ruhların dünyaya gelmeden önce kişilik özelliklerini, ilgi alanlarını ve 'kıvılcımlarını' kazandığı yeri ifade eder.\nD) Dünya'daki yaşamın sona erdiği cennet veya cehennem katmanını anlatır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Lilo ve Stitch filminde Stitch karakterinin evrendeki resmi genetik adı ve numarası nedir?\n\nA) Stitch, galaktik kanunlara göre Deney 626 (Experiment 626) olarak bilinir.\nB) Gizli ajan kod adı Alpha-001'dir.\nC) Deney serisinde hiç numaralandırılmamıştır.\nD) Uzay konseyinin verdiği isim Mecha-Dog'dur.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "A",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "A"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Kırmızı (Turning Red) filminin geçtiği ana şehir ve kültürel arka plan neresidir?\n\nA) Avustralya'nın Sidney şehrinde yaşayan bir göçmen hikayesidir.\nB) Tamamen Çin'in başkenti Pekin'in kalbinde geçmektedir.\nC) Hikaye Kanada'nın Toronto şehrinde, Çin kökenli bir ailenin geleneksel kültürel atmosferinde geçer.\nD) Olaylar Amerika'nın New York kentindeki Çin mahallesindedir.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "C",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "C"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Moana filmindeki yarı tanrı Maui'nin en belirgin ve sihirli yeteneği sağlayan nesnesi nedir?\n\nA) Uçmasını sağlayan sihirli bir halısı bulunmaktadır.\nB)  Maui, şekil değiştirmesini sağlayan devasa sihirli bir olta kancasına (fishhook) sahiptir.\nC) Geleceği gören kristal küresi en önemli eşyasıdır.\nD) Doğrudan tanrısal güce sahip olup hiçbir nesne kullanmaz.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "B",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "B"
+  },
+  {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Ters Yüz 2 filminde Riley'nin benlik duyusunu (Sense of Self) koruyan ana sistemin adı nedir?\n\nA) Sadece rüya üretim stüdyolarıdır.\nB) Doğrudan bilinçaltı kabus vaultudur.\nC) Uzun süreli hafıza silme makinesidir.\nD) Benlik ağacı ve inanç sistemlerinin üretildiği merkezi duygu havuzu ve inanç akımlarıdır.\n\nLütfen sadece doğru seçeneğin harfini (A, B, C veya D) yaz."
+      },
+      {
+        "role": "assistant",
+        "thinking": "Manuel analitik soru şıklandırıldı.",
+        "content": "D",
+        "images": null,
+        "tool_calls": null
+      }
+    ],
+    "dogru_cevap": "D"
+  }
+]

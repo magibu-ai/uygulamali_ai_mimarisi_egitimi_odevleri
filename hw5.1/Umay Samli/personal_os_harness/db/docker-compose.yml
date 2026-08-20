@@ -1,0 +1,38 @@
+# Local-only stack: PostgreSQL is bound to loopback and the runtimes use
+# independent credentials for the planning and memory databases.
+name: personal-os-harness-db
+
+services:
+  postgres:
+    image: postgres:17-alpine@sha256:742f40ea20b9ff2ff31db5458d127452988a2164df9e17441e191f3b72252193
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_ADMIN_PASSWORD:-local-admin-only}
+      POSTGRES_DB: postgres
+      POSTGRES_INITDB_ARGS: --auth-host=scram-sha-256 --auth-local=trust
+      PLANNING_MIGRATOR_PASSWORD: ${PLANNING_MIGRATOR_PASSWORD:-planning-migrator-local-only}
+      PLANNING_RUNTIME_PASSWORD: ${PLANNING_RUNTIME_PASSWORD:-change-me}
+      MEMORY_MIGRATOR_PASSWORD: ${MEMORY_MIGRATOR_PASSWORD:-memory-migrator-local-only}
+      MEMORY_RUNTIME_PASSWORD: ${MEMORY_RUNTIME_PASSWORD:-change-me}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init/001_initialize.sh:/docker-entrypoint-initdb.d/001_initialize.sh:ro
+      - ./migrations:/opt/personal-os-db/migrations:ro
+      - ./verify.sql:/opt/personal-os-db/verify.sql:ro
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "pg_isready -U $${POSTGRES_USER} -d postgres && psql -U $${POSTGRES_USER} -d personal_os_planning -tAc \"SELECT to_regclass('public.settings') IS NOT NULL\" | grep -qx t && psql -U $${POSTGRES_USER} -d personal_os_memory -tAc \"SELECT to_regclass('public.experiences') IS NOT NULL\" | grep -qx t",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 15s
+    shm_size: 128mb
+    stop_grace_period: 30s
+
+volumes:
+  postgres_data:

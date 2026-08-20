@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Vektör veritabanı (veri_indeksle.py ile yeniden üretilebilir) — commit edilmez
+chroma_db/
+
+# HF / model önbellekleri
+.cache/
+
+# macOS
+.DS_Store

@@ -1,0 +1,39 @@
+{%- for message in messages %}
+{%- if loop.first and message['role'] != 'system' -%}
+<|im_start|>system
+{%- if tools %}
+Kullanılabilir araçlar:
+{{ tools | tojson }}
+{%- endif %}
+<|im_end|>
+{% endif -%}
+{%- if message['role'] == 'system' -%}
+<|im_start|>system
+{{ message['content'] }}
+{%- if tools %}
+Kullanılabilir araçlar:
+{{ tools | tojson }}
+{%- endif %}
+<|im_end|>
+{% elif message['role'] == 'user' -%}
+<|im_start|>user
+{{ message['content'] }}<|im_end|>
+{% elif message['role'] == 'assistant' -%}
+<|im_start|>assistant
+{%- if message.get('content') %}{{ message['content'] }}{% endif -%}
+{%- for call in message.get('tool_calls', []) %}
+<tool_call>
+{{ call['function'] | tojson }}
+</tool_call>
+{%- endfor %}
+<|im_end|>
+{% elif message['role'] == 'tool' -%}
+<|im_start|>tool
+<tool_response>
+{{ message['content'] }}
+</tool_response><|im_end|>
+{% endif -%}
+{%- endfor %}
+{%- if add_generation_prompt -%}
+<|im_start|>assistant
+{%- endif %}

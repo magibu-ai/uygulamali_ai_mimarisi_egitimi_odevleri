@@ -1,0 +1,63 @@
+{{ bos_token }}
+{%- set ns = namespace(has_tools=false) -%}
+{%- if tools is defined and tools|length > 0 -%}
+    {%- set ns.has_tools = true -%}
+{%- endif -%}
+
+{%- if messages[0]['role'] == 'system' -%}
+    {{- '<|system|>\n' + messages[0]['content'] | trim -}}
+    {%- if ns.has_tools -%}
+        {{- '\n\nKullanılabilir Fonksiyonlar:\n' -}}
+        {%- for tool in tools -%}
+            {{- '<tool>\n' -}}
+            {{- 'Fonksiyon Adı: ' + tool['function']['name'] + '\n' -}}
+            {{- 'Açıklama: ' + tool['function']['description'] + '\n' -}}
+            {{- 'Parametreler:\n' -}}
+            {%- for prop_name, prop_data in tool['function']['parameters']['properties'].items() -%}
+                {{- '  - ' + prop_name + ': ' + prop_data['description'] + ' (Tip: ' + prop_data['type'] + ')\n' -}}
+            {%- endfor -%}
+            {{- '</tool>\n' -}}
+        {%- endfor -%}
+    {%- endif -%}
+    {{- '<|end|>\n' -}}
+    {%- set loop_messages = messages[1:] -%}
+{%- else -%}
+    {%- set loop_messages = messages -%}
+    {%- if ns.has_tools -%}
+        {{- '<|system|>\nKullanılabilir Fonksiyonlar:\n' -}}
+        {%- for tool in tools -%}
+            {{- '<tool>\n' -}}
+            {{- 'Fonksiyon Adı: ' + tool['function']['name'] + '\n' -}}
+            {{- 'Açıklama: ' + tool['function']['description'] + '\n' -}}
+            {{- 'Parametreler:\n' -}}
+            {%- for prop_name, prop_data in tool['function']['parameters']['properties'].items() -%}
+                {{- '  - ' + prop_name + ': ' + prop_data['description'] + ' (Tip: ' + prop_data['type'] + ')\n' -}}
+            {%- endfor -%}
+            {{- '</tool>\n' -}}
+        {%- endfor -%}
+        {{- '<|end|>\n' -}}
+    {%- endif -%}
+{%- endif -%}
+
+{%- for message in loop_messages -%}
+    {%- if message['role'] == 'user' -%}
+        {{- '<|user|>\n' + message['content'] | trim + '<|end|>\n' -}}
+    {%- elif message['role'] == 'assistant' -%}
+        {{- '<|assistant|>\n' -}}
+        {%- if message['content'] is defined and message['content'] is not none -%}
+            {{- message['content'] | trim -}}
+        {%- endif -%}
+        {%- if message['tool_calls'] is defined and message['tool_calls']|length > 0 -%}
+            {%- for tool_call in message['tool_calls'] -%}
+                {{- '\n<tool_call>\n{"name": "' + tool_call['function']['name'] + '", "arguments": ' + tool_call['function']['arguments'] | string + '}\n</tool_call>' -}}
+            {%- endfor -%}
+        {%- endif -%}
+        {{- '<|end|>\n' -}}
+    {%- elif message['role'] == 'tool' -%}
+        {{- '<|tool_response|>\n{"name": "' + message['name'] + '", "content": ' + (message['content'] | string) + '}\n<|end|>\n' -}}
+    {%- endif -%}
+{%- endfor -%}
+
+{%- if add_generation_prompt -%}
+    {{- '<|assistant|>\n' -}}
+{%- endif -%}

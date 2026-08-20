@@ -1,0 +1,25 @@
+{
+  "_comment": "MIHENK disiplin kaydı. slug: klasör adı; abbr: id içindeki kısaltma; name_tr/name_en: kanonik adlar. 'discipline' alanı her zaman name_tr değeridir (dilden bağımsız kanonik değer).",
+  "disciplines": [
+    { "slug": "matematik",               "abbr": "MATH",    "name_tr": "Matematik",              "name_en": "Mathematics" },
+    { "slug": "mantik",                  "abbr": "LOGIC",   "name_tr": "Mantık",                 "name_en": "Logic" },
+    { "slug": "programlama",             "abbr": "PROG",    "name_tr": "Programlama",            "name_en": "Programming" },
+    { "slug": "debugging",               "abbr": "DEBUG",   "name_tr": "Debugging",              "name_en": "Debugging" },
+    { "slug": "turkce-dil-bilgisi",      "abbr": "TRGRAM",  "name_tr": "Türkçe Dil Bilgisi",     "name_en": "Turkish Grammar" },
+    { "slug": "ingilizce-dil-bilgisi",   "abbr": "ENGRAM",  "name_tr": "İngilizce Dil Bilgisi",  "name_en": "English Grammar" },
+    { "slug": "tarih",                   "abbr": "HIST",    "name_tr": "Tarih",                  "name_en": "History" },
+    { "slug": "cografya",                "abbr": "GEO",     "name_tr": "Coğrafya",               "name_en": "Geography" },
+    { "slug": "fizik",                   "abbr": "PHYS",    "name_tr": "Fizik",                  "name_en": "Physics" },
+    { "slug": "kimya",                   "abbr": "CHEM",    "name_tr": "Kimya",                  "name_en": "Chemistry" },
+    { "slug": "biyoloji",                "abbr": "BIO",     "name_tr": "Biyoloji",               "name_en": "Biology" },
+    { "slug": "hukuk",                   "abbr": "LAW",     "name_tr": "Hukuk",                  "name_en": "Law" },
+    { "slug": "ekonomi",                 "abbr": "ECON",    "name_tr": "Ekonomi",                "name_en": "Economics" },
+    { "slug": "felsefe",                 "abbr": "PHIL",    "name_tr": "Felsefe",                "name_en": "Philosophy" },
+    { "slug": "gunluk-muhakeme",         "abbr": "COMMON",  "name_tr": "Günlük Muhakeme",        "name_en": "Everyday Reasoning" },
+    { "slug": "sayisal-akil-yurutme",    "abbr": "NUM",     "name_tr": "Sayısal Akıl Yürütme",   "name_en": "Numerical Reasoning" },
+    { "slug": "tablo-veri-yorumu",       "abbr": "TABLE",   "name_tr": "Tablo ve Veri Yorumu",   "name_en": "Table & Data Interpretation" },
+    { "slug": "grafik-analizi",          "abbr": "GRAPH",   "name_tr": "Grafik Analizi",         "name_en": "Chart Analysis" },
+    { "slug": "cok-adimli-muhakeme",     "abbr": "MULTI",   "name_tr": "Çok Adımlı Muhakeme",    "name_en": "Multi-step Reasoning" },
+    { "slug": "bilimsel-makale-anlama",  "abbr": "SCIREAD", "name_tr": "Bilimsel Makale Anlama", "name_en": "Scientific Paper Comprehension" }
+  ]
+}

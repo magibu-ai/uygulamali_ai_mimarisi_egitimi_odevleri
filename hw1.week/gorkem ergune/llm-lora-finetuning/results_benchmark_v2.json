@@ -1,0 +1,833 @@
+{
+  "base": {
+    "tag": "BASE",
+    "n": 80,
+    "overall": 75.0,
+    "by_language": {
+      "en": 67.5,
+      "tr": 82.5
+    },
+    "by_format": {
+      "multiple_choice": 87.5,
+      "short_answer": 62.5
+    }
+  },
+  "finetuned": {
+    "tag": "FINETUNED",
+    "n": 80,
+    "overall": 67.5,
+    "by_language": {
+      "en": 60.0,
+      "tr": 75.0
+    },
+    "by_format": {
+      "multiple_choice": 85.0,
+      "short_answer": 50.0
+    }
+  },
+  "overall_delta": -7.5,
+  "base_details": [
+    {
+      "id": "MIHENK-BIO-EN-L3-0007",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-BIO-EN-L4-0019",
+      "score": 1,
+      "out": "Y"
+    },
+    {
+      "id": "MIHENK-BIO-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-BIO-TR-L2-0014",
+      "score": 1,
+      "out": "Mitokondri"
+    },
+    {
+      "id": "MIHENK-CHEM-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-CHEM-EN-L4-0019",
+      "score": 0,
+      "out": "One mole"
+    },
+    {
+      "id": "MIHENK-CHEM-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-CHEM-TR-L2-0014",
+      "score": 0,
+      "out": "İki hidrojen atomu"
+    },
+    {
+      "id": "MIHENK-COMMON-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-COMMON-EN-L4-0019",
+      "score": 0,
+      "out": "2 hours and 30 minutes"
+    },
+    {
+      "id": "MIHENK-COMMON-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-COMMON-TR-L2-0014",
+      "score": 1,
+      "out": "24 TL"
+    },
+    {
+      "id": "MIHENK-DEBUG-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-DEBUG-EN-L4-0019",
+      "score": 0,
+      "out": "Base case condition"
+    },
+    {
+      "id": "MIHENK-DEBUG-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-DEBUG-TR-L2-0014",
+      "score": 0,
+      "out": "a.copy()"
+    },
+    {
+      "id": "MIHENK-ECON-EN-L3-0007",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-ECON-EN-L4-0019",
+      "score": 1,
+      "out": "Elastic"
+    },
+    {
+      "id": "MIHENK-ECON-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-ECON-TR-L2-0014",
+      "score": 1,
+      "out": "220 TL"
+    },
+    {
+      "id": "MIHENK-ENGRAM-EN-L3-0007",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-ENGRAM-EN-L4-0019",
+      "score": 1,
+      "out": "Adverb"
+    },
+    {
+      "id": "MIHENK-ENGRAM-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-ENGRAM-TR-L2-0014",
+      "score": 1,
+      "out": "written"
+    },
+    {
+      "id": "MIHENK-GEO-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-GEO-EN-L4-0019",
+      "score": 1,
+      "out": "4 m/km"
+    },
+    {
+      "id": "MIHENK-GEO-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-GEO-TR-L2-0014",
+      "score": 1,
+      "out": "Ağrı Dağı"
+    },
+    {
+      "id": "MIHENK-GRAPH-EN-L3-0007",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-GRAPH-EN-L4-0019",
+      "score": 0,
+      "out": "Two thousand four hundred dollars"
+    },
+    {
+      "id": "MIHENK-GRAPH-TR-L1-0001",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-GRAPH-TR-L2-0014",
+      "score": 1,
+      "out": "180 mm"
+    },
+    {
+      "id": "MIHENK-HIST-EN-L3-0007",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-HIST-EN-L4-0019",
+      "score": 1,
+      "out": "476"
+    },
+    {
+      "id": "MIHENK-HIST-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-HIST-TR-L2-0014",
+      "score": 1,
+      "out": "On sekizinci yüzyıl"
+    },
+    {
+      "id": "MIHENK-LAW-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-LAW-EN-L4-0019",
+      "score": 1,
+      "out": "No"
+    },
+    {
+      "id": "MIHENK-LAW-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-LAW-TR-L2-0014",
+      "score": 1,
+      "out": "Hayır"
+    },
+    {
+      "id": "MIHENK-LOGIC-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-LOGIC-EN-L4-0019",
+      "score": 0,
+      "out": "One"
+    },
+    {
+      "id": "MIHENK-LOGIC-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-LOGIC-TR-L2-0014",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-MATH-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-MATH-EN-L4-0019",
+      "score": 0,
+      "out": "83"
+    },
+    {
+      "id": "MIHENK-MATH-TR-L1-0001",
+      "score": 0,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-MATH-TR-L2-0014",
+      "score": 1,
+      "out": "25"
+    },
+    {
+      "id": "MIHENK-MULTI-EN-L3-0007",
+      "score": 0,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-MULTI-EN-L4-0019",
+      "score": 0,
+      "out": "15 minutes"
+    },
+    {
+      "id": "MIHENK-MULTI-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-MULTI-TR-L2-0014",
+      "score": 1,
+      "out": "120 parça"
+    },
+    {
+      "id": "MIHENK-NUM-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-NUM-EN-L4-0019",
+      "score": 0,
+      "out": "32 years"
+    },
+    {
+      "id": "MIHENK-NUM-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-NUM-TR-L2-0014",
+      "score": 0,
+      "out": "210"
+    },
+    {
+      "id": "MIHENK-PHIL-EN-L3-0007",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-PHIL-EN-L4-0019",
+      "score": 1,
+      "out": "Yes"
+    },
+    {
+      "id": "MIHENK-PHIL-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-PHIL-TR-L2-0014",
+      "score": 0,
+      "out": "Dedüktif"
+    },
+    {
+      "id": "MIHENK-PHYS-EN-L3-0007",
+      "score": 0,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-PHYS-EN-L4-0019",
+      "score": 1,
+      "out": "6 m/s"
+    },
+    {
+      "id": "MIHENK-PHYS-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-PHYS-TR-L2-0014",
+      "score": 1,
+      "out": "20 kg·m/s"
+    },
+    {
+      "id": "MIHENK-PROG-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-PROG-EN-L4-0019",
+      "score": 0,
+      "out": "Four"
+    },
+    {
+      "id": "MIHENK-PROG-TR-L1-0001",
+      "score": 0,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-PROG-TR-L2-0014",
+      "score": 1,
+      "out": "4"
+    },
+    {
+      "id": "MIHENK-SCIREAD-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-SCIREAD-EN-L4-0019",
+      "score": 1,
+      "out": "40"
+    },
+    {
+      "id": "MIHENK-SCIREAD-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-SCIREAD-TR-L2-0014",
+      "score": 1,
+      "out": "Hipotez"
+    },
+    {
+      "id": "MIHENK-TABLE-EN-L3-0007",
+      "score": 0,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-TABLE-EN-L4-0019",
+      "score": 1,
+      "out": "7A"
+    },
+    {
+      "id": "MIHENK-TABLE-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-TABLE-TR-L2-0014",
+      "score": 1,
+      "out": "480"
+    },
+    {
+      "id": "MIHENK-TRGRAM-EN-L3-0007",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-TRGRAM-EN-L4-0019",
+      "score": 0,
+      "out": "Negative"
+    },
+    {
+      "id": "MIHENK-TRGRAM-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-TRGRAM-TR-L2-0014",
+      "score": 0,
+      "out": "Zarf-fiil (ulaç)"
+    }
+  ],
+  "finetuned_details": [
+    {
+      "id": "MIHENK-BIO-EN-L3-0007",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-BIO-EN-L4-0019",
+      "score": 1,
+      "out": "Y"
+    },
+    {
+      "id": "MIHENK-BIO-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-BIO-TR-L2-0014",
+      "score": 0,
+      "out": "Mitokondri — hücresel solunum ile ATP üretir."
+    },
+    {
+      "id": "MIHENK-CHEM-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-CHEM-EN-L4-0019",
+      "score": 0,
+      "out": "One mole."
+    },
+    {
+      "id": "MIHENK-CHEM-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-CHEM-TR-L2-0014",
+      "score": 0,
+      "out": "İki hidrojen atomu ve bir oksijen."
+    },
+    {
+      "id": "MIHENK-COMMON-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-COMMON-EN-L4-0019",
+      "score": 0,
+      "out": "2 hours 15 minutes or 2.25 hours."
+    },
+    {
+      "id": "MIHENK-COMMON-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-COMMON-TR-L2-0014",
+      "score": 0,
+      "out": "24 TL, 4 TL x 6 = 24."
+    },
+    {
+      "id": "MIHENK-DEBUG-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-DEBUG-EN-L4-0019",
+      "score": 0,
+      "out": "base case and memoization"
+    },
+    {
+      "id": "MIHENK-DEBUG-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-DEBUG-TR-L2-0014",
+      "score": 1,
+      "out": "copy()"
+    },
+    {
+      "id": "MIHENK-ECON-EN-L3-0007",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-ECON-EN-L4-0019",
+      "score": 1,
+      "out": "elastic"
+    },
+    {
+      "id": "MIHENK-ECON-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-ECON-TR-L2-0014",
+      "score": 1,
+      "out": "220 TL"
+    },
+    {
+      "id": "MIHENK-ENGRAM-EN-L3-0007",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-ENGRAM-EN-L4-0019",
+      "score": 1,
+      "out": "adverb"
+    },
+    {
+      "id": "MIHENK-ENGRAM-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-ENGRAM-TR-L2-0014",
+      "score": 1,
+      "out": "written"
+    },
+    {
+      "id": "MIHENK-GEO-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-GEO-EN-L4-0019",
+      "score": 0,
+      "out": "1200/300 = 4"
+    },
+    {
+      "id": "MIHENK-GEO-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-GEO-TR-L2-0014",
+      "score": 1,
+      "out": "Ağrı Dağı"
+    },
+    {
+      "id": "MIHENK-GRAPH-EN-L3-0007",
+      "score": 0,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-GRAPH-EN-L4-0019",
+      "score": 1,
+      "out": "2400 goes to food."
+    },
+    {
+      "id": "MIHENK-GRAPH-TR-L1-0001",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-GRAPH-TR-L2-0014",
+      "score": 1,
+      "out": "180 mm"
+    },
+    {
+      "id": "MIHENK-HIST-EN-L3-0007",
+      "score": 1,
+      "out": "A)"
+    },
+    {
+      "id": "MIHENK-HIST-EN-L4-0019",
+      "score": 1,
+      "out": "476 AD"
+    },
+    {
+      "id": "MIHENK-HIST-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-HIST-TR-L2-0014",
+      "score": 1,
+      "out": "18. yüzyıl"
+    },
+    {
+      "id": "MIHENK-LAW-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-LAW-EN-L4-0019",
+      "score": 0,
+      "out": "No, only defined crimes can be punished."
+    },
+    {
+      "id": "MIHENK-LAW-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-LAW-TR-L2-0014",
+      "score": 1,
+      "out": "hayır"
+    },
+    {
+      "id": "MIHENK-LOGIC-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-LOGIC-EN-L4-0019",
+      "score": 0,
+      "out": "Two are knights, one is a knave."
+    },
+    {
+      "id": "MIHENK-LOGIC-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-LOGIC-TR-L2-0014",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-MATH-EN-L3-0007",
+      "score": 0,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-MATH-EN-L4-0019",
+      "score": 0,
+      "out": "167"
+    },
+    {
+      "id": "MIHENK-MATH-TR-L1-0001",
+      "score": 0,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-MATH-TR-L2-0014",
+      "score": 0,
+      "out": "23"
+    },
+    {
+      "id": "MIHENK-MULTI-EN-L3-0007",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-MULTI-EN-L4-0019",
+      "score": 0,
+      "out": "15 minutes"
+    },
+    {
+      "id": "MIHENK-MULTI-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-MULTI-TR-L2-0014",
+      "score": 1,
+      "out": "120 parça."
+    },
+    {
+      "id": "MIHENK-NUM-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-NUM-EN-L4-0019",
+      "score": 0,
+      "out": "32 years."
+    },
+    {
+      "id": "MIHENK-NUM-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-NUM-TR-L2-0014",
+      "score": 1,
+      "out": "21"
+    },
+    {
+      "id": "MIHENK-PHIL-EN-L3-0007",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-PHIL-EN-L4-0019",
+      "score": 0,
+      "out": "Yes, a single black swan refutes the generalization."
+    },
+    {
+      "id": "MIHENK-PHIL-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-PHIL-TR-L2-0014",
+      "score": 0,
+      "out": "Tümdengelim"
+    },
+    {
+      "id": "MIHENK-PHYS-EN-L3-0007",
+      "score": 0,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-PHYS-EN-L4-0019",
+      "score": 1,
+      "out": "speed is 6 m/s"
+    },
+    {
+      "id": "MIHENK-PHYS-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-PHYS-TR-L2-0014",
+      "score": 1,
+      "out": "20 kg·m/s"
+    },
+    {
+      "id": "MIHENK-PROG-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-PROG-EN-L4-0019",
+      "score": 0,
+      "out": "27 is 110111, four 1-bits."
+    },
+    {
+      "id": "MIHENK-PROG-TR-L1-0001",
+      "score": 0,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-PROG-TR-L2-0014",
+      "score": 0,
+      "out": "3"
+    },
+    {
+      "id": "MIHENK-SCIREAD-EN-L3-0007",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-SCIREAD-EN-L4-0019",
+      "score": 1,
+      "out": "40"
+    },
+    {
+      "id": "MIHENK-SCIREAD-TR-L1-0001",
+      "score": 1,
+      "out": "A"
+    },
+    {
+      "id": "MIHENK-SCIREAD-TR-L2-0014",
+      "score": 1,
+      "out": "hipotez"
+    },
+    {
+      "id": "MIHENK-TABLE-EN-L3-0007",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-TABLE-EN-L4-0019",
+      "score": 0,
+      "out": "7A (66.7%) > 7B (62.5%)"
+    },
+    {
+      "id": "MIHENK-TABLE-TR-L1-0001",
+      "score": 1,
+      "out": "B"
+    },
+    {
+      "id": "MIHENK-TABLE-TR-L2-0014",
+      "score": 1,
+      "out": "480"
+    },
+    {
+      "id": "MIHENK-TRGRAM-EN-L3-0007",
+      "score": 1,
+      "out": "C"
+    },
+    {
+      "id": "MIHENK-TRGRAM-EN-L4-0019",
+      "score": 0,
+      "out": "Both forms are possible."
+    },
+    {
+      "id": "MIHENK-TRGRAM-TR-L1-0001",
+      "score": 0,
+      "out": "D"
+    },
+    {
+      "id": "MIHENK-TRGRAM-TR-L2-0014",
+      "score": 0,
+      "out": "zarf-fiil, durum belirten"
+    }
+  ]
+}

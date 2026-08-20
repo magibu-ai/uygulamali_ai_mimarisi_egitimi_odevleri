@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6059669"
+    android:padding="12dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/widget_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🕌 Ezan Vakti - İstanbul"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/widget_next_vakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sıradaki Vakte Kalan Süre"
+        android:textColor="#ECFDF5"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"/>
+
+    <Chronometer
+        android:id="@+id/widget_chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:countDown="true"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/widget_hadis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📖 Günün Hadisi: 'Kolaylaştırınız, zorlaştırmayınız; müjdeleyiniz, nefret ettirmeyiniz.' (Buhârî)"
+        android:textColor="#F7F4D5"
+        android:textSize="11sp"
+        android:textStyle="italic"
+        android:maxLines="10"
+        android:gravity="center"
+        android:layout_marginTop="6dp"/>
+</LinearLayout>

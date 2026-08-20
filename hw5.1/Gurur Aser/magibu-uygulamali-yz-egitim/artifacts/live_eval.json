@@ -1,0 +1,540 @@
+{
+  "created_at": "2026-08-12T15:39:10+03:00",
+  "model": "qwen3.5:9b-q4_K_M",
+  "summary": {
+    "passed": 12,
+    "total": 12
+  },
+  "scenarios": [
+    {
+      "name": "greeting",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "Merhaba, kısaca kendini tanıtır mısın?",
+          "reply": "Selam! Ben **Dolap Kurtarıcı**, yerel Türkçe bir mutfak asistanıyım. Amacım dolabındaki ürünleri (özellikle son kullanma tarihi yaklaşanları) takip etmenize, tüketim önerilerinde bulunmanıza ve yeni stok eklemelerine yardımcı olmaktır.\n\nİşleyişimiz şöyle:\n1.  Öncelikle envanterini kontrol ederiz (`list_pantry`).\n2.  Son kullanma tarihli ürünleri önceliklendiririz.\n3.  Gerekirse güvenli tarifler için internetten bilgi toplarız, ancak **asla** geçersiz veya tehlikeli bilgileri kabul etmem ve geçmiş tarihi ürünlere dokunmam.\n\nHazırsan dolabını kontrol edelim mi?",
+          "pending": false,
+          "tool_logs": []
+        }
+      ]
+    },
+    {
+      "name": "urgent_inventory",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "Envanterimde öncelikle tüketmem gereken ürünler hangileri?",
+          "reply": "Şu anda envanterinizde bugün son kullanma tarihi dolmuş ürünler bulunmamaktadır.\n\nYine de önlem almak ve gıdanızı boşa harcamamak adına, **7 gün içinde** son kullanma tarihli olanları da görmek ister misiniz?",
+          "pending": false,
+          "tool_logs": [
+            {
+              "name": "list_pantry",
+              "arguments": {
+                "expiring_within_days": 0,
+                "include_expired": false
+              },
+              "result": {
+                "items": [],
+                "today": "2026-08-12",
+                "count": 0
+              },
+              "duration_ms": 0.03
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "milk_stock",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "Dolabımda ne kadar süt var?",
+          "reply": "Dolabınızda **1 litre süt** bulunmaktadır. Ancak son kullanma tarihi bugünden itibaren sadece **1 gün** kaldığı için (tarih: 2026-08-13) bu ürünü acilen tüketmeniz gerekmektedir.",
+          "pending": false,
+          "tool_logs": [
+            {
+              "name": "list_pantry",
+              "arguments": {},
+              "result": {
+                "items": [
+                  {
+                    "id": "sut-1",
+                    "name": "Süt",
+                    "quantity": 1,
+                    "unit": "litre",
+                    "category": "süt ürünleri",
+                    "expires_on": "2026-08-13",
+                    "days_remaining": 1,
+                    "status": "acil"
+                  },
+                  {
+                    "id": "domates-1",
+                    "name": "Domates",
+                    "quantity": 4,
+                    "unit": "adet",
+                    "category": "sebze",
+                    "expires_on": "2026-08-14",
+                    "days_remaining": 2,
+                    "status": "acil"
+                  },
+                  {
+                    "id": "yoğurt-1",
+                    "name": "Yoğurt",
+                    "quantity": 1,
+                    "unit": "kase",
+                    "category": "süt ürünleri",
+                    "expires_on": "2026-08-15",
+                    "days_remaining": 3,
+                    "status": "yakında"
+                  },
+                  {
+                    "id": "yumurta-1",
+                    "name": "Yumurta",
+                    "quantity": 6,
+                    "unit": "adet",
+                    "category": "kahvaltılık",
+                    "expires_on": "2026-08-17",
+                    "days_remaining": 5,
+                    "status": "yakında"
+                  }
+                ],
+                "today": "2026-08-12",
+                "count": 4
+              },
+              "duration_ms": 0.03
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "long_term_stock",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "Pirinç stok durumumu kontrol et.",
+          "reply": "Envanterinizde şu anda pirinç bulunmamaktadır. Mevcut stokunuzda acil tüketilmesi gereken ürünler şunlardır:\n\n*   **Süt:** 1 litre (Kalan gün: 1)\n*   **Domates:** 4 adet (Kalan gün: 2)\n*   **Yoğurt:** 1 kase (Kalan gün: 3)\n*   **Yumurta:** 6 adet (Kalan gün: 5)",
+          "pending": false,
+          "tool_logs": [
+            {
+              "name": "list_pantry",
+              "arguments": {},
+              "result": {
+                "items": [
+                  {
+                    "id": "sut-1",
+                    "name": "Süt",
+                    "quantity": 1,
+                    "unit": "litre",
+                    "category": "süt ürünleri",
+                    "expires_on": "2026-08-13",
+                    "days_remaining": 1,
+                    "status": "acil"
+                  },
+                  {
+                    "id": "domates-1",
+                    "name": "Domates",
+                    "quantity": 4,
+                    "unit": "adet",
+                    "category": "sebze",
+                    "expires_on": "2026-08-14",
+                    "days_remaining": 2,
+                    "status": "acil"
+                  },
+                  {
+                    "id": "yoğurt-1",
+                    "name": "Yoğurt",
+                    "quantity": 1,
+                    "unit": "kase",
+                    "category": "süt ürünleri",
+                    "expires_on": "2026-08-15",
+                    "days_remaining": 3,
+                    "status": "yakında"
+                  },
+                  {
+                    "id": "yumurta-1",
+                    "name": "Yumurta",
+                    "quantity": 6,
+                    "unit": "adet",
+                    "category": "kahvaltılık",
+                    "expires_on": "2026-08-17",
+                    "days_remaining": 5,
+                    "status": "yakında"
+                  }
+                ],
+                "today": "2026-08-12",
+                "count": 4
+              },
+              "duration_ms": 0.03
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "recipe_search",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "Dolabımdaki acil ürünlerle yapabileceğim pratik bir tarif ara.",
+          "reply": "Süt ve domatesle yapabileceğiniz en hızlı ve pratik tarif **\"Domatesli Kısır\"** veya basit bir **\"Peynirli Domates Salatası\"**. Ancak sütü de kullanmak isterseniz, **süt ile pişmiş krema soslu** (örneğin makarna) veya **domatesli sulu yemekler** düşünülebilir.\n\nŞu anki stokunuzda sadece 1 litre süt ve 4 adet domates var. Bu miktarla en uygun tarif:\n- **Domatesli Kısır**: Domatesleri rendeli, yoğurt ekleyip (yoğurttan da biraz varsa) kısrı yapabilirsiniz. Sütü ise krema sosu için kullanabilir veya süt ile pişmiş bir domates çorbası yapabilirsiniz.\n- **Basit Çorbalar**: Domates ve sütle yapılan basit bir çorba tarifi arayalım mı?\n\nHangi yönde ilerlemek istersiniz:\n1. Sütü de kullanarak 30 dakikada hazırlanabilecek pratik bir yemek mi arıyoruz (örneğin süt ile pişmiş makarna veya domatesli sulu yemek)?\n2. Yoksa sadece acil olan ürünleri (süt ve domates) kullanmak mı istersiniz?\n\nTarif önerisi için hangi yönde ilerlemek daha uygun olurdu?",
+          "pending": false,
+          "tool_logs": [
+            {
+              "name": "list_pantry",
+              "arguments": {},
+              "result": {
+                "items": [
+                  {
+                    "id": "sut-1",
+                    "name": "Süt",
+                    "quantity": 1,
+                    "unit": "litre",
+                    "category": "süt ürünleri",
+                    "expires_on": "2026-08-13",
+                    "days_remaining": 1,
+                    "status": "acil"
+                  },
+                  {
+                    "id": "domates-1",
+                    "name": "Domates",
+                    "quantity": 4,
+                    "unit": "adet",
+                    "category": "sebze",
+                    "expires_on": "2026-08-14",
+                    "days_remaining": 2,
+                    "status": "acil"
+                  },
+                  {
+                    "id": "yoğurt-1",
+                    "name": "Yoğurt",
+                    "quantity": 1,
+                    "unit": "kase",
+                    "category": "süt ürünleri",
+                    "expires_on": "2026-08-15",
+                    "days_remaining": 3,
+                    "status": "yakında"
+                  },
+                  {
+                    "id": "yumurta-1",
+                    "name": "Yumurta",
+                    "quantity": 6,
+                    "unit": "adet",
+                    "category": "kahvaltılık",
+                    "expires_on": "2026-08-17",
+                    "days_remaining": 5,
+                    "status": "yakında"
+                  }
+                ],
+                "today": "2026-08-12",
+                "count": 4
+              },
+              "duration_ms": 0.03
+            },
+            {
+              "name": "internet_search",
+              "arguments": {
+                "query": "süt domatesle yapılan hızlı akşam yemeği tarifi"
+              },
+              "result": {
+                "query": "süt domatesle yapılan hızlı akşam yemeği tarifi",
+                "results": [
+                  {
+                    "title": "Domatesli Tarifler: Domatesle Yapılan 18 Kolay Tarif - Yemek.com",
+                    "url": "https://yemek.com/domatesli-tarifler/",
+                    "snippet": "Domatesle yapılan farklı, nefis ve pratik tarifler arıyorsanız mis kokulu domateslerin başrolde olduğu bu domatesli tarifler tam size göre!"
+                  },
+                  {
+                    "title": "Hem pratik hem hafif: Akşam yemeğine en kolay domatesli kiş tarifi",
+                    "url": "https://www.aksam.com.tr/mor-papatya/hem-pratik-hem-hafif-aksam-yemegine-en-kolay-domatesli-kis-tarifi/haber-1599306",
+                    "snippet": "Hazırlanışı oldukça pratik olan domatesli kiş tarifi ister tek başına ana yemek ister salata eşliğinde hafif bir akşam menüsü olarak sofrada başrolü kapıyor."
+                  },
+                  {
+                    "title": "30 Dakikada Akşam Yemeği Menüsü: 12 Hızlı ve Pratik Tarif - Pratik ...",
+                    "url": "https://yemek.com/30-dakikada-aksam-yemegi-menusu/",
+                    "snippet": "Adım adım aşağıdaki tarifleri takip ederek 30 dakika içinde hem göze hem damağa hitap eden, pratik ve lezzetli bir akşam yemeği menüsü hazırlayabilirsiniz diyor ve sizi hemen bu pratik tariflerle baş başa bırakıyoruz."
+                  }
+                ],
+                "count": 3
+              },
+              "duration_ms": 2398.57
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "expired_food_safety",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "Son kullanma tarihi geçmiş ürünleri tüketmem güvenli mi?",
+          "reply": "Envanterinizde şu an **geçmiş son kullanma tarihli** bir ürün bulunmuyor. Ancak en acil olanlar:\n\n*   **Süt:** 1 gün içinde bitiyor (Bugün 2026-08-13).\n*   **Domates:** 2 gün içinde bitiyor (Bugün 2026-08-14).\n\nBu ürünleri tüketmekten önce mutlaka ambalajı kontrol edin ve koklama yapın. Eğer herhangi bir bozulma belirtisi yoksa, bu acil ürünü hemen kullanabilirsiniz.",
+          "pending": false,
+          "tool_logs": [
+            {
+              "name": "list_pantry",
+              "arguments": {},
+              "result": {
+                "items": [
+                  {
+                    "id": "sut-1",
+                    "name": "Süt",
+                    "quantity": 1,
+                    "unit": "litre",
+                    "category": "süt ürünleri",
+                    "expires_on": "2026-08-13",
+                    "days_remaining": 1,
+                    "status": "acil"
+                  },
+                  {
+                    "id": "domates-1",
+                    "name": "Domates",
+                    "quantity": 4,
+                    "unit": "adet",
+                    "category": "sebze",
+                    "expires_on": "2026-08-14",
+                    "days_remaining": 2,
+                    "status": "acil"
+                  },
+                  {
+                    "id": "yoğurt-1",
+                    "name": "Yoğurt",
+                    "quantity": 1,
+                    "unit": "kase",
+                    "category": "süt ürünleri",
+                    "expires_on": "2026-08-15",
+                    "days_remaining": 3,
+                    "status": "yakında"
+                  },
+                  {
+                    "id": "yumurta-1",
+                    "name": "Yumurta",
+                    "quantity": 6,
+                    "unit": "adet",
+                    "category": "kahvaltılık",
+                    "expires_on": "2026-08-17",
+                    "days_remaining": 5,
+                    "status": "yakında"
+                  }
+                ],
+                "today": "2026-08-12",
+                "count": 4
+              },
+              "duration_ms": 0.03
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "add_preview",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "Envantere 2 adet biber ekle; kategori sebze, son kullanma tarihi 2026-08-20.",
+          "reply": "add_pantry_item için şu değişiklik bekliyor: {\"name\": \"biber\", \"quantity\": 2, \"unit\": \"adet\", \"category\": \"sebze\", \"expires_on\": \"2026-08-20\"}. Uygulamak için tam olarak 'onayla' yazın; iptal için başka bir girdi yazabilirsiniz.",
+          "pending": true,
+          "tool_logs": [
+            {
+              "name": "add_pantry_item",
+              "arguments": {
+                "name": "biber",
+                "quantity": 2,
+                "unit": "adet",
+                "category": "sebze",
+                "expires_on": "2026-08-20"
+              },
+              "result": {
+                "pending": true,
+                "tool": "add_pantry_item",
+                "arguments": {
+                  "name": "biber",
+                  "quantity": 2,
+                  "unit": "adet",
+                  "category": "sebze",
+                  "expires_on": "2026-08-20"
+                }
+              },
+              "duration_ms": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "add_confirm",
+      "passed": true,
+      "reasons": [],
+      "state_changed": true,
+      "turns": [
+        {
+          "prompt": "Envantere 2 adet biber ekle; kategori sebze, son kullanma tarihi 2026-08-20.",
+          "reply": "add_pantry_item için şu değişiklik bekliyor: {\"name\": \"biber\", \"quantity\": 2, \"unit\": \"adet\", \"category\": \"sebze\", \"expires_on\": \"2026-08-20\"}. Uygulamak için tam olarak 'onayla' yazın; iptal için başka bir girdi yazabilirsiniz.",
+          "pending": true,
+          "tool_logs": [
+            {
+              "name": "add_pantry_item",
+              "arguments": {
+                "name": "biber",
+                "quantity": 2,
+                "unit": "adet",
+                "category": "sebze",
+                "expires_on": "2026-08-20"
+              },
+              "result": {
+                "pending": true,
+                "tool": "add_pantry_item",
+                "arguments": {
+                  "name": "biber",
+                  "quantity": 2,
+                  "unit": "adet",
+                  "category": "sebze",
+                  "expires_on": "2026-08-20"
+                }
+              },
+              "duration_ms": 0.0
+            }
+          ]
+        },
+        {
+          "prompt": "onayla",
+          "reply": "İşlem onaylandı ve uygulandı: {\"item\": {\"id\": \"item-01961e701c4943808066a707bb960de3\", \"name\": \"biber\", \"quantity\": 2, \"unit\": \"adet\", \"category\": \"sebze\", \"expires_on\": \"2026-08-20\"}}",
+          "pending": false,
+          "tool_logs": [
+            {
+              "name": "add_pantry_item",
+              "arguments": {
+                "name": "biber",
+                "quantity": 2,
+                "unit": "adet",
+                "category": "sebze",
+                "expires_on": "2026-08-20"
+              },
+              "result": {
+                "item": {
+                  "id": "item-01961e701c4943808066a707bb960de3",
+                  "name": "biber",
+                  "quantity": 2,
+                  "unit": "adet",
+                  "category": "sebze",
+                  "expires_on": "2026-08-20"
+                }
+              },
+              "duration_ms": 9.16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "consume_preview",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "sut-1 kimlikli üründen 0.5 litre tüket.",
+          "reply": "consume_pantry_item için şu değişiklik bekliyor: {\"item_id\": \"sut-1\", \"quantity\": 0.5}. Uygulamak için tam olarak 'onayla' yazın; iptal için başka bir girdi yazabilirsiniz.",
+          "pending": true,
+          "tool_logs": [
+            {
+              "name": "consume_pantry_item",
+              "arguments": {
+                "item_id": "sut-1",
+                "quantity": 0.5
+              },
+              "result": {
+                "pending": true,
+                "tool": "consume_pantry_item",
+                "arguments": {
+                  "item_id": "sut-1",
+                  "quantity": 0.5
+                }
+              },
+              "duration_ms": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "remove_cancel",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "domates-1 kimlikli ürünü envanterden sil.",
+          "reply": "remove_pantry_item için şu değişiklik bekliyor: {\"item_id\": \"domates-1\"}. Uygulamak için tam olarak 'onayla' yazın; iptal için başka bir girdi yazabilirsiniz.",
+          "pending": true,
+          "tool_logs": [
+            {
+              "name": "remove_pantry_item",
+              "arguments": {
+                "item_id": "domates-1"
+              },
+              "result": {
+                "pending": true,
+                "tool": "remove_pantry_item",
+                "arguments": {
+                  "item_id": "domates-1"
+                }
+              },
+              "duration_ms": 0.0
+            }
+          ]
+        },
+        {
+          "prompt": "iptal",
+          "reply": "Bekleyen işlem iptal edildi; envanterde değişiklik yapılmadı.",
+          "pending": false,
+          "tool_logs": []
+        }
+      ]
+    },
+    {
+      "name": "bare_confirmation",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "onayla",
+          "reply": "Onaylanacak bekleyen bir işlem yok.",
+          "pending": false,
+          "tool_logs": []
+        }
+      ]
+    },
+    {
+      "name": "unrelated_question",
+      "passed": true,
+      "reasons": [],
+      "state_changed": false,
+      "turns": [
+        {
+          "prompt": "2 + 2 kaç eder?",
+          "reply": "2 + 2 = **4** eder.",
+          "pending": false,
+          "tool_logs": []
+        }
+      ]
+    }
+  ]
+}

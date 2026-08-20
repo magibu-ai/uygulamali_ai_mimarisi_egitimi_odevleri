@@ -1,0 +1,6 @@
+pip install -U bitsandbytes>=0.46.1
+pip install json
+pip install requests
+pip install torch
+pip install transformer
+pip install yaml

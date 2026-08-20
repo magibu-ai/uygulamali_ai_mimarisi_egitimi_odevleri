@@ -1,0 +1,66 @@
+{#- ============================================================= -#}
+{#- Turkce BPE Tokenizer icin Chat Template (Jinja2)              -#}
+{#- ------------------------------------------------------------- -#}
+{#- Bu sablon, bir sohbetteki system / user / assistant rollerini -#}
+{#- ve (varsa) tool-calling parametrelerini modele verilecek tek  -#}
+{#- bir metin dizisine cevirir. Belirli bir model ailesine ait    -#}
+{#- ozel token'lara bagimli degildir; rol sinirlari acik ve       -#}
+{#- okunabilir <|im_start|> / <|im_end|> etiketleriyle belirtilir. -#}
+{#- ============================================================= -#}
+
+{#- Sistem mesaji: verilmisse en basta islenir -#}
+{%- if messages[0]['role'] == 'system' -%}
+    {{- '<|im_start|>system\n' + messages[0]['content'] | trim + '<|im_end|>\n' -}}
+    {%- set loop_messages = messages[1:] -%}
+{%- else -%}
+    {%- set loop_messages = messages -%}
+{%- endif -%}
+
+{#- Arac (tool) tanimlari: modele hangi fonksiyonlari cagirabilecegini bildirir -#}
+{%- if tools is defined and tools -%}
+    {{- '<|im_start|>system\n' -}}
+    {{- 'Kullanabilecegin araclar (JSON semasi):\n' -}}
+    {%- for tool in tools -%}
+        {{- tool | tojson -}}
+        {{- '\n' -}}
+    {%- endfor -%}
+    {{- '<|im_end|>\n' -}}
+{%- endif -%}
+
+{#- Sohbet mesajlari: her mesaji rolune gore sarmala -#}
+{%- for message in loop_messages -%}
+    {%- set role = message['role'] -%}
+
+    {#- KULLANICI mesaji -#}
+    {%- if role == 'user' -%}
+        {{- '<|im_start|>user\n' + message['content'] | trim + '<|im_end|>\n' -}}
+
+    {#- ASISTAN mesaji: metin ve/veya tool cagrisi icerebilir -#}
+    {%- elif role == 'assistant' -%}
+        {{- '<|im_start|>assistant\n' -}}
+        {%- if message['content'] -%}
+            {{- message['content'] | trim -}}
+        {%- endif -%}
+        {#- Tool cagrilari varsa <tool_call> etiketiyle sarmala -#}
+        {%- if message['tool_calls'] is defined and message['tool_calls'] -%}
+            {%- for tc in message['tool_calls'] -%}
+                {{- '\n<tool_call>\n' -}}
+                {{- '{"name": "' + tc.function.name + '", "arguments": ' -}}
+                {{- (tc.function.arguments | tojson if tc.function.arguments is not string else tc.function.arguments) -}}
+                {{- '}\n</tool_call>' -}}
+            {%- endfor -%}
+        {%- endif -%}
+        {{- '<|im_end|>\n' -}}
+
+    {#- TOOL sonucu: aractan donen veriyi modele geri ver -#}
+    {%- elif role == 'tool' -%}
+        {{- '<|im_start|>tool\n' -}}
+        {{- '<tool_response>\n' + message['content'] | trim + '\n</tool_response>' -}}
+        {{- '<|im_end|>\n' -}}
+    {%- endif -%}
+{%- endfor -%}
+
+{#- Uretim istemi: modelin yanit vermeye baslamasi icin acilis etiketi -#}
+{%- if add_generation_prompt -%}
+    {{- '<|im_start|>assistant\n' -}}
+{%- endif -%}

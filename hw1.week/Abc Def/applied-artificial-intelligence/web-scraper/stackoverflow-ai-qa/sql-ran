@@ -1,0 +1,10 @@
+https://data.stackexchange.com -> Artificial Intelligence
+
+SELECT TOP 1000
+ q.Title AS [Title],
+ q.Body AS [Question Body],
+ a.Body AS [Accepted Answer Body]
+FROM Posts q
+INNER JOIN Posts a ON q.AcceptedAnswerId = a.Id
+WHERE q.PostTypeId = 1
+ORDER BY q.Score DESC

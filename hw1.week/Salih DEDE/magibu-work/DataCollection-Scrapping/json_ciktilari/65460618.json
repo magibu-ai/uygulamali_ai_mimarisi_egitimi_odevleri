@@ -1,0 +1,140 @@
+[
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMenşei\nCN\nUzunluk\n40 cm\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "mutfak tezgahı üstündeki eğimi dijital olarak gösteriyorum?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar efendim, ürün eğim ölçer değil açı ölçerdir. Su terazsi ile düzler iseniz eğimini az çok hesaplarsınız. Net veri vermez.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMenşei\nCN\nUzunluk\n40 cm\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "2 duvar arasındaki açıyı hesaplayabilir miyim röleve alırken? Yani yamuk örülen 2 duvar arasındaki ölçüyü verir mi bana?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar efendim evet verir",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMenşei\nCN\nUzunluk\n40 cm\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba kutusuyla beraber mi gönderim sağlıyorsunuz acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar efendim plastik ambalaj var dışında",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMenşei\nCN\nUzunluk\n40 cm\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Dijital pillimi şarjlımı şarjlı ise makinası varmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar pilli efensim",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMenşei\nCN\nUzunluk\n40 cm\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "90cm olanı varmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba. Bizde mevcut değil efendim.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMenşei\nCN\nUzunluk\n40 cm\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba açı ölçeri hem yatay hem dikey kullana biliyormuyuz yelpazeli basamakta iş görürmü",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, hayır",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ]
+]

@@ -1,0 +1,19 @@
+"I Built an LLM From Scratch" — Kısa Özet
+Kaynaklar: CJ (w3cj) — YouTube videosu (youtube.com/watch?v=YmLp8qe87A0) ve GitHub reposu (github.com/w3cj/how-llms-work)
+
+Proje, bir LLM'in nasıl çalıştığını, hiçbir hazır makine öğrenmesi kütüphanesi kullanmadan, tarayıcıda çalışan interaktif bir uygulama üzerinden beş aşamada gösteriyor. Sunucu tarafı Hono, geliştirme ortamı Vite ile kurulmuş; her aşama kullanıcı girdisini işleyip sonucu SSE (Server-Sent Events) ile canlı akıtan bir yapıya sahip.
+
+1) Basit Sohbet — Kalıp Eşleştirme: If-else kurallarıyla yanıt üreten, ELIZA tarzı bir bot. Yanıt ChatGPT ile aynı kelime-kelime akış mekaniğini kullanır, ama arkasında hiçbir zekâ yoktur — sadece önceden yazılmış kurallar (Weizenbaum, 1966).
+
+2) XOR Sinir Ağı — Geri Yayılım: Tek katmanlı bir algılayıcının XOR problemini çözemediği (Minsky/Papert'ı doğrulayan klasik sonuç) canlı olarak gösteriliyor; çok katmanlı bir ağ ise geri yayılım (backpropagation) ile bunu başarıyla öğreniyor — bugün hâlâ tüm sinir ağlarının temel eğitim algoritması (Rumelhart, Hinton & Williams, 1986).
+
+3) Temel Tokenizer — Sıfırdan BPE: Kullanıcının girdiği metin üzerinde, karakterlerden kelimelere doğru kelime dağarcığı inşa eden sıfırdan bir Byte Pair Encoding uygulaması; birleştirme adımları animasyonla izlenebiliyor (Sennrich, Haddow & Birch, 2016).
+
+4) Gömme Eğitimi — Word2Vec Skip-Gram: Negatif örnekleme kullanan skip-gram yöntemiyle kelime vektörleri sıfırdan eğitiliyor; benzer bağlamlarda geçen kelimelerin vektörlerinin eğitim boyunca birbirine yaklaşması izlenebiliyor (Mikolov ve ark., 2013a/2013b).
+
+5) Transformer Eğitimi — Sıfırdan GPT: Projenin en kapsamlı bölümü. Hiçbir kütüphane kullanılmadan decoder-only bir Transformer eğitiliyor; çok başlı nedensel (causal) self-attention, katman normalizasyonu, ileri beslemeli katmanlar, geri yayılım ve Adam optimizasyonu elle uygulanıyor. Eğitim hızı için SharedArrayBuffer üzerinden çok iş parçacıklı veri paralelliği kullanılıyor. Bu bölüm; Glorot & Bengio (ağırlık ilklendirme), Vaswani ve ark. (Transformer mimarisi — "Attention Is All You Need"), Ba/Kiros/Hinton (layer normalization), Radford ve ark. (GPT-1 ön-eğitim yaklaşımı) ve Holtzman ve ark. (nucleus/top-p sampling ile metin üretimi) gibi temel makalelere dayanıyor.
+
+Kod mimarisi tüm bölümlerde aynı üç katmanlı deseni izliyor: sunucu route'u (girdiyi işler, SSE akıtır) → istemci hook'u (SSE olaylarını arayüze bağlar) → sonuç bileşeni (veriyi görselleştirir).
+
+Genel olarak proje, LLM'lerin gelişimini tarihsel bir çizgide sunuyor: kural tabanlı kalıp eşleştirmeden (ELIZA), öğrenmeyi mümkün kılan geri yayılıma, dilin sayısallaştırılmasına (BPE) ve anlamın vektörleştirilmesine (Word2Vec), son olarak da hepsinin birleştiği tam bir Transformer'ın sıfırdan eğitilmesine uzanan uygulamalı bir öğretim yaklaşımı.
+

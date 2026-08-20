@@ -1,0 +1,6 @@
+requests>=2.31    # Ollama ve web API'leri icin HTTP (Tavily dahil)
+yfinance>=0.2     # Hisse / endeks / kripto fiyat verisi (API anahtari gerekmez)
+chromadb>=1.0     # Bilgi bankasi icin vektor veritabani (RAG)
+
+# Not: .env okumak icin python-dotenv KULLANMIYORUZ.
+# config.py icindeki 10 satirlik _load_dotenv bu isi bagimlilik eklemeden goruyor.

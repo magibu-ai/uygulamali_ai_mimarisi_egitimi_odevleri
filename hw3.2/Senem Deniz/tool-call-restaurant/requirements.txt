@@ -1,0 +1,5 @@
+# Gradio surumu HF Space tarafindan README frontmatter'daki sdk_version ile
+# saglanir; burada TEKRAR belirtmiyoruz ki surum cakismasi olmasin.
+# Yerelde calistirmak icin:  pip install "gradio==5.49.1"
+huggingface_hub>=0.30.0
+jinja2>=3.1.0

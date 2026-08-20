@@ -1,0 +1,114 @@
+🚲 Pedal — Bisiklet Gezi Planlayici
+  model: qwen3:8b
+  ornek: 'Kas'tan Demre'ye yarin gravel ile gitsem nasil olur?'
+  cikmak icin: cik
+
+Siz >   🔧 tur_planla({'baslangic': 'Kaş, Antalya', 'bisiklet_tipi': 'gravel', 'bitis': 'Demre', 'gun_sonra': 1, 'kondisyon': 'orta', 'surucu_kg': 78})
+
+Pedal > **Özeti:** 68 km, 1162 m tirmanis, 4 sa 15 dk, ZOR zorluk.  
+
+**Hava/Ruzgar:** Parcali bulutlu, 27-36 C, yagis %0. Ruzgar rotada arkadan 9.7 km/s.  
+
+**Yakit:** 1628 kcal, 5.1 L su, 255 g karbonhidrat.  
+
+**Ekipman:**  
+- Zorunlu: kask, lambalar, lastik malzemeleri, telefon, kimlik, el pompasi.  
+- Giyim: ince forma, gozluk, krem, kolluk.  
+- Beslenme: enerji bari, elektrolit.  
+- Uyari: Sicaklik 30 C uzeri, 12-16 saatlerini kardan.  
+
+Planlama tamamlandı. Dilersen detaylari inceleyebiliriz. 🚴‍♂️
+
+Siz >   🔧 tur_planla({'kondisyon': 'orta', 'surucu_kg': 78, 'kamp': True, 'baslangic': 'Kaş, Antalya', 'bisiklet_tipi': 'gravel', 'bitis': 'Demre', 'gun_sonra': 1})
+
+Pedal > **Özeti:** 68 km, 1162 m tirmanis, 4 sa 46 dk, COK ZOR zorluk.  
+
+**Hava/Ruzgar:** Parcali bulutlu, 27-36 C, yagis %0. Ruzgar rotada arkadan 9.7 km/s.  
+
+**Yakit:** 1824 kcal, 5.7 L su, 286 g karbonhidrat.  
+
+**Ekipman:**  
+- Zorunlu: kask, lambalar, lastik malzemeleri, telefon, kimlik, el pompasi, heybe/cadir, uyku tulumu, kamp ocagi.  
+- Giyim: ince forma, gozluk, krem, kolluk.  
+- Beslenme: 5 adet enerji bari, elektrolit.  
+- Uyari: Sicaklik 30 C uzeri, 12-16 saatlerini kardan. Yük eklenmesi sureyi 15-20 dk uzatir.  
+
+Kamp yaparsan toplam efor artar, yakan ve su tüketimi artar. Dilersen kamp detaylarını da inceleyebiliriz. 🚴‍♂️⛺
+
+Siz >   🔧 tur_kaydet({'gun_sonra': 1, 'mesafe_km': 68.3, 'notlar': 'Kamp yaparak, ruzgar yardimci, 30 C uzeri sicaklik dikkat.', 'tirmanis_m': 1162, 'ad': 'Likya sahil turu', 'baslangic': 'Kaş, Antalya', 'bitis': 'Demre'})
+
+Pedal > "Likya sahil turu" adlı turunuz başarıyla kaydedildi. Rota detayları ve notlar şu şekildedir:
+
+- **Tarih:** 2026-08-13  
+- **Baslangic:** Kaş, Antalya  
+- **Bitis:** Demre  
+- **Mesafe:** 68.3 km  
+- ** прогн:** 1162 m tirmanis  
+- **Notlar:** Kamp yaparak, ruzgar yardimci, 30 C uzeri sicaklik dikkat.  
+
+Dilerseniz daha fazla tur ekleyebilir veya turlarınızı inceleyebilirsiniz. 🚴‍♂️📖
+
+Siz >   🔧 turlarim({'limit': 10})
+
+Pedal > Tur defterinizde şu an 1 tur kayitli:
+
+1. **Likya sahil turu** (2026-08-13)  
+   - **Rota:** Kaş, Antalya → Demre  
+   - **Mesafe:** 68.3 km  
+   - **Tirmanis:** 1162 m  
+   - **Notlar:** Kamp yaparak, ruzgar yardimci, 30 C uzeri sicaklik dikkat.  
+
+Dilerseniz daha fazla tur ekleyebilir veya turlarınızı düzenleyebilirsiniz. 🚴‍♂️📖
+
+Siz >   🔧 hava_durumu({'gun_sonra': 1, 'yer': 'Bursa'})
+
+Pedal > Bursa'da yarın (2026-08-13) hava **çok bulutlu**, sıcaklık aralığı **22.2-33.5 °C** arasında olacak. Yagis ihtimali %0'dır.  
+
+Rüzgar **19.3 km/s** hızla **kuzeydoğu** yönünden eser. Bu hız, bisiklet sürüşü için **orta derecede zorlayıcı** olabilir.  
+
+Dilerseniz bu koşullara uygun bir rota planlayabilirim. 🚴‍♂️🌬️
+
+Siz >   🔧 efor_hesapla({'kondisyon': 'iyi', 'mesafe_km': 80, 'sicaklik_c': 25, 'surucu_kg': 70, 'tirmanis_m': 0, 'bisiklet_tipi': 'yol', 'karsi_ruzgar_kmh': 0})
+
+Pedal > 80 km düz yolda yol bisikletiyle gidersek:
+
+- **Sure:** 2 saat 38 dakika (mola haric), ortalama 30.4 km/saat  
+- **Zorluk:** Orta  
+- **Yakit:** 1419 kcal, 2.5 litre su, 158 gram karbonhidrat  
+
+Dilerseniz bu mesafeye ekstra bir rota planlayabilirim. 🚴‍♂️💨
+
+Siz >   🔧 internet_arama({'max_sonuc': 5, 'sorgu': 'Antalya çevresinde bisikletçilere uygun kamp alanı'})
+
+Pedal > Antalya çevresinde bisikletçilere uygun kamp alanları şöyle:
+
+1. **Çadır Kampı Alanları**  
+   Antalya Bölgesi (47 kamp alanı): Akdeniz’in incisi Antalya, Kaş, Kemer, Kumluca gibi destinasyonlarda çadır kampçılığı için ideal şartlar sunar.  
+   [🔗 Link](https://kampyeri.org/kategori/kamp-alani)
+
+2. **Antalya Dağ Manzaralı İçme Suyu Kaynağı ve Kamp Alanı**  
+   Konyaaltı’nda, Toros Dağları eteklerinde yer alan bu kamp alanı, 6 musluklu içme suyu kaynağı ile bilinir. Su kaynağı çevresinde ve ormanlık alanda dikkatli olunmalıdır.  
+   [🔗 Link](https://www.kolaykal.com/yer/antalya-dag-manzarali-icme-suyu-kaynagi-ve-kamp-alani)
+
+3. **Kındıl Camping**  
+   Antalya civarında bütçe dostu, ulaşımı rahat ve denize yakın bir kamp alanı arayışındaysan Kındıl Camping senin için doğru bir tercih olabilir.  
+   [🔗 Link](https://www.enuygun.com/bilgi/turkiye-nin-en-iyi-kamp-yerleri/)
+
+4. **Olympos Sahili**  
+   Antalya’nın Kumluca ilçesinde yer alan Olympos, tarihi dokusuyla büyüleyen eşsiz bir kamp alanı.  
+   [🔗 Link](https://www.kampci.io/blog/turkiyenin-en-iyi-30-ucretsiz-kamp-alani)
+
+5. **Dikili Kamp**  
+   Cam Camping Dikili, Bademli Glamping, Karavan ve Çadır Konaklama Türkiye’nin En Güzel Gün Batımı Manzaralı Kamp Alanı.  
+   [🔗 Link](https://www.camcampingdikili.com/)
+
+Dilerseniz bu alanlara uygun bir bisiklet turu planlayabilirim. 🚴‍♂️🌄
+
+Siz > 
+Pedal > Bu bir sağlık sorusu, degerlendirmesi hekime ait. Istersen daha kisa ve duz bir rota planlayabilirim.
+
+Siz >   🔧 tur_planla({'surucu_kg': 78, 'baslangic': 'Zırzıpland', 'bisiklet_tipi': 'gravel', 'bitis': 'Bilmemneköy', 'gun_sonra': 1, 'kamp': True, 'kondisyon': 'orta'})
+
+Pedal > Lütfen 'Zırzıpland' yerini daha açık yazın, örneğin 'Kas, Antalya' gibi. Bu bilgiyle daha doğru bir rota planlayabilirim. 🚴‍♂️🗺️
+
+Siz > 

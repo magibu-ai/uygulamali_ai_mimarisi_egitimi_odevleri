@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "sut-1",
+      "name": "Süt",
+      "quantity": 1,
+      "unit": "litre",
+      "category": "süt ürünleri",
+      "expires_in_days": 1
+    },
+    {
+      "id": "yumurta-1",
+      "name": "Yumurta",
+      "quantity": 6,
+      "unit": "adet",
+      "category": "kahvaltılık",
+      "expires_in_days": 5
+    },
+    {
+      "id": "domates-1",
+      "name": "Domates",
+      "quantity": 4,
+      "unit": "adet",
+      "category": "sebze",
+      "expires_in_days": 2
+    },
+    {
+      "id": "yoğurt-1",
+      "name": "Yoğurt",
+      "quantity": 1,
+      "unit": "kase",
+      "category": "süt ürünleri",
+      "expires_in_days": 3
+    },
+    {
+      "id": "pirinc-1",
+      "name": "Pirinç",
+      "quantity": 2,
+      "unit": "kg",
+      "category": "kuru gıda",
+      "expires_in_days": 120
+    }
+  ]
+}

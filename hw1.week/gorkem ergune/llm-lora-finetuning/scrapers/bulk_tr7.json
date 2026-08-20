@@ -1,0 +1,516 @@
+{
+    "train": [
+        [
+            {
+                "content": "açık kaynak lisansları ne anlama geliyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Açık kaynak lisansları kodunun nasıl kullanılabileceğini belirler. MIT: en serbest — istediğin gibi kullan, değiştir, dağıt, ticari kullan, sadece lisansı koru. Apache 2.0: MIT benzeri ama patent koruması ekler. GPL: değişikliklerin de açık kaynak olmalı (copyleft) — ticari kullanım var ama kaynak kodunu paylaşmalısın. BSD: MIT'e çok benzer. LGPL: kütüphaneler için — kütüphaneyi kullanan kod kapalı kaynak olabilir ama kütüphane değişiklikleri açık. ISC: MIT'in basitleştirilmiş hali. Lisanssız kod: varsayılan olarak telif hakkı var — başkası kullanamaz. Projenize lisans eklemeyi unutmayın.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Lisans, MIT, Apache, GPL, BSD, copyleft, telif hakkı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ElasticSearch ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ElasticSearch, tam metin arama (full-text search) motoru. Büyük miktarda veriyi çok hızlı arayabilirsin — milisaniyeler içinde. Kullanım alanları: site içi arama, log analizi (ELK Stack), gerçek zamanlı analitik, öneri sistemleri. Lucene tabanlı, Java ile yazılmış. JSON formatında veri depolar. Inverted index yapısı ile metin aramayı hızlandırır. Kibana ile görselleştirme yapılır. Logstash ile veri akışı sağlanır. E-ticaret sitelerinde ürün arama, Wikipedia'nın arama özelliği, GitHub'ın kod arama özelliği ElasticSearch benzeri teknolojiler kullanıyor. Büyük veri araması için standart araç.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ElasticSearch, full-text search, ELK Stack, Kibana, inverted index.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "web performans optimizasyonu nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Web performansı kullanıcı deneyimini doğrudan etkiler — Google da sayfa hızını sıralama kriteri olarak kullanıyor. Temel metrikler: LCP (Largest Contentful Paint), FID (First Input Delay), CLS (Cumulative Layout Shift) — Core Web Vitals. Optimizasyon teknikleri: görüntü sıkıştırma (WebP formatı, lazy loading), CSS/JS minimize etme, CDN kullanma, caching (browser cache, Redis), code splitting (sadece gerekli JS'i yükle), gzip/brotli sıkıştırma, font optimizasyonu, above-the-fold içeriği önceliklendir. Araçlar: Lighthouse, PageSpeed Insights, WebPageTest. Performans bütçesi belirle ve takip et.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Web performans, Core Web Vitals, LCP, görüntü, CDN, cache, Lighthouse.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "algorithms reposu ne içeriyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "algorithms reposu, Görkem'in çeşitli algoritma implementasyonlarını topladığı bir repo. Sorting algoritmaları (bubble, merge, quick sort), searching (binary search, BFS, DFS), dynamic programming, graph algoritmaları, greedy algorithms gibi konuları kapsıyor olabilir. Python veya C ile yazılmış olabilir. Algoritmalar bilgisayar biliminin temel taşı — iş mülakatlarında da en çok sorulan konu. LeetCode ve HackerRank'te çözdüğün soruların çözümlerini de burada tutabilirsin. Bu tür repolar sürekli güncellenerek portföy parçası olur.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Algorithms, sorting, searching, dynamic programming, graph, mülakat.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "wheel-of-fortune projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "wheel-of-fortune (çarkıfelek), popüler TV programından esinlenmiş bir oyun projesi. Kullanıcı çarkı çevirir, harf tahmin eder, kelimeyi bulmaya çalışır. Python veya JavaScript ile yazılmış olabilir. Oyun geliştirme, kullanıcı arayüzü tasarımı, rastgelelik (random), string manipülasyon, oyun mantığı (game logic) gibi kavramları içeriyor. Eğlenceli projeler motivasyonu artırır ve farklı programlama becerileri kazandırır. Görkem'in sadece ciddi projeler değil eğlenceli şeyler de yaptığını gösteriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Çarkıfelek, oyun, random, string manipülasyon, game logic.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "portfolio sitesi nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Portfolio sitesi kariyerin için çok önemli. Basit başla: GitHub Pages ücretsiz hosting sunar, Jekyll veya Hugo ile statik site oluştur. Veya React/Next.js ile kendin yaz. İçerik: kim olduğun (kısa bio), projelerini sergile (ekran görüntüleri, demo linkleri), becerilerini listele, iletişim bilgileri, blog yazıları (varsa). Tasarım: temiz ve minimal, mobil uyumlu, hızlı yüklenme. Görkem'in portfolyosu gorkemergune.github.io — 30+ projeyi sergilediği profesyonel bir site. Domain adı alabilirsin — gorkem.dev gibi. Portfolio siten CV'nden daha etkili olabilir — projelerini canlı gösteriyorsun.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Portfolio, GitHub Pages, Next.js, projeler, tasarım, domain.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "PWA (Progressive Web App) nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "PWA, web teknolojileriyle (HTML, CSS, JS) native uygulama deneyimi sunan web uygulaması. Offline çalışabilir (Service Worker ile), push bildirim gönderebilir, ana ekrana eklenebilir, hızlı yüklenme. App Store'a gerek yok — URL'den erişilir. Avantajları: tek kod tabanıyla tüm platformlar, güncelleme otomatik, SEO avantajı. Dezavantajları: bazı native API'lara erişim sınırlı (özellikle iOS'ta), push notification iOS'ta yeni destekleniyor. Twitter Lite, Starbucks, Pinterest PWA kullanıyor. Küçük-orta projeler için native uygulama yerine PWA düşünülebilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PWA, Service Worker, offline, push bildirim, native alternatif.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "teknik sunum nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Teknik sunum yapabilmek çok değerli bir beceri. Hazırlık: hedef kitlenin teknik seviyesini bil, karmaşık konuları basitleştir, demo hazırla. Sunum yapısı: problem → çözüm → demo → sonuç. Slide'lar: az yazı çok görsel, kod snippet'ları okunabilir boyutta, her slide bir fikir. Demo: önceden test et, plan B hazırla, video kayıt al (canlı demo çökerse). Sunum: göz teması, sakin tempo, teknik jargonu açıkla, soru sormaya zaman bırak. Araçlar: Google Slides, Reveal.js (kod tabanlı), Marp (markdown tabanlı). Hackathon'larda sunum yapma deneyimi çok değerli — Görkem bunu yapmış. Pratik yaparak geliştirirsin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Teknik sunum, demo, slide, hedef kitle, hackathon, pratik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "API versiyonlama nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "API versiyonlama, mevcut kullanıcıları bozmadan API'yi güncellemeye olanak tanır. Yöntemler: URL versiyonlama (/api/v1/users, /api/v2/users — en yaygın, en basit), header versiyonlama (Accept: application/vnd.api+json;version=2), query parameter (?version=2). Semantik versiyonlama: major (breaking change), minor (yeni özellik), patch (bug fix). Breaking change nedir: alan silme, alan adı değiştirme, response yapısı değiştirme. Eski versiyonu ne kadar destekleyeceğini belirle (deprecation policy). Changelog tut. Swagger/OpenAPI ile her versiyonu dökümante et. İyi versiyonlama kullanıcı güveni sağlar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "API versiyonlama, URL, header, semantik, breaking change, deprecation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "JWT (JSON Web Token) nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "JWT, kimlik doğrulama için kullanılan bir token standardı. Üç bölümden oluşur: Header (algoritma ve tip), Payload (kullanıcı bilgileri — id, role, expiry), Signature (doğrulama). Base64 ile encode edilir, nokta ile ayrılır. Akış: kullanıcı giriş yapar → sunucu JWT oluşturur → istemci her istekte header'da gönderir (Bearer token) → sunucu imzayı doğrular. Session'a göre avantajı: sunucuda state tutmaya gerek yok (stateless), microservice'lerde kolay. Dezavantajı: token çalınırsa oturum ele geçirilir, token boyutu cookie'den büyük. Refresh token ile süre yönetimi yapılır. passport-jwt, python-jose, jsonwebtoken popüler kütüphaneler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "JWT, header, payload, signature, Bearer token, stateless, refresh token.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "worldcup-bpe-tokenizer projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "worldcup-bpe-tokenizer, Dünya Kupası verileri üzerinde BPE tokenizer eğiten bir proje. İlginç bir veri seti seçimi — futbol verileriyle NLP çalışması. Bu proje hem spor verisi analizi hem de tokenization pratiği sağlıyor. Görkem'in wiki2bpe projesiyle benzer mantıkta — farklı veri kaynaklarından tokenizer eğitimi. Domain-specific tokenizer eğitmek bazı uygulamalarda genel tokenizer'dan daha iyi sonuç verebilir. Yaratıcı proje fikri — ilgi alanlarını teknolojiyle birleştirmek.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "worldcup-bpe-tokenizer, futbol, BPE, domain-specific, NLP.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "WebRTC nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebRTC (Web Real-Time Communication), tarayıcılar arasında doğrudan ses, video ve veri iletişimi sağlayan bir teknoloji. Sunucu üzerinden geçmeden peer-to-peer bağlantı kurar — düşük gecikme. Zoom, Google Meet, Discord bunu kullanıyor. Temel bileşenler: getUserMedia (kamera/mikrofon erişimi), RTCPeerConnection (bağlantı), RTCDataChannel (veri transferi). STUN/TURN sunucuları NAT arkasındaki cihazların bağlanmasını sağlar. Signaling sunucusu (WebSocket ile) ilk bağlantıyı kurar, sonra doğrudan iletişim olur. Video konferans, ekran paylaşımı, dosya transferi uygulamaları için temel teknoloji.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebRTC, peer-to-peer, ses/video, STUN/TURN, signaling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılım projelerinde güvenlik nasıl sağlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Güvenlik yazılımın her aşamasında düşünülmeli — 'security by design'. Temel prensipler: input validation (kullanıcı girdisini asla güvenme), parametrized queries (SQL injection önleme), output encoding (XSS önleme), HTTPS zorunlu, authentication ve authorization ayrımı, en az yetki prensibi (least privilege), dependency güncelleme (npm audit, pip audit), secret management (environment variable, vault — kodda şifre bırakma), rate limiting, CORS doğru konfigürasyon. OWASP Top 10 listesini bil. Güvenlik testleri: SAST (statik analiz), DAST (dinamik analiz), penetration testing. Güvenlik açığı bulmak kolay, kapatmak zor — baştan güvenli yaz.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Güvenlik, input validation, SQL injection, XSS, OWASP, SAST, DAST.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "c-foundations reposu ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "c-foundations, Görkem'in C programlama dili temellerini uyguladığı bir repo. C, bellek yönetimi, pointer'lar, struct'lar, dosya işlemleri, dinamik bellek tahsisi (malloc/free) gibi düşük seviye kavramları öğretir. İşletim sistemi, gömülü sistemler, performans kritik uygulamalar C ile yazılır. Görkem'in gorkem-os projesinin temeli de C bilgisine dayanıyor. C öğrenmek bilgisayarın nasıl çalıştığını anlamak demek — yüksek seviye dillerden farklı olarak belleği kendin yönetirsin. Her CS öğrencisinin C bilmesi gerekir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "C, pointer, bellek yönetimi, malloc, struct, düşük seviye.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "YKS'de fizik çözerken dikkat edilmesi gerekenler",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Fizik sınavda zaman yönetimi gerektiren bir bölüm. İpuçları: kolay soruları önce çöz, zor sorularda takılma. Birim analizi yap — doğru birimi bilmek çözüme yönlendirir. Serbest cisim diyagramı çiz — kuvvet soruları için olmazsa olmaz. Grafik soruları dikkatli oku — eğim ve alan kavramları çok soruluyor. Formülleri grupla ve hangi konuya ait olduğunu bil. Negatif işaretlere dikkat — yön belirtir. Sıfırdan çözüm yapmak yerine seçeneklerden eleme yap (bazı sorularda). Modern fizik soruları genelde formüle dayalı — direkt uygula. Deneme sınavlarında zamana karşı pratik çok önemli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YKS fizik, zaman yönetimi, birim analizi, serbest cisim, grafik, eleme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "mentorluk almak ve vermek neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Mentorluk kariyer gelişimini hızlandırır. Mentör almanın faydaları: deneyimden öğrenirsin, hatalardan kaçınırsın, ağ genişler, motivasyon artar, perspektif kazanırsın. Mentör bulma: LinkedIn'de mesaj at, topluluk etkinliklerinde tanış, ADPList (ücretsiz mentorluk platformu), üniversitedeki hocalar ve araştırma görevlileri. Mentör vermenin faydaları: öğretmek en iyi öğrenme yolu, liderlik becerisi gelişir, topluma katkı. Junior'ken mentör al, deneyim kazandıkça mentör ol. Görkem'in asistanı olarak ayarlicazhocam da bir tür mentorluk aracı — insanlara yol gösteriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mentorluk, kariyer, ADPList, liderlik, öğretme, ayarlicazhocam.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "event sourcing ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Event sourcing, veritabanında mevcut durumu tutmak yerine tüm olayların kaydını tutma yaklaşımı. Geleneksel: kullanıcı bakiyesi 1000 TL. Event sourcing: para yatırdı +500, harcama yaptı -200, transfer aldı +700. Her olay immutable — değiştirilemez, sadece yeni olay eklenir. Avantajları: tam tarihçe, audit trail, herhangi bir andaki durumu yeniden oluşturabilme. CQRS (Command Query Responsibility Segregation) ile beraber kullanılır. Kafka veya EventStore araçları. Bankacılık, e-ticaret, ve gaming'de kullanılır. Karmaşık ama bazı domain'lerde çok güçlü.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Event sourcing, olay kaydı, immutable, CQRS, Kafka, audit trail.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "find-the-best projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "find-the-best, belirli kriterlere göre en iyi seçeneği bulmaya yarayan bir uygulama olabilir. Ürün karşılaştırma, karar verme aracı, veya optimizasyon problemi çözen bir sistem. Filtering ve scoring algoritmaları kullanılmış olabilir. Kullanıcının ihtiyaçlarına göre öneriler sunan bir araç. Bu tür uygulamalar recommendation engine mantığıyla çalışabilir. Pratik bir problem çözme projesi — günlük hayatta karar vermeyi kolaylaştıran teknoloji.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "find-the-best, karşılaştırma, filtreleme, scoring, karar verme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "DeepLearningBootcamp projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "DeepLearningBootcamp, Görkem'in derin öğrenme ile ilgili öğrenme materyallerini ve pratiğini topladığı bir repo olabilir. Bootcamp tarzı — yoğun bir öğrenme süreci. CNN ile görüntü sınıflandırma, RNN ile metin üretme, transfer learning ile model fine-tuning gibi konuları kapsiyor olabilir. Jupyter notebook'lar ile adım adım uygulamalı öğrenme. Bu tür repolar hem kendi öğrenimini belgeler hem de başkalarına kaynak olur. GitHub'da eğitim repoları toplulukta değer görüyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "DeepLearningBootcamp, CNN, RNN, transfer learning, notebook, öğrenme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "YKS Türkçe-Edebiyat'ta nasıl puan artırılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Türkçe-Edebiyat sayısal öğrencilerin genelde ihmal ettiği ama puan artırma potansiyeli yüksek bölüm. Paragraf soruları: ana fikir, yardımcı düşünce, başlık bulma kalıplarını öğren. Dil bilgisi: ses olayları, yapım ekleri, cümle türleri — formül gibi, öğrenince kolay. Edebiyat: dönemler ve özellikleri (Divan, Tanzimat, Servet-i Fünun, Milli Edebiyat, Cumhuriyet) bir tablo halinde öğren. Sözel mantık soruları herkesi zorluyor ama pratikle gelişir. Günde 1-2 paragraf sorusu çöz. Kitap okumak dolaylı yoldan paragraf anlama becerisini geliştirir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YKS Türkçe, paragraf, dil bilgisi, edebiyat dönemleri, sözel mantık.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "SSL/TLS nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SSL/TLS, internet bağlantılarını şifreleyen güvenlik protokolü — HTTPS'in S'si. TLS handshake: istemci sunucuya bağlanır → sunucu sertifikasını gönderir → istemci doğrular → simetrik anahtar oluşturulur → şifreli iletişim başlar. Asimetrik şifreleme (public/private key) handshake'te, simetrik şifreleme veri aktarımında kullanılır. SSL sertifikası: Let's Encrypt ücretsiz sertifika sunuyor. Certificate Authority (CA) sertifikayı doğrular. HSTS header'ı tarayıcıyı HTTPS kullanmaya zorlar. Modern web'de HTTPS zorunlu — Google HTTP siteleri güvensiz olarak işaretliyor. Sertifika yenilemeyi otomatize et (certbot).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SSL/TLS, handshake, HTTPS, Let's Encrypt, sertifika, şifreleme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımda accessibility (erişilebilirlik) neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Accessibility (a11y), web sitelerinin ve uygulamaların engelli kişiler tarafından da kullanılabilir olması. Görme engelli: screen reader uyumluluğu (alt text, ARIA label, heading yapısı). İşitme engelli: video altyazıları. Motor engelli: klavye navigasyonu, büyük tıklanabilir alanlar. Bilişsel: basit dil, tutarlı navigasyon. WCAG (Web Content Accessibility Guidelines) standardı. Yasal zorunluluk olabilir — ADA (ABD), EAA (AB). Nüfusun %15-20'si bir tür engele sahip — bu büyük bir kullanıcı kitlesi. Semantic HTML kullan, renk kontrastını kontrol et, tab sırası düzgün olsun. Lighthouse accessibility skoru kontrol et.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Accessibility, a11y, screen reader, ARIA, WCAG, semantic HTML, kontrast.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "pynput-macos-macro projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "pynput-macos-macro, macOS'ta klavye ve fare makroları oluşturan bir Python projesi. pynput kütüphanesi ile tuş basımlarını ve fare hareketlerini yakalayıp tekrarlayabilirsin. Otomasyon aracı olarak kullanılabilir — tekrarlayan görevleri otomatize etmek. Mesela belirli bir tuş kombinasyonuna basınca bir dizi işlem gerçekleştirilir. Bu tür araçlar verimliliği artırır. Python'un masaüstü otomasyon yeteneklerini gösteriyor. pyautogui da benzer bir kütüphane. Görkem'in farklı alanlarda proje yapma yeteneğini gösteriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "pynput, macOS, makro, otomasyon, klavye, fare.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "LinkedIn profilimi nasıl güçlendiririm?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "LinkedIn yazılımcılar için çok önemli bir platform. Profil: profesyonel fotoğraf, açıklayıcı başlık ('CS Student at Yeditepe | AI Enthusiast' gibi), detaylı about bölümü, projelerini ve deneyimlerini ekle. İçerik: haftada 1-2 post paylaş — öğrendiklerin, projelerini, sektör haberleri. Etkileşim: başkalarının postlarına yorum yap, anlamlı katkıda bulun. Bağlantılar: sektör profesyonelleriyle bağlan, mesajla kendini tanıt. Öneriler: iş arkadaşlarından veya hocalardan öneri al. Skill endorsement: becerilerini onaylat. Recruiter'lar LinkedIn'de aktif arama yapar — profilin güncel ve etkileyici olsun.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LinkedIn, profil, içerik, etkileşim, bağlantılar, recruiter.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "YKS'de matematik stratejisi nasıl olmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Matematik YKS'de en çok puan farkı yaratan bölüm. Strateji: temel konuları mükemmel bil — denklem, eşitsizlik, fonksiyon, türev, integral. Paragraf soruları dikkatli oku — sorunun ne istediğini anla. İlk 20 soru genelde kolay-orta — bunları kaçırma. Son 10 soru zor — çok vakit harcama, zamanı kalan sorulara ayır. Geometri altın madeni — alan, hacim, açı formüllerini bil. Olasılık ve kombinasyon formülleri ezberlenmeli. Logaritma ve üstel fonksiyon soruları kalıpları var — çok soru çözerek kalıpları öğren. Her gün en az 30 soru çöz. Hız için zamanlı çöz ama önce doğruluğu artır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YKS matematik, strateji, temel konular, geometri, olasılık, hız, doğruluk.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "WebHook ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Webhook, bir olay gerçekleştiğinde otomatik olarak belirlenen URL'ye HTTP isteği gönderen mekanizma. Polling'in tersi — sürekli 'bir şey oldu mu?' diye sormak yerine, bir şey olduğunda sana haber verir. Örnekler: GitHub'da PR oluşturulunca Slack'e bildirim, Stripe'da ödeme alındığında veritabanını güncelle, bir form doldurulduğunda e-posta gönder. Webhook URL'si bir endpoint'tir — gelen POST isteğini işler. Güvenlik: webhook secret ile imza doğrulama. Retry mekanizması: başarısız olursa tekrar dener. Event-driven architecture'ın temel taşlarından biri. Zapier ve IFTTT webhook tabanlı çalışır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Webhook, event-driven, Slack, Stripe, güvenlik, retry.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "HTTP/2 ve HTTP/3 ne getiriyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "HTTP/1.1 her istek için ayrı bağlantı açar — yavaş. HTTP/2: multiplexing (tek bağlantıda birden fazla istek), header compression (HPACK), server push (istemci istemeden kaynak gönderir), binary protocol. HTTP/3: QUIC protokolü üzerinde (UDP tabanlı — TCP'den hızlı), daha az handshake, bağlantı göçü (WiFi'dan 4G'ye geçişte bağlantı kopmaz). Google, YouTube, Facebook HTTP/3 kullanıyor. Çoğu modern web sunucusu ve CDN HTTP/2'yi destekler. Nginx ve Cloudflare HTTP/3 desteği veriyor. Web performansı için HTTP/2 minimum olmalı. Header'da protocol versiyonu browser DevTools'ta görülebilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "HTTP/2, HTTP/3, multiplexing, QUIC, server push, performans.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "container ve VM arasındaki fark ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Virtual Machine (VM): tam bir işletim sistemi çalıştırır — hypervisor (VMware, VirtualBox) üzerinde. Ağır (GB boyutunda), yavaş başlatma (dakikalar), tam izolasyon. Container (Docker): host OS kernel'ini paylaşır, sadece uygulama ve bağımlılıklarını paketler. Hafif (MB boyutunda), hızlı başlatma (saniyeler), yeterli izolasyon. Container neden kazandı: microservice mimarisi ile uyumlu, CI/CD'de hızlı, geliştirme-production tutarlılığı. VM ne zaman: farklı OS gerekli, güçlü izolasyon şart, legacy uygulamalar. Pratikte birlikte kullanılır — VM'ler üzerinde container'lar çalışır. Kubernetes container'ları orkestra eder.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Container vs VM, Docker, hypervisor, kernel paylaşımı, microservice.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "graph database ne zaman kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Graph database, veriler arası ilişkilerin çok önemli olduğu durumlarda kullanılır. Node (düğüm) ve edge (kenar) yapısı. SQL'de JOIN'ler derinleştikçe yavaşlar, graph DB'de ilişki traversal'ı doğal ve hızlı. Kullanım alanları: sosyal ağlar (arkadaş ilişkileri), öneri motorları (benzer ürünler), bilgi grafikleri (Knowledge Graph — Google kullanıyor), dolandırıcılık tespiti, ağ topolojisi. Neo4j en popüler graph database — Cypher sorgu dili. Amazon Neptune, ArangoDB alternatifleri. Her veri modeline uygun değil — basit CRUD uygulamalarında SQL daha iyi. İlişki yoğun verilerinde çok güçlü.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Graph database, Neo4j, node/edge, sosyal ağ, Knowledge Graph, Cypher.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "banking-management-system projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "banking-management-system, Görkem'in Java ile yazdığı bir banka yönetim sistemi. Hesap oluşturma, para yatırma/çekme, transfer, bakiye sorgulama gibi temel bankacılık işlemlerini simüle ediyor. OOP (Object-Oriented Programming) prensiplerini uygulamak için harika bir proje. Inheritance, encapsulation, polymorphism kavramlarını gerçek bir senaryoda kullanmak öğrenmeyi pekiştiriyor. Java'da exception handling, file I/O, ve belki JDBC ile veritabanı entegrasyonu içeriyor olabilir. Üniversite projeleri için tipik ve çok öğretici bir çalışma.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Banking management, Java, OOP, inheritance, encapsulation, JDBC.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "DNS nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "DNS (Domain Name System), alan adlarını IP adreslerine çeviren sistem — internetin telefon rehberi. google.com yazdığında aslında 142.250.80.14 gibi bir IP'ye gidiyorsun. Adımlar: browser DNS cache'ine bakar → OS cache → ISP DNS → Root DNS sunucusu → TLD (.com) sunucusu → Authoritative DNS sunucusu. DNS kayıt tipleri: A (IPv4), AAAA (IPv6), CNAME (alias), MX (mail), TXT (doğrulama). DNS propagation — değişiklik yayılması 24-48 saat sürebilir. Cloudflare DNS (1.1.1.1), Google DNS (8.8.8.8) hızlı alternatifler. DNS güvenliği: DNSSEC, DNS-over-HTTPS (DoH). Her web geliştiricisinin DNS'i anlaması gerekir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "DNS, alan adı, IP, cache, A kaydı, CNAME, Cloudflare, güvenlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "cv'de neler olmalı yazılımcı için?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yazılım CV'si kısa ve öz olmalı — 1-2 sayfa. Olması gerekenler: iletişim bilgileri (email, GitHub, LinkedIn, portfolio URL), eğitim, teknik beceriler (diller, framework'ler, araçlar), projeler (ne yaptın, hangi teknolojiyi kullandın, sonuç ne oldu), iş deneyimi (varsa), sertifikalar, hackathon'lar, açık kaynak katkıları. Olmaması gerekenler: fotoğraf (tartışmalı), ilgisiz iş deneyimleri, subjektif beceri seviyeleri ('5/5 Python'), uzun paragraflar. ATS (Applicant Tracking System) dostu olsun — basit format, PDF, anahtar kelimeler. Overleaf'te LaTeX CV şablonları var. Her pozisyon için CV'yi özelleştir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CV, GitHub, LinkedIn, projeler, ATS, LaTeX, özelleştirme.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

@@ -1,0 +1,196 @@
+{
+    "train": [
+        [
+            {
+                "content": "What does the \"yield\" keyword do in Python?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, To understand what yield does, you must understand what generators are. And before you can understand generators, you must understand iterables.\nIterables\nWhen you create a list, you can read its items one by one. Reading its items one by one is called iteration:\n>>> mylist = [1, 2, 3]\n>>> for i in mylist:\n...    print(i)\n1\n2\n3\n\nmylist is an iterable. When you use a list comprehension, you create a list, and so an iterable:\n>>> mylist = [x*x for x in range(3)]\n>>> for i in mylist:\n...    print(i)\n0\n1\n4\n\nEverything you can use \"for... in...\" on is an iterable; lists, strings, files...\nThese iterables are handy because you can read them as much as you wish, but you store all the values in memory and this is not always what you want when you have a lot of values.\nGenerators\nGenerators are ite...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about python. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does if __name__ == \"__main__\": do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, Short Answer\nIt's boilerplate code that protects users from accidentally invoking the script when they didn't intend to. Here are some common problems when the guard is omitted from a script:\n\nIf you import the guardless script in another script (e.g. import my_script_without_a_name_eq_main_guard), then the latter script will trigger the former to run at import time and using the second script's command line arguments. This is almost always a mistake.\n\nIf you have a custom class in the guardless script and save it to a pickle file, then unpickling it in another script will trigger an import of the guardless script, with the same problems outlined in the previous bullet.\n\n\nLong Answer\nTo better understand why and how this matters, we need to take a step back to understand how Python initial...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about python. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the role of the bias in neural networks?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, I think that biases are almost always helpful.  In effect, a bias value allows you to shift the activation function to the left or right, which may be critical for successful learning.\n\nIt might help to look at a simple example.  Consider this 1-input, 1-output network that has no bias:\n\n\n\nThe output of the network is computed by multiplying the input (x) by the weight (w0) and passing the result through some kind of activation function (e.g. a sigmoid function.)\n\nHere is the function that this network computes, for various values of w0:\n\n\n\nChanging the weight w0 essentially changes the \"steepness\" of the sigmoid.  That's useful, but what if you wanted the network to output 0 when x is 2?  Just changing the steepness of the sigmoid won't really work -- you want to be able to shift the enti...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about machine-learning. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the difference between a generative and a discriminative algorithm?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, Let's say you have input data x and you want to classify the data into labels y. A generative model learns the joint probability distribution p(x,y) and a discriminative model learns the conditional probability distribution p(y|x) - which you should read as \"the probability of y given x\".\n\nHere's a really simple example. Suppose you have the following data in the form (x,y):\n\n(1,0), (1,0), (2,0), (2, 1)\n\np(x,y) is\n\n      y=0   y=1\n     -----------\nx=1 | 1/2   0\nx=2 | 1/4   1/4\n\n\np(y|x) is\n\n      y=0   y=1\n     -----------\nx=1 | 1     0\nx=2 | 1/2   1/2\n\n\nIf you take a few minutes to stare at those two matrices, you will understand the difference between the two probability distributions.\n\nThe distribution p(y|x) is the natural distribution for classifying a given example x into a class y, w...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about algorithm. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Epoch vs Iteration when training neural networks",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, In the neural network terminology:\n\none epoch = one forward pass and one backward pass of all the training examples\nbatch size = the number of training examples in one forward/backward pass. The higher the batch size, the more memory space you'll need.\nnumber of iterations =  number of passes, each pass using [batch size] number of examples. To be clear, one pass = one forward pass + one backward pass (we do not count the forward pass and backward pass as two different passes).\n\nFor example: if you have 1000 training examples, and your batch size is 500, then it will take 2 iterations to complete 1 epoch.\nFYI: Tradeoff batch size vs. number of iterations to train a neural network\n\nThe term \"batch\" is ambiguous: some people use it to designate the entire training set, and some people use it...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about machine-learning. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the meaning of the word logits in TensorFlow?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, \"Logit\" and \"logits\" are overloaded terms that can mean the logit function, its outputs, or the inputs to exponential-based functions like softmax or sigmoid.\n\nIn math, logit is a bijective function that maps probabilities ([0, 1]) to R ((-inf, inf)):\n\n\nA probability p = 0.5 maps to the logit L = 0.\nNegative logits L \nPositive logits L > 0 map to probabilities p > 0.5.\n\nThe logit function is also the inverse of the logistic sigmoid, i.e., p = sigmoid(logit(p)).\n\nIn ML, \"logits\" often denotes\n\nthe vector of raw (non-normalized) predictions that a classification\nmodel generates, which is ordinarily then passed to a normalization\nfunction. If the model is solving a multi-class classification\nproblem, logits typically become an input to the softmax function. The\nsoftmax function then generates...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about tensorflow. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How do I check if PyTorch is using the GPU?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, These functions should help:\n>>> import torch\n\n>>> torch.cuda.is_available()\nTrue\n\n>>> torch.cuda.device_count()\n1\n\n>>> torch.cuda.current_device()\n0\n\n>>> torch.cuda.device(0)\n\n\n>>> torch.cuda.get_device_name(0)\n'GeForce GTX 950M'\n\nThis tells us:\n\nCUDA is available and can be used by one device.\nDevice 0 refers to the GPU GeForce GTX 950M, and it is currently chosen by PyTorch.\n\n",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about python. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How do I save a trained model in PyTorch?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, Found this page on their github repo:\n\nRecommended approach for saving a model\nThere are two main approaches for serializing and restoring a model.\nThe first (recommended) saves and loads only the model parameters:\ntorch.save(the_model.state_dict(), PATH)\n\nThen later:\nthe_model = TheModelClass(*args, **kwargs)\nthe_model.load_state_dict(torch.load(PATH))\n\n\nThe second saves and loads the entire model:\ntorch.save(the_model, PATH)\n\nThen later:\nthe_model = torch.load(PATH)\n\nHowever in this case, the serialized data is bound to the specific classes and the exact directory structure used, so it can break in various ways when used in other projects, or after some serious refactors.\n\n\nSee also: Save and Load the Model section from the official PyTorch tutorials.\n",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about python. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, What is this warning about?\nModern CPUs provide a lot of low-level instructions, besides the usual arithmetic and logic, known as extensions, e.g. SSE2, SSE4, AVX, etc. From the Wikipedia:\n\nAdvanced Vector Extensions (AVX) are extensions to the x86 instruction\nset architecture for microprocessors from Intel and AMD proposed by\nIntel in March 2008 and first supported by Intel with the Sandy\nBridge processor shipping in Q1 2011 and later on by AMD with the\nBulldozer processor shipping in Q3 2011. AVX provides new features,\nnew instructions and a new coding scheme.\n\nIn particular, AVX introduces fused multiply-accumulate (FMA) operations, which speed up linear algebra computation, namely dot-product, matrix multiply, convolution, etc. Almost every machine-learning training involves a great de...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about python. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "TensorFlow not found using pip",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, I found this to finally work.\n\npython3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.12.0-py3-none-any.whl\n\n\nEdit 1: This was tested on Windows (8, 8.1, 10), Mac and Linux. Change python3 to python according to your configuration. Change py3 to py2 in the url if you are using Python 2.x.\n\nEdit 2: A list of different versions if someone needs: https://storage.googleapis.com/tensorflow\n\nEdit 3: A list of urls for the available wheel packages is available here:\nhttps://www.tensorflow.org/install/pip#package-location\n",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about python. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How does the Google \"Did you mean?\" Algorithm work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, Here's the explanation directly from the source ( almost ) \n\nSearch 101!\n\nat min 22:03\n\nWorth watching!\n\nBasically and according  to Douglas Merrill former CTO of Google it is like this:\n\n1) You write a  ( misspelled )  word  in google \n\n2) You don't find what you wanted ( don't click on any results )\n\n3) You realize you misspelled the word  so you rewrite the word in the search box.\n\n4) You find what you want ( you click in the first links ) \n\nThis pattern multiplied millions of times, shows what are the most common misspells and what are the most \"common\" corrections. \n\nThis way Google can almost instantaneously, offer spell correction in every language.\n\nAlso this means if overnight everyone start to spell night as \"nigth\" google would suggest that word instead.  \n\nEDIT\n\n@ThomasRutter: ...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about algorithm. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to compute the similarity between two text documents?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Great question! Based on what I've seen in the developer community, The common way of doing this is to transform the documents into TF-IDF vectors and then compute the cosine similarity between them. Any textbook on information retrieval (IR) covers this. See esp. Introduction to Information Retrieval, which is free and available online.\nComputing Pairwise Similarities\nTF-IDF (and similar text transformations) are implemented in the Python packages Gensim and scikit-learn. In the latter package, computing cosine similarities is as easy as\nfrom sklearn.feature_extraction.text import TfidfVectorizer\n\ndocuments = [open(f).read() for f in text_files]\ntfidf = TfidfVectorizer().fit_transform(documents)\n# no need to normalize, since Vectorizer will return normalized tf-idf\npairwise_similarity = tfidf * tfidf.T\n\nor, if the documents are plain strings,\n>>> corpus =...",
+                "images": null,
+                "role": "assistant",
+                "thinking": "User is asking about python. Let me provide a helpful answer based on community knowledge.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

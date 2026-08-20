@@ -1,0 +1,228 @@
+{
+    "train": [
+        [
+            {
+                "content": "what is natural language processing NLP pipeline?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "NLP processes and understands human language. Traditional pipeline: 1) Tokenization — split text into tokens (words, subwords). BPE (Gorkem's wiki2bpe), WordPiece, SentencePiece. 2) Preprocessing — lowercasing, removing punctuation, stemming/lemmatization, stop word removal. 3) Feature extraction — Bag of Words, TF-IDF, word embeddings (Word2Vec, GloVe, FastText). 4) Model — classification (sentiment, spam), NER (named entity recognition), POS tagging, machine translation, summarization, question answering. Modern NLP: pretrained transformers replaced the entire pipeline. BERT (bidirectional, great for understanding — classification, NER, QA), GPT (autoregressive, great for generation — text completion, chat), T5 (text-to-text, versatile). Fine-tuning: take pretrained model, add task-specific head, train on your data. Few-shot learning: provide examples in the prompt, no fine-tuning needed. Tools: Hugging Face Transformers (model hub + library), spaCy (production NLP), NLTK (educational). Gorkem's NMT project implements sequence-to-sequence translation, connecting tokenization (wiki2bpe) to neural architecture (transformers).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "NLP, tokenization, BPE, BERT, GPT, T5, Hugging Face, spaCy, transformers, fine-tuning.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is dbt and modern data stack?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "dbt (data build tool) transforms data in your warehouse using SQL. Instead of custom Python ETL scripts, write SELECT statements and dbt handles the rest. How it works: you write SQL models (SELECT statements), dbt materializes them as tables or views in your data warehouse. Features: dependency management (ref() function), testing (schema tests, data tests), documentation (auto-generated), incremental models (process only new data), snapshots (track slowly changing dimensions). Modern Data Stack: Fivetran/Airbyte (extract & load) → Snowflake/BigQuery/Redshift (warehouse) → dbt (transform) → Looker/Metabase (BI/visualization). This is the ELT pattern (Extract, Load, Transform) vs traditional ETL. Why ELT: warehouses are powerful enough to handle transformation, SQL is more accessible than Python for analysts. dbt Core (open source, CLI) vs dbt Cloud (managed, IDE, scheduling). Jinja templating: dbt uses Jinja in SQL for variables, macros, control flow. Best practices: use staging models (clean raw data), intermediate models (business logic), mart models (final output for analysts). dbt has become the standard for analytics engineering.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "dbt, modern data stack, ELT, SQL transformation, Snowflake, BigQuery, analytics engineering.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is random forest and when to use it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Random Forest is an ensemble of decision trees that makes predictions by majority vote (classification) or average (regression). How it works: 1) Bootstrap sampling — create N random subsets of training data (with replacement). 2) Build a decision tree on each subset — at each split, consider only a random subset of features (sqrt(total) for classification). 3) Aggregate predictions — majority vote or average. This is called bagging (Bootstrap AGGregating). Why it works: individual trees may overfit, but averaging many decorrelated trees reduces variance without increasing bias. Benefits: handles both classification and regression, works well with mixed feature types, handles missing values, provides feature importance rankings, little hyperparameter tuning needed, resistant to overfitting. When to use: tabular data (still king for structured data despite deep learning hype), need interpretable feature importance, quick baseline model, medium-sized datasets. When not to: very large datasets (training can be slow), need real-time predictions with extreme low latency, sequential data (use RNNs/Transformers), image/text data (use deep learning). Hyperparameters: n_estimators (100-500 trees), max_depth, min_samples_split. Gorkem uses Random Forest in his phishing-domain-detection project.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Random Forest, ensemble, bagging, decision tree, feature importance, classification, tabular.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is state management in frontend applications?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "State management handles data that changes over time in your UI. Types of state: local (component-specific — form inputs, toggles), shared (multiple components — user auth, shopping cart), server (data from API — cached, synchronized), URL (route params, query strings). React state solutions (simplest to most complex): useState/useReducer (local state), Context API (shared state for small apps — beware re-render issues), Zustand (simple global store, minimal boilerplate), Jotai (atomic state management), Redux Toolkit (most popular for large apps, predictable, DevTools), TanStack Query (server state — caching, refetching, pagination). Vue: Pinia (official, composition API), Vuex (legacy). Angular: NgRx (Redux pattern), services with RxJS. Server state is the biggest source of complexity — TanStack Query (React Query), SWR, or Apollo Client (GraphQL) handle caching, background refetching, optimistic updates, and error handling. You probably don't need Redux — most state is server state (use React Query) or local state (use useState). Only reach for global state management when you have truly global UI state.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "State management, Redux, Zustand, React Query, Context API, server state, Pinia, TanStack.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is gradient boosting XGBoost LightGBM?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gradient boosting builds trees sequentially — each tree corrects the errors of the previous ones. Unlike Random Forest (parallel trees), gradient boosting adds trees that predict the residual error. XGBoost (eXtreme Gradient Boosting): regularized gradient boosting. Handles missing values, built-in cross-validation, parallel tree construction. Dominated Kaggle competitions for years. LightGBM (Microsoft): faster training via histogram-based learning and leaf-wise tree growth (vs level-wise). Better for large datasets. GOSS (Gradient-based One-Side Sampling) and EFB (Exclusive Feature Bundling) for efficiency. CatBoost (Yandex): handles categorical features natively (no need for one-hot encoding), ordered boosting reduces overfitting. When to use: tabular/structured data competitions, feature-rich datasets, need high accuracy. Parameters that matter: learning_rate (0.01-0.3, lower = more trees needed), n_estimators (100-1000), max_depth (3-8), early_stopping_rounds. XGBoost vs LightGBM: LightGBM is faster and uses less memory, XGBoost is more established. Both outperform Random Forest on most benchmarks. For deep learning to beat gradient boosting on tabular data, you usually need very large datasets.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gradient boosting, XGBoost, LightGBM, CatBoost, ensemble, sequential, Kaggle, tabular.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is convolutional neural network CNN?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CNNs are designed for processing grid-like data — primarily images. Key layers: Convolutional layer — slides filters (kernels) across the image, detecting features (edges, textures, patterns). Each filter produces a feature map. Early layers detect low-level features (edges), deeper layers detect high-level features (faces, objects). Pooling layer — reduces spatial dimensions (Max Pooling takes the maximum value in each window). Reduces computation and provides translation invariance. Fully connected layer — at the end, flattens feature maps and classifies. Architecture evolution: LeNet (1998, digit recognition) → AlexNet (2012, ImageNet breakthrough, ReLU, dropout) → VGGNet (2014, deeper with small 3x3 filters) → ResNet (2015, skip connections, 152 layers) → EfficientNet (2019, compound scaling). Modern: Vision Transformers (ViT) are challenging CNNs — split image into patches, apply transformer architecture. But CNNs still dominate for small datasets and edge deployment. Transfer learning: use pretrained CNN (ResNet, EfficientNet) as feature extractor, fine-tune last layers. Gorkem's yolo-custom-detector uses CNN-based architecture for object detection.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CNN, convolutional, pooling, ResNet, EfficientNet, ViT, feature maps, transfer learning.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is data engineering with Apache Airflow?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Apache Airflow is a workflow orchestration platform for data pipelines. Concept: define workflows as Directed Acyclic Graphs (DAGs) in Python. Each node is a task, edges define dependencies. Key features: scheduling (cron-like), dependency management, retry logic, monitoring UI, alerting, extensibility via operators. Operators: PythonOperator (run Python functions), BashOperator (shell commands), PostgresOperator (SQL queries), S3ToRedshiftOperator (data transfer). Example DAG: extract data from API → transform with Python → load into database → send notification. Airflow is the scheduler, not the execution engine — tasks should do their work elsewhere (Spark, dbt, Python scripts). Architecture: Webserver (UI), Scheduler (triggers tasks), Workers (execute tasks), Metadata DB (PostgreSQL). Best practices: keep DAGs simple, use XCom sparingly (for small data only), parameterize with variables, use TaskFlow API (Python decorators). Alternatives: Prefect (modern, Pythonic), Dagster (software-defined assets), Luigi (simpler), Mage (data pipeline tool). For smaller pipelines: cron + scripts might be enough. Airflow shines for complex, interdependent workflows at scale.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Airflow, DAG, workflow orchestration, ETL, operators, data pipeline, scheduling, Prefect.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are AWS core services every developer should know?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AWS has 200+ services but a handful cover most needs. Compute: EC2 (virtual servers), Lambda (serverless functions), ECS/EKS (containers), Fargate (serverless containers). Storage: S3 (object storage — files, backups, static hosting), EBS (block storage for EC2), EFS (shared file system). Database: RDS (managed PostgreSQL/MySQL), DynamoDB (NoSQL key-value), ElastiCache (managed Redis/Memcached), Aurora (high-performance PostgreSQL/MySQL compatible). Networking: VPC (virtual network), Route 53 (DNS), CloudFront (CDN), ALB/NLB (load balancers), API Gateway. Security: IAM (users, roles, permissions), Secrets Manager, KMS (encryption keys), WAF (web application firewall). Monitoring: CloudWatch (metrics, logs, alerts). Messaging: SQS (message queue), SNS (pub/sub notifications), EventBridge (event bus). CI/CD: CodePipeline, CodeBuild, or just use GitHub Actions. Start with: S3 + Lambda + DynamoDB for serverless, or EC2 + RDS + S3 for traditional. Free tier covers learning. AWS certifications (Cloud Practitioner → Solutions Architect Associate) are valuable for career.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AWS, EC2, S3, Lambda, RDS, DynamoDB, VPC, IAM, CloudFront, core services.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is memory management in programming?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Memory management allocates and deallocates memory for program data. Stack: automatic, fast, limited size. Stores function call frames, local variables, return addresses. LIFO order — allocated on function entry, freed on exit. Stack overflow: too deep recursion. Heap: manual or GC-managed, slower, larger. Stores objects, dynamic arrays, data that outlives function scope. Fragmentation can occur. Manual management (C/C++): malloc/free, new/delete. Full control but risk of: memory leaks (forget to free), dangling pointers (use after free), double free, buffer overflow. Garbage collection (Java, Python, Go, JS): automatic — mark-and-sweep, generational GC. Easier but GC pauses, less predictable performance. Ownership (Rust): compile-time memory management. No GC overhead, no manual free. Borrow checker prevents all memory bugs at compile time. Smart pointers (C++): unique_ptr (exclusive ownership), shared_ptr (reference counted), weak_ptr (non-owning). Reference counting (Python, Swift): count references, free at zero. Simple but circular reference problem (Python uses cycle detector). Understanding memory helps with: performance optimization, debugging crashes, choosing the right language for the task. Gorkem's gorkem-os project deals with memory management at the OS level.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Memory management, stack, heap, garbage collection, ownership, smart pointers, memory leak.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the difference between supervised, unsupervised, and reinforcement learning?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Three main ML paradigms. Supervised learning: learn from labeled data (input-output pairs). Classification (predict category — spam/not spam) and regression (predict number — house price). Algorithms: linear/logistic regression, decision trees, random forest, SVM, neural networks. Unsupervised learning: find patterns in unlabeled data. Clustering (group similar items — K-means, DBSCAN, hierarchical), dimensionality reduction (PCA, t-SNE, UMAP), anomaly detection (isolation forest). No labels needed — discover hidden structure. Semi-supervised: small amount of labeled data + large unlabeled data. Reinforcement learning: agent learns by interacting with environment, receiving rewards/penalties. No labeled data — learns through trial and error. Applications: game playing, robotics, recommendation systems. Self-supervised learning: generate labels from data itself — masked language modeling (BERT), next token prediction (GPT), contrastive learning (SimCLR). Drives modern AI. Choose based on: do you have labels? (supervised). No labels but want structure? (unsupervised). Sequential decisions? (RL). Gorkem's projects span these paradigms.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Supervised, unsupervised, reinforcement learning, classification, clustering, self-supervised.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is internationalization i18n?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Internationalization (i18n) prepares your application for multiple languages and locales. Localization (l10n) is the actual adaptation for a specific locale. Key considerations: 1) Text translation — extract all user-facing strings into translation files (JSON, PO files). Never hardcode strings. Use ICU MessageFormat for plurals and variables. 2) Date/time formatting — different locales: MM/DD/YYYY (US) vs DD/MM/YYYY (Europe) vs YYYY-MM-DD (ISO). Use Intl.DateTimeFormat or libraries (date-fns, Day.js with locale). 3) Number formatting — 1,234.56 (US) vs 1.234,56 (Germany). Intl.NumberFormat. 4) Currency — symbol position, decimal places vary by currency. 5) RTL support — Arabic, Hebrew read right-to-left. CSS logical properties (margin-inline-start), dir='rtl'. 6) Text expansion — German text is 30% longer than English on average. Design flexible layouts. Libraries: react-intl, next-intl, i18next, vue-i18n. Backend: store user locale preference, serve appropriate translations. Translation management: Crowdin, Lokalise, Phrase. Best practice: start with i18n even if launching in one language — retrofitting is much harder. Gorkem's bot serves Turkish and English content — this project is inherently bilingual.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Internationalization, i18n, l10n, translation, RTL, locale, date format, react-intl.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is cryptography basics for developers?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Cryptography fundamentals every developer should understand. Symmetric encryption: same key encrypts and decrypts. AES-256 is the standard. Fast, used for data at rest and in transit. Challenge: how to share the key securely? Asymmetric encryption: public key encrypts, private key decrypts (or vice versa for signing). RSA, ECDSA, Ed25519. Slower but solves key exchange problem. Used in TLS handshake, SSH, digital signatures. Hashing: one-way function, fixed-length output. SHA-256 for data integrity, bcrypt/argon2 for passwords. Properties: deterministic, avalanche effect (small input change → completely different hash), collision resistant. HMAC: hash with a secret key — verify both integrity and authenticity. Password storage: NEVER store plaintext. Use bcrypt (built-in salt, adjustable cost factor), argon2 (memory-hard, newest recommendation), or scrypt. NEVER use MD5 or SHA for passwords (too fast, vulnerable to brute force). Digital signatures: hash the message, encrypt hash with private key. Anyone can verify with public key. Used in: JWTs, code signing, blockchain. Certificates: bind public key to identity, signed by Certificate Authority (CA). Don't implement crypto yourself — use established libraries (libsodium, OpenSSL). Crypto is easy to get wrong.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Cryptography, AES, RSA, hashing, bcrypt, argon2, digital signatures, HMAC, TLS.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is performance engineering?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Performance engineering ensures applications meet speed and scalability requirements. Frontend: Core Web Vitals (LCP, INP, CLS), bundle size optimization (code splitting, tree shaking), image optimization (WebP, lazy loading), font loading strategies (font-display: swap), critical rendering path, render blocking resources. Backend: database query optimization (indexing, N+1, caching), connection pooling, async processing (queues for heavy work), horizontal scaling, caching layers (Redis, CDN). Profiling: Chrome DevTools Performance tab (frontend), flame graphs (backend), continuous profiling (Pyroscope). Load testing: k6, Locust — test before users do. Monitoring: set performance budgets, alert on regressions. p50/p95/p99 latencies (p99 matters most — worst experience). Common bottlenecks: unindexed database queries, N+1 queries, synchronous external API calls, large JavaScript bundles, unoptimized images, missing caching. Performance optimization process: measure → identify bottleneck → fix → measure again. Don't optimize prematurely — profile first, then optimize the actual bottleneck. Amdahl's Law: optimizing a part that's 10% of execution time by 50% only gives 5% overall improvement.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Performance engineering, profiling, Core Web Vitals, caching, load testing, p99, Amdahl.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is accessibility a11y in web development?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Accessibility (a11y) ensures websites are usable by everyone, including people with disabilities. WCAG (Web Content Accessibility Guidelines) defines standards: Level A (minimum), AA (standard target), AAA (ideal). Key principles (POUR): Perceivable (content available to senses — alt text for images, captions for video), Operable (navigable by keyboard, sufficient time), Understandable (clear language, predictable behavior), Robust (works with assistive technologies). Common fixes: semantic HTML (use <button> not <div onclick>, <nav>, <main>, <article>), alt text for images, sufficient color contrast (4.5:1 ratio for normal text), keyboard navigation (tab order, focus indicators), ARIA attributes (aria-label, aria-describedby, role) when HTML semantics aren't enough, form labels, skip navigation links. Testing: Lighthouse accessibility audit, axe DevTools extension, screen reader testing (NVDA, VoiceOver), keyboard-only navigation test. Legal: ADA (US), EAA (EU) require accessible websites — lawsuits are increasing. Business case: 15% of world population has some disability, accessible sites have better SEO, benefit everyone (captions help in noisy environments). Accessibility isn't an afterthought — design and develop with it from the start.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Accessibility, a11y, WCAG, ARIA, semantic HTML, screen reader, keyboard navigation, POUR.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

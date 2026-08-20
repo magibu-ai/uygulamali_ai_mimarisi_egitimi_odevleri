@@ -1,0 +1,1 @@
+requests>=2.31    # Ollama ve web API'leri (hava, arama) icin HTTP

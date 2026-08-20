@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Sanal ortam
+.venv
+
+# Ortam degiskenleri ve yerel veri
+.env
+meslekler.db
+
+# macOS
+.DS_Store

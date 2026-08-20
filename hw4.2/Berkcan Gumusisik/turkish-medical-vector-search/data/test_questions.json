@@ -1,0 +1,177 @@
+{
+  "description": "Benchmark set for the Acibadem Turkish-medical vector index. 20 positive questions whose answers are directly present in the indexed chunks (each tagged with its source article URL and the expected answer), and 10 negative questions whose answers are absent from the corpus (out-of-domain topics or medical conditions not covered).",
+  "positive": [
+    {
+      "id": "p01",
+      "question": "Zatürreye en yaygın olarak hangi bakteri neden olur?",
+      "expected_answer": "Streptococcus pneumoniae",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/zaturre-pnomoni-nedir/"
+    },
+    {
+      "id": "p02",
+      "question": "Yetişkinlerin günlük alması gereken iyot miktarı kaç mikrogramdır?",
+      "expected_answer": "150 mikrogram",
+      "expected_url": "https://www.acibadem.com.tr/hayat/gunde-ne-kadar-iyot-almaliyiz/"
+    },
+    {
+      "id": "p03",
+      "question": "Vücuttaki fosforun yaklaşık yüzde kaçı kemik ve dişlerde depolanır?",
+      "expected_answer": "Yaklaşık %85'i",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/fosfor-nedir/"
+    },
+    {
+      "id": "p04",
+      "question": "Menenjit vücutta hangi zarların iltihaplanmasıdır?",
+      "expected_answer": "Beyin ve omurilik zarlarının iltihaplanması",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/menenjit-asisi-nedir/"
+    },
+    {
+      "id": "p05",
+      "question": "Zika virüsü insanlara nasıl bulaşır?",
+      "expected_answer": "Sivrisinek (Aedes) ısırığı ile bulaşır",
+      "expected_url": "https://www.acibadem.com.tr/hayat/zika-virusu-nedir/"
+    },
+    {
+      "id": "p06",
+      "question": "Zika virüsü ilk kez hangi yıl maymunlarda saptanmıştır?",
+      "expected_answer": "1947 yılında",
+      "expected_url": "https://www.acibadem.com.tr/hayat/zika-virusu-nedir/"
+    },
+    {
+      "id": "p07",
+      "question": "Vebaya neden olan bakterinin adı nedir?",
+      "expected_answer": "Yersinia Pestis",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/veba/"
+    },
+    {
+      "id": "p08",
+      "question": "En yaygın görülen veba türü hangisidir?",
+      "expected_answer": "Hıyarcıklı (bubonik) veba",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/veba/"
+    },
+    {
+      "id": "p09",
+      "question": "Böbrek kanseri için en önemli risk faktörü nedir?",
+      "expected_answer": "Sigara",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/bobrek-kanseri/"
+    },
+    {
+      "id": "p10",
+      "question": "Menopozun kesin tanısı nasıl konur?",
+      "expected_answer": "Aralıksız 12 ay boyunca adet görülmemesi ile",
+      "expected_url": "https://www.acibadem.com.tr/tibbi-birim/menopoz-nedir/"
+    },
+    {
+      "id": "p11",
+      "question": "Vücutta bulunan iki temel kıl tipi nedir?",
+      "expected_answer": "Vellüs ve terminal kıllar",
+      "expected_url": "https://www.acibadem.com.tr/hayat/hirsutizm-nedir/"
+    },
+    {
+      "id": "p12",
+      "question": "Balon atım testinde 40 cc hava ile şişirilmiş balon normalde kaç dakika içinde çıkarılabilmelidir?",
+      "expected_answer": "1-5 dakika içinde",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/balon-atim-testi-ve-tedavisi/"
+    },
+    {
+      "id": "p13",
+      "question": "Ewing sarkomu hangi tür bir kanserdir?",
+      "expected_answer": "Nadir görülen bir kemik kanseri (çocukluk çağı kanseri)",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/ewing-sarkomu-nedir-belirtileri-tedavisi/"
+    },
+    {
+      "id": "p14",
+      "question": "Spastisite tedavisinde hangi toksin enjeksiyonu kullanılır?",
+      "expected_answer": "Botulinum toksini",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/spastisite-nedir/"
+    },
+    {
+      "id": "p15",
+      "question": "Piromani nasıl bir bozukluktur?",
+      "expected_answer": "Tekrarlayan şekilde yangın çıkarma dürtüsüne karşı koyamama ile giden bir dürtü kontrol bozukluğu",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/piromani-nedir-belirtileri-tedavisi/"
+    },
+    {
+      "id": "p16",
+      "question": "Frambuazın diğer adı nedir?",
+      "expected_answer": "Ahududu",
+      "expected_url": "https://www.acibadem.com.tr/hayat/frambuaz-faydalari-nelerdir/"
+    },
+    {
+      "id": "p17",
+      "question": "Jinekomasti nedir?",
+      "expected_answer": "Erkeklerde östrojen ve testosteron dengesizliği nedeniyle meme dokusunun iyi huylu büyümesi",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/jinekomasti/"
+    },
+    {
+      "id": "p18",
+      "question": "İmmünoglobulinler ne tür moleküllerdir?",
+      "expected_answer": "Bağışıklık sistemi tarafından üretilen antikorlar (protein yapılar)",
+      "expected_url": "https://www.acibadem.com.tr/hayat/ig-nedir/"
+    },
+    {
+      "id": "p19",
+      "question": "Sosyopatlık hangi kişilik bozukluğu ile karakterizedir?",
+      "expected_answer": "Antisosyal kişilik bozukluğu",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/sosyopat-ne-demek/"
+    },
+    {
+      "id": "p20",
+      "question": "Hematemez ne anlama gelir?",
+      "expected_answer": "Mide veya yemek borusundaki kanamaya bağlı kanlı kusma",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/hematemez-kanli-kusma-nedir/"
+    }
+  ],
+  "negative": [
+    {
+      "id": "n01",
+      "question": "Bitcoin'in bugünkü fiyatı kaç dolardır?",
+      "reason": "Kripto para; tıbbi korpusla ilgisiz."
+    },
+    {
+      "id": "n02",
+      "question": "Fenerbahçe Spor Kulübü hangi yıl kurulmuştur?",
+      "reason": "Spor tarihi; korpusta yok."
+    },
+    {
+      "id": "n03",
+      "question": "Python programlama dilinde bir döngü nasıl yazılır?",
+      "reason": "Yazılım; tıbbi korpusla ilgisiz."
+    },
+    {
+      "id": "n04",
+      "question": "Ay'a ilk ayak basan astronotun adı nedir?",
+      "reason": "Uzay tarihi; korpusta yok."
+    },
+    {
+      "id": "n05",
+      "question": "Elektrikli otomobiller evde nasıl şarj edilir?",
+      "reason": "Otomotiv teknolojisi; korpusla ilgisiz."
+    },
+    {
+      "id": "n06",
+      "question": "Everest Dağı'nın yüksekliği kaç metredir?",
+      "reason": "Coğrafya; korpusta yok."
+    },
+    {
+      "id": "n07",
+      "question": "Kuantum bilgisayarlar nasıl çalışır?",
+      "reason": "Fizik/teknoloji; korpusla ilgisiz."
+    },
+    {
+      "id": "n08",
+      "question": "Kuduz hastalığı nasıl bulaşır ve nasıl tedavi edilir?",
+      "reason": "Tıbbi ama seçilen 250 makalede geçmeyen bir hastalık ('kuduz' korpusta 0 kez geçiyor)."
+    },
+    {
+      "id": "n09",
+      "question": "Vitiligo hastalığının nedenleri nelerdir?",
+      "reason": "Tıbbi ama seçilen 250 makalede geçmeyen bir hastalık ('vitiligo' korpusta 0 kez geçiyor)."
+    },
+    {
+      "id": "n10",
+      "question": "Skolyoz tedavisinde hangi yöntemler kullanılır?",
+      "reason": "Tıbbi ama seçilen 250 makalede geçmeyen bir durum ('skolyoz' korpusta 0 kez geçiyor)."
+    }
+  ]
+}

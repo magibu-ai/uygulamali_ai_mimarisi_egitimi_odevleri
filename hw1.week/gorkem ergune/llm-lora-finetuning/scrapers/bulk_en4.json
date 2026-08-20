@@ -1,0 +1,820 @@
+{
+    "train": [
+        [
+            {
+                "content": "What does wiki2bpe do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "wiki2bpe is Gorkem's project that processes Wikipedia data with a BPE (Byte Pair Encoding) tokenizer. BPE is one of the most common tokenization methods in NLP — GPT models also use BPE. You scrape text data from Wikipedia and train your own tokenizer. This tokenizer can then be used for language model training. It may have been published to Hugging Face Hub. Tokenization is the foundation of NLP — breaking text into pieces the model can understand. This project shows Gorkem's depth in NLP.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "wiki2bpe, BPE tokenization, Wikipedia, NLP fundamentals.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the re-mind project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "re-mind could be an application in the reminder or mental health space. The name suggests a concept of re-remembering or keeping in mind. Could be a learning tool based on spaced repetition or a meditation and mindfulness app. Either way, it touches users' daily lives. Gorkem develops not only technical projects but products that improve people's lives.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "re-mind project, reminder, mental health, spaced repetition.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What technologies are trending in 2024-2025?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI and LLMs are definitely the biggest trend — building applications with ChatGPT, Claude, Gemini APIs. RAG and AI agents are very popular. Rust is rising for security and performance. WebAssembly (WASM) for running code at native speed in browsers. Edge computing and IoT. Quantum computing research is progressing. Kubernetes and cloud-native development have become standard. Low-code/no-code platforms are growing but not replacing developers. Cybersecurity is always critical. Gorkem is following the right strategy by staying in the AI field.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "2024-2025 tech trends, AI, LLM, Rust, WASM, Kubernetes.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How does GAN (Generative Adversarial Network) work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A GAN consists of two neural networks: Generator and Discriminator. The Generator tries to create fake data, the Discriminator tries to distinguish real from fake. They improve each other through learning — the Generator produces more realistic output, the Discriminator gets better at detecting fakes. Eventually the Generator becomes so good the Discriminator can't tell the difference. Applications: image generation (realistic faces with StyleGAN), image inpainting, style transfer, data augmentation. Training is difficult because the balance between the two networks can break (mode collapse). Ian Goodfellow introduced it in 2014.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GAN, Generator, Discriminator, training, applications, mode collapse.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does Docker Compose do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Docker Compose manages multiple Docker containers together. Say your web app has frontend, backend, database, Redis — instead of running each with docker run, you define them all in a docker-compose.yml file. docker-compose up brings everything up at once. Very useful in development — when a new developer joins, they just run docker-compose up and everything works. Inter-service networking is set up automatically. Volumes provide data persistence. Environment variables are read from .env files. For production you typically switch to Kubernetes but Compose is sufficient for development.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Docker Compose, multi-container, yml, development environment, Kubernetes.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is a vector database?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A vector database is a specialized database that stores high-dimensional vectors (embeddings) and enables similarity search. Traditional databases search for exact matches; vector databases search for similarity — 'find the 10 vectors closest to this vector'. Pinecone, Chroma, Weaviate, Milvus, FAISS are popular solutions. In RAG systems, document embeddings are stored here. In recommendation systems, similar products are found. In search engines, semantic search is performed. Has become an infrastructure component of AI applications.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Vector database, embedding, similarity search, Pinecone, RAG.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Does blogging help your career?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Absolutely yes. Blogging is beneficial in many ways: you solidify what you learn by writing it (Feynman technique), you improve communication skills (technical writing), your online visibility increases, you solve problems for others struggling with the same topic. Platforms include Medium, Dev.to, Hashnode, personal blog (GitHub Pages). If you don't know what to write: explain a technology you learned, share a problem you solved, write a project tutorial. Even one post per week is enough. Consistency matters. Saying 'I blog' in interviews is a plus.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Blogging, Feynman technique, Medium, Dev.to, communication skills, interviews.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Which courses should I focus on in university?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Some courses in computer engineering are critical for your career. Data structures and algorithms — the foundation of interviews. Operating systems — understand how computers work. Database systems — present in every software. Computer networks — learn how the web works. AI and machine learning — the field of the future. Math courses (linear algebra, probability) — very important for AI. Software engineering — project management, design patterns. For electives follow your interests. But don't rely only on courses — do side projects like Gorkem, increase practical experience.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "University courses, data structures, algorithms, AI, math, projects.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does the face-detection-pipeline project do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "face-detection-pipeline creates an end-to-end pipeline for face detection. Pipeline means automating all steps from raw image to result: image preprocessing, face detection, face alignment, feature extraction, and result generation. Tools like OpenCV, dlib, MTCNN may have been used. Pipeline architecture is important because in real-world applications, the model alone isn't enough — you also need to prepare data for the model and process the results. A modular pipeline means code that's easy to maintain and extend.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Face detection pipeline, preprocessing, modular architecture, OpenCV.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is reinforcement learning?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Reinforcement Learning (RL) is an agent learning by interacting with an environment through rewards and penalties. Different from supervised learning — there's no labeled data, the agent learns by trying. Core concepts: state, action, reward, policy. Q-learning and Deep Q-Network (DQN) are fundamental algorithms. AlphaGo, OpenAI Five (Dota 2), ChatGPT's RLHF (Reinforcement Learning from Human Feedback) stage all use RL. Used for autonomous vehicles, robotics, game AI. Challenging but very powerful method.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Reinforcement learning, agent, reward, Q-learning, AlphaGo, RLHF.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does the email-phishing-detection project do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "email-phishing-detection analyzes email content to detect phishing attacks. Machine learning examines the text content, sender information, and URLs of emails, flagging suspicious ones. NLP techniques — TF-IDF or transformer-based embeddings are likely used. This is the intersection of cybersecurity and AI. Phishing attacks are one of the biggest threats to internet security and AI-based detection systems are becoming increasingly important. It shows Gorkem's interest in both AI and security.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Phishing detection, NLP, TF-IDF, cybersecurity, AI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How do I maintain motivation in software?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Maintaining motivation is a challenge everyone faces. Some strategies: set small goals — instead of 'build an app' say 'finish the login page today'. Make progress visible — GitHub streak, todo lists, project milestones. Stay connected with the community — interact with developers on Discord, Reddit, Twitter. Try different projects — if you're bored switch domains, from web to mobile, AI to game dev. Let go of perfectionism — not every project has to be perfect, making something that works is already an achievement. Recognize burnout signs and take breaks. And remember: everyone feels unmotivated sometimes, it's normal.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Motivation, small goals, community, burnout, perfectionism.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the synonym-master project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "synonym-master is a project for finding or teaching synonyms. It might use NLP to find synonyms of words — WordNet, word embeddings (Word2Vec, GloVe), or transformer-based models may have been used. Can also be thought of as a language learning tool. Useful for people who want to expand their vocabulary. A practical application of NLP.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "synonym-master, synonyms, NLP, WordNet, word embeddings.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to prepare for software engineering interviews?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Software interviews typically have 3 stages: technical interview, behavioral interview, and system design. For technical: solve algorithm problems on LeetCode, HackerRank — at least 100-150 problems. Know data structures (array, linked list, tree, graph, hash map) and algorithms (sorting, searching, dynamic programming, BFS/DFS) well. For behavioral questions prepare with the STAR method (Situation, Task, Action, Result). For system design read the 'System Design Interview' book. Gorkem's hackathon experiences make great examples for behavioral questions.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Interview prep, LeetCode, data structures, algorithms, STAR, system design.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Should I choose a startup or a big company?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Both have advantages, decide based on your career stage. Startup: you learn a lot, wide responsibility, you see growth up close, but less stability, potentially lower salary, heavy workload. Big company (FAANG etc.): structured training, mentorship, good salary, job security, but bureaucracy, narrow responsibility, hard to feel impact. As a junior both are fine — at a startup you learn fast, at a big company you learn fundamentals properly. Gorkem prefers the startup side because transforming an idea into a product from scratch is motivating.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Startup vs big company, pros/cons, career decision.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is edge computing?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Edge computing moves data processing from centralized servers (cloud) to points closer to the user (edge). Why? Reduced latency — data is processed nearby instead of traveling to distant servers. Bandwidth savings — sending all data to the cloud is expensive. Privacy — sensitive data can stay local. Examples: smart factories, autonomous vehicles, IoT devices, AR/VR applications. AWS Wavelength, Azure Edge, Google Distributed Cloud offer solutions. Edge computing will become even more important with 5G.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Edge computing, latency, IoT, 5G, cloud alternative.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the study-tracker project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "study-tracker is an application that tracks study time. It might use the Pomodoro technique or similar methods to manage study time. Could include features like recording how much time was spent on each subject, viewing statistics, setting goals. Very useful for students preparing for university entrance exams or college students. A combination of Gorkem's interest in both education and technology. Could be a tool he uses himself.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Study tracker, study tracking, Pomodoro, education, productivity.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the depression-phq9-analysis project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "depression-phq9-analysis is a project that analyzes depression using the PHQ-9 (Patient Health Questionnaire-9) form. PHQ-9 is a standard depression screening tool used in clinical settings. This project likely analyzes form responses to assess depression levels. The combination of health-tech and AI. Using technology in mental health is a very important topic. It shows Gorkem's interest in health technology and motivation to create solutions for societal problems.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PHQ-9, depression analysis, health-tech, mental health.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Should I do Erasmus?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Erasmus is probably one of the most valuable experiences in university life. Not just academic — different culture, different perspectives, independence, international network. Technically you see different strengths of different universities. Studying in English or another language improves language skills. International experience on CV is very valuable. Preparation: keep your GPA high, prepare for language exams (TOEFL/IELTS), follow application deadlines. Financial aid and scholarship options exist. If you can go, definitely go.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Erasmus, international experience, culture, language, CV, application.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What should I consider when choosing a STEM program in Turkey?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "When making university choices consider multiple factors beyond just your exam score. City — bigger cities have more internship and job opportunities. University's industry connections — company relationships, career center activity. Curriculum — are current technologies included. Erasmus and international opportunities. Scholarship options. Language of instruction — English education is an advantage for international careers. Campus and social facilities. Research differences between computer engineering, software engineering, and AI engineering programs. Gorkem studies at Yeditepe and is satisfied — but everyone's preference may differ.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "University choice, city, curriculum, Erasmus, English education, program differences.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to network as a developer?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Networking is important not just for finding jobs but for learning and growing. Online: be active on LinkedIn, join the tech community on Twitter, hang out in Discord/Slack channels, contribute to open-source. Offline: attend meetups, go to conferences, join hackathons. The rule of networking: don't try to take without giving — share knowledge, help others, add value. Gorkem networks and gains experience by participating in hackathons. A connection might hire you, recommend you, or invite you to a project one day. Think long-term about relationships.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Networking, LinkedIn, hackathons, meetups, adding value, long-term.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does an API gateway do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "An API gateway is a middleware layer through which all API requests pass. In microservice architecture, instead of the client making requests to 10 different services separately, it makes requests to a single gateway which routes to the correct service. Features: authentication (on all requests), rate limiting, request/response transformation, caching, logging, load balancing, SSL termination. AWS API Gateway, Kong, Traefik are popular solutions. With the Backend for Frontend (BFF) pattern you can create separate gateways for each frontend. Essential for microservice architecture.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "API gateway, microservices, authentication, rate limiting, Kong.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What do you think about remote work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Remote work became normalized with the pandemic and now many software companies offer remote or hybrid models. Advantages: flexibility, no commute, ability to work for global companies, creating your own workspace. Challenges: requires discipline, social isolation, blurring boundary between home and work. For good remote work: create a regular schedule, separate your workspace, take regular breaks, maintain strong team communication. Async tools (Slack, Notion) are important. Working remotely for global companies from Turkey can be advantageous salary-wise.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Remote work, pros/cons, discipline, async communication.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does the facelock project do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "facelock is Gorkem's project that uses face recognition technology for authentication. It detects faces from the camera and compares them with pre-registered faces to identify the person. OpenCV and dlib or face_recognition library were likely used. Face detection (finding where the face is) and face recognition (determining whose face it is) are two different steps. Can be used in security systems and smart lock systems. Biometric verification is the future of security technology.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "facelock project, face recognition, OpenCV, biometric.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the build-your-target-body project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "build-your-target-body is an application project in the fitness and health domain. It likely provides exercise and nutrition recommendations to help users reach their target body. A project that shows software can touch daily life, not just technology. Could be full-stack — frontend UI, backend API, maybe a database. Health tech is a rapidly growing sector. Gorkem enjoys creating technology solutions for problems in different domains.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "build-your-target-body, fitness app, health-tech.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What should a CS student do during summer break?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Summer break is a golden period for career. Ideally do an internship — gain real work experience. If you can't find one: develop your own project, complete an online course (Coursera, Udemy, CS50), join a hackathon, contribute to open-source, read a tech book, solve algorithm problems. Create a portfolio site and put your projects there. Start blogging — explaining what you learn develops both you and others. Don't waste it completely but don't neglect rest to avoid burnout.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Summer break, internship, project, course, hackathon, portfolio, blog.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to do freelance software development?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Freelance development gives freedom but requires discipline. Platforms: Upwork, Freelancer, Toptal (for seniors), Fiverr. Portfolio is crucial — show your previous work. For first clients keep prices low and collect good references, then increase. Define a specialization — instead of 'I do everything' go with 'React frontend' or 'Python backend'. Make contracts — scope, deadline, payment terms should be clear. Time management is critical. Learn tax and invoicing. First year can be tough but once you build a good network, you'll find continuous work.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Freelance, platforms, portfolio, specialization, contracts, taxes.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How should I study in the last 3 months before a major exam?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The last 3 months are critical. Focus on practice exams — at least 2-3 per week. Keep an error log — analyze mistakes after each practice exam. Focus on weak topics but don't neglect strong ones. Do topic review, don't add new topics. Practice time management — using time correctly during the exam is crucial. Maintain sleep schedule — studying at night and sleeping during the day is inefficient. Watch your nutrition. Reduce social media. Maintain motivation — remember your goal. Don't panic, trust the process. On exam day: sleep early, eat breakfast, arrive at the exam center early.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Last 3 months, practice exams, error log, time management, sleep, motivation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Tell me about the miniature-transformers-from-scratch project",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "miniature-transformers-from-scratch implements the transformer architecture from scratch. Coding the architecture from the 'Attention Is All You Need' paper using Python and PyTorch. Multi-head attention, positional encoding, feed-forward layers, layer normalization — all components written from scratch. Building this project means truly understanding transformers. ChatGPT, BERT, T5 are all transformer-based — understanding this architecture means understanding modern AI. The best example of Gorkem turning theoretical knowledge into practice.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Transformer from scratch, attention, PyTorch, architecture, deep understanding.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is transfer learning?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Transfer learning is the technique of transferring knowledge learned from one task to another. For example, taking ResNet trained on ImageNet and using it for your own image classification task. General features learned from large datasets (edge detection, shape recognition) transfer to the new task. Fine-tuning: retrain the last layers with new data. Feature extraction: keep the model fixed and only change the last layer. BERT, GPT, ResNet are all used with transfer learning. If you have limited data, transfer learning is essential — use existing knowledge instead of training from scratch.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Transfer learning, fine-tuning, feature extraction, BERT, ResNet.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the sorting-visualizer project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "sorting-visualizer is an application that visualizes sorting algorithms. It shows step-by-step animations of how bubble sort, quick sort, merge sort, insertion sort work. A great educational tool — understanding algorithms visually is much more effective. Likely built with JavaScript and canvas or React. Such projects demonstrate both programming ability and skill in creating educational materials. Algorithms are a cornerstone of the CS curriculum.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Sorting visualizer, sorting algorithms, visualization, educational tool.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Will AI take our jobs?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The answer is nuanced. AI will automate some jobs but will also create new ones. Repetitive, pattern-based tasks will be automated — data entry, simple coding, customer service. But jobs requiring creativity, strategic thinking, human relationships, and ethical decisions will continue to need humans for a long time. For developers: learn to work alongside AI, use AI as a tool, develop problem-solving and architectural thinking skills. Instead of fearing AI, learn to use it. Gorkem is preparing for this transformation by building projects with AI.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI and jobs, automation, creativity, working with AI, adaptation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What's the difference between fine-tuning and prompt engineering?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Both are used to adapt LLMs for specific tasks but are very different approaches. Prompt engineering: you don't modify the model, just guide it with well-written instructions. Fast, cheap, but limited. Techniques include few-shot and chain-of-thought prompting. Fine-tuning: you update the model's weights with your own data. More powerful, permanent but requires data and compute. Efficient methods like LoRA exist. Generally try prompt engineering first, if it's not enough then fine-tune. In this project we're doing fine-tuning — training the model with our own data.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Fine-tuning vs prompt engineering, difference, LoRA, when to use which.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What should a good GitHub profile look like?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A good GitHub profile is a portfolio that represents you. Add a profile README — who you are, what you do, your interests. Write proper READMEs for your projects — what it does, how to set up, screenshots. Keep your contribution graph green — commit regularly. Diversify your projects — web, mobile, AI, CLI tools. Stars are nice but quality is what matters. Write proper commit messages — instead of 'fix bug' write 'fix authentication error when token expires'. Gorkem's GitHub profile has over 30 projects covering diverse topics — that's an excellent example.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GitHub profile, README, contribution graph, commit messages, portfolio.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How is Yeditepe University's computer engineering program?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yeditepe University is a private university in Istanbul with a strong computer engineering program. Education is in English, which is an advantage for international careers. The campus is on Istanbul's Asian side. Being a foundation university means smaller classes and close interaction with professors. Lab facilities and project-based education are important. Erasmus and internship opportunities are available. Gorkem studies here and supports his education with his own projects — the university provides theoretical foundation, projects turn it into practice.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yeditepe, computer engineering, English education, campus, career.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Explain Kubernetes simply",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kubernetes (K8s) is a container orchestration platform. It manages Docker containers at scale. What it does: auto-scaling (opens new containers if traffic increases), self-healing (restarts if a container crashes), load balancing, rolling updates (zero-downtime updates), secret management. Pod (smallest unit, one or more containers), Service (network access), Deployment (pod management), Ingress (external traffic routing) are core concepts. AWS EKS, Google GKE, Azure AKS are managed Kubernetes solutions. Learning curve is steep but it's the standard for large systems.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kubernetes, K8s, container orchestration, pod, service, scaling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is LoRA (Low-Rank Adaptation)?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "LoRA is an efficient method for fine-tuning large language models. In normal fine-tuning you update all model weights — billions of parameters. With LoRA you freeze original weights and add small low-rank matrices. These matrices contain far fewer parameters (can be as low as 1% of original). Advantages: much less GPU memory, faster training, original model preserved, multiple LoRA adapters can be combined. Hugging Face PEFT library provides LoRA implementation. We're using LoRA in this project too. QLoRA is the quantized version of LoRA — even more efficient.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LoRA, low-rank adaptation, PEFT, QLoRA, efficient fine-tuning.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How does the attention mechanism work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The attention mechanism allows a model to learn which parts of the input sequence to focus on. Three key components: Query (what you're looking for), Key (what you're looking at), Value (what you return). Attention score = softmax(Q * K^T / sqrt(d_k)) * V. Multi-head attention runs multiple attention computations in parallel to capture different relationships. Self-attention learns relationships between words in a sentence. Attention is the heart of the transformer architecture — the paper 'Attention Is All You Need' is named for this reason. Gorkem's miniature-transformers project implements this from scratch.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Attention mechanism, Q-K-V, multi-head, self-attention, transformer.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Tell me about Gorkem's yolo-custom-detector project",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "yolo-custom-detector is a project where Gorkem trained the YOLO (You Only Look Once) model with a custom dataset. Custom object detection means training a model to recognize specific objects you define. For example, detecting a specific product, animal, or sign — you fine-tune YOLO with your own data. Data labeling is done with tools like LabelImg, then the model is trained. YOLOv5 or YOLOv8 might have been used. This project demonstrates Gorkem's competence in computer vision and practical deep learning.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YOLO project details, custom detection, labeling, fine-tuning.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How do you gain first work experience in software engineering?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Getting first experience is the hardest part but there are many paths. Internship applications — LinkedIn, company career pages. Contributing to open-source projects — solve issues on GitHub, submit PRs. Freelance projects — take small projects on Upwork, Fiverr. Your own projects — create a portfolio site, keep your GitHub active. Join hackathons — Gorkem participated in BTK, Foodathon hackathons and these experiences are very valuable on a CV. Networking — go to meetups, connect with people on LinkedIn. The first step is hardest but once you start, you gain momentum.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "First work experience, internships, open-source, freelance, hackathons, networking.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does the writing-analyzer project do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "writing-analyzer is an NLP project that performs text analysis. It can analyze writing style, complexity, sentiment tone, or other linguistic features. It may extract text statistics like word count, sentence length, readability score. NLP libraries like NLTK, spaCy, or transformers may have been used. Such tools are used in education, content creation, and academic writing. It demonstrates Gorkem's NLP skills in a practical application.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Writing analyzer, text analysis, NLP, readability, style analysis.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to deal with imposter syndrome?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Imposter syndrome is something almost every software developer experiences. The feeling of 'I'm not good enough' or 'they'll find out I'm a fraud'. Reality: it's impossible to know everything in this field, everyone doesn't know something. Coping strategies: record your achievements — note the projects you've built, bugs you've fixed. Stop comparing with others — everyone's journey is different. Accept the learning process — not knowing is normal, not learning is the problem. Get mentor or peer support. And remember: feeling imposter syndrome is usually a good sign — it means you're self-aware.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Imposter syndrome, coping, self-awareness.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Is blockchain and Web3 still important?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Blockchain is a controversial topic. Cryptocurrency hype has decreased but the technology itself is still evolving. Supply chain tracking, digital identity, voting systems, NFTs (beyond art), DeFi — real use cases exist but mainstream adoption hasn't fully happened. Solidity (Ethereum) is the most popular smart contract language. Web3 developer demand exists but not as much as AI. My view: learn the basics but don't stake your entire career on it. The intersection of AI and blockchain is interesting — on-chain AI, decentralized ML. Approach with balance.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Blockchain, Web3, use cases, Solidity, AI intersection.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is RAG (Retrieval-Augmented Generation)?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "RAG is a technique that allows large language models (LLMs) to access data outside their training knowledge. It retrieves relevant documents from a database for information not in the LLM's training data and includes them in the response. Steps: user question comes in, relevant documents are retrieved from a vector database (Pinecone, Chroma, FAISS), these documents are added to the prompt, the LLM generates a response based on this information. Reduces hallucination because the model responds based on real data. Widely used for chatbots, customer support systems, knowledge management. Very current topic.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "RAG, LLM, vector database, hallucination, chatbot.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What's the difference between NoSQL and SQL?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SQL databases (MySQL, PostgreSQL) are relational — tables, rows, columns, schema required, tables joined with JOINs. ACID compliant — consistency and reliability. NoSQL databases (MongoDB, Cassandra, Redis) are schema-less or flexible schema — JSON-like documents, key-value, graph, columnar. When to use which: structured data and complex queries → SQL. Flexible schema, horizontal scaling, high write speed → NoSQL. Most large systems use both together (polyglot persistence). PostgreSQL with JSON support sits between the two. Choice should be based on project needs.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SQL vs NoSQL, relational, document, when to use which, polyglot.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Explain CI/CD pipeline in detail",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. CI: automatic build and test on every commit — errors caught early. CD: if tests pass, automatic deployment. Pipeline steps: code push → build → unit test → integration test → code quality check → staging deploy → smoke test → production deploy. Tools: GitHub Actions (most popular), GitLab CI, Jenkins, CircleCI. In GitHub Actions you write YAML files under .github/workflows. Tests run automatically on every PR, merging to main deploys to production. The cornerstone of DevOps culture. Using CI/CD in Gorkem's projects increases professionalism.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CI/CD, pipeline steps, GitHub Actions, automated deploy, DevOps.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the python-llm-agent project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "python-llm-agent is a project that creates an autonomous agent using large language models (LLMs). The agent uses LLM as a tool to perform specific tasks — web search, file processing, code execution. Frameworks like LangChain may have been used. This project represents the future of AI agents — not just Q&A but systems that autonomously perform real tasks. A very current and trending topic.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LLM agent, autonomous agent, LangChain, tool use.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Tell me about the turkish-english-nmt project",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "turkish-english-nmt is a Turkish-English Neural Machine Translation project. A seq2seq (sequence-to-sequence) model or transformer-based translation model was trained. The encoder understands the text in source language, the decoder generates in target language. The attention mechanism learns which words to focus on. BLEU score measures translation quality. This is one of NLP's most challenging tasks because of structural differences between languages. Google Translate works on the same principle but at a much larger scale.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "NMT project, seq2seq, transformer, attention, BLEU score.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the gorkem-os project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "gorkem-os is a project where Gorkem wrote his own operating system kernel. The best way to truly understand OS concepts is to write your own OS. Starting from the boot process, you implement memory management, process management, file systems. It's typically written in C and Assembly. This project shows that Gorkem has not only high-level AI/ML knowledge but also low-level systems programming skills. Understanding the fundamentals of computer engineering. Such projects are very valuable career-wise.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "gorkem-os, operating system, kernel, C, Assembly, systems programming.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What should I be careful about as a junior developer?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "As a junior, the most important thing: be open to learning and check your ego. Don't take code review comments personally — they're for your growth. Learn Git and version control well. Follow clean code principles. Don't hesitate to ask — there are no stupid questions, making mistakes by not asking is worse. Write documentation — for yourself and the team. Write tests — 'I don't have time for tests' is the most dangerous sentence. Take notes in meetings. Find a mentor. And most importantly: learn a bit every day, consistency beats talent. Gorkem is constantly learning as a student too.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Junior developer advice, learning, clean code, tests, mentor.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is embedding?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Embedding is converting text or other data into numerical vectors. Words, sentences, or documents are represented as fixed-size vectors. Words with similar meanings end up as nearby vectors — 'king' and 'queen' vectors are close to each other. Word2Vec, GloVe for word embeddings. Sentence-BERT for sentence embeddings. OpenAI's text-embedding-ada-002 is popular. Embeddings are used for search, recommendation systems, similarity computation, and storing in vector databases for RAG. A fundamental concept in modern NLP.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Embedding, vectors, Word2Vec, similarity, NLP.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

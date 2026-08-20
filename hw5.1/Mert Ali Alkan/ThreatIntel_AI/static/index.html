@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ThreatIntel AI - Email Analysis</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-dim": "#000000",
+                "outline": "#8b90a0",
+                "on-primary": "#002e69",
+                "primary-fixed-dim": "#adc6ff",
+                "inverse-on-surface": "#303032",
+                "soft-red": "#FF453A",
+                "surface-tint": "#adc6ff",
+                "error-container": "#93000a",
+                "surface-variant": "#1A1A1C",
+                "primary": "#adc6ff",
+                "background": "#000000",
+                "surface-container": "#111113",
+                "surface-bright": "#222225",
+                "glass-border": "rgba(255, 255, 255, 0.08)",
+                "on-surface": "#e4e2e4",
+                "on-background": "#e4e2e4",
+                "surface-container-high": "#1C1C1E",
+                "soft-orange": "#FF9F0A",
+                "on-surface-variant": "#c1c6d7",
+                "surface-container-low": "#09090A",
+                "surface": "#000000",
+                "electric-blue": "#0A84FF",
+                "surface-container-lowest": "#000000",
+                "glass-fill": "rgba(255, 255, 255, 0.04)"
+        },
+        "fontFamily": {
+                "body-lg": ["Inter", "sans-serif"],
+                "body-base": ["Inter", "sans-serif"],
+                "headline-lg": ["Inter", "sans-serif"],
+                "headline-md": ["Inter", "sans-serif"],
+                "label-sm": ["Inter", "sans-serif"],
+                "label-caps": ["Inter", "sans-serif"],
+                "display-lg": ["Inter", "sans-serif"],
+                "mono-data": ["monospace"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+    body { 
+        background-color: #000000; 
+        color: #ffffff; 
+    }
+    .glass-panel {
+        background: rgba(26, 26, 28, 0.4);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    }
+    .glass-panel-error {
+        background: rgba(255, 69, 58, 0.05);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 69, 58, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(255, 69, 58, 0.1);
+    }
+    .glass-panel-warning {
+        background: rgba(255, 159, 10, 0.05);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 159, 10, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(255, 159, 10, 0.1);
+    }
+    .glass-panel-success {
+        background: rgba(48, 209, 88, 0.05);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(48, 209, 88, 0.15);
+        box-shadow: 0 8px 32px 0 rgba(48, 209, 88, 0.1);
+    }
+    .glass-input {
+        background: rgba(26, 26, 28, 0.8);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.5);
+    }
+    
+    .glass-input:focus-within {
+        border-color: rgba(10, 132, 255, 0.5);
+        box-shadow: 0 4px 24px 0 rgba(10, 132, 255, 0.15);
+    }
+    
+    @keyframes pulse-glow {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+    }
+    .animate-pulse-glow { animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    
+    /* Thin scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
+
+    /* Markdown styling for the report */
+    .prose h3 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.75rem; color: #fff; }
+    .prose p { margin-bottom: 1rem; color: #e4e2e4; }
+    .prose ul { list-style-type: disc; padding-left: 1.25rem; margin-bottom: 1rem; color: #c1c6d7; }
+    .prose li { margin-bottom: 0.25rem; }
+    .prose strong { color: #fff; font-weight: 600; }
+</style>
+</head>
+<body class="h-screen flex flex-col font-body-base overflow-hidden selection:bg-electric-blue selection:text-white">
+
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-8 py-4 bg-transparent border-b border-glass-border flex-shrink-0 z-50 glass-panel">
+    <div class="flex items-center gap-3">
+        <i class="fa-solid fa-shield-halved text-electric-blue text-xl"></i>
+        <span class="text-xl font-bold text-electric-blue tracking-tight">ThreatIntel AI</span>
+    </div>
+</header>
+
+<!-- Main Canvas -->
+<main class="flex-1 flex flex-col items-center justify-start overflow-y-auto px-4 py-8 w-full max-w-5xl mx-auto gap-8 relative" id="chat-box">
+    
+    <!-- Chat Container -->
+    <div class="w-full max-w-3xl flex flex-col gap-8 pb-32" id="chat-container">
+        <!-- Initial Welcome Message -->
+        <div class="flex items-start gap-4 w-full max-w-3xl mt-4">
+            <i class="fa-solid fa-robot text-electric-blue text-3xl mt-1 shrink-0"></i>
+            <div class="prose font-body-base text-on-surface">
+                <p>Merhaba! Ben <strong>ThreatIntel AI</strong>. Şüpheli e-postanızı buraya yapıştırın, VirusTotal, RDAP ve MITRE ATT&CK veritabanları ile analiz edeyim.</p>
+            </div>
+        </div>
+    </div>
+    
+</main>
+
+<!-- Bottom Input Area -->
+<div class="fixed bottom-0 w-full z-40 bg-gradient-to-t from-[#000000] via-[#000000]/95 to-transparent pt-20 pb-8 px-4 flex justify-center pointer-events-none">
+    <div class="w-full max-w-3xl relative pointer-events-auto">
+        <div class="glass-input rounded-2xl transition-all duration-300 relative flex items-center">
+            <span class="material-symbols-outlined absolute left-5 text-outline">terminal</span>
+            <textarea id="user-input" rows="1" class="w-full bg-transparent border-none focus:ring-0 text-body-base text-white placeholder:text-outline/70 pl-14 pr-28 py-5 rounded-2xl outline-none resize-none overflow-hidden leading-relaxed" placeholder="Paste email content here for analysis..." style="min-height: 64px; max-height: 120px;"></textarea>
+            <button id="send-btn" disabled class="absolute right-2 top-1/2 -translate-y-1/2 bg-electric-blue/20 hover:bg-electric-blue/30 text-electric-blue border border-electric-blue/30 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                SCAN
+                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

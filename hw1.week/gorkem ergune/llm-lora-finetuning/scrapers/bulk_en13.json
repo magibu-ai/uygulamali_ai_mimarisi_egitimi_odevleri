@@ -1,0 +1,564 @@
+{
+    "train": [
+        [
+            {
+                "content": "what is event-driven architecture?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Event-driven architecture (EDA) is a design pattern where components communicate through events rather than direct calls. An event is a record of something that happened — 'order placed', 'payment processed', 'user signed up'. Components: event producers (emit events), event broker (routes events — Kafka, EventBridge, RabbitMQ), event consumers (react to events). Patterns: event notification (lightweight, just signal something happened), event-carried state transfer (event contains all data needed), event sourcing (store all events as source of truth, rebuild state by replaying). Benefits: loose coupling, scalability, extensibility (add new consumers without changing producers). Challenges: eventual consistency, debugging is harder (distributed tracing needed), event ordering, duplicate handling (idempotency). CQRS (Command Query Responsibility Segregation) often paired with event sourcing — separate read and write models. Used by: Netflix, Uber, LinkedIn.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Event-driven, EDA, event sourcing, CQRS, Kafka, eventual consistency, decoupling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the difference between horizontal and vertical scaling?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Vertical scaling (scale up): add more CPU, RAM, SSD to a single server. Simple, no code changes needed, but there's a hardware ceiling and single point of failure. Horizontal scaling (scale out): add more servers. Can scale infinitely, provides redundancy, but requires distributed system design — load balancing, data consistency, session management. In practice: start vertical (simpler), go horizontal when you hit limits. Database scaling: vertical first (bigger instance), then read replicas, then sharding (horizontal). Stateless services scale horizontally easily — add servers behind a load balancer. Stateful services are harder — need shared state (Redis), sticky sessions, or distributed consensus. Cloud makes horizontal scaling easier: auto-scaling groups, managed load balancers, managed databases. Most modern architectures use a combination of both.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Horizontal scaling, vertical scaling, load balancer, sharding, stateless, auto-scaling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is a message queue and when should you use one?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Message queues decouple producers from consumers — the producer sends a message and doesn't wait for the consumer to process it. Use cases: 1) Async processing — user uploads image, queue a resize job, respond immediately. 2) Load leveling — absorb traffic spikes, process at steady rate. 3) Microservice communication — services communicate without direct coupling. 4) Reliability — if consumer is down, messages wait in queue. Options: RabbitMQ (traditional message broker, routing, exchanges), Apache Kafka (distributed log, high throughput, replay capability), Amazon SQS (managed, simple), Redis Streams (lightweight). Patterns: point-to-point (one consumer per message), pub/sub (multiple consumers get each message). Dead letter queue: store messages that fail processing repeatedly. Ordering: Kafka guarantees order within partitions, SQS FIFO queues. Choose based on: throughput needs, ordering requirements, message size, replay capability.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Message queue, RabbitMQ, Kafka, SQS, async, decoupling, dead letter queue.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is information theory and its connection to ML?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Information theory, founded by Claude Shannon, quantifies information. Entropy: H(X) = -sum(p(x) * log(p(x))) — measures uncertainty/randomness. High entropy = more unpredictable. A fair coin has 1 bit of entropy. Cross-entropy: H(p,q) = -sum(p(x) * log(q(x))) — measures how well distribution q approximates p. This is the loss function in classification! Lower cross-entropy = better model. KL Divergence: D_KL(p||q) = H(p,q) - H(p) — measures how different two distributions are. Used in VAEs, knowledge distillation, reinforcement learning. Mutual Information: I(X;Y) — how much knowing X tells you about Y. Used in feature selection and representation learning. Information bottleneck: theory for understanding deep learning — each layer compresses input information while preserving relevant information for the task. Understanding information theory gives you intuition for why certain loss functions work and how neural networks learn.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Information theory, entropy, cross-entropy, KL divergence, mutual information, Shannon.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how do you design a URL shortener like bit.ly?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A URL shortener maps short codes to long URLs. Core components: 1) Encoding service — generate a unique short code (Base62 encoding of an auto-increment ID, or hash the URL with MD5/SHA256 and take first 7 chars). 2) Database — store mappings (short_code → long_url, created_at, user_id, click_count). 3) Redirect service — on GET /abc123, look up the long URL and return 301/302 redirect. 301 is permanent (browser caches), 302 is temporary (allows analytics). Scale considerations: read-heavy system (100:1 read/write ratio), cache popular URLs in Redis, use a NoSQL store like DynamoDB for horizontal scaling. Analytics: track clicks, referrer, geo, device. Custom aliases: let users pick their own short codes. Expiration: TTL for temporary links. Rate limiting to prevent abuse. This is a classic system design interview question.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "URL shortener, Base62, redirect, 301 vs 302, Redis cache, system design.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is gRPC and when to use it over REST?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "gRPC is a high-performance RPC framework by Google using Protocol Buffers (protobuf) for serialization and HTTP/2 for transport. REST: text-based (JSON), HTTP/1.1, request-response, human-readable, browser-friendly. gRPC: binary (protobuf), HTTP/2, supports streaming (unary, server-stream, client-stream, bidirectional), strongly typed via .proto files, code generation for multiple languages. When to use gRPC: microservice-to-microservice communication (performance matters), polyglot environments (generate clients in any language), streaming data, low latency requirements. When to stick with REST: public APIs (browser compatibility), simple CRUD, team familiarity, debugging ease (JSON is readable). Performance: gRPC is 7-10x faster than REST+JSON due to binary serialization and HTTP/2 multiplexing. gRPC-Web enables browser clients but adds complexity. Many companies use REST for external APIs and gRPC internally.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "gRPC, Protocol Buffers, HTTP/2, REST, streaming, RPC, microservices.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the difference between TCP and UDP?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TCP (Transmission Control Protocol): connection-oriented, reliable, ordered delivery. Three-way handshake (SYN, SYN-ACK, ACK) establishes connection. Guarantees: data arrives, in order, without duplicates. Flow control (receiver tells sender to slow down) and congestion control (adapts to network conditions). Overhead: headers, acknowledgments, retransmissions. Use cases: web browsing (HTTP), email (SMTP), file transfer (FTP), SSH. UDP (User Datagram Protocol): connectionless, unreliable, no ordering guarantees. Just sends packets — no handshake, no acknowledgments, no retransmissions. Very low overhead and latency. Use cases: real-time applications where speed matters more than reliability — video streaming, online gaming, VoIP, DNS queries, IoT sensor data. QUIC: Google's protocol built on UDP that adds reliability features — used by HTTP/3. It gets TCP's reliability with UDP's speed by handling reliability in userspace. WebRTC uses UDP for peer-to-peer video/audio.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TCP, UDP, connection-oriented, connectionless, QUIC, HTTP/3, reliability, latency.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is site reliability engineering SRE?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SRE (Site Reliability Engineering) was created by Google — it applies software engineering to operations problems. Core philosophy: treat operations as a software problem. Key concepts: SLI (Service Level Indicator) — measurable metric like latency, error rate. SLO (Service Level Objective) — target value for SLI (99.9% availability = 8.7 hours downtime/year). SLA (Service Level Agreement) — contract with consequences for missing SLO. Error budget: 100% - SLO = budget for risk. If SLO is 99.9%, you have 0.1% error budget. When budget is exhausted, freeze new features and focus on reliability. Toil: repetitive manual work that could be automated — SREs aim to spend less than 50% of time on toil. Practices: blameless postmortems, chaos engineering, capacity planning, on-call rotations, runbooks. SRE vs DevOps: SRE is a specific implementation of DevOps principles. SRE role: part software engineer, part systems administrator — high demand, high compensation.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SRE, SLI, SLO, SLA, error budget, toil, postmortem, chaos engineering, Google.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is a reverse proxy and how does it work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A reverse proxy sits between clients and backend servers, forwarding requests on behalf of clients. Functions: load balancing (distribute requests across servers — round robin, least connections, IP hash), SSL termination (handle HTTPS at the proxy, backends communicate via HTTP internally), caching (cache static content and API responses), compression (gzip/brotli responses), security (hide backend server details, rate limiting, WAF), request routing (route /api to backend servers, /static to CDN). Popular reverse proxies: Nginx (most popular, lightweight, high performance), HAProxy (TCP/HTTP load balancer, very reliable), Traefik (container-native, auto-discovery with Docker/K8s), Caddy (automatic HTTPS, simple config). Forward proxy vs reverse proxy: forward proxy acts on behalf of clients (VPN, content filtering), reverse proxy acts on behalf of servers. Every production web application should have a reverse proxy.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Reverse proxy, Nginx, load balancing, SSL termination, HAProxy, Traefik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are microservices anti-patterns?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Common microservices mistakes: 1) Distributed monolith — microservices that are tightly coupled and must be deployed together. Defeats the purpose. 2) Too many services too early — start with a monolith, extract services when boundaries are clear. 3) Shared database — services sharing a database are not independent. Each service should own its data. 4) Synchronous communication chains — service A calls B calls C calls D. If D is slow, everything is slow. Use async messaging. 5) No API versioning — breaking changes cascade. 6) Ignoring data consistency — distributed transactions are hard. Embrace eventual consistency and saga pattern. 7) Not enough automation — without CI/CD, managing 50 services is a nightmare. 8) Lack of observability — distributed tracing is mandatory, not optional. 9) Wrong service boundaries — split by technical layer instead of business domain. 10) Over-engineering from day one — you probably don't need Kubernetes for 3 services. Start simple, add complexity when needed.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Microservices anti-patterns, distributed monolith, shared database, saga, eventual consistency.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is backpropagation and how does it work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Backpropagation is the algorithm that trains neural networks by computing gradients efficiently. Forward pass: input flows through the network, each layer computes output = activation(weights * input + bias), final output is compared to target using a loss function. Backward pass: using the chain rule of calculus, compute the gradient of the loss with respect to each weight — starting from the output layer and propagating backward. Chain rule: dL/dw = dL/dy * dy/dz * dz/dw where L is loss, y is output, z is pre-activation. Each weight is updated: w_new = w_old - learning_rate * gradient. Computational graph: frameworks like PyTorch build a dynamic graph of operations, enabling automatic differentiation (autograd). Challenges: vanishing gradients (deep networks, solved by ReLU, skip connections, batch normalization), exploding gradients (solved by gradient clipping). Backprop was popularized by Rumelhart, Hinton, and Williams in 1986 — it's still the foundation of all deep learning today.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Backpropagation, chain rule, gradient, forward pass, backward pass, autograd, vanishing gradients.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is consistent hashing and why is it useful?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Consistent hashing solves the problem of distributing data across servers that can be added or removed. Traditional hashing: hash(key) % N — if N changes, almost all keys remap. Consistent hashing: arrange servers on a hash ring (0 to 2^32). Hash each server to a position on the ring. Hash each key and walk clockwise to find the next server. When a server is added/removed, only K/N keys need to move (K = total keys, N = total servers). Virtual nodes: each physical server gets multiple positions on the ring — improves balance and handles heterogeneous hardware. Used in: Amazon DynamoDB, Apache Cassandra, Memcached, CDNs. This is fundamental to distributed systems — enables horizontal scaling without massive data reshuffling.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Consistent hashing, hash ring, virtual nodes, DynamoDB, Cassandra, distributed.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is GraphQL and when to use it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GraphQL is a query language for APIs developed by Facebook. Instead of multiple REST endpoints, you have one endpoint where clients specify exactly what data they need. Key features: client specifies the shape of the response (no over-fetching or under-fetching), strongly typed schema, introspection (self-documenting), subscriptions for real-time data. Example: instead of GET /users/1 then GET /users/1/posts then GET /posts/1/comments — one GraphQL query gets all of it. Downsides: complexity (resolver implementation, N+1 query problem — use DataLoader), caching is harder (no URL-based caching like REST), file uploads need workarounds, security (malicious deep queries — use query depth limiting and complexity analysis). When to use: mobile apps (bandwidth matters), complex data relationships, multiple client types needing different data shapes. When not to: simple CRUD APIs, file-heavy operations, team unfamiliar with GraphQL. Tools: Apollo, Hasura, Relay.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GraphQL, query language, schema, resolver, N+1 problem, Apollo, over-fetching.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how do you prepare for system design interviews?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "System design interviews test your ability to design large-scale systems. Framework: 1) Clarify requirements (5 min) — functional and non-functional requirements, scale (users, data size, requests/sec). 2) High-level design (10 min) — draw the main components (clients, load balancer, app servers, database, cache, CDN). 3) Deep dive (15 min) — pick 2-3 components and detail them. 4) Wrap up (5 min) — discuss trade-offs, bottlenecks, future improvements. Common topics: URL shortener, Twitter/Instagram feed, chat system, notification system, rate limiter, search autocomplete, video streaming (YouTube), file storage (Google Drive), payment system. Key concepts to master: load balancing, caching strategies, database sharding, message queues, consistent hashing, CDN, API design. Resources: 'System Design Interview' by Alex Xu, 'Designing Data-Intensive Applications' by Martin Kleppmann, ByteByteGo YouTube channel. Practice: explain your design out loud, draw diagrams, discuss trade-offs. There's no single correct answer — it's about your thought process.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "System design interview, requirements, high-level design, trade-offs, Alex Xu, DDIA.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how does HTTPS and TLS work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "HTTPS is HTTP over TLS (Transport Layer Security). TLS handshake (TLS 1.3): 1) Client Hello — sends supported cipher suites and a random number. 2) Server Hello — chooses cipher suite, sends certificate (contains public key signed by CA). 3) Client verifies certificate against trusted CAs. 4) Key exchange — using ECDHE (Elliptic Curve Diffie-Hellman Ephemeral) both sides derive a shared secret without transmitting it. 5) Both sides derive symmetric session keys from the shared secret. 6) All further communication encrypted with symmetric encryption (AES-256-GCM). Why asymmetric then symmetric: asymmetric (RSA/ECDSA) is slow but enables key exchange without pre-shared secret. Symmetric (AES) is fast for actual data. Perfect Forward Secrecy: ephemeral keys mean compromising the server's private key doesn't decrypt past sessions. Certificate Authorities (CAs): trusted third parties that verify domain ownership. Let's Encrypt: free automated certificates. HSTS header forces browsers to always use HTTPS.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "HTTPS, TLS, certificate, CA, Diffie-Hellman, AES, forward secrecy, Let's Encrypt.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how do you design a notification system?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A notification system delivers messages through multiple channels: push notifications, SMS, email, in-app. Architecture: notification service receives requests from other services → stores in database → routes to appropriate channel handler → each handler uses third-party provider (FCM for Android push, APNs for iOS, Twilio for SMS, SendGrid for email). Key considerations: user preferences (which channels, quiet hours, frequency), template management, rate limiting (don't spam users), retry with exponential backoff for failures. Priority levels: urgent (immediately), normal (batched), low (digest). Analytics: delivery rate, open rate, click-through rate. Deduplication: prevent sending the same notification twice using idempotency keys. Scale: use message queues (Kafka/RabbitMQ) to decouple producers from consumers. Store notification history for the in-app notification center.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Notification system, push, SMS, email, FCM, APNs, message queue, preferences.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the two generals problem and Byzantine fault tolerance?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The Two Generals Problem: two armies need to coordinate an attack via messengers through enemy territory. No matter how many confirmations they send, neither can be 100% certain the other received the message. This proves reliable communication over unreliable channels is impossible — fundamental to distributed systems. TCP's three-way handshake is a practical solution (not perfect, but good enough). Byzantine Generals Problem: extends this — some generals may be traitors sending conflicting information. BFT (Byzantine Fault Tolerance) handles up to f faulty nodes with 3f+1 total nodes. PBFT (Practical BFT) made this usable in practice. Blockchain consensus: Bitcoin's Proof of Work is a BFT solution — the longest chain represents majority consensus. Modern BFT: Tendermint (used in Cosmos), HotStuff (used in Facebook's Diem/Libra). In everyday distributed systems: Raft consensus (used in etcd, CockroachDB) handles crash faults but not Byzantine faults — usually sufficient for trusted environments.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Two Generals, Byzantine fault tolerance, BFT, PBFT, Raft, consensus, blockchain.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is OAuth 2.0 and how does it work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OAuth 2.0 is an authorization framework — it lets apps access user data on other services without sharing passwords. When you click 'Sign in with Google': 1) App redirects to Google's authorization server. 2) User logs in and grants permission. 3) Google redirects back to app with an authorization code. 4) App exchanges code for access token (server-to-server). 5) App uses access token to call Google API. Key concepts: Resource Owner (user), Client (your app), Authorization Server (Google), Resource Server (Google API). Grant types: Authorization Code (most secure, server-side apps), PKCE (for mobile/SPA — prevents code interception), Client Credentials (machine-to-machine, no user), Implicit (deprecated, tokens in URL — insecure). Access tokens expire — use refresh tokens to get new ones. Scopes: limit what the app can access (email, profile, calendar). OpenID Connect (OIDC) adds authentication on top of OAuth 2.0 — returns an ID token (JWT) with user info.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OAuth 2.0, authorization, access token, refresh token, PKCE, OpenID Connect, JWT.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are the different types of databases?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Beyond just SQL vs NoSQL, there are many specialized database types. Relational (SQL): PostgreSQL, MySQL, SQLite — structured data, ACID, complex queries. Document: MongoDB, CouchDB — JSON-like documents, flexible schema. Key-Value: Redis, DynamoDB, etcd — simple lookups, extremely fast, caching. Wide-Column: Cassandra, HBase, ScyllaDB — massive scale, time-series-like data. Graph: Neo4j, Amazon Neptune — relationships are first-class (social networks, recommendations, knowledge graphs). Time-Series: InfluxDB, TimescaleDB, QuestDB — IoT sensor data, metrics, financial data. Search: Elasticsearch, Meilisearch, Typesense — full-text search, log analysis. Vector: Pinecone, Weaviate, Milvus, pgvector — AI embeddings, similarity search (RAG systems). NewSQL: CockroachDB, TiDB, YugabyteDB — SQL guarantees at NoSQL scale. Choose based on your access patterns, not hype. Most applications start with PostgreSQL and add specialized databases as needed.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Database types, relational, document, key-value, graph, time-series, vector, NewSQL.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is serverless architecture?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Serverless means the cloud provider manages the infrastructure — you write functions, they handle scaling, patching, and availability. FaaS (Function as a Service): AWS Lambda, Google Cloud Functions, Azure Functions, Cloudflare Workers. You pay per invocation, not per server hour — $0 when no traffic. Benefits: no server management, auto-scaling (0 to thousands of instances), pay-per-use, rapid development. Challenges: cold starts (first invocation has latency — 100ms to several seconds), vendor lock-in, 15-minute execution limit (Lambda), debugging is harder, state management (functions are stateless — use DynamoDB, Redis). When to use: event-driven tasks (image processing, webhooks, scheduled jobs), APIs with variable traffic, prototyping. When not to: long-running processes, real-time applications, CPU-intensive workloads. Serverless doesn't mean no servers — it means you don't think about servers. BaaS (Backend as a Service): Firebase, Supabase — entire backend without server code.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Serverless, FaaS, Lambda, cold start, auto-scaling, pay-per-use, BaaS, Firebase.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is a CDN and how does it work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A CDN (Content Delivery Network) distributes content across servers worldwide so users get data from the nearest location. How it works: origin server hosts the original content. CDN edge servers (Points of Presence — PoPs) cache copies. When a user in Tokyo requests content, they hit the Tokyo PoP instead of the origin in New York — reducing latency from ~200ms to ~20ms. Cache strategies: pull (first request goes to origin, subsequent requests served from cache), push (proactively distribute content to edges). What to cache: static assets (images, CSS, JS, videos), API responses (with appropriate TTL), HTML pages (for static sites). Cache invalidation: TTL-based, purge API, versioned URLs (style.v2.css). Providers: Cloudflare (also offers DDoS protection, WAF, Workers), AWS CloudFront, Akamai (largest), Fastly (programmable edge). Modern CDNs do more than caching: edge computing, image optimization, A/B testing, bot protection. Every production website should use a CDN.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CDN, edge servers, PoP, caching, Cloudflare, CloudFront, TTL, latency.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Docker and containerization?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Docker packages applications with all dependencies into containers — lightweight, portable, consistent environments. Container vs VM: containers share the host OS kernel (lightweight, start in milliseconds), VMs run full OS (heavier, start in minutes). Dockerfile defines how to build an image: FROM base image, COPY code, RUN install dependencies, CMD start command. Image: read-only template. Container: running instance of an image. Docker Compose: define multi-container applications (app + database + cache) in docker-compose.yml. Best practices: use specific base image tags (not :latest), multi-stage builds (smaller images), don't run as root, .dockerignore file, one process per container, use health checks. Registry: Docker Hub, GitHub Container Registry, AWS ECR — store and share images. Docker changed how we develop and deploy — 'works on my machine' is no longer an excuse. Kubernetes orchestrates containers at scale.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Docker, container, Dockerfile, image, Docker Compose, multi-stage build, registry.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Bayesian inference and why does it matter?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bayesian inference updates beliefs based on evidence using Bayes' theorem: P(H|D) = P(D|H) * P(H) / P(D). P(H) is the prior (initial belief), P(D|H) is the likelihood (how likely the data is given the hypothesis), P(H|D) is the posterior (updated belief). Example: medical test with 99% accuracy, disease prevalence 1%. Positive test → P(disease|positive) is only about 50%, not 99% — because false positives from the 99% healthy population dominate. Applications in ML: Bayesian neural networks (uncertainty quantification), Gaussian processes, Bayesian optimization (hyperparameter tuning), spam filtering (Naive Bayes). Frequentist vs Bayesian: frequentist treats parameters as fixed and data as random, Bayesian treats parameters as random with distributions. Practical tools: PyMC, Stan, Edward. Bayesian thinking is valuable beyond ML — it's a framework for reasoning under uncertainty in everyday life.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Bayesian inference, Bayes theorem, prior, posterior, likelihood, uncertainty.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how do you design a rate limiter?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Rate limiting controls how many requests a client can make in a time window. Algorithms: 1) Token Bucket — bucket fills at constant rate, each request takes a token, rejected if empty. Allows bursts. 2) Leaky Bucket — requests processed at fixed rate, excess queued or dropped. Smooth output. 3) Fixed Window — count requests in fixed time windows (e.g., 100/minute). Edge case: 200 requests possible at window boundary. 4) Sliding Window Log — store timestamp of each request, count in sliding window. Accurate but memory-heavy. 5) Sliding Window Counter — combine fixed window with interpolation. Approximate but efficient. Implementation: use Redis with INCR and EXPIRE for distributed rate limiting. Return 429 Too Many Requests with Retry-After header. Apply at different levels: per user, per IP, per API key, per endpoint. Consider: should rate limiting be global or per-server? Use a centralized store like Redis for consistency.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Rate limiter, token bucket, leaky bucket, sliding window, Redis, 429.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Infrastructure as Code?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Infrastructure as Code (IaC) manages infrastructure through code files instead of manual configuration. Instead of clicking through AWS console, you write declarative config files that describe your desired infrastructure. Tools: Terraform (multi-cloud, HCL language, most popular), AWS CloudFormation (AWS-specific), Pulumi (use real programming languages — Python, TypeScript), Ansible (configuration management + provisioning). Benefits: version control (git your infrastructure), reproducibility (same config → same environment), automation (CI/CD for infrastructure), documentation (code IS the documentation), disaster recovery (recreate entire infrastructure from code). GitOps: store IaC in git, changes through PRs, automated apply. Terraform workflow: write .tf files → terraform plan (preview changes) → terraform apply (make changes). State management: Terraform tracks current state — store remotely in S3 + DynamoDB lock. Drift detection: compare actual state with desired state. IaC is a fundamental DevOps practice.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "IaC, Terraform, CloudFormation, Pulumi, GitOps, declarative, state management.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how do you design a chat application like WhatsApp?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Real-time chat requires persistent connections. Architecture: WebSocket connections between clients and chat servers. Message flow: sender → chat server → message queue (Kafka) → recipient's chat server → recipient. If recipient offline, store in database and deliver on reconnect (store-and-forward). Group chat: fan-out on write (store one copy per recipient) or fan-out on read (store once, read for each member). Media: upload to object storage (S3), send URL in message. End-to-end encryption: Signal Protocol — keys exchanged between devices, server can't read messages. Presence system (online/offline/typing): separate service with heartbeat mechanism. Read receipts: two checkmarks — delivered and read status. Message ordering: use timestamps + vector clocks for consistency. Database: per-user message tables, partitioned by user_id. Scale: WhatsApp handled 2M connections per server with Erlang.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Chat system, WebSocket, message queue, E2E encryption, presence, fan-out.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how does DNS work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "DNS (Domain Name System) translates human-readable domain names to IP addresses. When you type example.com: 1) Browser checks its cache. 2) OS checks /etc/hosts and its cache. 3) Query goes to recursive resolver (usually your ISP's or 8.8.8.8). 4) Resolver asks root nameserver (one of 13 root server clusters). 5) Root points to TLD nameserver (.com, .org, .io). 6) TLD nameserver points to the authoritative nameserver for example.com. 7) Authoritative nameserver returns the IP address. 8) Resolver caches the result (TTL — Time To Live). Record types: A (IPv4 address), AAAA (IPv6), CNAME (alias), MX (mail server), TXT (verification, SPF, DKIM), NS (nameserver), SOA (start of authority). DNS is often called 'the phonebook of the internet.' Security: DNSSEC prevents DNS spoofing, DoH (DNS over HTTPS) and DoT (DNS over TLS) encrypt queries. DNS propagation: when you change records, it takes up to 48 hours for caches worldwide to update.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "DNS, recursive resolver, root nameserver, TLD, A record, CNAME, TTL, DNSSEC.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is technical debt and how to manage it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Technical debt is the implied cost of rework caused by choosing quick solutions over better approaches. Types: deliberate (we know this is a shortcut, will fix later), accidental (didn't know better at the time), bit rot (code degrades as requirements change). Examples: no tests, hardcoded values, copy-pasted code, outdated dependencies, no documentation, tightly coupled modules. Managing it: 1) Make it visible — track in issue tracker, use code quality metrics (SonarQube, Code Climate). 2) Boy Scout Rule — leave code cleaner than you found it. 3) Dedicated time — 20% of sprint for tech debt (Google's approach). 4) Refactoring sprints — periodic focused cleanup. 5) Don't gold-plate — perfect is the enemy of good. When to accept debt: prototype/MVP, competitive deadline, learning phase. When to pay it off: before scaling, when it slows feature development, when it causes bugs. Zero tech debt is neither possible nor desirable — it's about managing it at a sustainable level.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Technical debt, refactoring, code quality, SonarQube, Boy Scout Rule, sustainability.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is observability and how is it different from monitoring?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Monitoring tells you when something is wrong. Observability tells you why. Three pillars of observability: 1) Logs — structured records of events (use structured logging with JSON, tools: ELK Stack, Loki). 2) Metrics — numerical measurements over time (CPU usage, request rate, error rate, latency percentiles — tools: Prometheus + Grafana). 3) Traces — follow a request's journey through distributed services (tools: Jaeger, Zipkin, OpenTelemetry). OpenTelemetry is the emerging standard — vendor-neutral SDK for all three pillars. Key metrics: RED method for services (Rate, Errors, Duration), USE method for resources (Utilization, Saturation, Errors). SLIs/SLOs/SLAs: define what 'healthy' means — e.g., 99.9% of requests under 200ms. Alerting: alert on SLO violations, not individual metrics. Avoid alert fatigue — every alert should be actionable. Observability is a mindset, not just tools — instrument your code so you can ask arbitrary questions about system behavior.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Observability, logs, metrics, traces, OpenTelemetry, Prometheus, Grafana, SLO.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the CAP theorem practically?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CAP theorem states distributed systems can guarantee at most 2 of 3: Consistency (every read gets the latest write), Availability (every request gets a response), Partition Tolerance (system works despite network splits). In practice, network partitions happen — so you choose between CP and AP. CP examples: MongoDB (primary handles writes, reads from primary are consistent), HBase, Zookeeper, etcd. During a partition, unavailable nodes reject requests. AP examples: Cassandra, DynamoDB, CouchDB. During a partition, all nodes accept requests but may return stale data (eventual consistency). The PACELC theorem extends CAP: during Partition choose A or C, Else (no partition) choose Latency or Consistency. DynamoDB: PA/EL (available during partition, low latency normally). PostgreSQL with synchronous replication: PC/EC (consistent always, higher latency). In system design interviews, understanding these trade-offs is essential.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CAP theorem, CP, AP, PACELC, eventual consistency, partition tolerance, system design.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is WebAssembly and why should developers care?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebAssembly (Wasm) is a binary instruction format that runs in browsers at near-native speed. It's not a replacement for JavaScript — it complements it. Use cases: computationally intensive tasks in the browser (image/video editing, games, CAD, scientific simulations), porting existing C/C++/Rust applications to the web (Figma, AutoCAD, Google Earth). Languages that compile to Wasm: C, C++, Rust, Go, AssemblyScript (TypeScript-like), C#, Swift. WASI (WebAssembly System Interface): run Wasm outside the browser — server-side, edge computing, plugins. Docker's Solomon Hykes said 'if Wasm existed in 2008, we wouldn't have needed Docker.' Cloudflare Workers, Fastly, Fermyon use Wasm at the edge. Performance: 1.2-1.5x slower than native (much faster than JS for compute). Wasm is expanding beyond the web — it's becoming a universal binary format for safe, sandboxed execution anywhere.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebAssembly, Wasm, WASI, browser, near-native, Rust, edge computing, Figma.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are design patterns every developer should know?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Design patterns are reusable solutions to common problems. Creational: Singleton (one instance — database connection, but often an anti-pattern, use dependency injection instead), Factory (create objects without specifying exact class), Builder (construct complex objects step by step — useful for objects with many optional parameters). Structural: Adapter (make incompatible interfaces work together), Decorator (add behavior dynamically — Python decorators), Facade (simple interface for complex subsystem), Proxy (control access to an object — lazy loading, caching, access control). Behavioral: Observer (pub/sub — event systems, React state), Strategy (swap algorithms at runtime), Command (encapsulate actions — undo/redo), Iterator (traverse collections without exposing internals). Don't force patterns — use them when the problem naturally fits. The Gang of Four book has 23 patterns but in modern development, many are built into languages or frameworks. Most important: understand the principles behind patterns, not just the patterns themselves.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Design patterns, Singleton, Factory, Observer, Strategy, Decorator, GoF.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is linear algebra's role in machine learning?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Linear algebra is the mathematical backbone of ML. Vectors: represent data points — a 784-dimensional vector for a 28x28 image. Matrices: datasets are matrices (rows = samples, columns = features), weight matrices in neural networks. Matrix multiplication: the core operation in neural networks — forward pass is just matrix multiplications with activation functions. Eigenvalues/eigenvectors: PCA (Principal Component Analysis) for dimensionality reduction uses eigendecomposition of the covariance matrix. SVD (Singular Value Decomposition): recommendation systems, image compression, latent semantic analysis. Dot product: cosine similarity for text similarity, attention mechanism in transformers. Gradient: vector of partial derivatives — points in the direction of steepest ascent, gradient descent goes opposite. Tensors: generalization of matrices to higher dimensions — that's why TensorFlow is called TensorFlow. Understanding these concepts deeply — not just memorizing formulas — makes you a better ML practitioner.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Linear algebra, vectors, matrices, eigenvalues, SVD, PCA, gradient, tensors.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is sharding in databases?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Sharding horizontally partitions data across multiple database instances. Each shard holds a subset of the data. Why: single database can't handle the load — too many reads/writes, too much data for one machine. Sharding strategies: 1) Range-based — shard by ID ranges (1-1M on shard 1, 1M-2M on shard 2). Simple but can create hotspots. 2) Hash-based — hash(key) % num_shards. Even distribution but range queries span all shards. 3) Directory-based — lookup service maps keys to shards. Flexible but adds latency. 4) Geography-based — shard by region (EU data in EU, US data in US). Challenges: cross-shard queries (JOINs become very expensive), rebalancing when adding shards, transactions across shards (2PC), maintaining referential integrity. Alternatives before sharding: vertical scaling, read replicas, caching, query optimization, archiving old data. Shard only when you must — it adds significant complexity. Used by: Instagram (PostgreSQL), Pinterest, Notion.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Database sharding, horizontal partitioning, range-based, hash-based, cross-shard.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Redis and what are its use cases?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Redis is an in-memory data structure store — not just a cache. Data structures: strings, hashes, lists, sets, sorted sets, streams, HyperLogLog, bitmaps. Use cases: 1) Caching — cache database queries, API responses, session data. 2) Session store — faster than database-backed sessions. 3) Rate limiting — INCR + EXPIRE for request counting. 4) Pub/Sub — real-time messaging between services. 5) Leaderboard — sorted sets with ZADD/ZRANGE. 6) Queue — lists with LPUSH/RPOP (or Redis Streams for more features). 7) Distributed lock — SET key value NX EX timeout (Redlock algorithm for distributed). 8) Geospatial — GEOADD/GEOSEARCH for location-based queries. Persistence: RDB (periodic snapshots) and AOF (append-only file — every write logged). Redis Cluster: horizontal scaling with automatic sharding. Alternatives: Memcached (simpler, only strings), KeyDB (Redis fork, multi-threaded), Dragonfly (modern, compatible). Redis is incredibly versatile — most applications benefit from it.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Redis, in-memory, caching, pub/sub, sorted sets, rate limiting, distributed lock.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

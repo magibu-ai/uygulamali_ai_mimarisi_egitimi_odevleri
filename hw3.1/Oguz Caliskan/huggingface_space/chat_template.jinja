@@ -1,0 +1,58 @@
+{#-
+  Sondaj Modeli - Chat Template (Jinja2)
+  Qwen3/ChatML tabanlı, tool-calling ve thinking desteği içerir.
+
+  ÖNEMLİ DÜZELTME: Orijinal template'te '+' operatörü ile string birleştirme
+  yapılıyordu (örn. message.role + message.content); message.content bazen
+  düz string yerine liste (multimodal/parça formatı) olarak geldiğinde
+  "TypeError: can only concatenate str (not list) to str" hatası veriyordu.
+  Bu template'te bunun yerine Jinja'nın '~' operatörü kullanılıyor - '~' tüm
+  operandları otomatik olarak string'e çevirir, bu hatayı kökten önler.
+-#}
+{%- if tools %}
+    {{- '<|im_start|>system\n' }}
+    {%- if messages[0].role == 'system' %}
+        {{- messages[0].content ~ '\n\n' }}
+    {%- endif %}
+    {{- '# Tools\n\nYou may call one or more functions to assist with the user query.\n\nYou are provided with function signatures within <tools></tools> XML tags:\n<tools>' }}
+    {%- for tool in tools %}
+        {{- '\n' ~ (tool.function | tojson) }}
+    {%- endfor %}
+    {{- '\n</tools>\n\nFor each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:\n<tool_call>\n{"name": <function-name>, "arguments": <args-json-object>}\n</tool_call><|im_end|>\n' }}
+{%- else %}
+    {%- if messages[0].role == 'system' %}
+        {{- '<|im_start|>system\n' ~ messages[0].content ~ '<|im_end|>\n' }}
+    {%- endif %}
+{%- endif %}
+
+{%- for message in messages %}
+    {%- if message.role == 'system' and loop.first and (tools or messages[0].role == 'system') %}
+        {#- Sistem mesajı zaten yukarıda işlendi, atla -#}
+    {%- elif message.role == 'user' %}
+        {{- '<|im_start|>user\n' ~ (message.content | string) ~ '<|im_end|>\n' }}
+    {%- elif message.role == 'assistant' %}
+        {%- if message.content %}
+            {{- '<|im_start|>assistant\n' ~ (message.content | string) }}
+        {%- else %}
+            {{- '<|im_start|>assistant\n' }}
+        {%- endif %}
+        {%- if message.tool_calls %}
+            {%- for tool_call in message.tool_calls %}
+                {%- if tool_call.function is defined %}
+                    {%- set tool_call = tool_call.function %}
+                {%- endif %}
+                {{- '\n<tool_call>\n{"name": "' ~ tool_call.name ~ '", "arguments": ' ~ (tool_call.arguments | tojson) ~ '}\n</tool_call>' }}
+            {%- endfor %}
+        {%- endif %}
+        {{- '<|im_end|>\n' }}
+    {%- elif message.role == 'tool' %}
+        {{- '<|im_start|>user\n<tool_response>\n' ~ (message.content | string) ~ '\n</tool_response><|im_end|>\n' }}
+    {%- endif %}
+{%- endfor %}
+
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+    {%- if enable_thinking is defined and enable_thinking is false %}
+        {{- '<think>\n\n</think>\n\n' }}
+    {%- endif %}
+{%- endif %}

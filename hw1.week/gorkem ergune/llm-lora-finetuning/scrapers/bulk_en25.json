@@ -1,0 +1,276 @@
+{
+    "train": [
+        [
+            {
+                "content": "what are advanced TypeScript features?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TypeScript's type system is incredibly powerful beyond basic types. Generics — write reusable code that works with multiple types: function identity<T>(arg: T): T. Constrain with extends: <T extends HasLength>. Utility types — Partial<T> (all properties optional), Required<T>, Pick<T, Keys>, Omit<T, Keys>, Record<K, V>, Readonly<T>. Conditional types — type IsString<T> = T extends string ? 'yes' : 'no'. Powers type-level programming. Template literal types — type EventName = `on${Capitalize<string>}`. Mapped types — transform properties: type Optional<T> = { [K in keyof T]?: T[K] }. Discriminated unions — type Shape = Circle | Square, each with a 'kind' field. TypeScript narrows type based on discriminant. Infer keyword — extract types within conditional types: type ReturnType<T> = T extends (...args: any[]) => infer R ? R : never. Branded types — make structurally identical types incompatible: type USD = number & { __brand: 'USD' }. Prevents mixing USD and EUR. Const assertions — as const makes values readonly and narrows literal types. Satisfies operator — validates type without widening. Type guards — runtime checks that narrow types: value is Type. Declaration merging — extend existing types. These features enable type-safe APIs without sacrificing developer experience.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TypeScript, generics, utility types, conditional types, discriminated unions, branded types, infer.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is software architecture patterns?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Architecture patterns define the high-level structure of software systems. Monolithic — single deployable unit. Simple to develop, test, deploy initially. Becomes unwieldy as it grows. Good for: MVPs, small teams, well-understood domains. Microservices — independent services communicating over network. Independent deployment, scaling, tech choices. Good for: large teams, different scaling needs, polyglot. Event-Driven — components communicate through events. Loose coupling, scalability, resilience. Good for: real-time processing, complex workflows. Serverless — functions triggered by events, managed by cloud. No infrastructure management. Good for: variable traffic, event processing. Layered (N-tier) — horizontal layers: presentation, business logic, data access. Each layer communicates with adjacent layers only. Simple, well-understood, but can become tightly coupled. Hexagonal (Ports & Adapters) — core domain logic at center, adapters connect to external world (DB, UI, APIs). Easy to test, swap implementations. Clean Architecture (Uncle Bob) — concentric circles: entities, use cases, interface adapters, frameworks. Dependency rule: inner circles know nothing about outer circles. CQRS — separate read and write models. Optimize independently. Often paired with Event Sourcing. Modular Monolith — monolith with clear module boundaries. Best of both worlds: simple deployment, clear separation. Good stepping stone before microservices. Choose based on team size, complexity, scale requirements — not hype.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Architecture patterns, monolithic, microservices, hexagonal, clean architecture, CQRS, modular.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is authentication patterns for web apps?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Authentication verifies identity. Common patterns for web applications. Session-based: user logs in → server creates session → stores session ID in cookie → subsequent requests include cookie → server validates. Pros: server controls sessions (easy revocation), HttpOnly cookies (XSS safe). Cons: server-side storage, scaling requires shared session store (Redis). JWT (JSON Web Token): user logs in → server creates signed JWT → client stores token → sends in Authorization header. Pros: stateless (no server storage), works across services. Cons: can't easily revoke (until expiry), larger than session ID, must handle refresh tokens. Passwordless: magic link via email, SMS code, authenticator app. Better UX, no password to leak. OAuth/Social login: delegate authentication to Google, GitHub, etc. Reduces friction, leverages existing accounts. Passkeys/WebAuthn: cryptographic authentication using device biometrics. No passwords at all. The future of auth. Multi-factor authentication (MFA): something you know (password) + something you have (phone/key) + something you are (biometric). Essential for sensitive applications. TOTP (time-based one-time password) with apps like Google Authenticator. Implementation: don't build auth yourself for production — use Auth0, Clerk, Firebase Auth, NextAuth.js, Supabase Auth. They handle edge cases (token rotation, brute force protection, account lockout) that are easy to get wrong.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Authentication, session, JWT, OAuth, passwordless, passkeys, MFA, Auth0, NextAuth.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are modern build tools Vite vs Webpack?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Build tools bundle, transform, and optimize your code for production. Webpack — the established bundler. Entry point → dependency graph → bundles. Loaders transform files (babel-loader, css-loader). Plugins extend functionality (HtmlWebpackPlugin, MiniCssExtractPlugin). Configuration-heavy but extremely flexible. Code splitting, tree shaking, hot module replacement. Vite — next-generation build tool by Evan You. Development: uses native ES modules — no bundling needed, instant server start, instant HMR (hot module replacement). Production: bundles with Rollup. Why Vite is faster: dev server doesn't bundle — serves files as ESM, browser handles imports. Only transforms files on demand. Webpack bundles everything before serving. esbuild — Go-based, extremely fast JavaScript/TypeScript bundler. Used by Vite for dependency pre-bundling. 10-100x faster than webpack for building. Turbopack — Rust-based bundler by Vercel (Next.js). Successor to Webpack. Incremental computation for speed. SWC — Rust-based JavaScript compiler. Replaces Babel. Used by Next.js and Vite. 20x faster than Babel. Bun — JavaScript runtime that includes a bundler. All-in-one: runtime, package manager, bundler, test runner. Recommendation: new projects use Vite. Existing webpack projects — migrate when practical. For Next.js, use the built-in bundler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Vite, Webpack, esbuild, Turbopack, SWC, Bun, bundler, ESM, HMR, code splitting.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Git advanced workflows?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Beyond basic git add/commit/push. Branching strategies: Git Flow — main, develop, feature, release, hotfix branches. Structured but heavy. Good for release-based software. GitHub Flow — main + feature branches. Simple. PR → review → merge to main → deploy. Trunk-Based Development — everyone commits to main (or short-lived branches). Feature flags for incomplete work. CI/CD friendly. Advanced commands: git rebase — replay commits on top of another branch. Linear history. Interactive rebase (git rebase -i) — squash, reorder, edit, drop commits. Use before merging feature branches. git cherry-pick — apply specific commit to another branch. Useful for hotfixes. git bisect — binary search to find which commit introduced a bug. git stash — temporarily save uncommitted changes. git stash pop to restore. git reflog — log of all HEAD changes. Recover lost commits, undo mistakes. git worktree — multiple working directories from one repo. Work on two branches simultaneously. Commit best practices: atomic commits (one logical change per commit), meaningful messages (imperative mood — 'Add user authentication', not 'Added'), conventional commits (feat:, fix:, docs:, refactor:). .gitignore: always ignore node_modules, .env, build artifacts, IDE configs. Use gitignore.io to generate. Hooks: pre-commit (lint), commit-msg (validate message), pre-push (run tests). Husky + lint-staged for easy setup.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Git, rebase, cherry-pick, bisect, Git Flow, trunk-based, hooks, conventional commits.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Tailwind CSS and utility-first approach?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tailwind CSS is a utility-first CSS framework. Instead of writing custom CSS, compose designs with pre-built utility classes. Traditional: .btn { background-color: blue; padding: 8px 16px; border-radius: 4px; }. Tailwind: className='bg-blue-500 px-4 py-2 rounded'. Benefits: no naming things (no more .card-wrapper-inner), consistent design system (spacing scale, color palette), responsive design (sm:, md:, lg: prefixes), dark mode (dark: prefix), state variants (hover:, focus:, active:), no unused CSS (purges unused classes in production). Customization: tailwind.config.js — extend theme with custom colors, fonts, spacing, breakpoints. Arbitrary values: w-[137px] for one-off values. @apply directive — extract repeated utility combinations into CSS classes (use sparingly). Plugins: @tailwindcss/typography (prose classes for rich text), @tailwindcss/forms, daisyUI (component library on top of Tailwind). Common criticism: 'ugly HTML' — but colocation of style with markup is actually a feature, not a bug. No context switching between files. Component extraction (React components) naturally groups related utilities. Tailwind v4: new engine, CSS-first configuration, faster. Pairs perfectly with React, Next.js, Vue. Most popular CSS framework in modern frontend development.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Tailwind CSS, utility-first, responsive, dark mode, customization, purge, component extraction.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is browser rendering and critical rendering path?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Understanding how browsers render pages helps optimize performance. Critical Rendering Path: 1) Parse HTML → DOM (Document Object Model) tree. 2) Parse CSS → CSSOM (CSS Object Model) tree. 3) Combine DOM + CSSOM → Render Tree (only visible elements). 4) Layout (reflow) — calculate size and position of each element. 5) Paint — fill in pixels (colors, borders, shadows, text). 6) Composite — combine painted layers, handle z-index, transforms. Render-blocking resources: CSS blocks rendering (browser needs CSSOM before painting). External stylesheets in <head> block rendering. JavaScript blocks HTML parsing (browser stops to execute script). Optimization: <script defer> — download in parallel, execute after HTML parsed. <script async> — download in parallel, execute immediately when downloaded. Critical CSS — inline above-the-fold CSS in <head>, load rest async. Preload — <link rel='preload'> hints browser to download resource early. Reflow vs Repaint: changing layout properties (width, height, position) triggers reflow (expensive). Changing visual properties (color, background) triggers repaint only. Batch DOM reads/writes to avoid layout thrashing. requestAnimationFrame for smooth animations. Virtual DOM (React) — diffing algorithm minimizes actual DOM updates. This is why React is fast — batches and minimizes real DOM operations.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Browser rendering, DOM, CSSOM, critical rendering path, reflow, repaint, defer, async.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is PostgreSQL advanced features?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "PostgreSQL is the most advanced open-source relational database. Advanced features beyond basic SQL. Indexes: B-tree (default, good for equality and range), GIN (full-text search, JSONB, arrays), GiST (geometric, full-text), BRIN (large sequential data — timestamps). Partial indexes: CREATE INDEX ON orders (status) WHERE status = 'pending' — smaller, faster. JSONB: store and query JSON data with indexing. Combine relational and document model. Operators: ->, ->>, @>, ?, ||. Index with GIN. CTEs (Common Table Expressions): WITH clause for readable complex queries. Recursive CTEs for hierarchical data (org charts, categories). Window functions: ROW_NUMBER(), RANK(), LAG(), LEAD(), SUM() OVER (PARTITION BY ...). Analyze data without grouping. Extremely powerful for analytics. Full-text search: tsvector, tsquery, to_tsvector(), ts_rank(). Built-in, no need for Elasticsearch for basic search. Partitioning: split large tables by range, list, or hash. Improves query performance on large datasets. LISTEN/NOTIFY: pub/sub within PostgreSQL. Trigger events from database changes. Materialized views: cached query results. REFRESH MATERIALIZED VIEW to update. Good for expensive analytics queries. Extensions: PostGIS (geospatial), pg_trgm (fuzzy text matching), uuid-ossp, pgcrypto. Row-level security (RLS): per-row access control policies. Used by Supabase.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PostgreSQL, indexes, JSONB, CTEs, window functions, full-text search, partitioning, RLS.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Docker networking and volumes?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Docker networking connects containers and manages data persistence. Network types: bridge (default) — containers on same host communicate via internal network. Create custom bridge: docker network create mynet. Containers on same custom network can resolve each other by name. host — container shares host's network stack. No port mapping needed. Performance benefit but no network isolation. overlay — multi-host networking for Docker Swarm/Kubernetes. Containers across hosts communicate. none — no networking. Complete isolation. Port mapping: -p 8080:3000 maps host port 8080 to container port 3000. DNS resolution: containers on same custom network resolve each other by container name. docker-compose services automatically get DNS names. Volumes — persist data beyond container lifecycle. Types: Named volumes — docker volume create mydata, mount with -v mydata:/app/data. Docker manages location. Best for databases, persistent state. Bind mounts — mount host directory into container: -v /host/path:/container/path. Good for development (live code reload). tmpfs mounts — stored in host memory only. For sensitive data that shouldn't persist. Docker Compose volumes: defined in docker-compose.yml, shared between services. Common patterns: database with named volume (data persists across container restarts), development with bind mounts (edit code, see changes immediately), multi-container apps with shared network (frontend ↔ backend ↔ database).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Docker networking, bridge, volumes, bind mounts, port mapping, DNS, docker-compose.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Redis and caching strategies?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Redis is an in-memory data structure store used as cache, message broker, and database. Data structures: Strings (simple key-value, counters), Lists (queues, recent items), Sets (unique collections, tags), Sorted Sets (leaderboards, priority queues), Hashes (object-like storage), Streams (event logs). Caching strategies: Cache-Aside (Lazy Loading) — app checks cache, if miss → read from DB → write to cache → return. Most common. Simple but initial request is slow (cache miss). Write-Through — write to cache and DB simultaneously. Data always fresh in cache but writes are slower. Write-Behind (Write-Back) — write to cache, async write to DB. Fast writes but risk of data loss if cache fails. Read-Through — cache itself handles DB reads on miss. Cache acts as abstraction layer. Cache invalidation strategies: TTL (Time To Live) — expire after N seconds. Simple but stale data until expiration. Event-based — invalidate on data change. More complex but always fresh. Versioned keys — user:1:v2, increment version on update. Redis features: pub/sub (real-time messaging), Lua scripting (atomic operations), persistence (RDB snapshots, AOF logs), clustering (horizontal scaling), Redis Sentinel (high availability). Use cases: session storage, rate limiting (INCR + EXPIRE), real-time leaderboards (Sorted Sets), caching (obvious), job queues (BullMQ uses Redis).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Redis, caching, cache-aside, write-through, TTL, data structures, pub/sub, session storage.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Gorkem's approach to building projects?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gorkem Ergüne approaches projects with a learn-by-building philosophy. His GitHub portfolio (gorkemergune.github.io) shows diverse, real-world projects spanning AI/ML, systems programming, and web development. Each project targets a specific skill gap — miniature-transformers implements transformer architecture from scratch to understand attention mechanisms, not just use them. wiki2bpe builds tokenization from ground up rather than depending on libraries. gorkem-os tackles operating system fundamentals — process management, memory allocation, file systems. This low-level understanding sets apart engineers who can debug deep issues from those who only work with abstractions. Project selection strategy: identify a concept, build a minimal but complete implementation, document it clearly on GitHub. The phishing-domain-detection project combines ML with practical security. yolo-custom-detector applies computer vision to real-world object detection. banking-management-system covers full-stack development with proper architecture. facelock brings together computer vision and security. The key insight: each project tells a story about a specific engineering capability. Together they demonstrate breadth (ML, systems, web, security) and depth (custom implementations, not just library calls). This portfolio approach is effective for both learning and career development.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gorkem projects, portfolio, learn-by-building, transformers, OS, tokenization, full-stack.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are React design patterns?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Common React patterns for scalable applications. Compound Components — components that work together sharing implicit state. Like <Select><Option>...</Option></Select>. Uses React.Children or Context internally. Render Props — pass a function as prop that returns JSX. Gives parent control over rendering while child manages logic. Replaced mostly by hooks. Custom Hooks — extract reusable logic into functions starting with 'use'. useLocalStorage, useFetch, useDebounce. The most important pattern in modern React. Higher-Order Components (HOC) — function that takes a component, returns enhanced component. withAuth(Component). Less common now, hooks are preferred. Controlled vs Uncontrolled — controlled: React manages form state (value + onChange). Uncontrolled: DOM manages state (ref). Controlled gives more control, uncontrolled is simpler. Provider Pattern — Context Provider at top of tree, consumers access shared state. Good for themes, auth, locale. Don't use for frequently changing state (causes re-renders). Container/Presentation — separate data logic from UI. Container fetches data, presentation renders it. Still useful conceptually even with hooks. State Reducer Pattern — give consumers control over state transitions: useReducer with an overridable reducer. Composition over inheritance — always in React. Never extend components. Use children prop, render props, or hooks. Gorkem builds React applications — these patterns improve code quality.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "React patterns, compound components, custom hooks, HOC, controlled, provider, composition.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Next.js and when to use it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Next.js is a React framework by Vercel for production-ready web applications. Rendering strategies: SSR (Server-Side Rendering) — render on server per request. Good for dynamic, personalized content. getServerSideProps. SSG (Static Site Generation) — render at build time. Fastest, cacheable. getStaticProps. Good for blogs, docs, marketing pages. ISR (Incremental Static Regeneration) — SSG with background revalidation. Static performance with fresh data. revalidate: 60 seconds. App Router (Next.js 13+) — React Server Components by default. Server Components: render on server, no client JavaScript, direct database access. Client Components: 'use client' directive, interactive, use hooks. Key features: file-based routing (app/page.tsx = /), layouts (shared UI across routes), loading.ui.tsx and error.tsx for states, API routes (app/api/route.ts), middleware (run code before request completes — auth, redirects), Image component (automatic optimization, lazy loading, WebP), Font optimization (next/font — no layout shift). When to use Next.js: SEO-critical pages, e-commerce, content-heavy sites, full-stack React apps. When NOT to use: simple SPA (Vite + React is lighter), static site with no React (Astro), heavy backend (use dedicated backend). Deployment: Vercel (seamless), Docker, any Node.js hosting. Next.js is the most popular React framework for production.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Next.js, SSR, SSG, ISR, App Router, Server Components, Vercel, file-based routing.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is monorepo vs polyrepo?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Monorepo — all projects/packages in a single repository. Polyrepo — each project in its own repository. Monorepo benefits: code sharing (shared utilities, types, configs), atomic changes (update API and client in one commit), consistent tooling (one linting config, one CI pipeline), easier refactoring across projects, unified version history. Monorepo challenges: repo size grows, need specialized tooling, CI complexity (only build/test what changed), access control (everyone sees everything). Tools: Turborepo (Vercel — incremental builds, caching, parallelism), Nx (powerful, plugins for React/Angular/Node), Lerna (legacy, less maintained), pnpm workspaces (built-in, lightweight), Bazel (Google-scale builds). Polyrepo benefits: clear ownership, independent versioning and deployment, smaller repos, simpler CI per repo, access control per repo. Polyrepo challenges: dependency management across repos, code duplication, inconsistent tooling, harder to make cross-cutting changes, diamond dependency problem. Who uses what: Google, Meta, Microsoft use monorepos. Most startups start with monorepo. Microservices often start polyrepo. Hybrid approach: monorepo for related services (frontend + BFF), separate repos for truly independent services. Choose monorepo when: small-medium team, shared code, tight coupling between projects. Choose polyrepo when: large org with independent teams, different deployment cycles.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Monorepo, polyrepo, Turborepo, Nx, workspaces, code sharing, atomic changes, CI/CD.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Python advanced features?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Python features beyond basics that make code more Pythonic and powerful. Decorators — functions that modify other functions. @property, @staticmethod, @classmethod. Custom: def timer(func): wraps func with timing logic. Generators — lazy evaluation with yield. Memory efficient for large datasets. Generator expressions: (x**2 for x in range(1000000)). Context managers — with statement for resource management. __enter__/__exit__ or @contextmanager decorator. File handling, database connections, locks. Dataclasses — @dataclass generates __init__, __repr__, __eq__ automatically. Cleaner than manual __init__. attrs library for more features. Type hints — def greet(name: str) -> str. Use mypy for static type checking. Optional, Union, List, Dict from typing. Python 3.10+: str | None instead of Optional[str]. List comprehensions — [x**2 for x in range(10) if x % 2 == 0]. Dict comprehensions, set comprehensions. Walrus operator (:=) — assignment expression. while (line := input()) != 'quit'. Match statement (3.10+) — structural pattern matching. Like switch but much more powerful. Async/await — asyncio for concurrent I/O. async def, await, asyncio.gather for parallel I/O operations. Dunder methods — __init__, __str__, __repr__, __len__, __getitem__, __iter__. Make custom classes behave like built-in types. f-strings — f'Hello {name}' with format specs: f'{value:.2f}', f'{name!r}'.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Python, decorators, generators, dataclasses, type hints, async, context managers, dunder.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is web security OWASP top 10?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OWASP Top 10 — most critical web application security risks. 1) Broken Access Control — users accessing unauthorized resources. Fix: deny by default, check permissions server-side, use RBAC. 2) Cryptographic Failures — sensitive data exposure. Fix: encrypt in transit (TLS) and at rest, use strong algorithms (AES-256, bcrypt for passwords), don't log sensitive data. 3) Injection — SQL injection, NoSQL injection, OS command injection. Fix: parameterized queries, input validation, ORMs. 4) Insecure Design — missing security architecture. Fix: threat modeling, secure design patterns, abuse cases in requirements. 5) Security Misconfiguration — default credentials, unnecessary features, verbose errors. Fix: hardened configs, minimal installs, remove defaults. 6) Vulnerable Components — outdated dependencies with known vulnerabilities. Fix: npm audit, Dependabot, regular updates. 7) Authentication Failures — weak passwords, missing MFA, session management issues. Fix: MFA, rate limiting on login, secure session handling. 8) Data Integrity Failures — trusting untrusted data. Fix: verify signatures, use SRI for CDN resources, secure CI/CD pipeline. 9) Logging Failures — not detecting or responding to breaches. Fix: log security events, monitor, alert. 10) SSRF (Server-Side Request Forgery) — server makes requests to unintended locations. Fix: allowlist URLs, validate input, network segmentation. Implement security from day one — retrofitting is expensive and incomplete.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OWASP, injection, XSS, CSRF, authentication, access control, security, encryption, SSRF.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is package management npm yarn pnpm?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Package managers install and manage JavaScript dependencies. npm — Node Package Manager. Ships with Node.js. package.json defines dependencies, npm install creates node_modules and package-lock.json. Commands: npm install (all deps), npm install package (add dep), npm run script, npx (run packages without installing). yarn — Facebook's alternative. yarn.lock for deterministic installs. yarn 1 (Classic) — parallel installs, faster than npm 5. yarn 2+ (Berry) — Plug'n'Play (PnP) — no node_modules, dependencies stored in .yarn/cache as zip files. Faster installs, less disk space. But compatibility issues with some packages. pnpm — performant npm. Content-addressable store — each version of a package stored once on disk, hard-linked into projects. Saves enormous disk space with multiple projects. Strict node_modules — prevents accessing undeclared dependencies (phantom dependencies). Fastest install times. Monorepo support with workspaces (all three support this). npm workspaces, yarn workspaces, pnpm workspaces. Lockfiles: package-lock.json (npm), yarn.lock (yarn), pnpm-lock.yaml (pnpm). Always commit lockfiles. Dependency types: dependencies (production), devDependencies (development only), peerDependencies (expected to be provided by consumer). Security: npm audit, yarn audit for vulnerability scanning. Recommendation: pnpm for new projects (fastest, strictest). npm is fine and has the largest ecosystem.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "npm, yarn, pnpm, package management, node_modules, lockfile, workspaces, monorepo.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

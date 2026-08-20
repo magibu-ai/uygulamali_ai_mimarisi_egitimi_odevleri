@@ -1,0 +1,8 @@
+# Asistanın kendisi için gerekli olanlar
+openai>=1.40.0
+requests>=2.31.0
+ddgs>=6.0.0
+
+# Yalnızca Hugging Face Space vitrini (app.py) için gerekli.
+# Terminalden `python main.py` çalıştıracaksan bu satır olmadan da çalışır.
+gradio>=6.0.0

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+
+# Resmi Gemma 4 şablonu yalnızca yerel karşılaştırma içindir, kendi lisansı vardır.
+referans/

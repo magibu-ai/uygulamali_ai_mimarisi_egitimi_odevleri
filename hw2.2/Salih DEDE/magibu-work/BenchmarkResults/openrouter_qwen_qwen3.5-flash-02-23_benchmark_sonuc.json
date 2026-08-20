@@ -1,0 +1,1165 @@
+{
+  "model": "openrouter_qwen_qwen3.5-flash-02-23",
+  "ozet": {
+    "model": "openrouter_qwen_qwen3.5-flash-02-23",
+    "format": "api",
+    "family": "openrouter",
+    "parameter_size": "bilinmiyor",
+    "quantization_level": "bilinmiyor",
+    "dogru_cevap_sayisi": 107,
+    "basari": 76.98,
+    "toplam_sure": 499.07
+  },
+  "kategori_sonuclari": {
+    "stok_varyant": {
+      "dogru": 11,
+      "toplam": 15
+    },
+    "aksesuar_parca": {
+      "dogru": 15,
+      "toplam": 23
+    },
+    "garanti": {
+      "dogru": 4,
+      "toplam": 4
+    },
+    "kurulum": {
+      "dogru": 16,
+      "toplam": 19
+    },
+    "malzeme": {
+      "dogru": 9,
+      "toplam": 14
+    },
+    "olcu": {
+      "dogru": 13,
+      "toplam": 17
+    },
+    "kargo_lojistik": {
+      "dogru": 14,
+      "toplam": 15
+    },
+    "diger": {
+      "dogru": 20,
+      "toplam": 26
+    },
+    "renk": {
+      "dogru": 5,
+      "toplam": 6
+    }
+  },
+  "isaretlemeler": [
+    {
+      "urun_id": "4128875",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün 180 cm veya daha geniş modelleri mevcut mu diye merak ediyorum.",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün 6 kapaklı modeli mevcut mu?",
+      "dogru_secenek": "D",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün 2 kapaklı modeli mevcut mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün 135 cm genişliğinde bir modeli olup olmadığını öğrenmek istemiştim.",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün 3 kapaklı veya 5 kapaklı modeli var mı?",
+      "dogru_secenek": "D",
+      "model_cevabi": "B",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu country tarzı beyaz suntalam gövdeye sahip, 140 cm genişliğinde, 4 kapaklı ve çekmeceli ürününüzün farklı renk seçenekleri mevcut mu?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu gardırobun aynalı bir modeli mevcut mu? Diva Country 4 kapak 2 çekmeceli aynalı gardırop olarak aratabilir miyim?",
+      "dogru_secenek": "C",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün 70 cm genişliğinde bir modeli mevcut mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu dolabın komidini var mı? İzel Country şifonyer ile takım yapabilir miyim?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "garanti",
+      "soru": "Ürünün garantisi ne kadar?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu dolabın çalışma masası özelliği var mı diye merak ediyorum?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "kurulum",
+      "soru": "Merhaba, ürününüzün kurulum hizmeti var mı? Benzer ürünlerde bazen kurulum hizmeti de olabiliyor diye sordum.",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "malzeme",
+      "soru": "Merhaba, bu country tarzı beyaz 4 kapaklı çekmeceli dolabın tamamı MDF mi, yoksa farklı malzemeler mi kullanılmış?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "kurulum",
+      "soru": "Ürünün kurulumu için video veya şema var mı? Kurulum şeması ürünle birlikte gönderiliyor mu?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "malzeme",
+      "soru": "Ürün kapakları MDF mi?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "olcu",
+      "soru": "Ürünün tam ölçüleri (genişlik, derinlik, yükseklik) nedir?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "olcu",
+      "soru": "Ürünün genişliği tam olarak 85 cm mi, yoksa biraz daha mı dar? Ürün özelliklerinde 85 cm olarak belirtilmiş ama emin olamadım, kargo takip ekranında da bu ölçü yazıyor muydu acaba?",
+      "dogru_secenek": "A",
+      "model_cevabi": "D",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu dolabın şifonyeri var mı? Diva mega şifonyeri ile takım yapabilir miyim?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "olcu",
+      "soru": "Ürünün yüksekliği kaç cm?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, ürününüzle ilgileniyorum. Ürün özellikleri arasında kargo firması bilgisi göremedim, ürünlerinizin gönderimini hangi kargo firması ile sağlıyorsunuz?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "olcu",
+      "soru": "Merhaba, ürünümüzün derinliği 44 cm olarak belirtilmiştir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım!",
+      "dogru_secenek": "D",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "malzeme",
+      "soru": "Raflar hangi malzemeden yapılmıştır?",
+      "dogru_secenek": "D",
+      "model_cevabi": "C",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "malzeme",
+      "soru": "Ürünün boruları/iskeleti hangi malzemeden yapılmıştır? Ürünün genel boyutları 85x45x155 cm, rengi gri ve İskandinav stilindedir.",
+      "dogru_secenek": "C",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün fermuarı var mı?",
+      "dogru_secenek": "A",
+      "model_cevabi": "B",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "olcu",
+      "soru": "Merhaba, ürünümüzün raf yükseklikleri 30 cm'dir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "diger",
+      "soru": "Merhaba, country tarzı beyaz renkli, 4 kapaklı, çekmeceli dolabınızın askı borusu, ürün özelliklerinde belirtilen 140 cm genişliğe göre kaç cm uzunluğundadır?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün askılık kısmı var mı ve kaç cm olduğunu öğrenebilir miyim? Ürün özellikleri kısmında bu bilgiye rastlamadım, ancak ürünün 1 adet 40 cm'lik askılık bölümü olduğu bilgisi doğru mudur?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "malzeme",
+      "soru": "Ürünün kumaşı/kılıfı nasıldır?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "diger",
+      "soru": "Merhaba, bu country tarzı beyaz dolabın ayaklı mı yoksa yere sıfır mı olduğunu öğrenebilir miyim?",
+      "dogru_secenek": "D",
+      "model_cevabi": "C",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün kurulum kılavuzu ve montaj desteği hakkında bilgi verebilir misiniz? Ürünle birlikte gelen kurulum videosuna ulaşmak için bir karekod da bulunuyor mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "4128875",
+      "kategori": "diger",
+      "soru": "Merhaba, ürün özelliklerinde çekmeceli olduğu belirtilen bu dolapta frenleme sistemi (yavaş kapanma) mevcut mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "kargo_lojistik",
+      "soru": "İstanbul içi teslimatlarımızda ürününüzün maksimum kaç gün içinde elinizde olacağını öngörüyorsunuz?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "garanti",
+      "soru": "Ürünün garanti süresi ne kadar?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "kargo_lojistik",
+      "soru": "Ürününüzü MNG Kargo (DHL e-commerce) ile mi gönderiyorsunuz?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün kolay taşınabilir mi? Yaklaşık ağırlığı ne kadar?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün dış kılıfı pakete dahil mi?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "kurulum",
+      "soru": "Ürünün kurulumu kolay mı ve alet gerektiriyor mu? Boruların aparatlara takılarak monte edildiği bilgisi doğru mudur?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "kurulum",
+      "soru": "Merhaba, bu ürünü kurarken rafları veya çubukları takmama gibi bir seçeneğimiz var mı? Yani bazı rafları eksik monte edebilir miyiz?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "kargo_lojistik",
+      "soru": "Ürünün paketli halinin ağırlığı ve boyutları hakkında bilgi verebilir misiniz? Özellikle kutu ölçüleri merak ediyorum. Ürünün kendi boyutları 85x45x155 cm olarak belirtilmiş, ancak paketli halinin yaklaşık 3 ila 3.5 kilogram ağırlığında ve 42x25x18 cm boyutlarında olduğunu varsayıyorum. Bu bilgiler doğru mudur?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "diger",
+      "soru": "Ürünü balkonda kullanmak istiyorum, suya dayanıklılık durumu nedir?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1132636729",
+      "kategori": "aksesuar_parca",
+      "soru": "Ürün görsellerinde yer alan teknik çizimde ayna fonksiyonu ile ilgili bir detay bulunuyor mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "diger",
+      "soru": "Ürünün rengi nedir?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "diger",
+      "soru": "Klasik ve İskandinav tarzıyla dikkat çeken, 85x45x155 cm ölçülerindeki gri renkli raflı ürünümüzü yüklük olarak kullanabilir miyim?",
+      "dogru_secenek": "B",
+      "model_cevabi": "D",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bahsettiğiniz klasik tarzdaki gri renkli, İskandinav stilindeki İskandinav stilindeki 85x45x155 cm ölçülerindeki raflı ürününüzün fermuarı tek mi, çift mi?",
+      "dogru_secenek": "B",
+      "model_cevabi": "D",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "diger",
+      "soru": "Ürünün taşıma kapasitesi hakkında bilgi verebilir misiniz? Özellikle her bir rafın ve askının ne kadar ağırlık taşıyabileceğini, örneğin 5-6 kg civarında olup olmadığını öğrenmek istiyorum.",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1132636729",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu modelin aynalı kapaklı bir versiyonu bulunuyor mu? Teknik çiziminde bu bilgi yer alıyor mu?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1132636729",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, country tarzı beyaz suntalam gövdeye sahip, 8 kapaklı, aynasız, 218 cm genişliğinde ve 52 cm derinliğindeki bu dolabın alanıma uygun farklı ebatlarda veya modüler olarak seçilebilecek parçaları mevcut mu?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1132636729",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu country stilindeki beyaz, kapaklı dolabınızın tek kapaklı bir alternatifi mevcut mu?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün şifonyer veya komodin gibi tamamlayıcı parçaları mevcut mu?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "renk",
+      "soru": "Ürünün farklı renk seçenekleri mevcut mu? Beyaz haricinde bir renk seçeneği var mı?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün farklı kapak sayısı olan versiyonları mevcut mu diye merak ediyorum. Şu anki ürün 4 kapaklı görünüyor.",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "malzeme",
+      "soru": "Ürünün malzemesi nedir? Suntalam mı, MDF mi?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1132636729",
+      "kategori": "olcu",
+      "soru": "Ürün görselinde dolap üstüne belirtilen ölçülerde 700 yazan nedir? Ürünün teknik çizimi görsellerde mevcut mu?",
+      "dogru_secenek": "D",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "malzeme",
+      "soru": "Dolabın arka panellerinin malzemesi nedir?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "205133913",
+      "kategori": "aksesuar_parca",
+      "soru": "Klasik ve İskandinav stilindeki gri renkli, 85x45x155 cm ölçülerindeki raflı ürününüzle birlikte, daha önceki siparişlerinizde de gördüğünüz gibi kaç adet bez raf gönderiliyor?",
+      "dogru_secenek": "A",
+      "model_cevabi": "\n</think>\n\nA",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "malzeme",
+      "soru": "Merhaba, ürünün gövde materyalini merak ediyorum. Ürün özelliklerinde suntalam olarak belirtilmiş, bu doğru mudur?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1132636729",
+      "kategori": "diger",
+      "soru": "Merhaba, ürünleriniz arasında makyaj masası, komidin ve şifonyer gibi ek ürünler de bulunuyor mu? Varsa onları da almak istiyorum.",
+      "dogru_secenek": "D",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün ayakları demonte mi geliyor, yoksa montajlı mı? Ürün görseldeki gibi mi geliyor?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "olcu",
+      "soru": "Merhaba, ürünün yüksekliği (boyu) hakkında bilgi alabilir miyim? Ayaklar dahil mi?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1132636729",
+      "kategori": "malzeme",
+      "soru": "Ürün özelliklerinde beyaz olarak belirtilmiş ancak soru cevaplarda kum taşı rengi olduğu söyleniyor. Ürünün rengi kum taşı mı, yoksa beyaz mı?",
+      "dogru_secenek": "B",
+      "model_cevabi": "\n</think>\n\nD",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kurulum",
+      "soru": "Ürünün montajı için ek aletlere ihtiyaç var mı? Kurulum hizmeti sağlıyor musunuz?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "olcu",
+      "soru": "Merhaba, ürünümüzün ayak yüksekliği 12 cm'dir. Bu sayede robot süpürgeleriniz rahatlıkla altına girebilir. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu ürünü sipariş etmeyi düşünüyorum. Ürünle birlikte askılık borusu gönderiliyor mu?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kurulum",
+      "soru": "Dolabın rafları sabit midir, yoksa hareketli mi?",
+      "dogru_secenek": "D",
+      "model_cevabi": "B",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kurulum",
+      "soru": "Merhaba, bu retro tarzı beyaz kapaklı dolabın montajı nasıl yapılıyor? Montaj videosu veya kılavuzu mevcut mu?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, ürününüzü hangi kargo firması ile gönderiyorsunuz? Horoz Lojistik ile anlaşmanız olduğunu duymuştum, doğru mudur?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kurulum",
+      "soru": "Merhaba, bu ürünün raflarını hareket ettirebiliyor muyuz, yoksa sabit mi duruyorlar?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, ürününüzün tahmini teslimat süresi hakkında bilgi almak istiyorum. Ürününüzün 20 iş günü termin süresi olduğunu belirttiniz, bu süreye hafta sonları ve resmi tatiller dahil mi?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün ayakları plastik mi, yoksa ahşap mı?",
+      "dogru_secenek": "C",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün kaç paket halinde gönderiliyor?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kurulum",
+      "soru": "Merhaba, bu ürünün ayakları takılmadan kullanılması mümkün müdür?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kurulum",
+      "soru": "Merhaba, bu dolabın içindeki rafları takmadan sadece askılık olarak kullanabilir miyiz? Rafları takmazsak bir sorun olur mu?",
+      "dogru_secenek": "B",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "renk",
+      "soru": "Ürünün hangi renk seçenekleri mevcuttur? Özellikle pembe rengi hakkında bilgi alabilir miyim?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "olcu",
+      "soru": "Merhaba, ürünün raflarının ve askılıklarının ölçülerini öğrenebilir miyim? Ürün özelliklerinde bu detaylar belirtilmemişti.",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünle birlikte yedek parça gönderiliyor mu? Her parçadan 1 adet yedek gönderildiği bilgisi doğru mu?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün hangi kargo firması ile gönderiliyor? Sitenizde MNG Kargo olarak görünüyor ama emin olamadım.",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "stok_varyant",
+      "soru": "Plastik raflı veya farklı genişliklerde (örneğin 135 cm, 180 cm, 185 cm) modelleriniz var mı?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "malzeme",
+      "soru": "Merhaba, bu modern tarz gri renkli ürününüzün rafları hangi malzemeden yapılmıştır? Farklı bir malzeme seçeneği mevcut mu?",
+      "dogru_secenek": "B",
+      "model_cevabi": "C",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, ürününüzü almak istiyorum ancak bulunduğum yer bir köy. MNG Kargo ile anlaşmanız olduğunu biliyorum, köylere veya belirli bölgelere kargo gönderimi yapılıyor mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "aksesuar_parca",
+      "soru": "Üründe askılık bulunuyor mu ve kaç adet? Ürünle birlikte 2 adet 40 cm'lik askı gönderiliyor mu?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "garanti",
+      "soru": "Ürünün garanti süresi ne kadar?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Ürünün taşıma kapasitesi hakkında bilgi verebilir misiniz? Özellikle her raf ve askının ortalama ne kadar ağırlık taşıyabileceğini merak ediyorum. Ürün özelliklerinde bu bilgi yer almıyor, bu nedenle ortalama taşıma kapasitesini öğrenmek istiyorum.",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "kurulum",
+      "soru": "Ürünün montajı satıcı tarafından yapılıyor mu ve ücretli mi?",
+      "dogru_secenek": "B",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "kurulum",
+      "soru": "Ürünün kurulumu nasıl yapılıyor ve kurulum videosu var mı? Ürün demonte olarak mı geliyor?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Ürünün ön yüzü kapalı mı ve nasıl açılıyor? Ürünün ön yüzünde kaç adet fermuar bulunuyor?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, ürünümüz İstanbul'dan gönderilmektedir. Bir önceki mesajda Balıkesir olarak belirtilmişti, bu bilgi doğru mu?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "1071849383",
+      "kategori": "kurulum",
+      "soru": "Merhaba, bu dolabın raflarını çıkarıp tamamını askılık olarak kullanabilir miyiz? Ürün özelliklerinde hareketli raf bilgisi göremedim de.",
+      "dogru_secenek": "A",
+      "model_cevabi": "C",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Ürünün fermuarları kolay kolay bozulmayacak kadar dayanıklı mı?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Ürünün bez kılıfı yırtılırsa yedek temin edilebilir mi? Ürün menşei Türkiye'dir.",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "olcu",
+      "soru": "Ürünün genişlik, yükseklik ve derinlik ölçüleri nedir? Ürün Özellikleri kısmında genişlik 155 cm, yükseklik 160 cm ve derinlik 45 cm olarak belirtilmiş, ancak bazı cevaplarda genişlik 158 cm, yükseklik 155 cm ve derinlik 44 cm olarak da geçiyor. Bu konudaki net bilgiyi öğrenebilir miyim?",
+      "dogru_secenek": "D",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Ürünün içindeki borular kırılırsa yedek parça temin edilebilir mi?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Ürünün raf sayısını azaltıp çoğaltmak mümkün mü?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Merhaba, ürünün koli boyutları hakkında bilgi alabilir miyim? Ürün özelliklerinde göremedim. Ürünün koli boyutları 44x24x23 cm olarak belirtilmiş, doğru mudur?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Ürünün bez kısımları makinede yıkanabilir mi?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "olcu",
+      "soru": "Merhaba, bu dolabın raf aralığı ve genişliği hakkında bilgi alabilir miyim? Ürün özelliklerinde raf aralığı ve genişliği belirtilmemiş.",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "olcu",
+      "soru": "Merhaba, bu dolabın askılıklarının boyu ve genişliği hakkında bilgi alabilir miyim? Ürün özelliklerinde bu detaylar belirtilmemiş.",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "olcu",
+      "soru": "Dolap kapağı açıkken ileriye doğru ne kadar yer kaplar? Ürünün derinliği 43 cm olarak belirtilmiş.",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "olcu",
+      "soru": "Merhaba, ürünün kulp uzunluğu hakkında bilgi alabilir miyim? Ürün özelliklerinde 160'lık kulp kullanıldığı belirtilmişti, bu doğru mu?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "malzeme",
+      "soru": "Dolabın malzemesi nedir?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "olcu",
+      "soru": "Ürünün genişliği, derinliği ve yüksekliği kaç cm? Ürün özelliklerinde genişlik 120 cm, derinlik 43 cm olarak belirtilmiş, ancak yükseklik bilgisi eksik. Ürünün derinliği 44 cm olarak belirtilmiş, ancak bu bilgi ürün özelliklerinde 43 cm olarak geçiyor. Bu çelişkiyi göz önünde bulundurarak ürünün genişliği, derinliği ve yüksekliği kaç cm?",
+      "dogru_secenek": "D",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Ürünün toplam ağırlığı ne kadar? Ürün özellikleri arasında ağırlık bilgisi yer almıyor, ancak koli ağırlığı hakkında bir fikrim var.",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "malzeme",
+      "soru": "Merhaba, ürünün aynası nasıl yapıştırılmıştır?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "malzeme",
+      "soru": "Merhaba, dolabımızın suntalam kalınlığı kaç mm'dir? Bu bilgi ürün özelliklerinde belirtilmemişti.",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "renk",
+      "soru": "Merhaba, bu ürünün siyah veya gri rengi mevcut mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "renk",
+      "soru": "Merhaba, ürünün suntalam gövde malzemesi ve beyaz rengi olduğunu görüyorum. Sonomo rengi seçeneği de mevcut mudur?",
+      "dogru_secenek": "C",
+      "model_cevabi": "B",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "olcu",
+      "soru": "Merhaba, ürünün alt askılık yeri yüksekliği hakkında bilgi alabilir miyim? Ürün özelliklerinde bu bilgi yer almıyor, belki de daha önceki bir siparişimde bu detayı görmüşümdür.",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "renk",
+      "soru": "Merhaba, bu ürünün antrasit veya füme rengi seçeneği mevcut mu?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "renk",
+      "soru": "Dolabın rengi parlak beyaz mı, mat beyaz mı?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu dolabı sipariş etmeyi düşünüyorum. Ürün özelliklerinde vidaların gönderilip gönderilmediği belirtilmemiş, ancak dolabın montajı için vidaların gerekli olduğunu biliyorum. Dolabı sabitlemek için vidalar gönderiliyor mu?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "diger",
+      "soru": "Merhaba, ürününüzü yüklük veya yatak dolabı olarak kullanmayı düşünüyorum. Ürün özelliklerinde bu kullanım şekline dair bir bilgi göremedim, bu konuda yardımcı olabilir misiniz?",
+      "dogru_secenek": "B",
+      "model_cevabi": "\n</think>\n\nB",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu dolabın montajı için gerekli aletler paket içeriğinde mevcut mu?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu dolabın bağlantı türü nedir, minifix mi, vida mı yoksa T bağlantı mı kullanılıyor?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, ürün özelliklerinde dolabın arka suntasının montajı hakkında bir bilgi göremedim. Bu dolabın arka suntası çivi ile mi monte ediliyor, yoksa farklı bir montaj yöntemi mi kullanılıyor?",
+      "dogru_secenek": "C",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, ürün özelliklerinde menteşelerin stoplu olup olmadığına dair bir bilgi göremedim. Bu ürünün menteşeleri stoplu mudur?",
+      "dogru_secenek": "C",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu ürünün ayaklı modeli mevcut mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, ürünleriniz hangi kargo firması ile gönderiliyor? Özellikle CEVA LOJİSTİK ile gönderim yapılıp yapılmadığını merak ediyorum.",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "olcu",
+      "soru": "Merhaba, ürün özelliklerinde genel ölçüler belirtilmiş ancak aynanın kendi ölçüsü hakkında bilgi göremedim. Ürünün aynalı olduğunu biliyorum, ürünün genel ölçülerinin 147,5 cm x 20 cm olduğunu varsayarsak aynanın kendi ölçüsü nedir?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "garanti",
+      "soru": "Ürünün garanti süresi ne kadar?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, bu dolabın ayakları var mı yoksa bazalı bir model mi? Ayak takılabiliyor mu?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, ürününüzün kaç koli ve kaç desi olarak gönderildiğini, daha önceki siparişlerimde olduğu gibi, öğrenebilir miyim?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kurulum",
+      "soru": "Merhaba, ürün demonte olarak mı geliyor, kurulumu alıcıya mı ait?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kurulum",
+      "soru": "Ürünü kurmak için şarjlı matkap kullanmamız uygun olur mu?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, bu ürününüzü sipariş etmeyi düşünüyorum. Ürün kaç parça halinde geliyor?",
+      "dogru_secenek": "C",
+      "model_cevabi": "A",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kurulum",
+      "soru": "Merhaba, bu ürünün kurulumunu kendimiz yapabilir miyiz? Ürün demonte olarak mı geliyor?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kurulum",
+      "soru": "Merhaba, ürününüzün kurulum şeması ile birlikte mi gönderildiğini merak ediyorum?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kargo_lojistik",
+      "soru": "Merhaba, ürününüzün gönderileceği il hakkında bilgi alabilir miyim? Kayseri'den gönderildiğini duydum, doğru mudur?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kurulum",
+      "soru": "Merhaba, bu dolabın montajlanacak yerleri işaretli mi?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "aksesuar_parca",
+      "soru": "Merhaba, ürünün dolap kulpları kaç mm'dir? Bu bilgi ürün özelliklerinde belirtilmemişti.",
+      "dogru_secenek": "D",
+      "model_cevabi": "\n</think>\n\nD",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "diger",
+      "soru": "Merhaba, ürün sıfır mı yoksa ikinci el mi satılıyor?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "kurulum",
+      "soru": "Merhaba, ürününüzü sipariş etmeyi düşünüyorum. Kurulumu için bir video mevcut mu, yoksa sadece talimatlarla mı ilerlemem gerekiyor?",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "diger",
+      "soru": "Merhaba, bu dolapların depolama imkanları hakkında bilgi alabilir miyim? Özellikle iç hacmi ve raf düzenlemesi hakkında merak ediyorum.",
+      "dogru_secenek": "A",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "stok_varyant",
+      "soru": "Merhaba, bu beyaz gardırobun aynasız bir modeli mevcut mu? Sitenizde aynalı modelleri inceledim ancak aynasız seçeneğini göremedim. Bu ürünün aynasız seçeneği var mı, varsa linkini paylaşabilir misiniz?",
+      "dogru_secenek": "D",
+      "model_cevabi": "C",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "diger",
+      "soru": "Merhaba, bu dolabın içine yorgan, yastık gibi büyük hacimli ürünler konulabilir mi?",
+      "dogru_secenek": "C",
+      "model_cevabi": "C",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "diger",
+      "soru": "Merhaba, bu dolabın genişliği 120 cm, derinliği 43 cm ve 4 adet kapaklıdır. Aynalı bir modeldir. Bu dolapta çekmece var mı?",
+      "dogru_secenek": "B",
+      "model_cevabi": "B",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "diger",
+      "soru": "Merhaba, dolap içi rafların yerleri değiştirilebilir mi? Ürün özelliklerinde bu bilgi yer almıyor.",
+      "dogru_secenek": "D",
+      "model_cevabi": "B",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "diger",
+      "soru": "Merhaba, ürün görselinde yer alan kıyafetler gerçek boyutlarda mı yoksa bilgisayar ortamında mı hazırlanmış bir görsel kullanılıyor?",
+      "dogru_secenek": "D",
+      "model_cevabi": "D",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "diger",
+      "soru": "Merhaba, bu dolabın iki ayrı parça olarak kullanılıp kullanılamayacağını öğrenmek istiyorum. Ürün özelliklerinde bu konuda bir bilgi göremedim.",
+      "dogru_secenek": "B",
+      "model_cevabi": "A",
+      "dogru_mu": true
+    },
+    {
+      "urun_id": "97879098",
+      "kategori": "diger",
+      "soru": "Merhaba, bu ürünün dolap içi rafları sabit mi, yoksa sökülüp takılabilir mi?",
+      "dogru_secenek": "A",
+      "model_cevabi": "D",
+      "dogru_mu": false
+    },
+    {
+      "urun_id": "130582666",
+      "kategori": "malzeme",
+      "soru": "Ürünün profilleri/iskeleti/boruları/çubukları/bağlantı aparatları hangi malzemeden yapılmıştır?",
+      "dogru_secenek": "B",
+      "model_cevabi": "D",
+      "dogru_mu": false
+    }
+  ]
+}

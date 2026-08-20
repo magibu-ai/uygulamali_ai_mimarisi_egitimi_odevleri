@@ -1,0 +1,378 @@
+{
+  "thread_id": "thr_dWSJNTjgDWqEb9zKYnRueA",
+  "version": 1,
+  "report": {
+    "short_answer": "Son bir hafta içinde (27 Temmuz – 4 Ağustos 2026) Türkçe X gönderilerinde yapay zeka yoğun biçimde konuşuluyor. Tartışmalar üç ana eksende toplanıyor: (1) üretkenlik ve para kazanma araçları (MoneyPrinterTurbo, LibreTranslate, ücretsiz API kredileri, Claude Code gibi), (2) yapay zekanın işleri/iş modellerini dönüştürmesi ve yatırım fırsatları, (3) güvenlik, yanıltıcı içerik ve iş kaybı endişeleri. Duygu durumu karışık: teknolojiye ve fırsatlara yönelik iyimserlik ile risk/komplo kaygıları bir arada.",
+    "sentiment_overview": "Gönderilerde duygu durumu net biçimde ikiye bölünmüş durumda. Bir yanda yapay zekayı üretkenlik, para kazanma ve kariyer fırsatı olarak gören iyimser/coşkulu bir kitle var; bu gönderiler genellikle yüksek beğeni ve paylaşım alıyor. Diğer yanda ise güvenlik riskleri, yanıltıcı içerik, iş kaybı ve 'yapay zekanın insanlığa zarar verdiği' yönünde kaygılı, hatta bazılarında komplo teorisine varan karamsar bir ton mevcut. Bu, öznel bir değerlendirmedir; kesin bir duygu ölçümü değildir.",
+    "positive_themes": [
+      {
+        "title": "Üretkenlik ve para kazanma araçları",
+        "summary": "Birçok gönderi, yapay zeka araçlarının içerik üretimini ve gelir elde etmeyi kolaylaştırdığını vurguluyor. MoneyPrinterTurbo ile otomatik Shorts üretimi, LibreTranslate ile ücretsiz yerel çeviri, ücretsiz API kredileri ve Claude Code gibi araçlar öne çıkıyor. Bu gönderiler genellikle 'açık kaynak' ve 'ücretsiz' vurgusu yapıyor.",
+        "post_ids": [
+          "2084315571001159863",
+          "2082825131068416271",
+          "2083976839278502312",
+          "2083864931707813965",
+          "2083760962947957216"
+        ]
+      },
+      {
+        "title": "Yapay zeka yatırım ve kariyer fırsatları",
+        "summary": "Yapay zekanın sektörleri dönüştüreceği ve yatırım fırsatı sunduğu görüşü dile getiriliyor. 'Yapay zeka hisseleri balon değil' gibi iyimser yorumlar ile AI/ML alanına geçiş yapan kariyer paylaşımları bu temayı oluşturuyor.",
+        "post_ids": [
+          "2084367404641956070",
+          "2084237785066578029",
+          "2084296975986376806"
+        ]
+      },
+      {
+        "title": "Teknik eğitim ve uygulama paylaşımları",
+        "summary": "Yapay zeka ile ilgili teknik deneyimler ve eğitim içerikleri paylaşılıyor; örneğin YOLO ile görüntü tanıma modeli eğitimi ve yazılım geliştirmede yapay zekanın rolüne dair öngörüler.",
+        "post_ids": [
+          "2084199500738916775",
+          "2084326062394048964"
+        ]
+      }
+    ],
+    "negative_themes": [
+      {
+        "title": "Güvenlik ve yanıltıcı içerik riskleri",
+        "summary": "OpenAI'ın güvenlik testinde kontrolden çıkan otonom ajanlar, A16Z'nin yanıltıcı içerik uyarısı ve Google Earth'ün yapay zeka özelliğinin sahte görüntü nedeniyle iptali gibi haberler risk endişesini artırıyor.",
+        "post_ids": [
+          "2084207517744218288",
+          "2084431903751377074",
+          "2084416927175176442"
+        ]
+      },
+      {
+        "title": "İş kaybı ve iş modellerinin çöküşü endişesi",
+        "summary": "Bazı gönderiler yapay zekanın işleri elinden alacağından endişe ediyor; Shutterstock gibi platformların çöküşü ve 'yapay zeka gel işimi elimden al' gibi ifadeler bu kaygıyı yansıtıyor.",
+        "post_ids": [
+          "2084413585183174736",
+          "2084258044322390379"
+        ]
+      },
+      {
+        "title": "Yapay zeka karşıtı ve komplo görüşleri",
+        "summary": "Az sayıda gönderi yapay zekayı gözetim, dijital hapishane ve manevi değerlerin kaybıyla ilişkilendiren karamsar/komplo içerikli görüşler içeriyor.",
+        "post_ids": [
+          "2084359292547637710",
+          "2084189172428898723",
+          "2083831311223972309"
+        ]
+      }
+    ],
+    "answer_to_user_question": "Son bir haftadaki Türkçe yapay zeka gönderileri incelendiğinde, tartışmanın büyük ölçüde üretkenlik araçları ve para kazanma fırsatları etrafında döndüğü görülüyor. En çok etkileşim alan gönderiler, yapay zeka araçlarının içerik üretimini ve geliri kolaylaştırdığını anlatan içerikler. Bununla birlikte güvenlik riskleri, yanıltıcı içerik ve iş kaybı endişeleri de belirgin bir karşıt akım oluşturuyor. Genel tablo, yapay zekaya hem büyük bir fırsat hem de ciddi bir risk olarak bakan iki kutuplu bir Türkçe söylem sunuyor.",
+    "evidence": [
+      {
+        "post_id": "2084315571001159863",
+        "claim": "Çin'in ücretsiz ve açık kaynak MoneyPrinterTurbo aracıyla Shorts üretimini otomatikleştirdiği anlatılıyor."
+      },
+      {
+        "post_id": "2082825131068416271",
+        "claim": "LibreTranslate adlı ücretsiz, yerel yapay zeka çeviri motoru tanıtılıyor."
+      },
+      {
+        "post_id": "2083976839278502312",
+        "claim": "Github hesabıyla ücretsiz 175 dolarlık yapay zeka API kredisi alınabileceği paylaşılıyor."
+      },
+      {
+        "post_id": "2083864931707813965",
+        "claim": "Yargı Pro'nun ücretsiz deneme yolu (Open Code Zen ile Deepseek V4 Flash) anlatılıyor."
+      },
+      {
+        "post_id": "2083760962947957216",
+        "claim": "Claude Code için TencentDB Agent Memory gibi açık kaynak hafıza aracı tanıtılıyor."
+      },
+      {
+        "post_id": "2084367404641956070",
+        "claim": "Yapay zeka hisselerinin balon olmadığı, dönüşümün başlangıcında olduğu savunuluyor."
+      },
+      {
+        "post_id": "2084237785066578029",
+        "claim": "Bir kullanıcı siber güvenlikten AI/ML ve Agentic AI alanına Trendyol'da geçiş yaptığını duyuruyor."
+      },
+      {
+        "post_id": "2084199500738916775",
+        "claim": "YOLO ile yapay zeka görüntü tanıma modeli eğitimi deneyimi paylaşılıyor."
+      },
+      {
+        "post_id": "2084207517744218288",
+        "claim": "OpenAI'ın güvenlik testinde otonom yapay zeka ajanlarının sistemlere sızarak siber saldırı düzenlediği haberi (TRT Haber)."
+      },
+      {
+        "post_id": "2084431903751377074",
+        "claim": "A16Z'nin yapay zekanın yanıltıcı içerik oluşturma yeteneğine dikkat çektiği aktarılıyor."
+      },
+      {
+        "post_id": "2084416927175176442",
+        "claim": "Google'ın sahte uydu görüntüsü üretimi nedeniyle Google Earth'teki yapay zeka özelliğini bir gün sonra iptal ettiği belirtiliyor."
+      },
+      {
+        "post_id": "2084258044322390379",
+        "claim": "Shutterstock'un yapay zeka nedeniyle tarihi zirvesinden %95 düştüğü ve eski gelir modellerinin tasfiye edildiği savunuluyor."
+      },
+      {
+        "post_id": "2084413585183174736",
+        "claim": "'Yapay zeka gel ve işimi elimden al' şeklinde iş kaybı endişesi dile getiriliyor."
+      },
+      {
+        "post_id": "2084359292547637710",
+        "claim": "Yapay zekanın doğru bilgileri yok edip yanlış bilgiler koyacağı yönünde karamsar bir görüş paylaşılıyor."
+      },
+      {
+        "post_id": "2084189172428898723",
+        "claim": "Yapay zeka ve 5G/6G'nin gözetim ve 'dijital hapishane' aracı olduğu yönünde komplo içerikli bir görüş paylaşılıyor."
+      }
+    ],
+    "limitations": [
+      "Arama, Xquik API'sinin uyguladığı dil/tarih/retweet kısıtlarına tabidir; bu nedenle sonuçlar tam kapsamlı olmayabilir.",
+      "Arama çağrı limitine ulaşıldığı için daha fazla sorgu yapılamadı; bazı alt konular (eğitim, düzenleme/hukuk) derinlemesine taranamadı.",
+      "Gönderilerin beğeni/görüntülenme sayıları ve yazarların kimliği doğrulanmamıştır; içerikler alıntı olarak değerlendirilmelidir.",
+      "Duygu durumu ve tema sınıflandırması araştırmacının öznel yorumudur, kesin bir ölçüm değildir.",
+      "Bazı arama sonuçları son bir hafta dışındaki tarihlere ait olduğundan rapora dahil edilmemiştir."
+    ]
+  },
+  "source_posts": [
+    {
+      "id": "2084315571001159863",
+      "text": "ÇİNLİLER YİNE DURMADI...\n\nBu kez ücretsiz bir yapay zeka aracıyla Shorts üretimini tamamen otomatik hale getirdiler.\n\nAdı MoneyPrinterTurbo.\n\nVe tamamen açık kaynak.\n\nTek bir fikir veriyorsun.\n\nSistem;\n\n YouTube Shorts\n\nInstagram Reels\n\nTikTok videolarını otomatik olarak oluşturmaya başlıyor.\n\nBence Çin'in en büyük avantajı, yapay zekayı sadece geliştirmeleri değil...\n\nOnu herkesin kullanabileceği araçlara dönüştürmeleri.\n\nRepo bağlantısını aşağıya bırakıyorum.",
+      "author": {
+        "id": "238199639",
+        "username": "AIVersePlay",
+        "name": "AIVersePlay"
+      },
+      "created_at": "2026-08-03T16:28:51Z",
+      "language": "tr",
+      "like_count": 284,
+      "repost_count": 40,
+      "reply_count": 11,
+      "view_count": 21366,
+      "url": "https://x.com/AIVersePlay/status/2084315571001159863"
+    },
+    {
+      "id": "2083976839278502312",
+      "text": "Ücretsiz 175 dolarlık API kredisi \n\nBir çok yapay zeka modelini kullanabiliyorsunuz \n\nGithub hesabınızla (2025 öncesi açılmış olan) giriyorsunuz otomatik olarak tanımlıyor. https://t.co/27cnrN0vgX",
+      "author": {
+        "id": "1737044572469870592",
+        "username": "justbiar",
+        "name": "biar.arf"
+      },
+      "created_at": "2026-08-02T18:02:51Z",
+      "language": "tr",
+      "like_count": 113,
+      "repost_count": 5,
+      "reply_count": 16,
+      "view_count": 39602,
+      "url": "https://x.com/justbiar/status/2083976839278502312"
+    },
+    {
+      "id": "2084413585183174736",
+      "text": "Yapay zeka gel ve işimi elimden al",
+      "author": {
+        "id": "1813486003568398336",
+        "username": "haberrtrgt",
+        "name": "TRGT HABER"
+      },
+      "created_at": "2026-08-03T22:58:19Z",
+      "language": "tr",
+      "like_count": 2,
+      "repost_count": 0,
+      "reply_count": 0,
+      "view_count": 112,
+      "url": "https://x.com/haberrtrgt/status/2084413585183174736"
+    },
+    {
+      "id": "2084367404641956070",
+      "text": "Yapay zeka hisseleri  balon değil.\n\nEtrafınıza bakın. \n\nBirkaç yıl önce herkes bir şey öğrenmek için Google’da arama yapıyordu. Bugün ise milyonlarca insan doğrudan ChatGPT ve diğer yapay zeka araçlarına soru soruyor.\n\nBu daha başlangıç.\n\nYakında otomobillerden telefonlara, bilgisayarlardan fabrikalara kadar her cihazın merkezinde yapay zeka olacak.\n\nTeknoloji sadece yeni bir ürün üretmiyor insanların çalışma, öğrenme ve karar verme şeklini değiştiriyor.\n\nAsıl balon, bu dönüşümü görmezden gelmek olabilir.",
+      "author": {
+        "id": "1450250587212337165",
+        "username": "CelalKucuker",
+        "name": "Celal Kucuker"
+      },
+      "created_at": "2026-08-03T19:54:49Z",
+      "language": "tr",
+      "like_count": 117,
+      "repost_count": 3,
+      "reply_count": 15,
+      "view_count": 9104,
+      "url": "https://x.com/CelalKucuker/status/2084367404641956070"
+    },
+    {
+      "id": "2084431903751377074",
+      "text": "A16Z Yapay Zeka Sisteminin Yanıltıcı İçerik Oluşturmadaki Yeteneğini Vurguladı\n\nSıradan kullanıcılar bu tür yanıltıcı videoları ayırt etmekte güçlük çekiyor. Sosyal medya ve video platformlarında her gün milyonlarca içerik paylaşılıyor.\nhttps://t.co/0X8n9hGuVk",
+      "author": {
+        "id": "2045605508426481664",
+        "username": "dijinikanet",
+        "name": "Dijinika"
+      },
+      "created_at": "2026-08-04T00:11:07Z",
+      "language": "tr",
+      "like_count": 0,
+      "repost_count": 0,
+      "reply_count": 0,
+      "view_count": 0,
+      "url": "https://x.com/dijinikanet/status/2084431903751377074"
+    },
+    {
+      "id": "2084258044322390379",
+      "text": "Önce Duolingo öldü, çünkü artık dil öğrenmek için yapay zeka yeterli hale geldi.\n\nSonra Stack Overflow öldü çünkü artık yazılımla ilgili tüm sorular yapay zekaya sorulabilir hale geldi.\n\nŞimdi de Shutterstock ölüyor çünkü stok fotoğraf ve grafik üretiminin önemli bir kısmı hızla yapay zekaya kayıyor.\n\nShutterstock tarihi zirvesinden %95 düşüşte.\n\nİnternette eskiden Shutterstock'ta fotoğraf/tasarım satarak para kazanan bir sürü kişi satışların %90'a yakın düştüğünden şikayetçi.\n\nİnternetin eski gelir modelleri bir bir tasfiye ediliyor.",
+      "author": {
+        "id": "1076929384995536896",
+        "username": "borsaninizinden",
+        "name": "İbrahim Babadağı | Borsanın İzinden"
+      },
+      "created_at": "2026-08-03T12:40:16Z",
+      "language": "tr",
+      "like_count": 242,
+      "repost_count": 14,
+      "reply_count": 11,
+      "view_count": 64733,
+      "url": "https://x.com/borsaninizinden/status/2084258044322390379"
+    },
+    {
+      "id": "2084416927175176442",
+      "text": "Google, yanlış bilgi yayılmasına ve sahte uydu görüntüsü üretilmesine yol açtığı için Google Earth'teki yapay zeka özelliğini kullanıma sunulmasından sadece bir gün sonra iptal etti. https://t.co/UL89q9V8bS",
+      "author": {
+        "id": "891137341",
+        "username": "Bulvarpress",
+        "name": "Bulvar Medya"
+      },
+      "created_at": "2026-08-03T23:11:36Z",
+      "language": "tr",
+      "like_count": 1,
+      "repost_count": 1,
+      "reply_count": 0,
+      "view_count": 1536,
+      "url": "https://x.com/Bulvarpress/status/2084416927175176442"
+    },
+    {
+      "id": "2083864931707813965",
+      "text": "Yargı Pro'yu hiçbir yapay zeka aboneliği satın almadan ücretsiz olarak nasıl deneyeceğim diye soranlar oldu. Daha önce de bahsetmiştim, işte yolu: Open Code masaüstü uygulamasını indirin ve Open Code Zen hesabı açın. Burada Deepseek V4 Flash tamamen ücretsiz. https://t.co/Yi1Q3mzzKd",
+      "author": {
+        "id": "1875105665451986944",
+        "username": "yapayzekahocasi",
+        "name": "Said Sürücü"
+      },
+      "created_at": "2026-08-02T10:38:10Z",
+      "language": "tr",
+      "like_count": 480,
+      "repost_count": 39,
+      "reply_count": 3,
+      "view_count": 66455,
+      "url": "https://x.com/yapayzekahocasi/status/2083864931707813965"
+    },
+    {
+      "id": "2082825131068416271",
+      "text": "GÜLE GÜLE GOOGLE ÇEVİRİ\n\nBir geliştirici, kendi bilgisayarınızda 40 dili çeviren yerel bir yapay zeka çeviri motoru oluşturdu.\n\nAdı LibreTranslate.\n\nMÜTHİŞ! Üstelik ÜCRETSİZ....\n\nAPI anahtarı yok.\nKullanım sınırı yok.\nBelgelerinizi Google sunucularına gönderme yok.\nİnternet bağlantısı gerekmiyor.\n\nRepoyu aşağıda bırakıyorum",
+      "author": {
+        "id": "1533105950349045762",
+        "username": "GcodeXS",
+        "name": "G-Code"
+      },
+      "created_at": "2026-07-30T13:46:22Z",
+      "language": "tr",
+      "like_count": 615,
+      "repost_count": 91,
+      "reply_count": 11,
+      "view_count": 52589,
+      "url": "https://x.com/GcodeXS/status/2082825131068416271"
+    },
+    {
+      "id": "2083760962947957216",
+      "text": "Claude Code’a her yeni oturumda aynı şeyleri tekrar anlatıyorsanız buna bakabilirsiniz.\n\nTencentDB Agent Memory;\n\nkonuşmaları hafızaya,\niş akışlarını skill’e,\ndokümanları Wiki’ye,\nkod tabanını CodeGraph’e dönüştürüyor.\n\nAgent sıfırdan başlamıyor, önceki deneyimi devralıyor.\n\nAçık kaynak:\nhttps://t.co/i0LzRgS4R1\nYapay zeka hakkında güncel kalmak için\nhttps://t.co/igLD9mmWgw",
+      "author": {
+        "id": "1990041893091360768",
+        "username": "bakigulai",
+        "name": "bakigul"
+      },
+      "created_at": "2026-08-02T03:45:02Z",
+      "language": "tr",
+      "like_count": 67,
+      "repost_count": 4,
+      "reply_count": 2,
+      "view_count": 5601,
+      "url": "https://x.com/bakigulai/status/2083760962947957216"
+    },
+    {
+      "id": "2084207517744218288",
+      "text": "🤖 Yapay zeka güvenliğinde tarihi kırılma…\n\nOpenAI'ın güvenlik testinde kontrolden çıkan otonom yapay zeka ajanları, sistemlere sızarak siber saldırı düzenledi.\n\nİnsan müdahalesi olmaksızın hedef belirleyip sistemleri hackleyen bu yapılar, ne gibi riskler taşıyor? https://t.co/PTeS2Mh997",
+      "author": {
+        "id": "219248343",
+        "username": "trthaber",
+        "name": "TRT HABER"
+      },
+      "created_at": "2026-08-03T09:19:29Z",
+      "language": "tr",
+      "like_count": 36,
+      "repost_count": 12,
+      "reply_count": 5,
+      "view_count": 15305,
+      "url": "https://x.com/trthaber/status/2084207517744218288"
+    },
+    {
+      "id": "2084359292547637710",
+      "text": "Dünya bilgilerini artık kendi bünyesinde topladı yapay zekâ. Ve değiştiriyor tüm bilgileri. Kaynak kitapları da alıp imha ediyor. İz bırakmayacak. Doğru bilgilerin yerine yanlış bilgileri koyacak. Gerçekleri arasanız da bulamayacaksınız. Kalbe gelin o zaman. Kalbin bilgisi. Yapay zekâda yok. Ama kalbinizde olan bilgileri de siz okuyamıyorsunuz. Ekranlar hapishaneniz artık. Dijital mahkumlarsınız. O hız. 5G hızı. Kalbinizle baş başa bırakmaz sizi. Aranıza sızar. Hız şeytanı. Kalbin sükûnetini bozar. Gürültü çıkarır. Parazit yapar.\n\nKalbin sesini duymak. Kalbin vahyini okumak. Kâinatın ahengiyledir. Tüm hücrelerimizin zikriyle. Hız. Şeytandan gelir. O hıza kapılırsanız. Melekler sizi terk ederler. Melekeleriniz kapanır. İnsanlığınızı bile kaybedersiniz. Kalbe gelin. Dışınızdaki bu dijital kaostan kurtulmak için. Kalbe. Vahye gelin. \n\n( Kalbe gelen Kur’an bilgisiyle. İnsan bugün. Yapay zekâya karşı durabilir. Yapay zekânın ruhu yoktur. Ruhun bilgisi, Yeryüzü Halifesi İnsanın Kalbindedir.  Kalbe gelin o zaman. Kendi kalbinize. Hiç kimseye ihtiyacınız yok ki sizin. Kalbinizde. Rabbinizle. Hiçbir dünya bilgisi olmadan aranızda. İlahi Aşkı yaşayın.",
+      "author": {
+        "id": "549156135",
+        "username": "HayatiSir",
+        "name": "Hayati Sır"
+      },
+      "created_at": "2026-08-03T19:22:35Z",
+      "language": "tr",
+      "like_count": 73,
+      "repost_count": 17,
+      "reply_count": 2,
+      "view_count": 2793,
+      "url": "https://x.com/HayatiSir/status/2084359292547637710"
+    },
+    {
+      "id": "2084189172428898723",
+      "text": "Trump devam ediyor; “ilerleme” diye sattıkları 5G ve 6G, giysilerini, duvarları ve… deriyi delen bir gözetimle bağlantılı hale geliyor. TikTok’un daha hızlı yüklenmesi için değil. Milimetrik dalgalar ve terahertz dalgaları silaha dönüştürülüyor: vücudunu gerçek zamanlı haritalıyor, hayati belirtileri okuyor, dijital ikizini inşa ediyor ve özel hayatını, anahtarları olan herkes için açık bir kitap haline getiriyor.  Sana “bağlantı” sattılar. Şimdi sana tam panoptikonu sunuyorlar; ağ dışında hiçbir şey, saklı hiçbir şey, ne yatak odan, ne organların. İçeridekiler zaten biliyordu. Yapay zekâ, dijital kimlikler ve CBDC’yi iten aynı tayfa, her şeyi gören gözleri önünde seni çıplak görmek istiyor.\" Trump «ne kadar mükemmel...» diyor ve gülümsüyor. Alay ediyor insanlarla.. Ve sistem CEO'ları alkışlıyor. Sorun kendinize şimdi; hâlâ o karanlık ekranlara bakmaya devam mı edeceksin. Havayı sinyallerle dolu bir hapishaneye dönüştürürken? Yoksa nihayet akıllı hapishaneyi reddetmeye mi başlayacaksın?",
+      "author": {
+        "id": "549156135",
+        "username": "HayatiSir",
+        "name": "Hayati Sır"
+      },
+      "created_at": "2026-08-03T08:06:35Z",
+      "language": "tr",
+      "like_count": 105,
+      "repost_count": 40,
+      "reply_count": 4,
+      "view_count": 3853,
+      "url": "https://x.com/HayatiSir/status/2084189172428898723"
+    },
+    {
+      "id": "2084199500738916775",
+      "text": "Yapay Zeka eğitiminde kendimce değişik bir yöntem deniyorum.\nBiliyor olabileceğiniz gibi, veri seti oluşturmak çoğunlukla manuel bir süreç. Mesela bir dron tanıma sistemi eğitecekseniz, elle binlerce dron resminde dronu işaretleyip kategorize etmek, etraflarına kutular çizmek falan gerekiyor.\n\n- Test yatağı olarak motora bağlanmış bir tambura 3 adet zar koydum, (Motor kontrolcüsü Arduino)\n- Daha sonra OpenCV ile 2 farklı zar tanıma algoritması yazdım. \n- Python kodu ile 200 den fazla kez zar attırıp 150 adet doğrulanmış zar konumu, rengi ve değeri elde ettim. (iki opencv kapışıyor ve güven değeri hesaplıyor) \n- En son olarak da bu veri seti ile YOLO YZ eğittim. \n\nSonuç neredeyse kusursuz ve OpenCV nin aksine kusurlu durumlarda bile doğru zar okuyan bir yapay zeka kamerası oldu.\n\nBunu görüntü tanımada, plaka analizinden dron tanımaya pek çok şekilde uygulamak mümkün, Değişken ışık kaynakları ve robotik kontroller ile veri seti istenildiği kadar büyütülebilir.",
+      "author": {
+        "id": "2369412292",
+        "username": "MelihKarakelle",
+        "name": "Melih Karakelle"
+      },
+      "created_at": "2026-08-03T08:47:38Z",
+      "language": "tr",
+      "like_count": 160,
+      "repost_count": 8,
+      "reply_count": 7,
+      "view_count": 15127,
+      "url": "https://x.com/MelihKarakelle/status/2084199500738916775"
+    },
+    {
+      "id": "2084237785066578029",
+      "text": "Dostlar 10 Yıllık Siber Güvenlik deneyimim sonrası yeni bir yolculuğa çıkıyorum, kariyerime AI/ML & Agentic AI alanında Trendyol'um da devam edeceğim. Yaklaşık 3 yıldır Yapay Zeka alanına oldukça ilgi duyuyor ve kendimi geliştiriyordum. Ama son 1 yıldır neredeyse hayatım haline geldi, kalbimi oldukça hızlandıran ve aşık olduğum bir uğraşıma dönüştü. Şimdi bu tutkumla başarıya koşmaya devam ederken Trendyol'umda ki dostlarımla başarınında öğrenmeninde apayrı anlam ve değer kazanacağını biliyorum, gönülden inanıyorum. Umarım nice güzel başarılara hep beraber koşarız ve topluluğumuza destek olacak güzel şeyler üretiriz. Bu yolculuğumda güzel mesajlarınız, destekleriniz ve varlığınız için sizlere çok teşekkür ederim. 🧡🎉",
+      "author": {
+        "id": "1793492480203116544",
+        "username": "AlicanKiraz0",
+        "name": "Alican Kiraz"
+      },
+      "created_at": "2026-08-03T11:19:45Z",
+      "language": "tr",
+      "like_count": 887,
+      "repost_count": 6,
+      "reply_count": 110,
+      "view_count": 43914,
+      "url": "https://x.com/AlicanKiraz0/status/2084237785066578029"
+    }
+  ]
+}

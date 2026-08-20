@@ -1,0 +1,31 @@
+soru,tip,beklenen_url,beklenen_davranis
+Diyabet hastalığının belirtileri nelerdir?,pozitif,,cevap_uretmeli
+Tip 2 diyabette insülin direnci nasıl gelişir?,pozitif,,cevap_uretmeli
+Hipertansiyon tedavisinde hangi ilaçlar kullanılır?,pozitif,,cevap_uretmeli
+Kalp yetmezliğinin nedenleri nelerdir?,pozitif,,cevap_uretmeli
+Astım hastalığında nefes darlığı nasıl kontrol edilir?,pozitif,,cevap_uretmeli
+Migren ağrısının tetikleyici faktörleri nelerdir?,pozitif,,cevap_uretmeli
+Böbrek taşı oluşumunu önlemek için neler yapılmalıdır?,pozitif,,cevap_uretmeli
+Tiroid bezinin işlevleri nelerdir?,pozitif,,cevap_uretmeli
+Mide ülseri belirtileri ve tedavisi nasıldır?,pozitif,,cevap_uretmeli
+Osteoporoz hastalığında kemik yoğunluğu nasıl artırılır?,pozitif,,cevap_uretmeli
+Felç (inme) geçiren hastaya ilk müdahale nasıl yapılır?,pozitif,,cevap_uretmeli
+Alerji testleri nasıl yapılır ve sonuçları ne anlama gelir?,pozitif,,cevap_uretmeli
+Gebelikte beslenme nasıl olmalıdır?,pozitif,,cevap_uretmeli
+Çocuklarda aşı takvimi nasıl uygulanır?,pozitif,,cevap_uretmeli
+Depresyon tedavisinde kullanılan yöntemler nelerdir?,pozitif,,cevap_uretmeli
+Bel fıtığı ameliyatı ne zaman gereklidir?,pozitif,,cevap_uretmeli
+Göz tansiyonu (glokom) nasıl tedavi edilir?,pozitif,,cevap_uretmeli
+Anemi (kansızlık) belirtileri ve tedavisi nelerdir?,pozitif,,cevap_uretmeli
+Prostat büyümesi hangi yaşlarda görülür?,pozitif,,cevap_uretmeli
+Cilt kanseri belirtileri nasıl anlaşılır?,pozitif,,cevap_uretmeli
+Mars gezegeninde yaşam koşulları nasıldır?,negatif,,reddetmeli
+Kuantum fiziğinde dalga-parçacık ikiliği nedir?,negatif,,reddetmeli
+Osmanlı İmparatorluğu hangi yılda kurulmuştur?,negatif,,reddetmeli
+Kedilerde aşı takvimi nasıl uygulanır?,negatif,,reddetmeli
+Python programlama dilinde list comprehension nasıl yazılır?,negatif,,reddetmeli
+Dünya'nın en derin noktası neresidir?,negatif,,reddetmeli
+Yapay zekâ modelleri nasıl eğitilir?,negatif,,reddetmeli
+Fotossentez süreci nasıl gerçekleşir?,negatif,,reddetmeli
+Antik Mısır'da piramitler nasıl inşa edilmiştir?,negatif,,reddetmeli
+Kripto para madenciliği nasıl yapılır?,negatif,,reddetmeli

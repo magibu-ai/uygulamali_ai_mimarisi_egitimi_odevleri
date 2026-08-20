@@ -1,0 +1,43 @@
+{# ChatML-compatible template for Transformers and the HF Inference Router. #}
+{%- set state = namespace(has_system=false, tools_emitted=false) -%}
+{%- if tools and (not messages or messages[0]['role'] != 'system') -%}
+<|im_start|>system
+# Tools
+{{ tools | tojson }}
+<|im_end|>
+{%- set state.tools_emitted = true -%}
+{%- endif -%}
+{%- for message in messages -%}
+    {%- if message['role'] == 'system' -%}
+        {%- set state.has_system = true -%}
+<|im_start|>system
+{{ message['content'] | default('', true) }}{{ '\n' }}
+        {%- if tools and not state.tools_emitted %}
+
+# Tools
+{{ tools | tojson }}
+            {%- set state.tools_emitted = true -%}
+        {%- endif %}
+<|im_end|>
+    {%- elif message['role'] == 'user' -%}
+        <|im_start|>user
+{{ message['content'] | default('', true) }}
+<|im_end|>
+    {%- elif message['role'] == 'assistant' -%}
+        <|im_start|>assistant
+{{ message['content'] | default('', true) }}
+        {%- for call in message['tool_calls'] | default([], true) %}
+<|tool_call|>{{ call | tojson }}
+        {%- endfor %}
+<|im_end|>
+    {%- elif message['role'] == 'tool' -%}
+        <|im_start|>tool
+<|tool_result|>{{ {"tool_call_id": message['tool_call_id'] | default('', true), "name": message['name'] | default('', true), "content": message['content'] | default('', true)} | tojson }}
+<|im_end|>
+    {%- else -%}
+        {{- raise_exception('Unsupported message role: ' ~ message['role']) -}}
+    {%- endif -%}
+{%- endfor -%}
+{%- if add_generation_prompt -%}
+{{ '<|im_start|>assistant\n' }}
+{%- endif -%}

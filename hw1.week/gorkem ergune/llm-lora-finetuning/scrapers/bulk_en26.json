@@ -1,0 +1,212 @@
+{
+    "train": [
+        [
+            {
+                "content": "how to start a tech startup as a student?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Starting a tech startup as a student has unique advantages: low cost of living, access to university resources, peers as potential cofounders, ability to take risks. Validate first — don't build a solution looking for a problem. Talk to potential users, understand their pain points, validate willingness to pay. Lean Startup method: Build → Measure → Learn cycle. MVP (Minimum Viable Product): build the simplest version that tests your hypothesis. Can be a landing page, a Figma prototype, a manual process that looks automated. Gorkem's project portfolio demonstrates execution ability — crucial for founders. Technical founders should: build the MVP themselves (save money, iterate fast), but also develop business skills (marketing, sales, fundraising). Funding stages: bootstrapping (own money) → friends/family → angel investors → pre-seed → seed → Series A. For students: hackathons (validate ideas fast, win prizes), university incubators (free mentoring, office space), YC/Techstars (accelerators — network, funding, credibility). Tech stack for MVP: whatever you know best. Speed of iteration matters more than technology choice. Common mistake: spending months building before talking to users. Revenue models: SaaS (recurring revenue), marketplace (transaction fees), freemium (free base, paid premium). Focus on getting first 10 paying customers — everything else follows.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Startup, MVP, lean startup, validation, funding, incubator, YC, student founder, revenue.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Gorkem's wiki2bpe tokenizer project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "wiki2bpe implements Byte-Pair Encoding (BPE) tokenization from scratch, trained on Wikipedia data. BPE is the tokenization algorithm used by GPT models. How BPE works: start with character-level vocabulary, iteratively merge the most frequent pair of adjacent tokens. After N merges, you have a subword vocabulary that captures common patterns. 'unhappiness' → 'un' + 'happi' + 'ness'. Benefits of subword tokenization: handles unseen words (splits into known subwords), balances vocabulary size with sequence length, works across languages. Gorkem's implementation: processes raw Wikipedia text, learns merge rules from frequency statistics, applies learned merges to tokenize new text. This connects directly to the NLP pipeline — tokenization is step one before any neural network processing. Understanding tokenization helps with: choosing the right vocabulary size (impacts model size and performance), understanding why models struggle with certain words (rare subwords), debugging tokenization artifacts in generated text. Related work: Google's SentencePiece, HuggingFace tokenizers library, WordPiece (BERT), Unigram (T5). Gorkem's wiki2bpe demonstrates understanding of the fundamental building block that all modern language models depend on.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gorkem, wiki2bpe, BPE, tokenization, subword, vocabulary, Wikipedia, NLP pipeline.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is technical interviewing tips for developers?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Technical interviews test problem-solving, coding, system design, and communication. Preparation: data structures (arrays, hash maps, trees, graphs, heaps), algorithms (sorting, searching, BFS/DFS, dynamic programming, greedy), system design (scalability, databases, caching, message queues), coding practice (LeetCode, HackerRank — focus on medium difficulty). During coding interviews: clarify the problem first (ask questions about constraints, edge cases, input format), think out loud (interviewer evaluates your thought process, not just the answer), start with brute force then optimize (show progression from O(n²) to O(n)), test your solution with examples, discuss time and space complexity. System design interviews: use STAR framework — Scope (clarify requirements), Trade-offs (discuss alternatives), Architecture (draw components), Review (bottlenecks, improvements). Behavioral interviews: STAR method — Situation, Task, Action, Result. Prepare stories about: conflict resolution, leadership, failure and learning, technical challenges. Common mistakes: jumping into coding without understanding the problem, not communicating your thought process, giving up too quickly (ask for hints), not testing edge cases, overcomplicating the solution. Portfolio projects matter — Gorkem's diverse GitHub portfolio demonstrates practical ability beyond whiteboard coding. Companies increasingly value project experience alongside interview performance.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Technical interview, coding, system design, behavioral, LeetCode, STAR, preparation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Kubernetes in production?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kubernetes (K8s) orchestrates containerized applications at scale. Core concepts for production: Pods — smallest deployable unit. Usually one container per pod. Don't create pods directly — use Deployments. Deployments — manage ReplicaSets, rolling updates, rollbacks. Specify desired replicas, K8s maintains them. Services — stable networking for pods. ClusterIP (internal), NodePort (external via node port), LoadBalancer (cloud load balancer). Ingress — HTTP routing. Path-based (/api → backend, / → frontend) or host-based routing. Ingress controllers: Nginx, Traefik, AWS ALB. ConfigMaps and Secrets — externalize configuration. ConfigMap for non-sensitive data, Secret for sensitive data (though base64 encoded, not encrypted — use external secret management like Vault). Resource management — set CPU/memory requests (scheduling) and limits (throttling/killing). Without limits, one pod can starve others. Health checks — liveness (is the pod alive? restart if not), readiness (is the pod ready for traffic? remove from service if not), startup (give slow-starting apps time). Horizontal Pod Autoscaler (HPA) — scale pods based on CPU, memory, or custom metrics. Namespaces — logical isolation within cluster. Separate environments (dev, staging, prod) or teams. Helm — package manager for Kubernetes. Charts bundle manifests, values for customization. Production checklist: resource limits, health checks, PodDisruptionBudgets, network policies, RBAC, monitoring (Prometheus + Grafana), logging (EFK stack).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kubernetes, pods, deployments, services, ingress, HPA, Helm, production, orchestration.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how did Gorkem build miniature-transformers from scratch?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gorkem's miniature-transformers project implements the transformer architecture from the ground up — not using PyTorch's nn.TransformerEncoder but building attention, multi-head attention, position encoding, feed-forward layers manually. This demonstrates deep understanding of the architecture that powers modern AI. The implementation covers: scaled dot-product attention (Q, K, V matrices, softmax(QK^T/√d_k)V), multi-head attention (split into h heads, attend independently, concatenate), positional encoding (sinusoidal functions to inject sequence position information), layer normalization, residual connections, and the complete encoder-decoder structure. Building transformers from scratch teaches: why attention scales with √d_k (prevent softmax saturation), how multi-head attention captures different relationship types, why residual connections enable deep networks, how masking works for autoregressive generation. This project directly connects to Gorkem's broader AI work — understanding transformer internals makes fine-tuning, prompt engineering, and architecture selection more informed. Most ML engineers use transformers as black boxes. Building one from scratch sets Gorkem apart as someone who understands the fundamentals, not just the API calls.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gorkem, miniature-transformers, attention, multi-head, positional encoding, from scratch.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how to contribute to open source projects?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Open source contribution builds skills, portfolio, and network. Getting started: find projects you use — you understand the user's perspective. Look for 'good first issue' or 'help wanted' labels on GitHub. Start small: fix typos in docs, improve error messages, add tests, fix small bugs. Read contribution guidelines (CONTRIBUTING.md), code of conduct, and existing issues. Workflow: fork repo → create feature branch → make changes → write tests → open PR with clear description → address review feedback → get merged. Quality contributions: understand the codebase before changing it, follow existing code style, write meaningful commit messages, add tests for your changes, update documentation. Common contribution types: bug fixes, documentation improvements, test coverage, performance improvements, new features (discuss in issue first), translations, accessibility improvements. Benefits: real-world codebase experience, code review from experienced developers, networking (maintainers work at top companies), reference for job applications, learning best practices. Projects good for beginners: language/framework docs, developer tools, projects with mentorship programs (Google Summer of Code, Outreachy). Gorkem's GitHub portfolio could be enhanced by open source contributions — shows collaboration ability beyond solo projects.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Open source, contribution, GitHub, fork, PR, good first issue, CONTRIBUTING.md, GSoC.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Gorkem's approach to AI/ML projects?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gorkem takes a build-from-fundamentals approach to AI/ML rather than just calling library functions. This is evident across multiple projects: miniature-transformers (attention mechanism from scratch, not nn.TransformerEncoder), wiki2bpe (tokenization algorithm from scratch, not HuggingFace tokenizers), NMT project (neural machine translation combining custom tokenization with sequence-to-sequence architecture), yolo-custom-detector (applying object detection to custom use cases), phishing-domain-detection (practical ML for security — feature engineering, model selection, evaluation), facelock (computer vision for biometric security). The pattern: understand the theory → implement core components → apply to practical problems. This approach means Gorkem can: debug model issues at a deeper level, make informed architecture decisions, adapt models to novel situations, explain how things work (not just that they work). The breadth spans NLP (transformers, tokenization, translation), computer vision (object detection, face recognition), and practical ML (classification, feature engineering). Each project demonstrates a specific capability while building on shared fundamentals. This portfolio approach — diverse but connected projects — is effective for both deep learning and career development.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gorkem, AI/ML approach, from-scratch, transformers, tokenization, computer vision, NLP.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is data privacy GDPR and compliance?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Data privacy regulations protect personal data. GDPR (EU General Data Protection Regulation): applies to any company processing EU residents' data. Key principles: lawfulness (legal basis for processing), purpose limitation (collect for specific purposes), data minimization (collect only what's needed), accuracy, storage limitation, integrity and confidentiality. User rights: right to access (what data do you have about me?), right to rectification (fix incorrect data), right to erasure ('right to be forgotten'), right to data portability (export my data), right to object (stop processing). Consent: must be freely given, specific, informed, unambiguous. Pre-ticked boxes don't count. Consent can be withdrawn anytime. Data Protection Officer (DPO): required for large-scale data processing. Breach notification: 72 hours to notify authorities after discovering a breach. Fines: up to €20M or 4% of global annual revenue. For developers: implement privacy by design, minimize data collection, encrypt personal data, implement data export/deletion features, log data processing activities, cookie consent banners (actually meaningful consent, not dark patterns). Other regulations: CCPA/CPRA (California), LGPD (Brazil), KVKK (Turkey — relevant to Gorkem's projects). Technical measures: encryption at rest and in transit, access controls, audit logs, data anonymization/pseudonymization, automated data retention and deletion.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GDPR, data privacy, compliance, consent, right to erasure, KVKK, encryption, DPO.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "tell me about Gorkem's gorkem-os project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "gorkem-os is an operating system project that demonstrates low-level systems programming. Building an OS teaches fundamentals that most developers never experience: bootloader (code that runs before the OS — loads kernel from disk into memory), kernel (core of OS — manages hardware, memory, processes), memory management (physical memory allocation, virtual memory with paging, heap allocation), process management (scheduling — which process runs when, context switching between processes), file system (organizing data on disk — inodes, directories, file operations), device drivers (communicate with hardware — keyboard, display, disk), interrupt handling (hardware/software interrupts, interrupt descriptor table). Tools and languages: typically C and assembly (x86), cross-compiler, QEMU for testing, GRUB as bootloader. Challenges: no standard library (implement everything yourself), debugging is hard (no printf until you implement it), hardware-specific code, real-mode to protected-mode transition. Why it matters: understanding how OS works makes you a better developer — you understand what happens beneath your high-level code. Memory allocation, system calls, process scheduling — these concepts underpin all software. This project shows Gorkem's willingness to go deep, beyond typical web/ML projects.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gorkem, gorkem-os, operating system, kernel, memory management, bootloader, low-level.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is software engineering career path?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Software engineering career paths from junior to senior and beyond. Junior (0-2 years): learn codebase, write features with guidance, fix bugs, write tests, learn best practices from code review. Focus: depth in one language/framework, clean code, version control, debugging. Mid-level (2-5 years): work independently, design features end-to-end, mentor juniors, contribute to technical decisions, write documentation. Focus: system design basics, multiple technologies, communication skills. Senior (5-8 years): lead projects, make architectural decisions, define technical direction, mentor team, review designs, handle ambiguous problems. Focus: trade-off analysis, cross-team influence, technical leadership. Beyond senior — two paths: Individual Contributor (IC): Staff Engineer → Principal Engineer → Distinguished Engineer. Deep technical expertise, influence org-wide technical strategy, solve the hardest problems, set technical standards. Management: Tech Lead → Engineering Manager → Director → VP Engineering → CTO. People management, hiring, process improvement, organizational design, business alignment. Not all engineers should become managers — both paths are equally valid. Key skills at every level: continuous learning, communication (writing and speaking), empathy, understanding business context. Gorkem's diverse project portfolio and AI specialization position him well for AI/ML engineering roles — a rapidly growing field.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Career path, junior, mid, senior, staff engineer, engineering manager, growth, IC track.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is prompt engineering for LLMs?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Prompt engineering crafts inputs to get desired outputs from language models. Techniques: Zero-shot — ask directly without examples. Works for simple tasks. Few-shot — provide examples of desired input/output format. Model learns the pattern from examples. Chain-of-thought (CoT) — ask model to think step by step. Dramatically improves reasoning accuracy. 'Let's think step by step.' Tree-of-thought — explore multiple reasoning paths, evaluate and select best. ReAct — Reasoning + Acting. Model reasons about what to do, takes actions (search, calculate), observes results, reasons again. System prompts — set role, constraints, and formatting expectations. 'You are an expert Python developer. Respond with code blocks only.' Structured output — request specific formats (JSON, markdown tables). Provide schema or examples. Retrieval-Augmented Generation (RAG) — retrieve relevant documents, include in prompt as context. Grounds model responses in actual data. Reduces hallucination. Temperature and sampling — temperature controls randomness (0 = deterministic, 1 = creative). top_p (nucleus sampling) limits token selection. Best practices: be specific and explicit, provide context, use delimiters for input sections, specify output format, iterate and refine, test with edge cases. Prompt engineering is becoming a core skill for developers working with AI. Gorkem's ayarlicazhocam bot uses carefully crafted system prompts for consistent personality.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Prompt engineering, few-shot, chain-of-thought, RAG, system prompt, temperature, LLM.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is WebAssembly and its use cases?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebAssembly (Wasm) is a binary instruction format for stack-based virtual machines. Runs in browsers at near-native speed. Not a replacement for JavaScript — a complement. Languages that compile to Wasm: C, C++, Rust, Go, AssemblyScript (TypeScript-like). Use cases: performance-critical web apps (Figma — entire design tool runs in browser, Google Earth, AutoCAD Web), gaming (Unity WebGL, Unreal Engine in browser), image/video processing (Photoshop Web, video encoding in browser), scientific computing, cryptography. How it works: write code in C/Rust → compile to .wasm binary → load in browser via JavaScript → runs in sandbox. Wasm interacts with JavaScript through imports/exports. Key features: near-native performance (optimized at compile time), secure (sandboxed execution), portable (runs anywhere with Wasm runtime), language-agnostic. WASI (WebAssembly System Interface): run Wasm outside browsers. Server-side Wasm: Cloudflare Workers, Fastly Compute, Fermyon Spin. Docker founder: 'If WASM+WASI existed in 2008, we wouldn't have needed Docker.' Component Model: composable Wasm modules, language-interop. For most web developers: you won't write Wasm directly. But you'll increasingly use tools built with it (Vite uses esbuild which is Go-compiled, not Wasm, but similar principle of using fast compiled languages for developer tools).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebAssembly, Wasm, WASI, near-native, Rust, C++, Figma, browser, performance, serverside.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is AI ethics and responsible AI development?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI ethics addresses the moral implications of AI systems. Key concerns: Bias — training data reflects historical biases. Amazon's hiring AI penalized women because training data favored men. Mitigation: diverse training data, bias audits, fairness metrics across demographic groups. Transparency — users should know when they're interacting with AI. Explainability (XAI): LIME, SHAP for model interpretability. Black box models make decisions without explanation — problematic for healthcare, justice, finance. Privacy — models trained on personal data. LLMs memorize training data. Differential privacy, federated learning, data anonymization. Environmental impact — training large models has significant carbon footprint. GPT-3 training estimated at 552 tons CO2. Efficient architectures, knowledge distillation, model compression help. Job displacement — AI automates tasks, not entire jobs. Focus on augmentation not replacement. Reskilling programs important. Deepfakes — generated content indistinguishable from real. Misinformation risks. Detection tools, watermarking, content provenance. Autonomous weapons — ethical red line for many researchers. Regulation: EU AI Act (risk-based framework), NIST AI RMF (US guidelines). For developers: consider impact of what you build, implement safeguards, document limitations, test for bias, be transparent about AI usage. Ethics isn't a checkbox — it's a continuous practice throughout development.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI ethics, bias, fairness, transparency, privacy, explainability, EU AI Act, responsible AI.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

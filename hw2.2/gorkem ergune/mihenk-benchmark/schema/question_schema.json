@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gorkemergune/mihenk-benchmark/schema/question_schema.json",
+  "title": "MIHENK Question",
+  "description": "Tek bir MIHENK benchmark sorusunun şeması. MC ve short_answer formatları koşullu olarak farklı alanları zorunlu kılar.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id", "language", "discipline", "format", "difficulty",
+    "question", "choices", "answer", "answer_short",
+    "explanation", "tags", "source", "version_added", "split"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^MIHENK-[A-Z]+-(TR|EN)-L[1-4]-[0-9]{4}$",
+      "description": "MIHENK-{DISIPLIN}-{DIL}-{ZORLUK}-{SIRA}, örn. MIHENK-MATH-TR-L3-0001"
+    },
+    "language": { "type": "string", "enum": ["tr", "en"] },
+    "discipline": { "type": "string", "minLength": 1 },
+    "format": { "type": "string", "enum": ["multiple_choice", "short_answer"] },
+    "difficulty": { "type": "string", "enum": ["L1", "L2", "L3", "L4"] },
+    "question": { "type": "string", "minLength": 1 },
+    "choices": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "minProperties": 4,
+          "maxProperties": 5,
+          "additionalProperties": false,
+          "properties": {
+            "A": { "type": "string", "minLength": 1 },
+            "B": { "type": "string", "minLength": 1 },
+            "C": { "type": "string", "minLength": 1 },
+            "D": { "type": "string", "minLength": 1 },
+            "E": { "type": "string", "minLength": 1 }
+          },
+          "required": ["A", "B", "C", "D"]
+        }
+      ]
+    },
+    "answer": {
+      "oneOf": [
+        { "type": "null" },
+        { "type": "string", "enum": ["A", "B", "C", "D", "E"] }
+      ]
+    },
+    "answer_short": { "type": ["string", "null"] },
+    "answer_aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "explanation": { "type": "string", "minLength": 1 },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source": { "type": "string", "enum": ["orijinal-AI-üretim"] },
+    "version_added": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$" },
+    "split": { "type": "string", "enum": ["public", "private"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "format": { "const": "multiple_choice" } } },
+      "then": {
+        "properties": {
+          "choices": { "type": "object" },
+          "answer": { "type": "string" },
+          "answer_short": { "type": "null" }
+        },
+        "required": ["choices", "answer"]
+      }
+    },
+    {
+      "if": { "properties": { "format": { "const": "short_answer" } } },
+      "then": {
+        "properties": {
+          "choices": { "type": "null" },
+          "answer": { "type": "null" },
+          "answer_short": { "type": "string", "minLength": 1 }
+        },
+        "required": ["answer_short"]
+      }
+    }
+  ]
+}

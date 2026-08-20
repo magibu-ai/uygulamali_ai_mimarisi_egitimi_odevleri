@@ -1,0 +1,63 @@
+{#-
+  Cinema-AI Özel Chat Template (Jinja2)
+  --------------------------------------
+  Amaç: Bir dil modelinin system / user / assistant rollerini ve tool-calling
+  (function call) akışını net biçimde ayırt edebilmesi için mesajları
+  standart, parse edilebilir bir ChatML formatına sarmalamak.
+
+  Sarmalama biçimi (her tur '<|im_end|>\n' ile biter):
+    - system    : <|im_start|>system\n ... \n<|im_end|>   (varsa tool tanımları da burada)
+    - user      : <|im_start|>user\n ... <|im_end|>
+    - assistant : <|im_start|>assistant\n ... <|im_end|>
+                  (tool çağrısı varsa <tool_call>{json}</tool_call> olarak eklenir)
+    - tool      : <|im_start|>tool\n<tool_response>{json}</tool_response><|im_end|>
+
+  Değişkenler:
+    - messages              : sohbet mesajları listesi (zorunlu)
+    - tools                 : modele sunulan araç şemaları (opsiyonel)
+    - add_generation_prompt : True ise sonda asistan turu başlatılır (üretim için)
+
+  Not: tojson çıktısı Markup-safe olduğundan string birleştirmede otomatik
+  HTML-escape'e yol açar; bu yüzden literal metinler ve tojson AYRI çıktı
+  bloklarında verilir.
+-#}
+{#- 1) Sistem mesajını ayıkla: ilk mesaj system ise onu al, değilse varsayılan -#}
+{%- if messages and messages[0].role == "system" -%}
+    {%- set system_message = messages[0].content -%}
+    {%- set conversation = messages[1:] -%}
+{%- else -%}
+    {%- set system_message = "Sen yardımsever bir yapay zeka asistanısın." -%}
+    {%- set conversation = messages -%}
+{%- endif -%}
+{#- Sistem bloğu (varsa araç tanımları eklenir) -#}
+{{- '<|im_start|>system\n' }}{{- system_message }}
+{%- if tools %}
+{{- '\n\n# Kullanabileceğin araçlar\n' }}
+{{- 'Bir aracı çağırmak için yanıtını <tool_call>{"name": <fonksiyon_adı>, "arguments": <argümanlar>}</tool_call> formatında ver.\n' }}
+{{- 'Yalnızca araçlardan dönen gerçek veriye dayan, bilgi uydurma.\n' }}
+    {%- for tool in tools %}
+{{- '\n' }}{{- tool | tojson }}
+    {%- endfor %}
+{%- endif %}
+{{- '<|im_end|>\n' }}
+{#- 2) Sohbet turları -#}
+{%- for message in conversation %}
+    {%- if message.role == "user" %}
+{{- '<|im_start|>user\n' }}{{- message.content }}{{- '<|im_end|>\n' }}
+    {%- elif message.role == "assistant" %}
+{{- '<|im_start|>assistant\n' }}
+        {%- if message.content %}{{- message.content }}{%- if message.tool_calls %}{{- '\n' }}{%- endif %}{%- endif %}
+        {%- if message.tool_calls %}
+            {%- for tool_call in message.tool_calls %}
+{{- '<tool_call>\n' }}{{- {"name": tool_call.function.name, "arguments": tool_call.function.arguments} | tojson }}{{- '\n</tool_call>\n' }}
+            {%- endfor %}
+        {%- endif %}
+{{- '<|im_end|>\n' }}
+    {%- elif message.role == "tool" %}
+{{- '<|im_start|>tool\n<tool_response>\n' }}{{- message.content }}{{- '\n</tool_response><|im_end|>\n' }}
+    {%- endif %}
+{%- endfor %}
+{#- 3) Üretim promptu: modelin yanıtına buradan başlaması istenir -#}
+{%- if add_generation_prompt %}
+{{- '<|im_start|>assistant\n' }}
+{%- endif -%}

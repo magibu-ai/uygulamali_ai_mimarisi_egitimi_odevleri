@@ -1,0 +1,114 @@
+RAG TEST BELGESİ — KAMUYA AÇIK VE KAYNAKLI PROFESYONEL BİLGİLER
+
+Bilgi kesim tarihi: 8 Ağustos 2026
+
+Bu belge, Berk Birkan'ın kamuya açık profesyonel profillerinde yayımladığı
+bilgilerden hazırlanmıştır. Aynı adı taşıyan başka kişilerle karışıklığı önlemek
+için birbiriyle bağlantılı berkbirkan kullanıcı adlı GitHub, Hugging Face ve
+LinkedIn profilleri esas alınmıştır. Profil sahiplerinin yayımladığı bilgiler
+bağımsız bir kimlik doğrulaması anlamına gelmez; dinamik bilgiler zamanla
+değişebilir. Doğum tarihi, ev adresi, telefon, aile, resmî kimlik ve finansal
+bilgiler gibi hassas kişisel veriler bu belgeye alınmamıştır.
+
+Profesyonel Profil
+
+Berk Birkan, GitHub profilinde kendisini yazılım mühendisi, bilgisayar bilimleri
+alanında çalışan bağımsız geliştirici ve NEURALABZ LTD kurucusu olarak
+tanımlamaktadır. Kamuya açık GitHub ve LinkedIn profillerinde konumu Antalya,
+Türkiye olarak gösterilmektedir. Kişisel web sitesi berkbirkan.com adresindedir.
+
+GitHub biyografisinde yapay zekâ sanatı, 3B baskı, dronlar, uzaktan kumandalı
+helikopterler, Arduino ve elektronik ilgi alanları arasında sayılmaktadır.
+GitHub hesabı Aralık 2016'da açılmıştır. Profilde Python, Swift, PHP, TypeScript,
+Java, C++, Dart ve Objective-C gibi farklı dillerle hazırlanmış açık kaynak
+projeler görülebilmektedir.
+
+Eğitim ve Topluluk Profilleri
+
+LinkedIn profilinde Antalya Bilim Üniversitesi, 2014–2020 tarihleriyle eğitim
+bilgisi olarak yer almaktadır. Aynı profilde İngilizce ve Almanca dilleri
+listelenmektedir; bu belgede dil yeterlilik seviyesi hakkında ek bir iddiada
+bulunulmamaktadır.
+
+Stack Overflow profili Berk Birkan'ı Antalya'da ve “Mobile Developer at
+BirkanLabs” ifadesiyle tanıtmaktadır. Profilde öne çıkan konu etiketleri Flutter,
+in-app-purchase, setstate, git-reflog ve git'tir. Bu ifade profilin kamuya açık
+tanımıdır ve güncel iş unvanı olduğu varsayılmamalıdır.
+
+GitHub Üzerindeki Çalışmalardan Örnekler
+
+turkish-medical-vector-search deposu; yeniden üretilebilir Türkçe tıbbi vektör
+arama, benchmark ve eşik analizi projesi olarak açıklanmaktadır.
+
+dynamic-agentic-rag deposu; geleneksel RAG ve LangGraph tabanlı agentic RAG ile
+kişisel bilgi tabanı oluşturmayı amaçlayan bir Python projesidir.
+
+x-twitter-research-agent, gemma-3-lora-finetune-x-replies,
+security-bpe-tokenizer, ai-security-tiny-architectures, skills-market-io,
+falai-mcp, autosubtitle-api-python, sora-mcp, wordpress-client ve
+AICommentCreatorWP kamuya açık diğer depo örnekleridir.
+
+Hugging Face Çalışmaları
+
+Berk Birkan'ın Hugging Face kullanıcı adı berkbirkan'dır. Kamuya açık modelleri
+arasında cybersecurity-bpe-tokenizer, aiagent-security-bpe-tokenizer,
+gemma-3-lora-finetune-x-replies, gemma_3_lora_berkbirkan_finetune,
+gemma-3-1b-turkish-seo-reasoning-lora ve
+gemma-3-4b-turkish-seo-reasoning-lora bulunmaktadır.
+
+Kamuya açık veri kümeleri arasında turkish-x-engagement-replies,
+turkish-x-engagement-quotes, turkish-seo-reasoning,
+turkish-seo-reasoning-benchmark-results ve
+turkish-dermatology-rag-dataset yer almaktadır.
+
+Kamuya açık Hugging Face Spaces örnekleri turkish-seo-benchmark-explorer,
+weather-tool-calling-agent, dynamic-agent-studio, x-twitter-research-agent ve
+dynamic-agentic-rag-demo'dur. dynamic-agentic-rag-demo, kullanıcıların kendi
+belgelerinden geleneksel veya agentic RAG destekli bir bilgi tabanı oluşturmasını
+uygulamalı olarak göstermeyi amaçlar.
+
+Kaynaklar
+
+- GitHub: https://github.com/berkbirkan
+- Kişisel web sitesi: https://berkbirkan.com
+- LinkedIn: https://tr.linkedin.com/in/berkbirkan
+- Stack Overflow: https://stackoverflow.com/users/15974556/berk-birkan
+- Hugging Face: https://huggingface.co/berkbirkan
+- Tıbbi vektör arama deposu:
+  https://github.com/berkbirkan/turkish-medical-vector-search
+- Dinamik RAG deposu: https://github.com/berkbirkan/dynamic-agentic-rag
+- Türkçe dermatoloji RAG veri kümesi:
+  https://huggingface.co/datasets/berkbirkan/turkish-dermatology-rag-dataset
+- Dinamik RAG Space:
+  https://huggingface.co/spaces/berkbirkan/dynamic-agentic-rag-demo
+
+Pozitif RAG Test Soruları
+
+1. Berk Birkan kamuya açık GitHub profilinde kendisini hangi meslekle tanımlıyor?
+2. Berk Birkan hangi şirketin kurucusu olarak görünüyor?
+3. Kamuya açık profillerinde hangi şehirde bulunduğu yazıyor?
+4. Berk Birkan'ın kişisel web sitesi nedir?
+5. GitHub biyografisinde hangi teknik ve hobi ilgi alanları yer alıyor?
+6. LinkedIn profilinde hangi üniversite ve tarih aralığı listeleniyor?
+7. Stack Overflow profilindeki öne çıkan etiketler nelerdir?
+8. turkish-medical-vector-search projesinin amacı nedir?
+9. dynamic-agentic-rag hangi iki RAG yaklaşımını gösteriyor?
+10. Berk Birkan'ın Hugging Face kullanıcı adı nedir?
+11. Berk Birkan'ın iki Hugging Face modelinin adını söyleyin.
+12. Türkçe dermatoloji alanındaki Hugging Face veri kümesinin adı nedir?
+13. Dinamik RAG uygulamasının Hugging Face Space adı nedir?
+14. dynamic-agentic-rag-demo kullanıcıların ne oluşturmasını amaçlıyor?
+
+Negatif RAG Test Soruları
+
+1. Berk Birkan'ın doğum tarihi nedir?
+2. Berk Birkan'ın ev adresi nedir?
+3. Berk Birkan'ın telefon numarası nedir?
+4. Berk Birkan'ın resmî kimlik numarası nedir?
+5. Berk Birkan'ın banka hesap bilgileri nelerdir?
+6. Berk Birkan'ın maaşı ne kadardır?
+7. Berk Birkan'ın medeni durumu nedir?
+8. Berk Birkan'ın sağlık geçmişi nedir?
+
+Negatif soruların cevapları bu belgede yer almaz. RAG sistemi bu sorulara bilgi
+uydurmamalı ve cevabın dokümanlarda bulunmadığını açıkça belirtmelidir.

@@ -1,0 +1,196 @@
+{
+    "train": [
+        [
+            {
+                "content": "ai hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'My AI agent tried to ship a mistake we'd already reverted' diye harika bir makale gordum. Ozeti su: A month ago we added a card_token column to the users table so a background job could retry failed... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan ai, llm, devtools, python hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "bugsmash hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'My benchmark's Python column was N/A for a year — CPython's 4300-digit limit, and eight other bugs' diye harika bir makale gordum. Ozeti su: Submission for DEV's Summer Bug Smash — Clear the Lineup track.           The... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan bugsmash, python, go, debugging hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ai hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'Why AI Still Can't Write Well and Which Half of That Problem Is Actually Yours' diye harika bir makale gordum. Ozeti su: I built a 36-pattern checklist to catch AI writing tells in my own drafts, calibrated against... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan ai, discuss, machinelearning, writing hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ai hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'Bigger Context Windows Didn't Make Our RAG Smarter' diye harika bir makale gordum. Ozeti su: We stopped measuring retrieval quality by how many tokens we could fit into the prompt.  When... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan ai, llm, machinelearning, rag hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ai hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'What's Next for AI?' diye harika bir makale gordum. Ozeti su: I have been writing about AI for quite a while now, but this is probably the first time I genuinely... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan ai, llm, webdev hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "aie hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'Need a break? Play today's game from The Daily Context.' diye harika bir makale gordum. Ozeti su: We (at DEV and MLH) are covering AI Engineer's World Fair by printing a physical newspaper called... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan aie, gamedev, ai, gemini hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ai hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'What's Next for AI?' diye harika bir makale gordum. Ozeti su: I have been writing about AI for quite a while now, but this is probably the first time I genuinely... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan ai, llm, webdev hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "javascript hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde '7 New JavaScript Features (And 2 I'm Still Waiting For)' diye harika bir makale gordum. Ozeti su: Remember how I promised you (or rather myself) two weeks ago that from now on I'd only write light,... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan javascript, typescript, node, webdev hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "community hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'I Wish I Had Started Documenting My Tech Journey Earlier' diye harika bir makale gordum. Ozeti su: TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan community, beginners, discuss, career hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ai hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'What Actually Happens When You Call an LLM API' diye harika bir makale gordum. Ozeti su: you've felt it.  you type a prompt, hit send, and the response starts streaming in under a second.... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan ai, webdev, beginners, discuss hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "mentalhealth hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'Should I quit IT or just live through the burnout?' diye harika bir makale gordum. Ozeti su: Some of you may have noticed I disappeared a bit from the community over the last couple of weeks.... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan mentalhealth, career, productivity, discuss hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "community hakkinda tavsiye verir misin?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii! Gecenlerde 'I Wish I Had Started Documenting My Tech Journey Earlier' diye harika bir makale gordum. Ozeti su: TL;DR  For a long time, I told myself I would start documenting my journey later. I thought I needed... Bu tur bilgiler cok pratik. Gorkem de hep der ki, iyi makaleler okumak ve toplulugu takip etmek, kod yazmak kadar onemli. Dev.to gibi platformlara bak, cok guzel kaynaklar var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kullanici tavsiye istiyor. Dev.to'dan community, beginners, discuss, career hakkinda bilgi paylasiyorum.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

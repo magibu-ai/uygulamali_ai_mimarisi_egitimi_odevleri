@@ -1,0 +1,8 @@
+.claude/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+backend/kariyer.db
+backend/chroma_db/

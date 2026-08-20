@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedRAG Sağlık Asistanı - Doğrulanmış Tıbbi Arama</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --bg-card: rgba(17, 24, 39, 0.75);
+            --bg-card-border: rgba(255, 255, 255, 0.08);
+            --bg-input: rgba(30, 41, 59, 0.75);
+
+            --accent-primary: #0ea5e9;
+            --accent-secondary: #10b981;
+            --accent-gradient: linear-gradient(135deg, #0ea5e9 0%, #10b981 100%);
+            --user-msg-gradient: linear-gradient(135deg, #2563eb 0%, #0d9488 100%);
+
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+
+            --danger-bg: rgba(239, 68, 68, 0.12);
+            --danger-border: rgba(239, 68, 68, 0.35);
+            --danger-text: #fca5a5;
+
+            --badge-green: rgba(16, 185, 129, 0.15);
+            --badge-green-text: #34d399;
+            --badge-blue: rgba(14, 165, 233, 0.15);
+            --badge-blue-text: #38bdf8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.12) 0%, transparent 45%),
+                radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 45%);
+        }
+
+        /* Top Header */
+        header {
+            height: 70px;
+            background: rgba(15, 23, 42, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--bg-card-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2rem;
+            z-index: 10;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .brand-icon {
+            width: 42px;
+            height: 42px;
+            background: var(--accent-gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: white;
+            box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+        }
+
+        .brand-text h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .brand-text span {
+            font-size: 0.72rem;
+            color: var(--accent-primary);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .db-badge {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid var(--bg-card-border);
+            padding: 0.45rem 0.95rem;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.55rem;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-secondary);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--accent-secondary);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: scale(1.2);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Layout Container */
+        .app-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            height: calc(100vh - 70px);
+            position: relative;
+        }
+
+
+
+        /* Chat Feed */
+        .chat-feed {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            scroll-behavior: smooth;
+        }
+
+        .msg-row {
+            display: flex;
+            gap: 1rem;
+            max-width: 88%;
+            animation: fadeIn 0.3s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .msg-row.user {
+            margin-left: auto;
+            flex-direction: row-reverse;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.1rem;
+        }
+
+        .user .avatar {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+        }
+
+        .bot .avatar {
+            background: var(--accent-gradient);
+            color: white;
+            box-shadow: 0 0 14px rgba(14, 165, 233, 0.35);
+        }
+
+        .msg-bubble {
+            background: var(--bg-card);
+            backdrop-filter: blur(14px);
+            border: 1px solid var(--bg-card-border);
+            border-radius: 18px;
+            padding: 1.2rem 1.4rem;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .user .msg-bubble {
+            background: var(--user-msg-gradient);
+            border: none;
+            color: white;
+            border-top-right-radius: 4px;
+        }
+
+        .bot .msg-bubble {
+            border-top-left-radius: 4px;
+            width: 100%;
+        }
+
+        /* Consumer Medical Cards */
+        .results-summary {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+            margin-bottom: 0.85rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--bg-card-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .medical-card {
+            background: rgba(15, 23, 42, 0.65);
+            border: 1px solid var(--bg-card-border);
+            border-radius: 14px;
+            padding: 1.15rem;
+            margin-top: 0.8rem;
+            transition: all 0.2s ease;
+        }
+
+        .medical-card:hover {
+            border-color: rgba(14, 165, 233, 0.4);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .card-badges {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.3rem 0.65rem;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .badge-verified {
+            background: var(--badge-green);
+            color: var(--badge-green-text);
+        }
+
+        .badge-match {
+            background: var(--badge-blue);
+            color: var(--badge-blue-text);
+        }
+
+        .card-url {
+            font-size: 0.8rem;
+            color: var(--accent-primary);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: rgba(14, 165, 233, 0.08);
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            transition: background 0.2s ease;
+        }
+
+        .card-url:hover {
+            background: rgba(14, 165, 233, 0.2);
+            text-decoration: underline;
+        }
+
+        .card-text {
+            font-size: 0.93rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        /* Safety Gate Consumer Banner */
+        .safety-banner {
+            background: var(--danger-bg);
+            border: 1px solid var(--danger-border);
+            border-radius: 14px;
+            padding: 1.3rem;
+            color: var(--danger-text);
+            margin-top: 0.4rem;
+        }
+
+        .safety-header {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1.02rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .safety-body {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #fecaca;
+        }
+
+        /* AI Synthesized Answer Card */
+        .ai-answer-card {
+            background: rgba(14, 165, 233, 0.08);
+            border: 1px solid rgba(14, 165, 233, 0.25);
+            border-radius: 14px;
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .ai-answer-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--accent-primary);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(14, 165, 233, 0.2);
+        }
+
+        .ai-answer-body {
+            font-size: 0.96rem;
+            line-height: 1.75;
+            color: #f1f5f9;
+            white-space: pre-line;
+        }
+
+        .citation-tag {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
+            font-weight: 600;
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+
+        /* Chat Input Bar */
+        .chat-input-area {
+            padding: 1.2rem 1.5rem 1.8rem 1.5rem;
+            background: rgba(9, 13, 22, 0.95);
+            backdrop-filter: blur(16px);
+        }
+
+        .input-box-wrapper {
+            display: flex;
+            align-items: center;
+            background: var(--bg-input);
+            border: 1px solid var(--bg-card-border);
+            border-radius: 16px;
+            padding: 0.45rem 0.6rem 0.45rem 1.2rem;
+            transition: all 0.2s ease;
+        }
+
+        .input-box-wrapper:focus-within {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 18px rgba(14, 165, 233, 0.25);
+        }
+
+        .chat-input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--text-main);
+            font-size: 0.98rem;
+            padding: 0.6rem 0;
+        }
+
+        .chat-input::placeholder {
+            color: var(--text-dim);
+        }
+
+        .btn-send {
+            background: var(--accent-gradient);
+            border: none;
+            color: white;
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.05rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 14px rgba(14, 165, 233, 0.35);
+        }
+
+        .btn-send:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(14, 165, 233, 0.5);
+        }
+
+        .btn-send:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .typing-loader {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.4rem 0;
+        }
+
+        .typing-dot {
+            width: 7px;
+            height: 7px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            80%,
+            100% {
+                transform: scale(0);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div class="brand-text">
+                <h1>MedRAG <span>Sağlık Asistanı</span></h1>
+            </div>
+        </div>
+
+        <div class="header-actions">
+            <div class="db-badge" id="dbStatsBadge">
+                <div class="pulse-dot"></div>
+                <span id="dbRecordCount">Doğrulanmış Tıbbi Veritabanı</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container (Centered Chat Interface) -->
+    <div class="app-container">
+
+        <!-- Chat Scroll Feed -->
+        <div class="chat-feed" id="chatFeed">
+            <!-- Initial Welcome Bot Message -->
+            <div class="msg-row bot">
+                <div class="avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                <div class="msg-bubble">
+                    Merhaba! Ben <strong>MedRAG Sağlık Asistanı</strong>.<br>
+                    Hastanelerin klinik makalelerinden derlenen doğrulanmış tıbbi veritabanımızda arama yapabilir, merak
+                    ettiğiniz hastalıklar, belirtiler ve tedavi yöntemleri hakkında bilgi edinebilirsiniz.<br><br>
+                    <em>Başlamak için sorunuzu aşağıdaki kutuya yazabilirsiniz.</em>
+                </div>
+            </div>
+        </div>
+
+        <!-- Input Bar -->
+        <div class="chat-input-area">
+            <div class="input-box-wrapper">
+                <input type="text" class="chat-input" id="userInput"
+                    placeholder="Tıbbi bir soru sorun... (Örn: Diyabet belirtileri ve tedavisi)" autocomplete="off">
+                <button class="btn-send" id="sendBtn" title="Gönder">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // DOM Elements
+        const userInput = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const chatFeed = document.getElementById('chatFeed');
+        const dbRecordCount = document.getElementById('dbRecordCount');
+
+        // Fetch System Stats on load
+        async function loadStats() {
+            try {
+                const res = await fetch('/api/v1/stats');
+                if (res.ok) {
+                    const data = await res.json();
+                    dbRecordCount.textContent = `${data.total_records} Doğrulanmış Tıbbi Makale`;
+                }
+            } catch (err) {
+                dbRecordCount.textContent = 'Doğrulanmış Tıbbi Veritabanı';
+            }
+        }
+        loadStats();
+
+        // Send query logic
+        async function handleSend() {
+            const query = userInput.value.trim();
+            if (!query) return;
+
+            // Render User Message
+            renderUserMessage(query);
+            userInput.value = '';
+            sendBtn.disabled = true;
+
+            // Render Bot Loading Bubble
+            const loadingId = renderBotLoading();
+
+            try {
+                const startTime = performance.now();
+                const response = await fetch('/api/v1/search', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query: query,
+                        top_k: 3,
+                        similarity_threshold: 0.48,
+                        use_hybrid: true,
+                        use_reranker: true
+                    })
+                });
+
+                const duration = Math.round(performance.now() - startTime);
+                removeBotLoading(loadingId);
+
+                if (!response.ok) {
+                    const errData = await response.json();
+                    renderBotError(`İşlem gerçekleştirilemedi: ${errData.detail || 'Arama yanıt vermedi.'}`);
+                    return;
+                }
+
+                const data = await response.json();
+                renderBotResponse(data, duration);
+
+            } catch (err) {
+                removeBotLoading(loadingId);
+                renderBotError(`Sunucuya bağlanılamadı. Lütfen sunucunun açık olduğundan emin olun.`);
+            } finally {
+                sendBtn.disabled = false;
+            }
+        }
+
+        function sendPreset(text) {
+            userInput.value = text;
+            handleSend();
+        }
+
+        // Render Functions
+        function renderUserMessage(text) {
+            const msgHtml = `
+                <div class="msg-row user">
+                    <div class="avatar"><i class="fa-solid fa-user"></i></div>
+                    <div class="msg-bubble">${escapeHtml(text)}</div>
+                </div>
+            `;
+            chatFeed.insertAdjacentHTML('beforeend', msgHtml);
+            scrollToBottom();
+        }
+
+        function renderBotLoading() {
+            const id = 'loading_' + Date.now();
+            const loadingHtml = `
+                <div class="msg-row bot" id="${id}">
+                    <div class="avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                    <div class="msg-bubble">
+                        <div class="typing-loader">
+                            <span style="font-size: 0.88rem; color: var(--text-muted); margin-right: 0.5rem;">Cevap hazırlanıyor...</span>
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            chatFeed.insertAdjacentHTML('beforeend', loadingHtml);
+            scrollToBottom();
+            return id;
+        }
+
+        function removeBotLoading(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+
+        function renderBotResponse(data, durationMs) {
+            let contentHtml = '';
+
+            // Case 1: Chitchat / Non-Medical Refusal (No search executed)
+            if (data.search_executed === false) {
+                let ans = escapeHtml(data.synthesized_answer || 'Merhaba! Ben MedRAG Sağlık Asistanı. Sağlığınızla ilgili nasıl yardımcı olabilirim?');
+                contentHtml = `<div style="line-height: 1.6;">${ans}</div>`;
+            }
+            // Case 2: Safety Gate Triggered (Medical query but 0 results / low similarity)
+            else if (data.safety_gate_triggered) {
+                contentHtml = `
+                    <div class="safety-banner">
+                        <div class="safety-header">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Tıbbi Bilgi Filtresi (Eşleşme Bulunamadı)</span>
+                        </div>
+                        <div class="safety-body">
+                            Aradığınız konu (<strong>"${escapeHtml(data.query)}"</strong>) veritabanımızdaki doğrulanmış tıbbi makalelerle uyuşmamaktadır.<br><br>
+                            Sağlık asistanımız, uydurma bilgi sunmamak için yalnızca klinik rehberler üzerinden bilgi verir. Lütfen sağlık ile ilgili başka bir soru giriniz.
+                        </div>
+                    </div>
+                `;
+            }
+            // Case 3: Medical Query Executed with Verified Chunks & LLM Citation Synthesis
+            else {
+                let aiAnswerHtml = '';
+                if (data.synthesized_answer) {
+                    let formattedAns = escapeHtml(data.synthesized_answer);
+                    // Format citation tags like [Kaynak 1]
+                    formattedAns = formattedAns.replace(/\[Kaynak (\d+)\]/g, '<span class="citation-tag">[Kaynak $1]</span>');
+
+                    aiAnswerHtml = `
+                        <div class="ai-answer-card">
+                            <div class="ai-answer-header">
+                                <i class="fa-solid fa-brain-circuit"></i> Yapay Zeka Tıbbi Özet & Yanıt (Qwen2.5:7b)
+                            </div>
+                            <div class="ai-answer-body">${formattedAns}</div>
+                        </div>
+                    `;
+                }
+
+                let cardsHtml = '';
+                data.results.forEach((res, idx) => {
+                    const matchPercent = Math.min(99, Math.max(50, Math.round(res.similarity_score * 100)));
+
+                    const matchBadge = `<span class="badge badge-match"><i class="fa-solid fa-circle-check"></i> %${matchPercent} Eşleşme</span>`;
+                    const verifiedBadge = `<span class="badge badge-verified"><i class="fa-solid fa-hospital"></i> Kaynak #${idx + 1}</span>`;
+
+                    const urlLink = res.url ?
+                        `<a href="${escapeHtml(res.url)}" target="_blank" class="card-url"><i class="fa-solid fa-arrow-up-right-from-square"></i> Kaynak Makale</a>` :
+                        `<span class="card-url" style="color: var(--text-dim);"><i class="fa-solid fa-book-medical"></i> Hastane Makalesi</span>`;
+
+                    cardsHtml += `
+                        <div class="medical-card">
+                            <div class="card-header">
+                                <div class="card-badges">
+                                    ${matchBadge}
+                                    ${verifiedBadge}
+                                </div>
+                                ${urlLink}
+                            </div>
+                            <div class="card-text">${escapeHtml(res.chunk_text)}</div>
+                        </div>
+                    `;
+                });
+
+                contentHtml = `
+                    ${aiAnswerHtml}
+                    <div class="results-summary">
+                        <span><i class="fa-solid fa-file-medical" style="color: var(--accent-secondary);"></i> Kullanılan <strong>${data.total_results}</strong> adet doğrulanmış tıbbi kaynak metni:</span>
+                    </div>
+                    ${cardsHtml}
+                `;
+            }
+
+            const botHtml = `
+                <div class="msg-row bot">
+                    <div class="avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                    <div class="msg-bubble">${contentHtml}</div>
+                </div>
+            `;
+
+            chatFeed.insertAdjacentHTML('beforeend', botHtml);
+            scrollToBottom();
+        }
+
+        function renderBotError(msg) {
+            const errHtml = `
+                <div class="msg-row bot">
+                    <div class="avatar" style="background: rgba(239, 68, 68, 0.8);"><i class="fa-solid fa-circle-exclamation"></i></div>
+                    <div class="msg-bubble" style="border-color: var(--danger-border);">
+                        <strong style="color: var(--danger-text);">Sistem Uyarısı</strong><br>
+                        ${escapeHtml(msg)}
+                    </div>
+                </div>
+            `;
+            chatFeed.insertAdjacentHTML('beforeend', errHtml);
+            scrollToBottom();
+        }
+
+        function scrollToBottom() {
+            chatFeed.scrollTop = chatFeed.scrollHeight;
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+
+        // Event listeners
+        sendBtn.addEventListener('click', handleSend);
+        userInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                handleSend();
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "rows": 1019,
+  "columns": [
+    "url",
+    "chunk_text",
+    "chunk_vector",
+    "chunk_id",
+    "parent_id",
+    "title",
+    "branch",
+    "chunk_index",
+    "token_count",
+    "embedding_model"
+  ],
+  "required_columns_present": true,
+  "unique_chunks": 1019,
+  "unique_parents": 500,
+  "vector_dimension": 768,
+  "vector_dtype": "float",
+  "finite_vectors": true,
+  "l2_norm_min": 0.9999998807907104,
+  "l2_norm_mean": 1.0,
+  "l2_norm_max": 1.0000001192092896,
+  "output": "hf_dataset/data/train.parquet",
+  "file_size_bytes": 4140128,
+  "sha256": "ba69e79399f1528268eafb67cb564a912121b29d10cf3270f31f260fcfe7c675",
+  "parquet_round_trip": true
+}

@@ -1,0 +1,244 @@
+{
+    "train": [
+        [
+            {
+                "content": "what is API documentation with OpenAPI?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OpenAPI (formerly Swagger) is the standard for describing REST APIs. A machine-readable specification (YAML/JSON) that describes endpoints, parameters, request/response bodies, authentication. Benefits: auto-generated interactive documentation (Swagger UI, Redoc), client SDK generation (openapi-generator for TypeScript, Python, Java, Go), server stub generation, API testing, contract testing between teams. Key sections: info (API title, version, description), servers (base URLs), paths (endpoints with methods, parameters, responses), components (reusable schemas, security schemes). Example: paths: /users/{id}: get: parameters: [{name: id, in: path, required: true, schema: {type: integer}}], responses: {200: {content: application/json: {schema: {$ref: '#/components/schemas/User'}}}}. Design-first vs code-first: design-first (write spec first, generate code — better for team collaboration), code-first (annotate code, generate spec — faster for solo devs). Tools: Swagger Editor (visual editor), Stoplight Studio (design-first), swagger-jsdoc (generate from code comments), NestJS Swagger (auto-generate from decorators). Postman can import OpenAPI specs for testing. Keep documentation close to code — auto-generate when possible to avoid docs drifting from implementation.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OpenAPI, Swagger, API documentation, specification, Redoc, code generation, design-first.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is database connection pooling?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Connection pooling reuses database connections instead of creating new ones per request. Creating a TCP connection + TLS handshake + authentication for every query is expensive (~50-100ms). A pool maintains a set of pre-established connections. When a request needs the database, it borrows a connection from the pool, uses it, and returns it. Pool configuration: min connections (keep alive even when idle), max connections (prevent overwhelming the database), idle timeout (close connections unused for too long), connection lifetime (rotate connections periodically). PostgreSQL: max_connections defaults to 100. Each connection uses ~5-10MB RAM. With 100 app servers each wanting 10 connections = 1000 connections — exceeds limit. Solution: PgBouncer (external connection pooler) — sits between app and database, multiplexes thousands of app connections to dozens of database connections. Modes: transaction (release after transaction — most common), session (release after session), statement (release after each statement). Other poolers: pgpool-II (also load balancing, replication), built-in pooling in ORMs (SQLAlchemy pool, HikariCP for Java). Cloud databases: AWS RDS Proxy (managed pooling), Supabase uses PgBouncer internally. Always use connection pooling in production — it's one of the easiest performance wins.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Connection pooling, PgBouncer, database connections, PostgreSQL, pool configuration, RDS Proxy.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is cross-site scripting XSS and prevention?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "XSS (Cross-Site Scripting) is an injection attack where malicious scripts are injected into trusted websites. Types: Stored XSS — malicious script saved in database, served to all users who view the content. Most dangerous. Example: user submits comment containing <script>document.cookie</script>, every visitor's cookies get stolen. Reflected XSS — malicious script in URL parameters, reflected in page response. Example: https://site.com/search?q=<script>alert(1)</script>. DOM-based XSS — client-side JavaScript processes user input unsafely. innerHTML, document.write, eval with user data. Prevention: Output encoding — escape HTML entities before rendering user content. < becomes &lt;, > becomes &gt;. Most frameworks do this by default (React, Angular, Vue). Content Security Policy (CSP) — HTTP header that restricts what scripts can execute. script-src 'self' blocks inline scripts and external scripts from other domains. Strong defense-in-depth. Input validation — validate and sanitize user input. But don't rely on this alone — output encoding is more important. HttpOnly cookies — prevent JavaScript from accessing cookies (mitigates cookie theft). DOMPurify — library for sanitizing HTML (when you need to render user HTML). Never use innerHTML with user data — use textContent instead. Never use eval() with user input. React's JSX automatically escapes expressions — {userInput} is safe. dangerouslySetInnerHTML is dangerous — name is intentional.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "XSS, cross-site scripting, CSP, output encoding, sanitization, HttpOnly, DOMPurify, security.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is site reliability best practices?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SRE best practices for production systems. Runbooks: step-by-step guides for common incidents. 'Database CPU high' → check slow queries → identify N+1 → optimize or restart. Reduce mean time to recovery (MTTR). On-call: rotation schedule, escalation policies, incident response procedures. Avoid alert fatigue — every alert should be actionable. PagerDuty, Opsgenie for alert management. Postmortem culture: after every incident, write a blameless postmortem. What happened? Timeline of events. Root cause analysis (5 Whys). Action items to prevent recurrence. Share learnings across the organization. Capacity planning: monitor growth trends, provision ahead of demand. Load test regularly to know your limits. Game days: practice failure scenarios. Simulate database failover, region outage, dependency failure. Build muscle memory for incident response. Chaos engineering: intentionally inject failures to find weaknesses. Chaos Monkey (random instance termination), Gremlin (controlled chaos experiments). Start small (kill one instance) and gradually increase blast radius. SLO-based alerting: alert when error budget is being consumed too fast, not on individual metrics. This reduces noise and focuses on user impact. Progressive rollouts: deploy to canary → small percentage → full rollout with automatic rollback on metric degradation.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SRE best practices, runbooks, on-call, postmortem, chaos engineering, SLO, game days.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is debugging strategies?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Systematic debugging approaches for finding and fixing bugs efficiently. Scientific method: observe the bug → form hypothesis → test hypothesis → fix or revise. Step 1: Reproduce the bug reliably. If you can't reproduce it, you can't fix it confidently. Get exact steps, inputs, environment. Step 2: Isolate the problem. Binary search: comment out half the code, does the bug persist? Narrow down to the smallest reproducible case. Step 3: Read the error message carefully. Stack traces tell you exactly where the error occurred. Read from bottom to top — the last frame is where the error was thrown, frames above show how it got there. Tools: debugger (breakpoints, step through code, inspect variables — Chrome DevTools, VS Code debugger, pdb for Python), logging (add strategic console.log/print statements — remove after fixing), profiler (for performance bugs — Chrome Performance tab, cProfile). Rubber duck debugging: explain the problem out loud to a rubber duck (or colleague). The act of articulating the problem often reveals the solution. Common bug patterns: off-by-one errors (< vs <=, 0-based vs 1-based indexing), null/undefined access (optional chaining helps), race conditions (async code executing in unexpected order), stale closures (React useEffect with missing dependencies), encoding issues (UTF-8 vs Latin-1). Prevention: write tests first (TDD catches bugs before they exist), use TypeScript/type systems (catch type errors at compile time), linting (catch common mistakes automatically), code review (fresh eyes catch bugs you're blind to).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Debugging, scientific method, stack trace, breakpoints, rubber duck, binary search, profiling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is trunk-based development?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Trunk-based development (TBD) is a branching model where all developers commit to a single branch (main/trunk). No long-lived feature branches. Short-lived feature branches (if used) last hours to 1-2 days, not weeks. Key practices: small, frequent commits (multiple times per day), feature flags to hide incomplete work, comprehensive CI/CD (every commit is tested and can be deployed), pair programming or mob programming reduces need for async code review. Benefits: no merge conflicts (or minimal), continuous integration (truly continuous, not just CI tool running), faster delivery (no waiting for branch merges), simpler workflow (no release branches, no gitflow complexity). Feature flags are essential — deploy incomplete code safely. Toggle on when ready. This decouples deployment from release. Comparison: Git Flow has long-lived develop/feature/release branches. Good for packaged software with versions, but heavy for web services. GitHub Flow uses feature branches merged via PR — simpler than Git Flow but branches can still be long-lived. TBD is the most CI/CD-friendly model. Requirements: good test coverage (catch bugs before they reach main), feature flags (hide incomplete work), fast CI pipeline (feedback in minutes not hours), team trust and communication. Google, Meta, and many tech companies use trunk-based development.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Trunk-based development, branching, feature flags, CI/CD, continuous integration, Git Flow.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is caching at every level?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Caching stores computed results to avoid redundant work. Exists at every level of the stack. Browser cache: HTTP cache headers (Cache-Control, ETag, Last-Modified). Static assets (JS, CSS, images) cached in browser. Service workers for offline caching. CDN cache: static files cached at edge locations worldwide. Reduces latency by serving from nearest edge. Cloudflare, CloudFront, Fastly. Cache invalidation via purge or versioned URLs (/app.v2.js). Application cache: in-memory cache within application process. LRU (Least Recently Used) cache. Node.js: Map or lru-cache. Python: functools.lru_cache, cachetools. Fast but lost on restart, not shared between instances. Distributed cache: shared cache across application instances. Redis (most popular), Memcached. Survives app restarts, shared state. Session storage, hot data, computed results. Database cache: query cache (PostgreSQL shared_buffers), result cache. Materialized views (pre-computed query results). Connection pooling (PgBouncer). CPU cache: L1/L2/L3 caches. Code that accesses memory sequentially (cache-friendly) is much faster than random access. Relevant for performance-critical code. Cache invalidation is the hard part: TTL-based (simple but stale data possible), event-based (invalidate on write — complex but fresh), versioned keys. Phil Karlton: 'There are only two hard things in CS: cache invalidation and naming things.' Start simple (TTL), add complexity only when needed.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Caching, CDN, Redis, browser cache, LRU, cache invalidation, TTL, service worker, distributed.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is event sourcing in practice?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Event sourcing stores the history of changes as a sequence of events rather than storing current state. Instead of updating a row (balance = 1000), store events: AccountCreated(1000), MoneyDeposited(500), MoneyWithdrawn(200). Current state is derived by replaying events: 1000 + 500 - 200 = 1300. Benefits: complete audit trail (every change is recorded), time travel (reconstruct state at any point in time), event replay (rebuild read models, fix bugs by replaying with corrected logic), natural fit for event-driven architecture. Challenges: eventual consistency (read models may lag behind event store), complexity (more moving parts than simple CRUD), event schema evolution (how to handle changed event formats?), storage growth (events accumulate — use snapshots for performance). CQRS (Command Query Responsibility Segregation): often paired with event sourcing. Write side: handles commands, produces events. Read side: consumes events, builds optimized read models (materialized views). Different databases for reads and writes. Event store implementations: EventStoreDB (purpose-built), PostgreSQL (with events table), Kafka (events as log), DynamoDB. When to use: financial systems (audit requirements), collaborative systems (Google Docs — operations as events), complex domain logic, systems where history matters. When NOT to use: simple CRUD applications, when you don't need audit trail, when the team doesn't understand the pattern.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Event sourcing, CQRS, event store, audit trail, replay, materialized views, eventual consistency.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is technical writing for developers?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Technical writing communicates technical concepts clearly. Essential skill for developers. Documentation types: README (project overview, setup instructions, usage examples — first thing people see), API docs (endpoints, parameters, responses, examples — OpenAPI/Swagger), architecture docs (system overview, component interactions, decision records), tutorials (step-by-step learning — beginner-friendly), how-to guides (solve specific problems — task-oriented), reference (complete API reference — comprehensive), ADRs (Architecture Decision Records — why specific technical decisions were made). Writing principles: know your audience (beginner vs experienced developer), use active voice ('Run the command' not 'The command should be run'), include code examples (worth more than paragraphs of explanation), keep it concise (remove unnecessary words), structure with headers (scannable), version your docs with your code. Tools: Markdown (universal, simple), Docusaurus (documentation website), Mintlify (modern docs), GitBook, Notion. README template: project name, description, features, installation, usage, configuration, contributing, license. Architecture Decision Records (ADR): title, status, context (why), decision (what), consequences (trade-offs). Write docs as you code — not after. Good documentation multiplies the impact of your code. Gorkem's GitHub projects benefit from clear READMEs that explain purpose and setup.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Technical writing, documentation, README, API docs, ADR, Docusaurus, tutorials, reference.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is WebRTC and peer-to-peer communication?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebRTC (Web Real-Time Communication) enables peer-to-peer audio, video, and data streaming directly between browsers. No plugins needed. Key components: getUserMedia — access camera and microphone. RTCPeerConnection — manage peer-to-peer connection, handle media streams. RTCDataChannel — arbitrary data transfer between peers. Signaling: WebRTC needs a signaling server to exchange connection information (SDP — Session Description Protocol). The signaling server helps peers find each other and negotiate connection parameters. After signaling, communication is direct peer-to-peer. ICE (Interactive Connectivity Establishment): NAT traversal — most devices are behind NAT and can't directly connect. ICE uses STUN servers (discover public IP) and TURN servers (relay traffic when direct connection fails). TURN is fallback — more expensive but always works. Use cases: video conferencing (Google Meet, Zoom web), screen sharing, file transfer, peer-to-peer gaming, IoT camera streaming. Libraries: simple-peer (Node.js/browser), PeerJS (simplified WebRTC), mediasoup (SFU for scaling), LiveKit (open-source WebRTC infrastructure). Scaling: peer-to-peer works for 2-4 participants. Beyond that, use SFU (Selective Forwarding Unit) — server receives streams and forwards to all participants without transcoding. More efficient than MCU (transcoding) for video.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebRTC, peer-to-peer, signaling, ICE, STUN, TURN, SFU, video conferencing, MediaStream.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is service mesh?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Service mesh manages service-to-service communication in microservices. Sidecar proxy (Envoy) is deployed alongside each service, handling all network communication. Data plane: sidecar proxies handle traffic. Control plane: configuration and policy management. Features: mutual TLS (mTLS — encrypt all inter-service communication automatically), traffic management (canary deployments, A/B testing, circuit breaking at network level), observability (distributed tracing, metrics, access logs without code changes), retries and timeouts (automatic retry with backoff), load balancing (client-side, more efficient than centralized). Tools: Istio (most popular, complex, Envoy-based), Linkerd (simpler, lighter, Rust-based proxy), Consul Connect (HashiCorp), AWS App Mesh. When to use: many microservices (50+) needing consistent networking policies, mTLS requirement, need observability without instrumenting every service. When NOT to use: few services (overhead isn't justified), monolith, team doesn't have Kubernetes expertise. Service mesh adds operational complexity — make sure the benefits outweigh the costs.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Service mesh, Istio, Linkerd, Envoy, sidecar, mTLS, traffic management, observability.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is dependency injection in detail?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Dependency injection (DI) is a design pattern where dependencies are provided to a class rather than created by it. Instead of: class UserService { constructor() { this.db = new Database(); } }. With DI: class UserService { constructor(db) { this.db = db; } }. Benefits: testability (pass mock database in tests), flexibility (swap implementations without changing code), loose coupling (class doesn't know which specific implementation it uses), single responsibility (class doesn't manage dependency lifecycle). Types: constructor injection (pass via constructor — most common and recommended), setter injection (set via setter method), interface injection (implement an interface that exposes a setter). DI containers/frameworks: inversify (TypeScript), tsyringe (TypeScript, Microsoft), Nest.js (built-in DI), Spring (Java — the DI framework), .NET dependency injection (built-in). In React: Context API is a form of DI — provide values at top level, consume anywhere below. Custom hooks abstract dependencies similarly. In Python: manual DI is common (just pass dependencies). dependency-injector library for framework-level DI. Testing with DI: inject mock dependencies for unit tests. Real dependencies for integration tests. This is the primary motivation — making code testable. Don't overcomplicate: if a class has one dependency that never changes, DI might be unnecessary. Apply where you need flexibility and testability.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Dependency injection, DI, testability, loose coupling, constructor injection, IoC container.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how should you approach learning new technologies?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A systematic approach to learning new technologies efficiently. 1) Understand the problem it solves — don't learn a tool in isolation. Why does React exist? What problems did it solve over jQuery? This gives you context and motivation. 2) Official tutorial/docs first — the creators know the tool best. Follow the getting-started guide. Build the example project. 3) Build something real — not a tutorial project, but something you actually need. This forces you to solve real problems, not just follow instructions. 4) Read other people's code — GitHub repos, open source projects using the technology. See how experienced developers structure real applications. 5) Teach someone else — blog post, talk, or help others. Teaching solidifies understanding and reveals gaps. 6) Go deeper — read the source code, understand internals, contribute to the project. This separates intermediate from advanced practitioners. Gorkem's approach exemplifies this — miniature-transformers isn't a tutorial completion, it's a from-scratch implementation that demonstrates deep understanding. Common mistakes: tutorial hell (watching tutorials without building), learning too many things at once (focus on one thing deeply), not building projects (knowledge without practice fades), chasing every new framework (fundamentals transfer, framework-specific knowledge doesn't). T-shaped skills: go deep in one area (your specialty), maintain broad awareness of adjacent areas.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Learning, technology, tutorials, building projects, teaching, T-shaped skills, fundamentals.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is ORMs and query builders?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ORM (Object-Relational Mapping) maps database tables to programming language objects. Instead of writing SQL, work with objects. Benefits: write database code in your programming language, database portability (switch from PostgreSQL to MySQL), prevent SQL injection (parameterized by default), migrations. Popular ORMs: Prisma (TypeScript/JavaScript — schema-first, great DX, type-safe queries), SQLAlchemy (Python — both ORM and SQL toolkit, very flexible), Django ORM (Python — tightly integrated with Django framework), TypeORM (TypeScript — decorator-based, similar to Java ORMs), Sequelize (JavaScript — older, callback-based API), Hibernate (Java — the original enterprise ORM), GORM (Go — simple, convention over configuration). Query builders — middle ground between raw SQL and ORM: Knex.js (JavaScript — compose SQL programmatically), Kysely (TypeScript — type-safe query builder). ORM drawbacks: N+1 query problem (loading related records one by one — use eager loading/includes), performance overhead (generated SQL may not be optimal), learning curve (ORM concepts on top of SQL), complex queries can be harder than raw SQL. Best practice: use ORM for simple CRUD, drop down to raw SQL for complex queries. Prisma example: await prisma.user.findMany({ where: { age: { gte: 18 } }, include: { posts: true } }). Understand the SQL your ORM generates — use query logging.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ORM, Prisma, SQLAlchemy, query builder, N+1, Knex.js, TypeORM, database abstraction.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is software licensing basics?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Software licenses define how code can be used, modified, and distributed. Permissive licenses (do almost anything): MIT — use, modify, distribute, commercial use. Only requirement: include the license text. Most popular open source license. Apache 2.0 — like MIT but includes patent grant and requires stating changes. Good for enterprise. BSD — similar to MIT, various versions (2-clause, 3-clause). Copyleft licenses (share-alike): GPL (GNU General Public License) — derivative works must also be GPL. 'Viral' — if you use GPL code, your entire project must be GPL. LGPL — like GPL but allows linking from non-GPL code. Common for libraries. AGPL — GPL + if you run modified code on a server, you must share source. Protects against the 'SaaS loophole.' Creative Commons — for non-code content (docs, images). CC-BY, CC-BY-SA, CC0 (public domain). No license = all rights reserved — others can't legally use your code. Always add a license to open source projects. Choosing: want maximum adoption? MIT or Apache 2.0. Want derivatives to remain open? GPL or AGPL. For a library? MIT or LGPL. Dual licensing: offer code under open source license (community) AND commercial license (enterprise features/support). Common business model. SPDX identifiers standardize license references. Check dependency licenses before using — GPL dependencies make your project GPL.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Software license, MIT, Apache, GPL, AGPL, copyleft, permissive, open source, SPDX.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

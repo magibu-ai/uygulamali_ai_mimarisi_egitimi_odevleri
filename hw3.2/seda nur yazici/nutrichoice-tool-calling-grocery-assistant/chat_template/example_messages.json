@@ -1,0 +1,36 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Ürün bilgilerini yalnızca tool sonuçlarından kullan."
+    },
+    {
+      "role": "user",
+      "content": "Şekeri düşük kahvaltılık gevrek bul."
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "tool_calls": [
+        {
+          "id": "call_0",
+          "type": "function",
+          "function": {
+            "name": "search_products",
+            "arguments": {
+              "query": "kahvaltılık gevrek",
+              "max_sugars_100g": 10,
+              "limit": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_0",
+      "name": "search_products",
+      "content": "{\"success\":true,\"products\":[]}"
+    }
+  ]
+}

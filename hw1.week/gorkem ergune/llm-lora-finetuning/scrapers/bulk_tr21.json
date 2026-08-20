@@ -1,0 +1,292 @@
+{
+    "train": [
+        [
+            {
+                "content": "model niceleme (quantization) nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Niceleme, daha dusuk hassasiyetli sayilar kullanarak model boyutunu ve cikarim hizini azaltir. Float32 (tam hassasiyet): parametre basina 4 bayt. Float16/BFloat16 (yarim hassasiyet): 2 bayt, minimal kalite kaybi. Int8 (8-bit): 1 bayt, hafif kalite kaybi ama 4x daha kucuk. Int4 (4-bit): 0.5 bayt, fark edilir ama cikarim icin genellikle kabul edilebilir kalite kaybi. GPTQ: egitim sonrasi niceleme. AWQ (Activation-aware Weight Quantization): onemli agirliklari korur. GGUF: llama.cpp icin niceleme formati — modelleri CPU'da calistir. Faydalar: 7B model 28GB'den (FP32) 3.5GB'ye (4-bit) duser — tuketici donanimi uzerinde calisir. Trade-off: dusuk hassasiyet = biraz daha dusuk kalite, ama 4-bit nicemlenmiş buyuk model genellikle tam hassasiyetli kucuk modelden daha iyi performans gosterir. Araclar: bitsandbytes (HF entegrasyonu), llama.cpp (CPU cikarim), vLLM (uretim sunma). Gorkem'in projesi icin: FP16/BF16'da egit, cikarim icin nicemlenmiş dagit.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Niceleme, Int8, Int4, GPTQ, AWQ, GGUF, bitsandbytes, model sikistirma, cikarim.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "WebRTC nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebRTC (Web Real-Time Communication) tarayicilar arasinda eklenti veya sunucu olmadan dogrudan esler arasi ses, video ve veri paylasimini mumkun kilar. Nasil calisir: 1) Sinyalleme — oturum tanimlarini (SDP) ve ag adaylarini (ICE) bir sinyalleme sunucusu (WebSocket) araciligiyla degistir. 2) ICE/STUN/TURN — en iyi ag yolunu bul. STUN, NAT arkasindaki genel IP'yi kesfeder. TURN, dogrudan baglanti imkansiz oldugunda trafik aktarir (~%10-20). 3) DTLS/SRTP — sifrelenmis medya akislari. 4) Es baglantisi kurulur — medya dogrudan tarayicilar arasinda akar. API'ler: getUserMedia (kamera/mikrofona eris), RTCPeerConnection (es baglantisini yonet), RTCDataChannel (keyfi veri). Kullanim alanlari: video gorusmeleri (Google Meet, Zoom web), ekran paylasimi, dosya aktarimi, canli yayincilik. Zorluklar: NAT gecisi, guvenlik duvari sorunlari, degisen ag kosullari. SFU (Selective Forwarding Unit): sunucu tum akislari alir ve secici olarak iletir — grup gorusmeleri icin mesh'ten daha olceklenebilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebRTC, esler arasi, ICE, STUN, TURN, SFU, sinyalleme, gercek zamanli, video gorusmesi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "PWA progressive web app nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Progressive Web Apps yerel uygulama deneyimlerini web'e tasir. Ozellikler: 1) Kurulabilir — ana ekrana ekle, yerel uygulama gibi baslat (tarayici cercevesi yok). 2) Cevrimdisi yetenekli — service worker'lar varliklari ve API yanitlarini onbellege alir. 3) Push bildirimleri — yerel uygulamalar gibi kullanicilari yeniden etkilestir. 4) Responsive — her cihazda calisir. 5) Hizli — kritik kaynaklari onceden onbellege alma. Temel teknolojiler: Service Worker (uygulama ve ag arasinda JavaScript proxy — istekleri kes, yanitlari onbellege al, arka plan senkronizasyonu), Web App Manifest (manifest.json — isim, simgeler, tema rengi, goruntulerme modu), Cache API (programatik onbellekleme). Service worker stratejileri: once-onbellek (cevrimdisi-ilk, hizli), once-ag (taze veri, onbellege geri donus), bayatken-yeniden-dogrula (onbellek sun, arka planda guncelle). Sinirlamalar: bazi yerel API'lere erisim yok, iOS Safari destegi sinirli. Ne zaman PWA insaa etmeli: icerik agirlikli uygulamalar, e-ticaret, haber siteleri, panolar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PWA, service worker, cevrimdisi, manifest, push bildirimleri, cache API, kurulabilir.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ORM nedir ve kullanmali misiniz?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ORM (Object-Relational Mapping) veritabani tablolarini programlama dili nesnelerine esler. SQL yazmak yerine nesnelerle calisirsiniz: User.objects.filter(age__gt=25) (Django ORM) SELECT * FROM users WHERE age > 25 uretir. Populer ORM'ler: Django ORM (Python), SQLAlchemy (Python, esnek), Prisma (TypeScript, tip guvenli), TypeORM (TypeScript), Hibernate (Java), Entity Framework (.NET). Faydalar: daha az sablonlu SQL yaz, veritabani bagimisiz (PostgreSQL'den MySQL'e gec), yerlesik gocler, SQL enjeksiyonuna karsi koruma (parametreli sorgular), uretkenlik. Dezavantajlar: performans yuku, N+1 sorgu sorunu (tembel yukleme ilgili nesneleri teker teker alir), karmasik sorgular zaten ham SQL gerektirebilir, SQL'i soyutlar (gelistiriciler SQL ogrenmez), uretilen SQL yetersiz olabilir. En iyi yaklasim: basit CRUD icin ORM, karmasik sorgular ve performans-kritik yollar icin ham SQL. Uretilen SQL'i her zaman EXPLAIN ile kontrol edin. Sorgu olusturucular (Knex.js, SQLAlchemy Core) bir orta yol sunar — ORM'den daha fazla kontrol, ham SQL'den daha guvenli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ORM, Django ORM, SQLAlchemy, Prisma, TypeORM, N+1, SQL enjeksiyonu, sorgu olusturucu.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "bagimlilik enjeksiyonu nedir ve neden kullanilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bagimlilik enjeksiyonu (DI) siniflarin dahili olarak olusturmasi yerine disaridan bagimliliklari saglar. DI olmadan: class UserService { constructor() { this.db = new PostgresDB() } } — sikica baglanmis, test etmesi zor. DI ile: class UserService { constructor(db: Database) { this.db = db } } — herhangi bir Database uygulamasini gecir. Faydalar: 1) Test edilebilirlik — testlerde sahte veritabani enjekte et. 2) Esneklik — sinifi degistirmeden uygulamalari degistir (PostgresDB → MongoDB). 3) Tek Sorumluluk — sinif bagimliliklar yaşam dongusunu yonetmez. 4) Gevsek baglanti — uygulamalara degil soyutlamalara baglan. DI cerceveleri: Spring (Java — anotasyon tabanli @Autowired), NestJS (TypeScript — dekoratorler), .NET DI (cercevede yerlesik), Python (cerceve gerekli degil — sadece arguman gecir). Yapici enjeksiyonu (onerilen) vs setter enjeksiyonu vs arayuz enjeksiyonu. IoC konteyneri: nesne olusturma ve bagimlilik cozumunu yonetir. Asiri muhendislik uyarisi: basit betikler ve kucuk projeler icin sadece arguman gecirin — her sey icin bir DI cercevesine ihtiyaciniz yok.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Bagimlilik enjeksiyonu, DI, IoC, test, gevsek baglanti, Spring, NestJS, yapici enjeksiyonu.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "veritabani sorgu optimizasyonu nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Sorgu optimizasyonu veritabani sorgularini daha hizli ve daha az kaynak kullanir hale getirir. Adimlar: 1) EXPLAIN ANALYZE — sorgu planini anla. Ara: sirali taramalar (eksik indeks?), ic ice donguler (hash join ise yarar mi?), yuksek maliyet tahminleri. 2) Uygun indeksler ekle — esitlik ve aralik icin B-tree, tam metin arama ve JSONB icin GIN, filtrelenmis sorgular icin kismi indeksler. 3) SELECT * kullanmaktan kacin — sadece ihtiyac duydurgun sutunlari sec. 4) N+1 sorgulari duzelt — dongu icinde sorgulamak yerine JOIN veya toplu yukleme kullan. 5) Baglanti havuzu kullan — PostgreSQL icin PgBouncer. 6) Dikkatli denormalize et — pahali JOIN'ler icin materyalize gorunumler. 7) Sayfalandirma — imleç tabanli (WHERE id > last_id) OFFSET'ten daha verimli. 8) LIMIT kullan — sadece 20 goruntulerken tum satirlari yukleme. 9) Pahali sorgulari onbellekle — sik erisilen veriler icin Redis. 10) Vacuum ve analyze — PostgreSQL istatistiklerini guncel tut.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Sorgu optimizasyonu, EXPLAIN ANALYZE, indeksleme, N+1, sayfalandirma, onbellek.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "A/B testi nedir ve nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A/B testi, hangisinin daha iyi performans gosterdigini belirlemek icin iki versiyonu karsilastirir. Surec: 1) Hipotez — 'dugme rengini maviden yesile degistirmek tiklama oranini artiracak.' 2) Trafigi bol — kullanicilari rastgele kontrol (A) veya deney (B) grubuna ata. 3) Olc — optimize ettiginiz metrigi izleyin (donusum orani, tiklama orani, gelir). 4) Analiz et — farkin anlamli olup olmadigini belirlemek icin istatistiksel testler kullan. Istatistiksel kavramlar: p-degeri (bu farki sans eseri gozlemleme olasiligi — tipik olarak p < 0.05), guven araligi, istatistiksel guc (gercek bir etkiyi tespit etme olasiligi — %80 hedef), orneklem buyuklugu (basmadan once hesapla — guc analizi kullan). Tuzaklar: yeterli orneklem buyuklugune ulasmadan sonuclara bakmak (yanlis pozitifleri sistirir), ayni anda cok fazla varyasyon test etmek. Araclar: LaunchDarkly, Statsig, Optimizely veya feature flag'lerle ozel. Suresi: anlamlIlik gorunene kadar degil, gerekli orneklem buyuklugune ulasana kadar calistirin. ML icin: uretimde model surumlerini A/B test edin — cevrimdisi metrikler her zaman is metrikleriyle korelasyon gostermez.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "A/B testi, hipotez, p-degeri, orneklem buyuklugu, istatistiksel anlamlilik, feature flag.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "test kapsamI nedir ve ne kadar yeterli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Test kapsamı, testler sirasinda kodunuzun yuzde kacinin yurutuldugunu olcer. Turler: satir kapsamI (yurutulen satirlar), dal kapsamI (alinan if/else dallari), fonksiyon kapsamI (cagrilan fonksiyonlar), ifade kapsamI. Araclar: Istanbul/nyc (JavaScript), coverage.py (Python), JaCoCo (Java). Ne kadar yeterli? %100 kapsam genellikle cabaya degmez — azalan getiriler, kirilgan testler, yanlis guven. Sektor hedefleri: %70-80 iyi bir pratik hedeftir. Ama: %100 kapsam hata yok demek degil — dogru seyleri assert etmeyen testlerle her satiri kapsayabilirsiniz. Odaklanilacak: kritik is mantigi (odeme isleme — yuksek kapsam), karmasik algoritmalar (kenar durumlari), hata isleme yollari, guvenlige duyarli kod. Odaklanilmayacak: basit getter/setter'lar, cerceve sablonu, uretilen kod, UI duzeni. Mutasyon testi: daha iyi bir kalite olcusu — kucuk kod degisiklikleri (mutasyonlar) yapar ve testlerin yakalayip yakalamadigini kontrol eder. Mutasyon hayatta kalirsa testleriniz zayiftir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Test kapsamI, satir kapsamI, dal kapsamI, Istanbul, mutasyon testi, kalite, test.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "MLOps nedir ve neden onemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "MLOps, DevOps ilkelerini makine ogrenimine uygular — gelistirmeden uretime tam ML yasam dongusu yonetimi. ML'ye ozgu zorluklar: veri surumleme (kod + veri + model = tekrarlanabilirlik), model egitim tekrarlanabilirligi, model izleme (veri kaymasi, kavram kaymasi), modellerin A/B testi, ozellik depolari. Boru hatti asamalari: 1) Veri toplama ve dogrulama. 2) Ozellik muhendisligi (yeniden kullanim icin ozellik deposu). 3) Model egitimi (deney takibi — MLflow, Weights & Biases). 4) Model degerlendirme (cevrimdisi metrikler + is metrikleri). 5) Model kaydi (modelleri kod gibi surumle). 6) Dagitim (model sunma — TensorFlow Serving, Triton, BentoML). 7) Izleme (veri kaymasi tespiti, performans bozulmasi). Arac ekosistemi: MLflow (deney takibi, model kaydi), DVC (veri surum kontrolu), Kubeflow (Kubernetes yerel ML), Airflow (is akisi orkestrasyonu). Jupyter notebook modelinden uretim ML sistemine gec — MLOps bu boşlugu kapatir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "MLOps, ML yasam dongusu, MLflow, DVC, model sunma, veri kaymasi, ozellik deposu.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "API surumleme stratejileri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "API surumleme, mevcut istemcileri bozmadan geriye uyumsuz degisiklikleri ele alir. Stratejiler: 1) URL yolu: /api/v1/users, /api/v2/users. En yaygin, acik, anlamasi kolay. Dezavantaj: her surum icin URL degisir. 2) Sorgu parametresi: /api/users?version=2. Daha az temiz ama yolu degistirmez. 3) Baslik: Accept: application/vnd.api.v2+json veya ozel baslik X-API-Version: 2. En temiz URL'ler ama test etmesi daha zor. 4) Surumlemesiz — API'yi surumler olmadan gelistir. Yeni alanlar ekle (asla kaldirma), genisletme kullan. Basit API'ler icin calisir. En iyi uygulamalar: endpoint basina degil API duzeyinde surumle. En az N-1 surumu destekle. Kullanimi azaltma: onceden ilan et, son kullanim tarihleri belirle, Deprecation ve Sunset basliklarini dondur. Her surum icin gec kilavuzu. Surumleme gerektiren kirilma degisiklikleri: alanlari kaldirma, alan tiplerini degistirme, yanit yapisini degistirme. Kirilma olmayan degisiklikler: yeni alanlar ekleme, yeni endpoint'ler ekleme, istege bagli parametreler ekleme.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "API surumleme, URL yolu, baslik, geriye uyumlu, kullanimi azaltma, kirilma degisiklikleri.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "LoRA ile LLM fine-tuning nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "LoRA (Low-Rank Adaptation) buyuk dil modelleri icin parametre verimli bir ince ayar yontemidir. Tum model agirliklarini guncellemek yerine (milyarlarca parametre), LoRA orijinal agirliklari dondurur ve belirli katmanlara kucuk egitilebiylir matrisler ekler. Bir agirlik matrisi W (d×d) icin, LoRA iki kucuk matris ekler: A (d×r) ve B (r×d), burada r << d (rank, genellikle 4-64). Guncelleme W' = W + BA — d×d yerine sadece r × d × 2 parametre. Faydalar: %90-99 daha az egitilebilir parametre, cok daha az GPU bellegi gerekli (7B modelleri tek GPU'da ince ayar yap), egitim daha hizli, birden fazla LoRA adaptoru ayni temel modeli paylasabilir. QLoRA: LoRA'yi 4-bit niceleme ile birlestirir — 65B modeli tek 48GB GPU'da ince ayar yap. Gorkem'in su anki projesi LoRA ince ayar icin egitim verisi olusturuyor — bu verinin kalitesi ve cesitliligi ince ayar yapilmis modelin performansini dogrudan etkiler. Araclar: Hugging Face PEFT kutuphanesi, Axolotl, Unsloth.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LoRA, ince ayar, QLoRA, parametre verimli, PEFT, LLM, rank, adaptorler.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "service mesh nedir ve ne zaman gerekli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Service mesh, mikroservislerde servisler arasi iletisimi ele alir — uygulama kodunu degistirmeden ag, guvenlik ve gozlemlenebilirlik. Nasil: her servisin yaninda dagitilan sidecar proxy (Envoy) tum ag trafikini kescer. Ozellikler: 1) Trafik yonetimi — yonlendirme kurallari, yuk dengeleme, devre kesici, yeniden denemeler, zaman asimlari. 2) Guvenlik — servisler arasinda otomatik karsilikli TLS (mTLS), yetkilendirme politikalari. 3) Gozlemlenebilirlik — kodu enstrumante etmeden dagitik izleme, metrikler, erisim loglari. Populer secenekler: Istio (en populer, ozellik zengini, karmasik), Linkerd (daha basit, hafif, CNCF), Consul Connect (HashiCorp), AWS App Mesh. Ne zaman gerekli: cok sayida mikroservis (50+), her yerde mTLS gerekli, karmasik trafik yonlendirme (kanarya dagItimlari, trafik bolme). Ne zaman gerekli degil: az sayida servis (10'un altinda), basit yonlendirme ihtiyaclari. Karmasiklik vergisi: service mesh operasyonel yuk ekler — daha fazla hareketli parca, proxy sorunlarinin hata ayiklamasi, kaynak tuketimi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Service mesh, Istio, Linkerd, Envoy, sidecar, mTLS, trafik yonetimi, gozlemlenebilirlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yuk testi nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yuk testi, uygulamanizin beklenen (ve zirve) trafigi idare edip etmedigini dogrular. Turler: 1) Yuk testi — beklenen trafik seviyesi, surdurulen sure. Normal yuku idare ediyor mu? 2) Stres testi — beklenen kapasitenin otesinde. Nerede kirilir? 3) Ani artis testi — ani trafik patlamasi. Ani yuku nasil idare eder? 4) Dayaniklilik testi — uzun sure boyunca surdurulen yuk. Bellek sizintisi? Kaynak tukenmesi? Araclar: k6 (modern, JavaScript betikleme, Grafana entegrasyonu), Apache JMeter (GUI, eski ama guclu), Locust (Python betikleme), Artillery (YAML + JS). Izlenecek temel metrikler: yanit suresi (p50, p95, p99), verim (istek/saniye), hata orani, kaynak kullanimi (CPU, bellek, baglanti). Surec: 1) Senaryolari tanimla (sadece endpoint'ler degil, kullanici akislari). 2) Performans hedeflerini belirle (p95 < 200ms, 1000 RPS'de). 3) Temel test calistir. 4) Darbogazlari tespit et. 5) Optimize et. 6) Yeniden test et. Yaygin darbogazlar: N+1 sorgular, eksik indeksler, onbellek yok, senkron dis API cagrilari, baglanti havuzu tukenmesi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yuk testi, k6, JMeter, stres testi, performans, p95, verim, darboraz.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Supabase nedir ve Firebase ile nasil karsilastirilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Supabase, PostgreSQL uzerine kurulu acik kaynakli bir Firebase alternatifidir. Ozellikler: PostgreSQL veritabani (tam SQL, uzantilar, RLS), gercek zamanli abonelikler, kimlik dogrulama (sosyal giris, e-posta, telefon), depolama (S3 uyumlu dosya depolama), kenar fonksiyonlari (Deno tabanli sunucusuz), vektor embedding'ler (AI icin pgvector). Firebase: Google'in BaaS'i — Firestore (NoSQL belge DB), Gercek Zamanli Veritabani, Kimlik Dogrulama, Bulut Depolama, Bulut Fonksiyonlari, barindirma. Temel farklar: Supabase PostgreSQL kullanir (SQL, iliskisel, ACID) vs Firebase'in Firestore'u (NoSQL, nihai tutarli). Supabase acik kaynaktr (kendi barindirma) vs Firebase tescillidir. Supabase Satir Duzeyinde Guvenlik (RLS) ile ince taneeli erisim kontrolune sahiptir. Supabase fiyatlandirmasi daha ongörülebilir. Ne zaman Supabase: iliskisel veri gerekli, SQL sorgulari, acik kaynak onemli, AI icin vektor arama gerekli. Ne zaman Firebase: Google ekosisteminde yatirim, cevrimdisi-ilk mobil destek gerekli. Ikisi de hizli prototipleme icin mukemmel.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Supabase, Firebase, PostgreSQL, BaaS, gercek zamanli, kimlik dogrulama, acik kaynak.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "vektor veritabani nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Vektor veritabanlari yuksek boyutlu vektorleri (embedding'leri) verimli sekilde saklar ve arar. Geleneksel veritabanlari tam eslesme veya aralik ile arar — vektor veritabanlari yaklasik en yakin komsu (ANN) aramasiyla en benzer vektorleri bulur. Nasil: metin/goruntüler → embedding modeli → 768-1536 boyutlu vektor → vektor DB'de sakla → sorgu vektoru saklanan vektorlerle kosinüs benzerligi veya L2 mesafesi ile karsilastirilir. Kullanim alanlari: RAG (LLM baglami icin ilgili belgeleri al), semantik arama (anahtar kelimeyle degil anlamla ara), oneri sistemleri, goruntu benzerligi, anomali tespiti. Populer secenekler: Pinecone (yonetilen, kolay), Weaviate (acik kaynak, hibrit arama), Chroma (hafif, prototipleme icin), Milvus (yuksek olcek), Qdrant (Rust tabanli, hizli), pgvector (PostgreSQL uzantisi — Postgres kullaniyorsaniz buradan baslayin). Indeksleme algoritmalari: HNSW (en populer, iyi dogruluk), IVF (buyuk veri setleri icin daha hizli). Gorkem'in RAG projeleri icin: belgeleri vektorlestir → vektor DB'de sakla → benzer parcalari al → LLM'e besle.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Vektor veritabani, embedding'ler, ANN, HNSW, Pinecone, Weaviate, Chroma, pgvector, RAG.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ozellik muhendisligi ML icin nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Ozellik muhendisligi ham veriyi ML modelleri icin anlamli girdilere donusturur — genellikle vasat ve mukemmel bir model arasindaki farktir. Sayisal ozellikler: olcekleme (StandardScaler, MinMaxScaler), log donusumu (carpik dagilimlar), kumeleme (yas → yas gruplari), polinom ozellikleri (x² etkilesimler). Kategorik ozellikler: one-hot kodlama (kucuk kardinalite), etiket kodlama (siralamali), hedef kodlama (yuksek kardinalite — kategori → hedefin ortalamasi), gomme (ogrenilmis temsil). Metin ozellikleri: TF-IDF, kelime sayisi, duygu skoru, adlandirilmis varliklar, embedding'ler (sentence-transformers). Tarih/saat: haftanin gunu, saat, hafta_sonu_mu, olaydan_bu_yana_gunler, dongusel kodlama (saat icin sin/cos). Eksik degerler: imputation (ortalama, medyan, mod, KNN), gosterge sutunu (eksik_mi ozellik olarak). Ozellik secimi: korelasyon analizi, karsilikli bilgi, ozyinelemeli ozellik elemesi, L1 duzenlilestirme. Otomatik: Featuretools (otomatik ozellik muhendisligi). Onemli: her zaman egitim verisine uyarla, test verisini donustur — veri sizintisini onle.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Ozellik muhendisligi, kodlama, olcekleme, TF-IDF, ozellik secimi, veri sizintisi, Pipeline.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Terraform nedir ve nasil kullanilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "HashiCorp'un Terraform'u en populer Infrastructure as Code aracidir. Bulut kaynaklarini deklaratif olarak yonetir — ne istedigini tanimla, Terraform nasil olusturacagini belirler. HCL (HashiCorp Configuration Language): resource 'aws_instance' 'web' { ami = 'ami-123', instance_type = 't3.micro' }. Is akisi: terraform init (saglamcilari indir) → terraform plan (degisiklikleri onizle) → terraform apply (degisiklikleri yap) → terraform destroy (yik). Durum: Terraform gercek altyapiyi bir durum dosyasinda izler. Uzaktan sakla: takim isbirligi icin S3 + DynamoDB kilitleme. Moduller: yeniden kullanilabilir altyapi bilesenleri — altyapi icin fonksiyonlar gibi. Saglamcilar: AWS, GCP, Azure, Cloudflare, GitHub, Kubernetes — 3000+ saglamci. En iyi uygulamalar: yeniden kullanilabilirlik icin moduller kullan, ortamlari ayir, degiskenler ve ciktilar kullan, saglamci surumlerini sabitle, .tfstate dosyalarini asla commit etme. Alternatifler: Pulumi (gercek programlama dilleri), AWS CDK, OpenTofu (acik kaynak Terraform fork). Terraform her DevOps/SRE rolu icin zorunludur.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Terraform, HCL, Infrastructure as Code, durum, moduller, saglamcilar, plan, apply.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "semantik surumleme nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Semantik Surumleme (SemVer) BUYUK.KUCUK.YAMA formatini kullanir. BUYUK (1.0.0 → 2.0.0): kirilma degisiklikleri — API uyumsuz, kullanicilar kodu guncellemeli. KUCUK (1.0.0 → 1.1.0): yeni ozellikler, geriye uyumlu — guncellenmesi guvenli. YAMA (1.0.0 → 1.0.1): hata düzeltmeleri, geriye uyumlu — her zaman guncelle. On surum: 1.0.0-alpha, 1.0.0-beta.1, 1.0.0-rc.1. 0.x.x: baslangic gelistirme — her sey degisebilir, kararlilik garantisi yok. Kurallar: 1.0.0 yayinlaninca genel API tanimlanir. Her kirilma degisikligi buyuk artis gerektirir. Kaldirmadan once kullanimi azalt. Paket yoneticilerinde: ^1.2.3 (saret) — kucuk ve yama guncellemelerine izin verir (1.x.x). ~1.2.3 (tilde) — sadece yama guncellemelerine izin verir (1.2.x). Kilit dosyalari (package-lock.json, Pipfile.lock) — tekrarlanabilir derlemeler icin tam surumlerI sabitle. Conventional Commits: commit mesajlari surum artislarini belirtir — feat: → kucuk, fix: → yama, BREAKING CHANGE: → buyuk.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Semantik surumleme, SemVer, BUYUK, KUCUK, YAMA, saret, tilde, conventional commits.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

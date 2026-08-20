@@ -1,0 +1,452 @@
+{
+    "train": [
+        [
+            {
+                "content": "TYT vs AYT strateji farkı ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TYT (Temel Yeterlilik Testi) genel bilgi ve temel beceri ölçer — Türkçe, matematik, fen, sosyal. Geniş kapsamlı ama yüzeysel. AYT (Alan Yeterlilik Testi) derinlemesine alan bilgisi — matematik, fizik, kimya, biyoloji (sayısal). Strateji farkı: TYT'de hız önemli (120 soru, 135 dk), AYT'de doğruluk önemli (80 soru, 180 dk). TYT hazırlık: her gün deneme çöz, zaman yönetimini pratik et, temel kavramları sağlamlaştır. AYT hazırlık: konu derinliğine in, problem çözme kapasitesini artır, zor soruları atlama stratejisi geliştir. CS/yazılım mühendisliği için: matematik önemli (fonksiyonlar, limit, türev), fizik yardımcı (mantıksal düşünme). Puan hesaplama: TYT %40 + AYT %60 (çoğu mühendislik programı için). TYT barajını geç (150+ puan), AYT'de yüksek puan hedefle. Düzenli deneme çözümü en etkili strateji.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TYT, AYT, strateji, hız, doğruluk, matematik, deneme, puan hesaplama.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "freelancing mi full-time mı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Her ikisinin avantaj ve dezavantajları var. Full-time: düzenli maaş, sağlık sigortası, ekip deneyimi, mentörlük fırsatı, yapılandırılmış kariyer yolu. Dezavantajları: esneklik az, şirket politikaları, tek projede sıkılma. Freelancing: esneklik (nerede, ne zaman çalışacağını seçersin), potansiyel olarak daha yüksek gelir (özellikle USD/EUR ile çalışırsan), çeşitli projeler, kendi patronun. Dezavantajları: gelir düzensiz, kendi sigortanı yaptırman lazım, müşteri bulmak zor olabilir, yalnızlık, disiplin gerektirir. Platformlar: Toptal (seçici, yüksek ücret), Upwork (geniş yelpaze), Fiverr (küçük işler). Hybrid yaklaşım: full-time çalış + yan freelance proje. İlk 2-3 yıl full-time tecrübe edin, network kur, sonra freelance'e geç. Vergi ve fatura konularını öğren (şirket kur veya serbest meslek).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Freelancing, full-time, avantajlar, Toptal, Upwork, hybrid, kariyer seçimi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Türkiye'de startup ekosistemi nasıl?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Türkiye'nin startup ekosistemi son 10 yılda büyük gelişme gösterdi. Başarı hikayeleri: Getir (unicorn — teslimat), Trendyol (Alibaba satın aldı), Peak Games (Zynga satın aldı), Dream Games, Hepsiburada (NYSE'de halka arz). Yatırımcılar: 500 Istanbul, Revo Capital, BIC Angels, Galata Business Angels, Esas Ventures, KOSGEB. Avantajlar: yetenekli mühendis havuzu, düşük maliyet (ABD'ye göre), büyük iç pazar (85 milyon), genç nüfus, teknokent vergi avantajları. Zorluklar: döviz dalgalanması, bürokratik engeller, ABD/AB pazarına erişim zorluğu, limited exit options. İncubator/Accelerator: ITU Çekirdek, Bilgi Garage, Workup (İş Bankası). Tavsiyeler: global düşün (İngilizce ürün), remote-first kültür, döviz geliri hedefle. Görkem gibi genç geliştiriciler bu ekosistemin geleceğini şekillendiriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Türkiye, startup, Getir, Trendyol, KOSGEB, teknokent, yatırımcı, ekosistem.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "WebSocket ne zaman kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebSocket full-duplex iletişim — client ve server arasında kalıcı bağlantı, iki yönlü veri akışı. HTTP'den farkı: HTTP request-response modeli (client sorar, server cevaplar), WebSocket sürekli açık bağlantı (her iki taraf istediği zaman mesaj gönderir). Kullanım alanları: real-time chat (WhatsApp Web), canlı bildirimler, online oyunlar, canlı spor skorları, finansal veri akışı (borsa), collaborative editing (Google Docs), IoT sensör verisi. Alternatifler: Server-Sent Events (SSE — tek yönlü, sunucudan client'a, daha basit), Long Polling (HTTP ile — daha eski, daha fazla overhead). Socket.io (Node.js) WebSocket'i kullanmayı çok kolaylaştırır — otomatik reconnection, room'lar, fallback. Django Channels Python'da WebSocket desteği. ws kütüphanesi Node.js'te. Dikkat: WebSocket bağlantıları sunucu kaynağı tüketir — gereksiz yere kullanma, REST yeterliyse REST kullan.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebSocket, real-time, full-duplex, Socket.io, SSE, chat, bildirim, REST farkı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "microservices ne zaman kullanılmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Microservices her proje için doğru değil — monolith'ten başla, gerekirse geç. Microservices kullan: büyük ekip (her ekip kendi servisini geliştirsin), farklı bileşenler farklı hızda scale olsun (sepet servisi fazla yükte, kullanıcı servisi sabit), farklı teknolojiler kullanmak istiyorsan (bir servis Python, diğeri Go), bağımsız deploy (bir servisi güncellemek diğerlerini etkilemesin). Microservices kullanma: küçük ekip (2-5 kişi), erken aşama startup (MVP), basit uygulama. Microservices zorlukları: network latency, distributed debugging, data consistency (saga pattern), service discovery, monitoring karmaşıklığı. Monolith first: iş mantığını anla, sınırları belirle, sonra gerekirse parçala (strangler fig pattern). Amazon, Netflix monolith olarak başladı — ihtiyaç oldukça microservices'e geçti. 'Premature microservices' premature optimization kadar tehlikeli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Microservices, monolith, ne zaman, ekip büyüklüğü, scale, bağımsız deploy.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AI ve iş gücü dönüşümü ne olacak?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI bazı işleri ortadan kaldıracak ama daha çok dönüştürecek — her sanayi devrimi gibi. Yüksek risk: rutin veri girişi, basit müşteri hizmetleri, çeviri (temel düzey), temel kod yazımı, belge sınıflandırma. Düşük risk: yaratıcı tasarım, stratejik karar verme, empati gerektiren işler, fiziksel el becerileri, karmaşık problem çözme. Yazılımcılar için: AI yazılımcıyı değil, AI kullanmayan yazılımcıyı değiştirecek. Copilot, ChatGPT gibi araçlar verimliliği artırıyor, boilerplate kodu yazıyor, debugging'de yardım ediyor. Yeni iş alanları: AI engineer, prompt engineer, AI ethics officer, ML ops engineer, AI trainer. Tavsiye: AI araçlarını öğren ve kullan, AI'ın yapamadığı becerileri geliştir (problem çözme, iletişim, yaratıcılık), sürekli öğren. Korkmak değil, adapte olmak önemli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI, iş gücü, otomasyon, Copilot, yeni işler, adaptasyon, sürekli öğrenme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "information theory entropy ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Shannon entropy bilginin miktarını ölçer — belirsizlik ne kadar büyükse bilgi o kadar fazla. H(X) = -Σ p(x) log₂ p(x). Yazı-tura: eşit olasılıksa H=1 bit (maksimum belirsizlik). Hileli para (her zaman yazı): H=0 bit (belirsizlik yok). ML'deki uygulamalar: Cross-entropy loss: classification'da en yaygın loss function — modelin tahmin dağılımı ile gerçek dağılım arasındaki fark. KL Divergence: iki olasılık dağılımı arasındaki fark — VAE'lerde, RL'de policy optimization'da kullanılır. Mutual information: iki değişken arasındaki paylaşılan bilgi — feature selection. Decision tree: information gain ile en iyi split noktasını seç (ID3 algoritması). Compression: entropy veri sıkıştırmanın teorik alt sınırını belirler. Shannon'ın bilgi teorisi modern iletişim ve ML'in temelini oluşturur.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Entropy, Shannon, cross-entropy, KL divergence, mutual information, decision tree.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "distributed cache nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Distributed cache veriye hızlı erişim için bellekte saklama — veritabanı yükünü azaltır. Redis ve Memcached en popüler seçenekler. Redis: veri yapıları (string, hash, list, set, sorted set), persistence, pub/sub, Lua scripting. Memcached: basit key-value, multi-threaded, daha az özellik ama basit kullanım. Cache stratejileri: Cache-Aside (lazy loading — önce cache'e bak, yoksa DB'den çek ve cache'e yaz), Write-Through (her yazma hem cache'e hem DB'ye), Write-Behind (cache'e yaz, async olarak DB'ye yaz), Read-Through (cache otomatik DB'den doldurur). Eviction policies: LRU (en az kullanılan), LFU (en az sıklıkta kullanılan), TTL (süre dolunca sil). Cache invalidation: 'bilgisayar biliminde en zor iki şey: cache invalidation ve isimlendirme.' Thundering herd problemi: aynı anda çok sayıda istek cache miss yaşarsa DB'ye hücum eder — mutex ile önle.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Distributed cache, Redis, Memcached, Cache-Aside, Write-Through, LRU, eviction, invalidation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "lineer cebir deep learning'de neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Deep learning tamamen lineer cebir üzerine kurulu. Neural network'te her katman: y = Wx + b — matris çarpımı. Veri tensor olarak temsil edilir (1D: vektör, 2D: matris, 3D: resim batch'i, 4D: video). Matris çarpımı: forward pass'te input'u ağırlıklarla çarp. Eigenvector/eigenvalue: PCA'nın temeli, covariance matrix'in eigenvector'ları principal component'lar. SVD (Singular Value Decomposition): boyut indirgeme, recommendation systems (Netflix), model compression. Dot product: attention mekanizmasında query-key benzerliği. Norm: vektör büyüklüğü, regularization (L1, L2 norm). Transpose, inverse: gradient hesaplamaları. GPU'lar matris çarpımı için optimize — bu yüzden deep learning GPU'da hızlı. NumPy ve PyTorch tensor operasyonlarını bilmek zorunlu. 3Blue1Brown'ın Essence of Linear Algebra serisi görsel ve sezgisel anlatan en iyi kaynak.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Lineer cebir, matris çarpımı, tensor, SVD, eigenvector, attention, GPU, 3Blue1Brown.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "e-ticaret sistemi nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "E-ticaret system design birçok bileşenden oluşur. Kullanıcı servisi: kayıt, giriş, profil yönetimi. Ürün kataloğu: ürün listeleme, arama (Elasticsearch), filtreleme, kategorizasyon. Sepet servisi: Redis ile hızlı sepet yönetimi, session-based veya user-based. Sipariş servisi: sipariş oluşturma, durum takibi, saga pattern ile distributed transaction (ödeme + stok + kargo). Ödeme servisi: Stripe/iyzico entegrasyonu, PCI-DSS uyumu. Stok yönetimi: race condition önleme (optimistic locking), reserved stock. Arama: Elasticsearch ile full-text search, faceted filtering. CDN: ürün resimleri için. Caching: ürün detayları Redis'te, kategori sayfaları. Notification: sipariş durumu email/SMS. Analytics: kullanıcı davranışı, satış raporları. Trendyol ve Hepsiburada gibi platformlar bu mimarinin büyük ölçekli versiyonları.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "E-ticaret, system design, Elasticsearch, Redis, saga, ödeme, stok, CDN.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Redis ne işe yarar hangi durumlarda kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Redis in-memory key-value store — çok hızlı (microsaniye latency). Kullanım alanları: Caching: veritabanı sorgularını cache'le (sık okunan veriler: kullanıcı profili, ürün bilgisi). Session storage: web uygulamasında kullanıcı oturumu. Rate limiting: API isteklerini sayma (INCR + TTL). Pub/Sub: basit mesajlaşma (bildirimler, chat). Queue: basit iş kuyruğu (Bull, Celery backend). Leaderboard: sorted set ile sıralama (oyun skorları). Geolocation: GEOADD, GEODIST ile coğrafi sorgular. Distributed lock: Redlock algoritması ile dağıtık kilitleme. Veri yapıları: String, Hash, List, Set, Sorted Set, Stream, HyperLogLog. Persistence: RDB (snapshot) ve AOF (append-only file) — veri kaybı riski farklı. Cluster mode: horizontal scaling. Valkey: Redis'in açık kaynak fork'u (lisans değişikliği sonrası). Redis küçük projelerden büyük ölçekli sistemlere her yerde kullanılır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Redis, cache, session, rate limiting, pub/sub, sorted set, distributed lock, Valkey.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "backpropagation matematiksel olarak nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Backpropagation neural network'te gradient'leri verimli hesaplama algoritması — chain rule'un sistematik uygulaması. Forward pass: input → ağırlıklarla çarp → activation function uygula → sonraki katmana geç → loss hesapla. Backward pass: loss'tan geriye doğru her parametrenin gradient'ini hesapla. Chain rule: ∂L/∂w = ∂L/∂a * ∂a/∂z * ∂z/∂w — her katmanın gradient'i sonraki katmanın gradient'i ile local gradient'in çarpımı. Vanishing gradient problemi: sigmoid/tanh activation'larda gradient çok küçülür — ReLU bunu çözer. Exploding gradient: gradient çok büyür — gradient clipping ile önle. Computational graph: her operasyonu düğüm olarak temsil et, otomatik differentiation. PyTorch autograd bunu otomatik yapıyor — loss.backward() diyorsun, tüm gradient'ler hesaplanıyor. Matematik karmaşık görünür ama temel fikir basit: her parametrenin loss'a etkisini ölç ve ters yönde güncelle.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Backpropagation, chain rule, gradient, forward pass, backward pass, vanishing gradient, autograd.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "notification system nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bildirim sistemi birden fazla kanal ve milyonlarca kullanıcıyı desteklemeli. Kanallar: push notification (FCM/APNs), email (SendGrid, SES), SMS (Twilio), in-app notification. Mimari: event producer (sipariş servisi, kullanıcı servisi) → message queue (Kafka/SQS) → notification service → kanal seçimi → delivery. Template engine: bildirim içeriğini şablonlardan oluştur (Handlebars, Jinja). User preferences: kullanıcı hangi kanaldan bildirim alacağını seçsin. Rate limiting: aynı kullanıcıya dakikada 5'ten fazla bildirim gönderme. Retry mekanizması: başarısız bildirimler için exponential backoff. Analytics: delivery rate, open rate, click rate takibi. Priority: acil bildirimler (güvenlik) vs marketing bildirimleri. Batch processing: toplu bildirimler için (kampanya emaili) ayrı pipeline. Deduplication: aynı bildirimi iki kez gönderme.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Notification system, push, email, SMS, Kafka, template, rate limiting, analytics.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "networking yazılımcılar için neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Networking kariyer gelişiminin en güçlü aracı — işlerin çoğu referansla doluyor. Online: LinkedIn profilini aktif tut (paylaşım yap, yorum yaz, connect ol), Twitter/X'te teknik içerik paylaş, GitHub'da aktif ol (issue aç, PR gönder, yıldız ver). Offline: meetup'lara katıl (tech toplulukları, DevFest, kodlama etkinlikleri), konferanslara git, hackathon'lara katıl. Topluluklar: Discord server'ları (framework toplulukları), Slack grupları, Reddit (r/programming, r/cscareerquestions). Değer sun: sadece kart toplama değil — başkalarına yardım et, bilgi paylaş, tanıştır. Mentör bul ve mentör ol. Cold outreach: hayran olduğun bir geliştiriciyle LinkedIn'den bağlantı kur, samimi bir mesaj yaz. Networking uzun vadeli yatırım — bugün tanıştığın kişi yarın seni işe alabilir veya startup ortağın olabilir. Görkem'in hackathon ve topluluk deneyimleri güçlü bir network oluşturuyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Networking, LinkedIn, meetup, hackathon, topluluk, referans, kariyer.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "rubber duck debugging gerçekten işe yarıyor mu?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Rubber duck debugging kodunu bir lastik ördeğe satır satır açıklama pratiği — absürt görünür ama son derece etkili. Neden çalışır: sessizce kod okurken beyin gördüğünü beklediğiyle karıştırır — 'burada listeyi döngüyle gezip her elemanı kontrol ediyorum ve... bir dakika, yanlış değişkeni kontrol ediyorum!' anı yaşarsın. Konuşmak farklı bilişsel süreçleri aktive eder — verbal articulation pasif okumada kullanılmayan beyin bölgelerini devreye sokar. Aynı prensip insanlarla da çalışır — bir meslektaşına sorunu açıklarken, daha o cevap vermeden çözümü bulursun (bu yüzden kıdemli geliştiriciler 'anlatırken çözdüm, teşekkürler' derler). Örd yerine evcil hayvan, bitki veya herhangi bir nesne kullanabilirsin. Temel ilke — varsayımlarını zoraki olarak açıklamak — sağlam bilişsel bilimdir. ayarlicazhocam aslında sana cevap da verebilen gelişmiş bir lastik ördek gibi düşünülebilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Rubber duck debugging, bilişsel bilim, varsayımlar, kod hata ayıklama, ayarlicazhocam.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "SaaS metrikleri neler MRR ARR churn?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SaaS (Software as a Service) iş modelinin temel metrikleri: MRR (Monthly Recurring Revenue): aylık tekrarlayan gelir — SaaS'ın nabzı. ARR (Annual Recurring Revenue): MRR x 12 — yıllık bazda büyüklük. Churn Rate: müşteri kaybı oranı — aylık %5 churn yılda %46 müşteri kaybı demek. Net Revenue Retention: mevcut müşterilerden gelen gelir artışı (%120+ harika). LTV (Lifetime Value): bir müşterinin toplam değeri. CAC (Customer Acquisition Cost): müşteri kazanma maliyeti. LTV/CAC oranı: 3+ olmalı (3 birim harcayıp 3+ birim kazanıyorsun). ARPU (Average Revenue Per User). Gross margin: SaaS'ta %70-80+ olmalı. Payback period: CAC'ı ne kadar sürede geri kazanıyorsun. Bu metrikleri anlamak hem startup kurucusu hem de bir SaaS şirketinde çalışan yazılımcı için önemli — ürün kararlarını etkiler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SaaS, MRR, ARR, churn, LTV, CAC, net revenue retention, ARPU, metrikler.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "MVP nasıl geliştirilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "MVP (Minimum Viable Product) en az özellikle en fazla öğrenmeyi sağlayan ürün versiyonu. Amaç: varsayımlarını test et, mükemmel ürün yapma. Süreç: 1) Core value proposition'ı belirle — ürünün çözdüğü TEK şey ne? 2) Feature listesi yap, ruthlessly prioritize et — must-have vs nice-to-have. 3) En basit teknik çözümü seç — no-code (Bubble, Webflow), veya basit tech stack (Next.js + Supabase). 4) 2-4 hafta içinde ship et. 5) Gerçek kullanıcılardan feedback al. 6) Metrikler: kullanıcılar geri geliyor mu? Ödemeye razı mı? 7) Iterate veya pivot et. Anti-pattern'ler: MVP'ye 6 ay harcamak (MVP değil artık), her feature'ı eklemek, 'daha bir hafta daha' döngüsü, kullanıcıya göstermeden perfectionism. Dropbox'ın MVP'si bir demo videoydu — tek satır kod yazmadan talebi test etti. Landing page + waitlist en basit MVP.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "MVP, minimum viable product, feature prioritization, no-code, iterate, feedback.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Docker best practices neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Docker kullanırken uyulması gereken önemli pratikler. 1) Multi-stage build: final image'ı küçük tut (build dependencies'i production image'a taşıma). 2) .dockerignore: node_modules, .git, .env dosyalarını image'a ekleme. 3) Layer caching: sık değişen katmanları sona koy (önce requirements.txt kopyala, pip install yap, sonra kodu kopyala). 4) Non-root user: container'ı root olarak çalıştırma (güvenlik). 5) Specific tag kullan: FROM python:latest yerine FROM python:3.11-slim. 6) Health check: HEALTHCHECK instruction ekle. 7) One process per container: her container tek iş yapsın. 8) Environment variables: configuration'ı env var ile yap, hardcode etme. 9) Image boyutu: Alpine veya slim base image kullan, gereksiz paket yükleme. 10) docker-compose: geliştirme ortamı için docker-compose.yml kullan. docker scout ile güvenlik taraması yap. Görkem'in projelerini Docker ile paketlemek taşınabilirlik sağlar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Docker, multi-stage build, layer caching, non-root, health check, best practice.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "technical interview'a nasıl hazırlanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Coding interview hazırlığı sistematik olmalı. Veri yapıları: array, linked list, stack, queue, hash table, tree, graph, heap, trie — hepsini implemente edebilmen lazım. Algoritmalar: sorting, searching, DFS/BFS, dynamic programming, greedy, backtracking. LeetCode: Blind 75 veya NeetCode 150 listesi ile başla, her gün 1-2 problem. Pattern odaklı çalış: two pointers, sliding window, binary search, BFS/DFS, DP. Mock interview: Pramp (ücretsiz), interviewing.io, arkadaşla practice. System design: 'Designing Data-Intensive Applications' kitabı, Alex Xu kitapları. Behavioral: STAR method (Situation, Task, Action, Result) ile hikayeler hazırla. Gün planı: sabah 1 LeetCode, akşam system design oku. Zaman çizelgesi: 2-3 ay yoğun hazırlık. Interview günü: soruyu anla, düşün, plan yap, sesli düşün, edge case kontrol et, time/space complexity söyle.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Technical interview, LeetCode, Blind 75, system design, STAR, mock interview.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımcı için müzik önerileri?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kodlama sırasında müzik kişisel bir konu ama araştırmalar ve geliştirici anketleri tutarlı kalıplar ortaya koyuyor. Sözlü müzik genellikle karmaşık problem çözme sırasında işe yaramaz — sözler, kod okuma ve yazma için gereken dil işleme merkezleriyle rekabet eder. İşe yarayan türler: lo-fi hip hop (ünlü 'lofi girl' stream'i geliştiriciler yüzünden var), ambient elektronik (Brian Eno, Tycho), film ve video oyunu müzikleri (dikkat dağıtmadan odaklanmayı artırmak için tasarlanmış), klasik müzik (özellikle Barok — Bach ve Vivaldi), post-rock (Explosions in the Sky). Araçlar: Brain.fm nörobilim destekli AI üretimi odaklanma müziği, Noisli özelleştirilebilir ortam sesleri (yağmur, kahveci, rüzgar). Spotify'da geliştirici topluluğu tarafından hazırlanmış çok sayıda coding playlist var. Debugging sırasında sessizlik bazen daha iyi — maksimum bilişsel bant genişliği gerekir. Dene ve beynine uygun olanı bul.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kodlama müziği, lo-fi, ambient, Brain.fm, odaklanma, flow state, sessizlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "video streaming platform nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "YouTube/Netflix benzeri bir platform tasarımı. Video upload pipeline: kullanıcı videoyu yükler → S3/blob storage'a kaydet → transcoding queue'ya gönder (farklı çözünürlükler: 360p, 720p, 1080p, 4K) → FFmpeg ile dönüştür → CDN'e dağıt. Adaptive Bitrate Streaming (ABR): HLS veya DASH protokolü ile kullanıcının internet hızına göre kalite otomatik ayarlanır. Video player: hls.js veya dash.js. CDN: dünya genelinde edge server'lar, en yakın sunucudan servis. Veritabanı: video metadata PostgreSQL'de, video dosyaları S3'te. Thumbnail generation: video'dan otomatik thumbnail çıkarma. Recommendation: izleme geçmişine göre öneri (collaborative filtering). Live streaming: WebRTC veya RTMP → HLS dönüşüm. Comment system: gerçek zamanlı yorumlar WebSocket ile. Monetization: reklam entegrasyonu, abonelik modeli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Video streaming, transcoding, HLS, DASH, CDN, adaptive bitrate, S3.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "payment system nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Ödeme sistemi güvenlik ve güvenilirlik açısından en kritik bileşen. Temel akış: kullanıcı ödeme bilgilerini girer → ödeme gateway'ine (Stripe, iyzico, PayPal) tokenize edilmiş bilgi gönderilir → gateway bankaya auth isteği yapar → sonuç döner. PCI-DSS uyumu: kart bilgilerini kendi sunucunda SAKLAMA — tokenization kullan. İdempotency: aynı ödeme isteği tekrar gelirse ikinci kez ödeme alma (idempotency key ile). Double-spend prevention: optimistic locking veya distributed lock. Reconciliation: ödeme gateway'i raporu ile kendi kayıtlarını karşılaştır. Refund handling: iade süreci ve politikası. Fraud detection: anormal pattern'ler (çok hızlı ardışık ödemeler, farklı ülkelerden). Webhook'lar: ödeme durumu değişikliklerini async olarak al. Logging: her ödeme adımını logla (debug ve audit için). Currency handling: multi-currency desteği, exchange rate.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Payment system, PCI-DSS, tokenization, idempotency, fraud detection, webhook.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "KVKK ve GDPR ne farkları ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "KVKK (Kişisel Verilerin Korunması Kanunu) Türkiye'nin, GDPR AB'nin veri koruma yasası. Benzerlikler: açık rıza gereksinimi, veri minimizasyonu, erişim/düzeltme/silme hakkı, veri ihlali bildirimi. Farklar: GDPR cezaları çok daha ağır (global cironun %4'üne kadar vs KVKK 1-2 milyon TL), GDPR daha kapsamlı (data portability, DPO zorunluluğu, privacy by design). Yazılımcılar için ne anlama geliyor: kullanıcı verisi toplarken açık rıza al, minimum veri topla, verileri şifrele, silme isteğini işle (right to be forgotten), veri ihlali olursa bildir, privacy policy yaz. Teknik uygulamalar: data anonymization, pseudonymization, encryption at rest/in transit, access control, audit logging. Cookie consent banner zorunlu. GDPR AB vatandaşlarını korur — AB'ye hizmet veriyorsan GDPR'a uymalısın (Türkiye'den bile). Compliance hem yasal zorunluluk hem güven inşa eder.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "KVKK, GDPR, veri koruma, rıza, anonymization, encryption, privacy, compliance.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yüksek lisans yapmalı mıyım CS'de?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bu tamamen kariyer hedefinle ilgili. Yüksek lisans yapman gereken durumlar: akademik kariyer istiyorsan (üniversitede hocalık), araştırma odaklı pozisyonlar (Google Research, DeepMind, OpenAI), bazı ülkelerde vize avantajı, spesifik bir alanda uzmanlaşmak istiyorsan (NLP, computer vision, robotik). Yapmayabileceğin durumlar: pratik yazılım mühendisliği hedefliyorsan (çoğu şirket lisans yeterli), startup kuracaksan (vakit kaybı olabilir), freelance çalışacaksan. Alternatif: önce 2-3 yıl sektörde çalış, sonra yüksek lisans düşün — deneyimle daha bilinçli seçim yaparsın, bazı şirketler masrafını karşılar. Türkiye'de yüksek lisans: ODTÜ, Boğaziçi, İTÜ güçlü programlar. Yurtdışı: araştırma pozisyonlarında funding var (TA/RA). Online yüksek lisans: Georgia Tech OMSCS uygun maliyetli ve itibarlı. Karar verirken: fırsat maliyetini düşün (2 yıl maaştan vazgeçme).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yüksek lisans, akademik kariyer, araştırma, sektör, OMSCS, fırsat maliyeti.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Bayesian inference ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bayesian inference gözlemlere dayanarak inançlarımızı güncelleme yöntemi. Bayes teoremi: P(A|B) = P(B|A) * P(A) / P(B). Prior: önceki inancımız (deneyim, alan bilgisi). Likelihood: veriyi gözlemleme olasılığı. Posterior: güncellenen inanç. Örnek: bir hastanın hastalık testi pozitif çıktı — hastalığın prevalansı (prior), testin doğruluğu (likelihood) birlikte posterior olasılığı belirler. ML'deki uygulamalar: Naive Bayes classifier (spam detection), Bayesian optimization (hyperparameter tuning), Bayesian neural networks (belirsizlik ölçümü), A/B testing (Bayesian A/B testi frequentist'ten daha esnek). Avantajları: az veriyle çalışır (prior bilgi ekler), belirsizlik ölçer, sürekli güncellenir. Dezavantajları: computational expensive (MCMC sampling gerekebilir), prior seçimi subjektif olabilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Bayesian inference, Bayes teoremi, prior, posterior, likelihood, Naive Bayes, A/B testing.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "side project fikirleri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Side project portföyünü güçlendirir ve yeni teknoloji öğretir. Başlangıç: personal blog/portfolio site (Next.js/Astro), todo app (farklı framework'lerle), weather app (API entegrasyonu), URL shortener (system design pratik). Orta seviye: expense tracker (full-stack, auth), chat uygulaması (WebSocket), recipe finder (API + UI), bookmark manager (Chrome extension), habit tracker (mobile app). İleri seviye: AI chatbot (RAG, LLM API), recommendation engine, real-time dashboard (WebSocket + charts), code snippet manager, automated news aggregator. AI/ML odaklı: sentiment analyzer, image classifier, document summarizer, music genre classifier, fake news detector. Kritik: bitir ve deploy et — yarım proje sayılmaz. MVP odaklı ol, perfectionism'den kaçın. README yaz, live demo hazırla. Görkem'in 30+ projesi bunun en iyi örneği — her biri farklı bir teknoloji öğretmiş.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Side project, portfolio, todo, chatbot, AI, MVP, deploy, README.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "üniversitede CS okurken ne yapmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CS bölümünde akademik başarı yeterli değil — ekstra aktiviteler çok önemli. 1) Projeler yap: her sömestr en az 1 side project, GitHub'a koy, README yaz. 2) Staj: 2. sınıftan itibaren yaz stajı bul — deneyim diplomadan değerli. 3) Topluluk: yazılım kulübüne katıl veya kur, etkinlik organize et. 4) Hackathon: en az yılda 2-3 hackathon'a katıl — ekip çalışması, hızlı geliştirme, networking. 5) Open source: popüler projelere katkıda bulun — CV'de çok değerli. 6) Blog yaz: öğrendiklerini paylaş — öğrenmeyi pekiştirir ve görünürlük sağlar. 7) İngilizce: teknik İngilizce zorunlu — dökümantasyon, makale, konferans hep İngilizce. 8) Networking: hocalarla, sektör profesyonelleriyle ilişki kur. 9) Algoritmik düşünme: LeetCode, competitive programming dene. Görkem bunların hepsini yapıyor — 30+ proje, hackathon'lar, çeşitli teknolojiler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Üniversite, CS, proje, staj, hackathon, open source, İngilizce, networking.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "stack overflow kullanma sanatı nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Stack Overflow geliştiricilerin ansiklopedisi ama etkili kullanmak pratik gerektirir. Arama: soruyu sormadan önce kapsamlı ara — sorun neredeyse kesinlikle daha önce sorulmuş. Hata mesajını doğrudan arama terimi olarak kullan, dil veya framework adını ekle. Cevap değerlendirme: oy sayısını kontrol et ama tarihe de bak — 2015'te yüksek oy almış cevap deprecated yöntem kullanıyor olabilir. Birden fazla cevabı oku, sadece kabul edileni değil. Yorumları oku — önemli uyarılar ve düzeltmeler var. Soru sorma: minimal reproducible example formatını kullan — sorunu tekrarlayan en küçük kodu paylaş. Tam hata mesajını ekle, ne denediğini yaz, beklenen vs gerçek davranışı açıkla. Tag'leri doğru seç. Cevap verme: katkıda bulunmak öğrenmenin en iyi yolu. Çözümün neden çalıştığını açıkla, sadece kodu yapıştırma. Reputation sistemi oyunlaştırılmış — üretken bir bağımlılığa dönüşebilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Stack Overflow, arama, soru sorma, cevap değerlendirme, reputation, minimal example.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

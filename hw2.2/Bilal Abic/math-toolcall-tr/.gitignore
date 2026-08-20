@@ -1,0 +1,31 @@
+# --- SIRLAR: asla commit'lenmez ---
+.env
+.env.*
+!.env.example
+*.env
+
+# Token icerdigi tespit edilen orijinal Colab kopyasi (temizlenmis surumu
+# notebooks/ altinda). Bu dosya asla repoya girmemeli.
+Gemma4_*not_defterinin_kopyası.ipynb
+*kopyası.ipynb
+
+# --- Ara / hacimli ciktilar ---
+toolcall-dataset/data/questions.json
+toolcall-dataset/data/train_openai.jsonl
+toolcall-dataset/data/train_gemini.jsonl
+*.json.bak
+
+# --- Python ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- Editor / IDE ---
+.agents/
+.codex/
+
+# NOT: asagidakiler BILEREK paylasilir:
+#   toolcall-dataset/data/train_sharegpt.jsonl   -> egitim verisi
+#   toolcall-dataset/data/dataset.json           -> tam provenance
+#   toolcall-dataset/data/dataset_chat.json      -> sohbet formati
+#   notebooks/gemma4_e4b_math_toolcall_lora.ipynb (token temizlenmis)

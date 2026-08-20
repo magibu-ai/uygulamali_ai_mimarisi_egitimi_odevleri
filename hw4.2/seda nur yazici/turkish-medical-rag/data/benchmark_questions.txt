@@ -1,0 +1,75 @@
+TURKISH MEDICAL RAG - BENCHMARK SORULARI
+Toplam: 30 soru
+Pozitif: 20
+Negatif: 10
+
+============================================================
+POZİTİF SORULAR
+Bu soruların cevaplarının doküman koleksiyonunda bulunması beklenir.
+============================================================
+
+1. Angelman sendromunun belirtileri nelerdir?
+
+2. Bradikardi nedir ve belirtileri nelerdir?
+
+3. Böbrek yetmezliğinin belirtileri nelerdir?
+
+4. Migrene ne iyi gelir?
+
+5. Hamileliğin ilk haftasında mide bulantısı olur mu?
+
+6. Rahim iltihabı kısırlığa neden olabilir mi?
+
+7. Multipl miyelom kemik iliği kanseri midir?
+
+8. Egzama nedir ve en sık görülen belirtileri nelerdir?
+
+9. Atel ne işe yarar ve hangi durumlarda kullanılır?
+
+10. Göz seğirmesi neden olur ve nasıl tedavi edilir?
+
+11. Prematüre bebeklerde kronik akciğer hastalığı görülebilir mi?
+
+12. Kemik erimesi riskini artıran faktörler nelerdir?
+
+13. Balık tüketmenin sağlığa faydaları nelerdir?
+
+14. Emilim bozukluğu nedir ve hangi belirtilere yol açabilir?
+
+15. Alerji nedir ve alerjik belirtiler nelerdir?
+
+16. İç kanamanın belirtileri nelerdir?
+
+17. Antibiyotikler ne işe yarar?
+
+18. Kolera nasıl bulaşır ve belirtileri nelerdir?
+
+19. Depresyonun belirtileri nelerdir?
+
+20. Zahter nedir ve ne amaçla kullanılır?
+
+
+============================================================
+NEGATİF SORULAR
+Bu soruların cevaplarının doküman koleksiyonunda bulunmaması beklenir.
+============================================================
+
+21. Toyota Corolla'nın motor hacmi kaç cc?
+
+22. Python'da bir liste nasıl sıralanır?
+
+23. İstanbul'dan Ankara'ya hızlı tren kaç saat sürer?
+
+24. Fransa'nın başkenti neresidir?
+
+25. Bir üçgenin alanı nasıl hesaplanır?
+
+26. Windows 11'de masaüstü arka planı nasıl değiştirilir?
+
+27. GitHub'da yeni bir repository nasıl oluşturulur?
+
+28. Türk kahvesi kaç dakika pişirilmelidir?
+
+29. Dünya'nın Güneş etrafındaki bir turu kaç gün sürer?
+
+30. SQL'de iki tablo nasıl JOIN edilir?

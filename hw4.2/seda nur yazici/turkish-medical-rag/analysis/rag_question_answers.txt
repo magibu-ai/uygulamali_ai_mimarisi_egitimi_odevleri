@@ -1,0 +1,1049 @@
+TURKISH MEDICAL RAG - QUESTION / ANSWER RESULTS
+================================================================================
+
+Embedding model : Qwen/Qwen3-Embedding-0.6B
+Generator model : Qwen/Qwen3-1.7B
+Threshold       : 0.570000
+
+================================================================================
+SORU 1
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Angelman sendromunun belirtileri nelerdir?
+
+Top-1 similarity:
+0.815785
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Angelman Sendromu
+
+Cevap:
+Angelman sendromunun belirtileri şunlardır:
+
+- Gelişim geriliği (ilk aylarında kendisini belli etmeyen, 6-12 aylık dönemde gelişim geriliği ile fark edilebilir)
+- Entelektüel yetersizlik
+- Konuşma bozukluğu veya konuşma yokluğu
+- Öğrenme güçlüğü
+- Epilepsi (tekrarlayan nöbetler)
+- Denge sorunları (ataksi)
+- Açıktan, sarışın ve renkli gözlü olma
+- Mikrosefali (baş çevresi ölçüsünün yaş ve cinsiyete göre ortalamanın altında olması)
+- Tipik yüz görünümü
+- Şaşılık
+- Skolyoz
+
+Bu belirtiler genellikle erken çocukluk döneminde ortaya çıkar.
+
+Kaynaklar:
+1. Angelman Sendromu
+   https://www.memorial.com.tr/hastaliklar/angelman-sendromu-nedir-belirtileri-nelerdir
+2. Angelman Sendromu
+   https://www.memorial.com.tr/hastaliklar/angelman-sendromu-nedir-belirtileri-nelerdir
+
+Generation süresi: 13.97 sn
+Toplam süre    : 15.85 sn
+
+================================================================================
+SORU 2
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Bradikardi nedir ve belirtileri nelerdir?
+
+Top-1 similarity:
+0.745438
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Bradikardi (yavaş kalp hızı) nedir?
+
+Cevap:
+Bradikardi, kalp atış hızının normalde 60-100 seviyelerinde olması gereken düşük seviyada olmasıdır. Bradikardi belirtileri şunlardır:
+
+- Yorgunluk veya halsizlik
+- Baş dönmesi veya göz kararması
+- Bilinç bulanıklığı, konfüzyon
+- Bayılma (veya bayılacak gibi olma) atakları
+- Nefes darlığı
+- Egzersiz kapasitesinde azalma, egzersizle çabuk yorulma
+- Kalp durması
+
+Bu belirtiler, kalp hızının düşük olduğu durumlarda ortaya çıkabilir. Daha ciddi durumlarda kalp yetmezliği, ani kalp durması veya ölüme yol açabilir.
+
+Kaynaklar:
+1. Bradikardi (yavaş kalp hızı) nedir?
+   https://www.memorial.com.tr/hastaliklar/bradikardi-yavas-kalp-hizi-nedir
+2. Bradikardi (yavaş kalp hızı) nedir?
+   https://www.memorial.com.tr/hastaliklar/bradikardi-yavas-kalp-hizi-nedir
+
+Generation süresi: 12.42 sn
+Toplam süre    : 13.10 sn
+
+================================================================================
+SORU 3
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Böbrek yetmezliğinin belirtileri nelerdir?
+
+Top-1 similarity:
+0.779431
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Böbrek Yetmezliği Nedir? Böbrek Yetmezliği Belirtileri Nelerdir?
+
+Cevap:
+Böbrek yetmezliğinin belirtileri şunlardır:
+
+- İdrar miktarında azalma  
+- Ödem (özellikle ayaklarda)  
+- Aşırı yorgun hissetme  
+- Mide bulantısı ve kusma  
+- İştahsızlık  
+- Kilo kaybı  
+- İdrar görünümünde köpüklü olma gibi değişikler  
+- Kas krampları  
+- Ciltte kuruluk ve kaşıntı  
+- Konkansiyon bozukluğu  
+- Erkeklerde ereksiyon sorunları  
+- Uyku sorunları  
+- Göz çevresinde şişlik  
+- Baş ağrısı  
+- Göğüs ağrısı ve nefes darlığı  
+- Kan basıncında yükselme
+
+Kaynaklar:
+1. Böbrek Yetmezliği Nedir? Böbrek Yetmezliği Belirtileri Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/sicak-havada-az-su-icmek-bobrekleri-yoruyor
+2. Böbrek Yetmezliği Nedir? Böbrek Yetmezliği Belirtileri Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/sicak-havada-az-su-icmek-bobrekleri-yoruyor
+3. Böbrekte Kist Nedir? Böbrek Kisti Belirtileri Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/bobrekte-kist
+
+Generation süresi: 105.01 sn
+Toplam süre    : 105.68 sn
+
+================================================================================
+SORU 4
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Migrene ne iyi gelir?
+
+Top-1 similarity:
+0.605791
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Migrene Ne İyi Gelir? Migren Nasıl Geçer?
+
+Cevap:
+Migreni tetikleyen faktörlerden uzak durmak, doktorun reçete edeceği ilaçlarda rahatlama sağlamak ve sessiz ve karanlık bir ortamda dinlenmek, soğuk ya da sıcak kompres uygulamak, nane ve lavanta yağını koklamak, stresi yönetmek, ıhlamur, papatya ya da zencefil çayı içmek, kafeinsiz kahve içmek, böğürtlen, ahududu, çilek ve yaban mersini, karpuz ve muz tüketmek, brokoli ve ipanaktan yararlanmak, uyku düzenine sahip olmak, düzenli egzersiz yapmak ve migreni takip etmek gibi yöntemler migreni iyi gelenlerdir.
+
+Kaynaklar:
+1. Migrene Ne İyi Gelir? Migren Nasıl Geçer?
+   https://www.memorial.com.tr/saglik-rehberi/migrene-ne-iyi-gelir
+
+Generation süresi: 10.37 sn
+Toplam süre    : 10.94 sn
+
+================================================================================
+SORU 5
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Hamileliğin ilk haftasında mide bulantısı olur mu?
+
+Top-1 similarity:
+0.797895
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Gebelik Dönemindeki Şikâyetleri Önlemek İçin Pratik Öneriler
+
+Cevap:
+Hamileliğin ilk haftasında mide bulantısı olabilir. Dokümanda belirtiler şöyledir: "Hamileliğin ilk haftası hormonal değişimlere bağlı olarak mide bulantısı olabilir."
+
+Kaynaklar:
+1. Gebelik Dönemindeki Şikâyetleri Önlemek İçin Pratik Öneriler
+   https://www.memorial.com.tr/saglik-rehberi/gebelik-donemindeki-sikayetleri-onlemek-icin-pratik-oneriler
+2. Hamilelik Belirtileri Nelerdir? Gebelikte İlk Belirtiler
+   https://www.memorial.com.tr/saglik-rehberi/gebelere-yaz-tatili-onerileri
+3. Hamilelik Belirtileri Nelerdir? Gebelikte İlk Belirtiler
+   https://www.memorial.com.tr/saglik-rehberi/gebelere-yaz-tatili-onerileri
+
+Generation süresi: 75.65 sn
+Toplam süre    : 76.31 sn
+
+================================================================================
+SORU 6
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Rahim iltihabı kısırlığa neden olabilir mi?
+
+Top-1 similarity:
+0.719449
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Rahim İltihabı
+
+Cevap:
+Rahim iltihabı, rahim içini ve tüpleri etkileyebilir ve bu nedenle kısırlığa sebep olabilir. Dokümanda belirtiler arasında "Kısırlık Yapar mı?" sorusu ve yanıt bulunur.
+
+Kaynaklar:
+1. Rahim İltihabı
+   https://www.memorial.com.tr/saglik-rehberi/rahim-iltihabi
+2. Rahim İltihabı
+   https://www.memorial.com.tr/saglik-rehberi/rahim-iltihabi
+
+Generation süresi: 17.43 sn
+Toplam süre    : 18.16 sn
+
+================================================================================
+SORU 7
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Multipl miyelom kemik iliği kanseri midir?
+
+Top-1 similarity:
+0.795130
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Multipl Miyelom nedir? Tedavi yöntemleri nelerdir?
+
+Cevap:
+Multipl miyelom kemik iliği kanseri midir?  
+**Cevap:** Evet, Multipl miyelom kemik iliği kanseri türüdür.
+
+Kaynaklar:
+1. Multipl Miyelom nedir? Tedavi yöntemleri nelerdir?
+   https://www.memorial.com.tr/hastaliklar/multipl-miyelom-nedir
+2. Miyelom Tedavisinde Umut Verici Gelişmeler
+   https://www.memorial.com.tr/saglik-rehberi/miyelom-tedavisinde-umut-verici-gelismeler
+3. Multipl Miyelom nedir? Tedavi yöntemleri nelerdir?
+   https://www.memorial.com.tr/hastaliklar/multipl-miyelom-nedir
+
+Generation süresi: 67.35 sn
+Toplam süre    : 67.98 sn
+
+================================================================================
+SORU 8
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Egzama nedir ve en sık görülen belirtileri nelerdir?
+
+Top-1 similarity:
+0.777804
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Egzama Nedir, Ne İyi Gelir? Egzama Nedenleri ve Belirtileri
+
+Cevap:
+Egzama, ciltte döküntü, cilt kuruluğu ve kaşıntıya neden olan kalıtsal ve kronik inflamatuar cilt rahatsızlığıdır. En sık görülen belirtileri, ciltte kaşıntı, döküntü, kuruluğu, şişliği ve pullanmayı içerir.
+
+Kaynaklar:
+1. Egzama Nedir, Ne İyi Gelir? Egzama Nedenleri ve Belirtileri
+   https://www.memorial.com.tr/hastaliklar/egzama-nedir-egzama-nasil-gecer
+2. Egzama Nedir, Ne İyi Gelir? Egzama Nedenleri ve Belirtileri
+   https://www.memorial.com.tr/hastaliklar/egzama-nedir-egzama-nasil-gecer
+3. Egzama Nedir, Ne İyi Gelir? Egzama Nedenleri ve Belirtileri
+   https://www.memorial.com.tr/hastaliklar/egzama-nedir-egzama-nasil-gecer
+
+Generation süresi: 66.35 sn
+Toplam süre    : 67.05 sn
+
+================================================================================
+SORU 9
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Atel ne işe yarar ve hangi durumlarda kullanılır?
+
+Top-1 similarity:
+0.758296
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Atel Nedir? Atel Neden Kullanılır ve Ne İşe Yarar?
+
+Cevap:
+Atel, kırık, incinme ve burkulmalar gibi yaralanma durumlarında, yaralanan bölgeyi hareketsiz hale getirmek ve ağrıya karşı koruyucu bir destek sağlama amacıyla kullanılır. Atel, özellikle kemik kırıklarında, burkulmalar ve karpal tünel sendromu gibi durumlarda, yaralanan bölgenin hareketsiz kalması ve acısının hafiflemesi için tercih edilir. Ayrıca, yaralanan bölgeye baskı uygulanarak kanamayı durdurmak, kan dolaşımını korumak ve şok belirtilerini önlemek için de kullanılır. Atel, yaralanma sonrası etkilenen bölgenin şişmesi durumunda da tedavi olarak kullanılır.
+
+Kaynaklar:
+1. Atel Nedir? Atel Neden Kullanılır ve Ne İşe Yarar?
+   https://www.memorial.com.tr/saglik-rehberi/atel-nedir
+2. Atel Nedir? Atel Neden Kullanılır ve Ne İşe Yarar?
+   https://www.memorial.com.tr/saglik-rehberi/atel-nedir
+
+Generation süresi: 22.30 sn
+Toplam süre    : 22.97 sn
+
+================================================================================
+SORU 10
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Göz seğirmesi neden olur ve nasıl tedavi edilir?
+
+Top-1 similarity:
+0.833673
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Göz Seğirmesi Neden Olur? Sağ ve Sol Göz Seğirmesi
+
+Cevap:
+Göz seğirmesi, genellikle uykusuzluk, göz yorgunluğu, stres, aşırı kafein tüketimi, elektrolit, vitamin ve mineral eksikliği, göz kuruluğu, sigara kullanımı ve bazı ilaçların kullanımı sonucu ortaya çıkan istemsiz kas kasılmaları ile oluşur. 
+
+Göz seğirmesinin tedavisi, nedenlerin kontrolü ve uygun tedavi uygulanmasıyla yapılır. Hafif seyreden göz seğirmesi için şu yöntemler uygulanabilir:
+
+- Uyku düzeni korunmalı.
+- Kardiyo ve egzersiz yapılmalı.
+- Gerektiğinde güneş gözlüğü kullanılmalı.
+- Kafein ve alkol tüketimi sınırlanmalı.
+- Etkilenen göze ılık kompres uygulanabilir.
+- Göz damlası kullanılabilir.
+- Uzun süreli bilgisayar, televizyon ve telefon ekranına bakılmaması önerilir.
+- B ve B12 vitamini içeren besinler tüketilmeli.
+- Göz seğirmesi sıklıkla arttığında doktora başvurulmalı.
+
+Kronik ve şiddetli göz seğirmesi için miyektomi ameliyatı, göz kapağı kaslarının alınmasıyla tedavi edilebilir.
+
+Kaynaklar:
+1. Göz Seğirmesi Neden Olur? Sağ ve Sol Göz Seğirmesi
+   https://www.memorial.com.tr/saglik-rehberi/goz-segirmesi-nedir-goz-segirmesi-nedenleri
+2. Göz Seğirmesi Neden Olur? Sağ ve Sol Göz Seğirmesi
+   https://www.memorial.com.tr/saglik-rehberi/goz-segirmesi-nedir-goz-segirmesi-nedenleri
+3. Göz Seğirmesi Neden Olur? Sağ ve Sol Göz Seğirmesi
+   https://www.memorial.com.tr/saglik-rehberi/goz-segirmesi-nedir-goz-segirmesi-nedenleri
+
+Generation süresi: 91.82 sn
+Toplam süre    : 92.49 sn
+
+================================================================================
+SORU 11
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Prematüre bebeklerde kronik akciğer hastalığı görülebilir mi?
+
+Top-1 similarity:
+0.726811
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Prematüre Bebeklerin Akciğer Sorunları
+
+Cevap:
+Prematüre bebeklerde kronik akciğer hastalığı (BPD) görülebilir. Dokümanda belirtiler şöyle verilmiştir: "Kronik akciğer hastalığı nedir? Erken doğan her çocukta olur mu?" ve "Kronik akciğer hastalığı gelişme sıklığı <1000 gr doğan bebeklerde % 30, 501- 750 gr doğan bebeklerde ise %52 dolaylarındadır." Bu bilgiler, prematüre bebeklerde kronik akciğer hastalığı olabileceğini göstermektedir.
+
+Kaynaklar:
+1. Prematüre Bebeklerin Akciğer Sorunları
+   https://www.memorial.com.tr/saglik-rehberi/premature-bebeklerin-akciger-sorunlari
+2. Dünyaya Erken Merhaba Diyenler
+   https://www.memorial.com.tr/saglik-rehberi/dunyaya-erken-merhaba-diyenler
+3. Gebelik Zehirlenmesi (Preeklampsi) Nedir? Belirtileri ve Nedenleri
+   https://www.memorial.com.tr/saglik-rehberi/gebelik-zehirlenmesi-preeklampsi
+
+Generation süresi: 83.80 sn
+Toplam süre    : 84.56 sn
+
+================================================================================
+SORU 12
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Kemik erimesi riskini artıran faktörler nelerdir?
+
+Top-1 similarity:
+0.667532
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Kemik Erimesine Karşı Önleminizi Genç Yaşlarda Alın
+
+Cevap:
+Kemik erimesi riskini artıran faktörler şu şekilde listelenmiştir:
+
+1. İleri yaş
+2. Cinsiyet (kadınlarda daha sık görülüyor)
+3. Aile öyküsü
+4. Düşmeler
+5. Uzun süre kortizon içeren ilaç kullanımı
+6. Romatoid artrit
+7. Aşırı alkol tüketimi
+8. Sigara içilemi
+9. Düşük beden kitle indeksi
+10. Yetersiz kalsiyum alımı
+11. D vitamini yetmezliği
+12. Hareketsizlik
+13. Menopoza girdikten sonra
+14. Boyunuz 3 santimetreden fazla kısaldı
+15. Vücut kütle indeksiniz 19 kg/m²'nin altında
+16. Günlük 10 dakikadan az güneş ışığına maruz kalmışsınız
+17. Süt veya süt ürünleri tüketiminiz yetersiz mi?
+
+Kaynaklar:
+1. Kemik Erimesine Karşı Önleminizi Genç Yaşlarda Alın
+   https://www.memorial.com.tr/saglik-rehberi/kemik-erimesine-karsi-onleminizi-genc-yaslarda-alin
+2. Osteoporoza Karşı
+   https://www.memorial.com.tr/saglik-rehberi/osteoporoza-karsi
+
+Generation süresi: 28.52 sn
+Toplam süre    : 29.23 sn
+
+================================================================================
+SORU 13
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Balık tüketmenin sağlığa faydaları nelerdir?
+
+Top-1 similarity:
+0.748355
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Balık yemenin faydaları nelerdir?
+
+Cevap:
+Balık tüketmenin sağlığa faydaları şunlardır:
+
+1. **Bağışıklık sistemini korur**: Balıkta bulunan omega-3 yağ asitleri, bağışıklık sistemini güçlendirir ve iltihaplanmayı önler.
+
+2. **Zeka gelişimini destekler**: Balıkta bulunan omega-3 yağ asitleri, özellikle çocuklar için beyin gelişimini ve sinir sisteminin gelişimini hızlandırır.
+
+3. **Kemik ve kas sağlığını korur**: Balıkta bulunan protein ve besin değerleri, kemiklerin güçlü ve sağlıklı kalmasını sağlar.
+
+4. **Depresyonun zararlı etkilerini yok eder**: Balık tüketimi, depresyonun gelişimini yavaşlatır.
+
+5. **Selenyum ve D vitamini açısından zengin**: Balık, selenyum ve D vitamini açısından zengin bir besin kaynağıdır. Selenyum bağışıklık sistemini güçlendirirken, D vitamini kemiklerin ve dişlerin sağlıklı kalmasına yardımcı olur.
+
+6. **Protein kaynağıdır**: Balık, yüksek protein içeren besin kaynağıdır. Protein, büyüme, bağışıklık ve vücut fonksiyonlarının korunması için önemlidir.
+
+7. **Omega-3 yağ asitleri sağlar**: Balıkta bulunan omega-3 yağ asitleri, görme, kavrama ve motor becerilerini geliştirir ve beyin gelişimini destekler.
+
+8. **Ç
+
+Kaynaklar:
+1. Balık yemenin faydaları nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/balik-yemenin-faydalari-nelerdir
+2. Balık yemenin faydaları nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/balik-yemenin-faydalari-nelerdir
+3. Balık yemenin faydaları nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/balik-yemenin-faydalari-nelerdir
+
+Generation süresi: 73.13 sn
+Toplam süre    : 73.82 sn
+
+================================================================================
+SORU 14
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Emilim bozukluğu nedir ve hangi belirtilere yol açabilir?
+
+Top-1 similarity:
+0.782141
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Emilim Bozukluğu Nedir? Belirtileri Nelerdir?
+
+Cevap:
+Emilim bozukluğu, besin maddelerinin vücutta etkili bir şekilde emilmesini engelleyen bir sindirim bozukluğudur. Bu bozukluk, ince bağırsakta besinlerin tam olarak sindirilememesi veya emilmesi sonucu ortaya çıkar. Emilim bozukluğu, karın ağrısı, karın bölgesinde şişkinlik ve aşırı gaz oluşumu, mide bulantısı ve kusma, ishal, yağlı dışkılama, aşırı kilo kaybı, kas erimesi, sinirlilik, ilgisizlik ve yorgunluk gibi belirtilere yol açabilir.
+
+Kaynaklar:
+1. Emilim Bozukluğu Nedir? Belirtileri Nelerdir?
+   https://www.memorial.com.tr/hastaliklar/emilim-bozuklugu-nedir-belirtileri-nelerdir
+2. Emilim Bozukluğu Nedir? Belirtileri Nelerdir?
+   https://www.memorial.com.tr/hastaliklar/emilim-bozuklugu-nedir-belirtileri-nelerdir
+
+Generation süresi: 25.28 sn
+Toplam süre    : 26.05 sn
+
+================================================================================
+SORU 15
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Alerji nedir ve alerjik belirtiler nelerdir?
+
+Top-1 similarity:
+0.673944
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Alerji
+
+Cevap:
+Alerji, vücudun gösterdiği normal tepkinin aşırı olması şeklinde tanımlanabilir. Alerjik belirtiler, tutulan hedef organa bağlı olarak gelişir ve şu şekilde listelenir:  
+- Burun tıkanıklığı  
+- Sabahları hapşırık krizleri  
+- Burun akıntısı  
+- Gözlerde yanma – batma  
+- Geniz akıntısı  
+- Öksürük  
+- Nefes darlığı  
+- Hırıltı  
+- Kaşıntı  
+- Döküntü  
+- Dudakta – dilde şişme  
+- Tekrarlayan orta kulak iltihapları  
+- Sinüzit.
+
+Kaynaklar:
+1. Alerji
+   https://www.memorial.com.tr/saglik-rehberi/alerji
+2. Alerjik Hastalıklar İklim Değişikliği İle Yaygınlaşıyor
+   https://www.memorial.com.tr/saglik-rehberi/alerjik-hastaliklar-iklim-degisikligi-ile-yayginlasiyor
+3. Çocuğunuzu Bahar Alerjilerinden Uzak Tutun
+   https://www.memorial.com.tr/saglik-rehberi/cocugunuzu-bahar-alerjilerinden-uzak-tutun
+
+Generation süresi: 81.47 sn
+Toplam süre    : 82.16 sn
+
+================================================================================
+SORU 16
+================================================================================
+
+Tip:
+positive
+
+Soru:
+İç kanamanın belirtileri nelerdir?
+
+Top-1 similarity:
+0.825886
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+İç Kanama Nedir? İç Kanama Belirtileri Nelerdir?
+
+Cevap:
+İç kanamanın belirtileri şunlardır:
+
+- İç kanamanın olduğu yerde ağrı
+- Kanama bölgesinde morarma
+- Göğüs boşluğu, karın boşluğu ve kaslarda ağrı
+- Kanamanın yansıması olarak kusmukta, dışkıda, idrarda veya vajinada kanama
+- Nefes darlığı
+- Kan kaybına bağlı ciltte solgunluk
+- Baş dönmesi
+- Görme sorunları ya da çift görme
+- Bilinç kaybı
+- Halsizlik ve yorgunluk
+- Düşük kan basıncı
+- Hafıza kaybı
+- Mide bulantısı ve karın ağrısı
+- Kan kusmak
+- Göz, burun ya da kulaktan kan sızması
+- Organ yetmezliği
+- Nöbet ve koma
+
+Kaynaklar:
+1. İç Kanama Nedir? İç Kanama Belirtileri Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/ic-kanama-belirtileri
+2. İç Kanama Nedir? İç Kanama Belirtileri Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/ic-kanama-belirtileri
+3. İç Kanama Nedir? İç Kanama Belirtileri Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/ic-kanama-belirtileri
+
+Generation süresi: 62.77 sn
+Toplam süre    : 63.38 sn
+
+================================================================================
+SORU 17
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Antibiyotikler ne işe yarar?
+
+Top-1 similarity:
+0.795125
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Antibiyotik Nedir? Antibiyotik Ne İşe Yarar?
+
+Cevap:
+Antibiyotikler, bakterilerin çoğalmasını durdurmak veya öldürmek için tasarlanmış antimikrobiyal ilaçlardır. Bu ilaçlar, özellikle bakterilerin neden olduğu enfeksiyonlarda kullanılır. Antibiyotikler, enfeksiyonun belirtilerini azaltır, iyileşme sürecini hızlandırır ve enfeksiyonun başkalarına yayılmasını önler. Antibiyotikler, sadece bakterilerin neden olduğu enfeksiyonlarda etkilidir. Virüslerin neden olduğu enfeksiyonlar için yararlı değildir.
+
+Kaynaklar:
+1. Antibiyotik Nedir? Antibiyotik Ne İşe Yarar?
+   https://www.memorial.com.tr/saglik-rehberi/antibiyotikler-doktor-kontrolunde-kullanilmali
+2. Antibiyotik Nedir? Antibiyotik Ne İşe Yarar?
+   https://www.memorial.com.tr/saglik-rehberi/antibiyotik-nedir
+3. Antibiyotik Nedir? Antibiyotik Ne İşe Yarar?
+   https://www.memorial.com.tr/saglik-rehberi/antibiyotikler-doktor-kontrolunde-kullanilmali
+
+Generation süresi: 71.92 sn
+Toplam süre    : 72.64 sn
+
+================================================================================
+SORU 18
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Kolera nasıl bulaşır ve belirtileri nelerdir?
+
+Top-1 similarity:
+0.832802
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Kolera Nedir? Kolera Belirtileri Nelerdir, Nasıl Bulaşır?
+
+Cevap:
+Kolera, vibrio cholerae bakterisiyle kontamine olmuş yiyecek veya suyun tüketilmesiyle oluşur. Kolera bulaşması, dışkı yoluyla gerçekleşir. Enfekte olan kişinin dışkısından bulaşan yiyecek veya su, bulaşmayı sağlar.
+
+Kolera belirtileri şunlardır:
+- Bol sulu ishal
+- Kusma
+- Karın ve bacaklarda kramp
+- Vücutta aşırı sıvı kaybı
+- Şok
+- Ağız kuruluğu
+- İdrar çıkışında azalma
+- Huzursuzluk
+- Sinirlilik
+- Kan basıncının düşmesi
+- Cilt mukozalarında kuruma
+- Cildin elastikiyetini kaybetmesi
+- Kalp atışının hızlanması
+- Gözlerin çukurlaşması
+
+Kaynaklar:
+1. Kolera Nedir? Kolera Belirtileri Nelerdir, Nasıl Bulaşır?
+   https://www.memorial.com.tr/hastaliklar/kolera-nedir-nasil-bulasir
+2. Kolera Nedir? Kolera Belirtileri Nelerdir, Nasıl Bulaşır?
+   https://www.memorial.com.tr/hastaliklar/kolera-nedir-nasil-bulasir
+3. Kolit ve Ülseratif Kolit Nedir? Nedenleri, Belirtileri ve Tedavisi
+   https://www.memorial.com.tr/hastaliklar/kolit-ve-ulseratif-kolit-nedir
+
+Generation süresi: 73.53 sn
+Toplam süre    : 74.21 sn
+
+================================================================================
+SORU 19
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Depresyonun belirtileri nelerdir?
+
+Top-1 similarity:
+0.837610
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Depresyon Nedir? Depresyon Belirtileri Nelerdir?
+
+Cevap:
+Depresyonun belirtileri şunlardır:
+
+- Sürekli üzgün, mutsuz ve umutsuz hissetme  
+- Keder ve umutsuzluk içinde olma  
+- Depresif ruh hali  
+- İlgi duyulan ve zevk alınan aktivitelere karşı ilgi kaybı  
+- Uyku sorunları (uykuya dalamama, sık uyanma)  
+- İştahta artış ya da azalma  
+- Her şeyi ağırdan alarak yapmaya başlama  
+- Konsantrasyon eksikliği  
+- Başkalarına karşı sinirli olma ve hoşgörüsüz davranma  
+- Kendini değersiz hissetme  
+- Cinsel istekte azalma  
+- Enerji düşüklüğü  
+- İntihar gibi kendisine zarar verme düşüncelerine sahip olma  
+- Rutin olarak yapılan işleri yerine getirmeme
+
+Kaynaklar:
+1. Depresyon Nedir? Depresyon Belirtileri Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/depresyon-nedir
+2. Depresyon Nedir? Depresyon Belirtileri Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/depresyon-nedir
+3. Kronik yorgunluk sendromu nedir? Belirtileri ve tedavisi nedir?
+   https://www.memorial.com.tr/hastaliklar/kronik-yorgunluk-sendromu-nedir-belirtileri-ve-tedavisi-nedir
+
+Generation süresi: 96.87 sn
+Toplam süre    : 97.51 sn
+
+================================================================================
+SORU 20
+================================================================================
+
+Tip:
+positive
+
+Soru:
+Zahter nedir ve ne amaçla kullanılır?
+
+Top-1 similarity:
+0.662780
+
+Karar:
+ACCEPT
+
+Top-1 başlık:
+Zahter Nedir? Zahter Faydaları Nelerdir?
+
+Cevap:
+Zahter, ballıbabagiller (Lamiaceae) familyasının Tymbra spicata türüne ait, Filistin ve Cezayir başta olmak üzere orta doğuda yetiştirilen bir bitkidir. Kuru haldeki zahter, gıda aroması, soslar, likör, parfümeri sektöründe hammadde üretimi için kullanılır. Zahter, karvakrol, timol, p-simen, y-terpinen gibi uçucu bileşenlerden oluşur ve ana uçucu bileşeni karvakroldur. Zahter, mikroorganizmaların çoğalması, vücutta enfekte olması ve hastalık yapıcı etkilerini azaltmak için antioksidan ve antibakteriyel özellikleri vardır. Ayrıca, sindirim sistemi problemlerinde destekleyici olur, mide iltihaplarını azaltır, gastrit ve ülser gibi ciddi problemlerin aşılmasına yardımcı olur. Zahter, saç dökülmesini önlemek için saç foliküllerini besler.
+
+Kaynaklar:
+1. Zahter Nedir? Zahter Faydaları Nelerdir?
+   https://www.memorial.com.tr/saglik-rehberi/zahterin-faydalari-nelerdir
+
+Generation süresi: 13.87 sn
+Toplam süre    : 14.55 sn
+
+================================================================================
+SORU 21
+================================================================================
+
+Tip:
+negative
+
+Soru:
+Toyota Corolla'nın motor hacmi kaç cc?
+
+Top-1 similarity:
+0.331378
+
+Karar:
+REJECT
+
+Top-1 başlık:
+CTO (Kronik Total Oklüzyon) tedavisi nasıl yapılır?
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.52 sn
+
+================================================================================
+SORU 22
+================================================================================
+
+Tip:
+negative
+
+Soru:
+Python'da bir liste nasıl sıralanır?
+
+Top-1 similarity:
+0.325839
+
+Karar:
+REJECT
+
+Top-1 başlık:
+Kan Grupları Nelerdir? Kan Grupları Neyi İfade Eder?
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.52 sn
+
+================================================================================
+SORU 23
+================================================================================
+
+Tip:
+negative
+
+Soru:
+İstanbul'dan Ankara'ya hızlı tren kaç saat sürer?
+
+Top-1 similarity:
+0.376210
+
+Karar:
+REJECT
+
+Top-1 başlık:
+İç Kanama Nedir? İç Kanama Belirtileri Nelerdir?
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.57 sn
+
+================================================================================
+SORU 24
+================================================================================
+
+Tip:
+negative
+
+Soru:
+Fransa'nın başkenti neresidir?
+
+Top-1 similarity:
+0.261492
+
+Karar:
+REJECT
+
+Top-1 başlık:
+EGFR (GFR) Nedir? EGFR Düşüklüğü ve Yüksekliği Ne Anlama Gelir?
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.54 sn
+
+================================================================================
+SORU 25
+================================================================================
+
+Tip:
+negative
+
+Soru:
+Bir üçgenin alanı nasıl hesaplanır?
+
+Top-1 similarity:
+0.335770
+
+Karar:
+REJECT
+
+Top-1 başlık:
+Hamilelik Belirtileri Nelerdir? Gebelikte İlk Belirtiler
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.53 sn
+
+================================================================================
+SORU 26
+================================================================================
+
+Tip:
+negative
+
+Soru:
+Windows 11'de masaüstü arka planı nasıl değiştirilir?
+
+Top-1 similarity:
+0.303271
+
+Karar:
+REJECT
+
+Top-1 başlık:
+MS hastalarının dikkat etmesi gereken 6 altın kural
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.60 sn
+
+================================================================================
+SORU 27
+================================================================================
+
+Tip:
+negative
+
+Soru:
+GitHub'da yeni bir repository nasıl oluşturulur?
+
+Top-1 similarity:
+0.305003
+
+Karar:
+REJECT
+
+Top-1 başlık:
+Kan Grupları Nelerdir? Kan Grupları Neyi İfade Eder?
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.51 sn
+
+================================================================================
+SORU 28
+================================================================================
+
+Tip:
+negative
+
+Soru:
+Türk kahvesi kaç dakika pişirilmelidir?
+
+Top-1 similarity:
+0.533664
+
+Karar:
+REJECT
+
+Top-1 başlık:
+Doğru Koşullarda Hazırlanmayan Turşu Zehirleyebilir
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.60 sn
+
+================================================================================
+SORU 29
+================================================================================
+
+Tip:
+negative
+
+Soru:
+Dünya'nın Güneş etrafındaki bir turu kaç gün sürer?
+
+Top-1 similarity:
+0.431285
+
+Karar:
+REJECT
+
+Top-1 başlık:
+Göz altı Işık Dolgusu Nedir? Göz altı Işık Dolgusu Nasıl Yapılır​?
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.63 sn
+
+================================================================================
+SORU 30
+================================================================================
+
+Tip:
+negative
+
+Soru:
+SQL'de iki tablo nasıl JOIN edilir?
+
+Top-1 similarity:
+0.273442
+
+Karar:
+REJECT
+
+Top-1 başlık:
+Diplopi (Çift Görme) Nedir? Diplopi Neden Olur?
+
+Cevap:
+Bu sorunun cevabı dokümanlarımda yer almamaktadır
+
+Generation süresi: 0.00 sn
+Toplam süre    : 0.54 sn
+

@@ -1,0 +1,2 @@
+requests>=2.31      # every HTTP call: Ollama, the tool APIs, and the MCP server
+python-dotenv>=1.0  # reads .env so keys never live in the source

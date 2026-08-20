@@ -1,0 +1,323 @@
+{
+  "per_question": [
+    {
+      "id": "p01",
+      "label": "positive",
+      "question": "Zatürreye en yaygın olarak hangi bakteri neden olur?",
+      "top_sim": 0.7268444299697876,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/zaturre-pnomoni-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/zaturre-pnomoni-nedir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p02",
+      "label": "positive",
+      "question": "Yetişkinlerin günlük alması gereken iyot miktarı kaç mikrogramdır?",
+      "top_sim": 0.6594025492668152,
+      "expected_url": "https://www.acibadem.com.tr/hayat/gunde-ne-kadar-iyot-almaliyiz/",
+      "top1_url": "https://www.acibadem.com.tr/hayat/gunde-ne-kadar-iyot-almaliyiz/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p03",
+      "label": "positive",
+      "question": "Vücuttaki fosforun yaklaşık yüzde kaçı kemik ve dişlerde depolanır?",
+      "top_sim": 0.763408899307251,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/fosfor-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/fosfor-nedir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p04",
+      "label": "positive",
+      "question": "Menenjit vücutta hangi zarların iltihaplanmasıdır?",
+      "top_sim": 0.6693814396858215,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/menenjit-asisi-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/menenjit/",
+      "hit_in_topk": true,
+      "hit_at_1": false
+    },
+    {
+      "id": "p05",
+      "label": "positive",
+      "question": "Zika virüsü insanlara nasıl bulaşır?",
+      "top_sim": 0.8614048361778259,
+      "expected_url": "https://www.acibadem.com.tr/hayat/zika-virusu-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/hayat/zika-virusu-nedir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p06",
+      "label": "positive",
+      "question": "Zika virüsü ilk kez hangi yıl maymunlarda saptanmıştır?",
+      "top_sim": 0.747166633605957,
+      "expected_url": "https://www.acibadem.com.tr/hayat/zika-virusu-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/hayat/zika-virusu-nedir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p07",
+      "label": "positive",
+      "question": "Vebaya neden olan bakterinin adı nedir?",
+      "top_sim": 0.7655084133148193,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/veba/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/veba/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p08",
+      "label": "positive",
+      "question": "En yaygın görülen veba türü hangisidir?",
+      "top_sim": 0.4011499285697937,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/veba/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/veba/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p09",
+      "label": "positive",
+      "question": "Böbrek kanseri için en önemli risk faktörü nedir?",
+      "top_sim": 0.6479387283325195,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/bobrek-kanseri/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/bobrek-kanseri/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p10",
+      "label": "positive",
+      "question": "Menopozun kesin tanısı nasıl konur?",
+      "top_sim": 0.7970172762870789,
+      "expected_url": "https://www.acibadem.com.tr/tibbi-birim/menopoz-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/tibbi-birim/menopoz-nedir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p11",
+      "label": "positive",
+      "question": "Vücutta bulunan iki temel kıl tipi nedir?",
+      "top_sim": 0.36100995540618896,
+      "expected_url": "https://www.acibadem.com.tr/hayat/hirsutizm-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/tourette-sendromu/",
+      "hit_in_topk": true,
+      "hit_at_1": false
+    },
+    {
+      "id": "p12",
+      "label": "positive",
+      "question": "Balon atım testinde 40 cc hava ile şişirilmiş balon normalde kaç dakika içinde çıkarılabilmelidir?",
+      "top_sim": 0.7128524780273438,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/balon-atim-testi-ve-tedavisi/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/balon-atim-testi-ve-tedavisi/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p13",
+      "label": "positive",
+      "question": "Ewing sarkomu hangi tür bir kanserdir?",
+      "top_sim": 0.8508356213569641,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/ewing-sarkomu-nedir-belirtileri-tedavisi/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/ewing-sarkomu-nedir-belirtileri-tedavisi/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p14",
+      "label": "positive",
+      "question": "Spastisite tedavisinde hangi toksin enjeksiyonu kullanılır?",
+      "top_sim": 0.6474170088768005,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/spastisite-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/spastisite-nedir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p15",
+      "label": "positive",
+      "question": "Piromani nasıl bir bozukluktur?",
+      "top_sim": 0.7072212100028992,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/piromani-nedir-belirtileri-tedavisi/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/piromani-nedir-belirtileri-tedavisi/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p16",
+      "label": "positive",
+      "question": "Frambuazın diğer adı nedir?",
+      "top_sim": 0.6139499545097351,
+      "expected_url": "https://www.acibadem.com.tr/hayat/frambuaz-faydalari-nelerdir/",
+      "top1_url": "https://www.acibadem.com.tr/hayat/frambuaz-faydalari-nelerdir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p17",
+      "label": "positive",
+      "question": "Jinekomasti nedir?",
+      "top_sim": 0.6541461944580078,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/jinekomasti/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/jinekomasti/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p18",
+      "label": "positive",
+      "question": "İmmünoglobulinler ne tür moleküllerdir?",
+      "top_sim": 0.6516177654266357,
+      "expected_url": "https://www.acibadem.com.tr/hayat/ig-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/hayat/ig-nedir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p19",
+      "label": "positive",
+      "question": "Sosyopatlık hangi kişilik bozukluğu ile karakterizedir?",
+      "top_sim": 0.7854728102684021,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/sosyopat-ne-demek/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/sosyopat-ne-demek/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "p20",
+      "label": "positive",
+      "question": "Hematemez ne anlama gelir?",
+      "top_sim": 0.5339392423629761,
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/hematemez-kanli-kusma-nedir/",
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/hematemez-kanli-kusma-nedir/",
+      "hit_in_topk": true,
+      "hit_at_1": true
+    },
+    {
+      "id": "n01",
+      "label": "negative",
+      "question": "Bitcoin'in bugünkü fiyatı kaç dolardır?",
+      "top_sim": 0.17986571788787842,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/b12-vitamini-nedir-b12-eksikligi-belirtileri-ve-nedenleri/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n02",
+      "label": "negative",
+      "question": "Fenerbahçe Spor Kulübü hangi yıl kurulmuştur?",
+      "top_sim": 0.17748093605041504,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/hayat/spor-yaralanmalari-ve-cesitleri/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n03",
+      "label": "negative",
+      "question": "Python programlama dilinde bir döngü nasıl yazılır?",
+      "top_sim": 0.16722816228866577,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/tourette-sendromu/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n04",
+      "label": "negative",
+      "question": "Ay'a ilk ayak basan astronotun adı nedir?",
+      "top_sim": 0.35962218046188354,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/hayat/bebek-ayakkabisi-secerken-bunlara-dikkat/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n05",
+      "label": "negative",
+      "question": "Elektrikli otomobiller evde nasıl şarj edilir?",
+      "top_sim": 0.2561616897583008,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/hayat/kis-aylarinda-oda-sicakligi-kac-derece-olmalidir/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n06",
+      "label": "negative",
+      "question": "Everest Dağı'nın yüksekliği kaç metredir?",
+      "top_sim": 0.20113182067871094,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/hayat/kadinlari-yoneten-3-hormon-ostrojen-testosteron-ve-progesteron/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n07",
+      "label": "negative",
+      "question": "Kuantum bilgisayarlar nasıl çalışır?",
+      "top_sim": 0.143923819065094,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/akciger-grafisi-nedir/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n08",
+      "label": "negative",
+      "question": "Kuduz hastalığı nasıl bulaşır ve nasıl tedavi edilir?",
+      "top_sim": 0.4535064697265625,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/tifo-nedir-belirtileri-tedavisi/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n09",
+      "label": "negative",
+      "question": "Vitiligo hastalığının nedenleri nelerdir?",
+      "top_sim": 0.3726871609687805,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/ilgi-alani/lezyon-nasil-tedavi-edilir/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    },
+    {
+      "id": "n10",
+      "label": "negative",
+      "question": "Skolyoz tedavisinde hangi yöntemler kullanılır?",
+      "top_sim": 0.37703967094421387,
+      "expected_url": null,
+      "top1_url": "https://www.acibadem.com.tr/hayat/goz-kasintisina-ne-iyi-gelir/",
+      "hit_in_topk": null,
+      "hit_at_1": null
+    }
+  ],
+  "distribution": {
+    "positive": {
+      "min": 0.36100995540618896,
+      "mean": 0.6778842687606812,
+      "max": 0.8614048361778259
+    },
+    "negative": {
+      "min": 0.143923819065094,
+      "mean": 0.26886476278305055,
+      "max": 0.4535064697265625
+    },
+    "separation_gap": -0.09249651432037354
+  },
+  "retrieval_accuracy": {
+    "top1": 0.9,
+    "top5": 1.0
+  },
+  "recommended_threshold": 0.49,
+  "recommendation_reason": "midpoint of max-accuracy / max-precision plateau (robust, medical: avoid hallucination)"
+}

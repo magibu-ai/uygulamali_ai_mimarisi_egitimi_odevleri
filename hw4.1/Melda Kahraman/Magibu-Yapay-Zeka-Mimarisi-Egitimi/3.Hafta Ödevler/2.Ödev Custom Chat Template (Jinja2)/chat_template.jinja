@@ -1,0 +1,91 @@
+{{ bos_token }}
+
+{# --- 1. SİSTEM MESAJI VE TOOL TANIMLAMALARI --- #}
+{%- if messages[0]['role'] == 'system' or messages[0]['role'] == 'developer' -%}
+    {%- set system_message = messages[0]['content'] | trim -%}
+    {%- set loop_messages = messages[1:] -%}
+{%- else -%}
+    {%- set system_message = "You are a helpful, respectful, and honest assistant with access to tools and functions." -%}
+    {%- set loop_messages = messages -%}
+{%- endif -%}
+
+{{ '<|im_start|>system\n' + system_message }}
+{%- if tools is defined and tools -%}
+    {{ '\n\n# Available Tools:\nYou have access to the following tools/functions. When needed, respond with one or multiple JSON tool call objects inside <tool_call> tags:\n' }}
+    {{ tools | tojson(indent=2) }}
+    {{ '\n\nTool Call Format:\n<tool_call>\n{"name": "func_name", "arguments": {"arg1": "value"}}\n</tool_call>' }}
+{%- endif -%}
+{{ '<|im_end|>\n' }}
+
+{# --- 2. SOHBET GEÇMİŞİ DÖNGÜSÜ --- #}
+{%- for message in loop_messages -%}
+    {# Kullanıcı Mesajları #}
+    {%- if message['role'] == 'user' -%}
+        {{ '<|im_start|>user\n' }}
+        {%- if message.content is string -%}
+            {{ message.content | trim }}
+        {%- else -%}
+            {%- for item in message.content -%}
+                {%- if item.type == 'text' -%}
+                    {{ item.text | trim }}
+                {%- endif -%}
+            {%- endfor -%}
+        {%- endif -%}
+        {{ '<|im_end|>\n' }}
+
+    {# Asistan (Model) Mesajları #}
+    {%- elif message['role'] == 'assistant' -%}
+        {{ '<|im_start|>assistant\n' }}
+        
+        {# Düşünme (Thinking/Reasoning) Bloğu Desteği #}
+        {%- if message.thinking is defined and message.thinking -%}
+            {{ '<think>\n' + message.thinking | trim + '\n</think>\n' }}
+        {%- endif -%}
+
+        {# Asistanın Metin Yanıtı #}
+        {%- if message.content -%}
+            {%- if message.content is string -%}
+                {{ message.content | trim }}
+            {%- else -%}
+                {%- for item in message.content -%}
+                    {%- if item.type == 'text' -%}
+                        {{ item.text | trim }}
+                    {%- endif -%}
+                {%- endfor -%}
+            {%- endif -%}
+        {%- endif -%}
+
+        {# Asistanın Yaptığı Tool Çağrıları #}
+        {%- if message.tool_calls is defined and message.tool_calls -%}
+            {%- for tool_call in message.tool_calls -%}
+                {{ '\n<tool_call>\n' }}
+                {%- if tool_call.function is defined -%}
+                    {{ tool_call.function | tojson }}
+                {%- else -%}
+                    {{ tool_call | tojson }}
+                {%- endif -%}
+                {{ '\n</tool_call>' }}
+            {%- endfor -%}
+        {%- endif -%}
+        {{ '<|im_end|>\n' }}
+
+    {# Tool/Fonksiyon Yanıtı #}
+    {%- elif message['role'] == 'tool' or message['role'] == 'function' -%}
+        {{ '<|im_start|>tool\n' }}
+        {%- set tool_response = {} -%}
+        {%- if message.tool_call_id is defined -%}
+            {%- set _ = tool_response.update({'tool_call_id': message.tool_call_id}) -%}
+        {%- endif -%}
+        {%- if message.name is defined -%}
+            {%- set _ = tool_response.update({'name': message.name}) -%}
+        {%- endif -%}
+        {%- set _ = tool_response.update({'content': message.content}) -%}
+        {{ tool_response | tojson }}
+        {{ '<|im_end|>\n' }}
+    {%- endif -%}
+{%- endfor -%}
+
+{# --- 3. GENERATION PROMPT --- #}
+{%- if add_generation_prompt -%}
+    {{ '<|im_start|>assistant\n' }}
+{%- endif -%}

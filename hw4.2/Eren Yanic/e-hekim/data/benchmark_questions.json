@@ -1,0 +1,202 @@
+{
+  "description": "e-hekim değerlendirme kümesi: 20 pozitif (yanıtı seçilen makalelerde bulunan) ve 10 negatif (yanıtı koleksiyonda kesinlikle bulunmayan) soru. Pozitif sorular, indeksteki gerçek parçalar okunarak yazılmış ve kaynak makale URL'si ile eşleştirilmiştir.",
+  "corpus": {
+    "dataset": "umutertugrul/turkish-hospital-medical-articles",
+    "articles": 1000,
+    "selection_seed": 42
+  },
+  "positive": [
+    {
+      "id": "P01",
+      "topic": "Osteoporoz",
+      "question": "Osteoporozda kemik yıkımı hangi yaşlardan itibaren başlar?",
+      "expected_answer": "30'lu yaşlardan itibaren kemik yıkımı başlar.",
+      "expected_url": "https://www.florence.com.tr/guncel-saglik/kemik-erimesi"
+    },
+    {
+      "id": "P02",
+      "topic": "Demir eksikliği anemisi",
+      "question": "Demir eksikliği anemisinin belirtileri nelerdir?",
+      "expected_answer": "Cilt solgunluğu, güçsüzlük, yorgunluk, konsantrasyon bozukluğu, baş ağrısı, el ve ayaklarda uyuşma, tırnak kırılması, saç dökülmesi.",
+      "expected_url": "https://medipol.com.tr/bilgi-kosesi/bunlari-biliyor-musunuz/demir-eksikligi-anemisi-nedir-tedavi-yontemleri-nelerdir"
+    },
+    {
+      "id": "P03",
+      "topic": "Alerjik rinit",
+      "question": "Alerjik rinit hangi belirtilerle ortaya çıkar?",
+      "expected_answer": "Hapşırma, burun akıntısı, burun tıkanıklığı ve gözlerde sulanma.",
+      "expected_url": "https://www.bayindirhastanesi.com.tr/blog/alerjik-rinit-nedir-alerjik-rinit-tedavisi-90"
+    },
+    {
+      "id": "P04",
+      "topic": "Alerjik astım",
+      "question": "Alerjik astıma neden olan başlıca alerjenler nelerdir?",
+      "expected_answer": "Ev tozu akarları, polen, küf ve mantar sporları, hayvan tüyü, kirli hava veya sigara dumanı.",
+      "expected_url": "https://istanbulbaskentuniversitesi.com/saglik-rehberi/gogus-hastaliklari/alerjik-astim-nedir"
+    },
+    {
+      "id": "P05",
+      "topic": "Anksiyete",
+      "question": "Anksiyete bozuklukları kadınlarda mı erkeklerde mi daha sık görülür?",
+      "expected_answer": "Anksiyete bozuklukları erkeklere oranla kadınlarda daha sık görülür.",
+      "expected_url": "https://www.livhospital.com/liv-saglik-kosesi/anksiyete"
+    },
+    {
+      "id": "P06",
+      "topic": "Derin ven trombozu",
+      "question": "Derin ven trombozunda pıhtılaşmaya yol açan nedenler nelerdir?",
+      "expected_answer": "Genetik yatkınlık, doğum kontrol hapları gibi ilaçlar, uzun süreli hareketsizlik, vene dışarıdan bası yapan durumlar ve kateter.",
+      "expected_url": "https://www.mph.com.tr/hastaliklar-ve-tedaviler/derin-ven-trombozu-dvt-"
+    },
+    {
+      "id": "P07",
+      "topic": "Lupus",
+      "question": "Lupus hastalığının oluşumunu tetikleyen çevresel etkenler nelerdir?",
+      "expected_answer": "Sigara kullanımı, ultraviyole ışınları, kimyasal maruziyeti ve Epstein-Barr virüsü başta olmak üzere viral ve bakteriyel enfeksiyonlar.",
+      "expected_url": "https://www.acibadem.com.tr/ilgi-alani/lupus-nedir-kelebek-hastaligi-belirtileri/"
+    },
+    {
+      "id": "P08",
+      "topic": "Hodgkin lenfoma",
+      "question": "Hodgkin lenfomayı diğer lenfoma türlerinden ayıran hücre tipi nedir?",
+      "expected_answer": "Reed-Sternberg hücreleri.",
+      "expected_url": "https://www.mph.com.tr/hastaliklar-ve-tedaviler/hodgkin-lenfoma"
+    },
+    {
+      "id": "P09",
+      "topic": "Prostat",
+      "question": "Prostat bezinin ana görevi nedir?",
+      "expected_answer": "Spermi besleyen sıvıyı üretmek ve spermlerin semen sıvısı içinde korunmasını sağlamak.",
+      "expected_url": "https://www.anadolusaglik.org/saglik-rehberi/prostat-kanseri"
+    },
+    {
+      "id": "P10",
+      "topic": "Ayak mantarı",
+      "question": "Ayak mantarına en sık hangi mantar cinsleri neden olur?",
+      "expected_answer": "Çoğunlukla Trichophyton veya Epidermophyton cinsinden mantarlar.",
+      "expected_url": "https://www.anadolusaglik.org/saglik-rehberi/ayak-mantari-nedir-nedenleri-belirtileri-tedavisi"
+    },
+    {
+      "id": "P11",
+      "topic": "Ürodinami",
+      "question": "Ürodinami testi hangi organların bozukluklarını araştırmak için yapılır?",
+      "expected_answer": "İdrar depolama ve yapma işlevlerinde rol oynayan mesane, prostat ve idrar yolu bozukluklarını araştırır.",
+      "expected_url": "https://www.memorial.com.tr/tani-ve-testler/urodinami-testi-nedir"
+    },
+    {
+      "id": "P12",
+      "topic": "Histeroskopi",
+      "question": "Histeroskopi işleminde hangi cihaz kullanılır?",
+      "expected_answer": "Histereskop adı verilen ince, ışıklı ve esnek bir tüp kullanılır.",
+      "expected_url": "https://www.memorial.com.tr/tani-ve-testler/histeroskopi-nedir"
+    },
+    {
+      "id": "P13",
+      "topic": "Eritrosit",
+      "question": "Eritrositler nerede üretilir ve ömrünü tamamlayınca nerede yıkılır?",
+      "expected_answer": "Kırmızı kemik iliğinde üretilir, ömrünü dolduranlar dalakta yıkılır.",
+      "expected_url": "https://www.medicana.com.tr/saglik-rehberi-detay/15547/eritrosit-rbc-nedir"
+    },
+    {
+      "id": "P14",
+      "topic": "Menisküs",
+      "question": "Menisküslerin diz eklemindeki görevi nedir?",
+      "expected_answer": "Kemiklerin kıkırdak yüzlerinin sürtünmesini azaltmak ve ekleme gelen yükleri dengeli biçimde dağıtmak; darbe emici görev görürler.",
+      "expected_url": "https://yeditepehastaneleri.com/saglik-rehberi/hastaliklar-tedaviler/meniskus-yirtigi-sadece-sporcu-hastaligi-degildir"
+    },
+    {
+      "id": "P15",
+      "topic": "Farenks kanseri",
+      "question": "Yutak (farenks) kanserlerinde ön plandaki risk faktörleri nelerdir?",
+      "expected_answer": "Sigara ve alkol kullanımı ile Human papilloma virüs gibi viral enfeksiyonlar.",
+      "expected_url": "https://www.anadolusaglik.org/saglik-rehberi/farenks-yutak-kanserleri"
+    },
+    {
+      "id": "P16",
+      "topic": "Anal fissür",
+      "question": "Anal fissür belirtileri nelerdir?",
+      "expected_answer": "Dışkılama sırasında veya sonrasında süren ağrı, kabızlık, dışkı yüzeyinde ve tuvalet kağıdında kan, ağrılı kaşıntı ve yanma.",
+      "expected_url": "https://atlasuniversitesihastanesi.com/anal-fissurler-makat-catlagi/"
+    },
+    {
+      "id": "P17",
+      "topic": "Obezite",
+      "question": "Obezite vücut yağ oranı bakımından nasıl tanımlanır?",
+      "expected_answer": "Yetişkin kadınlarda vücut ağırlığının ortalama %30'undan, erkeklerde %25'inden fazlasının yağ olmasıdır.",
+      "expected_url": "https://istanbulbaskentuniversitesi.com/tibbi-birim/obezite-cerrahisi-poliklinigi"
+    },
+    {
+      "id": "P18",
+      "topic": "Diş ağrısı",
+      "question": "Diş ağrısının olası sebepleri nelerdir?",
+      "expected_answer": "Hassas dişler, diş çürükleri, diş eti hastalıkları, diş kırıkları, dolgudaki hasarlar, enfeksiyonlar, mine aşınması ve diş sıkma.",
+      "expected_url": "https://atlasuniversitesihastanesi.com/dis-agrisi-nedir-belirtileri-nelerdir/"
+    },
+    {
+      "id": "P19",
+      "topic": "Tırnak mantarı",
+      "question": "Tırnak mantarı hangi ortamlarda bulaşır?",
+      "expected_answer": "Spor salonları, duşlar, hamamlar, yüzme havuzları ve soyunma kabinleri gibi ıslak ve nemli ortamlarda.",
+      "expected_url": "https://www.florence.com.tr/guncel-saglik/tirnak-mantari"
+    },
+    {
+      "id": "P20",
+      "topic": "Kök hücre",
+      "question": "Kemik iliğinde bulunan kök hücreler ne için çalışır?",
+      "expected_answer": "Yeni kan hücrelerinin yapılması için çalışırlar.",
+      "expected_url": "https://www.anadolusaglik.org/saglik-rehberi/kok-hucre-tedavisi-nedir-ve-tedavisi-uygulanir"
+    }
+  ],
+  "negative": [
+    {
+      "id": "N01",
+      "question": "Java programlama dilinde bir HashMap nasıl oluşturulur?",
+      "rationale": "Yazılım geliştirme konusu; tıbbi makale koleksiyonunda karşılığı yok."
+    },
+    {
+      "id": "N02",
+      "question": "2022 FIFA Dünya Kupası'nı hangi ülke kazandı?",
+      "rationale": "Spor tarihi; koleksiyon yalnızca hastane sağlık makalelerinden oluşuyor."
+    },
+    {
+      "id": "N03",
+      "question": "İstanbul'dan Ankara'ya yüksek hızlı tren bileti kaç TL?",
+      "rationale": "Ulaşım ve güncel fiyat bilgisi; koleksiyonda bulunmaz."
+    },
+    {
+      "id": "N04",
+      "question": "Bitcoin'in bugünkü dolar cinsinden fiyatı nedir?",
+      "rationale": "Finans ve anlık piyasa verisi; koleksiyonda bulunmaz."
+    },
+    {
+      "id": "N05",
+      "question": "Mars'a insanlı ilk görevin hangi yıl yapılması planlanıyor?",
+      "rationale": "Uzay araştırmaları; tıbbi kaynaklarda yer almaz."
+    },
+    {
+      "id": "N06",
+      "question": "Bir otomobilin motor yağı kaç kilometrede bir değiştirilmelidir?",
+      "rationale": "Otomotiv bakımı; koleksiyon kapsamı dışında."
+    },
+    {
+      "id": "N07",
+      "question": "Osmanlı Devleti hangi padişah döneminde İstanbul'u fethetti?",
+      "rationale": "Tarih konusu; sağlık makalelerinde karşılığı yok."
+    },
+    {
+      "id": "N08",
+      "question": "Kedilerde kalp kurdu hastalığı nasıl tedavi edilir?",
+      "rationale": "Veteriner hekimlik; koleksiyon insan sağlığı makalelerinden oluşuyor."
+    },
+    {
+      "id": "N09",
+      "question": "Python'da pandas kütüphanesiyle CSV dosyası nasıl okunur?",
+      "rationale": "Veri bilimi/programlama; koleksiyonda bulunmaz."
+    },
+    {
+      "id": "N10",
+      "question": "Bir evin elektrik tesisatında sigorta nasıl değiştirilir?",
+      "rationale": "Ev tamiratı; koleksiyon kapsamı dışında."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+melomani — tool layer, no model  db: melomani.db
+
+[turn 1] →  search_albums({"genre":"trip-hop","in_stock_only":true,"limit":3})
+  ←  {"ok":true,"count":3,"results":[{"album_id":2,"title":"Mezzanine","artist":"Massive Attack","year":1998,"genre":"trip-hop","label":"Virgin","format":"CD","price_try":369,"price_display":"369,00 ₺","stock":4},{"album_id":5,"title":"Big Calm","artist":"Morcheeba","year":1998,"genre":"trip-hop","label":"Indochina","format":"CD","price_try":289,"price_display":"289,00 ₺","stock":2},{"album_id":34,"tit…
+
+[turn 1] →  recommend_albums({"liked_albums":["Dummy"],"moods":["hüzünlü"],"limit":3})
+  ←  {"ok":true,"count":3,"results":[{"album_id":3,"title":"Maxinquaye","artist":"Tricky","year":1995,"genre":"trip-hop","label":"4th & Broadway","format":"CD","price_try":329,"price_display":"329,00 ₺","stock":3,"score":20,"why":"same genre (trip-hop); shares debut, nocturnal, sampling; released 1995, close to the era you like"},{"album_id":34,"title":"Endtroducing.....","artist":"DJ Shadow","year":19…
+
+[turn 1] →  search_albums({"genre":"metal","in_stock_only":true,"limit":4})
+  ←  {"ok":true,"count":4,"results":[{"album_id":60,"title":"Crack the Skye","artist":"Mastodon","year":2009,"genre":"progressive-metal","label":"Reprise","format":"CD","price_try":399,"price_display":"399,00 ₺","stock":3},{"album_id":58,"title":"Lateralus","artist":"Tool","year":2001,"genre":"progressive-metal","label":"Volcano","format":"CD","price_try":459,"price_display":"459,00 ₺","stock":6},{"alb…
+
+[turn 1] →  recommend_albums({"liked_albums":["Reign in Blood"],"moods":["ağır"],"limit":3})
+  ←  {"ok":true,"count":3,"results":[{"album_id":43,"title":"Master of Puppets","artist":"Metallica","year":1986,"genre":"thrash-metal","label":"Elektra","format":"CD","price_try":429,"price_display":"429,00 ₺","stock":7,"score":17,"why":"same genre (thrash-metal); shares fast, guitar-driven, heavy; released 1986, close to the era you like"},{"album_id":44,"title":"Ride the Lightning","artist":"Metalli…
+
+[turn 1] →  get_album_details({"album_id":2})
+  ←  {"ok":true,"album_id":2,"title":"Mezzanine","artist":"Massive Attack","year":1998,"genre":"trip-hop","label":"Virgin","format":"CD","price_try":369,"price_display":"369,00 ₺","stock":4,"country":"UK","tags":["atmospheric","cinematic","cold","dense","dub","hypnotic","melancholic","nocturnal"],"track_count":11,"tracks":[{"position":1,"title":"Angel","duration":"6:19"},{"position":2,"title":"Risingso…
+
+[turn 1] →  add_to_cart({"album_id":2,"quantity":1})
+  ←  {"ok":true,"added":{"album_id":2,"title":"Mezzanine","artist":"Massive Attack","quantity":1},"cart":{"items":[{"album_id":2,"title":"Mezzanine","artist":"Massive Attack","quantity":1,"unit_price_display":"369,00 ₺","line_total_display":"369,00 ₺"}],"item_count":1,"total_try":369,"total_display":"369,00 ₺"}}
+
+[turn 1] →  add_to_cart({"album_id":9999,"quantity":1})
+  ✗  {"ok":false,"error":"ALBUM_NOT_FOUND","message":"No album with id 9999 exists. Search the catalogue for a valid id first.","album_id":9999}
+
+[turn 1] →  checkout({"customer_name":"Eren"})
+  ✗  {"ok":false,"error":"CONFIRMATION_REQUIRED","message":"Nothing has been ordered yet. Show the customer exactly this basket and total, ask them to confirm, and call checkout again only after they have answered.","preview":{"items":[{"album_id":2,"title":"Mezzanine","artist":"Massive Attack","quantity":1,"unit_price_display":"369,00 ₺","line_total_display":"369,00 ₺"}],"item_count":1,"total_display"…
+
+[turn 2] →  checkout({"customer_name":"Eren"})
+  ←  {"ok":true,"order_id":1,"customer_name":"Eren","placed_at":"2026-08-03T15:35:00.370Z","item_count":1,"total_try":369,"total_display":"369,00 ₺","items":[{"album_id":2,"title":"Mezzanine","quantity":1,"unit_price_display":"369,00 ₺"}]}
+
+[turn 2] →  check_order_status({"order_id":1})
+  ←  {"ok":true,"order_id":1,"customer_name":"Eren","status":"preparing","placed_at":"2026-08-03T15:35:00.370Z","elapsed_seconds":0,"total_display":"369,00 ₺","items":[{"album_id":2,"title":"Mezzanine","artist":"Massive Attack","quantity":1,"unit_price_display":"369,00 ₺"}]}

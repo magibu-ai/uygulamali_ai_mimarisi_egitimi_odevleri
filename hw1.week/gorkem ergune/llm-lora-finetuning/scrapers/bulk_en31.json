@@ -1,0 +1,212 @@
+{
+    "train": [
+        [
+            {
+                "content": "what is secrets management?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Secrets management securely stores and controls access to sensitive data: API keys, database passwords, tokens, certificates, encryption keys. Problems without secrets management: secrets in source code (exposed in git history), secrets in environment variables (visible in process listings), shared secrets (everyone has the same key, no audit trail), no rotation (same password for years). Solutions: HashiCorp Vault — industry standard. Stores secrets encrypted, provides access via policies, automatic rotation, audit logging, dynamic secrets (generate database credentials on demand — each service gets unique, short-lived credentials). AWS Secrets Manager — managed service. Automatic rotation for RDS passwords, cross-account access, Lambda integration for rotation. AWS SSM Parameter Store — simpler, cheaper alternative for basic secrets. Environment-specific — different secrets per environment (dev/staging/prod). Kubernetes secrets — base64 encoded (NOT encrypted by default). Use external secrets operator to sync from Vault/AWS Secrets Manager. External Secrets Operator: Kubernetes operator that syncs secrets from external providers. For applications: never hardcode secrets, load from environment variables or secrets manager at runtime. .env files for local development (in .gitignore, NEVER committed). Rotation: automate rotation, use short-lived credentials, revoke immediately when compromised. Zero-trust: assume every system could be compromised. Principle of least privilege — each service gets only the secrets it needs.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Secrets management, Vault, AWS Secrets Manager, rotation, encryption, environment variables.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is secure coding practices?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Secure coding prevents vulnerabilities from entering your codebase. Input validation: validate all external input (user forms, API requests, URL parameters, file uploads). Whitelist acceptable values rather than blacklisting dangerous ones. Use validation libraries (Zod, Joi, Pydantic). Parameterized queries: NEVER concatenate user input into SQL queries. Use parameterized queries or ORMs — they handle escaping automatically. Authentication: use established libraries (Passport.js, NextAuth, Auth0). Hash passwords with bcrypt/argon2 (NEVER MD5/SHA). Implement rate limiting on login endpoints. Authorization: check permissions on EVERY request, server-side. Don't trust client-side checks. Use RBAC (Role-Based Access Control) or ABAC (Attribute-Based). Secrets management: NEVER commit secrets to git (.env files in .gitignore). Use environment variables, Vault, AWS Secrets Manager. Rotate secrets regularly. Dependencies: keep dependencies updated (Dependabot, npm audit). Review new dependencies before adding — check maintenance status, download counts, security advisories. HTTPS everywhere: use TLS for all communication. HSTS header forces HTTPS. Security headers: Content-Security-Policy (prevent XSS), X-Content-Type-Options: nosniff, X-Frame-Options: DENY (prevent clickjacking), Strict-Transport-Security. Logging: log security events (failed logins, permission denials, suspicious inputs) but NEVER log sensitive data (passwords, tokens, credit cards). Regular security audits: OWASP ZAP (automated scanning), penetration testing, code review with security focus.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Secure coding, input validation, parameterized queries, secrets, HTTPS, security headers, RBAC.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is event loop in Python asyncio?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Python's asyncio provides concurrent programming for I/O-bound tasks. Unlike threading (OS-level threads, GIL limitations), asyncio uses a single-threaded event loop with coroutines. Key concepts: coroutine — defined with async def, paused with await. When a coroutine awaits an I/O operation, the event loop runs other coroutines. async def fetch_data(): response = await httpx.get(url). Event loop — manages and schedules coroutine execution. asyncio.run(main()) starts the event loop. await — suspends coroutine until the awaited operation completes. Yields control back to the event loop. asyncio.gather — run multiple coroutines concurrently: results = await asyncio.gather(fetch_a(), fetch_b(), fetch_c()). All three run concurrently, total time is max(a, b, c) not sum(a, b, c). asyncio.create_task — schedule coroutine for concurrent execution without waiting. Task groups (Python 3.11+): async with asyncio.TaskGroup() as tg: tg.create_task(coro()). When to use: many I/O operations (HTTP requests, database queries, file operations), web servers (FastAPI, aiohttp), websockets, web scraping. When NOT to use: CPU-bound tasks (use multiprocessing instead), simple scripts (synchronous is simpler). Libraries: httpx/aiohttp (async HTTP), asyncpg (async PostgreSQL), motor (async MongoDB), FastAPI (async web framework). Common pitfall: mixing sync and async code — blocking calls in async code block the entire event loop. Use run_in_executor for sync functions in async context.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Python asyncio, event loop, coroutine, await, gather, concurrent, FastAPI, async/await.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is microservices communication patterns?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Microservices need to communicate — choosing the right pattern matters. Synchronous: REST (HTTP/JSON — simple, widely understood, good for CRUD), gRPC (Protocol Buffers over HTTP/2 — fast, strongly typed, bidirectional streaming, great for internal service communication), GraphQL (flexible queries — good for API gateway to client). Asynchronous: Message queues (RabbitMQ, SQS — point-to-point, task distribution), Event streaming (Kafka — pub/sub, event log, replay capability), Event bus (AWS EventBridge — serverless event routing). Patterns: Request-Response (synchronous, simple, but creates coupling and cascading failures), Publish-Subscribe (async, decoupled, but eventual consistency), Saga (distributed transactions — choreography via events or orchestration via central coordinator), CQRS (separate read/write paths, optimize independently), API Gateway (single entry point, routing, aggregation). Service discovery: how services find each other. DNS-based (simple), service registry (Consul, Eureka — services register themselves), Kubernetes services (built-in service discovery via DNS). Circuit breaker: prevent cascading failures. If service B is failing, service A stops calling it temporarily. Hystrix (Netflix, deprecated), Resilience4j (Java), Polly (.NET). Choose sync for: simple request-response, real-time responses needed. Choose async for: fire-and-forget, event-driven workflows, when services shouldn't depend on each other's availability.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Microservices communication, REST, gRPC, Kafka, saga, circuit breaker, service discovery.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Kubernetes Helm charts?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Helm is the package manager for Kubernetes — like npm for Node.js or pip for Python. Charts: Helm packages that contain all Kubernetes resource definitions (Deployments, Services, ConfigMaps, etc.) needed to run an application. Chart structure: Chart.yaml (metadata — name, version, description), values.yaml (default configuration — replicas, image, resources), templates/ (Kubernetes manifests with Go template syntax). Values override: helm install myapp ./chart --set replicas=3 or --values custom-values.yaml. Templates use {{ .Values.replicas }} to inject configuration. This is the key benefit — one chart, many configurations for different environments (dev, staging, prod). Commands: helm install (deploy), helm upgrade (update), helm rollback (revert), helm uninstall (remove), helm list (show installed releases), helm repo add (add chart repository). Chart repositories: Artifact Hub (public charts), Bitnami (popular application charts — PostgreSQL, Redis, Nginx), custom private repos (ChartMuseum, Harbor). Helm hooks: pre-install, post-install, pre-upgrade — run jobs at specific lifecycle points (database migrations before upgrade). Helmfile: declarative spec for deploying multiple Helm releases. Kustomize (alternative): template-free customization of Kubernetes manifests using overlays. Simpler than Helm but less powerful for complex applications. Many teams use both — Helm for third-party charts, Kustomize for their own applications.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Helm, Kubernetes, charts, values, templates, package manager, Helmfile, Kustomize, releases.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is database query optimization?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Query optimization makes database operations faster. Start with EXPLAIN ANALYZE — shows execution plan, actual timing, rows scanned. Common issues and fixes: Full table scan → add appropriate index. N+1 queries → use JOIN or eager loading (include/preload in ORM). Selecting too many columns → SELECT only needed columns, not SELECT *. Missing WHERE clause → filter server-side, not client-side. Unoptimized JOINs → ensure JOIN columns are indexed, consider JOIN order. Large result sets → add LIMIT/OFFSET or cursor-based pagination. String operations → avoid LIKE '%search%' (can't use index) — use full-text search instead. Index optimization: create indexes on frequently filtered/sorted columns, use composite indexes matching your query patterns, remove unused indexes (they slow writes), use EXPLAIN to verify index usage. Query patterns: use EXISTS instead of COUNT for existence checks, batch operations (INSERT multiple rows in one statement), avoid correlated subqueries (replace with JOIN), use materialized views for expensive aggregations. Connection-level: use connection pooling (PgBouncer), prepared statements (parse once, execute many), keep transactions short (don't hold locks). Monitoring: pg_stat_statements (PostgreSQL — track slow queries), slow query log, APM tools (Datadog, New Relic). Rule: measure before optimizing. Profile actual queries, optimize the slowest ones first (biggest impact).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Query optimization, EXPLAIN ANALYZE, indexing, N+1, full table scan, pagination, pg_stat.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is code splitting and lazy loading?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Code splitting breaks your JavaScript bundle into smaller chunks loaded on demand. Instead of one large bundle.js (everything), split into page-specific or feature-specific chunks. Dynamic import: const module = await import('./heavy-module.js'). Webpack/Vite create separate chunks automatically. React lazy loading: const HeavyComponent = React.lazy(() => import('./HeavyComponent')). Wrap with Suspense for loading state: <Suspense fallback={<Spinner />}><HeavyComponent /></Suspense>. Route-based splitting: most impactful — each route loads its own chunk. Next.js does this automatically. Users only download code for the page they're viewing. Component-based splitting: lazy load heavy components (charts, editors, maps) that aren't needed immediately. Vendor splitting: separate third-party libraries into their own chunk. Libraries change less often — better caching. Prefetching: <link rel='prefetch' href='next-page-chunk.js'> — browser downloads in idle time. Next.js prefetches linked pages automatically. Bundle analysis: webpack-bundle-analyzer, source-map-explorer — visualize what's in your bundles. Find large dependencies, duplicates. Tree shaking: bundler removes unused exports. import { specific } from 'library' instead of import library — allows removing unused code. Impact: faster initial page load (smaller initial bundle), better Core Web Vitals (less JavaScript to parse and execute), improved mobile experience (less data to download). Code splitting is one of the highest-impact performance optimizations for modern web apps.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Code splitting, lazy loading, React.lazy, Suspense, dynamic import, tree shaking, bundle analysis.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is idempotency in APIs?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Idempotency means making the same request multiple times produces the same result as making it once. Critical for reliability — network failures, retries, and duplicates are inevitable. HTTP methods: GET (idempotent — reading doesn't change state), PUT (idempotent — replacing resource with same data gives same result), DELETE (idempotent — deleting already-deleted resource is fine), POST (NOT idempotent — creating resource twice creates duplicates), PATCH (depends on implementation). Implementation: idempotency key — client generates unique key (UUID) per request, sends in header (Idempotency-Key). Server stores key → result mapping. If same key arrives again, return stored result without re-executing. Stripe uses this pattern for payment APIs. Database level: unique constraints prevent duplicate inserts. UPSERT (INSERT ON CONFLICT UPDATE) is idempotent. Application level: check if operation was already performed before executing. Use distributed lock or database to track. Why it matters: retry-safe APIs. If payment request times out, client retries. Without idempotency, customer is charged twice. With idempotency key, second request returns same result as first. Event processing: consumers should be idempotent — processing the same event twice should be safe. Deduplication via event ID tracking.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Idempotency, API design, idempotency key, retry, PUT, POST, deduplication, Stripe.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Infrastructure monitoring?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Infrastructure monitoring tracks the health and performance of servers, networks, and services. What to monitor: System metrics — CPU utilization, memory usage, disk I/O, network throughput. High CPU might indicate inefficient code or insufficient scaling. Application metrics — request rate, error rate, latency (p50, p95, p99), active connections, queue depth. Business metrics — signups, purchases, active users. Connect technical health to business impact. Tools: Prometheus (open-source, pull-based metrics collection, PromQL for querying), Grafana (visualization — dashboards for Prometheus, and many other data sources), Datadog (SaaS — metrics, logs, traces, all-in-one), CloudWatch (AWS native monitoring), PagerDuty/Opsgenie (alerting and on-call management). Alerting best practices: alert on symptoms not causes (alert on high error rate, not high CPU — CPU might be high for valid reasons), use multiple severity levels (warning vs critical), include runbook links in alerts, avoid alert fatigue (every alert should require human action), use SLO-based alerting (alert when error budget consumption rate is too high). Dashboards: have a high-level overview dashboard (is everything healthy?), service-specific dashboards (deep dive into each service), business dashboards (connecting tech metrics to business KPIs). Golden signals (Google SRE): latency, traffic, errors, saturation — monitor these four for every service.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Monitoring, Prometheus, Grafana, alerting, golden signals, Datadog, CloudWatch, dashboards.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is content delivery network CDN?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CDN distributes content from edge servers closest to users, reducing latency and load on origin servers. How it works: user requests resource → CDN routes to nearest edge server (PoP — Point of Presence) → if cached, serve immediately (cache hit) → if not, fetch from origin, cache at edge, serve (cache miss). Types of content: static (images, CSS, JS, fonts — easy to cache, long TTL), dynamic (API responses, personalized content — shorter TTL or no cache). CDN providers: Cloudflare (also DDoS protection, WAF, Workers for edge compute), AWS CloudFront (integrated with AWS), Fastly (real-time purging, VCL), Akamai (largest network, enterprise), Vercel Edge Network (integrated with Next.js). Cache invalidation: TTL-based (Cache-Control: max-age=86400), versioned URLs (/app.v2.js — never need to invalidate), purge API (programmatically clear cache), stale-while-revalidate (serve stale, update in background). Beyond caching: DDoS protection (absorb attack traffic at edge), image optimization (resize, format conversion on-the-fly), edge compute (run code at CDN edge — Cloudflare Workers, Lambda@Edge), SSL/TLS termination (faster handshake from nearby server). Cost: most CDNs charge by bandwidth. Cloudflare has a generous free tier. For static sites, CDN makes them extremely fast globally with minimal origin load.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CDN, edge server, caching, Cloudflare, CloudFront, cache invalidation, PoP, DDoS protection.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Go programming language strengths?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Go (Golang) by Google is designed for simplicity, performance, and concurrent programming. Key strengths: Goroutines — lightweight threads managed by Go runtime, not OS. Start millions of goroutines (each ~2KB stack). go func() launches concurrent execution. Channels — typed conduits for goroutine communication. ch := make(chan int). Send: ch <- value. Receive: value := <-ch. CSP model — communicate by sharing memory less, share memory by communicating. Fast compilation — entire Go project compiles in seconds. No header files, no circular dependency analysis needed. Static binary — compiles to single binary with no external dependencies. Deploy by copying one file. No runtime needed on target system. Standard library — comprehensive: HTTP server, JSON, crypto, testing, all built in. Minimal external dependencies needed. Error handling — explicit error returns (value, err := function()). No exceptions. Forces handling errors where they occur. Some find it verbose but it makes error paths visible. Interfaces — implicit implementation. No 'implements' keyword. If a type has the right methods, it satisfies the interface. Duck typing with type safety. Use cases: microservices (fast, small binaries, excellent concurrency), CLI tools (single binary deployment), DevOps tools (Docker, Kubernetes, Terraform all written in Go), APIs (net/http is production-ready), system programming. Weaknesses: no generics until Go 1.18 (now available), verbose error handling, no sum types, minimal abstraction (by design). Go excels when you need: performance close to C/Rust, simpler than Java/C++, better concurrency than Python.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Go, Golang, goroutines, channels, CSP, compilation, static binary, concurrency, interfaces.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is observability-driven development?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Observability-driven development (ODD) makes systems observable from the start, not as an afterthought. Traditional approach: build feature → deploy → something breaks → add monitoring. ODD approach: define what 'healthy' looks like → instrument code → deploy with observability → use data to improve. Practices: instrument before shipping — add metrics, logs, and traces as you write code, not after incidents. Use OpenTelemetry SDK for vendor-neutral instrumentation. Define SLIs upfront — before building a feature, define how you'll measure its health. API endpoint: latency p99 < 200ms, error rate < 0.1%. Feature flags with metrics — every feature flag should have associated metrics. When you enable a flag, you can immediately see its impact. Structured logging — use JSON logs with consistent fields (request_id, user_id, trace_id, duration_ms). Enables powerful querying and correlation. Not console.log('error happened') but logger.error({ msg: 'payment failed', user_id, amount, error_code }). Continuous profiling — always-on profiling in production (Pyroscope, Parca). Find performance regressions before users notice. Dashboards as documentation — well-built dashboards document how a system works. New team members learn by reading dashboards. Tools: OpenTelemetry (instrumentation standard), Grafana (visualization), Honeycomb (high-cardinality observability), Jaeger (distributed tracing). The goal: when something goes wrong, you have all the data needed to understand why — without needing to add more instrumentation after the fact.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Observability-driven, ODD, OpenTelemetry, SLI, structured logging, profiling, instrumentation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is platform engineering?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Platform engineering builds internal developer platforms (IDPs) that abstract infrastructure complexity. Instead of every team managing their own Kubernetes, CI/CD, monitoring — the platform team provides self-service tools. Golden path: opinionated but flexible defaults for common tasks. 'Here's how to deploy a new service' — pre-configured templates with CI/CD, monitoring, logging, security built in. Components: service catalog (Backstage by Spotify — central hub for all services, docs, APIs, team ownership), infrastructure templates (Terraform modules, Helm charts — one command to provision a new service), CI/CD pipelines (standardized, reusable, teams don't need to configure from scratch), observability stack (pre-configured Prometheus, Grafana, logging — just works), developer portal (self-service — create new services, manage environments, view docs). Benefits: reduce cognitive load (developers focus on business logic, not infrastructure), consistency (all services follow same patterns, security standards), faster onboarding (new developers productive in days not weeks), cost efficiency (shared platform vs each team building their own). Backstage (Spotify): open-source developer portal. Software catalog, TechDocs, scaffolder (create new projects from templates), plugins ecosystem. Platform engineering is the evolution of DevOps — from 'you build it, you run it' to 'we provide the platform, you build on it.'",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Platform engineering, IDP, Backstage, golden path, service catalog, DevOps, self-service.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

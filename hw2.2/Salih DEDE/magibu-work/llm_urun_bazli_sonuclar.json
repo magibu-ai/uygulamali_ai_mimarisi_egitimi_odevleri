@@ -1,0 +1,839 @@
+{
+  "4128875": [
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün 3 kapaklı veya 5 kapaklı modeli var mı?",
+      "referans_cevap": "Merhaba, 3 kapaklı modeli mevcuttur. 5 kapaklı modeli de mevcuttur."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün 2 kapaklı modeli var mı?",
+      "referans_cevap": "Merhaba, maalesef yok."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün 6 kapaklı modeli var mı?",
+      "referans_cevap": "Merhaba mevcuttur."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün aynalı modeli var mı?",
+      "referans_cevap": "Merhaba, mevcuttur. Diva Country 4 kapak 2 çekmeceli aynalı gardırop olarak aratabilirsiniz."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün farklı renk seçenekleri var mı?",
+      "referans_cevap": "Merhaba maalesef farklı renkleri yok."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün 180 cm veya daha geniş modelleri var mı?",
+      "referans_cevap": "Merhaba maalesef yok."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün 120 cm genişliğinde modeli var mı?",
+      "referans_cevap": "Merhaba, ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün 135 cm genişliğinde modeli var mı?",
+      "referans_cevap": "Merhaba maalesef yok."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün 70 cm genişliğinde modeli var mı?",
+      "referans_cevap": "Merhaba, mevcut değildir."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün 160 cm genişliğinde modeli var mı?",
+      "referans_cevap": "Merhaba, Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Bu dolabın şifonyeri var mı?",
+      "referans_cevap": "Merhaba, Diva mega şifonyeri mevcuttur. İzel Country şifonyer ile takım yapabilirsiniz."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Bu dolabın komidini var mı?",
+      "referans_cevap": "Merhaba, İzel Country şifonyer ile takım yapabilirsiniz."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Bu dolabın çalışma masası var mı?",
+      "referans_cevap": "Merhaba maalesef yok efendim. İzel çalışma masasını düşünebilirsiniz."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Dolabın malzemesi MDF mi, suntalam mı?",
+      "referans_cevap": "Merhaba ürünün kapak kısmı MDF üstü mebran kaplamadır. Gövde kısmı ise suntadır. Ürün açıklama kısmında detaylı olarak belirtilmiştir."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Dolap kapakları MDF mi?",
+      "referans_cevap": "Merhaba ürünün kapak kısmı MDF üstü mebran kaplamadır. Gövde kısmı ise suntadır."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Dolabın tamamı MDF mi?",
+      "referans_cevap": "Merhaba komple mdf ürünümüz yok maalesef. Bu ürünün gövde kısmı sunta kapak kısmı mdf dir."
+    },
+    {
+      "kategori": "garanti",
+      "soru": "Ürünün garantisi ne kadar?",
+      "referans_cevap": "Merhaba ürün 2 yıl garantilidir."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürünün kurulumu için video veya şema var mı?",
+      "referans_cevap": "Merhaba maalesef kurulum videosu yok efendim. Kurulum şeması ile birlikte gönderim sağlanmaktadır."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Kurulum hizmeti veriliyor mu?",
+      "referans_cevap": "Merhaba, Kurulum hizmetimiz bulunmamaktadır ve bizlere ait değildir. Trendyol ile görüşme sağlayarak destek alabilirsiniz."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Hangi kargo firması ile çalışıyorsunuz?",
+      "referans_cevap": "Merhaba anlaşma gereği Horoz Lojistik ile çalışmaktayız."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolabın kulpları ahşap olabilir mi?",
+      "referans_cevap": "Merhaba, Hafta sonu çalışmamız yoktur ve geçmiş mesajları görünmemektedir sizlere yardımcı olabilmemiz adına hafta içi mesajınızı tekrar iletmeniz halinde tarafınıza yardımcı olunacaktır. Anlayışınız için teşekkür eder , sağlıklı günler dileriz."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolapta frenleme sistemi (yavaş kapanma) var mı?",
+      "referans_cevap": "Merhaba frenli menteşe mevcut değildir. Ürünlerde standart ray sistemi kullanılmaktadır."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolap ayaklı mı yoksa yere sıfır mı?",
+      "referans_cevap": "Merhaba, ürünler bazalıdır ve ayaklı kullanıma uygun değildir. Ayaklı kullanıma uygun değildir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolabın arka kapağı hangi malzemeden yapılmıştır?",
+      "referans_cevap": "Merhaba ürünün kapak kısmı MDF üstü mebran kaplamadır. Gövde kısmı ise suntadır. Ürün açıklama kısmında detaylı olarak belirtilmiştir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolabın askı borusu kaç cm uzunluğundadır?",
+      "referans_cevap": "Merhaba 64,4 cm efendim."
+    }
+  ],
+  "205133913": [
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün tam ölçüleri nedir (genişlik, derinlik, yükseklik)?",
+      "referans_cevap": "Genişlik 85 cm, Derinlik 45 cm, Yükseklik 155 cm."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün genişliği tam olarak 85 cm mi, yoksa biraz daha mı dar?",
+      "referans_cevap": "80 cm şeklinde düşünebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün derinliği kaç cm?",
+      "referans_cevap": "Derinlik 44 cm."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün yüksekliği kaç cm?",
+      "referans_cevap": "Yükseklik 155 cm."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Raf aralıkları ne kadar?",
+      "referans_cevap": "Raf yükseklikleri 30 cm'dir."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Ürünün boruları/iskeleti hangi malzemeden yapılmıştır?",
+      "referans_cevap": "Boruları plastiktir."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Raflar hangi malzemeden yapılmıştır?",
+      "referans_cevap": "Rafları bezdir."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Ürünün kumaşı/kılıfı nasıldır?",
+      "referans_cevap": "Spunbond cinsi tela kumaştır."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün askılık kısmı var mı ve kaç cm?",
+      "referans_cevap": "1 adet 40 cm askısı var."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün fermuarı var mı?",
+      "referans_cevap": "Evet, fermuarlıdır."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün fermuarı tek mi, çift mi?",
+      "referans_cevap": "İki fermuarı var."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünle birlikte kaç adet bez raf gönderiliyor?",
+      "referans_cevap": "8 adet bez raf gönderilmektedir."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün dış kılıfı pakete dahil mi?",
+      "referans_cevap": "Evet, paket içinde dış kılıfı bulunuyor."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün kurulum kılavuzu ve montaj desteği hakkında bilgi verebilir misiniz?",
+      "referans_cevap": "Kurulum kılavuzu yanındadır ve üzerinde kurulum videosuna yönlendiren karekod mevcuttur. Sorun yaşanması durumunda kurulum kılavuzunda yer alan destek hattından yardım alınabilir."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Hangi kargo firması ile gönderim yapılıyor?",
+      "referans_cevap": "MNG Kargo (DHL e-commerce) ile gönderim yapılıyor."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "İstanbul'a kaç günde teslimat yapılır?",
+      "referans_cevap": "Maksimum 2 gün içinde elinizde olacaktır."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürünün paketli halinin ağırlığı ve boyutları nedir?",
+      "referans_cevap": "Paketli hali yaklaşık 3-3.5 kg gelmektedir. Kutu ölçüleri yaklaşık 42x25x18 cm'dir."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün kolay taşınabilir mi?",
+      "referans_cevap": "Evet, yaklaşık 3-3.5 kg ağırlığında olduğu için rahatlıkla taşınabilir."
+    },
+    {
+      "kategori": "garanti",
+      "soru": "Ürünün garanti süresi ne kadar?",
+      "referans_cevap": "6 Ay."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürünün kurulumu kolay mı ve alet gerektiriyor mu?",
+      "referans_cevap": "Evet, kurulumu oldukça kolaydır ve herhangi bir alete ihtiyaç duymadan elle kurulabilir. Borular aparatlara takılarak monte edilir."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürünü kurarken rafları veya çubukları eksik takabilir miyiz?",
+      "referans_cevap": "Evet, isteğe bağlı olarak bazı raflar takılmadan da kurulabilir, ancak bu durum kılıfın tam oturmamasına neden olabilir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürün suya dayanıklı mı, balkonda kullanılabilir mi?",
+      "referans_cevap": "Yoğun suya maruz kalırsa su geçirebilir. Banyoda veya yoğun suya maruz kalacak yerlerde kullanılması tavsiye edilmez."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün taşıma kapasitesi nedir?",
+      "referans_cevap": "Her raf ve askı, doğru kurulum ve dengeli ağırlık yerleştirmesi ile ortalama 5-6 kg taşıyabilir. Bazı cevaplarda 10 kg veya 15 kg olarak da belirtilmiştir, ancak 5-6 kg daha tutarlı bir bilgidir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürün yüklük olarak kullanılabilir mi?",
+      "referans_cevap": "Yüklük olarak kullanılması tavsiye edilmemektedir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün rengi nedir?",
+      "referans_cevap": "Gri (Antrasit gri - koyu gri tonunda)."
+    }
+  ],
+  "1132636729": [
+    {
+      "kategori": "malzeme",
+      "soru": "Ürün malzemesi nedir?",
+      "referans_cevap": "Merhaba , Ürün malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında malzeme bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Ürün materyali tam olarak hangi malzemeden yapılmıştır?",
+      "referans_cevap": "Merhaba , Ürün malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında malzeme bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Renk kum taşı mı beyaz mı? Açıklamada beyaz yazılmış, soru cevaplarda kum taşı. Hangisi geçerli?",
+      "referans_cevap": "Merhaba kumtaşıdır efendim."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürün ölçüleri nedir? Köşe haricindeki modüllerin ölçüleri nedir?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Toplam genişlik ölçüsü verilmiş, lütfen sağ ve sol ayrı ayrı ölçüleri öğrenebilir miyim?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Genişlik 218 cm olarak belirtilmiş, bu ölçü soldan sağa L şeklinde midir?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Rafların genişliği kaç cm?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Her bir dolabın en, derinlik ve yükseklik olarak ölçülerini rica edebilir miyim?",
+      "referans_cevap": "Merhaba açıklama kısmında detaylı olarak yer almaktadır efendim."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Bu modelin bir tarafı kaç metre, diğer tarafı kaç metre?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "1.40 / 1.60 metrelik bir alana uygun olur mu, sığar mı?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ölçüler tam olarak aynı ürün mü geliyor?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Tek taraf mı 218 cm, ölçü bilgisi ayrı ayrı modüller nedir?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürün görselinde dolap üstüne belirtilen ölçülerde 700 yazan nedir?",
+      "referans_cevap": "Merhaba efendim urunun teknik çizimi görsellerde mevcuttur incelemenizi rica ederiz"
+    },
+    {
+      "kategori": "olcu",
+      "soru": "İstediğimiz ölçülerde özel yapım mümkün mü?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ayna fonksiyonu var mı? Ayna taktırma şansımız var mı?",
+      "referans_cevap": "Merhaba efendim görsellerde teknik çizimi mevcuttur ürünün"
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Bu modelin aynalı kapaklısı var mı?",
+      "referans_cevap": "Merhaba efendim görsellerde teknik çizimi mevcuttur ürünün"
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu modelin tek kapaklı olanı var mı?",
+      "referans_cevap": "Merhaba 2 kapaklı modeli mevcut efendim"
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "5 kapaklı ya da 6 kapaklı modeli var mı?",
+      "referans_cevap": "Merhaba, Hafta sonu çalışmamız yoktur . Sizlere yardımcı olabilmemiz adına hafta içi mesajınızı tekrar iletmeniz halinde tarafınıza yardımcı olunacaktır. Anlayışınız için teşekkür eder , sağlıklı günler dileriz."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Gizli çekmeceli dolap modeli var mı?",
+      "referans_cevap": "Merhaba, Hafta sonu çalışmamız yoktur . Sizlere yardımcı olabilmemiz adına hafta içi mesajınızı tekrar iletmeniz halinde tarafınıza yardımcı olunacaktır. Anlayışınız için teşekkür eder , sağlıklı günler dileriz."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Ek dolap ekleyebilir miyiz?",
+      "referans_cevap": "Merhaba, Hafta sonu çalışmamız yoktur . Sizlere yardımcı olabilmemiz adına hafta içi mesajınızı tekrar iletmeniz halinde tarafınıza yardımcı olunacaktır. Anlayışınız için teşekkür eder , sağlıklı günler dileriz."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "2 kapak daha ekleyebilir miyiz?",
+      "referans_cevap": "Merhaba, Hafta sonu çalışmamız yoktur . Sizlere yardımcı olabilmemiz adına hafta içi mesajınızı tekrar iletmeniz halinde tarafınıza yardımcı olunacaktır. Anlayışınız için teşekkür eder , sağlıklı günler dileriz."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "İstediğimiz parçaları seçme şansımız var mı? Alanımıza göre bir ebat seçme söz konusu mu ya da daha küçük modeller mevcut mu?",
+      "referans_cevap": "Merhaba maalesef yok efendim."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Mardin'e gönderi yapıyor musunuz?",
+      "referans_cevap": "Merhaba, Hafta sonu çalışmamız yoktur . Sizlere yardımcı olabilmemiz adına hafta içi mesajınızı tekrar iletmeniz halinde tarafınıza yardımcı olunacaktır. Anlayışınız için teşekkür eder , sağlıklı günler dileriz."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Bu dolap tercihen istendiğinde düz duvarda kullanıma da uygun mudur?",
+      "referans_cevap": "Merhaba, Hafta sonu çalışmamız yoktur . Sizlere yardımcı olabilmemiz adına hafta içi mesajınızı tekrar iletmeniz halinde tarafınıza yardımcı olunacaktır. Anlayışınız için teşekkür eder , sağlıklı günler dileriz."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Makyaj masası, komidin ve şifonyer var mı? Varsa onları da almak istiyorum.",
+      "referans_cevap": "Merhaba maalesef yok efendim."
+    }
+  ],
+  "1071849383": [
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün farklı kapak sayısı olan versiyonları var mı?",
+      "referans_cevap": "Merhaba, şuan için satışa açık değildir efendim."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Bu ürünün şifonyer veya komodin gibi tamamlayıcı parçaları mevcut mu?",
+      "referans_cevap": "Merhaba maalesef yok efendim"
+    },
+    {
+      "kategori": "renk",
+      "soru": "Ürünün farklı renk seçenekleri mevcut mu?",
+      "referans_cevap": "Merhaba maalesef yok efendim."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Ürünün malzemesi nedir? Suntalam mı, MDF mi?",
+      "referans_cevap": "Merhaba komple sunta efendim"
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Dolabın arka panellerinin malzemesi nedir?",
+      "referans_cevap": "Merhaba suntadır efendim."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Dolap kapaklarının malzemesi nedir? Sunta mı, MDF mi?",
+      "referans_cevap": "Merhaba ürün 1. sınıf yonga levhadır(sunta)."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün genişliği nedir?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün derinliği (iç veya dış) nedir?",
+      "referans_cevap": "Merhaba , Ürün ölçü bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında ölçü bilgilerini inceleyebilirsiniz."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün yüksekliği (boyu) nedir? Ayaklar dahil mi?",
+      "referans_cevap": "Merhaba ayaklar dahildir."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Robot süpürgelerin altına girebilmesi için ayak yüksekliği nedir?",
+      "referans_cevap": "Merhaba ayak yüksekliği 12 cm dir."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünle birlikte askılık borusu gönderiliyor mu?",
+      "referans_cevap": "Merhaba evet efendim."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün ayakları demonte mi geliyor, yoksa montajlı mı?",
+      "referans_cevap": "Merhaba ürün görseldeki gibidir."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünün ayakları plastik mi, yoksa ahşap mı?",
+      "referans_cevap": "Merhaba plastiktir."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürünün montajı nasıl yapılıyor? Montaj videosu veya kılavuzu var mı?",
+      "referans_cevap": "Merhaba montaj videosu yok maalesef efendim."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürünün montajı için ek aletlere ihtiyaç var mı?",
+      "referans_cevap": "Merhaba, Kurulum hizmetimiz bulunmamaktadır ve bizlere ait değildir. Trendyol ile görüşme sağlayarak destek alabilirsiniz. Anlayışınız için teşekkür eder , sağlıklı günler dileriz."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürünün montajı kolay mı, yoksa profesyonel yardım gerekli mi?",
+      "referans_cevap": "Merhaba, haftaiçi çalışma saatleri08:00--18:00 arasıdır. Almak istediğiniz bilgiler ya da talepleriniz için, haftaiçi belirtilen saatler aralığında taleplerinizi tekrar iletmenizi rica ederiz."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ayakları takmadan ürünü kullanmak mümkün mü?",
+      "referans_cevap": "Merhaba ayaksız kullanım için uygun değildir efendim"
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Rafların yerini değiştirebilir miyiz veya askılık yerine raf ekleyebilir miyiz?",
+      "referans_cevap": "Merhaba yalnızca hareketli raflar çıkartılabilir."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Dolabın rafları sabit midir, yoksa hareketli mi?",
+      "referans_cevap": "Merhaba sabit rafları da mevcut hareketli rafları da mevcuttur."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Dolabın raflarını çıkarıp tamamını askılık olarak kullanabilir miyiz?",
+      "referans_cevap": "Merhaba yalnızca hareketli raflar çıkartılabilir."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Dolabın raflarını takmadan sadece askılık olarak kullanabilir miyiz?",
+      "referans_cevap": "Merhaba gonyesinde kayma olur efendim uygun degildir"
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün hangi kargo firması ile gönderiliyor?",
+      "referans_cevap": "Merhaba anlaşma gereği Horoz Lojistik ile çalışmaktayız."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün kaç günde teslim edilir? Tahmini teslimat süresi nedir?",
+      "referans_cevap": "Merhaba, 20 iş günü termin süremiz mevcuttur."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün kaç paket halinde gönderiliyor?",
+      "referans_cevap": "Merhaba, 2 paket halinde gönderim sağlanmaktadır."
+    }
+  ],
+  "130582666": [
+    {
+      "kategori": "malzeme",
+      "soru": "Ürünün profilleri/iskeleti/boruları/çubukları/bağlantı aparatları hangi malzemeden yapılmıştır?",
+      "referans_cevap": "Ürünün profilleri, iskeleti, boruları, çubukları ve bağlantı aparatları plastiktir."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Raflar hangi malzemeden yapılmıştır?",
+      "referans_cevap": "Raflar bezdir. Plastik raflı modeller için mağaza ziyaret edilebilir."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün genişlik, yükseklik ve derinlik ölçüleri nedir?",
+      "referans_cevap": "Ürünün genişliği 155 cm, yüksekliği 155 cm ve derinliği 44 cm'dir. Bazı cevaplarda genişlik 158 cm olarak da belirtilmiştir."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Rafların ve askılıkların ölçüleri nedir?",
+      "referans_cevap": "Raflar 40x40 cm ve 35x40 cm boyutlarındadır. Askılıklar 40 cm uzunluğundadır."
+    },
+    {
+      "kategori": "renk",
+      "soru": "Ürünün hangi renk seçenekleri mevcuttur?",
+      "referans_cevap": "Ürün antrasit gri (koyu gri) renktedir. Bej ve krem rengi seçenekleri de mevcuttur, ancak pembe rengi stokta olmayabilir."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Ürünle birlikte yedek parça gönderiliyor mu?",
+      "referans_cevap": "Evet, her parçadan 1 adet yedek gönderilmektedir."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Üründe askılık bulunuyor mu ve kaç adet?",
+      "referans_cevap": "Evet, ürünle birlikte 2 adet 40 cm'lik askı bulunmaktadır."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Plastik raflı veya farklı ölçülerde modelleriniz var mı?",
+      "referans_cevap": "Evet, plastik raflı modeller mevcuttur. Farklı genişliklerde (örneğin 135 cm, 180 cm, 185 cm) ürünler de bulunmaktadır."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün hangi kargo firması ile gönderiliyor?",
+      "referans_cevap": "Ürün genellikle MNG Kargo ile gönderilmektedir. Bazı cevaplarda DHL e-commerce ve DHL ile de gönderim yapıldığı belirtilmiştir."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün hangi şehirden gönderiliyor?",
+      "referans_cevap": "Ürün İstanbul'dan gönderilmektedir. Bir cevapta Balıkesir'den gönderildiği belirtilmiştir."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Köylere veya belirli bölgelere kargo gönderimi yapılıyor mu?",
+      "referans_cevap": "Köylere kargo gönderimi yapılmamaktadır. Sadece MNG Kargo ile anlaşma mevcuttur."
+    },
+    {
+      "kategori": "garanti",
+      "soru": "Ürünün garanti süresi ne kadar?",
+      "referans_cevap": "Ürünün garanti süresi 2 yıldır."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürünün kurulumu nasıl yapılıyor ve kurulum videosu var mı?",
+      "referans_cevap": "Ürün demonte olarak gönderilir ve kurulum kılavuzu ile kolayca kurulabilir. Kurulum videosu da mevcuttur."
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürünün montajı yapılıyor mu ve ücretli mi?",
+      "referans_cevap": "Montaj hizmeti satıcı tarafından verilmemektedir. Trendyol üzerinden ek ücretle montaj hizmeti alınabilir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün taşıma kapasitesi nedir?",
+      "referans_cevap": "Her raf ve askı ortalama 5 ila 10 kg ağırlık taşıyabilir. Dengeli ağırlık yerleştirilmesi önemlidir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün ön yüzü kapalı mı ve nasıl açılıyor?",
+      "referans_cevap": "Ürünün önü fermuarlıdır ve sağ, sol ve ortada olmak üzere 3 adet fermuarı bulunmaktadır."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün bez kısmı yıkanabilir mi?",
+      "referans_cevap": "Bez kısımları soğuk suda, kısa devirde veya elde yıkanabilir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürün yüklük veya yatak dolabı olarak kullanılabilir mi?",
+      "referans_cevap": "Ürün yüklük veya yatak dolabı olarak kullanıma uygun değildir. Rafları bez olduğu için ağır eşyalar için tavsiye edilmez."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün toplam ağırlığı ne kadar?",
+      "referans_cevap": "Ürünün ağırlığı ortalama 3.5 ila 5 kg arasında değişmektedir. Koli ağırlığı ise 4 ila 4.5 kg civarındadır."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün fermuarları dayanıklı mı?",
+      "referans_cevap": "Fermuarlar kolay kolay bozulmaz ve dayanıklıdır."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün bez kılıfı yırtılırsa yedek temin edilebilir mi?",
+      "referans_cevap": "Evet, yedek kılıf temini mümkündür. Destek hattı ile iletişime geçilmelidir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün içindeki borular kırılırsa yedek parça temin edilebilir mi?",
+      "referans_cevap": "Evet, yedek parça temini mümkündür. Destek hattı ile iletişime geçilmelidir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün raf sayısını azaltıp çoğaltmak mümkün mü?",
+      "referans_cevap": "Raf sayısını azaltmak mümkündür, ancak arttırmak mümkün değildir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürünün koli boyutları nedir?",
+      "referans_cevap": "Koli boyutları 44x24x23 cm şeklindedir."
+    }
+  ],
+  "97879098": [
+    {
+      "kategori": "olcu",
+      "soru": "Ürünün genişliği, derinliği ve yüksekliği kaç cm?",
+      "referans_cevap": "YÜKSEKLİK: 173 cm GENİŞLİK: 120 cm DERİNLİK: 44 cm"
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Aynanın ölçüsü nedir?",
+      "referans_cevap": "AYNA ÖLÇÜSÜ:147,5X20"
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Dolap kapağı açıkken ileriye doğru ne kadar yer kaplar?",
+      "referans_cevap": "Merhaba 82 cm civarındadır"
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Raf aralığı ve genişliği nedir?",
+      "referans_cevap": "Raf arası yükseklik : 42 cm genişlik : 57 cm"
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Askılıkların boyu ve genişliği nedir?",
+      "referans_cevap": "ASKILIK ÖLÇÜSÜ İSE YÜKSEKLİK 84 CM GENİŞLİK 57 CM."
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Alt askılık yeri yüksekliği nedir?",
+      "referans_cevap": "merhaba efendim 72 cmdir"
+    },
+    {
+      "kategori": "olcu",
+      "soru": "Kulp uzunluğu kaç cm?",
+      "referans_cevap": "160'lık kulp kullanımaktadır"
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Dolabın malzemesi nedir?",
+      "referans_cevap": "Ürünlerimiz 1. kalite suntalamdır."
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Dolabın suntalam kalınlığı kaç mm?",
+      "referans_cevap": "Merhaba 18 mm suntalamdir"
+    },
+    {
+      "kategori": "malzeme",
+      "soru": "Ayna nasıl yapıştırılmıştır?",
+      "referans_cevap": "Merhabalar çift taraflı bant ve slikon ile yapıştırılmıştır"
+    },
+    {
+      "kategori": "renk",
+      "soru": "Dolabın rengi parlak beyaz mı, mat beyaz mı?",
+      "referans_cevap": "Merhaba mat beyaz"
+    },
+    {
+      "kategori": "renk",
+      "soru": "Antrasit veya füme rengi mevcut mu?",
+      "referans_cevap": "Merhaba hayır efendim"
+    },
+    {
+      "kategori": "renk",
+      "soru": "Siyah veya gri rengi var mı?",
+      "referans_cevap": "merhaba maalesef efendim"
+    },
+    {
+      "kategori": "renk",
+      "soru": "Sonomo rengi mevcut mu?",
+      "referans_cevap": "Merhaba suntadır efendim, sonomo rengi mevcuttur"
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Dolapla birlikte montaj için gerekli aletler gönderiliyor mu?",
+      "referans_cevap": "Merhaba efendim montaj için gerekli hırdavat seti paketlerin içerisindedir."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Dolabı sabitlemek için vidalar gönderiliyor mu?",
+      "referans_cevap": "Merhaba maalesef efendim sadece montaj için mevcuttur"
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Dolap kulpları kaç mm?",
+      "referans_cevap": "Merhaba 160'lık kulp kullanılmaktadır"
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Dolapta ayak var mı, ayak takılabilir mi?",
+      "referans_cevap": "Merhaba efendim ürünümüz bazalıdır ayak takılamaz."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Dolabın arka suntası çivi ile mi monte ediliyor?",
+      "referans_cevap": "Merhaba evet efendim."
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Bağlantı türü nedir (minifix, vida, t bağlantı)?",
+      "referans_cevap": "merhaba minifix"
+    },
+    {
+      "kategori": "aksesuar_parca",
+      "soru": "Menteşeler stoplu mu?",
+      "referans_cevap": "Merhaba menteşeler stoplu değil."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Aynasız modeli mevcut mu?",
+      "referans_cevap": "https://www.trendyol.com/metalia/4-kapili-beyaz-gardrop-dolap-gm-050-p-97912032?boutiqueId=61&merchantId=106538 dilerseniz bu ürünüm aynasız."
+    },
+    {
+      "kategori": "stok_varyant",
+      "soru": "Ayaklı modeli mevcut mu?",
+      "referans_cevap": "merhaba maalesef efendim"
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Hangi kargo firması ile gönderim yapılıyor?",
+      "referans_cevap": "Merhaba CEVA LOJİSTİK ile gönderim sağlıyoruz."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün kaç koli ve kaç desi olarak gönderiliyor?",
+      "referans_cevap": "Merhaba efendim 2 koli 61 desi ile gönderim sağlanıyor."
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün hangi ilden gönderiliyor?",
+      "referans_cevap": "merhaba kayseriden efendim"
+    },
+    {
+      "kategori": "kargo_lojistik",
+      "soru": "Ürün kaç parça halinde geliyor?",
+      "referans_cevap": "Merhaba efendim 2 koli şeklinde demonte gönderilmektedir."
+    },
+    {
+      "kategori": "garanti",
+      "soru": "Ürünün garanti süresi ne kadar?",
+      "referans_cevap": "2 Yıl"
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Ürün demonte olarak mı geliyor, kurulumu alıcıya mı ait?",
+      "referans_cevap": "merhaba efendim ürünlerimiz demonte bir şekilde gönderilmektedir"
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Kurulumu kendimiz yapabilir miyiz?",
+      "referans_cevap": "merhaba evet efendim"
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Kurulum için matkap gerekli mi?",
+      "referans_cevap": "merhaba şarjlı matkapla kurabilirsiniz"
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Kurulum videosu mevcut mu?",
+      "referans_cevap": "merhaba video yoktur efendim"
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Kurulum şeması ile birlikte mi gönderiliyor?",
+      "referans_cevap": "merhaba efendim kurulum şeması ile beraber gönderilmektedir"
+    },
+    {
+      "kategori": "kurulum",
+      "soru": "Montajlanacak yerler işaretli mi?",
+      "referans_cevap": "merhaba evet"
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolap içi rafların yerleri değiştirilebilir mi?",
+      "referans_cevap": "Merhaba delikler denk gelmez efendim"
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolap içi raflar sabit mi, sökülüp takılabilir mi?",
+      "referans_cevap": "merhaba efendim sabit"
+    },
+    {
+      "kategori": "diger",
+      "soru": "Ürün sıfır mı, ikinci el mi?",
+      "referans_cevap": "merhaba ürünlerimiz sıfırdır"
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolaplar için depolama imkanınız var mı?",
+      "referans_cevap": "Merhaba nasıl yani ?"
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolaplar iki ayrı parça olarak kullanılabilir mi?",
+      "referans_cevap": "Merhaba efendim ayrı kullanmak için uygun değildir."
+    },
+    {
+      "kategori": "diger",
+      "soru": "Dolapta çekmece var mı?",
+      "referans_cevap": "Malesef efendim"
+    },
+    {
+      "kategori": "diger",
+      "soru": "Yorgan, yastık gibi ürünler konulabilir mi?",
+      "referans_cevap": "merhaba tabiki efendim kullanabilirsiniz"
+    },
+    {
+      "kategori": "diger",
+      "soru": "Görseldeki kıyafetler gerçek boyutlarda mı?",
+      "referans_cevap": "merhaba görsel gerçek bir görsel değil efendim bilgisayar ortamında hazırlanmaktadır"
+    }
+  ]
+}

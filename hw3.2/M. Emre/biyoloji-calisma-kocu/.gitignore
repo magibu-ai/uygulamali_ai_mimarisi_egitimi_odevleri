@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+
+# API anahtarları. Desen ".env" değil ".env*" olmalı: aksi halde .env.groq,
+# .env.local gibi dosyalar yakalanmaz ve anahtar depoya sızar.
+.env*
+!.env.example
+
+# Veritabanı JSON kaynaklarından üretilir (kurulum.py), depoda tutulmaz.
+data/koc.db

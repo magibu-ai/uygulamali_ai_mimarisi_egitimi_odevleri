@@ -1,0 +1,1001 @@
+﻿sentence1,sentence2,score,pair_type,topic
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,İstanbul'a mevsimin ilk karı düştü.,0.110719,unrelated,saglik|hava
+Cumhurbaşkanı Rusya'e resmi ziyarette bulundu.,İzmir'da sıcaklık 35 dereceye ulaştı.,0.11938,unrelated,siyaset|hava
+"Sivasspor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Sivasspor sezonu zirvede bitirip şampiyon oldu.,0.909458,paraphrase,spor
+Teknoloji şirketi yeni akıllı telefon tanıttı.,Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,0.443491,related,teknoloji
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Borsa İstanbul günü yüzde 27 değişimle kapattı.,0.11479,unrelated,saglik|ekonomi
+popüler sunucu yeni projesiyle ekranlara dönüyor.,pop yıldızı eşinden boşandığını duyurdu.,0.30541,related,magazin
+"Göztepe, sahasında Eyüpspor'yi 1-2 mağlup etti.",Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.069977,unrelated,spor|saglik
+"Kasımpaşa, Gaziantep FK karşısında sahadan 4-1 galip ayrıldı.",Kasımpaşa evinde Gaziantep FK'yi 4-1'lik skorla yendi.,0.90637,paraphrase,spor
+İtalya'de meydana gelen depremde maddi hasar oluştu.,Fransa'de meydana gelen depremde maddi hasar oluştu.,0.774438,related,dunya
+Merkez Bankası politika faizini sabit tuttu.,Hazine ve Maliye Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.201607,unrelated,ekonomi|siyaset
+"Konyaspor, Başakşehir karşısında sahadan 1-0 galip ayrıldı.",Konyaspor evinde Başakşehir'yi 1-0'lik skorla yendi.,0.91102,paraphrase,spor
+Çin iklim zirvesine ev sahipliği yapıyor.,Meteoroloji Trabzon için kuvvetli yağış uyarısı yaptı.,0.328613,unrelated,dunya|hava
+Genç oyuncu sevgilisiyle nişanlandı.,Genç oyuncu mutlu haberi nişan yüzükleriyle duyurdu.,0.704102,paraphrase,magazin
+Teknoloji şirketi yeni elektrikli otomobil tanıttı.,Teknoloji şirketi yeni yapay zeka modeli tanıttı.,0.633588,related,teknoloji
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,İtalya'de yapılan seçimleri muhalefet kazandı.,0.209554,unrelated,saglik|dunya
+Sakarya'da sıcaklık 32 dereceye ulaştı.,Fransa'de yapılan seçimleri muhalefet kazandı.,0.103481,unrelated,hava|dunya
+ABD iklim zirvesine ev sahipliği yapıyor.,İngiltere'de yapılan seçimleri muhalefet kazandı.,0.088266,related,dunya
+Çin'de yapılan seçimleri muhalefet kazandı.,Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,0.167788,unrelated,dunya|teknoloji
+Meteoroloji Mersin için kuvvetli yağış uyarısı yaptı.,Ankara'a mevsimin ilk karı düştü.,0.201309,related,hava
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,usta oyuncu yeni projesiyle ekranlara dönüyor.,0.432079,unrelated,saglik|magazin
+Eskişehir ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Eskişehir için sağanak uyarısında bulundu.,0.717255,paraphrase,hava
+Antalya'da iki aracın çarpışması sonucu 2 kişi yaralandı.,Antalya'daki trafik kazasında 2 kişi yaralı kurtuldu.,0.902776,paraphrase,asayis
+Cumhurbaşkanı İspanya'e resmi ziyarette bulundu.,Çin'de yapılan seçimleri muhalefet kazandı.,0.123368,unrelated,siyaset|dunya
+Denizli'da sıcaklık 44 dereceye ulaştı.,İspanya'de meydana gelen depremde maddi hasar oluştu.,0.182073,unrelated,hava|dunya
+"ödüllü yönetmen, Diyarbakır'da tatilde görüntülendi.",Teknoloji şirketi yeni elektrikli otomobil tanıttı.,0.123364,unrelated,magazin|teknoloji
+Adana'da iki aracın çarpışması sonucu 2 kişi yaralandı.,Adana'daki trafik kazasında 2 kişi yaralı kurtuldu.,0.895285,paraphrase,asayis
+Ünlü oyuncu yeni bir aşka yelken açtı.,Ünlü oyuncu yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.867985,paraphrase,magazin
+Merkez Bankası politika faizini sabit tuttu.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.059741,unrelated,ekonomi|teknoloji
+Adana ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Adana için sağanak uyarısında bulundu.,0.775298,paraphrase,hava
+Liderler Fransa'de düzenlenen zirvede bir araya geldi.,Fransa'deki zirvede liderler önemli konuları görüştü.,0.79641,paraphrase,siyaset
+Cumhurbaşkanı Fransa'e resmi ziyarette bulundu.,ABD'de meydana gelen depremde maddi hasar oluştu.,0.138838,unrelated,siyaset|dunya
+Merkez Bankası politika faizini sabit tuttu.,Kayseri'da sıcaklık 43 dereceye ulaştı.,0.171733,unrelated,ekonomi|hava
+Muğla'da meydana gelen trafik kazasında 2 kişi yaralandı.,Fenerbahçe'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.192204,unrelated,asayis|spor
+Ünlü model yeni bir aşka yelken açtı.,Ünlü model yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.843706,paraphrase,magazin
+Dolar kuru güne yüzde 40 yükselişle başladı.,Borsa İstanbul günü yüzde 19 değişimle kapattı.,0.302738,related,ekonomi
+Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,İngiltere iklim zirvesine ev sahipliği yapıyor.,0.052325,unrelated,siyaset|dunya
+Trabzon'da meydana gelen trafik kazasında 3 kişi yaralandı.,Merkez Bankası politika faizini sabit tuttu.,0.051117,unrelated,asayis|ekonomi
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.123161,unrelated,saglik|teknoloji
+"Fenerbahçe, yıldız futbolcuyla sözleşme yeniledi.",Meteoroloji Ankara için kuvvetli yağış uyarısı yaptı.,0.10245,unrelated,spor|hava
+İzmir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Bolu'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.838692,related,asayis
+Diyarbakır'da meydana gelen trafik kazasında 1 kişi yaralandı.,Konya'da meydana gelen trafik kazasında 5 kişi yaralandı.,0.485631,related,asayis
+Mersin ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Mersin için sağanak uyarısında bulundu.,0.657979,paraphrase,hava
+Cumhurbaşkanı Rusya'e resmi ziyarette bulundu.,Teknoloji şirketi yeni işletim sistemi tanıttı.,0.146167,unrelated,siyaset|teknoloji
+Muğla'da çıkan yangın itfaiye ekiplerince söndürüldü.,İzmir'da meydana gelen trafik kazasında 2 kişi yaralandı.,0.285977,related,asayis
+Gaziantep'da sıcaklık 31 dereceye ulaştı.,Meteoroloji Mersin için kuvvetli yağış uyarısı yaptı.,0.311076,related,hava
+İzmir'da meydana gelen trafik kazasında 2 kişi yaralandı.,Bolu'a mevsimin ilk karı düştü.,0.229908,unrelated,asayis|hava
+Borsa İstanbul günü yüzde 16 değişimle kapattı.,Borsa İstanbul günü yüzde 21 değişimle kapattı.,0.675885,related,ekonomi
+"Bodrum FK, yıldız futbolcuyla sözleşme yeniledi.","Sivasspor, yıldız futbolcuyla sözleşme yeniledi.",0.770146,related,spor
+Ünlü oyuncu sevgilisiyle nişanlandı.,Ünlü oyuncu mutlu haberi nişan yüzükleriyle duyurdu.,0.753542,paraphrase,magazin
+Borsa İstanbul günü yüzde 22 değişimle kapattı.,Merkez Bankası politika faizini sabit tuttu.,0.203963,related,ekonomi
+Mersin'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Gaziantep'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.287103,related,asayis
+Usta oyuncu yeni bir aşka yelken açtı.,Usta oyuncu yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.839694,paraphrase,magazin
+"Beşiktaş, sahasında Trabzonspor'yi 4-3 mağlup etti.","Beşiktaş, yıldız futbolcuyla sözleşme yeniledi.",0.222713,related,spor
+Borsa İstanbul günü yüzde 1 değişimle kapattı.,Ekmek fiyatları son bir ayda yüzde 7 arttı.,0.207658,related,ekonomi
+Borsa İstanbul günü yüzde 16 değişimle kapattı.,"ünlü sunucu, Denizli'da tatilde görüntülendi.",0.110396,unrelated,ekonomi|magazin
+Mersin'da sıcaklık 43 dereceye ulaştı.,Diyarbakır'da sıcaklık 34 dereceye ulaştı.,0.49393,related,hava
+Trabzon'a mevsimin ilk karı düştü.,sevilen komedyen eşinden boşandığını duyurdu.,0.119878,unrelated,hava|magazin
+Mersin'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Sakarya'a mevsimin ilk karı düştü.,0.140313,unrelated,asayis|hava
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Hatayspor teknik direktörüyle yollarını ayırdı.,0.127217,unrelated,saglik|spor
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Hazine ve Maliye Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.274479,unrelated,saglik|siyaset
+Usta oyuncu eşiyle Mersin'da tatil yaparken görüntülendi.,Usta oyuncu ve eşinin Mersin tatilinden kareler paylaşıldı.,0.957383,paraphrase,magazin
+"genç oyuncu, Diyarbakır'da tatilde görüntülendi.",Merkez Bankası politika faizini sabit tuttu.,0.09231,unrelated,magazin|ekonomi
+Ekmek fiyatları son bir ayda yüzde 21 arttı.,"Kasımpaşa, yıldız futbolcuyla sözleşme yeniledi.",0.093662,unrelated,ekonomi|spor
+İtalya iklim zirvesine ev sahipliği yapıyor.,Antalya'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.175421,unrelated,dunya|asayis
+Denizli'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Muğla'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.843347,related,asayis
+Kayseri ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Kayseri için sağanak uyarısında bulundu.,0.727965,paraphrase,hava
+Boğaz enfeksiyonu vakalarında son haftalarda belirgin artış görüldü.,Sağlık yetkilileri boğaz enfeksiyonu vakalarının yükseldiğini bildirdi.,0.820629,paraphrase,saglik
+İzmir'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,İzmir beklenenden daha sıcak bir güne uyandı.,0.715502,paraphrase,hava
+genç oyuncu sürpriz bir törenle dünyaevine girdi.,Antalyaspor teknik direktörüyle yollarını ayırdı.,0.054075,unrelated,magazin|spor
+Uzmanlar migren vakalarındaki artışa dikkat çekti.,Adana'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.195929,unrelated,saglik|asayis
+Yıllık enflasyon yüzde 33 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 33 olarak duyurdu.,0.954966,paraphrase,ekonomi
+Teknoloji şirketi yeni yapay zeka modeli tanıttı.,Uzmanlar migren vakalarındaki artışa dikkat çekti.,0.161102,unrelated,teknoloji|saglik
+Japonya'de meydana gelen depremde maddi hasar oluştu.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.170497,unrelated,dunya|saglik
+pop yıldızı eşinden boşandığını duyurdu.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.136205,unrelated,magazin|saglik
+"Alanyaspor, yıldız futbolcuyla sözleşme yeniledi.","Eyüpspor, yıldız futbolcuyla sözleşme yeniledi.",0.870492,related,spor
+Diyarbakır'da çıkan yangın itfaiye ekiplerince söndürüldü.,Meteoroloji Denizli için kuvvetli yağış uyarısı yaptı.,0.355176,unrelated,asayis|hava
+İtalya'de yapılan seçimleri muhalefet kazandı.,Meteoroloji Kayseri için kuvvetli yağış uyarısı yaptı.,0.113191,unrelated,dunya|hava
+"Başakşehir, yıldız futbolcuyla sözleşme yeniledi.",Konya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.100323,unrelated,spor|asayis
+ana muhalefet partisi yeni yasa teklifini meclise sundu.,Rusya iklim zirvesine ev sahipliği yapıyor.,0.00871,unrelated,siyaset|dunya
+pop yıldızı sürpriz bir törenle dünyaevine girdi.,Meteoroloji İzmir için kuvvetli yağış uyarısı yaptı.,0.191763,unrelated,magazin|hava
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Teknoloji şirketi yeni yapay zeka modeli tanıttı.,0.655165,related,teknoloji
+Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,Teknoloji şirketi yeni oyun konsolu tanıttı.,0.404912,related,teknoloji
+İtalya iklim zirvesine ev sahipliği yapıyor.,"Sivasspor, sahasında Trabzonspor'yi 3-0 mağlup etti.",0.026558,unrelated,dunya|spor
+İspanya'de düzenlenen genel seçimlerde sonuçlar belli oldu.,İspanya halkı sandık başına giderek yeni yönetimini seçti.,0.64984,paraphrase,dunya
+Et fiyatları son bir ayda yüzde 25 arttı.,Ulaştırma Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.111106,unrelated,ekonomi|siyaset
+İzmir'da sıcaklık 38 dereceye ulaştı.,İstanbul'da sıcaklık 35 dereceye ulaştı.,0.690055,related,hava
+Fenerbahçe teknik direktörüyle yollarını ayırdı.,fenomen isim eşinden boşandığını duyurdu.,0.338056,unrelated,spor|magazin
+Gaziantep'da iki aracın çarpışması sonucu 6 kişi yaralandı.,Gaziantep'daki trafik kazasında 6 kişi yaralı kurtuldu.,0.900289,paraphrase,asayis
+Cumhurbaşkanı Rusya'e resmi ziyarette bulundu.,Tarım ve Orman Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.134638,related,siyaset
+Hollanda iklim zirvesine ev sahipliği yapıyor.,Bolu'da sıcaklık 36 dereceye ulaştı.,0.342122,unrelated,dunya|hava
+Ankara'a mevsimin ilk karı düştü.,"fenomen isim, Mersin'da tatilde görüntülendi.",0.23107,unrelated,hava|magazin
+koalisyon ortağı yeni yasa teklifini meclise sundu.,popüler sunucu sürpriz bir törenle dünyaevine girdi.,0.191621,unrelated,siyaset|magazin
+İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Muğla'da meydana gelen trafik kazasında 2 kişi yaralandı.,0.12851,unrelated,siyaset|asayis
+Uzmanlar alerji vakalarındaki artışa dikkat çekti.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.314313,related,saglik
+Ankara'da çıkan yangın itfaiye ekiplerince söndürüldü.,İstanbul'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.840448,related,asayis
+"Antalyaspor, yıldız futbolcuyla sözleşme yeniledi.",Diyarbakır'da meydana gelen trafik kazasında 5 kişi yaralandı.,0.094456,unrelated,spor|asayis
+Borsa İstanbul günü yüzde 32 değişimle kapattı.,sevilen komedyen yeni projesiyle ekranlara dönüyor.,0.052538,unrelated,ekonomi|magazin
+"Hatayspor, tecrübeli oyuncuyla anlaşmaya vardı.",Hatayspor deneyimli futbolcuyu kadrosuna kattı.,0.809591,paraphrase,spor
+Mersin'da sıcaklık 41 dereceye ulaştı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.111981,unrelated,hava|saglik
+Ankara'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Ankara'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.834327,paraphrase,asayis
+"Başakşehir, ligi lider tamamlayarak şampiyonluğa ulaştı.",Başakşehir sezonu zirvede bitirip şampiyon oldu.,0.881717,paraphrase,spor
+Samsun'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,"Alanyaspor, sahasında Trabzonspor'yi 4-3 mağlup etti.",0.132944,unrelated,asayis|spor
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Sakarya'a mevsimin ilk karı düştü.,0.113683,unrelated,saglik|hava
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Sakarya'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.125282,unrelated,teknoloji|asayis
+Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,0.649636,related,teknoloji
+Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,Meteoroloji Kayseri için kuvvetli yağış uyarısı yaptı.,0.176097,unrelated,teknoloji|hava
+genç oyuncu eşinden boşandığını duyurdu.,"Başakşehir, yıldız futbolcuyla sözleşme yeniledi.",0.21384,unrelated,magazin|spor
+İngiltere'de yapılan seçimleri muhalefet kazandı.,Merkez Bankası politika faizini sabit tuttu.,0.175784,unrelated,dunya|ekonomi
+Merkez Bankası politika faizini sabit tuttu.,Soğan fiyatları son bir ayda yüzde 12 arttı.,0.214697,related,ekonomi
+İspanya'de yapılan seçimleri muhalefet kazandı.,Dolar kuru güne yüzde 22 yükselişle başladı.,0.141894,unrelated,dunya|ekonomi
+Mersin'da sıcaklık 41 dereceye ulaştı.,Samsun'a mevsimin ilk karı düştü.,0.206565,related,hava
+Patates fiyatları son bir ayda yüzde 37 arttı.,Dolar kuru güne yüzde 15 yükselişle başladı.,0.386205,related,ekonomi
+Denizli'da çıkan yangın itfaiye ekiplerince söndürüldü.,sevilen komedyen sürpriz bir törenle dünyaevine girdi.,0.136559,unrelated,asayis|magazin
+Çin'de yapılan seçimleri muhalefet kazandı.,Hollanda iklim zirvesine ev sahipliği yapıyor.,0.081609,related,dunya
+Muğla'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,İspanya'de yapılan seçimleri muhalefet kazandı.,0.189894,unrelated,asayis|dunya
+Meteoroloji Mersin için kuvvetli yağış uyarısı yaptı.,Cumhurbaşkanı Japonya'e resmi ziyarette bulundu.,0.13838,unrelated,hava|siyaset
+İzmir'da meydana gelen trafik kazasında 1 kişi yaralandı.,İspanya'de meydana gelen depremde maddi hasar oluştu.,0.35169,unrelated,asayis|dunya
+Muğla'da çıkan yangın itfaiye ekiplerince söndürüldü.,Rusya'de meydana gelen depremde maddi hasar oluştu.,0.351975,unrelated,asayis|dunya
+Dolar kuru güne yüzde 10 yükselişle başladı.,Dolar kuru güne yüzde 11 yükselişle başladı.,0.787472,related,ekonomi
+"Gaziantep FK, Alanyaspor karşısında sahadan 2-1 galip ayrıldı.",Gaziantep FK evinde Alanyaspor'yi 2-1'lik skorla yendi.,0.910291,paraphrase,spor
+"Samsunspor, Bodrum FK karşısında sahadan 1-2 galip ayrıldı.",Samsunspor evinde Bodrum FK'yi 1-2'lik skorla yendi.,0.906691,paraphrase,spor
+Fenomen isim eşiyle Mersin'da tatil yaparken görüntülendi.,Fenomen isim ve eşinin Mersin tatilinden kareler paylaşıldı.,0.942949,paraphrase,magazin
+Çay fiyatları son bir ayda yüzde 22 arttı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.187774,unrelated,ekonomi|saglik
+Dolar kuru güne yüzde 20 yükselişle başladı.,ünlü şarkıcı yeni projesiyle ekranlara dönüyor.,0.152569,unrelated,ekonomi|magazin
+Merkez Bankası politika faizini sabit tuttu.,Meteoroloji İzmir için kuvvetli yağış uyarısı yaptı.,0.172627,unrelated,ekonomi|hava
+Uzmanlar yüksek tansiyon vakalarındaki artışa dikkat çekti.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.34154,related,saglik
+Alerji vakalarında son haftalarda belirgin artış görüldü.,Sağlık yetkilileri alerji vakalarının yükseldiğini bildirdi.,0.638326,paraphrase,saglik
+"ödüllü yönetmen, Eskişehir'da tatilde görüntülendi.",sevilen sanatçı eşinden boşandığını duyurdu.,0.259344,related,magazin
+Yıllık enflasyon yüzde 30 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 30 olarak duyurdu.,0.95182,paraphrase,ekonomi
+Merkez Bankası politika faizini sabit tuttu.,İtalya'de meydana gelen depremde maddi hasar oluştu.,0.166459,unrelated,ekonomi|dunya
+Teknoloji şirketi yeni yapay zeka modeli tanıttı.,"genç oyuncu, Adana'da tatilde görüntülendi.",0.056665,unrelated,teknoloji|magazin
+Meteoroloji Samsun için kuvvetli yağış uyarısı yaptı.,Bursa'da sıcaklık 31 dereceye ulaştı.,0.301707,related,hava
+sevilen sanatçı sürpriz bir törenle dünyaevine girdi.,"ünlü model, Muğla'da tatilde görüntülendi.",0.288337,related,magazin
+Bursa'da iki aracın çarpışması sonucu 3 kişi yaralandı.,Bursa'daki trafik kazasında 3 kişi yaralı kurtuldu.,0.909717,paraphrase,asayis
+Ünlü sunucu eşiyle Denizli'da tatil yaparken görüntülendi.,Ünlü sunucu ve eşinin Denizli tatilinden kareler paylaşıldı.,0.958347,paraphrase,magazin
+"Kasımpaşa, yıldız futbolcuyla sözleşme yeniledi.",Eskişehir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.147777,unrelated,spor|asayis
+pop yıldızı yeni projesiyle ekranlara dönüyor.,Cumhurbaşkanı Çin'e resmi ziyarette bulundu.,0.200586,unrelated,magazin|siyaset
+Dolar kuru güne yüzde 26 yükselişle başladı.,Merkez Bankası politika faizini sabit tuttu.,0.262895,related,ekonomi
+Konya'da iki aracın çarpışması sonucu 4 kişi yaralandı.,Konya'daki trafik kazasında 4 kişi yaralı kurtuldu.,0.893579,paraphrase,asayis
+Pirinç fiyatları son bir ayda yüzde 38 arttı.,Kayserispor teknik direktörüyle yollarını ayırdı.,0.028059,unrelated,ekonomi|spor
+İzmir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,ana muhalefet partisi yeni yasa teklifini meclise sundu.,0.095298,unrelated,asayis|siyaset
+"Göztepe, tecrübeli oyuncuyla anlaşmaya vardı.",Göztepe deneyimli futbolcuyu kadrosuna kattı.,0.684092,paraphrase,spor
+Gaziantep ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Gaziantep için sağanak uyarısında bulundu.,0.731986,paraphrase,hava
+genç oyuncu sürpriz bir törenle dünyaevine girdi.,Cumhurbaşkanı Fransa'e resmi ziyarette bulundu.,0.233336,unrelated,magazin|siyaset
+Diyarbakır'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Teknoloji şirketi yeni işletim sistemi tanıttı.,0.095205,unrelated,asayis|teknoloji
+Gaziantep'da iki aracın çarpışması sonucu 2 kişi yaralandı.,Gaziantep'daki trafik kazasında 2 kişi yaralı kurtuldu.,0.894116,paraphrase,asayis
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Ankara'a mevsimin ilk karı düştü.,0.118337,unrelated,saglik|hava
+İtalya'de yapılan seçimleri muhalefet kazandı.,Konya'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.16791,unrelated,dunya|asayis
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Almanya'de yapılan seçimleri muhalefet kazandı.,0.02462,unrelated,teknoloji|dunya
+"ünlü şarkıcı, Konya'da tatilde görüntülendi.",ünlü oyuncu yeni projesiyle ekranlara dönüyor.,0.230291,related,magazin
+Aydın'da meydana gelen trafik kazasında 4 kişi yaralandı.,pop yıldızı sürpriz bir törenle dünyaevine girdi.,0.116995,unrelated,asayis|magazin
+Teknoloji şirketi yeni işletim sistemi tanıttı.,Ankara'da sıcaklık 30 dereceye ulaştı.,0.113343,unrelated,teknoloji|hava
+Ünlü şarkıcı yeni bir aşka yelken açtı.,Ünlü şarkıcı yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.874275,paraphrase,magazin
+İzmir'da iki aracın çarpışması sonucu 4 kişi yaralandı.,İzmir'daki trafik kazasında 4 kişi yaralı kurtuldu.,0.896757,paraphrase,asayis
+"genç oyuncu, Denizli'da tatilde görüntülendi.",Merkez Bankası politika faizini sabit tuttu.,0.122023,unrelated,magazin|ekonomi
+Cumhurbaşkanı İngiltere'e resmi ziyarette bulundu.,Çin iklim zirvesine ev sahipliği yapıyor.,0.188947,unrelated,siyaset|dunya
+Gaziantep FK teknik direktörüyle yollarını ayırdı.,Meteoroloji Aydın için kuvvetli yağış uyarısı yaptı.,0.042488,unrelated,spor|hava
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,0.165329,related,teknoloji
+Muğla'da meydana gelen trafik kazasında 4 kişi yaralandı.,Dolar kuru güne yüzde 5 yükselişle başladı.,0.16197,unrelated,asayis|ekonomi
+Eskişehir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Fransa'de meydana gelen depremde maddi hasar oluştu.,0.159138,unrelated,asayis|dunya
+Gaziantep'da sıcaklık 35 dereceye ulaştı.,Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,0.120512,unrelated,hava|teknoloji
+Sevilen sanatçı yeni bir aşka yelken açtı.,Sevilen sanatçı yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.860269,paraphrase,magazin
+Ünlü şarkıcı eşiyle Muğla'da tatil yaparken görüntülendi.,Ünlü şarkıcı ve eşinin Muğla tatilinden kareler paylaşıldı.,0.959715,paraphrase,magazin
+Antalyaspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.090887,unrelated,spor|saglik
+Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Cumhurbaşkanı Japonya'e resmi ziyarette bulundu.,0.135732,related,siyaset
+Popüler uygulama elektrikli otomobil için yeni güncelleme yayınladı.,Çay fiyatları son bir ayda yüzde 21 arttı.,0.198069,unrelated,teknoloji|ekonomi
+Cumhurbaşkanı Hollanda'e resmi ziyarette bulundu.,Cumhurbaşkanı Yunanistan'e resmi ziyarette bulundu.,0.635975,related,siyaset
+sevilen komedyen sürpriz bir törenle dünyaevine girdi.,ünlü sunucu yeni projesiyle ekranlara dönüyor.,0.317383,related,magazin
+ünlü sunucu sürpriz bir törenle dünyaevine girdi.,Merkez Bankası politika faizini sabit tuttu.,0.131259,unrelated,magazin|ekonomi
+Peynir fiyatları son bir ayda yüzde 23 arttı.,Meteoroloji Adana için kuvvetli yağış uyarısı yaptı.,0.132116,unrelated,ekonomi|hava
+Meteoroloji İstanbul için kuvvetli yağış uyarısı yaptı.,Meteoroloji Konya için kuvvetli yağış uyarısı yaptı.,0.788766,related,hava
+Popüler sunucu eşiyle Sakarya'da tatil yaparken görüntülendi.,Popüler sunucu ve eşinin Sakarya tatilinden kareler paylaşıldı.,0.964122,paraphrase,magazin
+"Göztepe, sahasında Sivasspor'yi 2-3 mağlup etti.",Aydın'da meydana gelen trafik kazasında 2 kişi yaralandı.,0.265394,unrelated,spor|asayis
+İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Yunanistan iklim zirvesine ev sahipliği yapıyor.,0.044264,unrelated,siyaset|dunya
+"Alanyaspor, sahasında Trabzonspor'yi 3-1 mağlup etti.",Beşiktaş teknik direktörüyle yollarını ayırdı.,0.188231,related,spor
+Yıllık enflasyon yüzde 11 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 11 olarak duyurdu.,0.960267,paraphrase,ekonomi
+sevilen komedyen yeni projesiyle ekranlara dönüyor.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.386911,unrelated,magazin|saglik
+Sakarya'da iki aracın çarpışması sonucu 5 kişi yaralandı.,Sakarya'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.913479,paraphrase,asayis
+İtalya'de yapılan seçimleri muhalefet kazandı.,Dolar kuru güne yüzde 8 yükselişle başladı.,0.173845,unrelated,dunya|ekonomi
+Enerji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,İtalya'de yapılan seçimleri muhalefet kazandı.,0.120542,unrelated,siyaset|dunya
+Cumhurbaşkanı Çin'e resmi ziyarette bulundu.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.139815,unrelated,siyaset|teknoloji
+Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,Diyarbakır'da meydana gelen trafik kazasında 1 kişi yaralandı.,0.140364,unrelated,teknoloji|asayis
+ABD'de yapılan seçimleri muhalefet kazandı.,ABD iklim zirvesine ev sahipliği yapıyor.,0.281006,related,dunya
+Teknoloji devi yeni oyun konsolu modelini duyurdu.,Şirket güncellenmiş oyun konsolu sürümünü kullanıma sundu.,0.763135,paraphrase,teknoloji
+Usta oyuncu eşiyle Bolu'da tatil yaparken görüntülendi.,Usta oyuncu ve eşinin Bolu tatilinden kareler paylaşıldı.,0.949553,paraphrase,magazin
+Teknoloji şirketi yeni sohbet robotu tanıttı.,Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,0.474662,related,teknoloji
+Trabzon'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Trabzon'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.834348,paraphrase,asayis
+"ünlü sunucu, Eskişehir'da tatilde görüntülendi.",sevilen komedyen yeni projesiyle ekranlara dönüyor.,0.271808,related,magazin
+Gaziantep'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.180979,unrelated,asayis|saglik
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,0.403438,related,saglik
+"Trabzonspor, yıldız futbolcuyla sözleşme yeniledi.",Enerji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.133356,unrelated,spor|siyaset
+"Kayserispor, tecrübeli oyuncuyla anlaşmaya vardı.",Kayserispor deneyimli futbolcuyu kadrosuna kattı.,0.750626,paraphrase,spor
+Dolar kuru güne yüzde 6 yükselişle başladı.,Teknoloji şirketi yeni akıllı telefon tanıttı.,0.184453,unrelated,ekonomi|teknoloji
+iktidar partisi yeni yasa teklifini meclise sundu.,popüler sunucu yeni projesiyle ekranlara dönüyor.,0.292243,unrelated,siyaset|magazin
+ana muhalefet partisi yeni yasa teklifini meclise sundu.,mecliste grubu bulunan bir parti yeni yasa teklifini meclise sundu.,0.867691,related,siyaset
+Sevilen komedyen eşiyle Konya'da tatil yaparken görüntülendi.,Sevilen komedyen ve eşinin Konya tatilinden kareler paylaşıldı.,0.966826,paraphrase,magazin
+Sivasspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,"Antalyaspor, sahasında Fenerbahçe'yi 3-2 mağlup etti.",0.258118,related,spor
+Aydın'da iki aracın çarpışması sonucu 3 kişi yaralandı.,Aydın'daki trafik kazasında 3 kişi yaralı kurtuldu.,0.900468,paraphrase,asayis
+ödüllü yönetmen yeni projesiyle ekranlara dönüyor.,popüler sunucu eşinden boşandığını duyurdu.,0.215598,related,magazin
+Kayseri'da meydana gelen trafik kazasında 1 kişi yaralandı.,Bolu'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.168054,related,asayis
+Tarım ve Orman Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Cumhurbaşkanı Yunanistan'e resmi ziyarette bulundu.,0.123969,related,siyaset
+Bursa'da iki aracın çarpışması sonucu 6 kişi yaralandı.,Bursa'daki trafik kazasında 6 kişi yaralı kurtuldu.,0.902699,paraphrase,asayis
+genç oyuncu eşinden boşandığını duyurdu.,fenomen isim sürpriz bir törenle dünyaevine girdi.,0.205515,related,magazin
+Kayseri'a mevsimin ilk karı düştü.,Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,0.159573,unrelated,hava|saglik
+Konyaspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Samsunspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.873163,related,spor
+Ünlü model eşiyle Trabzon'da tatil yaparken görüntülendi.,Ünlü model ve eşinin Trabzon tatilinden kareler paylaşıldı.,0.960258,paraphrase,magazin
+Sanayi ve Teknoloji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Trabzon'da meydana gelen trafik kazasında 2 kişi yaralandı.,0.109134,unrelated,siyaset|asayis
+Uzmanlar şeker hastalığı vakalarındaki artışa dikkat çekti.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.586262,related,saglik
+Cumhurbaşkanı ABD'e resmi ziyarette bulundu.,Cumhurbaşkanı İngiltere'e resmi ziyarette bulundu.,0.794352,related,siyaset
+Almanya'de yapılan seçimleri muhalefet kazandı.,Yunanistan'de meydana gelen depremde maddi hasar oluştu.,0.210351,related,dunya
+"Trabzonspor, Fenerbahçe karşısında sahadan 1-1 galip ayrıldı.",Trabzonspor evinde Fenerbahçe'yi 1-1'lik skorla yendi.,0.870247,paraphrase,spor
+Cumhurbaşkanı İngiltere'e resmi ziyarette bulundu.,Sakarya'a mevsimin ilk karı düştü.,0.123633,unrelated,siyaset|hava
+Liderler Hollanda'de düzenlenen zirvede bir araya geldi.,Hollanda'deki zirvede liderler önemli konuları görüştü.,0.8291,paraphrase,siyaset
+İzmir'da meydana gelen trafik kazasında 1 kişi yaralandı.,Konyaspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.259395,unrelated,asayis|spor
+ünlü şarkıcı yeni projesiyle ekranlara dönüyor.,Almanya'de yapılan seçimleri muhalefet kazandı.,0.06445,unrelated,magazin|dunya
+Ankara'da iki aracın çarpışması sonucu 5 kişi yaralandı.,Ankara'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.914644,paraphrase,asayis
+Sakarya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Galatasaray teknik direktörüyle yollarını ayırdı.,0.14455,unrelated,asayis|spor
+Meteoroloji Kayseri için kuvvetli yağış uyarısı yaptı.,Hollanda iklim zirvesine ev sahipliği yapıyor.,0.314337,unrelated,hava|dunya
+Ünlü sunucu sevgilisiyle nişanlandı.,Ünlü sunucu mutlu haberi nişan yüzükleriyle duyurdu.,0.739727,paraphrase,magazin
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Cumhurbaşkanı Almanya'e resmi ziyarette bulundu.,0.105315,unrelated,teknoloji|siyaset
+usta oyuncu sürpriz bir törenle dünyaevine girdi.,pop yıldızı sürpriz bir törenle dünyaevine girdi.,0.848928,related,magazin
+Meteoroloji Adana için kuvvetli yağış uyarısı yaptı.,İstanbul'a mevsimin ilk karı düştü.,0.209297,related,hava
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.09359,unrelated,teknoloji|saglik
+Samsunspor teknik direktörüyle yollarını ayırdı.,ünlü şarkıcı sürpriz bir törenle dünyaevine girdi.,0.014353,unrelated,spor|magazin
+Borsa İstanbul günü yüzde 25 değişimle kapattı.,Fransa iklim zirvesine ev sahipliği yapıyor.,0.037339,unrelated,ekonomi|dunya
+"genç oyuncu, Kayseri'da tatilde görüntülendi.",Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.058288,unrelated,magazin|saglik
+Teknoloji şirketi yeni akıllı telefon tanıttı.,Merkez Bankası politika faizini sabit tuttu.,0.043333,unrelated,teknoloji|ekonomi
+"Beşiktaş, tecrübeli oyuncuyla anlaşmaya vardı.",Beşiktaş deneyimli futbolcuyu kadrosuna kattı.,0.727458,paraphrase,spor
+Meteoroloji Ankara için kuvvetli yağış uyarısı yaptı.,Sakarya'a mevsimin ilk karı düştü.,0.235841,related,hava
+Pop yıldızı eşiyle Denizli'da tatil yaparken görüntülendi.,Pop yıldızı ve eşinin Denizli tatilinden kareler paylaşıldı.,0.963593,paraphrase,magazin
+fenomen isim eşinden boşandığını duyurdu.,İspanya iklim zirvesine ev sahipliği yapıyor.,0.049874,unrelated,magazin|dunya
+Yüksek tansiyon vakalarında son haftalarda belirgin artış görüldü.,Sağlık yetkilileri yüksek tansiyon vakalarının yükseldiğini bildirdi.,0.751588,paraphrase,saglik
+Samsun'da iki aracın çarpışması sonucu 2 kişi yaralandı.,Samsun'daki trafik kazasında 2 kişi yaralı kurtuldu.,0.895848,paraphrase,asayis
+Meteoroloji Bursa için kuvvetli yağış uyarısı yaptı.,sevilen komedyen yeni projesiyle ekranlara dönüyor.,0.101057,unrelated,hava|magazin
+Yunanistan'de yapılan seçimleri muhalefet kazandı.,Rusya'de meydana gelen depremde maddi hasar oluştu.,0.170672,related,dunya
+"Fenerbahçe, ligi lider tamamlayarak şampiyonluğa ulaştı.",Fenerbahçe sezonu zirvede bitirip şampiyon oldu.,0.89027,paraphrase,spor
+Trabzonspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,"Sivasspor, yıldız futbolcuyla sözleşme yeniledi.",0.288826,related,spor
+"Başakşehir, yıldız futbolcuyla sözleşme yeniledi.",Muğla'a mevsimin ilk karı düştü.,0.082227,unrelated,spor|hava
+ünlü model yeni projesiyle ekranlara dönüyor.,ünlü model sürpriz bir törenle dünyaevine girdi.,0.573262,related,magazin
+İstanbul'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,İstanbul'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.433523,related,asayis
+Bolu'da meydana gelen trafik kazasında 2 kişi yaralandı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.081537,unrelated,asayis|saglik
+"Konyaspor, tecrübeli oyuncuyla anlaşmaya vardı.",Konyaspor deneyimli futbolcuyu kadrosuna kattı.,0.788773,paraphrase,spor
+Ünlü sunucu eşiyle Konya'da tatil yaparken görüntülendi.,Ünlü sunucu ve eşinin Konya tatilinden kareler paylaşıldı.,0.960666,paraphrase,magazin
+"Sivasspor, Göztepe karşısında sahadan 3-1 galip ayrıldı.",Sivasspor evinde Göztepe'yi 3-1'lik skorla yendi.,0.895547,paraphrase,spor
+"Trabzonspor, Hatayspor karşısında sahadan 2-0 galip ayrıldı.",Trabzonspor evinde Hatayspor'yi 2-0'lik skorla yendi.,0.894507,paraphrase,spor
+Almanya'de meydana gelen depremde maddi hasar oluştu.,ünlü sunucu eşinden boşandığını duyurdu.,0.18686,unrelated,dunya|magazin
+İspanya'de meydana gelen depremde maddi hasar oluştu.,İtalya'de yapılan seçimleri muhalefet kazandı.,0.21873,related,dunya
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Teknoloji şirketi yeni oyun konsolu tanıttı.,0.345542,unrelated,saglik|teknoloji
+Dolar kuru güne yüzde 9 yükselişle başladı.,Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,0.245821,unrelated,ekonomi|teknoloji
+Merkez Bankası faiz oranlarında değişikliğe gitti.,TCMB politika faizini güncelledi.,0.688458,paraphrase,ekonomi
+Ünlü oyuncu eşiyle Sakarya'da tatil yaparken görüntülendi.,Ünlü oyuncu ve eşinin Sakarya tatilinden kareler paylaşıldı.,0.960363,paraphrase,magazin
+Samsun'a mevsimin ilk karı düştü.,Meteoroloji Denizli için kuvvetli yağış uyarısı yaptı.,0.167132,related,hava
+Meteoroloji Gaziantep için kuvvetli yağış uyarısı yaptı.,Trabzon'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.188688,unrelated,hava|asayis
+Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,pop yıldızı yeni projesiyle ekranlara dönüyor.,0.359646,unrelated,teknoloji|magazin
+Merkez Bankası politika faizini sabit tuttu.,Borsa İstanbul günü yüzde 4 değişimle kapattı.,0.191192,related,ekonomi
+Bodrum FK teknik direktörüyle yollarını ayırdı.,sevilen sanatçı eşinden boşandığını duyurdu.,0.241524,unrelated,spor|magazin
+Trabzonspor teknik direktörüyle yollarını ayırdı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.096512,unrelated,spor|saglik
+"Bodrum FK, ligi lider tamamlayarak şampiyonluğa ulaştı.",Bodrum FK sezonu zirvede bitirip şampiyon oldu.,0.925719,paraphrase,spor
+Merkez Bankası politika faizini sabit tuttu.,"ünlü model, Gaziantep'da tatilde görüntülendi.",0.12151,unrelated,ekonomi|magazin
+"Gaziantep FK, yıldız futbolcuyla sözleşme yeniledi.",koalisyon ortağı yeni yasa teklifini meclise sundu.,0.169098,unrelated,spor|siyaset
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Trabzonspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,-0.009035,unrelated,teknoloji|spor
+Teknoloji şirketi yeni dizüstü bilgisayar tanıttı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.327897,unrelated,teknoloji|saglik
+Popüler uygulama sohbet robotu için yeni güncelleme yayınladı.,Enerji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.368011,unrelated,teknoloji|siyaset
+Yıllık enflasyon yüzde 35 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 35 olarak duyurdu.,0.956291,paraphrase,ekonomi
+"pop yıldızı, Aydın'da tatilde görüntülendi.",Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,0.101008,unrelated,magazin|teknoloji
+İspanya'de meydana gelen depremde maddi hasar oluştu.,mecliste grubu bulunan bir parti yeni yasa teklifini meclise sundu.,0.075072,unrelated,dunya|siyaset
+Enerji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Cumhurbaşkanı İngiltere'e resmi ziyarette bulundu.,0.212081,related,siyaset
+İzmir ve çevresi için sağanak yağış bekleniyor.,Meteoroloji İzmir için sağanak uyarısında bulundu.,0.744582,paraphrase,hava
+Teknoloji şirketi yeni sohbet robotu tanıttı.,İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.312597,unrelated,teknoloji|siyaset
+Borsa İstanbul günü yüzde 33 değişimle kapattı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.13441,unrelated,ekonomi|saglik
+Teknoloji şirketi yeni akıllı telefon tanıttı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.145304,unrelated,teknoloji|saglik
+Merkez Bankası politika faizini sabit tuttu.,İstanbul'a mevsimin ilk karı düştü.,0.111174,unrelated,ekonomi|hava
+"Samsunspor, yıldız futbolcuyla sözleşme yeniledi.",Kasımpaşa teknik direktörüyle yollarını ayırdı.,0.347882,related,spor
+"Adana Demirspor, sahasında Hatayspor'yi 4-3 mağlup etti.",Adana'da sıcaklık 39 dereceye ulaştı.,0.293965,unrelated,spor|hava
+ödüllü yönetmen yeni projesiyle ekranlara dönüyor.,pop yıldızı eşinden boşandığını duyurdu.,0.187048,related,magazin
+genç oyuncu eşinden boşandığını duyurdu.,Sakarya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.10492,unrelated,magazin|asayis
+Samsun'da çıkan yangın itfaiye ekiplerince söndürüldü.,Uzmanlar şeker hastalığı vakalarındaki artışa dikkat çekti.,0.199856,unrelated,asayis|saglik
+Borsa İstanbul günü yüzde 17 değişimle kapattı.,Uzmanlar migren vakalarındaki artışa dikkat çekti.,0.185253,unrelated,ekonomi|saglik
+Zeytinyağı fiyatları son bir ayda yüzde 23 arttı.,Borsa İstanbul günü yüzde 11 değişimle kapattı.,0.260646,related,ekonomi
+Gaziantep'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Bolu'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.851145,related,asayis
+pop yıldızı eşinden boşandığını duyurdu.,pop yıldızı yeni projesiyle ekranlara dönüyor.,0.456705,related,magazin
+Teknoloji devi yeni akıllı telefon modelini duyurdu.,Şirket güncellenmiş akıllı telefon sürümünü kullanıma sundu.,0.796409,paraphrase,teknoloji
+Japonya'de düzenlenen genel seçimlerde sonuçlar belli oldu.,Japonya halkı sandık başına giderek yeni yönetimini seçti.,0.568839,paraphrase,dunya
+Bursa'da çıkan yangın itfaiye ekiplerince söndürüldü.,popüler sunucu sürpriz bir törenle dünyaevine girdi.,0.173346,unrelated,asayis|magazin
+Denizli'a mevsimin ilk karı düştü.,Bursa'da sıcaklık 30 dereceye ulaştı.,0.18802,related,hava
+Almanya iklim zirvesine ev sahipliği yapıyor.,ünlü model yeni projesiyle ekranlara dönüyor.,0.090933,unrelated,dunya|magazin
+usta oyuncu sürpriz bir törenle dünyaevine girdi.,genç oyuncu eşinden boşandığını duyurdu.,0.417807,related,magazin
+popüler sunucu sürpriz bir törenle dünyaevine girdi.,"Beşiktaş, sahasında Antalyaspor'yi 3-3 mağlup etti.",0.014411,unrelated,magazin|spor
+Bolu'da iki aracın çarpışması sonucu 5 kişi yaralandı.,Bolu'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.900372,paraphrase,asayis
+Ekmek fiyatları son bir ayda yüzde 39 arttı.,Trabzon'a mevsimin ilk karı düştü.,0.147759,unrelated,ekonomi|hava
+Teknoloji devi yeni işletim sistemi modelini duyurdu.,Şirket güncellenmiş işletim sistemi sürümünü kullanıma sundu.,0.768892,paraphrase,teknoloji
+Cumhurbaşkanı Rusya'e resmi ziyarette bulundu.,Cumhurbaşkanı İspanya'e resmi ziyarette bulundu.,0.7181,related,siyaset
+Adana'da meydana gelen trafik kazasında 4 kişi yaralandı.,İspanya iklim zirvesine ev sahipliği yapıyor.,0.012604,unrelated,asayis|dunya
+usta oyuncu yeni projesiyle ekranlara dönüyor.,İtalya'de meydana gelen depremde maddi hasar oluştu.,0.082238,unrelated,magazin|dunya
+Ankara'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Bursa'da meydana gelen trafik kazasında 4 kişi yaralandı.,0.214117,related,asayis
+Muğla'da sıcaklık 43 dereceye ulaştı.,Meteoroloji İzmir için kuvvetli yağış uyarısı yaptı.,0.372992,related,hava
+Muğla'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Muğla beklenenden daha sıcak bir güne uyandı.,0.686253,paraphrase,hava
+Bolu'da iki aracın çarpışması sonucu 4 kişi yaralandı.,Bolu'daki trafik kazasında 4 kişi yaralı kurtuldu.,0.88786,paraphrase,asayis
+Sakarya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Cumhurbaşkanı Yunanistan'e resmi ziyarette bulundu.,0.128687,unrelated,asayis|siyaset
+Samsun'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Samsun'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.831521,paraphrase,asayis
+"Alanyaspor, sahasında Başakşehir'yi 1-0 mağlup etti.",Sakarya'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.23691,unrelated,spor|asayis
+Uzmanlar yüksek tansiyon vakalarındaki artışa dikkat çekti.,Teknoloji şirketi yeni yapay zeka modeli tanıttı.,0.106858,unrelated,saglik|teknoloji
+Muğla'da çıkan yangın itfaiye ekiplerince söndürüldü.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.161351,unrelated,asayis|saglik
+"Kayserispor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Kayserispor sezonu zirvede bitirip şampiyon oldu.,0.899444,paraphrase,spor
+Dolar kuru güne yüzde 10 yükselişle başladı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.24088,unrelated,ekonomi|saglik
+İzmir'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,İzmir'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.836673,paraphrase,asayis
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Dolar kuru güne yüzde 33 yükselişle başladı.,0.227745,unrelated,saglik|ekonomi
+Diyarbakır'da iki aracın çarpışması sonucu 5 kişi yaralandı.,Diyarbakır'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.914902,paraphrase,asayis
+Teknoloji şirketi yeni akıllı telefon tanıttı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.370701,related,teknoloji
+Sevilen sanatçı sevgilisiyle nişanlandı.,Sevilen sanatçı mutlu haberi nişan yüzükleriyle duyurdu.,0.733679,paraphrase,magazin
+Et fiyatları son bir ayda yüzde 12 arttı.,Tavuk fiyatları son bir ayda yüzde 29 arttı.,0.619756,related,ekonomi
+Fenomen isim sevgilisiyle nişanlandı.,Fenomen isim mutlu haberi nişan yüzükleriyle duyurdu.,0.665664,paraphrase,magazin
+İstanbul'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,İstanbul beklenenden daha sıcak bir güne uyandı.,0.681883,paraphrase,hava
+Eskişehir'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Eskişehir'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.825755,paraphrase,asayis
+Genç oyuncu eşiyle Diyarbakır'da tatil yaparken görüntülendi.,Genç oyuncu ve eşinin Diyarbakır tatilinden kareler paylaşıldı.,0.956401,paraphrase,magazin
+Et fiyatları son bir ayda yüzde 4 arttı.,Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.086666,unrelated,ekonomi|siyaset
+Bolu'da iki aracın çarpışması sonucu 6 kişi yaralandı.,Bolu'daki trafik kazasında 6 kişi yaralı kurtuldu.,0.887055,paraphrase,asayis
+İngiltere'de yapılan seçimleri muhalefet kazandı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.221589,unrelated,dunya|saglik
+Merkez Bankası politika faizini sabit tuttu.,Sakarya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.097779,unrelated,ekonomi|asayis
+"Alanyaspor, Hatayspor karşısında sahadan 1-1 galip ayrıldı.",Alanyaspor evinde Hatayspor'yi 1-1'lik skorla yendi.,0.903683,paraphrase,spor
+Ankara'da iki aracın çarpışması sonucu 6 kişi yaralandı.,Ankara'daki trafik kazasında 6 kişi yaralı kurtuldu.,0.904616,paraphrase,asayis
+Başakşehir'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,İspanya iklim zirvesine ev sahipliği yapıyor.,-0.014826,unrelated,spor|dunya
+Sevilen komedyen eşiyle Antalya'da tatil yaparken görüntülendi.,Sevilen komedyen ve eşinin Antalya tatilinden kareler paylaşıldı.,0.969256,paraphrase,magazin
+Ünlü model sevgilisiyle nişanlandı.,Ünlü model mutlu haberi nişan yüzükleriyle duyurdu.,0.757291,paraphrase,magazin
+Trabzon'da sıcaklık 37 dereceye ulaştı.,popüler sunucu yeni projesiyle ekranlara dönüyor.,0.075334,unrelated,hava|magazin
+Kayserispor teknik direktörüyle yollarını ayırdı.,"Rizespor, yıldız futbolcuyla sözleşme yeniledi.",0.34629,related,spor
+Dolar kuru güne yüzde 12 yükselişle başladı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.249402,unrelated,ekonomi|saglik
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,sevilen sanatçı sürpriz bir törenle dünyaevine girdi.,0.096268,unrelated,saglik|magazin
+Hazine ve Maliye Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Teknoloji şirketi yeni dizüstü bilgisayar tanıttı.,0.381071,unrelated,siyaset|teknoloji
+iktidar partisi yeni yasa teklifini meclise sundu.,ana muhalefet partisi yeni yasa teklifini meclise sundu.,0.88745,related,siyaset
+"Gaziantep FK, ligi lider tamamlayarak şampiyonluğa ulaştı.",Gaziantep FK sezonu zirvede bitirip şampiyon oldu.,0.922603,paraphrase,spor
+Antalya'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Antalya'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.850571,paraphrase,asayis
+Yıllık enflasyon yüzde 1 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 1 olarak duyurdu.,0.941156,paraphrase,ekonomi
+Muğla'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,0.150831,unrelated,asayis|teknoloji
+ana muhalefet partisi yeni yasa teklifini meclise sundu.,Trabzon'da sıcaklık 35 dereceye ulaştı.,0.036586,unrelated,siyaset|hava
+Eskişehir'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Eskişehir beklenenden daha sıcak bir güne uyandı.,0.697582,paraphrase,hava
+Aydın'da sıcaklık 40 dereceye ulaştı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.113134,unrelated,hava|saglik
+ünlü sunucu eşinden boşandığını duyurdu.,Popüler uygulama sohbet robotu için yeni güncelleme yayınladı.,0.233646,unrelated,magazin|teknoloji
+Borsa İstanbul günü yüzde 20 değişimle kapattı.,"sevilen komedyen, İstanbul'da tatilde görüntülendi.",0.218577,unrelated,ekonomi|magazin
+Ünlü model eşiyle Ankara'da tatil yaparken görüntülendi.,Ünlü model ve eşinin Ankara tatilinden kareler paylaşıldı.,0.961135,paraphrase,magazin
+Tarım ve Orman Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Cumhurbaşkanı Fransa'e resmi ziyarette bulundu.,0.149581,related,siyaset
+Çin'de yapılan seçimleri muhalefet kazandı.,Fransa'de meydana gelen depremde maddi hasar oluştu.,0.237955,related,dunya
+Muz fiyatları son bir ayda yüzde 12 arttı.,Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,0.110071,unrelated,ekonomi|teknoloji
+Liderler Almanya'de düzenlenen zirvede bir araya geldi.,Almanya'deki zirvede liderler önemli konuları görüştü.,0.818521,paraphrase,siyaset
+Usta oyuncu eşiyle Antalya'da tatil yaparken görüntülendi.,Usta oyuncu ve eşinin Antalya tatilinden kareler paylaşıldı.,0.96076,paraphrase,magazin
+İspanya'de yapılan seçimleri muhalefet kazandı.,Teknoloji şirketi yeni oyun konsolu tanıttı.,0.15058,unrelated,dunya|teknoloji
+Fransa'de yapılan seçimleri muhalefet kazandı.,Çin iklim zirvesine ev sahipliği yapıyor.,0.068427,related,dunya
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Popüler uygulama işletim sistemi için yeni güncelleme yayınladı.,0.367964,unrelated,saglik|teknoloji
+Ünlü model eşiyle İzmir'da tatil yaparken görüntülendi.,Ünlü model ve eşinin İzmir tatilinden kareler paylaşıldı.,0.959907,paraphrase,magazin
+Yapay zeka destekli tanı sistemi hastanelerde kullanılmaya başlandı.,Hastaneler teşhis süreçlerinde yapay zekadan yararlanmaya başladı.,0.896812,paraphrase,teknoloji
+"sevilen sanatçı, Trabzon'da tatilde görüntülendi.",pop yıldızı yeni projesiyle ekranlara dönüyor.,0.252857,related,magazin
+Ödüllü yönetmen sevgilisiyle nişanlandı.,Ödüllü yönetmen mutlu haberi nişan yüzükleriyle duyurdu.,0.697153,paraphrase,magazin
+"Fenerbahçe, Eyüpspor karşısında sahadan 2-0 galip ayrıldı.",Fenerbahçe evinde Eyüpspor'yi 2-0'lik skorla yendi.,0.890634,paraphrase,spor
+Cumhurbaşkanı Fransa'e resmi ziyarette bulundu.,Dolar kuru güne yüzde 39 yükselişle başladı.,0.116981,unrelated,siyaset|ekonomi
+İzmir'da iki aracın çarpışması sonucu 3 kişi yaralandı.,İzmir'daki trafik kazasında 3 kişi yaralı kurtuldu.,0.901318,paraphrase,asayis
+Ankara'da çıkan yangın itfaiye ekiplerince söndürüldü.,Muz fiyatları son bir ayda yüzde 6 arttı.,0.06221,unrelated,asayis|ekonomi
+Ulaştırma Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,iktidar partisi yeni yasa teklifini meclise sundu.,0.421446,related,siyaset
+İzmir'da çıkan yangın itfaiye ekiplerince söndürüldü.,Cumhurbaşkanı İngiltere'e resmi ziyarette bulundu.,0.147494,unrelated,asayis|siyaset
+"Eyüpspor, sahasında Rizespor'yi 4-3 mağlup etti.","Bodrum FK, yıldız futbolcuyla sözleşme yeniledi.",0.179693,related,spor
+Diyarbakır'da çıkan yangın itfaiye ekiplerince söndürüldü.,Popüler uygulama işletim sistemi için yeni güncelleme yayınladı.,0.128615,unrelated,asayis|teknoloji
+Aydın'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Aydın'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.82983,paraphrase,asayis
+Denizli'da iki aracın çarpışması sonucu 5 kişi yaralandı.,Denizli'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.908258,paraphrase,asayis
+Yıllık enflasyon yüzde 13 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 13 olarak duyurdu.,0.965036,paraphrase,ekonomi
+Borsa İstanbul günü yüzde 35 değişimle kapattı.,Cumhurbaşkanı Japonya'e resmi ziyarette bulundu.,0.097234,unrelated,ekonomi|siyaset
+Genç oyuncu eşiyle Trabzon'da tatil yaparken görüntülendi.,Genç oyuncu ve eşinin Trabzon tatilinden kareler paylaşıldı.,0.954242,paraphrase,magazin
+pop yıldızı eşinden boşandığını duyurdu.,"fenomen isim, Muğla'da tatilde görüntülendi.",0.222247,related,magazin
+"ünlü model, Ankara'da tatilde görüntülendi.",sevilen komedyen sürpriz bir törenle dünyaevine girdi.,0.246345,related,magazin
+Dolar kuru güne yüzde 36 yükselişle başladı.,Merkez Bankası politika faizini sabit tuttu.,0.285154,related,ekonomi
+Sevilen komedyen sevgilisiyle nişanlandı.,Sevilen komedyen mutlu haberi nişan yüzükleriyle duyurdu.,0.786364,paraphrase,magazin
+Antalya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,0.283796,unrelated,asayis|saglik
+Cumhurbaşkanı Japonya'e resmi ziyarette bulundu.,Cumhurbaşkanı Fransa'e resmi ziyarette bulundu.,0.73089,related,siyaset
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Meteoroloji İzmir için kuvvetli yağış uyarısı yaptı.,0.109576,unrelated,teknoloji|hava
+Uzmanlar kızamık vakalarındaki artışa dikkat çekti.,"Eyüpspor, yıldız futbolcuyla sözleşme yeniledi.",0.175045,unrelated,saglik|spor
+Yıllık enflasyon yüzde 3 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 3 olarak duyurdu.,0.96058,paraphrase,ekonomi
+Ana muhalefet partisi yeni kanun teklifine ilişkin açıklama yaptı.,Ana muhalefet partisi hazırladığı yasa teklifini kamuoyuna duyurdu.,0.840991,paraphrase,siyaset
+Ünlü şarkıcı sevgilisiyle nişanlandı.,Ünlü şarkıcı mutlu haberi nişan yüzükleriyle duyurdu.,0.772336,paraphrase,magazin
+usta oyuncu sürpriz bir törenle dünyaevine girdi.,popüler sunucu eşinden boşandığını duyurdu.,0.359885,related,magazin
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Japonya'de meydana gelen depremde maddi hasar oluştu.,0.067765,unrelated,teknoloji|dunya
+Cumhurbaşkanı Çin'e resmi ziyarette bulundu.,Enerji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.19429,related,siyaset
+Aydın ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Aydın için sağanak uyarısında bulundu.,0.729279,paraphrase,hava
+iktidar partisi yeni yasa teklifini meclise sundu.,Çin'de meydana gelen depremde maddi hasar oluştu.,0.024047,unrelated,siyaset|dunya
+Popüler sunucu sevgilisiyle nişanlandı.,Popüler sunucu mutlu haberi nişan yüzükleriyle duyurdu.,0.724485,paraphrase,magazin
+Liderler Rusya'de düzenlenen zirvede bir araya geldi.,Rusya'deki zirvede liderler önemli konuları görüştü.,0.801391,paraphrase,siyaset
+"ünlü sunucu, Gaziantep'da tatilde görüntülendi.","usta oyuncu, Eskişehir'da tatilde görüntülendi.",0.651009,related,magazin
+"Kasımpaşa, yıldız futbolcuyla sözleşme yeniledi.",Gaziantep FK teknik direktörüyle yollarını ayırdı.,0.378364,related,spor
+Almanya iklim zirvesine ev sahipliği yapıyor.,Kuru fasulye fiyatları son bir ayda yüzde 33 arttı.,0.052985,unrelated,dunya|ekonomi
+Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,Antalyaspor teknik direktörüyle yollarını ayırdı.,0.128646,unrelated,teknoloji|spor
+İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,"sevilen komedyen, Ankara'da tatilde görüntülendi.",0.103324,unrelated,siyaset|magazin
+Genç oyuncu eşiyle Sakarya'da tatil yaparken görüntülendi.,Genç oyuncu ve eşinin Sakarya tatilinden kareler paylaşıldı.,0.957388,paraphrase,magazin
+Teknoloji şirketi yeni dizüstü bilgisayar tanıttı.,Fransa iklim zirvesine ev sahipliği yapıyor.,0.115444,unrelated,teknoloji|dunya
+İstanbul'da iki aracın çarpışması sonucu 5 kişi yaralandı.,İstanbul'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.904402,paraphrase,asayis
+"Trabzonspor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Trabzonspor sezonu zirvede bitirip şampiyon oldu.,0.903794,paraphrase,spor
+Eskişehir'da meydana gelen trafik kazasında 3 kişi yaralandı.,ünlü model sürpriz bir törenle dünyaevine girdi.,0.144788,unrelated,asayis|magazin
+Cumhurbaşkanı İngiltere'e resmi ziyarette bulundu.,Antalya'da meydana gelen trafik kazasında 2 kişi yaralandı.,0.117024,unrelated,siyaset|asayis
+Mersin'da meydana gelen trafik kazasında 2 kişi yaralandı.,İzmir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.215114,related,asayis
+Japonya iklim zirvesine ev sahipliği yapıyor.,Almanya'de yapılan seçimleri muhalefet kazandı.,0.119882,related,dunya
+Fenomen isim eşiyle Adana'da tatil yaparken görüntülendi.,Fenomen isim ve eşinin Adana tatilinden kareler paylaşıldı.,0.937444,paraphrase,magazin
+Kızamık vakalarında son haftalarda belirgin artış görüldü.,Sağlık yetkilileri kızamık vakalarının yükseldiğini bildirdi.,0.446274,paraphrase,saglik
+Alanyaspor teknik direktörüyle yollarını ayırdı.,Cumhurbaşkanı Almanya'e resmi ziyarette bulundu.,0.071899,unrelated,spor|siyaset
+Muğla'da çıkan yangın itfaiye ekiplerince söndürüldü.,İzmir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.298943,related,asayis
+Aydın'a mevsimin ilk karı düştü.,fenomen isim yeni projesiyle ekranlara dönüyor.,0.26576,unrelated,hava|magazin
+Uzmanlar kızamık vakalarındaki artışa dikkat çekti.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.395649,related,saglik
+Yunanistan iklim zirvesine ev sahipliği yapıyor.,Merkez Bankası politika faizini sabit tuttu.,0.187089,unrelated,dunya|ekonomi
+İngiltere'de meydana gelen depremde maddi hasar oluştu.,Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,0.118376,unrelated,dunya|teknoloji
+Uzmanlar boğaz enfeksiyonu vakalarındaki artışa dikkat çekti.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.084218,unrelated,saglik|teknoloji
+Konya'da sıcaklık 31 dereceye ulaştı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.161581,unrelated,hava|saglik
+Bursa'da iki aracın çarpışması sonucu 4 kişi yaralandı.,Bursa'daki trafik kazasında 4 kişi yaralı kurtuldu.,0.903842,paraphrase,asayis
+Dolar kuru güne yüzde 7 yükselişle başladı.,Dolar kuru güne yüzde 19 yükselişle başladı.,0.776302,related,ekonomi
+Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,Uzmanlar grip vakalarındaki artışa dikkat çekti.,0.913279,related,saglik
+"Beşiktaş, Antalyaspor karşısında sahadan 4-1 galip ayrıldı.",Beşiktaş evinde Antalyaspor'yi 4-1'lik skorla yendi.,0.894182,paraphrase,spor
+Muğla'da iki aracın çarpışması sonucu 2 kişi yaralandı.,Muğla'daki trafik kazasında 2 kişi yaralı kurtuldu.,0.885494,paraphrase,asayis
+Ulaştırma Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Cumhurbaşkanı Yunanistan'e resmi ziyarette bulundu.,0.1662,related,siyaset
+Fenomen isim eşiyle Samsun'da tatil yaparken görüntülendi.,Fenomen isim ve eşinin Samsun tatilinden kareler paylaşıldı.,0.9382,paraphrase,magazin
+İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Rusya iklim zirvesine ev sahipliği yapıyor.,0.013337,unrelated,siyaset|dunya
+Meteoroloji Sakarya için kuvvetli yağış uyarısı yaptı.,Meteoroloji Trabzon için kuvvetli yağış uyarısı yaptı.,0.67373,related,hava
+Dolar kuru güne yüzde 9 yükselişle başladı.,"usta oyuncu, Gaziantep'da tatilde görüntülendi.",0.128856,unrelated,ekonomi|magazin
+Yunanistan'de yapılan seçimleri muhalefet kazandı.,Sağlık Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.159974,unrelated,dunya|siyaset
+Uzmanlar şeker hastalığı vakalarındaki artışa dikkat çekti.,İzmir'a mevsimin ilk karı düştü.,0.130136,unrelated,saglik|hava
+İstanbul'da iki aracın çarpışması sonucu 3 kişi yaralandı.,İstanbul'daki trafik kazasında 3 kişi yaralı kurtuldu.,0.894893,paraphrase,asayis
+Konya'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Konya'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.82353,paraphrase,asayis
+Popüler uygulama sohbet robotu için yeni güncelleme yayınladı.,Hollanda'de meydana gelen depremde maddi hasar oluştu.,0.13509,unrelated,teknoloji|dunya
+Meteoroloji Denizli için kuvvetli yağış uyarısı yaptı.,Meteoroloji Aydın için kuvvetli yağış uyarısı yaptı.,0.725458,related,hava
+"Adana Demirspor, yıldız futbolcuyla sözleşme yeniledi.",Cumhurbaşkanı Japonya'e resmi ziyarette bulundu.,0.096375,unrelated,spor|siyaset
+mecliste grubu bulunan bir parti yeni yasa teklifini meclise sundu.,koalisyon ortağı yeni yasa teklifini meclise sundu.,0.813475,related,siyaset
+Mecliste grubu bulunan bir parti yeni kanun teklifine ilişkin açıklama yaptı.,Mecliste grubu bulunan bir parti hazırladığı yasa teklifini kamuoyuna duyurdu.,0.852572,paraphrase,siyaset
+İtalya'de yapılan seçimleri muhalefet kazandı.,"Fenerbahçe, yıldız futbolcuyla sözleşme yeniledi.",0.094283,unrelated,dunya|spor
+Diyarbakır'da çıkan yangın itfaiye ekiplerince söndürüldü.,popüler sunucu eşinden boşandığını duyurdu.,0.176609,unrelated,asayis|magazin
+Meteoroloji İzmir için kuvvetli yağış uyarısı yaptı.,Diyarbakır'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.340231,unrelated,hava|asayis
+"Galatasaray, tecrübeli oyuncuyla anlaşmaya vardı.",Galatasaray deneyimli futbolcuyu kadrosuna kattı.,0.771298,paraphrase,spor
+Çin iklim zirvesine ev sahipliği yapıyor.,İtalya iklim zirvesine ev sahipliği yapıyor.,0.75335,related,dunya
+İtalya'de meydana gelen depremde maddi hasar oluştu.,"sevilen sanatçı, Bolu'da tatilde görüntülendi.",0.065957,unrelated,dunya|magazin
+Meteoroloji Mersin için kuvvetli yağış uyarısı yaptı.,ABD'de meydana gelen depremde maddi hasar oluştu.,0.270176,unrelated,hava|dunya
+Ünlü model eşiyle Sakarya'da tatil yaparken görüntülendi.,Ünlü model ve eşinin Sakarya tatilinden kareler paylaşıldı.,0.959614,paraphrase,magazin
+Bursa'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Bursa'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.838202,paraphrase,asayis
+Teknoloji şirketi yeni oyun konsolu tanıttı.,Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,0.693368,related,teknoloji
+Ankara'a mevsimin ilk karı düştü.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.154399,unrelated,hava|saglik
+"Trabzonspor, Konyaspor karşısında sahadan 2-0 galip ayrıldı.",Trabzonspor evinde Konyaspor'yi 2-0'lik skorla yendi.,0.891169,paraphrase,spor
+usta oyuncu eşinden boşandığını duyurdu.,popüler sunucu eşinden boşandığını duyurdu.,0.860225,related,magazin
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,İngiltere'de meydana gelen depremde maddi hasar oluştu.,0.058355,unrelated,teknoloji|dunya
+Bolu'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Bolu'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.806861,paraphrase,asayis
+Japonya iklim zirvesine ev sahipliği yapıyor.,Yunanistan iklim zirvesine ev sahipliği yapıyor.,0.700047,related,dunya
+Ödüllü yönetmen yeni bir aşka yelken açtı.,Ödüllü yönetmen yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.867011,paraphrase,magazin
+Japonya iklim zirvesine ev sahipliği yapıyor.,İtalya'de meydana gelen depremde maddi hasar oluştu.,0.15678,related,dunya
+Hatayspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Yunanistan iklim zirvesine ev sahipliği yapıyor.,-0.039163,unrelated,spor|dunya
+Liderler İngiltere'de düzenlenen zirvede bir araya geldi.,İngiltere'deki zirvede liderler önemli konuları görüştü.,0.813337,paraphrase,siyaset
+Adana'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,İzmir'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.273071,related,asayis
+"Alanyaspor, yıldız futbolcuyla sözleşme yeniledi.",Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,0.215352,unrelated,spor|teknoloji
+Samsun'da sıcaklık 35 dereceye ulaştı.,Bolu'da sıcaklık 34 dereceye ulaştı.,0.677854,related,hava
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Popüler uygulama elektrikli otomobil için yeni güncelleme yayınladı.,0.218112,related,teknoloji
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,ünlü sunucu sürpriz bir törenle dünyaevine girdi.,0.245126,unrelated,saglik|magazin
+iktidar partisi yeni yasa teklifini meclise sundu.,"Beşiktaş, yıldız futbolcuyla sözleşme yeniledi.",0.129119,unrelated,siyaset|spor
+Bodrum FK'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,"Bodrum FK, yıldız futbolcuyla sözleşme yeniledi.",0.493234,related,spor
+Adana'da iki aracın çarpışması sonucu 5 kişi yaralandı.,Adana'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.911146,paraphrase,asayis
+popüler sunucu eşinden boşandığını duyurdu.,Adana'a mevsimin ilk karı düştü.,0.156424,unrelated,magazin|hava
+"Başakşehir, yıldız futbolcuyla sözleşme yeniledi.","Gaziantep FK, yıldız futbolcuyla sözleşme yeniledi.",0.851001,related,spor
+Meteoroloji Bursa için kuvvetli yağış uyarısı yaptı.,sevilen sanatçı yeni projesiyle ekranlara dönüyor.,0.123083,unrelated,hava|magazin
+Şeker hastalığı vakalarında son haftalarda belirgin artış görüldü.,Sağlık yetkilileri şeker hastalığı vakalarının yükseldiğini bildirdi.,0.754165,paraphrase,saglik
+Cumhurbaşkanı ABD'e resmi ziyarette bulundu.,sevilen komedyen sürpriz bir törenle dünyaevine girdi.,0.244661,unrelated,siyaset|magazin
+Denizli ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Denizli için sağanak uyarısında bulundu.,0.612102,paraphrase,hava
+Grip vakalarında son haftalarda belirgin artış görüldü.,Sağlık yetkilileri grip vakalarının yükseldiğini bildirdi.,0.6911,paraphrase,saglik
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,0.206737,related,teknoloji
+İzmir'da meydana gelen trafik kazasında 2 kişi yaralandı.,Mersin'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.285416,related,asayis
+Denizli'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Denizli'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.825683,paraphrase,asayis
+Diyarbakır'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Diyarbakır'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.837682,paraphrase,asayis
+Meteoroloji Antalya için kuvvetli yağış uyarısı yaptı.,Teknoloji şirketi yeni yapay zeka modeli tanıttı.,0.189033,unrelated,hava|teknoloji
+Beşiktaş'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.100211,unrelated,spor|saglik
+mecliste grubu bulunan bir parti yeni yasa teklifini meclise sundu.,iktidar partisi yeni yasa teklifini meclise sundu.,0.937797,related,siyaset
+Iktidar partisi yeni kanun teklifine ilişkin açıklama yaptı.,Iktidar partisi hazırladığı yasa teklifini kamuoyuna duyurdu.,0.823046,paraphrase,siyaset
+Merkez Bankası politika faizini sabit tuttu.,Peynir fiyatları son bir ayda yüzde 11 arttı.,0.16743,related,ekonomi
+İzmir'a mevsimin ilk karı düştü.,İstanbul'da sıcaklık 36 dereceye ulaştı.,0.226667,related,hava
+Çin iklim zirvesine ev sahipliği yapıyor.,Uzmanlar kızamık vakalarındaki artışa dikkat çekti.,0.230209,unrelated,dunya|saglik
+Muz fiyatları son bir ayda yüzde 39 arttı.,Dolar kuru güne yüzde 14 yükselişle başladı.,0.370137,related,ekonomi
+Samsun'da sıcaklık 34 dereceye ulaştı.,Antalya'da sıcaklık 32 dereceye ulaştı.,0.580517,related,hava
+Patates fiyatları son bir ayda yüzde 6 arttı.,Trabzon'da sıcaklık 34 dereceye ulaştı.,0.123167,unrelated,ekonomi|hava
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,0.080862,unrelated,teknoloji|saglik
+Muğla'da çıkan yangın itfaiye ekiplerince söndürüldü.,Trabzon'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.195397,related,asayis
+Konya'da meydana gelen trafik kazasında 2 kişi yaralandı.,mecliste grubu bulunan bir parti yeni yasa teklifini meclise sundu.,0.050124,unrelated,asayis|siyaset
+Teknoloji devi yeni elektrikli otomobil modelini duyurdu.,Şirket güncellenmiş elektrikli otomobil sürümünü kullanıma sundu.,0.799615,paraphrase,teknoloji
+"Gaziantep FK, yıldız futbolcuyla sözleşme yeniledi.",Adana'da meydana gelen trafik kazasında 2 kişi yaralandı.,0.113866,unrelated,spor|asayis
+Konya'a mevsimin ilk karı düştü.,Samsun'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.250468,unrelated,hava|asayis
+Japonya iklim zirvesine ev sahipliği yapıyor.,Trabzonspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,-0.025169,unrelated,dunya|spor
+Trabzon'da çıkan yangın itfaiye ekiplerince söndürüldü.,Çay fiyatları son bir ayda yüzde 39 arttı.,0.149619,unrelated,asayis|ekonomi
+Koalisyon ortağı yeni kanun teklifine ilişkin açıklama yaptı.,Koalisyon ortağı hazırladığı yasa teklifini kamuoyuna duyurdu.,0.838365,paraphrase,siyaset
+Diyarbakır'a mevsimin ilk karı düştü.,Muğla'da sıcaklık 41 dereceye ulaştı.,0.19155,related,hava
+"fenomen isim, Eskişehir'da tatilde görüntülendi.",Pirinç fiyatları son bir ayda yüzde 24 arttı.,0.134313,unrelated,magazin|ekonomi
+Yunanistan iklim zirvesine ev sahipliği yapıyor.,İstanbul'a mevsimin ilk karı düştü.,0.17229,unrelated,dunya|hava
+Merkez Bankası politika faizini sabit tuttu.,Borsa İstanbul günü yüzde 27 değişimle kapattı.,0.190138,related,ekonomi
+Dolar kuru güne yüzde 40 yükselişle başladı.,Hollanda'de meydana gelen depremde maddi hasar oluştu.,0.210295,unrelated,ekonomi|dunya
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,0.397048,related,teknoloji
+Muğla'da meydana gelen trafik kazasında 1 kişi yaralandı.,"Rizespor, yıldız futbolcuyla sözleşme yeniledi.",0.116883,unrelated,asayis|spor
+"Antalyaspor, sahasında Gaziantep FK'yi 1-3 mağlup etti.","Göztepe, yıldız futbolcuyla sözleşme yeniledi.",0.227232,related,spor
+"Hatayspor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Hatayspor sezonu zirvede bitirip şampiyon oldu.,0.916221,paraphrase,spor
+Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,Popüler uygulama sohbet robotu için yeni güncelleme yayınladı.,0.767073,related,teknoloji
+Teknoloji şirketi yeni işletim sistemi tanıttı.,Japonya'de meydana gelen depremde maddi hasar oluştu.,0.098944,unrelated,teknoloji|dunya
+"Başakşehir, yıldız futbolcuyla sözleşme yeniledi.",Merkez Bankası politika faizini sabit tuttu.,0.078763,unrelated,spor|ekonomi
+Cumhurbaşkanı Çin'e resmi ziyarette bulundu.,Tarım ve Orman Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.133509,related,siyaset
+Hollanda'de meydana gelen depremde maddi hasar oluştu.,Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,0.236671,unrelated,dunya|saglik
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,sevilen komedyen yeni projesiyle ekranlara dönüyor.,0.162723,unrelated,teknoloji|magazin
+"Antalyaspor, Eyüpspor karşısında sahadan 1-2 galip ayrıldı.",Antalyaspor evinde Eyüpspor'yi 1-2'lik skorla yendi.,0.899118,paraphrase,spor
+"Galatasaray, Rizespor karşısında sahadan 1-2 galip ayrıldı.",Galatasaray evinde Rizespor'yi 1-2'lik skorla yendi.,0.853051,paraphrase,spor
+Samsun'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Samsun beklenenden daha sıcak bir güne uyandı.,0.703967,paraphrase,hava
+Kuru fasulye fiyatları son bir ayda yüzde 26 arttı.,İzmir'da meydana gelen trafik kazasında 3 kişi yaralandı.,0.082117,unrelated,ekonomi|asayis
+Meteoroloji Eskişehir için kuvvetli yağış uyarısı yaptı.,Adana'a mevsimin ilk karı düştü.,0.238652,related,hava
+pop yıldızı yeni projesiyle ekranlara dönüyor.,Adana Demirspor teknik direktörüyle yollarını ayırdı.,0.099865,unrelated,magazin|spor
+Sivasspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Meteoroloji Bursa için kuvvetli yağış uyarısı yaptı.,0.110439,unrelated,spor|hava
+Adana'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Adana beklenenden daha sıcak bir güne uyandı.,0.725668,paraphrase,hava
+Sağlık Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Cumhurbaşkanı Rusya'e resmi ziyarette bulundu.,0.174268,related,siyaset
+Konya'da iki aracın çarpışması sonucu 6 kişi yaralandı.,Konya'daki trafik kazasında 6 kişi yaralı kurtuldu.,0.894254,paraphrase,asayis
+Fransa'de düzenlenen genel seçimlerde sonuçlar belli oldu.,Fransa halkı sandık başına giderek yeni yönetimini seçti.,0.606471,paraphrase,dunya
+"Rizespor, yıldız futbolcuyla sözleşme yeniledi.",Ankara'da meydana gelen trafik kazasında 3 kişi yaralandı.,0.117357,unrelated,spor|asayis
+Adana'a mevsimin ilk karı düştü.,popüler sunucu sürpriz bir törenle dünyaevine girdi.,0.163562,unrelated,hava|magazin
+Kayserispor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Antalyaspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.841237,related,spor
+Kayseri'a mevsimin ilk karı düştü.,Diyarbakır'da sıcaklık 31 dereceye ulaştı.,0.192734,related,hava
+"Trabzonspor, tecrübeli oyuncuyla anlaşmaya vardı.",Trabzonspor deneyimli futbolcuyu kadrosuna kattı.,0.814418,paraphrase,spor
+Teknoloji şirketi yeni oyun konsolu tanıttı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.365824,related,teknoloji
+"Antalyaspor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Antalyaspor sezonu zirvede bitirip şampiyon oldu.,0.909734,paraphrase,spor
+Cumhurbaşkanı Almanya'e resmi ziyarette bulundu.,Trabzon'a mevsimin ilk karı düştü.,0.062166,unrelated,siyaset|hava
+Cumhurbaşkanı İngiltere'e resmi ziyarette bulundu.,Cumhurbaşkanı Çin'e resmi ziyarette bulundu.,0.760287,related,siyaset
+Yıllık enflasyon yüzde 19 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 19 olarak duyurdu.,0.957562,paraphrase,ekonomi
+Antalya'a mevsimin ilk karı düştü.,Almanya'de meydana gelen depremde maddi hasar oluştu.,0.219034,unrelated,hava|dunya
+usta oyuncu eşinden boşandığını duyurdu.,Mersin'da meydana gelen trafik kazasında 5 kişi yaralandı.,0.089638,unrelated,magazin|asayis
+Soğan fiyatları son bir ayda yüzde 18 arttı.,Dolar kuru güne yüzde 24 yükselişle başladı.,0.41472,related,ekonomi
+Bursa'da sıcaklık 39 dereceye ulaştı.,İngiltere iklim zirvesine ev sahipliği yapıyor.,0.321707,unrelated,hava|dunya
+iktidar partisi yeni yasa teklifini meclise sundu.,"Hatayspor, sahasında Beşiktaş'yi 4-1 mağlup etti.",0.030906,unrelated,siyaset|spor
+Uzmanlar migren vakalarındaki artışa dikkat çekti.,Meteoroloji Diyarbakır için kuvvetli yağış uyarısı yaptı.,0.257796,unrelated,saglik|hava
+Teknoloji şirketi yeni akıllı telefon tanıttı.,Teknoloji şirketi yeni işletim sistemi tanıttı.,0.716166,related,teknoloji
+Adana Demirspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,-0.002094,unrelated,spor|teknoloji
+"Eyüpspor, tecrübeli oyuncuyla anlaşmaya vardı.",Eyüpspor deneyimli futbolcuyu kadrosuna kattı.,0.735617,paraphrase,spor
+"Gaziantep FK, tecrübeli oyuncuyla anlaşmaya vardı.",Gaziantep FK deneyimli futbolcuyu kadrosuna kattı.,0.834033,paraphrase,spor
+Borsa İstanbul günü yüzde 5 değişimle kapattı.,Meteoroloji Adana için kuvvetli yağış uyarısı yaptı.,0.14276,unrelated,ekonomi|hava
+Uzmanlar grip vakalarındaki artışa dikkat çekti.,Teknoloji şirketi yeni elektrikli otomobil tanıttı.,0.097827,unrelated,saglik|teknoloji
+Cumhurbaşkanı Çin'e resmi ziyarette bulundu.,İzmir'a mevsimin ilk karı düştü.,0.074071,unrelated,siyaset|hava
+Ankara'da iki aracın çarpışması sonucu 3 kişi yaralandı.,Ankara'daki trafik kazasında 3 kişi yaralı kurtuldu.,0.907712,paraphrase,asayis
+"Kasımpaşa, tecrübeli oyuncuyla anlaşmaya vardı.",Kasımpaşa deneyimli futbolcuyu kadrosuna kattı.,0.729394,paraphrase,spor
+Ünlü sunucu eşiyle Sakarya'da tatil yaparken görüntülendi.,Ünlü sunucu ve eşinin Sakarya tatilinden kareler paylaşıldı.,0.960197,paraphrase,magazin
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Hazine ve Maliye Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.173811,unrelated,teknoloji|siyaset
+Cumhurbaşkanı Almanya'e resmi ziyarette bulundu.,Sağlık Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.169287,related,siyaset
+Eyüpspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,"popüler sunucu, Samsun'da tatilde görüntülendi.",0.144218,unrelated,spor|magazin
+"Adana Demirspor, sahasında Fenerbahçe'yi 2-2 mağlup etti.",Rizespor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.310478,related,spor
+"Kasımpaşa, sahasında Samsunspor'yi 0-3 mağlup etti.","Rizespor, yıldız futbolcuyla sözleşme yeniledi.",0.120951,related,spor
+Teknoloji şirketi yeni oyun konsolu tanıttı.,sevilen komedyen eşinden boşandığını duyurdu.,0.083041,unrelated,teknoloji|magazin
+Çin iklim zirvesine ev sahipliği yapıyor.,ana muhalefet partisi yeni yasa teklifini meclise sundu.,0.003236,unrelated,dunya|siyaset
+İstanbul ve çevresi için sağanak yağış bekleniyor.,Meteoroloji İstanbul için sağanak uyarısında bulundu.,0.735488,paraphrase,hava
+Genç oyuncu eşiyle İstanbul'da tatil yaparken görüntülendi.,Genç oyuncu ve eşinin İstanbul tatilinden kareler paylaşıldı.,0.955131,paraphrase,magazin
+Çin'de yapılan seçimleri muhalefet kazandı.,İtalya iklim zirvesine ev sahipliği yapıyor.,0.124932,related,dunya
+Denizli'da meydana gelen trafik kazasında 4 kişi yaralandı.,iktidar partisi yeni yasa teklifini meclise sundu.,0.047503,unrelated,asayis|siyaset
+Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,Teknoloji şirketi yeni elektrikli otomobil tanıttı.,0.389146,related,teknoloji
+pop yıldızı sürpriz bir törenle dünyaevine girdi.,"popüler sunucu, Bursa'da tatilde görüntülendi.",0.313332,related,magazin
+Merkez Bankası politika faizini sabit tuttu.,Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,0.109201,unrelated,ekonomi|teknoloji
+iktidar partisi yeni yasa teklifini meclise sundu.,İngiltere'de yapılan seçimleri muhalefet kazandı.,0.18108,unrelated,siyaset|dunya
+Hatayspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Almanya'de yapılan seçimleri muhalefet kazandı.,0.061865,unrelated,spor|dunya
+Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Hazine ve Maliye Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.759335,related,siyaset
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Dolar kuru güne yüzde 32 yükselişle başladı.,0.229231,unrelated,saglik|ekonomi
+genç oyuncu yeni projesiyle ekranlara dönüyor.,sevilen komedyen sürpriz bir törenle dünyaevine girdi.,0.300359,related,magazin
+iktidar partisi yeni yasa teklifini meclise sundu.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.092679,unrelated,siyaset|saglik
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Uzmanlar migren vakalarındaki artışa dikkat çekti.,0.483762,related,saglik
+Merkez Bankası politika faizini sabit tuttu.,Borsa İstanbul günü yüzde 36 değişimle kapattı.,0.201741,related,ekonomi
+Denizli'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Denizli beklenenden daha sıcak bir güne uyandı.,0.634472,paraphrase,hava
+Gaziantep'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Gaziantep beklenenden daha sıcak bir güne uyandı.,0.717685,paraphrase,hava
+"Kasımpaşa, yıldız futbolcuyla sözleşme yeniledi.",Eyüpspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.341489,related,spor
+Kasımpaşa'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Antalyaspor teknik direktörüyle yollarını ayırdı.,0.296972,related,spor
+"Eyüpspor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Eyüpspor sezonu zirvede bitirip şampiyon oldu.,0.89767,paraphrase,spor
+Yıllık enflasyon yüzde 10 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 10 olarak duyurdu.,0.954157,paraphrase,ekonomi
+Trabzon'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Trabzon beklenenden daha sıcak bir güne uyandı.,0.697487,paraphrase,hava
+Ünlü sunucu eşiyle İzmir'da tatil yaparken görüntülendi.,Ünlü sunucu ve eşinin İzmir tatilinden kareler paylaşıldı.,0.960151,paraphrase,magazin
+Yıllık enflasyon yüzde 23 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 23 olarak duyurdu.,0.951389,paraphrase,ekonomi
+İngiltere iklim zirvesine ev sahipliği yapıyor.,"Sivasspor, sahasında Rizespor'yi 3-1 mağlup etti.",0.02249,unrelated,dunya|spor
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Borsa İstanbul günü yüzde 16 değişimle kapattı.,0.176954,unrelated,teknoloji|ekonomi
+"Fenerbahçe, Eyüpspor karşısında sahadan 1-0 galip ayrıldı.",Fenerbahçe evinde Eyüpspor'yi 1-0'lik skorla yendi.,0.909357,paraphrase,spor
+"ünlü şarkıcı, İstanbul'da tatilde görüntülendi.",ünlü sunucu sürpriz bir törenle dünyaevine girdi.,0.332889,related,magazin
+ünlü oyuncu eşinden boşandığını duyurdu.,Rusya'de yapılan seçimleri muhalefet kazandı.,0.097259,unrelated,magazin|dunya
+Aydın'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.188571,unrelated,asayis|saglik
+Sakarya'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Sakarya'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.833215,paraphrase,asayis
+Popüler uygulama işletim sistemi için yeni güncelleme yayınladı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.150334,related,teknoloji
+ünlü model yeni projesiyle ekranlara dönüyor.,ünlü oyuncu eşinden boşandığını duyurdu.,0.285254,related,magazin
+Yıllık enflasyon yüzde 12 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 12 olarak duyurdu.,0.957221,paraphrase,ekonomi
+Tavuk fiyatları son bir ayda yüzde 32 arttı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.124618,unrelated,ekonomi|saglik
+Bodrum FK teknik direktörüyle yollarını ayırdı.,"Samsunspor, yıldız futbolcuyla sözleşme yeniledi.",0.368452,related,spor
+Antalya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.163337,unrelated,asayis|teknoloji
+İzmir'da sıcaklık 31 dereceye ulaştı.,Aydın'da sıcaklık 36 dereceye ulaştı.,0.569391,related,hava
+"Gaziantep FK, Fenerbahçe karşısında sahadan 1-1 galip ayrıldı.",Gaziantep FK evinde Fenerbahçe'yi 1-1'lik skorla yendi.,0.887543,paraphrase,spor
+Yıllık enflasyon yüzde 37 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 37 olarak duyurdu.,0.957155,paraphrase,ekonomi
+Ankara'a mevsimin ilk karı düştü.,Meteoroloji Bolu için kuvvetli yağış uyarısı yaptı.,0.227717,related,hava
+koalisyon ortağı yeni yasa teklifini meclise sundu.,Antalya'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.114767,unrelated,siyaset|asayis
+Konya'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Konya beklenenden daha sıcak bir güne uyandı.,0.692816,paraphrase,hava
+Fransa'de meydana gelen depremde maddi hasar oluştu.,Borsa İstanbul günü yüzde 21 değişimle kapattı.,0.189909,unrelated,dunya|ekonomi
+ünlü sunucu sürpriz bir törenle dünyaevine girdi.,Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.222146,unrelated,magazin|siyaset
+Meteoroloji Konya için kuvvetli yağış uyarısı yaptı.,Gaziantep'a mevsimin ilk karı düştü.,0.202669,related,hava
+Adana'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Adana'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.832902,paraphrase,asayis
+Japonya iklim zirvesine ev sahipliği yapıyor.,Yunanistan'de meydana gelen depremde maddi hasar oluştu.,0.145674,related,dunya
+Trabzon'da iki aracın çarpışması sonucu 4 kişi yaralandı.,Trabzon'daki trafik kazasında 4 kişi yaralı kurtuldu.,0.909268,paraphrase,asayis
+Rusya'de düzenlenen genel seçimlerde sonuçlar belli oldu.,Rusya halkı sandık başına giderek yeni yönetimini seçti.,0.571408,paraphrase,dunya
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Kayserispor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.11328,unrelated,saglik|spor
+"Konyaspor, Alanyaspor karşısında sahadan 3-2 galip ayrıldı.",Konyaspor evinde Alanyaspor'yi 3-2'lik skorla yendi.,0.894099,paraphrase,spor
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,ünlü sunucu yeni projesiyle ekranlara dönüyor.,0.203883,unrelated,teknoloji|magazin
+ünlü oyuncu yeni projesiyle ekranlara dönüyor.,Meteoroloji Antalya için kuvvetli yağış uyarısı yaptı.,0.098558,unrelated,magazin|hava
+Konya ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Konya için sağanak uyarısında bulundu.,0.715702,paraphrase,hava
+Yıllık enflasyon yüzde 14 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 14 olarak duyurdu.,0.960434,paraphrase,ekonomi
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Zeytinyağı fiyatları son bir ayda yüzde 40 arttı.,0.138716,unrelated,teknoloji|ekonomi
+Meteoroloji Ankara için kuvvetli yağış uyarısı yaptı.,Meteoroloji Denizli için kuvvetli yağış uyarısı yaptı.,0.671925,related,hava
+Başakşehir teknik direktörüyle yollarını ayırdı.,"Kayserispor, yıldız futbolcuyla sözleşme yeniledi.",0.373245,related,spor
+Cumhurbaşkanı Yunanistan'e resmi ziyarette bulundu.,Sağlık Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.191774,related,siyaset
+Bodrum FK'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Sakarya'a mevsimin ilk karı düştü.,0.258963,unrelated,spor|hava
+"Bodrum FK, Hatayspor karşısında sahadan 2-1 galip ayrıldı.",Bodrum FK evinde Hatayspor'yi 2-1'lik skorla yendi.,0.914231,paraphrase,spor
+Eskişehir'a mevsimin ilk karı düştü.,Ankara'a mevsimin ilk karı düştü.,0.727224,related,hava
+Ankara'da sıcaklık 44 dereceye ulaştı.,Bolu'da meydana gelen trafik kazasında 2 kişi yaralandı.,0.157093,unrelated,hava|asayis
+Samsunspor teknik direktörüyle yollarını ayırdı.,Başakşehir teknik direktörüyle yollarını ayırdı.,0.731675,related,spor
+"Gaziantep FK, Samsunspor karşısında sahadan 4-2 galip ayrıldı.",Gaziantep FK evinde Samsunspor'yi 4-2'lik skorla yendi.,0.885309,paraphrase,spor
+Almanya'de düzenlenen genel seçimlerde sonuçlar belli oldu.,Almanya halkı sandık başına giderek yeni yönetimini seçti.,0.599147,paraphrase,dunya
+Cumhurbaşkanı Rusya'e resmi ziyarette bulundu.,Eskişehir'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.137448,unrelated,siyaset|asayis
+Denizli'a mevsimin ilk karı düştü.,Ulaştırma Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.154413,unrelated,hava|siyaset
+Cumhurbaşkanı İspanya'e resmi ziyarette bulundu.,Kuru fasulye fiyatları son bir ayda yüzde 35 arttı.,0.038568,unrelated,siyaset|ekonomi
+Uzmanlar şeker hastalığı vakalarındaki artışa dikkat çekti.,Çin'de meydana gelen depremde maddi hasar oluştu.,0.230379,unrelated,saglik|dunya
+"Göztepe, Kayserispor karşısında sahadan 3-1 galip ayrıldı.",Göztepe evinde Kayserispor'yi 3-1'lik skorla yendi.,0.89142,paraphrase,spor
+"Sivasspor, tecrübeli oyuncuyla anlaşmaya vardı.",Sivasspor deneyimli futbolcuyu kadrosuna kattı.,0.812911,paraphrase,spor
+Muğla'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Muğla'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.825671,paraphrase,asayis
+"Göztepe, Başakşehir karşısında sahadan 3-1 galip ayrıldı.",Göztepe evinde Başakşehir'yi 3-1'lik skorla yendi.,0.8795,paraphrase,spor
+Borsa İstanbul günü yüzde 7 değişimle kapattı.,Merkez Bankası politika faizini sabit tuttu.,0.212125,related,ekonomi
+"Samsunspor, sahasında Sivasspor'yi 0-2 mağlup etti.",Ankara'da meydana gelen trafik kazasında 3 kişi yaralandı.,0.141973,unrelated,spor|asayis
+Sakarya'da çıkan yangın itfaiye ekiplerince söndürüldü.,Bolu'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.831379,related,asayis
+Muz fiyatları son bir ayda yüzde 36 arttı.,Borsa İstanbul günü yüzde 22 değişimle kapattı.,0.23168,related,ekonomi
+"Konyaspor, yıldız futbolcuyla sözleşme yeniledi.",Beşiktaş'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.230255,related,spor
+Merkez Bankası politika faizini sabit tuttu.,Muz fiyatları son bir ayda yüzde 14 arttı.,0.181736,related,ekonomi
+Sakarya ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Sakarya için sağanak uyarısında bulundu.,0.789852,paraphrase,hava
+ABD'de yapılan seçimleri muhalefet kazandı.,İngiltere'de yapılan seçimleri muhalefet kazandı.,0.726177,related,dunya
+"Samsunspor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Samsunspor sezonu zirvede bitirip şampiyon oldu.,0.906552,paraphrase,spor
+Uzmanlar alerji vakalarındaki artışa dikkat çekti.,"Kasımpaşa, yıldız futbolcuyla sözleşme yeniledi.",0.146872,unrelated,saglik|spor
+Popüler uygulama işletim sistemi için yeni güncelleme yayınladı.,ünlü oyuncu yeni projesiyle ekranlara dönüyor.,0.37177,unrelated,teknoloji|magazin
+Hatayspor teknik direktörüyle yollarını ayırdı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.092359,unrelated,spor|saglik
+Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,Teknoloji şirketi yeni elektrikli otomobil tanıttı.,0.384843,related,teknoloji
+Uzmanlar şeker hastalığı vakalarındaki artışa dikkat çekti.,Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,0.26503,unrelated,saglik|teknoloji
+"Trabzonspor, sahasında Sivasspor'yi 2-1 mağlup etti.",Ankara'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.080966,unrelated,spor|asayis
+Gaziantep'da meydana gelen trafik kazasında 3 kişi yaralandı.,İzmir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.20344,related,asayis
+Hollanda iklim zirvesine ev sahipliği yapıyor.,Borsa İstanbul günü yüzde 11 değişimle kapattı.,0.024469,unrelated,dunya|ekonomi
+Meteoroloji Konya için kuvvetli yağış uyarısı yaptı.,İngiltere'de meydana gelen depremde maddi hasar oluştu.,0.325848,unrelated,hava|dunya
+Adana'da çıkan yangın itfaiye ekiplerince söndürüldü.,Mersin'da meydana gelen trafik kazasında 4 kişi yaralandı.,0.260365,related,asayis
+Dolar kuru güne yüzde 1 yükselişle başladı.,Borsa İstanbul günü yüzde 33 değişimle kapattı.,0.303059,related,ekonomi
+Uzmanlar grip vakalarındaki artışa dikkat çekti.,Popüler uygulama elektrikli otomobil için yeni güncelleme yayınladı.,0.187216,unrelated,saglik|teknoloji
+genç oyuncu eşinden boşandığını duyurdu.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.021287,unrelated,magazin|teknoloji
+Popüler uygulama akıllı telefon için yeni güncelleme yayınladı.,"Kayserispor, yıldız futbolcuyla sözleşme yeniledi.",0.265017,unrelated,teknoloji|spor
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Ankara'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.122093,unrelated,saglik|asayis
+Gaziantep'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Gaziantep'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.823129,paraphrase,asayis
+Liderler Çin'de düzenlenen zirvede bir araya geldi.,Çin'deki zirvede liderler önemli konuları görüştü.,0.794421,paraphrase,siyaset
+"Kasımpaşa, sahasında Antalyaspor'yi 1-1 mağlup etti.","Hatayspor, yıldız futbolcuyla sözleşme yeniledi.",0.198293,related,spor
+Çin'de meydana gelen depremde maddi hasar oluştu.,Ekmek fiyatları son bir ayda yüzde 27 arttı.,0.186346,unrelated,dunya|ekonomi
+Rusya'de yapılan seçimleri muhalefet kazandı.,Trabzon'da sıcaklık 41 dereceye ulaştı.,0.105936,unrelated,dunya|hava
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Dolar kuru güne yüzde 15 yükselişle başladı.,0.163356,unrelated,teknoloji|ekonomi
+Dolar kuru güne yüzde 34 yükselişle başladı.,genç oyuncu sürpriz bir törenle dünyaevine girdi.,0.180367,unrelated,ekonomi|magazin
+Gaziantep FK'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Aydın'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.140825,unrelated,spor|asayis
+"Alanyaspor, Trabzonspor karşısında sahadan 3-2 galip ayrıldı.",Alanyaspor evinde Trabzonspor'yi 3-2'lik skorla yendi.,0.87054,paraphrase,spor
+"Samsunspor, Kayserispor karşısında sahadan 2-1 galip ayrıldı.",Samsunspor evinde Kayserispor'yi 2-1'lik skorla yendi.,0.897748,paraphrase,spor
+"Trabzonspor, Gaziantep FK karşısında sahadan 2-0 galip ayrıldı.",Trabzonspor evinde Gaziantep FK'yi 2-0'lik skorla yendi.,0.897579,paraphrase,spor
+ünlü sunucu eşinden boşandığını duyurdu.,Trabzon'da meydana gelen trafik kazasında 5 kişi yaralandı.,0.081713,unrelated,magazin|asayis
+Meteoroloji Kayseri için kuvvetli yağış uyarısı yaptı.,Fenerbahçe'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.064732,unrelated,hava|spor
+Popüler uygulama işletim sistemi için yeni güncelleme yayınladı.,Ankara'a mevsimin ilk karı düştü.,0.100473,unrelated,teknoloji|hava
+Mersin'da iki aracın çarpışması sonucu 2 kişi yaralandı.,Mersin'daki trafik kazasında 2 kişi yaralı kurtuldu.,0.889678,paraphrase,asayis
+İzmir'da sıcaklık 30 dereceye ulaştı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.031954,unrelated,hava|teknoloji
+Rusya'de yapılan seçimleri muhalefet kazandı.,Gaziantep'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.210181,unrelated,dunya|asayis
+sevilen sanatçı sürpriz bir törenle dünyaevine girdi.,Sağlık Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.181647,unrelated,magazin|siyaset
+"ünlü şarkıcı, Mersin'da tatilde görüntülendi.",pop yıldızı yeni projesiyle ekranlara dönüyor.,0.273597,related,magazin
+"Galatasaray, yıldız futbolcuyla sözleşme yeniledi.",usta oyuncu yeni projesiyle ekranlara dönüyor.,0.347303,unrelated,spor|magazin
+usta oyuncu sürpriz bir törenle dünyaevine girdi.,ödüllü yönetmen sürpriz bir törenle dünyaevine girdi.,0.761884,related,magazin
+Borsa İstanbul günü yüzde 19 değişimle kapattı.,Dolar kuru güne yüzde 31 yükselişle başladı.,0.319206,related,ekonomi
+Bolu'da meydana gelen trafik kazasında 4 kişi yaralandı.,"Fenerbahçe, yıldız futbolcuyla sözleşme yeniledi.",0.099944,unrelated,asayis|spor
+Çin iklim zirvesine ev sahipliği yapıyor.,Muğla'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.109506,unrelated,dunya|asayis
+"Gaziantep FK, Antalyaspor karşısında sahadan 2-2 galip ayrıldı.",Gaziantep FK evinde Antalyaspor'yi 2-2'lik skorla yendi.,0.912679,paraphrase,spor
+Sevilen komedyen eşiyle Aydın'da tatil yaparken görüntülendi.,Sevilen komedyen ve eşinin Aydın tatilinden kareler paylaşıldı.,0.944418,paraphrase,magazin
+Fransa iklim zirvesine ev sahipliği yapıyor.,Diyarbakır'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.077172,unrelated,dunya|asayis
+"Kasımpaşa, ligi lider tamamlayarak şampiyonluğa ulaştı.",Kasımpaşa sezonu zirvede bitirip şampiyon oldu.,0.881369,paraphrase,spor
+"Samsunspor, tecrübeli oyuncuyla anlaşmaya vardı.",Samsunspor deneyimli futbolcuyu kadrosuna kattı.,0.798851,paraphrase,spor
+"Adana Demirspor, sahasında Kasımpaşa'yi 3-0 mağlup etti.",Konyaspor teknik direktörüyle yollarını ayırdı.,0.27863,related,spor
+Teknoloji şirketi yeni akıllı telefon tanıttı.,Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,0.426438,related,teknoloji
+Sivasspor teknik direktörüyle yollarını ayırdı.,pop yıldızı sürpriz bir törenle dünyaevine girdi.,0.074021,unrelated,spor|magazin
+Bursa'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Bursa beklenenden daha sıcak bir güne uyandı.,0.720965,paraphrase,hava
+usta oyuncu yeni projesiyle ekranlara dönüyor.,Muğla'a mevsimin ilk karı düştü.,0.156742,unrelated,magazin|hava
+Çin'de düzenlenen genel seçimlerde sonuçlar belli oldu.,Çin halkı sandık başına giderek yeni yönetimini seçti.,0.541582,paraphrase,dunya
+Eskişehir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Uzmanlar migren vakalarındaki artışa dikkat çekti.,0.294479,unrelated,asayis|saglik
+Dolar kuru güne yüzde 29 yükselişle başladı.,Borsa İstanbul günü yüzde 11 değişimle kapattı.,0.272217,related,ekonomi
+Rusya'de meydana gelen depremde maddi hasar oluştu.,Cumhurbaşkanı ABD'e resmi ziyarette bulundu.,0.12613,unrelated,dunya|siyaset
+Japonya'de yapılan seçimleri muhalefet kazandı.,Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,0.155932,unrelated,dunya|teknoloji
+İstanbul'da çıkan yangın itfaiye ekiplerince söndürüldü.,Borsa İstanbul günü yüzde 18 değişimle kapattı.,0.228866,unrelated,asayis|ekonomi
+ana muhalefet partisi yeni yasa teklifini meclise sundu.,ödüllü yönetmen yeni projesiyle ekranlara dönüyor.,0.240043,unrelated,siyaset|magazin
+Bursa'da meydana gelen trafik kazasında 3 kişi yaralandı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.084344,unrelated,asayis|teknoloji
+Fransa'de meydana gelen depremde maddi hasar oluştu.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.139992,unrelated,dunya|saglik
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Gaziantep FK'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,-0.017698,unrelated,teknoloji|spor
+"Galatasaray, sahasında Antalyaspor'yi 1-0 mağlup etti.","Gaziantep FK, sahasında Göztepe'yi 2-3 mağlup etti.",0.547439,related,spor
+"ödüllü yönetmen, Aydın'da tatilde görüntülendi.",Denizli'a mevsimin ilk karı düştü.,0.218089,unrelated,magazin|hava
+Fransa iklim zirvesine ev sahipliği yapıyor.,Popüler uygulama akıllı telefon için yeni güncelleme yayınladı.,0.103317,unrelated,dunya|teknoloji
+Hollanda iklim zirvesine ev sahipliği yapıyor.,fenomen isim eşinden boşandığını duyurdu.,0.050813,unrelated,dunya|magazin
+İngiltere'de düzenlenen genel seçimlerde sonuçlar belli oldu.,İngiltere halkı sandık başına giderek yeni yönetimini seçti.,0.594525,paraphrase,dunya
+"Kasımpaşa, Konyaspor karşısında sahadan 4-0 galip ayrıldı.",Kasımpaşa evinde Konyaspor'yi 4-0'lik skorla yendi.,0.912677,paraphrase,spor
+Popüler sunucu eşiyle Adana'da tatil yaparken görüntülendi.,Popüler sunucu ve eşinin Adana tatilinden kareler paylaşıldı.,0.962785,paraphrase,magazin
+Meteoroloji Kayseri için kuvvetli yağış uyarısı yaptı.,Antalyaspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.101092,unrelated,hava|spor
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Uzmanlar boğaz enfeksiyonu vakalarındaki artışa dikkat çekti.,0.371182,related,saglik
+"Hatayspor, Kasımpaşa karşısında sahadan 1-0 galip ayrıldı.",Hatayspor evinde Kasımpaşa'yi 1-0'lik skorla yendi.,0.923889,paraphrase,spor
+Cumhurbaşkanı Hollanda'e resmi ziyarette bulundu.,ana muhalefet partisi yeni yasa teklifini meclise sundu.,0.09914,related,siyaset
+Sanayi ve Teknoloji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Sağlık Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.681888,related,siyaset
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,0.508854,related,saglik
+Konya'a mevsimin ilk karı düştü.,Samsunspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.23792,unrelated,hava|spor
+Bolu'a mevsimin ilk karı düştü.,İzmir'a mevsimin ilk karı düştü.,0.777701,related,hava
+Pop yıldızı eşiyle Ankara'da tatil yaparken görüntülendi.,Pop yıldızı ve eşinin Ankara tatilinden kareler paylaşıldı.,0.966518,paraphrase,magazin
+Sevilen komedyen yeni bir aşka yelken açtı.,Sevilen komedyen yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.887436,paraphrase,magazin
+Çin'de meydana gelen depremde maddi hasar oluştu.,Muğla'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.204977,unrelated,dunya|asayis
+Diyarbakır ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Diyarbakır için sağanak uyarısında bulundu.,0.750204,paraphrase,hava
+İngiltere'de meydana gelen depremde maddi hasar oluştu.,Cumhurbaşkanı İtalya'e resmi ziyarette bulundu.,0.141402,unrelated,dunya|siyaset
+Teknoloji şirketi yeni yapay zeka modeli tanıttı.,Mersin'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.146108,unrelated,teknoloji|asayis
+ünlü model eşinden boşandığını duyurdu.,Kasımpaşa teknik direktörüyle yollarını ayırdı.,0.323783,unrelated,magazin|spor
+Merkez Bankası politika faizini sabit tuttu.,Sakarya'a mevsimin ilk karı düştü.,0.084229,unrelated,ekonomi|hava
+Cumhurbaşkanı Çin'e resmi ziyarette bulundu.,Muğla'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.154483,unrelated,siyaset|asayis
+Kayseri'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Kayseri'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.820848,paraphrase,asayis
+Teknoloji şirketi yeni işletim sistemi tanıttı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.365636,related,teknoloji
+Borsa İstanbul günü yüzde 34 değişimle kapattı.,Merkez Bankası politika faizini sabit tuttu.,0.205396,related,ekonomi
+Hazine ve Maliye Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Cumhurbaşkanı Rusya'e resmi ziyarette bulundu.,0.139075,related,siyaset
+Çin iklim zirvesine ev sahipliği yapıyor.,Teknoloji şirketi yeni akıllı telefon tanıttı.,0.094163,unrelated,dunya|teknoloji
+Japonya'de yapılan seçimleri muhalefet kazandı.,Çin'de yapılan seçimleri muhalefet kazandı.,0.759185,related,dunya
+Galatasaray teknik direktörüyle yollarını ayırdı.,Merkez Bankası politika faizini sabit tuttu.,0.037069,unrelated,spor|ekonomi
+Genç oyuncu eşiyle Denizli'da tatil yaparken görüntülendi.,Genç oyuncu ve eşinin Denizli tatilinden kareler paylaşıldı.,0.952716,paraphrase,magazin
+Gaziantep'da sıcaklık 34 dereceye ulaştı.,Sanayi ve Teknoloji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.148465,unrelated,hava|siyaset
+"Konyaspor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Konyaspor sezonu zirvede bitirip şampiyon oldu.,0.908275,paraphrase,spor
+Kayseri'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Antalya'da meydana gelen trafik kazasında 2 kişi yaralandı.,0.202772,related,asayis
+Cumhurbaşkanı Almanya'e resmi ziyarette bulundu.,"ünlü model, Adana'da tatilde görüntülendi.",0.195555,unrelated,siyaset|magazin
+Popüler sunucu eşiyle Denizli'da tatil yaparken görüntülendi.,Popüler sunucu ve eşinin Denizli tatilinden kareler paylaşıldı.,0.961204,paraphrase,magazin
+Muğla'a mevsimin ilk karı düştü.,Bursa'a mevsimin ilk karı düştü.,0.731569,related,hava
+Popüler uygulama akıllı telefon için yeni güncelleme yayınladı.,"Gaziantep FK, sahasında Alanyaspor'yi 0-1 mağlup etti.",0.043474,unrelated,teknoloji|spor
+İngiltere iklim zirvesine ev sahipliği yapıyor.,İzmir'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.121565,unrelated,dunya|asayis
+Çin'de meydana gelen depremde maddi hasar oluştu.,Hazine ve Maliye Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.11972,unrelated,dunya|siyaset
+koalisyon ortağı yeni yasa teklifini meclise sundu.,Sakarya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.061572,unrelated,siyaset|asayis
+Bolu ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Bolu için sağanak uyarısında bulundu.,0.639413,paraphrase,hava
+ABD'de düzenlenen genel seçimlerde sonuçlar belli oldu.,ABD halkı sandık başına giderek yeni yönetimini seçti.,0.558364,paraphrase,dunya
+sevilen sanatçı sürpriz bir törenle dünyaevine girdi.,Hollanda'de meydana gelen depremde maddi hasar oluştu.,0.064691,unrelated,magazin|dunya
+Trabzon'da meydana gelen trafik kazasında 1 kişi yaralandı.,Bursa'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.145885,related,asayis
+koalisyon ortağı yeni yasa teklifini meclise sundu.,Cumhurbaşkanı Fransa'e resmi ziyarette bulundu.,0.158765,related,siyaset
+Peynir fiyatları son bir ayda yüzde 29 arttı.,Muz fiyatları son bir ayda yüzde 6 arttı.,0.545778,related,ekonomi
+koalisyon ortağı yeni yasa teklifini meclise sundu.,Hazine ve Maliye Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.413313,related,siyaset
+Pirinç fiyatları son bir ayda yüzde 18 arttı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.078246,unrelated,ekonomi|teknoloji
+"Alanyaspor, Kasımpaşa karşısında sahadan 2-1 galip ayrıldı.",Alanyaspor evinde Kasımpaşa'yi 2-1'lik skorla yendi.,0.885615,paraphrase,spor
+Merkez Bankası politika faizini sabit tuttu.,Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.144443,unrelated,ekonomi|siyaset
+Meteoroloji Samsun için kuvvetli yağış uyarısı yaptı.,"Kayserispor, sahasında Samsunspor'yi 2-3 mağlup etti.",0.304211,unrelated,hava|spor
+ABD'de meydana gelen depremde maddi hasar oluştu.,Merkez Bankası politika faizini sabit tuttu.,0.204605,unrelated,dunya|ekonomi
+Borsa İstanbul rekor seviyeye ulaştı.,BIST 100 endeksi tarihi zirvesini yeniledi.,0.596905,paraphrase,ekonomi
+"Sivasspor, yıldız futbolcuyla sözleşme yeniledi.","Gaziantep FK, sahasında Beşiktaş'yi 3-2 mağlup etti.",0.173994,related,spor
+Merkez Bankası politika faizini sabit tuttu.,Meteoroloji Eskişehir için kuvvetli yağış uyarısı yaptı.,0.200601,unrelated,ekonomi|hava
+Teknoloji şirketi yeni elektrikli otomobil tanıttı.,Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,0.406612,related,teknoloji
+"ünlü sunucu, Denizli'da tatilde görüntülendi.",Popüler uygulama işletim sistemi için yeni güncelleme yayınladı.,0.103923,unrelated,magazin|teknoloji
+Sevilen komedyen eşiyle Bursa'da tatil yaparken görüntülendi.,Sevilen komedyen ve eşinin Bursa tatilinden kareler paylaşıldı.,0.965742,paraphrase,magazin
+Merkez Bankası politika faizini sabit tuttu.,Uzmanlar boğaz enfeksiyonu vakalarındaki artışa dikkat çekti.,0.143745,unrelated,ekonomi|saglik
+Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,Galatasaray'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.025989,unrelated,teknoloji|spor
+Dolar kuru güne yüzde 9 yükselişle başladı.,Teknoloji şirketi yeni işletim sistemi tanıttı.,0.127671,unrelated,ekonomi|teknoloji
+sevilen sanatçı sürpriz bir törenle dünyaevine girdi.,"sevilen sanatçı, İzmir'da tatilde görüntülendi.",0.393826,related,magazin
+Cumhurbaşkanı İspanya'e resmi ziyarette bulundu.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.195403,unrelated,siyaset|saglik
+Almanya'de yapılan seçimleri muhalefet kazandı.,"ünlü sunucu, Gaziantep'da tatilde görüntülendi.",0.132996,unrelated,dunya|magazin
+Ekmek fiyatları son bir ayda yüzde 24 arttı.,Meteoroloji Mersin için kuvvetli yağış uyarısı yaptı.,0.13815,unrelated,ekonomi|hava
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Aydın'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.163398,unrelated,teknoloji|asayis
+Yıllık enflasyon yüzde 24 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 24 olarak duyurdu.,0.955126,paraphrase,ekonomi
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Bursa'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.168435,unrelated,saglik|asayis
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,İstanbul'da meydana gelen trafik kazasında 1 kişi yaralandı.,0.144187,unrelated,saglik|asayis
+Uzmanlar migren vakalarındaki artışa dikkat çekti.,Uzmanlar boğaz enfeksiyonu vakalarındaki artışa dikkat çekti.,0.655691,related,saglik
+Teknoloji devi yeni yapay zeka modeli modelini duyurdu.,Şirket güncellenmiş yapay zeka modeli sürümünü kullanıma sundu.,0.814664,paraphrase,teknoloji
+"Fenerbahçe, Beşiktaş karşısında sahadan 4-2 galip ayrıldı.",Fenerbahçe evinde Beşiktaş'yi 4-2'lik skorla yendi.,0.847986,paraphrase,spor
+Gaziantep'da iki aracın çarpışması sonucu 4 kişi yaralandı.,Gaziantep'daki trafik kazasında 4 kişi yaralı kurtuldu.,0.899869,paraphrase,asayis
+İtalya'de düzenlenen genel seçimlerde sonuçlar belli oldu.,İtalya halkı sandık başına giderek yeni yönetimini seçti.,0.595525,paraphrase,dunya
+koalisyon ortağı yeni yasa teklifini meclise sundu.,İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.423544,related,siyaset
+Popüler uygulama elektrikli otomobil için yeni güncelleme yayınladı.,"ödüllü yönetmen, Adana'da tatilde görüntülendi.",0.131039,unrelated,teknoloji|magazin
+Meteoroloji Denizli için kuvvetli yağış uyarısı yaptı.,Denizli'a mevsimin ilk karı düştü.,0.372316,related,hava
+sevilen komedyen yeni projesiyle ekranlara dönüyor.,"sevilen sanatçı, Adana'da tatilde görüntülendi.",0.259499,related,magazin
+Meteoroloji Diyarbakır için kuvvetli yağış uyarısı yaptı.,Çay fiyatları son bir ayda yüzde 20 arttı.,0.157075,unrelated,hava|ekonomi
+Teknoloji devi yeni sohbet robotu modelini duyurdu.,Şirket güncellenmiş sohbet robotu sürümünü kullanıma sundu.,0.800474,paraphrase,teknoloji
+İzmir'da çıkan yangın itfaiye ekiplerince söndürüldü.,genç oyuncu sürpriz bir törenle dünyaevine girdi.,0.128472,unrelated,asayis|magazin
+Beşiktaş teknik direktörüyle yollarını ayırdı.,Hatayspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.420881,related,spor
+Kayseri'da sıcaklık 41 dereceye ulaştı.,Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,0.088384,unrelated,hava|teknoloji
+Antalya'da sıcaklık 32 dereceye ulaştı.,Kayseri'a mevsimin ilk karı düştü.,0.15351,related,hava
+Kayserispor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Enerji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,-0.032532,unrelated,spor|siyaset
+Teknoloji şirketi yeni yapay zeka modeli tanıttı.,Kasımpaşa teknik direktörüyle yollarını ayırdı.,0.168316,unrelated,teknoloji|spor
+İngiltere iklim zirvesine ev sahipliği yapıyor.,Yunanistan iklim zirvesine ev sahipliği yapıyor.,0.67093,related,dunya
+Yunanistan'de yapılan seçimleri muhalefet kazandı.,"Galatasaray, sahasında Rizespor'yi 1-1 mağlup etti.",0.207656,unrelated,dunya|spor
+ünlü model sürpriz bir törenle dünyaevine girdi.,Hatayspor teknik direktörüyle yollarını ayırdı.,0.05676,unrelated,magazin|spor
+ünlü oyuncu eşinden boşandığını duyurdu.,Popüler uygulama işletim sistemi için yeni güncelleme yayınladı.,0.106741,unrelated,magazin|teknoloji
+Antalya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,İstanbul'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.778272,related,asayis
+"pop yıldızı, Antalya'da tatilde görüntülendi.","popüler sunucu, Sakarya'da tatilde görüntülendi.",0.621734,related,magazin
+Dolar kuru güne yüzde 31 yükselişle başladı.,Aydın'da sıcaklık 44 dereceye ulaştı.,0.296097,unrelated,ekonomi|hava
+Patates fiyatları son bir ayda yüzde 6 arttı.,Cumhurbaşkanı Almanya'e resmi ziyarette bulundu.,0.118785,unrelated,ekonomi|siyaset
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,sevilen komedyen sürpriz bir törenle dünyaevine girdi.,0.168763,unrelated,saglik|magazin
+Aydın'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Aydın beklenenden daha sıcak bir güne uyandı.,0.594737,paraphrase,hava
+Samsun ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Samsun için sağanak uyarısında bulundu.,0.719662,paraphrase,hava
+Alanyaspor teknik direktörüyle yollarını ayırdı.,"Fenerbahçe, yıldız futbolcuyla sözleşme yeniledi.",0.308337,related,spor
+Uzmanlar grip vakalarındaki artışa dikkat çekti.,Uzmanlar yüksek tansiyon vakalarındaki artışa dikkat çekti.,0.806785,related,saglik
+Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,Popüler uygulama akıllı telefon için yeni güncelleme yayınladı.,0.755955,related,teknoloji
+mecliste grubu bulunan bir parti yeni yasa teklifini meclise sundu.,İspanya'de yapılan seçimleri muhalefet kazandı.,0.198996,unrelated,siyaset|dunya
+"Antalyaspor, Kayserispor karşısında sahadan 4-0 galip ayrıldı.",Antalyaspor evinde Kayserispor'yi 4-0'lik skorla yendi.,0.92563,paraphrase,spor
+"Kayserispor, sahasında Kasımpaşa'yi 3-0 mağlup etti.",Eskişehir'da meydana gelen trafik kazasında 3 kişi yaralandı.,0.364213,unrelated,spor|asayis
+"Eyüpspor, Trabzonspor karşısında sahadan 3-0 galip ayrıldı.",Eyüpspor evinde Trabzonspor'yi 3-0'lik skorla yendi.,0.897223,paraphrase,spor
+Yıllık enflasyon yüzde 16 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 16 olarak duyurdu.,0.964727,paraphrase,ekonomi
+Konya'da çıkan yangın itfaiye ekiplerince söndürüldü.,"Trabzonspor, yıldız futbolcuyla sözleşme yeniledi.",0.122748,unrelated,asayis|spor
+İstanbul'da meydana gelen trafik kazasında 2 kişi yaralandı.,Antalya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.174706,related,asayis
+Borsa İstanbul günü yüzde 40 değişimle kapattı.,Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,0.14773,unrelated,ekonomi|teknoloji
+İtalya'de yapılan seçimleri muhalefet kazandı.,Merkez Bankası politika faizini sabit tuttu.,0.160722,unrelated,dunya|ekonomi
+Teknoloji şirketi yeni oyun konsolu tanıttı.,Mersin'da meydana gelen trafik kazasında 5 kişi yaralandı.,0.055525,unrelated,teknoloji|asayis
+Antalya'da sıcaklık 39 dereceye ulaştı.,Mersin'a mevsimin ilk karı düştü.,0.11386,related,hava
+"Bodrum FK, Gaziantep FK karşısında sahadan 1-1 galip ayrıldı.",Bodrum FK evinde Gaziantep FK'yi 1-1'lik skorla yendi.,0.904612,paraphrase,spor
+Gaziantep FK'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.120197,unrelated,spor|saglik
+Yıllık enflasyon yüzde 38 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 38 olarak duyurdu.,0.958434,paraphrase,ekonomi
+İngiltere'de meydana gelen depremde maddi hasar oluştu.,Cumhurbaşkanı Rusya'e resmi ziyarette bulundu.,0.10996,unrelated,dunya|siyaset
+İstanbul'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,İstanbul'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.828436,paraphrase,asayis
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Galatasaray'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,0.082565,unrelated,saglik|spor
+Sevilen sanatçı eşiyle Sakarya'da tatil yaparken görüntülendi.,Sevilen sanatçı ve eşinin Sakarya tatilinden kareler paylaşıldı.,0.964052,paraphrase,magazin
+"Galatasaray, sahasında Göztepe'yi 2-2 mağlup etti.",Uzmanlar alerji vakalarındaki artışa dikkat çekti.,0.060413,unrelated,spor|saglik
+"Fenerbahçe, tecrübeli oyuncuyla anlaşmaya vardı.",Fenerbahçe deneyimli futbolcuyu kadrosuna kattı.,0.77435,paraphrase,spor
+Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,Borsa İstanbul günü yüzde 16 değişimle kapattı.,0.157781,unrelated,teknoloji|ekonomi
+Pop yıldızı sevgilisiyle nişanlandı.,Pop yıldızı mutlu haberi nişan yüzükleriyle duyurdu.,0.77031,paraphrase,magazin
+Çin'de yapılan seçimleri muhalefet kazandı.,Rusya iklim zirvesine ev sahipliği yapıyor.,0.131455,related,dunya
+Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,Konya'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.171005,unrelated,teknoloji|asayis
+Teknoloji şirketi yeni sohbet robotu tanıttı.,Sakarya'a mevsimin ilk karı düştü.,0.100774,unrelated,teknoloji|hava
+Yunanistan iklim zirvesine ev sahipliği yapıyor.,İtalya'de meydana gelen depremde maddi hasar oluştu.,0.127189,related,dunya
+Popüler sunucu eşiyle İstanbul'da tatil yaparken görüntülendi.,Popüler sunucu ve eşinin İstanbul tatilinden kareler paylaşıldı.,0.963113,paraphrase,magazin
+Migren vakalarında son haftalarda belirgin artış görüldü.,Sağlık yetkilileri migren vakalarının yükseldiğini bildirdi.,0.756013,paraphrase,saglik
+Meteoroloji Aydın için kuvvetli yağış uyarısı yaptı.,Adana'da sıcaklık 35 dereceye ulaştı.,0.418296,related,hava
+Borsa İstanbul günü yüzde 8 değişimle kapattı.,Meteoroloji Kayseri için kuvvetli yağış uyarısı yaptı.,0.14438,unrelated,ekonomi|hava
+Dolar kuru güne yüzde 27 yükselişle başladı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.151717,unrelated,ekonomi|teknoloji
+Adana'da çıkan yangın itfaiye ekiplerince söndürüldü.,Trabzon'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.208808,related,asayis
+Yıllık enflasyon yüzde 22 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 22 olarak duyurdu.,0.949323,paraphrase,ekonomi
+Bolu'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Bolu beklenenden daha sıcak bir güne uyandı.,0.564249,paraphrase,hava
+Sevilen sanatçı eşiyle Mersin'da tatil yaparken görüntülendi.,Sevilen sanatçı ve eşinin Mersin tatilinden kareler paylaşıldı.,0.961852,paraphrase,magazin
+Kasımpaşa'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Antalya'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,0.084828,unrelated,spor|asayis
+İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Yunanistan'de meydana gelen depremde maddi hasar oluştu.,0.118876,unrelated,siyaset|dunya
+Fenerbahçe teknik direktörüyle yollarını ayırdı.,Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,0.100604,unrelated,spor|teknoloji
+Ankara'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Ankara beklenenden daha sıcak bir güne uyandı.,0.703213,paraphrase,hava
+Kayseri'da meydana gelen trafik kazasında 2 kişi yaralandı.,"Alanyaspor, sahasında Gaziantep FK'yi 2-0 mağlup etti.",0.314392,unrelated,asayis|spor
+Uzmanlar alerji vakalarındaki artışa dikkat çekti.,Muğla'da meydana gelen trafik kazasında 5 kişi yaralandı.,0.165788,unrelated,saglik|asayis
+Tarım ve Orman Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Borsa İstanbul günü yüzde 9 değişimle kapattı.,0.131697,unrelated,siyaset|ekonomi
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,koalisyon ortağı yeni yasa teklifini meclise sundu.,0.141917,unrelated,teknoloji|siyaset
+sevilen komedyen eşinden boşandığını duyurdu.,genç oyuncu sürpriz bir törenle dünyaevine girdi.,0.312029,related,magazin
+İzmir'da iki aracın çarpışması sonucu 2 kişi yaralandı.,İzmir'daki trafik kazasında 2 kişi yaralı kurtuldu.,0.892131,paraphrase,asayis
+Peynir fiyatları son bir ayda yüzde 29 arttı.,Teknoloji şirketi yeni elektrikli otomobil tanıttı.,0.100009,unrelated,ekonomi|teknoloji
+"Gaziantep FK, yıldız futbolcuyla sözleşme yeniledi.",ünlü model yeni projesiyle ekranlara dönüyor.,0.272861,unrelated,spor|magazin
+"Bodrum FK, tecrübeli oyuncuyla anlaşmaya vardı.",Bodrum FK deneyimli futbolcuyu kadrosuna kattı.,0.833549,paraphrase,spor
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,popüler sunucu eşinden boşandığını duyurdu.,0.195986,unrelated,saglik|magazin
+Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.169423,unrelated,teknoloji|saglik
+Yıllık enflasyon yüzde 31 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 31 olarak duyurdu.,0.958414,paraphrase,ekonomi
+Fenerbahçe teknik direktörüyle yollarını ayırdı.,Meteoroloji Konya için kuvvetli yağış uyarısı yaptı.,0.061193,unrelated,spor|hava
+Denizli'da iki aracın çarpışması sonucu 2 kişi yaralandı.,Denizli'daki trafik kazasında 2 kişi yaralı kurtuldu.,0.890948,paraphrase,asayis
+Yıllık enflasyon yüzde 21 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 21 olarak duyurdu.,0.960854,paraphrase,ekonomi
+Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,pop yıldızı eşinden boşandığını duyurdu.,0.192773,unrelated,teknoloji|magazin
+Aydın'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,"fenomen isim, Sakarya'da tatilde görüntülendi.",0.181432,unrelated,asayis|magazin
+Mersin'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Mersin beklenenden daha sıcak bir güne uyandı.,0.618261,paraphrase,hava
+Fenomen isim eşiyle Muğla'da tatil yaparken görüntülendi.,Fenomen isim ve eşinin Muğla tatilinden kareler paylaşıldı.,0.93176,paraphrase,magazin
+"ünlü sunucu, Konya'da tatilde görüntülendi.",Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,0.122569,unrelated,magazin|teknoloji
+Kayseri'da çıkan yangın itfaiye ekiplerince söndürüldü.,Popüler uygulama akıllı telefon için yeni güncelleme yayınladı.,0.169799,unrelated,asayis|teknoloji
+Diyarbakır'da iki aracın çarpışması sonucu 3 kişi yaralandı.,Diyarbakır'daki trafik kazasında 3 kişi yaralı kurtuldu.,0.90565,paraphrase,asayis
+"Göztepe, Eyüpspor karşısında sahadan 4-2 galip ayrıldı.",Göztepe evinde Eyüpspor'yi 4-2'lik skorla yendi.,0.888629,paraphrase,spor
+Meteoroloji Konya için kuvvetli yağış uyarısı yaptı.,Cumhurbaşkanı Almanya'e resmi ziyarette bulundu.,0.098452,unrelated,hava|siyaset
+"Hatayspor, yıldız futbolcuyla sözleşme yeniledi.",Trabzonspor teknik direktörüyle yollarını ayırdı.,0.355445,related,spor
+Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,0.852755,related,teknoloji
+Genç oyuncu yeni bir aşka yelken açtı.,Genç oyuncu yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.841993,paraphrase,magazin
+Ünlü model eşiyle Gaziantep'da tatil yaparken görüntülendi.,Ünlü model ve eşinin Gaziantep tatilinden kareler paylaşıldı.,0.957935,paraphrase,magazin
+Yıllık enflasyon yüzde 2 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 2 olarak duyurdu.,0.950597,paraphrase,ekonomi
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Bolu'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.109241,unrelated,teknoloji|asayis
+Yunanistan'de yapılan seçimleri muhalefet kazandı.,Almanya'de meydana gelen depremde maddi hasar oluştu.,0.163698,related,dunya
+"Samsunspor, Kasımpaşa karşısında sahadan 2-2 galip ayrıldı.",Samsunspor evinde Kasımpaşa'yi 2-2'lik skorla yendi.,0.880531,paraphrase,spor
+Antalyaspor teknik direktörüyle yollarını ayırdı.,Konya'da meydana gelen trafik kazasında 5 kişi yaralandı.,0.106618,unrelated,spor|asayis
+Diyarbakır'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Rusya'de meydana gelen depremde maddi hasar oluştu.,0.183904,unrelated,asayis|dunya
+ünlü model eşinden boşandığını duyurdu.,"sevilen sanatçı, Konya'da tatilde görüntülendi.",0.232447,related,magazin
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Konya'da sıcaklık 36 dereceye ulaştı.,0.117928,unrelated,saglik|hava
+Yıllık enflasyon yüzde 9 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 9 olarak duyurdu.,0.95977,paraphrase,ekonomi
+Diyarbakır'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Diyarbakır beklenenden daha sıcak bir güne uyandı.,0.733581,paraphrase,hava
+pop yıldızı sürpriz bir törenle dünyaevine girdi.,"Kayserispor, yıldız futbolcuyla sözleşme yeniledi.",0.322264,unrelated,magazin|spor
+Yıllık enflasyon yüzde 18 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 18 olarak duyurdu.,0.963846,paraphrase,ekonomi
+Popüler uygulama akıllı telefon için yeni güncelleme yayınladı.,Teknoloji şirketi yeni elektrikli otomobil tanıttı.,0.39338,related,teknoloji
+Uzmanlar yüksek tansiyon vakalarındaki artışa dikkat çekti.,Teknoloji şirketi yeni sohbet robotu tanıttı.,0.169966,unrelated,saglik|teknoloji
+ünlü oyuncu yeni projesiyle ekranlara dönüyor.,sevilen sanatçı eşinden boşandığını duyurdu.,0.222098,related,magazin
+Ödüllü yönetmen eşiyle İzmir'da tatil yaparken görüntülendi.,Ödüllü yönetmen ve eşinin İzmir tatilinden kareler paylaşıldı.,0.959995,paraphrase,magazin
+ödüllü yönetmen sürpriz bir törenle dünyaevine girdi.,Fransa'de meydana gelen depremde maddi hasar oluştu.,0.106414,unrelated,magazin|dunya
+İstanbul'da sıcaklık 44 dereceye ulaştı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.061501,unrelated,hava|teknoloji
+Sakarya'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Sakarya beklenenden daha sıcak bir güne uyandı.,0.703658,paraphrase,hava
+"Antalyaspor, tecrübeli oyuncuyla anlaşmaya vardı.",Antalyaspor deneyimli futbolcuyu kadrosuna kattı.,0.80303,paraphrase,spor
+fenomen isim sürpriz bir törenle dünyaevine girdi.,Beşiktaş teknik direktörüyle yollarını ayırdı.,0.054348,unrelated,magazin|spor
+Ünlü model eşiyle Bursa'da tatil yaparken görüntülendi.,Ünlü model ve eşinin Bursa tatilinden kareler paylaşıldı.,0.958756,paraphrase,magazin
+Fransa'de meydana gelen depremde maddi hasar oluştu.,Hollanda'de meydana gelen depremde maddi hasar oluştu.,0.759953,related,dunya
+Cumhurbaşkanı İtalya'e resmi ziyarette bulundu.,ödüllü yönetmen eşinden boşandığını duyurdu.,0.162859,unrelated,siyaset|magazin
+Adana'da çıkan yangın itfaiye ekiplerince söndürüldü.,iktidar partisi yeni yasa teklifini meclise sundu.,0.102395,unrelated,asayis|siyaset
+Teknoloji şirketi yeni dizüstü bilgisayar tanıttı.,Teknoloji şirketi yeni akıllı telefon tanıttı.,0.831288,related,teknoloji
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Uzmanlar grip vakalarındaki artışa dikkat çekti.,0.54083,related,saglik
+Hollanda'de meydana gelen depremde maddi hasar oluştu.,Fransa iklim zirvesine ev sahipliği yapıyor.,0.14063,related,dunya
+ünlü oyuncu eşinden boşandığını duyurdu.,pop yıldızı eşinden boşandığını duyurdu.,0.862758,related,magazin
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Dolar kuru güne yüzde 17 yükselişle başladı.,0.217246,unrelated,saglik|ekonomi
+ABD iklim zirvesine ev sahipliği yapıyor.,Bursa'a mevsimin ilk karı düştü.,0.122349,unrelated,dunya|hava
+Ankara'da çıkan yangın itfaiye ekiplerince söndürüldü.,ünlü şarkıcı yeni projesiyle ekranlara dönüyor.,0.069332,unrelated,asayis|magazin
+Uzmanlar boğaz enfeksiyonu vakalarındaki artışa dikkat çekti.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.450226,related,saglik
+Kayseri'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Kayseri beklenenden daha sıcak bir güne uyandı.,0.677538,paraphrase,hava
+Meteoroloji Aydın için kuvvetli yağış uyarısı yaptı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.186009,unrelated,hava|saglik
+Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,Borsa İstanbul günü yüzde 9 değişimle kapattı.,0.19258,unrelated,teknoloji|ekonomi
+Uzmanlar şeker hastalığı vakalarındaki artışa dikkat çekti.,İstanbul'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.221311,unrelated,saglik|asayis
+koalisyon ortağı yeni yasa teklifini meclise sundu.,Eyüpspor teknik direktörüyle yollarını ayırdı.,-0.013322,unrelated,siyaset|spor
+Antalya'da meydana gelen trafik kazasında 1 kişi yaralandı.,Meteoroloji Kayseri için kuvvetli yağış uyarısı yaptı.,0.19724,unrelated,asayis|hava
+İspanya iklim zirvesine ev sahipliği yapıyor.,Uzmanlar boğaz enfeksiyonu vakalarındaki artışa dikkat çekti.,0.133632,unrelated,dunya|saglik
+Galatasaray teknik direktörüyle yollarını ayırdı.,Meteoroloji Sakarya için kuvvetli yağış uyarısı yaptı.,0.127979,unrelated,spor|hava
+Bolu'da çıkan yangın itfaiye ekiplerince söndürüldü.,Hollanda'de yapılan seçimleri muhalefet kazandı.,0.160122,unrelated,asayis|dunya
+Teknoloji devi yeni dizüstü bilgisayar modelini duyurdu.,Şirket güncellenmiş dizüstü bilgisayar sürümünü kullanıma sundu.,0.785617,paraphrase,teknoloji
+Çin iklim zirvesine ev sahipliği yapıyor.,Enerji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.124593,unrelated,dunya|siyaset
+Liderler ABD'de düzenlenen zirvede bir araya geldi.,ABD'deki zirvede liderler önemli konuları görüştü.,0.767,paraphrase,siyaset
+Rusya'de meydana gelen depremde maddi hasar oluştu.,İspanya iklim zirvesine ev sahipliği yapıyor.,0.091772,related,dunya
+Adana'da iki aracın çarpışması sonucu 6 kişi yaralandı.,Adana'daki trafik kazasında 6 kişi yaralı kurtuldu.,0.900447,paraphrase,asayis
+Sivasspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Popüler uygulama giyilebilir cihaz için yeni güncelleme yayınladı.,0.063646,unrelated,spor|teknoloji
+genç oyuncu eşinden boşandığını duyurdu.,"Eyüpspor, yıldız futbolcuyla sözleşme yeniledi.",0.207981,unrelated,magazin|spor
+ünlü sunucu eşinden boşandığını duyurdu.,Ulaştırma Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.14709,unrelated,magazin|siyaset
+Zatürre vakalarında son haftalarda belirgin artış görüldü.,Sağlık yetkilileri zatürre vakalarının yükseldiğini bildirdi.,0.514358,paraphrase,saglik
+Yıllık enflasyon yüzde 4 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 4 olarak duyurdu.,0.952989,paraphrase,ekonomi
+Bolu'da düzenlenen operasyonda çok sayıda şüpheli gözaltına alındı.,Bolu'da meydana gelen trafik kazasında 4 kişi yaralandı.,0.381933,related,asayis
+usta oyuncu sürpriz bir törenle dünyaevine girdi.,"genç oyuncu, Trabzon'da tatilde görüntülendi.",0.313295,related,magazin
+Hollanda iklim zirvesine ev sahipliği yapıyor.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.042114,unrelated,dunya|teknoloji
+Ünlü sunucu yeni bir aşka yelken açtı.,Ünlü sunucu yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.864231,paraphrase,magazin
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Merkez Bankası politika faizini sabit tuttu.,0.253174,unrelated,saglik|ekonomi
+Liderler Yunanistan'de düzenlenen zirvede bir araya geldi.,Yunanistan'deki zirvede liderler önemli konuları görüştü.,0.795476,paraphrase,siyaset
+Trabzonspor teknik direktörüyle yollarını ayırdı.,Başakşehir teknik direktörüyle yollarını ayırdı.,0.729822,related,spor
+"Göztepe, ligi lider tamamlayarak şampiyonluğa ulaştı.",Göztepe sezonu zirvede bitirip şampiyon oldu.,0.880462,paraphrase,spor
+Borsa İstanbul günü yüzde 36 değişimle kapattı.,ana muhalefet partisi yeni yasa teklifini meclise sundu.,0.116615,unrelated,ekonomi|siyaset
+Antalya ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Antalya için sağanak uyarısında bulundu.,0.779222,paraphrase,hava
+"ünlü model, Konya'da tatilde görüntülendi.",sevilen sanatçı sürpriz bir törenle dünyaevine girdi.,0.324406,related,magazin
+Ankara'da iki aracın çarpışması sonucu 4 kişi yaralandı.,Ankara'daki trafik kazasında 4 kişi yaralı kurtuldu.,0.904246,paraphrase,asayis
+Hollanda'de düzenlenen genel seçimlerde sonuçlar belli oldu.,Hollanda halkı sandık başına giderek yeni yönetimini seçti.,0.666498,paraphrase,dunya
+Usta oyuncu sevgilisiyle nişanlandı.,Usta oyuncu mutlu haberi nişan yüzükleriyle duyurdu.,0.697741,paraphrase,magazin
+Meteoroloji Bolu için kuvvetli yağış uyarısı yaptı.,Bursa'da sıcaklık 38 dereceye ulaştı.,0.331712,related,hava
+İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Popüler uygulama dizüstü bilgisayar için yeni güncelleme yayınladı.,0.456495,unrelated,siyaset|teknoloji
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,koalisyon ortağı yeni yasa teklifini meclise sundu.,0.291922,unrelated,saglik|siyaset
+Tarım ve Orman Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.146972,unrelated,siyaset|teknoloji
+Japonya'de yapılan seçimleri muhalefet kazandı.,Teknoloji şirketi yeni akıllı telefon tanıttı.,0.157049,unrelated,dunya|teknoloji
+Popüler uygulama yapay zeka modeli için yeni güncelleme yayınladı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.513913,related,teknoloji
+Eyüpspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Cumhurbaşkanı Almanya'e resmi ziyarette bulundu.,0.026977,unrelated,spor|siyaset
+Gaziantep'da çıkan yangın itfaiye ekiplerince söndürüldü.,ünlü oyuncu yeni projesiyle ekranlara dönüyor.,0.083495,unrelated,asayis|magazin
+İtalya'de meydana gelen depremde maddi hasar oluştu.,Fransa'de yapılan seçimleri muhalefet kazandı.,0.193118,related,dunya
+Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,ünlü oyuncu sürpriz bir törenle dünyaevine girdi.,0.194767,unrelated,teknoloji|magazin
+Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,Teknoloji şirketi yeni işletim sistemi tanıttı.,0.159775,unrelated,saglik|teknoloji
+İspanya'de yapılan seçimleri muhalefet kazandı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.16924,unrelated,dunya|saglik
+Bursa'da sıcaklık 37 dereceye ulaştı.,Rusya iklim zirvesine ev sahipliği yapıyor.,0.35524,unrelated,hava|dunya
+Ödüllü yönetmen eşiyle Kayseri'da tatil yaparken görüntülendi.,Ödüllü yönetmen ve eşinin Kayseri tatilinden kareler paylaşıldı.,0.958363,paraphrase,magazin
+Trabzon ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Trabzon için sağanak uyarısında bulundu.,0.775734,paraphrase,hava
+Borsa İstanbul günü yüzde 28 değişimle kapattı.,Merkez Bankası politika faizini sabit tuttu.,0.227336,related,ekonomi
+Teknoloji şirketi yeni giyilebilir cihaz tanıttı.,Popüler uygulama elektrikli otomobil için yeni güncelleme yayınladı.,0.485452,related,teknoloji
+Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,Meteoroloji Antalya için kuvvetli yağış uyarısı yaptı.,0.141665,unrelated,teknoloji|hava
+Ankara ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Ankara için sağanak uyarısında bulundu.,0.758197,paraphrase,hava
+Uzmanlar şeker hastalığı vakalarındaki artışa dikkat çekti.,Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,0.761136,related,saglik
+Almanya iklim zirvesine ev sahipliği yapıyor.,Meteoroloji Muğla için kuvvetli yağış uyarısı yaptı.,0.312123,unrelated,dunya|hava
+"Başakşehir, tecrübeli oyuncuyla anlaşmaya vardı.",Başakşehir deneyimli futbolcuyu kadrosuna kattı.,0.773898,paraphrase,spor
+Borsa İstanbul günü yüzde 17 değişimle kapattı.,Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,0.159782,unrelated,ekonomi|teknoloji
+Antalya'da hava sıcaklığı mevsim normallerinin üzerine çıktı.,Antalya beklenenden daha sıcak bir güne uyandı.,0.731345,paraphrase,hava
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Uzmanlar dengeli beslenmenin önemine vurgu yaptı.,0.339909,related,saglik
+ABD iklim zirvesine ev sahipliği yapıyor.,Popüler uygulama elektrikli otomobil için yeni güncelleme yayınladı.,0.12527,unrelated,dunya|teknoloji
+Bursa ve çevresi için sağanak yağış bekleniyor.,Meteoroloji Bursa için sağanak uyarısında bulundu.,0.774368,paraphrase,hava
+Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Cumhurbaşkanı Çin'e resmi ziyarette bulundu.,0.151356,related,siyaset
+Yıllık enflasyon yüzde 34 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 34 olarak duyurdu.,0.958235,paraphrase,ekonomi
+Liderler İtalya'de düzenlenen zirvede bir araya geldi.,İtalya'deki zirvede liderler önemli konuları görüştü.,0.805579,paraphrase,siyaset
+ünlü model sürpriz bir törenle dünyaevine girdi.,fenomen isim sürpriz bir törenle dünyaevine girdi.,0.701495,related,magazin
+Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,Sakarya'da sıcaklık 42 dereceye ulaştı.,0.120833,unrelated,saglik|hava
+Teknoloji şirketi yeni oyun konsolu tanıttı.,Denizli'a mevsimin ilk karı düştü.,0.162908,unrelated,teknoloji|hava
+Denizli'a mevsimin ilk karı düştü.,Aydın'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.230652,unrelated,hava|asayis
+Soğan fiyatları son bir ayda yüzde 18 arttı.,Dolar kuru güne yüzde 2 yükselişle başladı.,0.408552,related,ekonomi
+Rusya'de yapılan seçimleri muhalefet kazandı.,Uzmanlar yüksek tansiyon vakalarındaki artışa dikkat çekti.,0.2127,unrelated,dunya|saglik
+Yunanistan'de düzenlenen genel seçimlerde sonuçlar belli oldu.,Yunanistan halkı sandık başına giderek yeni yönetimini seçti.,0.63511,paraphrase,dunya
+İstanbul'da iki aracın çarpışması sonucu 6 kişi yaralandı.,İstanbul'daki trafik kazasında 6 kişi yaralı kurtuldu.,0.888913,paraphrase,asayis
+Yıllık enflasyon yüzde 17 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 17 olarak duyurdu.,0.962705,paraphrase,ekonomi
+Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,"genç oyuncu, Konya'da tatilde görüntülendi.",0.089842,unrelated,siyaset|magazin
+Teknoloji devi yeni giyilebilir cihaz modelini duyurdu.,Şirket güncellenmiş giyilebilir cihaz sürümünü kullanıma sundu.,0.735792,paraphrase,teknoloji
+Sevilen komedyen eşiyle Muğla'da tatil yaparken görüntülendi.,Sevilen komedyen ve eşinin Muğla tatilinden kareler paylaşıldı.,0.962943,paraphrase,magazin
+"Rizespor, Adana Demirspor karşısında sahadan 2-2 galip ayrıldı.",Rizespor evinde Adana Demirspor'yi 2-2'lik skorla yendi.,0.903421,paraphrase,spor
+ana muhalefet partisi yeni yasa teklifini meclise sundu.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.098657,unrelated,siyaset|teknoloji
+Liderler Japonya'de düzenlenen zirvede bir araya geldi.,Japonya'deki zirvede liderler önemli konuları görüştü.,0.80601,paraphrase,siyaset
+Aydın'da çıkan yangın itfaiye ekiplerince söndürüldü.,Popüler uygulama sohbet robotu için yeni güncelleme yayınladı.,0.195688,unrelated,asayis|teknoloji
+Popüler sunucu eşiyle Aydın'da tatil yaparken görüntülendi.,Popüler sunucu ve eşinin Aydın tatilinden kareler paylaşıldı.,0.94086,paraphrase,magazin
+"Beşiktaş, Kayserispor karşısında sahadan 4-2 galip ayrıldı.",Beşiktaş evinde Kayserispor'yi 4-2'lik skorla yendi.,0.860328,paraphrase,spor
+Antalya'da sıcaklık 41 dereceye ulaştı.,Merkez Bankası politika faizini sabit tuttu.,0.170867,unrelated,hava|ekonomi
+Yıllık enflasyon yüzde 40 olarak açıklandı.,TÜİK yıllık enflasyonu yüzde 40 olarak duyurdu.,0.959188,paraphrase,ekonomi
+Merkez Bankası politika faizini sabit tuttu.,Dolar kuru güne yüzde 18 yükselişle başladı.,0.256605,related,ekonomi
+İçişleri Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,Milli Eğitim Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.800671,related,siyaset
+Eskişehir'da iki aracın çarpışması sonucu 5 kişi yaralandı.,Eskişehir'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.91128,paraphrase,asayis
+Fenomen isim eşiyle Bolu'da tatil yaparken görüntülendi.,Fenomen isim ve eşinin Bolu tatilinden kareler paylaşıldı.,0.934892,paraphrase,magazin
+Mersin'da iki aracın çarpışması sonucu 3 kişi yaralandı.,Mersin'daki trafik kazasında 3 kişi yaralı kurtuldu.,0.899597,paraphrase,asayis
+Cumhurbaşkanı İtalya'e resmi ziyarette bulundu.,Uzmanlar zatürre vakalarındaki artışa dikkat çekti.,0.146421,unrelated,siyaset|saglik
+Ünlü oyuncu eşiyle Diyarbakır'da tatil yaparken görüntülendi.,Ünlü oyuncu ve eşinin Diyarbakır tatilinden kareler paylaşıldı.,0.959306,paraphrase,magazin
+Trabzonspor'nin kaptanı sakatlığı nedeniyle kadroda yer alamadı.,Kayseri'da çıkan yangın itfaiye ekiplerince söndürüldü.,0.158788,unrelated,spor|asayis
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Cumhurbaşkanı İngiltere'e resmi ziyarette bulundu.,0.113543,unrelated,teknoloji|siyaset
+"Adana Demirspor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Adana Demirspor sezonu zirvede bitirip şampiyon oldu.,0.930199,paraphrase,spor
+Merkez Bankası politika faizini sabit tuttu.,Sanayi ve Teknoloji Bakanlığı yeni düzenlemeyi kamuoyuyla paylaştı.,0.083689,unrelated,ekonomi|siyaset
+"ünlü şarkıcı, Bursa'da tatilde görüntülendi.",ünlü model yeni projesiyle ekranlara dönüyor.,0.274308,related,magazin
+"Bodrum FK, Adana Demirspor karşısında sahadan 2-2 galip ayrıldı.",Bodrum FK evinde Adana Demirspor'yi 2-2'lik skorla yendi.,0.910211,paraphrase,spor
+Liderler İspanya'de düzenlenen zirvede bir araya geldi.,İspanya'deki zirvede liderler önemli konuları görüştü.,0.824557,paraphrase,siyaset
+Mersin'da bir binada çıkan yangın kısa sürede kontrol altına alındı.,Mersin'daki yangın itfaiyenin müdahalesiyle söndürüldü.,0.839426,paraphrase,asayis
+"Alanyaspor, yıldız futbolcuyla sözleşme yeniledi.",Japonya'de meydana gelen depremde maddi hasar oluştu.,0.050755,unrelated,spor|dunya
+usta oyuncu yeni projesiyle ekranlara dönüyor.,usta oyuncu sürpriz bir törenle dünyaevine girdi.,0.412405,related,magazin
+Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,Diyarbakır'da meydana gelen trafik kazasında 4 kişi yaralandı.,0.080075,unrelated,teknoloji|asayis
+Muğla'da iki aracın çarpışması sonucu 4 kişi yaralandı.,Muğla'daki trafik kazasında 4 kişi yaralı kurtuldu.,0.892352,paraphrase,asayis
+Uzmanlar boğaz enfeksiyonu vakalarındaki artışa dikkat çekti.,Peynir fiyatları son bir ayda yüzde 40 arttı.,0.21268,unrelated,saglik|ekonomi
+Popüler sunucu yeni bir aşka yelken açtı.,Popüler sunucu yeni sevgilisiyle ilk kez birlikte görüntülendi.,0.822835,paraphrase,magazin
+"Rizespor, ligi lider tamamlayarak şampiyonluğa ulaştı.",Rizespor sezonu zirvede bitirip şampiyon oldu.,0.882334,paraphrase,spor
+Borsa İstanbul günü yüzde 7 değişimle kapattı.,Şirket yapay zeka alanına milyar dolarlık yatırım yapacağını açıkladı.,0.211759,unrelated,ekonomi|teknoloji
+Yunanistan'de yapılan seçimleri muhalefet kazandı.,Aydın'da sıcaklık 31 dereceye ulaştı.,0.153945,unrelated,dunya|hava
+ünlü model yeni projesiyle ekranlara dönüyor.,Japonya iklim zirvesine ev sahipliği yapıyor.,0.109043,unrelated,magazin|dunya
+"Hatayspor, Sivasspor karşısında sahadan 1-1 galip ayrıldı.",Hatayspor evinde Sivasspor'yi 1-1'lik skorla yendi.,0.912913,paraphrase,spor
+Ünlü şarkıcı eşiyle Sakarya'da tatil yaparken görüntülendi.,Ünlü şarkıcı ve eşinin Sakarya tatilinden kareler paylaşıldı.,0.965724,paraphrase,magazin
+Konya'da iki aracın çarpışması sonucu 5 kişi yaralandı.,Konya'daki trafik kazasında 5 kişi yaralı kurtuldu.,0.907378,paraphrase,asayis
+Teknoloji şirketi yeni işletim sistemi tanıttı.,Sağlık Bakanlığı yeni aşılama kampanyasını başlattı.,0.35448,unrelated,teknoloji|saglik
+Popüler uygulama oyun konsolu için yeni güncelleme yayınladı.,Cumhurbaşkanı İspanya'e resmi ziyarette bulundu.,0.131553,unrelated,teknoloji|siyaset

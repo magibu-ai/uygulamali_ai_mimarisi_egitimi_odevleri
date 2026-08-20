@@ -1,0 +1,482 @@
+[
+  {
+    "question_id": "cal_pos_01",
+    "split": "calibration",
+    "question": "Kış aylarında kuru ve akneye eğilimli ciltler için nasıl nemlendirici seçilmelidir?",
+    "expected_answer": "Çok kuru yüz ve vücut cildi için yağlı kremler; yağlı ve akneye eğilimli cilt için su bazlı kremler tercih edilmelidir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_ef436aeb2c7cc637_chunk_0000",
+    "evidence_terms": ["su bazlı kremler", "yağlı kremler"],
+    "question_type": "paraphrase"
+  },
+  {
+    "question_id": "cal_pos_02",
+    "split": "calibration",
+    "question": "Akne problemi olan bir cilt tahriş edilmeden günde kaç kez temizlenmelidir?",
+    "expected_answer": "Deri, pH'ına yakın bir temizleyiciyle kurutulmadan ve tahriş edilmeden günde iki kez temizlenmelidir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_9a78f4d05ac0b467_chunk_0000",
+    "evidence_terms": ["günde 2 kez", "deri pH"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "cal_pos_03",
+    "split": "calibration",
+    "question": "PRP uygulamasında kişiden alınan kana ne yapılır?",
+    "expected_answer": "Az miktarda kan özel bir tüpte santrifüj edilerek bileşenlerine ayrılır; elde edilen platelet yönünden zengin plazma aynı kişiye enjeksiyonla geri verilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_79a3888aa8b42cac_chunk_0000",
+    "evidence_terms": ["santrifüj", "platelet yönünden zenginleştirilmiş plazma"],
+    "question_type": "paraphrase"
+  },
+  {
+    "question_id": "cal_pos_04",
+    "split": "calibration",
+    "question": "Saç mezoterapisinde saçlı derinin altına hangi tür maddeler verilir?",
+    "expected_answer": "Dökülme olan bölgede deri altına çeşitli vitaminler, mineraller ve bazı saç çıkarıcı ilaçlar verilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_e2033937113e6308_chunk_0000",
+    "evidence_terms": ["vitamin", "mineraller", "saç çıkarıcı ilaçların"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "cal_pos_05",
+    "split": "calibration",
+    "question": "Menopoz döneminde cilt ve kıllarda hangi değişiklikler görülebilir?",
+    "expected_answer": "Cilt kuruluğu, yüzde kıllanma artışı, kasık ve koltuk altı kıllarında incelme, saç dökülmesi, lekelerde artış ve mevcut benlerde koyulaşma görülebilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_77295f6fb2772565_chunk_0000",
+    "evidence_terms": ["cilt kuruluğu", "yüzde kıllanmada artış", "saç dökülmesi"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "cal_pos_06",
+    "split": "calibration",
+    "question": "Vitiligo neden beyaz lekeler oluşturur ve bulaşıcı mıdır?",
+    "expected_answer": "Vitiligo, melanin üreten hücrelerin sayı ve işlev kaybına bağlı gelişir; bulaşıcı değildir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_34f5d362e7d2c809_chunk_0000",
+    "evidence_terms": ["melanin", "Bulaşıcı özelliği yoktur"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "cal_pos_07",
+    "split": "calibration",
+    "question": "Ürtikerin en belirgin lezyon özelliği nedir?",
+    "expected_answer": "Kızarık ve ödemli kabarıklıklar aniden ortaya çıkar ve aniden kaybolur.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_16e2f3bf3c008d66_chunk_0000",
+    "evidence_terms": ["aniden ortaya çıkıp", "aniden kaybolması"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "cal_pos_08",
+    "split": "calibration",
+    "question": "Psoriasis hangi cilt bulgularıyla karakterizedir?",
+    "expected_answer": "Kırmızı-pembe renkli ve üzerinde sedef renginde kepeklenmeler bulunan plaklarla karakterizedir; eklem ve tırnak bulguları da yapabilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_3d2efd3d994132a2_chunk_0000",
+    "evidence_terms": ["kırmızı-pembe", "kepeklenmeler", "eklem ve tırnak"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "cal_pos_09",
+    "split": "calibration",
+    "question": "Riskli benlerin belirlenmesinde hangi cihaz kullanılabilir?",
+    "expected_answer": "Riskli benler dermatoskopi cihazıyla işaretlenebilir ve değerlendirilebilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_13335b424dc88495_chunk_0000",
+    "evidence_terms": ["Dermatoskopi cihazı", "riskli benler"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "cal_pos_10",
+    "split": "calibration",
+    "question": "Alopesi areatada saç dökülmesi nasıl bir görünüm oluşturur?",
+    "expected_answer": "Saçlarda aniden yuvarlak, saçsız alanlar oluşacak şekilde dökülme görülür.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_82524933006d7661_chunk_0000",
+    "evidence_terms": ["aniden yuvarlak saçsız alanlar"],
+    "question_type": "paraphrase"
+  },
+  {
+    "question_id": "test_pos_01",
+    "split": "test",
+    "question": "Botulinum toksini dermatolojide hangi amaçlarla kullanılmaktadır?",
+    "expected_answer": "Kırışıklık, fazla terleme, bazı sedef, pişik ve egzama formları, ağrılı dermatolojik hastalıklar ve kas inceltme amacıyla kullanılmaktadır.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_9e745ba949a5744f_chunk_0000",
+    "evidence_terms": ["fazla terleme", "kas inceltmek"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "test_pos_02",
+    "split": "test",
+    "question": "Göz çevresinde görülen başlıca estetik problemler nelerdir?",
+    "expected_answer": "Halka oluşumu, kararma, kırışma ve çizgilenme, göz kapağı ödemi ve torbalanma görülebilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_fcab8c79f9d0a0c4_chunk_0000",
+    "evidence_terms": ["Halka oluşumları", "Torbalanma"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "test_pos_03",
+    "split": "test",
+    "question": "Deri mantarlarının çoğalmasını hangi ortam koşulları kolaylaştırır?",
+    "expected_answer": "Mantarlar sıcak ve nemli ortamları sever; bu koşullar çoğalmalarını kolaylaştırır.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_4a02168a50ae8d42_chunk_0000",
+    "evidence_terms": ["sıcak ve nemli ortamları"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "test_pos_04",
+    "split": "test",
+    "question": "Ekzema bulaşıcı ve yaşamı tehdit eden bir hastalık mıdır?",
+    "expected_answer": "Hayır. Ekzema bulaşıcı değildir ve yaşamı tehdit etmez.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_7fd75a98086684ae_chunk_0000",
+    "evidence_terms": ["bulaşıcı olmayan", "yaşamı tehdit etmeyen"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "test_pos_05",
+    "split": "test",
+    "question": "Rozase en çok yüzün hangi bölgelerinde ve hangi belirtilerle görülür?",
+    "expected_answer": "Yanak, burun, çene ve alında tekrarlayan kızarma, ateş basması, sivilce benzeri veya iltihaplı kabarıklıklar ve yüzeysel damar genişlemeleriyle görülür.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_98961f958457a645_chunk_0000",
+    "evidence_terms": ["Yanak, burun, çene ve alında", "damar genişlemeleri"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "test_pos_06",
+    "split": "test",
+    "question": "Siğile hangi virüs neden olur ve nasıl bulaşabilir?",
+    "expected_answer": "Siğile HPV neden olur; yere basma, başkasının terliğini giyme veya ortak yüzeylerle temas gibi yollarla bulaşabilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_9fe7daa3c038046c_chunk_0000",
+    "evidence_terms": ["HPV", "Temas ile"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "test_pos_07",
+    "split": "test",
+    "question": "Melanom hangi hücrelerin kanserleşmesiyle oluşur?",
+    "expected_answer": "Melanom, deriye renk veren melanosit hücrelerinin kanserleşmesiyle oluşur.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_57221735d220fe3d_chunk_0000",
+    "evidence_terms": ["melanosit", "kanserleşmesiyle"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "test_pos_08",
+    "split": "test",
+    "question": "Bir benin risk değerlendirmesinde kullanılan ABCD ölçütleri nelerdir?",
+    "expected_answer": "Asimetri, kenar düzensizliği, renk değişkenliği ve çap değerlendirilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_41a562528827097a_chunk_0000",
+    "evidence_terms": ["Asimetry", "Border", "Color", "Diametre"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "test_pos_09",
+    "split": "test",
+    "question": "Zona hangi virüsle ilişkilidir ve genellikle kimlerde ortaya çıkar?",
+    "expected_answer": "Zona herpes zoster/varisella zoster virüsüyle ilişkilidir ve daha önce suçiçeği geçirmiş kişilerde ortaya çıkabilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_0bc8301980c0075c_chunk_0000",
+    "evidence_terms": ["su çiçeği geçirenlerde", "Herpes zoster"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "test_pos_10",
+    "split": "test",
+    "question": "Mezoterapi uygulaması nasıl tanımlanır?",
+    "expected_answer": "Cildin problemine uygun ilaç karışımlarının cilt içine uygun derinlikte uygulanmasına mezoterapi denir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_b7a16c440294bafa_chunk_0000",
+    "evidence_terms": ["uygun karışım ilaçların", "mezoterapi denir"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "test_pos_11",
+    "split": "test",
+    "question": "Kollajenin derideki temel işlevi nedir?",
+    "expected_answer": "Kollajen derinin hücre dışı yapısal bileşenlerinden biridir ve temel işlevi mekanik destek sağlamaktır.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_08a230a08420d0f4_chunk_0000",
+    "evidence_terms": ["mekanik destek", "yapısal iskelet proteini"],
+    "question_type": "paraphrase"
+  },
+  {
+    "question_id": "test_pos_12",
+    "split": "test",
+    "question": "Cilt yenileme lazerleri ciltte nasıl etki gösterir?",
+    "expected_answer": "Cilt içinde ısı oluşturarak kollajen demetlerini yeniler ve yeni kollajen oluşumunu destekler.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_6b458ea00bf4c3b5_chunk_0000",
+    "evidence_terms": ["ısı oluşturarak", "yeni kolloge"],
+    "question_type": "paraphrase"
+  },
+  {
+    "question_id": "test_pos_13",
+    "split": "test",
+    "question": "Kuru ciltlerin hassas olmaya eğilimli olmasının nedeni nedir?",
+    "expected_answer": "Sebum ve çoğu zaman ter salgısı zayıftır; aşırı kuruluk cildi bakterilere karşı koruyan asit mantonun dengesini bozar.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_09b87cf2ab80e98b_chunk_0000",
+    "evidence_terms": ["sebum", "asit mantonun dengesini"],
+    "question_type": "causal"
+  },
+  {
+    "question_id": "test_pos_14",
+    "split": "test",
+    "question": "Göz çevresindeki yaşlanma belirtilerini yavaşlatmak için hangi koruyucu ürün önerilir?",
+    "expected_answer": "Göz çevresine güneş koruyuculu ürün kullanılması önerilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_3d8f62649b35e233_chunk_0000",
+    "evidence_terms": ["güneş koruyuculu ürün"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "test_pos_15",
+    "split": "test",
+    "question": "Ergenlik aknesi nasıl başlar ve hangi faktörler şiddetini artırabilir?",
+    "expected_answer": "Sebum salgılayan keseciklerin tıkanmasıyla başlar; hormonal faktörler, genetik yatkınlık, yanlış beslenme ve hatalı temizleyiciler şiddetini artırabilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_5654061b6b34604e_chunk_0000",
+    "evidence_terms": ["sebum", "Hormonal faktörler", "yanlış beslenme"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "test_pos_16",
+    "split": "test",
+    "question": "Tırnak batmasına yol açabilen başlıca etkenler nelerdir?",
+    "expected_answer": "Uygun olmayan ayakkabılar, gebelik, ergenlikte hızlı büyüme, tırnak altı kemik oluşumları, aşırı terleme ve yanlış tırnak kesimi etkili olabilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_d49cd77caafdb54f_chunk_0000",
+    "evidence_terms": ["uygun olmayan ayakkabılar", "yanlış tırnak kesimi"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "test_pos_17",
+    "split": "test",
+    "question": "PRP'nin açılımı nedir ve saç dışında hangi dermatolojik alanlarda kullanılabilir?",
+    "expected_answer": "PRP, Platelet Rich Plasma yani trombosit yönünden zenginleştirilmiş plazmadır; deri gençleştirme, yara iyileşmesi ve akne izi tedavisinde de kullanılabilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_68d19a16b61dd5d1_chunk_0000",
+    "evidence_terms": ["Platelet Rich Plasma", "akne izlerinin tedavisinde"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "test_pos_18",
+    "split": "test",
+    "question": "Örümcek ağı estetiğinde kullanılan ipler cilt altına nasıl yerleştirilir?",
+    "expected_answer": "Polidiaksanon ipler, lokal anestezik krem sonrasında ince uçlu iğnelerle cilt altına yerleştirilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_7f06e8573afe1fc5_chunk_0000",
+    "evidence_terms": ["polidiaksanon ipler", "ince uçlu iğnelerle"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "test_pos_19",
+    "split": "test",
+    "question": "Prezervatif kullanımı hangi cinsel yolla bulaşan enfeksiyonları büyük oranda engelleyebilir?",
+    "expected_answer": "Metne göre AIDS ile Hepatit B ve C enfeksiyonları prezervatif kullanımıyla büyük oranda engellenebilir.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_cd3db3f78f109830_chunk_0000",
+    "evidence_terms": ["AIDS, Hepatit B ve C", "prezervatif"],
+    "question_type": "direct"
+  },
+  {
+    "question_id": "test_pos_20",
+    "split": "test",
+    "question": "Saç dökülmesinde oral ve topikal tedavilerin kullanım biçimi nasıl açıklanmaktadır?",
+    "expected_answer": "Oral ilaçlar hastanın durumu ve dökülme evresine göre hekim kontrolünde verilir; topikal ilaçlar saçın inceldiği alanlarda saçlı deriye uygulanır.",
+    "is_answerable": true,
+    "expected_chunk_id": "article_b7e6204efd640eb2_chunk_0000",
+    "evidence_terms": ["Oral Tedavi", "Topikal Tedaviler"],
+    "question_type": "multi_fact"
+  },
+  {
+    "question_id": "cal_neg_01",
+    "split": "calibration",
+    "question": "Akut apandisit değerlendirmesinde Alvarado skoru hangi bileşenlerden oluşur?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["alvarado skoru"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_02",
+    "split": "calibration",
+    "question": "KOAH tanısında FEV1/FVC oranı nasıl yorumlanır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["fev1/fvc"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_03",
+    "split": "calibration",
+    "question": "Child-Pugh skoru karaciğer yetmezliğinde nasıl hesaplanır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["child-pugh"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_04",
+    "split": "calibration",
+    "question": "Kronik böbrek hastalığı evreleri eGFR değerine göre nasıl sınıflandırılır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["egfr"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_05",
+    "split": "calibration",
+    "question": "Ciddi mitral darlığında mitral kapak alanı kaç santimetrekaredir?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["mitral kapak alanı"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_06",
+    "split": "calibration",
+    "question": "Glasgow Koma Skoru göz, sözel ve motor yanıtlarla nasıl hesaplanır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["glasgow koma skoru"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_07",
+    "split": "calibration",
+    "question": "Katarakt cerrahisinde fakoemülsifikasyon tekniği nasıl uygulanır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["fakoemülsifikasyon"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_08",
+    "split": "calibration",
+    "question": "Levetirasetam epilepsi tedavisinde hangi dozda başlanır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["levetirasetam"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_09",
+    "split": "calibration",
+    "question": "Total kalça protezi sonrasında rehabilitasyon aşamaları nelerdir?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["total kalça protezi"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "cal_neg_10",
+    "split": "calibration",
+    "question": "Tip 1 diyabette bazal-bolus insülin dozu nasıl hesaplanır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["bazal-bolus"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "test_neg_01",
+    "split": "test",
+    "question": "Hipertrofik kardiyomiyopatide ani ölüm riski nasıl değerlendirilir?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["hipertrofik kardiyomiyopati"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "test_neg_02",
+    "split": "test",
+    "question": "MELD skoru hangi laboratuvar değerlerinden hesaplanır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["meld skoru"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "test_neg_03",
+    "split": "test",
+    "question": "Romberg testi hangi nörolojik işlevi değerlendirir?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["romberg testi"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "test_neg_04",
+    "split": "test",
+    "question": "Mekanik kalp kapağı olan hastalarda warfarin için INR hedefi nedir?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["inr hedefi"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "test_neg_05",
+    "split": "test",
+    "question": "Yenidoğanda Apgar skoru hangi bulgularla hesaplanır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["apgar skoru"],
+    "question_type": "hard_negative_medical"
+  },
+  {
+    "question_id": "test_neg_06",
+    "split": "test",
+    "question": "Karlofça Antlaşması hangi devletler arasında imzalanmıştır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["karlofça antlaşması"],
+    "question_type": "negative_non_medical"
+  },
+  {
+    "question_id": "test_neg_07",
+    "split": "test",
+    "question": "Python programlama dilinde Timsort algoritması nasıl çalışır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["timsort"],
+    "question_type": "negative_non_medical"
+  },
+  {
+    "question_id": "test_neg_08",
+    "split": "test",
+    "question": "Mars'taki Olympus Mons yanardağının yüksekliği ne kadardır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["olympus mons"],
+    "question_type": "negative_non_medical"
+  },
+  {
+    "question_id": "test_neg_09",
+    "split": "test",
+    "question": "Avustralya'nın başkenti Canberra'nın nüfusu kaçtır?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["canberra"],
+    "question_type": "negative_non_medical"
+  },
+  {
+    "question_id": "test_neg_10",
+    "split": "test",
+    "question": "Heisenberg belirsizlik ilkesi kuantum mekaniğinde neyi ifade eder?",
+    "expected_answer": null,
+    "is_answerable": false,
+    "absence_terms": ["heisenberg belirsizlik ilkesi"],
+    "question_type": "negative_non_medical"
+  }
+]

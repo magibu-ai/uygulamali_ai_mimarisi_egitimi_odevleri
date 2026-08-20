@@ -1,0 +1,516 @@
+{
+    "train": [
+        [
+            {
+                "content": "When is a graph database used?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Graph databases are used when relationships between data are very important. Node and edge structure. In SQL, JOINs slow down as they deepen; in graph DBs, relationship traversal is natural and fast. Use cases: social networks (friend relationships), recommendation engines (similar products), knowledge graphs (Google uses them), fraud detection, network topology. Neo4j is the most popular graph database with Cypher query language. Amazon Neptune, ArangoDB are alternatives. Not suitable for every data model — SQL is better for simple CRUD apps. Very powerful for relationship-heavy data.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Graph database, Neo4j, node/edge, social network, Knowledge Graph, Cypher.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is a PWA (Progressive Web App)?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A PWA delivers native app experience using web technologies (HTML, CSS, JS). Can work offline (with Service Worker), send push notifications, be added to home screen, load quickly. No App Store needed — accessed via URL. Advantages: single codebase for all platforms, automatic updates, SEO benefit. Disadvantages: limited access to some native APIs (especially on iOS), push notifications on iOS only recently supported. Twitter Lite, Starbucks, Pinterest use PWAs. For small-medium projects, a PWA can be considered instead of a native app.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PWA, Service Worker, offline, push notifications, native alternative.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What's the difference between containers and VMs?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Virtual Machine (VM): runs a full operating system on a hypervisor (VMware, VirtualBox). Heavy (GB-sized), slow startup (minutes), full isolation. Container (Docker): shares host OS kernel, only packages the application and its dependencies. Light (MB-sized), fast startup (seconds), sufficient isolation. Why containers won: compatible with microservice architecture, fast in CI/CD, dev-production consistency. When VMs: different OS needed, strong isolation required, legacy applications. In practice they're used together — containers run on VMs. Kubernetes orchestrates containers.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Container vs VM, Docker, hypervisor, kernel sharing, microservice.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Why is mentorship important?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Mentorship accelerates career development. Benefits of having a mentor: you learn from experience, avoid mistakes, your network expands, motivation increases, you gain perspective. Finding a mentor: message on LinkedIn, meet at community events, ADPList (free mentorship platform), professors and TAs at university. Benefits of being a mentor: teaching is the best way to learn, leadership skills develop, you contribute to society. Get a mentor when junior, become one as you gain experience. As Gorkem's assistant, ayarlicazhocam is also a type of mentorship tool — guiding people.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mentorship, career, ADPList, leadership, teaching, ayarlicazhocam.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to ensure security in software projects?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Security should be considered at every stage of software — 'security by design'. Core principles: input validation (never trust user input), parameterized queries (prevent SQL injection), output encoding (prevent XSS), HTTPS mandatory, distinguish authentication from authorization, least privilege principle, dependency updates (npm audit, pip audit), secret management (environment variables, vault — never leave passwords in code), rate limiting, correct CORS configuration. Know the OWASP Top 10 list. Security testing: SAST (static analysis), DAST (dynamic analysis), penetration testing. Finding vulnerabilities is easy, fixing them is hard — write securely from the start.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Security, input validation, SQL injection, XSS, OWASP, SAST, DAST.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How does DNS work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "DNS (Domain Name System) translates domain names to IP addresses — the phonebook of the internet. When you type google.com you're actually going to an IP like 142.250.80.14. Steps: browser checks DNS cache → OS cache → ISP DNS → Root DNS server → TLD (.com) server → Authoritative DNS server. DNS record types: A (IPv4), AAAA (IPv6), CNAME (alias), MX (mail), TXT (verification). DNS propagation — changes can take 24-48 hours to spread. Cloudflare DNS (1.1.1.1), Google DNS (8.8.8.8) are fast alternatives. DNS security: DNSSEC, DNS-over-HTTPS (DoH). Every web developer needs to understand DNS.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "DNS, domain name, IP, cache, A record, CNAME, Cloudflare, security.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What do open-source licenses mean?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Open-source licenses determine how your code can be used. MIT: most permissive — use, modify, distribute, commercial use, just keep the license. Apache 2.0: MIT-like but adds patent protection. GPL: modifications must also be open source (copyleft) — commercial use exists but you must share source code. BSD: very similar to MIT. LGPL: for libraries — code using the library can be closed source but library changes must be open. ISC: simplified version of MIT. Unlicensed code: copyright applies by default — others can't use it. Don't forget to add a license to your projects.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "License, MIT, Apache, GPL, BSD, copyleft, copyright.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is WebRTC?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebRTC (Web Real-Time Communication) enables direct audio, video, and data communication between browsers. Establishes peer-to-peer connections without going through a server — low latency. Zoom, Google Meet, Discord use this. Core components: getUserMedia (camera/microphone access), RTCPeerConnection (connection), RTCDataChannel (data transfer). STUN/TURN servers help devices behind NAT connect. A signaling server (using WebSocket) establishes the initial connection, then communication is direct. The foundational technology for video conferencing, screen sharing, and file transfer applications.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebRTC, peer-to-peer, audio/video, STUN/TURN, signaling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What do HTTP/2 and HTTP/3 bring?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "HTTP/1.1 opens separate connections for each request — slow. HTTP/2: multiplexing (multiple requests over single connection), header compression (HPACK), server push (sends resources before client asks), binary protocol. HTTP/3: runs on QUIC protocol (UDP-based — faster than TCP), fewer handshakes, connection migration (connection doesn't drop when switching from WiFi to 4G). Google, YouTube, Facebook use HTTP/3. Most modern web servers and CDNs support HTTP/2. Nginx and Cloudflare support HTTP/3. HTTP/2 should be the minimum for web performance. Protocol version visible in browser DevTools.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "HTTP/2, HTTP/3, multiplexing, QUIC, server push, performance.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the banking-management-system project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "banking-management-system is a banking management system Gorkem wrote in Java. It simulates basic banking operations like account creation, deposit/withdrawal, transfers, and balance inquiries. A great project for applying OOP (Object-Oriented Programming) principles. Using inheritance, encapsulation, and polymorphism in a real scenario reinforces learning. It likely includes Java exception handling, file I/O, and possibly JDBC for database integration. A typical and very educational university project.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Banking management, Java, OOP, inheritance, encapsulation, JDBC.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does webhook mean?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A webhook is a mechanism that automatically sends an HTTP request to a specified URL when an event occurs. The opposite of polling — instead of constantly asking 'did something happen?', it notifies you when something does. Examples: send Slack notification when a GitHub PR is created, update database when Stripe receives payment, send email when a form is filled. A webhook URL is an endpoint — it processes incoming POST requests. Security: signature verification with webhook secret. Retry mechanism: retries on failure. One of the cornerstones of event-driven architecture. Zapier and IFTTT work on webhooks.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Webhook, event-driven, Slack, Stripe, security, retry.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does event sourcing mean?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Event sourcing is the approach of storing all events rather than current state in the database. Traditional: user balance is $1000. Event sourcing: deposited +$500, spent -$200, received transfer +$700. Each event is immutable — can't be changed, only new events are added. Advantages: complete history, audit trail, ability to reconstruct state at any point in time. Used together with CQRS (Command Query Responsibility Segregation). Kafka or EventStore tools. Used in banking, e-commerce, and gaming. Complex but very powerful in certain domains.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Event sourcing, event log, immutable, CQRS, Kafka, audit trail.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the wheel-of-fortune project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "wheel-of-fortune is a game project inspired by the popular TV show. The user spins the wheel, guesses letters, tries to find the word. May have been written in Python or JavaScript. Involves concepts like game development, UI design, randomness, string manipulation, and game logic. Fun projects increase motivation and build diverse programming skills. Shows that Gorkem creates not only serious projects but fun things too.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Wheel of fortune, game, random, string manipulation, game logic.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the pynput-macos-macro project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "pynput-macos-macro is a Python project that creates keyboard and mouse macros on macOS. With the pynput library you can capture and replay key presses and mouse movements. Can be used as an automation tool — automating repetitive tasks. For example, pressing a certain key combination triggers a sequence of actions. Such tools increase productivity. It demonstrates Python's desktop automation capabilities. pyautogui is a similar library. Shows Gorkem's ability to create projects in different domains.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "pynput, macOS, macro, automation, keyboard, mouse.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to build a portfolio site?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A portfolio site is very important for your career. Start simple: GitHub Pages offers free hosting, create a static site with Jekyll or Hugo. Or build your own with React/Next.js. Content: who you are (short bio), showcase projects (screenshots, demo links), list skills, contact info, blog posts (if any). Design: clean and minimal, mobile responsive, fast loading. Gorkem's portfolio is gorkemergune.github.io — a professional site showcasing 30+ projects. You can buy a domain — something like gorkem.dev. Your portfolio site can be more effective than your CV — you're showing projects live.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Portfolio, GitHub Pages, Next.js, projects, design, domain.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the DeepLearningBootcamp project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "DeepLearningBootcamp is likely a repo where Gorkem collected his deep learning study materials and practice. Bootcamp style — an intensive learning process. It probably covers topics like image classification with CNN, text generation with RNN, model fine-tuning with transfer learning. Step-by-step hands-on learning with Jupyter notebooks. Such repos both document your own learning and serve as resources for others. Educational repos are valued in the GitHub community.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "DeepLearningBootcamp, CNN, RNN, transfer learning, notebooks, learning.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the find-the-best project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "find-the-best is likely an application that finds the best option based on certain criteria. Could be a product comparison tool, decision-making aid, or a system solving optimization problems. Filtering and scoring algorithms may have been used. A tool that provides recommendations based on user needs. Such applications can work with recommendation engine logic. A practical problem-solving project — technology that simplifies daily decision-making.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "find-the-best, comparison, filtering, scoring, decision making.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to stay productive while studying for exams?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Productivity during exam prep is crucial. Pomodoro technique: 25 minutes focused study, 5 minute break, repeat. After 4 cycles take a longer break. Active recall: test yourself instead of re-reading notes. Spaced repetition: review material at increasing intervals. Study environment: dedicated quiet space, phone in another room. Sleep: 7-8 hours minimum, learning consolidates during sleep. Exercise: 30 minutes daily improves concentration. Nutrition: avoid sugar crashes, eat brain food (nuts, fruits). Track progress: what you studied each day. Study groups: for difficult topics, teaching others helps. Don't compare with others — focus on your own progress.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Productivity, Pomodoro, active recall, spaced repetition, sleep, exercise.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Why is web accessibility important?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Accessibility (a11y) means websites and applications can be used by people with disabilities. Visually impaired: screen reader compatibility (alt text, ARIA labels, heading structure). Hearing impaired: video captions. Motor impaired: keyboard navigation, large clickable areas. Cognitive: simple language, consistent navigation. WCAG (Web Content Accessibility Guidelines) is the standard. May be legally required — ADA (US), EAA (EU). 15-20% of the population has some form of disability — that's a large user base. Use semantic HTML, check color contrast, ensure proper tab order. Check Lighthouse accessibility score.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Accessibility, a11y, screen reader, ARIA, WCAG, semantic HTML, contrast.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the c-foundations repo?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "c-foundations is a repo where Gorkem practiced C programming language fundamentals. C teaches low-level concepts like memory management, pointers, structs, file operations, dynamic memory allocation (malloc/free). Operating systems, embedded systems, performance-critical applications are written in C. Gorkem's gorkem-os project also relies on C knowledge. Learning C means understanding how computers actually work — unlike high-level languages, you manage memory yourself. Every CS student should know C.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "C, pointers, memory management, malloc, struct, low-level.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How do I strengthen my LinkedIn profile?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "LinkedIn is a very important platform for developers. Profile: professional photo, descriptive headline ('CS Student at Yeditepe | AI Enthusiast'), detailed about section, add projects and experiences. Content: share 1-2 posts per week — things you learned, your projects, industry news. Engagement: comment on others' posts, add meaningful contributions. Connections: connect with industry professionals, introduce yourself via message. Recommendations: get endorsements from colleagues or professors. Skill endorsements: get your skills validated. Recruiters actively search LinkedIn — keep your profile updated and impressive.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LinkedIn, profile, content, engagement, connections, recruiters.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What subjects does the YKS exam cover for engineering?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "YKS (Yuksekogretim Kurumlari Sinavi) is Turkey's university entrance exam. For engineering programs you take TYT (basic) and AYT (field-specific). TYT covers Turkish, math, science, and social studies at basic level. AYT for engineering (SAY) focuses on advanced math, physics, chemistry, and biology. Math is the most weighted — algebra, calculus, geometry, probability. Physics: mechanics, electricity, waves, modern physics. Success requires consistent study over 12+ months. Practice exams are essential — at least 2-3 per week in the final months. Gorkem went through this process to enter Yeditepe's computer engineering program.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YKS, TYT, AYT, engineering, math, physics, university entrance.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What programming language should a beginner learn first?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "This is one of the most asked questions. Python is the best first language for most people. Why: clean syntax (reads like English), huge community, versatile (web, AI, data science, automation, scripting), gentle learning curve, amazing learning resources (CS50, Automate the Boring Stuff). JavaScript is good if you want to build websites immediately. C is good for understanding how computers work at a low level. Java for Android development and enterprise. Swift for iOS. Don't overthink it — pick one and start building. The concepts (variables, loops, functions, OOP) transfer between languages. Gorkem's primary language is Python.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "First programming language, Python, JavaScript, C, learning resources.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What should be on a developer's CV?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A software CV should be short and concise — 1-2 pages. Must have: contact info (email, GitHub, LinkedIn, portfolio URL), education, technical skills (languages, frameworks, tools), projects (what you did, what tech you used, what was the outcome), work experience (if any), certifications, hackathons, open-source contributions. Must not have: photo (debatable), irrelevant work experience, subjective skill levels ('5/5 Python'), long paragraphs. Make it ATS (Applicant Tracking System) friendly — simple format, PDF, keywords. Overleaf has LaTeX CV templates. Customize your CV for each position.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CV, GitHub, LinkedIn, projects, ATS, LaTeX, customization.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How does JWT (JSON Web Token) work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "JWT is a token standard used for authentication. Consists of three parts: Header (algorithm and type), Payload (user info — id, role, expiry), Signature (verification). Encoded with Base64, separated by dots. Flow: user logs in → server creates JWT → client sends it in header with each request (Bearer token) → server verifies signature. Advantage over sessions: no need to store state on server (stateless), easy in microservices. Disadvantage: if token is stolen the session is compromised, token size is larger than cookies. Refresh tokens manage expiration. passport-jwt, python-jose, jsonwebtoken are popular libraries.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "JWT, header, payload, signature, Bearer token, stateless, refresh token.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to do API versioning?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "API versioning allows updating the API without breaking existing users. Methods: URL versioning (/api/v1/users, /api/v2/users — most common, simplest), header versioning (Accept: application/vnd.api+json;version=2), query parameter (?version=2). Semantic versioning: major (breaking change), minor (new feature), patch (bug fix). What's a breaking change: removing a field, renaming a field, changing response structure. Determine how long to support old versions (deprecation policy). Keep a changelog. Document each version with Swagger/OpenAPI. Good versioning builds user trust.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "API versioning, URL, header, semantic, breaking change, deprecation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to give a technical presentation?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Being able to give technical presentations is a very valuable skill. Preparation: know your audience's technical level, simplify complex topics, prepare a demo. Presentation structure: problem → solution → demo → conclusion. Slides: less text more visuals, code snippets at readable size, one idea per slide. Demo: test beforehand, have a plan B, record a video (in case live demo crashes). Presenting: eye contact, calm pace, explain technical jargon, leave time for questions. Tools: Google Slides, Reveal.js (code-based), Marp (markdown-based). Hackathon presentation experience is very valuable — Gorkem has done this. You improve with practice.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Technical presentation, demo, slides, audience, hackathon, practice.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to do web performance optimization?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Web performance directly affects user experience — Google also uses page speed as a ranking criterion. Core metrics: LCP (Largest Contentful Paint), FID (First Input Delay), CLS (Cumulative Layout Shift) — Core Web Vitals. Optimization techniques: image compression (WebP format, lazy loading), CSS/JS minification, CDN usage, caching (browser cache, Redis), code splitting (only load needed JS), gzip/brotli compression, font optimization, prioritize above-the-fold content. Tools: Lighthouse, PageSpeed Insights, WebPageTest. Set and track a performance budget.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Web performance, Core Web Vitals, LCP, images, CDN, cache, Lighthouse.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does the algorithms repo contain?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The algorithms repo is a collection of various algorithm implementations by Gorkem. It likely covers sorting algorithms (bubble, merge, quick sort), searching (binary search, BFS, DFS), dynamic programming, graph algorithms, greedy algorithms. Written in Python or C. Algorithms are the cornerstone of computer science — also the most asked topic in job interviews. You can also keep solutions to LeetCode and HackerRank problems here. Such repos become a portfolio piece by continuously updating them.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Algorithms, sorting, searching, dynamic programming, graph, interviews.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does ElasticSearch do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ElasticSearch is a full-text search engine. You can search large amounts of data very quickly — within milliseconds. Use cases: site search, log analysis (ELK Stack), real-time analytics, recommendation systems. Built on Lucene, written in Java. Stores data in JSON format. Inverted index structure speeds up text searching. Kibana provides visualization. Logstash handles data flow. E-commerce product search, Wikipedia's search feature, GitHub's code search all use ElasticSearch-like technologies. The standard tool for large-scale data search.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ElasticSearch, full-text search, ELK Stack, Kibana, inverted index.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is the worldcup-bpe-tokenizer project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "worldcup-bpe-tokenizer trains a BPE tokenizer on World Cup data. An interesting dataset choice — NLP work with football data. This project provides both sports data analysis and tokenization practice. Similar logic to Gorkem's wiki2bpe project — tokenizer training from different data sources. Training domain-specific tokenizers can yield better results than general tokenizers in certain applications. A creative project idea — combining interests with technology.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "worldcup-bpe-tokenizer, football, BPE, domain-specific, NLP.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How does SSL/TLS work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SSL/TLS is the security protocol that encrypts internet connections — the S in HTTPS. TLS handshake: client connects to server → server sends certificate → client verifies → symmetric key is created → encrypted communication begins. Asymmetric encryption (public/private key) used in handshake, symmetric encryption for data transfer. SSL certificate: Let's Encrypt offers free certificates. Certificate Authority (CA) verifies certificates. HSTS header forces browsers to use HTTPS. HTTPS is mandatory in modern web — Google marks HTTP sites as insecure. Automate certificate renewal (certbot).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SSL/TLS, handshake, HTTPS, Let's Encrypt, certificate, encryption.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

@@ -1,0 +1,54 @@
+## Benchmark oluşturma
+
+- 1. Adım — Veri toplama ve analiz (`BenchmarkSoruHavuzuAnalizi.ipynb`)
+    - 2. Ders ödevi olarak hazırladığım Trendyol Scrapper koduyla, Trendyol üzerinden
+      belirlediğim (eğitim verisinde kullanılmamış) 6 adet ürünün satıcıya-sor
+      kısmından ham soru-cevap verisi toplandı
+      (`Ders2/DataCollection-Scrapping/json_ciktilari`, 1201 diyalog).
+    - LLM ile, ürün başına tek bir istekte tüm ham soru-cevap çiftleri analiz edilip
+      şablon/otomatik (mesai saati, tatil bildirimi vb.) cevaplar elendi; anlamca aynı
+      sorular birleştirilerek tutarlı bir soru havuzu (`benchmark_soru_havuzu.json`,
+      156 soru) elde edildi.
+
+- 2. Adım — Çoktan seçmeli hale getirme ve yayınlama (`CoktanSecmeliBenchmarkOlustur.ipynb`)
+    - Her soru için ürün bilgisinde yer almayan bir bilgi varsa (kargo firması, koli/desi
+      gibi), bu bilgi alıcının zaten öğrenmiş/duymuş olduğu doğal bir cümleyle sorunun
+      içine gömülerek soru kendi başına cevaplanabilir hale getirildi (`soru_final`).
+    - Her soru için 1 doğru + 3 yanlış şık üretildi. Şıklar sadece doğru/yanlış bilgiyle
+      değil **üslupla** da ayrışıyor: doğru şık hem doğru hem kibar/ikna edici; yanlış
+      şıklardan biri doğru bilgi ama kaba üslup, biri yanlış bilgi, biri de alakasız
+      şablon bir cevap.
+    - Zeminleme doğrulaması: doğru şıktaki somut bilgilerin (sayı, kargo firması adı vb.)
+      soruda/ürün bilgisinde geçip geçmediği otomatik kontrol edilip, geçmeyenler için
+      hedefli bir onarım turu çalıştırıldı.
+    - Sonuç (139 soru) `benchmark_hf_yukle.py` ile HuggingFace'e yayınlandı:
+      [SalihHub/trendyol-marangoz-satici-benchmark](https://huggingface.co/datasets/SalihHub/trendyol-marangoz-satici-benchmark)
+
+- 3. Adım — Model karşılaştırma (`model_karsilastirma_benchmark.py`)
+    - Benchmark, yerel dosyaya değil doğrudan yukarıdaki HuggingFace Hub veri
+      kümesine bağlı çalışır.
+    - 5 model **sırayla** test edilir: 2 HuggingFace modeli lokalde (transformers/peft
+      ile) senkron çalışır; 3 OpenRouter modeli ise kendi içinde (soru bazında)
+      async/paralel çağrılarla çalışır. Bir model için sonuç dosyası zaten varsa o
+      model atlanır (yeniden çalıştırılabilir/resumable).
+    - Her model için ürün bilgisi (sistem promptu) + soru + 4 şık verilip yalnızca
+      doğru şıkkın harfi istenir; doğru/yanlış kontrolü birebir harf eşleşmesi,
+      olmazsa anlamsal benzerlik (sentence-transformers) ile yapılır.
+    - Çıktılar: her model için `<model_adi>_benchmark_sonuc.json` (soru bazlı model
+      cevapları + doğru/yanlış işaretlemesi + kategori kırılımı), ortak
+      `karsilastirma_ozeti.json` ve `model_karsilastirma.log`.
+
+### Test edilen modeller
+
+**Hugging Face (lokal)**
+- `SalihHub/trendyol-marangoz-finetuned-gemma-4-E4B-it` (fine-tune edilmiş model)
+- `google/gemma-4-E4B-it` (fine-tune edilmemiş taban model)
+
+**OpenRouter (API)**
+- `google/gemma-4-26b-a4b-it`
+- `qwen/qwen3.5-flash-02-23`
+- `deepseek/deepseek-v4-flash`
+
+### Sonuçlar
+
+`model_karsilastirma_benchmark.py` çalıştırıldıktan sonra buraya doldurulacak.

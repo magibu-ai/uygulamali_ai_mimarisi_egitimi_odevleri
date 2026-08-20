@@ -1,0 +1,27 @@
+# ayarlicazhocam — Python dependencies
+# Python 3.11+ required (see CLAUDE.md coding standards).
+# Versions intentionally left unpinned in Phase 1; pin before deployment.
+
+# UI
+gradio
+
+# Model providers
+groq
+google-generativeai
+# Local, offline provider (no API key, no rate limits). Requires a running
+# Ollama server: https://ollama.com  (e.g. `ollama pull ayarlicazhocam`).
+ollama
+
+# Configuration
+python-dotenv
+
+# Tokenizer integration for the custom Gemma chat template
+transformers
+
+# The standard library covers the rest of the MVP:
+#   - sqlite3      (database layer)
+#   - dataclasses  (structured tool inputs)
+#   - datetime     (planning / review date logic)
+# Add `pydantic` here only if dataclasses prove insufficient for tool schemas.
+# Add `jinja2` only if the custom Gemma chat template is exercised outside
+# Transformers (Transformers already bundles Jinja2 for apply_chat_template).

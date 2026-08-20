@@ -1,0 +1,388 @@
+{
+    "train": [
+        [
+            {
+                "content": "what is API rate limiting and throttling?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Rate limiting controls how many requests a client can make in a time window. Prevents abuse, ensures fair usage, protects backend resources. Algorithms: Token Bucket — bucket holds N tokens, refills at fixed rate. Each request consumes a token. Allows bursts up to bucket size. Most common. Leaky Bucket — requests enter a queue (bucket), processed at fixed rate. Smooths out bursts. Fixed Window — count requests per fixed time window (e.g., 100 requests per minute). Simple but allows burst at window boundary. Sliding Window Log — track timestamps of each request, count requests in sliding window. Accurate but memory-intensive. Sliding Window Counter — hybrid of fixed window and sliding log. Good balance of accuracy and efficiency. Implementation: application-level (middleware), API Gateway (Kong, AWS API Gateway), reverse proxy (Nginx limit_req), distributed (Redis-based — share counts across instances). Response headers: X-RateLimit-Limit (max requests), X-RateLimit-Remaining (requests left), X-RateLimit-Reset (when window resets), Retry-After (how long to wait). HTTP 429 Too Many Requests when limit exceeded. Strategies: per-user, per-IP, per-API-key, per-endpoint. Different tiers for different users. Exponential backoff on client side. Rate limiting is essential for any public API.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Rate limiting, token bucket, sliding window, throttling, 429, Redis, API gateway.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is technical debt and how to manage it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Technical debt is the implied cost of future rework caused by choosing quick solutions over better approaches. Types: Intentional (deliberate shortcuts — 'ship now, refactor later') vs Unintentional (poor design from lack of knowledge). Prudent ('we know this is a shortcut') vs Reckless ('what's a design pattern?'). Common forms: no tests (afraid to refactor), copy-paste code, outdated dependencies, no documentation for complex systems, tightly coupled components, inconsistent patterns across codebase. Management strategies: make it visible — track in issue tracker, tag as tech-debt. Quantify impact — 'this slows every feature by 2 days' is more persuasive than 'we need to refactor.' Allocate time — 20% of sprint for tech debt (Google's approach). Boy Scout Rule — improve code you touch. Refactoring sprints — periodic dedicated cleanup. Prevent accumulation — code review, linting, CI/CD quality gates. When to pay it down: before adding features to affected area, when it slows development measurably, when it causes bugs regularly, when onboarding new developers is painful. When to accept it: prototype/MVP (speed matters), code with short lifespan, isolated components unlikely to change. Tech debt is not inherently bad — it's a tool. Like financial debt, it's about managing it responsibly. Zero tech debt means you're probably over-engineering.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Technical debt, refactoring, code quality, management, intentional, Boy Scout Rule, sprint.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is clean code principles?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Clean code is readable, maintainable, and simple. Robert C. Martin's key principles: Meaningful names — variables, functions, classes should reveal intent. Use searchable, pronounceable names. Avoid abbreviations. userAge not ua, calculateTotalPrice not calcTP. Small functions — each function does ONE thing. If you need a comment to explain what a section does, extract it into a named function. Functions should be 5-20 lines ideally. DRY (Don't Repeat Yourself) — but don't over-abstract. Duplication is cheaper than wrong abstraction. Rule of three: abstract after the third repetition. KISS (Keep It Simple, Stupid) — the simplest solution that works is usually the best. Complexity is the enemy of reliability. YAGNI (You Aren't Gonna Need It) — don't build features until you need them. Predicting future requirements is usually wrong. Single Responsibility Principle — each module, class, or function should have one reason to change. Boy Scout Rule — leave code cleaner than you found it. Small improvements accumulate. Error handling — don't use exceptions for flow control. Handle errors at the appropriate level. Don't swallow exceptions silently. Comments — code should be self-documenting. Comments explain WHY, not WHAT. Bad comment: // increment i. Good comment: // Retry 3 times because the API occasionally returns transient errors. Formatting — consistent indentation, logical grouping, keep files short. Use formatters (Prettier, Black) to automate.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Clean code, naming, small functions, DRY, KISS, YAGNI, SRP, readability, maintainability.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are WebSockets and real-time communication?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebSockets provide full-duplex, persistent connections between client and server. Unlike HTTP (request-response, connection closes), WebSocket keeps connection open — both sides can send data anytime. Handshake: starts as HTTP request with Upgrade header, server accepts, connection switches to WebSocket protocol (ws:// or wss://). Use cases: chat applications, live notifications, real-time dashboards, collaborative editing (Google Docs), multiplayer games, live sports scores, stock tickers. Alternatives: Server-Sent Events (SSE) — server pushes to client only, simpler than WebSockets, uses HTTP, auto-reconnection. Good for notifications, live feeds. Long Polling — client makes request, server holds it until data is available. Simpler but more overhead. Short Polling — client repeatedly asks server. Simplest but wastes resources. Libraries: Socket.IO (WebSocket + fallbacks, rooms, namespaces), ws (Node.js native WebSocket), Pusher (managed service), Ably (managed). Scaling WebSockets: sticky sessions (same server for same client), Redis pub/sub for cross-server communication, or use managed services. Connection limits: each WebSocket = open TCP connection. Need to manage connection pools, heartbeats, reconnection logic. For most real-time needs, SSE is simpler and sufficient. Use WebSockets when you need bidirectional communication.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebSockets, real-time, SSE, Socket.IO, full-duplex, long polling, persistent connection.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is CI/CD pipeline design?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CI/CD automates building, testing, and deploying code. CI (Continuous Integration): merge code frequently, automated build and test on every push. Catches integration issues early. CD (Continuous Delivery): automated pipeline to staging, manual approval to production. CD (Continuous Deployment): fully automated pipeline to production. No manual gates. Pipeline stages: 1) Source — trigger on git push/PR. 2) Build — compile, bundle, create artifacts. 3) Test — unit, integration, E2E tests. 4) Security — SAST (static analysis), dependency scanning, container scanning. 5) Deploy to staging — automated. 6) Deploy to production — manual approval or automated. Tools: GitHub Actions (built into GitHub, YAML workflows), GitLab CI, Jenkins (self-hosted, flexible), CircleCI, ArgoCD (GitOps for Kubernetes). GitHub Actions basics: workflows in .github/workflows/, triggered by events (push, PR, schedule), jobs run on runners, steps execute commands or actions. Best practices: fast pipelines (parallelize tests, cache dependencies), fail fast (run linting and unit tests first), immutable artifacts (build once, deploy same artifact to all environments), feature flags for decoupling deploy from release, rollback strategy (blue-green, canary deployments). Gorkem's projects use GitHub — GitHub Actions is the natural CI/CD choice.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CI/CD, GitHub Actions, pipeline, continuous deployment, GitOps, ArgoCD, blue-green.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is design patterns in software engineering?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Design patterns are reusable solutions to common software design problems. Creational patterns — how objects are created: Singleton (one instance, global access — use sparingly, hard to test), Factory Method (create objects without specifying exact class — useful for plugins), Builder (construct complex objects step by step — good for objects with many optional parameters), Dependency Injection (pass dependencies instead of creating them — testability, loose coupling). Structural patterns — how objects compose: Adapter (convert interface to match what client expects — wrap old API), Decorator (add behavior without modifying class — middleware in Express), Proxy (control access to object — caching proxy, auth proxy), Facade (simplify complex subsystem — provide simple interface). Behavioral patterns — how objects interact: Observer (pub/sub — event emitters, React state updates), Strategy (swap algorithms at runtime — different sorting or payment methods), Command (encapsulate action as object — undo/redo), Iterator (traverse collection without exposing structure — for...of loops). Most important for modern development: Dependency Injection, Observer, Strategy, Factory, Decorator. Anti-pattern: overusing patterns. Don't force patterns where simple code works. Patterns should emerge from need, not be applied preemptively. Gorkem's projects use patterns naturally — MVC in web apps, Observer in event systems.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Design patterns, creational, structural, behavioral, singleton, factory, observer, strategy.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is system design interview approach?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "System design interviews test your ability to design large-scale systems. Framework: 1) Clarify requirements (5 min) — functional requirements (what should the system do?), non-functional requirements (scale, latency, availability, consistency), constraints (users, data volume, read/write ratio). 2) Estimate scale (5 min) — users, requests per second, storage needs. Back-of-envelope calculations: 1 day = 86400 seconds ≈ 100K seconds. 3) High-level design (10 min) — draw components: clients, load balancer, web servers, application servers, database, cache, message queue, CDN. 4) Deep dive (15 min) — interviewer picks 1-2 areas to explore: database schema, API design, scaling strategy, data partitioning, caching strategy. 5) Wrap up (5 min) — discuss trade-offs, bottlenecks, monitoring, future improvements. Common systems to practice: URL shortener (hashing, base62 encoding), Twitter/feed (fan-out, timeline assembly), chat system (WebSockets, message queue), rate limiter (token bucket, Redis), notification system (push, email, SMS — queue-based), search autocomplete (trie, ElasticSearch). Key concepts: horizontal scaling, database sharding, consistent hashing, caching strategies (write-through, write-back, cache-aside), CDN, message queues, database replication (leader-follower). Don't memorize solutions — understand trade-offs. Every design decision has pros and cons.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "System design interview, scalability, trade-offs, database sharding, caching, load balancer.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are different testing strategies and when to use them?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Testing pyramid (bottom to top): Unit tests — test individual functions/modules in isolation. Fast, many of them. Mock dependencies. Tools: Jest, pytest, JUnit, Go testing. Integration tests — test how components work together. Database queries, API endpoints, service interactions. Slower, fewer than unit tests. Tools: Supertest, pytest with fixtures, Testcontainers. End-to-end (E2E) tests — test complete user flows through the entire system. Slowest, fewest. Tools: Cypress, Playwright, Selenium. Testing diamond (alternative): fewer unit tests, more integration tests — better for microservices where integration points matter most. Types: Functional testing (does it work correctly?), Performance testing (load testing with k6, Locust), Security testing (OWASP ZAP, Snyk), Accessibility testing (axe, Lighthouse), Visual regression testing (Percy, Chromatic), Contract testing (Pact — verify service interfaces). TDD (Test-Driven Development): write test first → see it fail → write minimal code to pass → refactor. Forces thinking about design upfront. BDD (Behavior-Driven Development): describe behavior in natural language (Given-When-Then). Tools: Cucumber, Behave. Best practices: test behavior not implementation, keep tests independent, use factories/fixtures for test data, CI runs all tests on every PR. Aim for meaningful coverage, not 100% line coverage.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Testing pyramid, unit tests, integration, E2E, TDD, BDD, Cypress, Playwright, coverage.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is event-driven architecture?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Event-driven architecture (EDA) uses events to trigger and communicate between services. Instead of direct API calls (synchronous), services publish events that other services react to (asynchronous). Components: Event Producers (emit events — user signed up, order placed), Event Broker (message queue — Kafka, RabbitMQ, AWS SNS/SQS), Event Consumers (react to events — send welcome email, update analytics). Patterns: Event Notification (minimal data, consumer fetches details), Event-Carried State Transfer (full data in event, no need to call back), Event Sourcing (store events as source of truth, rebuild state by replaying events), CQRS (separate read and write models). Benefits: loose coupling (services don't know about each other), scalability (consumers scale independently), resilience (if email service is down, events queue up, process later). Challenges: eventual consistency (data isn't immediately consistent everywhere), debugging complexity (trace events across services), event ordering (Kafka partitions help), idempotency (handle duplicate events). Tools: Apache Kafka (distributed log, high throughput, retention), RabbitMQ (traditional message broker, flexible routing), AWS EventBridge (serverless event bus). Event-driven is the backbone of modern distributed systems.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Event-driven, Kafka, RabbitMQ, event sourcing, CQRS, pub/sub, async, loose coupling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is edge computing and serverless?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Edge computing processes data closer to where it's generated — reduces latency, bandwidth. CDN edge (Cloudflare Workers, Vercel Edge Functions, AWS Lambda@Edge): run code at CDN locations worldwide. Use for: A/B testing, geolocation-based routing, authentication at edge, personalization, API response transformation. IoT edge: process sensor data locally before sending to cloud. Reduce bandwidth, real-time processing. Serverless: run code without managing servers. Cloud provider handles scaling, availability, maintenance. AWS Lambda, Google Cloud Functions, Azure Functions, Cloudflare Workers. Benefits: pay per execution (no idle cost), auto-scaling (zero to thousands instantly), no server management. Challenges: cold starts (first invocation is slow — pre-warm or use provisioned concurrency), vendor lock-in, execution time limits (Lambda: 15 min), debugging is harder, state management (functions are stateless — use external storage). Serverless patterns: API backend (Lambda + API Gateway), event processing (Lambda triggered by S3, SQS, DynamoDB streams), scheduled jobs (CloudWatch Events trigger Lambda), real-time file processing. When to use: variable traffic (pay only when used), event-driven workloads, microservices with low traffic. When NOT to use: consistent high traffic (EC2 cheaper), long-running processes, need GPU. Serverless doesn't mean no servers — it means not YOUR servers.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Edge computing, serverless, Lambda, Cloudflare Workers, cold starts, CDN, IoT edge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is code review best practices?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Code review improves code quality, shares knowledge, catches bugs before production. As reviewer: review within 24 hours (don't block teammates), understand the context first (read PR description, related issue), review for correctness first, then style, be specific and suggest alternatives (don't just say 'this is wrong'), ask questions instead of making demands ('what happens if X?' vs 'fix this'), approve with minor comments when appropriate. As author: keep PRs small (under 400 lines ideally), write descriptive PR titles and descriptions, self-review before requesting review, explain WHY in commit messages and PR descriptions, respond to all comments even if just acknowledging. What to look for: correctness (does it solve the problem?), edge cases (null, empty, concurrent access), security (injection, authentication, authorization), performance (N+1 queries, unnecessary loops, missing indexes), readability (naming, structure, comments where needed), tests (are they meaningful, do they cover edge cases?), backward compatibility (will this break existing clients?). What NOT to focus on: style issues (let linters handle formatting — Prettier, ESLint, Black), personal preferences that don't affect correctness, nitpicking on code you wouldn't normally touch. Tools: GitHub PRs, GitLab MRs, code owners files (auto-assign reviewers), required reviews before merge.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Code review, pull request, reviewer, author, feedback, best practices, PR size, linting.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is web performance optimization?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Web performance directly impacts user experience and business metrics. Core Web Vitals (Google ranking factors): LCP (Largest Contentful Paint < 2.5s) — how fast main content loads. Optimize: preload critical resources, optimize images, use CDN, server-side rendering. INP (Interaction to Next Paint < 200ms) — how fast page responds to interaction. Optimize: break long tasks, use web workers, debounce/throttle handlers, minimize main thread work. CLS (Cumulative Layout Shift < 0.1) — visual stability. Optimize: set explicit dimensions on images/videos, avoid inserting content above existing content, use CSS containment. Optimization techniques: Code splitting — load only code needed for current page. Dynamic import() in webpack/Vite. Image optimization — WebP/AVIF formats, responsive images (srcset), lazy loading (loading='lazy'), proper sizing. Caching — Cache-Control headers, ETags, service workers for offline. CDN — serve static assets from edge locations close to users. Compression — Brotli (better than gzip), compress responses. Font loading — font-display: swap, preload critical fonts, subset fonts. Bundling — tree shaking (remove unused code), minification, bundle analysis. Measuring: Chrome DevTools Performance tab, Lighthouse, WebPageTest, CrUX (Chrome User Experience Report).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Web performance, Core Web Vitals, LCP, INP, CLS, code splitting, lazy loading, CDN.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is containerization beyond basics?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Beyond docker run — production container practices. Multi-stage builds: separate build and runtime stages. Build stage compiles code (large image with build tools), runtime stage copies only artifacts (small, secure image). FROM node:20 AS builder → FROM node:20-alpine → COPY --from=builder. Image optimization: use alpine/slim base images, minimize layers, leverage build cache (put rarely changing layers first), use .dockerignore, don't run as root (USER node), scan for vulnerabilities (Trivy, Snyk). Docker Compose for local development: define multi-container applications. Services, networks, volumes. Environment variables, depends_on, healthchecks. Container orchestration: Kubernetes (complex but powerful), Docker Swarm (simpler), AWS ECS/Fargate (managed). Kubernetes concepts: Pod (smallest unit, one or more containers), Deployment (manage pod replicas, rolling updates), Service (stable networking for pods), Ingress (HTTP routing), ConfigMap/Secret (configuration), PersistentVolume (storage). Container networking: bridge (default, containers on same host), overlay (cross-host), host (share host network). Security: run as non-root, read-only filesystem, no capabilities, scan images regularly, use distroless images for production.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Containers, multi-stage builds, Docker Compose, Kubernetes, pods, image optimization.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is data structures for interviews?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Essential data structures for technical interviews. Array — contiguous memory, O(1) access by index, O(n) insert/delete. Use for: sequential data, when you need fast random access. Linked List — nodes with pointers. O(1) insert/delete at known position, O(n) search. Use for: frequent insertions/deletions, implementing stacks/queues. Stack — LIFO. push/pop O(1). Use for: undo operations, parsing expressions, DFS, call stack. Queue — FIFO. enqueue/dequeue O(1). Use for: BFS, task scheduling, buffering. Hash Table — key-value pairs, O(1) average lookup/insert/delete. Use for: counting, caching, deduplication. Collisions: chaining or open addressing. Tree — hierarchical data. Binary Search Tree: O(log n) search/insert/delete (balanced). Use for: sorted data, range queries. AVL/Red-Black for guaranteed balance. Heap — complete binary tree, O(1) find min/max, O(log n) insert/extract. Use for: priority queues, top-K problems, scheduling. Graph — nodes and edges. Represented as adjacency list or matrix. BFS (shortest path unweighted), DFS (cycle detection, topological sort). Use for: networks, shortest path, dependency resolution. Trie — prefix tree. O(m) lookup where m is key length. Use for: autocomplete, spell checking, IP routing. Know the time complexity, use cases, and trade-offs for each. Practice implementing them from scratch.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Data structures, array, linked list, hash table, tree, heap, graph, trie, interview prep.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is database migration and schema management?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Database migrations manage schema changes over time. Instead of manually running ALTER TABLE, write migration scripts that version your database schema. How it works: each migration has an up (apply) and down (rollback) function. Migrations run in order, tracking which have been applied. Tools: Flyway (Java), Alembic (Python/SQLAlchemy), Knex.js (Node.js), Rails migrations (Ruby), golang-migrate, Prisma Migrate. Best practices: never edit a migration after it's been applied to production, migrations should be idempotent when possible, always test migrations on a copy of production data, have a rollback plan, avoid locking tables in production (use online schema change tools for large tables). Common migrations: adding columns (safe if nullable or with default), removing columns (deploy code first that doesn't use the column, then remove), renaming columns (add new → copy data → update code → remove old), adding indexes (can lock table — use CONCURRENTLY in PostgreSQL). Zero-downtime migrations: expand-and-contract pattern. 1) Expand: add new column alongside old. 2) Migrate: copy data, update code to write both. 3) Contract: remove old column after all code uses new one. Schema management with ORMs: Prisma schema (declarative), SQLAlchemy models, Django models auto-generate migrations.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Database migration, schema management, Alembic, Prisma, zero-downtime, expand-contract.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is observability and monitoring?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Observability is the ability to understand a system's internal state from its external outputs. Three pillars: Metrics — numerical measurements over time. CPU usage, request latency, error rate, queue depth. Tools: Prometheus (pull-based, PromQL), Grafana (visualization), Datadog, CloudWatch. Logs — timestamped records of events. Application logs, access logs, error logs. Tools: ELK Stack (Elasticsearch + Logstash + Kibana), Loki (Grafana's log aggregation), Fluentd/Fluent Bit. Traces — follow a request across services. Each service adds a span, spans form a trace. Tools: Jaeger, Zipkin, OpenTelemetry (vendor-neutral standard), AWS X-Ray. Key metrics: RED method for services — Rate (requests/sec), Errors (failed requests), Duration (latency). USE method for resources — Utilization, Saturation, Errors. SLIs/SLOs/SLAs: SLI (Service Level Indicator — actual measurement, e.g., 99.5% requests under 200ms), SLO (Service Level Objective — target, e.g., 99.9% availability), SLA (Service Level Agreement — contract with penalties). Alerting: alert on symptoms not causes. Page on SLO breaches. Avoid alert fatigue — fewer, meaningful alerts. OpenTelemetry is becoming the standard for instrumenting applications — learn it.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Observability, metrics, logs, traces, Prometheus, Grafana, OpenTelemetry, SLO, alerting.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is message queues and async processing?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Message queues decouple producers and consumers, enabling asynchronous processing. Producer sends message to queue, consumer processes it later. Decouples systems in time and space. Use cases: email sending (don't block API response), image processing (resize/compress in background), order processing (validate, charge, fulfill asynchronously), data pipeline ingestion. Technologies: RabbitMQ — traditional message broker. Exchanges route messages to queues. Supports multiple patterns: direct, topic, fanout. Good for task queues, RPC. Apache Kafka — distributed event streaming platform. High throughput, persistent storage, replay capability. Topics with partitions. Consumer groups for parallel processing. Great for event sourcing, log aggregation, stream processing. AWS SQS — managed queue service. Standard (at-least-once, best-effort ordering) and FIFO (exactly-once, guaranteed ordering). Dead letter queues for failed messages. Redis — can be used as simple message broker with pub/sub or streams. BullMQ (Node.js) for job queues. Patterns: Work Queue (distribute tasks among workers), Pub/Sub (broadcast to all subscribers), Request-Reply (RPC over queue). Considerations: message ordering, at-least-once vs exactly-once delivery, idempotency (handle duplicate messages), dead letter queues (handle failed messages), backpressure (slow consumers). Start with SQS or Redis for simple needs, Kafka for event streaming at scale.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Message queues, RabbitMQ, Kafka, SQS, async processing, pub/sub, dead letter queue.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is GraphQL and how does it compare to REST?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GraphQL is a query language for APIs. Client specifies exactly what data it needs, server returns only that. Developed by Facebook (2015). REST: fixed endpoints return fixed data structures. /users/1 returns all user fields. Need user's name and posts? Two requests: GET /users/1 and GET /users/1/posts. Over-fetching (getting fields you don't need) and under-fetching (needing multiple requests). GraphQL: single endpoint, client sends query describing desired shape. One request returns exactly what's needed. Schema defines types and relationships. Resolvers fetch data. Benefits: no over/under-fetching, strong typing (schema as contract), introspection (self-documenting), great for mobile (minimize data transfer). Challenges: caching is harder (POST requests, no HTTP caching), N+1 query problem (use DataLoader for batching), complexity for simple APIs, learning curve, file uploads need workarounds. Tools: Apollo Client/Server (most popular), Relay (Facebook's client), graphql-yoga, Hasura (auto-generate from Postgres), Prisma. When to use: complex UIs needing flexible data, mobile apps, multiple clients needing different data shapes. When NOT to use: simple CRUD, file-heavy APIs, real-time requirements (though subscriptions exist). Gorkem's projects mostly use REST — appropriate for their scope.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GraphQL, REST, over-fetching, schema, resolvers, Apollo, query language, API design.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the CAP theorem and distributed database trade-offs?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CAP theorem: distributed systems can guarantee at most two of three properties. Consistency — every read returns the most recent write. All nodes see the same data at the same time. Availability — every request gets a response (success or failure). No request is rejected. Partition tolerance — system continues operating despite network partitions (messages lost/delayed between nodes). In distributed systems, network partitions WILL happen. So the real choice is: CP (Consistency + Partition tolerance) — during a partition, system rejects requests to maintain consistency. Examples: HBase, MongoDB (with strong read concern), Zookeeper. AP (Availability + Partition tolerance) — during a partition, system accepts requests but may return stale data. Examples: Cassandra, DynamoDB, CouchDB. PACELC extension: if Partition → choose A or C, Else (normal operation) → choose Latency or Consistency. Most systems choose latency over consistency in normal operation (eventual consistency). Consistency models: Strong consistency (linearizable — most expensive), Sequential consistency, Causal consistency, Eventual consistency (cheapest — all replicas eventually converge). Real-world: most applications use eventual consistency with conflict resolution. Banking needs strong consistency for transfers. Social media feeds tolerate eventual consistency. Choose based on business requirements, not technical preference.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CAP theorem, consistency, availability, partition tolerance, PACELC, eventual consistency.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is microservices architecture and when should you use it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Microservices decompose an application into small, independent services that communicate over the network. Each service owns its data, can be deployed independently, and can use different tech stacks. Contrast with monolith: single deployable unit, shared database, one codebase. Benefits of microservices: independent deployment (deploy auth service without touching payments), technology flexibility (Python for ML service, Go for API gateway), independent scaling (scale search service separately), fault isolation (one service failing doesn't crash everything), team autonomy (small teams own services end-to-end). Challenges: distributed system complexity (network failures, latency), data consistency across services (eventual consistency, saga pattern), operational overhead (need container orchestration, service discovery, monitoring), debugging across services (distributed tracing with Jaeger/Zipkin). When to use: large teams (Conway's Law — system mirrors org structure), different scaling needs per component, polyglot requirements. When NOT to use: small teams (operational overhead kills productivity), new projects (start monolith, extract services later), unclear domain boundaries. Start with a well-structured monolith, then extract services when boundaries become clear. Premature microservices is one of the most common architectural mistakes.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Microservices, monolith, independent deployment, scaling, distributed systems, Conway's Law.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is OAuth 2.0 and OpenID Connect?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OAuth 2.0 is an authorization framework — lets third-party apps access resources on behalf of a user without sharing passwords. OpenID Connect (OIDC) adds authentication on top of OAuth 2.0 — proves who the user is. OAuth 2.0 flows: Authorization Code (most common for web apps) — redirect to auth server, user logs in, get authorization code, exchange for tokens. Authorization Code + PKCE (for SPAs and mobile) — adds proof key to prevent code interception. Client Credentials (machine-to-machine) — no user involved, service authenticates with client_id and secret. Device Code (for TVs, CLIs) — show code on device, user enters on another device. Tokens: Access Token — short-lived (minutes to hours), sent with API requests (Authorization: Bearer ...). Refresh Token — long-lived, used to get new access tokens without re-login. ID Token (OIDC) — JWT containing user info (name, email, sub). Token storage: HttpOnly cookies (safest for web), secure storage (mobile). NEVER store in localStorage (XSS vulnerable). Providers: Auth0, Okta, Firebase Auth, Keycloak (self-hosted), AWS Cognito. JWT (JSON Web Token): header.payload.signature. Base64 encoded, not encrypted — don't put secrets in it. Verify signature server-side. Use JWKs for key rotation.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OAuth 2.0, OIDC, authorization code, PKCE, JWT, access token, refresh token, Auth0.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is functional programming concepts?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Functional programming (FP) treats computation as evaluation of mathematical functions. Core concepts: Pure functions — same input always gives same output, no side effects. Easier to test, reason about, parallelize. Immutability — data never changes. Create new copies with modifications. Prevents bugs from shared mutable state. JavaScript: Object.freeze(), spread operator. Rust: variables immutable by default. First-class functions — functions are values. Pass as arguments, return from functions, assign to variables. Higher-order functions — functions that take or return functions. map, filter, reduce are the big three. Composition — combine simple functions to build complex ones: compose(f, g)(x) = f(g(x)). pipe(f, g)(x) = g(f(x)). Currying — transform function with multiple arguments into sequence of single-argument functions: add(a, b) → add(a)(b). Useful for partial application. Closures — function remembers variables from its creation scope. Pattern matching — match values against patterns (Rust match, Haskell case). Monads — composable wrappers for values with context (Maybe/Option, Either/Result, Promise). Languages: Haskell (pure FP), Scala, Elixir, F#, Clojure. Multi-paradigm: JavaScript, Python, Rust, Kotlin. You don't need a FP language — use FP principles anywhere. Prefer pure functions, minimize mutation, use map/filter/reduce.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Functional programming, pure functions, immutability, higher-order, composition, currying, monads.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is API versioning and backward compatibility?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "API versioning manages changes without breaking existing clients. Strategies: URL versioning (/api/v1/users, /api/v2/users) — most common, explicit, easy to understand. Header versioning (Accept: application/vnd.api.v2+json) — cleaner URLs but less discoverable. Query parameter (?version=2) — easy but considered less RESTful. No versioning (evolve API carefully) — GitHub's approach with some APIs. Backward compatibility rules: adding fields is safe (clients ignore unknown fields), removing fields breaks clients, changing field types breaks clients, changing behavior breaks clients. Deprecation strategy: announce deprecation with timeline, add Deprecation/Sunset headers, monitor usage of deprecated endpoints, provide migration guides, give clients months to migrate. Breaking changes require new version: field removal, type changes, behavioral changes, authentication changes. Non-breaking changes don't: adding optional fields, adding new endpoints, adding optional parameters. Semantic versioning for APIs: MAJOR (breaking), MINOR (new features, backward compatible), PATCH (bug fixes). Tools: API gateways (Kong, AWS API Gateway) can route versions. Document with OpenAPI/Swagger — version your schema too.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "API versioning, backward compatibility, deprecation, semantic versioning, breaking changes.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is infrastructure as code and Terraform?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Infrastructure as Code (IaC) manages infrastructure through code instead of manual configuration. Benefits: version control (git history of infrastructure changes), reproducibility (same code = same infrastructure), automation (CI/CD for infrastructure), documentation (code IS documentation). Terraform (HashiCorp): declarative IaC tool. Write desired state in HCL (HashiCorp Configuration Language), Terraform figures out how to get there. Workflow: terraform init (download providers) → terraform plan (preview changes) → terraform apply (execute changes) → terraform destroy (tear down). State: Terraform tracks infrastructure state in terraform.tfstate. Store remotely (S3 + DynamoDB for locking) in production. Modules: reusable components. Don't repeat yourself — create modules for common patterns (VPC, ECS service, RDS). Alternatives: Pulumi (real programming languages — Python, TypeScript), AWS CloudFormation (AWS-only, YAML/JSON), CDK (AWS, TypeScript/Python to CloudFormation), Crossplane (Kubernetes-native). Best practices: use modules, remote state with locking, separate environments (dev/staging/prod), use workspaces or separate state files, plan before apply, use variables and outputs. Terraform is the most popular multi-cloud IaC tool. Gorkem's projects could benefit from Terraform for reproducible deployment.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Terraform, IaC, HCL, state management, modules, Pulumi, CloudFormation, infrastructure.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

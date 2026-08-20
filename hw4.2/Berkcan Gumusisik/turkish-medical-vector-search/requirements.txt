@@ -1,0 +1,10 @@
+# Turkish Medical Vector Search — pinned to a Python 3.14–verified stack
+sentence-transformers==5.7.0
+transformers==5.14.1
+torch==2.13.0
+chromadb==1.5.9
+datasets==5.0.1
+pandas==3.0.3
+pyarrow==25.0.0
+numpy==2.4.6
+huggingface-hub>=0.30

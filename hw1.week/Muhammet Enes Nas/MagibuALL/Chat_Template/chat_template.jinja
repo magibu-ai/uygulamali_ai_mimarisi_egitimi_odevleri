@@ -1,0 +1,99 @@
+{#-
+    Pharmacy Prompt Serialization Format (PPSF) v1.0 / v1.1
+
+    Supported roles:
+      system     -> @SYSTEM
+      user       -> @PATIENT (with optional @REFERENCE via metadata)
+      assistant  -> @PHARMACIST (with optional @THOUGHT via metadata)
+      tool       -> @TOOL_RESPONSE
+
+    Tool Calling:
+      tools      -> @TOOLS
+      tool_calls -> @TOOL_CALL
+
+    Copyright:
+      PPSF v1.0
+-#}
+{{- "@FORMAT PPSF/1.0\n\n" -}}
+
+{#- ===========================
+   SYSTEM MESSAGE
+=========================== -#}
+{%- if messages and messages[0]["role"] == "system" -%}
+@SYSTEM
+{{ messages[0]["content"] | trim }}
+
+{% endif -%}
+
+{#- ===========================
+   TOOL DEFINITIONS
+=========================== -#}
+{%- if tools -%}
+@TOOLS
+Available tools:
+
+{% for tool in tools -%}
+{{ tool | tojson }}
+{% endfor %}
+To invoke a tool respond ONLY with:
+
+@TOOL_CALL
+{
+  "name": "...",
+  "arguments": { ... }
+}
+
+{% endif -%}
+
+{#- ===========================
+   CHAT HISTORY
+=========================== -#}
+{%- for message in messages -%}
+{%- if loop.first and message["role"] == "system" -%}
+    {# Handled in system block #}
+{%- elif message["role"] == "user" -%}
+    {%- set ref = message.get("reference") or (message.get("metadata") and message.metadata.get("reference")) -%}
+    {%- if ref -%}
+@REFERENCE
+{{ ref | trim }}
+
+{% endif -%}
+@PATIENT
+{{ message["content"] | trim }}
+
+{% elif message["role"] == "assistant" -%}
+    {%- set thought = message.get("thought") or (message.get("metadata") and message.metadata.get("thought")) -%}
+    {%- if thought -%}
+@THOUGHT
+{{ thought | trim }}
+
+{% endif -%}
+    {%- if message.get("content") -%}
+@PHARMACIST
+{{ message["content"] | trim }}
+
+{% endif -%}
+    {%- if message.get("tool_calls") -%}
+        {%- for tc in message["tool_calls"] -%}
+@TOOL_CALL
+{
+  "name": {{ tc["function"]["name"] | tojson }},
+  "arguments": {{ tc["function"]["arguments"] if tc["function"]["arguments"] is string else (tc["function"]["arguments"] | tojson) }}
+}
+
+{% endfor -%}
+    {%- endif -%}
+{%- elif message["role"] == "tool" -%}
+@TOOL_RESPONSE
+{{ message["content"] | trim }}
+
+{% endif -%}
+{%- endfor -%}
+
+{#- ===========================
+   GENERATION PROMPT
+=========================== -#}
+{%- if add_generation_prompt -%}
+@PHARMACIST
+{%- endif -%}
+

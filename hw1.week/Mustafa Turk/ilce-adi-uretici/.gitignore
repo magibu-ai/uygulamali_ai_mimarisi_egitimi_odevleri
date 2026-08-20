@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Sanal ortam
+venv/
+.venv/
+env/
+
+# Üretilen dosyalar (scriptlerle yeniden oluşturulur)
+data/data.json          # hazirla.py indirir
+data/temiz_isimler.txt  # temizle_isimler.py üretir
+*.pt                    # train.py üretir (model checkpoint)
+
+# Editör
+.vscode/
+.idea/
+.DS_Store
+.ipynb_checkpoints/

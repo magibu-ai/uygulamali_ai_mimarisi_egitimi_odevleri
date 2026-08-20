@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Geçici çıktı
+*.tmp
+~$*
+
+# Değerlendirme çıktıları ve özel quizler
+results*.json
+quizzes/*_private_*.md
+prompt.md
+results/*.json
+P.md

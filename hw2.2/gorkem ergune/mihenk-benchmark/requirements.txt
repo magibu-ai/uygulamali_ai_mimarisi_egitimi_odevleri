@@ -1,0 +1,6 @@
+# Doğrulama için opsiyonel (yoksa validate.py dahili manuel kontrole düşer)
+jsonschema>=4.0
+# HuggingFace'e yükleme için
+huggingface_hub>=0.20
+# Model testi (opsiyonel, openai-uyumlu backend / OpenRouter için)
+openai>=1.40

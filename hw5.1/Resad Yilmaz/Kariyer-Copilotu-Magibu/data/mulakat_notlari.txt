@@ -1,0 +1,377 @@
+DATA ENGINEER MÜLAKAT NOTLARI
+
+SQL
+
+INNER JOIN:
+İki tabloda eşleşen kayıtları getirir.
+
+LEFT JOIN:
+Sol tablodaki tüm kayıtları ve sağ tablodaki eşleşen kayıtları getirir.
+
+GROUP BY:
+Aynı değerlere sahip kayıtları gruplamak için kullanılır.
+
+HAVING:
+GROUP BY sonrasında gruplara filtre uygulamak için kullanılır.
+
+WHERE ile HAVING arasındaki fark:
+WHERE gruplamadan önce kayıtları filtreler.
+HAVING ise GROUP BY sonrasında grupları filtreler.
+
+CTE:
+WITH ifadesi kullanılarak geçici sorgu sonucu oluşturmayı sağlar.
+Karmaşık sorguların okunabilirliğini artırabilir.
+
+WINDOW FUNCTIONS
+
+ROW_NUMBER:
+Her satıra benzersiz sıra numarası verir.
+
+RANK:
+Aynı değere sahip satırlara aynı sıra değerini verir ve sonraki sıralarda boşluk bırakır.
+
+DENSE_RANK:
+RANK gibi çalışır fakat sıra numaralarında boşluk bırakmaz.
+
+LAG:
+Bir önceki satırdaki değere erişmek için kullanılır.
+
+LEAD:
+Bir sonraki satırdaki değere erişmek için kullanılır.
+
+
+DATA WAREHOUSE
+
+Fact Table:
+Ölçülebilir iş olaylarını ve metrikleri saklar.
+
+Örnek:
+satış miktarı
+satış tutarı
+sipariş sayısı
+
+Dimension Table:
+Fact tablolarındaki olayları açıklayan detayları tutar.
+
+Örnek:
+müşteri
+ürün
+tarih
+mağaza
+
+STAR SCHEMA
+
+Merkezde bir fact table bulunur.
+Dimension tablolar doğrudan fact table'a bağlanır.
+
+Avantajları:
+Sorgulaması kolaydır.
+BI uygulamalarında sık kullanılır.
+Join sayısı genellikle daha azdır.
+
+SNOWFLAKE SCHEMA
+
+Dimension tabloların normalize edildiği veri ambarı modelidir.
+
+Star Schema'ya göre daha fazla join gerektirebilir.
+
+
+SCD
+
+SCD TYPE 1:
+Eski değer yeni değerle değiştirilir.
+Geçmiş veri tutulmaz.
+
+SCD TYPE 2:
+Değişiklik olduğunda yeni kayıt oluşturulur.
+Tarihsel veri korunur.
+
+Genellikle:
+start_date
+end_date
+is_current
+
+gibi alanlar kullanılır.
+
+SCD TYPE 3:
+Eski değer ayrı bir kolonda tutulur.
+Sınırlı geçmiş bilgisi korunur.
+
+
+ETL
+
+Extract:
+Verinin kaynak sistemlerden alınmasıdır.
+
+Kaynaklar:
+CSV
+Excel
+REST API
+SQL Database
+NoSQL Database
+
+Transform:
+Verinin temizlenmesi ve dönüştürülmesidir.
+
+Örnek:
+null değerlerin düzenlenmesi
+veri tiplerinin değiştirilmesi
+duplicate kayıtların temizlenmesi
+business rule uygulanması
+
+Load:
+İşlenmiş verinin hedef sisteme yüklenmesidir.
+
+
+APACHE AIRFLOW
+
+Airflow veri pipeline'larını planlamak ve yönetmek için kullanılır.
+
+DAG:
+Directed Acyclic Graph.
+
+Bir workflow içerisindeki task'ların ilişkilerini tanımlar.
+
+Operator örnekleri:
+PythonOperator
+BashOperator
+
+Airflow'da önemli kavramlar:
+DAG
+Task
+Operator
+Scheduler
+Executor
+XCom
+
+
+APACHE SPARK
+
+Spark büyük ölçekli dağıtık veri işleme platformudur.
+
+PySpark:
+Spark'ın Python API'sidir.
+
+Transformation örnekleri:
+filter
+select
+groupBy
+join
+
+Action örnekleri:
+count
+collect
+show
+
+Lazy Evaluation:
+Spark transformation işlemlerini hemen çalıştırmaz.
+Bir action çağrıldığında execution başlar.
+
+
+APACHE KAFKA
+
+Kafka gerçek zamanlı veri akışı için kullanılan distributed event streaming platformudur.
+
+Producer:
+Kafka'ya mesaj gönderir.
+
+Consumer:
+Kafka'dan mesaj okur.
+
+Topic:
+Mesajların tutulduğu mantıksal kanaldır.
+
+Partition:
+Topic içerisindeki verinin bölünmesini sağlar.
+
+Consumer Group:
+Birden fazla consumer'ın mesajları paylaşarak işlemesini sağlar.
+
+
+PYTHON
+
+List:
+Değiştirilebilir sıralı veri yapısıdır.
+
+Tuple:
+Değiştirilemez sıralı veri yapısıdır.
+
+Dictionary:
+Key-value yapısında veri saklar.
+
+Set:
+Benzersiz değerleri tutar.
+
+Generator:
+Tüm veriyi aynı anda belleğe almak yerine ihtiyaç oldukça üretir.
+
+Decorator:
+Bir fonksiyonun davranışını değiştirmek veya genişletmek için kullanılabilir.
+
+
+MACHINE LEARNING
+
+Overfitting:
+Modelin eğitim verisini çok iyi öğrenip yeni verilerde kötü performans göstermesidir.
+
+Önleme yöntemleri:
+Regularization
+Cross Validation
+Dropout
+Daha fazla veri
+Early Stopping
+
+Precision:
+Pozitif tahminlerin ne kadarının gerçekten pozitif olduğunu ölçer.
+
+Recall:
+Gerçek pozitiflerin ne kadarının model tarafından bulunduğunu ölçer.
+
+F1 Score:
+Precision ve Recall değerlerinin harmonik ortalamasıdır.
+
+
+RAG
+
+RAG:
+Retrieval Augmented Generation.
+
+Temel akış:
+
+Doküman
+→ Chunking
+→ Embedding
+→ Vector Database
+→ Kullanıcı Sorusu
+→ Query Embedding
+→ Semantic Search
+→ Relevant Chunks
+→ LLM
+→ Cevap
+
+Embedding:
+Metnin sayısal vektör gösterimidir.
+
+Vector Database:
+Embedding vektörlerini saklar ve benzerlik araması yapılmasını sağlar.
+
+ChromaDB:
+RAG uygulamalarında kullanılabilen vector database çözümlerinden biridir.
+
+Chunking:
+Uzun dokümanların daha küçük parçalara ayrılmasıdır.
+
+Chunk çok büyük olursa:
+Gereksiz bilgi modele taşınabilir.
+
+Chunk çok küçük olursa:
+Anlamsal bağlam kaybolabilir.
+
+
+LLM TOOL CALLING
+
+Tool Calling:
+LLM'in dış sistemlerde bulunan fonksiyonları kullanabilmesini sağlar.
+
+Örneğin:
+
+Kullanıcı:
+"Başvurum ne durumda?"
+
+LLM:
+basvuru_ara tool'unu çağırır.
+
+Tool:
+Veritabanından gerçek bilgiyi getirir.
+
+LLM:
+Tool sonucuna dayanarak kullanıcıya cevap verir.
+
+Avantaj:
+Modelin güncel veya özel veriyi kendi hafızasından uydurmasının önüne geçilebilir.
+
+
+FASTAPI
+
+FastAPI Python ile REST API geliştirmek için kullanılan framework'tür.
+
+GET:
+Veri almak.
+
+POST:
+Yeni veri oluşturmak veya işlem başlatmak.
+
+PUT:
+Var olan veriyi güncellemek.
+
+DELETE:
+Veri silmek.
+
+Pydantic:
+API'ye gelen verilerin doğrulanmasında kullanılır.
+
+
+ÖRNEK DATA ENGINEER MÜLAKAT SORULARI
+
+1. WHERE ve HAVING arasındaki fark nedir?
+
+2. INNER JOIN ve LEFT JOIN arasındaki fark nedir?
+
+3. Window Function nedir?
+
+4. ROW_NUMBER, RANK ve DENSE_RANK arasındaki fark nedir?
+
+5. Fact ve Dimension tablolar nedir?
+
+6. Star Schema ve Snowflake Schema farkı nedir?
+
+7. SCD Type 1 ve Type 2 arasındaki fark nedir?
+
+8. ETL ile ELT arasındaki fark nedir?
+
+9. Apache Airflow ne için kullanılır?
+
+10. DAG nedir?
+
+11. Spark'ta transformation ve action arasındaki fark nedir?
+
+12. Kafka'da Producer ve Consumer nedir?
+
+13. Partition neden kullanılır?
+
+14. Data pipeline'da hata yönetimi nasıl yapılabilir?
+
+15. Bir SQL sorgusunun performansı nasıl iyileştirilir?
+
+
+ÖRNEK AI ENGINEER MÜLAKAT SORULARI
+
+1. Machine Learning ve Deep Learning arasındaki fark nedir?
+
+2. Overfitting nedir?
+
+3. Precision ve Recall farkı nedir?
+
+4. Embedding nedir?
+
+5. Transformer mimarisi nedir?
+
+6. RAG neden kullanılır?
+
+7. Vector Database nedir?
+
+8. Semantic Search nedir?
+
+9. Chunk size nasıl belirlenir?
+
+10. Hallucination nasıl azaltılabilir?
+
+11. Prompt Engineering nedir?
+
+12. System Prompt neden önemlidir?
+
+13. Tool Calling nedir?
+
+14. Fine-tuning ile RAG arasındaki fark nedir?
+
+15. Bir LLM uygulaması nasıl değerlendirilebilir?

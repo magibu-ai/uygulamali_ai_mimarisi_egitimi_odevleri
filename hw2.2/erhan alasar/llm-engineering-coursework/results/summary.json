@@ -1,0 +1,42 @@
+[
+  {
+    "model": "LangUsta-MCQ-Letter-LoRA",
+    "questions": 100,
+    "correct": 29,
+    "accuracy": 29,
+    "valid_format_rate": 100,
+    "runtime_seconds": 21.29
+  },
+  {
+    "model": "Qwen2.5-0.5B-Instruct",
+    "questions": 100,
+    "correct": 19,
+    "accuracy": 19,
+    "valid_format_rate": 97,
+    "runtime_seconds": 22.4
+  },
+  {
+    "model": "Qwen2.5-1.5B-Instruct",
+    "questions": 100,
+    "correct": 33,
+    "accuracy": 33,
+    "valid_format_rate": 100,
+    "runtime_seconds": 20.9
+  },
+  {
+    "model": "SmolLM2-1.7B-Instruct",
+    "questions": 100,
+    "correct": 23,
+    "accuracy": 23,
+    "valid_format_rate": 95,
+    "runtime_seconds": 29.29
+  },
+  {
+    "model": "Gemma-3-1B-Instruct-4bit",
+    "questions": 100,
+    "correct": 19,
+    "accuracy": 19,
+    "valid_format_rate": 99,
+    "runtime_seconds": 30.35
+  }
+]

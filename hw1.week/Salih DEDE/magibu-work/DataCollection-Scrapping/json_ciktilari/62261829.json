@@ -1,0 +1,5706 @@
+[
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "En yüksek hali kaç cm",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba 73 cm dir",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "yüksekliği kaç cm",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün yüksekliği ayarlanabilir olduğundan min. 43 cm. ve max. 73 cm. olarak kullanabilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, max yüksekliği kac cm oluyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, max. 73 cm. olarak kullanabiliirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürün tam açıldığında ve açılmadığında yüksekliği kaç cm ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,en yüksek 73 cmdir efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "katlanabilirmi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, hayır ürün katlanır değildir, sadece yükseklik ayarlıdır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Yüksekliği en fazla ne kadar oluyor en yüksek hali kaç cm ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, en kısa 43 cm. , en yüksek 73 cm. efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Üst tabla kaç cm",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tabla 40x60 cm. dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ürün mdf mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 1. Kalite suntalam malzemedir",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Katlanıyormu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,ürün ölçü ve özellikleri ürün açıklamalarda mevcuttur efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "En yüksek kaç cm olabiliyor ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün max.73 cm. yükseklikte kullanılabilir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "yüksekliği kaç cm net olarak??",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, yüksekliğini siz ayarlıyorsunuz efendim. En kısa 43 cm. ve en yüksek 73 cm. oluyor. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Masanın uzunlugu kaç cm?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün 40x60 cm. ölçülerindedir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "yükseklik ne kadar?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba en uzun 73 cm dir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "odamda ders çalışmak için kullanabilirmiyirim",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tabiki kullanabilirsiniz efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "en fazla kaç cm yükseklik olur",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba maksimum 73 cm olmaktadır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "En fazla ne kadar yükseliyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba öncelikle, en fazla 73 cm yüksekliktir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "en yüksek uzunluğu kaç. teşekkürler",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, min.43 cm. ve max. 73 cm. yükseklikte kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "En yuksek ayarı kac cm dır",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,73cm dir efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ölçüleri nedir",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba 40x60 cm boyutlarındadır. Detaylı bilgi açıklama kısmında yer almaktadır.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba. Sehpanın maksimum ve minimum yüksekliği kaç cm?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün min. 43 cm. ve max. 73 cm. olarak kullanılabilir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba. yatagın altina girecek kismin yerden yukseligi kac cm?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,ürün açıklamarında açıkça belirtilmiştir efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "katlanabilir özelliği var mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,yok efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ürün ceviz rengi mi acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, evet ceviz rengidir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kaç cm yükseliyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 73 cm e kadar yükselebiliyor. 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "iyi günler yükseklik en az kaç cm",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, min. 47 cm. dir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "masa yüzeyi kac cm tam olarak, ders calismak icin almak istiyorum da",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba 40x60 cmdir.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Yükseltmeden masanın boyu kaç cm",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba en düşük yükseklik 43 cm dir",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "hangi kargo ile gönderiyorsunuz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, Trenyol Ekspress ile gönderim sağlıyoruz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "açılıp kapanma özelliği var mıdır",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, kapanma özelliği yoktur, sadece yükseklik ayarlıdır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba en son yuksekliği kac cm",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba en son yüksekliği 73 cm dir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Elinizde 70x40 olanı var mı?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. 70x40 seçeneği mevcut değildir. Teşekkür eder iyi günler dileriz.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "İyi günler ders çalışmak için uygun mudur",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün 40x60 cm. ve taşıma kapasitesi 5 kg.dır. Bu ölçüleri baz alarak değerlendirebilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba en uzun hali kaç acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, en alçak 43 cm. ve en yüksek 73 cm. olarak kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba mufltfagim çok küçük bu boyutta masa bulamıyorum,mutfak masası yapsam uygun mudur acaba,saklanırdı en yüksek ayarda",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün taşıma kapasitesi 5 kg. dır , bunu dikkate alarak değerlendirmelisiniz efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Sorularım reddediliyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Bizim sistemsel olarak böyle bir yetkimiz bulunmamaktadır 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "dikiş makinasını tartar mı acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün taşıma kapasitesi 5 kg. dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ben yorumlardan tam olarak anlamadım en düşük seviye 43 santim en yüksek seviye 73 santim mi diyorsun ben 62 santimi ayarlamak istiyorum onu yapabilir miyim yoksa belirli santimlere göre mi ayarlı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, istediğiniz ölçüde kullanabilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba bu masanın yüksekliğinin daha kısa ve büyüklüğünün ise daha büyük yapılabilme imkanı var mıdır",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için renkler ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ayaklarında vidaları tutturmak için delik var mi ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün montaj kılavuzu ve gerekli tüm aparatları ile birlikte gelmektedir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Çam mı güzel sakramento mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, çam açık, sakramento ceviz rengidir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Antrasit rengi mevcut mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba paketlenmiş hali kaç kg dır?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün paket ağırlığı 4,8 kg. dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "sakremento ile çam arasında kalite farkı var mıdır",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Suntalam aynı kalitedir. Renk farkı vardır.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, masanın bacakları gri mi?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, siyah metaldir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba. Kenanları siyah bantlı mı?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "hayır değil efendim....478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "hangi kargo ile gönderim sağlıyorsunuz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, Trendyol Express ile gönderim sağlıyoruz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba genişlik 50 cm var mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba hangi kargo ile gönderiyorsunuz ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, TY Exp ile gönderim sağlıyoruz 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba yüksekliği ayarlanabiliyor mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün yükseklik ayarlıdır. En kısa 43 cm. ve en uzun 73 cm. olarak kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Kurulum için gerekli aletler neler?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün paketi içerisinde kurulum kılavuzu ve gerekli tüm aparatları ile birlikte gelmektedir. Ekstra bir malzemeye gerek yok efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "dikiş makinesi taşır mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,taşıma kapasitesi 5 kgdir ona göre sizler karar veriniz.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "dikiş makinası konabilir mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "taşımaz efendim....478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kendimiz mi montajlıyoruz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün demonte gelir, kendiniz kuruyorsunuz efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Antrasit rengi varmı?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için renkler ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürünün en yüksek hâli 73 cm yazıyor ama siz 63 cm demişsiniz yorumlarda. Hangisi doğru acaba?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,73cm efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba çocuk için alacam çocuk için ayarlanabilir mi bide beyaz rengi mevcut mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün sayfasında renkleri mevcuttur, taşıma kapasitesi 5 kg. dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "öğrenci evinde kpss ye çalışmak için almak istiyorum ders çalışılabilir mi üzerinde",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün ölçüleri 40x60 cm. ve taşıma kapasitesi 5 kg. dır. Sizin için yeterliyse değerlendirebilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kac kg tasir acaba. dikis makinesi kullanmaya uygun mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabs, ürün taşıma kapasitesi 5 kg. dır.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kolay gelsin ayaklarının boyu kaç cm acaba yatağımın altina giriyo mu diye sormuştum",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, yatak altına girecek olan ayak profil ölçüsü 25x35 mm.dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "İyi günler. Tekerleği veya tekerlekli modeli var mı? Veya ürünü aldıktan sonra ben kendim ilave tekerlek takabilir miyim? Teşekkürler",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,tekerlekli modeli yok ürünümüzün sonradan tekerlek eklemek mümkün değil.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba. boyu ayarlanabilir mi?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,ürün ölçü ve özellikleri ürün açıklamalarda mevcuttur efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "portatif mı yani katlanabilir mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün katlanır değildir, yükseklik ayarlıdır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "teşekkür ederim bacaklar rahat girer mi iki bacak boyu arası mesafe ne kadar acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "İki profil arasındaki aralık 475 mm. dir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar sunta ve ayak kalınlıkları dahil en kısa hali ve genişliği kaç CM dir ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün tablasının ölçüleri 40x60 cm.dir. En kısa hali 43 cm., en yüksek 63 ccm. dir. İyi akşamlar dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Katlanabilir mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ürün katlanmamaktadır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba yükseklik 63 mü 73 mü",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Sağlıklı yükseklik 63 cm.dir, tabiki 73 cm. e kadar uzatabilirsiniz ancak çok uçta olacağı için herhangi bir kıpırdama yapmaması ve sıkı şekilde vidalanması açısından 63 cm. daha sağlıklı olacağını söyleyebiliyoruz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba, sacramento ile atlantik çam olan arasında kalite farkı var mı acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sadece renk olarak fark olup, ürünlerimizin tümü aynı kalitedir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba iki ayağının arası kaç cm acaba?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 475 mm.dir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "sunta mı mdf mi acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürünler suntalamdır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ürünün GENİŞLİĞİ ürün bilgisi ve ürün özellikleri kısımında farklı farklı yazıyor. birinde 66 birinde 45. .. hangisini baz alacağız?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,ürünün genişliği 60cmdir,60x40 ölçülerindedir.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ürün sallaniyor sallanması normalmi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, vidalar iyi sıkıldığı taktirde sallanma sorunu yaşanmaz 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar mahalleme sadece Trendyol experess geliyor hangi kargo ile gönderim sağlarsınız şimdiden teşekkür ederim birde ben tek yaşıyorum tornavidasız matkapsız halledebilir miyim kurulumunu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, TY Express ile gönderilmektedir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar Sacramento ile Antik ağaç arasındaki reni farkı nasıl?Resimden anlayamadım Hangisi daha açık renktedir ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,sakromento rengi biraz koyup atlantik olan renk tonu daha açıktır.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar ürünün bacak ölçüleri dıştan dışa kaç cm dir? (üst sunta genişliği 60 cm, ayak genişliğini soruyorum)",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, iki ayak arası 475 mm.dir. Ürün ayakları 25x35mm . profildir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Sağlıklı akşamlar enini daha büyük yapabiliyormusunuz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için renkler ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Kaç kg taşır ve yerinden oynarmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba maks. taşıma kapasitesi 5 kg'dır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ders çalışmak için uygunmu sallanma yapmaz degilmi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, vidalar iyi sıkıldığı taktirde herhangi bir sallanma sorunu yaşanmaz 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "taşıma kapasitesi ne kadar acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün taşıma kapasitesi 5 kg'dır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Sallanma yapar mı?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Vidalar iyi sıkıldığı taktirde sallanma sorunu yaşanmaz 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürünün yüksekliği ayarlanabilir mi en yüksek ne kadar en düşük ne kadar istediğimiz ölçüye getirebilir miyiz?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "En düşük 42 en yüksek 73 cm",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "tekerlekli model var midir",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tekerlekli model mevcut değil efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ayak yuksekligi kac cm? yani kanepenin altina ayaklarinin girebilmesi icin kanepenin altinda kac cm bosluk olmasi gerektigini kestirmeye calisiyorum",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün profilleri 25x35 mm. dir. Yani yine en azından 3 cm. lik bir boşluk olması gerekir efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba yüksekliği ve eni ne kadar",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün ölçüleri 40x60 cm. dir. Yüksekliği ayarlanabilir olduğundan min. 43 cm. ve max. 73 cm. olarak kullanabilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba en kısa ve uzun hali ölçüsünü öğrenebilir miyim? Teşekkürler",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürünü en kısa 43 cm. ve en uzun 73 cm. kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "tabla ölçüsü ne kadar",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba 40x60 cm dir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba tekerlek eklenebiliyor mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürünlerimizde tekerlek bulunmuyor ama kendiniz istiyorsanız eklersiniz. İyi akşamlar dileriz.124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "en yüksek seviye 73 cm yazıyor fakat soru cevaplardan daha kısa olarak cevaplar verilmiş başka ürünler için mi o cevaplar.",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Son yükseklik 73 cm dir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba iyi günler. Ürün ebatlarını öğrenebilir miyim..",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,ürün açıklamalarında açıkça belirtilmiştir efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Maksimum kaç kilo taşıyabilir",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba efendim maksimum taşıma kapasitesi 5 kg'dır.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba ürün kaç kilogram ağırlık kaldırabilir acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün taşıma kapasitesi 5 kg.dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "9022346356 bu mudur",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, parça satışımız mevcut değildir. İyi günler dileriz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kurulum için neler gerekli?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba kurulum için gerekli olan alyan kutu içerisinde gönderlmektedir. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kenarları oval şeklinde yapabilme durumunuz var mı acaba.",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba. tekerlekli mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tekerlek özelliği mevcut değildir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba tek parça halinde geliyor değil mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ürün demonte şekilde gönderilmektedir.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Tekerlekli mi?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünlerimizde tekerlek mevcut değildir. İyi akşamlar dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba yuksekligi ayarlanabilirmi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, evet yükseklik ayarlı efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "tamam maas yatsın alıcam sıze guvenıyorum",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,sizler nasıl uygun görürseniz efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Üzerinde yemek yenir mi taşır mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba maksimum taşıma kapasitesi 5 kg'dır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kurylumu kendimuz rahatlikla tapabilirmiyuz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, içerisinden çıkan kılavuz ve alyan ile kolaylıkla kurulum yapabilirsiniz 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhabalar koltuğum yere yakın, yerle arası 5 cm. alt ayakları koltuğun altına girer mi?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, girer efendim. Profil ölçüsü 25x35 mm. dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürünün en yüksek hali 63 mü 73 cm mi? Farklı cevaplar verilmiş. Yüksekliği max nedir?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, en kısa 43 cm. ve en yüksek 73 cm. olarak kullanabilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürünün boyu ayarlanabiliyor mu ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün yükseklik ayarlıdır efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Altında plastik aksam var mı, parkeleri çize mi metal",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ÇİZMEZ EFENDİM...478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "739 ile 789lira ürün arasında ne fark vardır. Ağırlıkları nedir.teşekkür",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, modeller farklıdır, biri sunta ara kayıtlı biri metal ara kayıtlıdır. İkisinin de ağırlığı 5 kg'dır.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba, en yuksek 73cm diyorsunuz ama ben 65cm istiyorum. ayarlanabiliyormu istedigim ölçüde yüksekliği",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,evet sizler ayarlabilirsiniz açıklamada yazdığı gibi ayarlabilir.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Kaç kilograma kadar ağırlık taşıyabilir?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,max 5kgdir efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba ürün elle kuruma uygunmudur. yoksa kurulumda mobilya aleti kullanmak gerekiyor mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, kurulum için gereken tüm aparatlar beraberinde gönderilmektedir. İyi günler dileriz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürün cok ağır mı? Ürünün ağırlığı ne kadar?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün ağırlığı 4,5 kg.dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Yetıskın icin uygun değil sanırım boyu uzamıyor kısa",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürünü en kısa 43 cm. ve en yüksek 73 cm. boyunda kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ayakta kullanabileceğim bir masa istiyorum, yürüme bandı ile beraber kullanmak için. Uygun modeliniz hangisidir?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tüm masalarımızın yükseklikleri en fazla 73 cm. dir efendim. Sizin için uygun mu bilemedim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "şarjlı matkapla mı monte edilebiliyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün içerisinde montaj kılavuzu ve tüm aparatları ile birlikte gelmektedir. Ekstra hiç bir aparata ihtiyaç yoktur efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "atlantik çam rengi mi sakramento olanın ahşabımı daha açık renktedir koyu olsun istemiyorum hangisini almalıyım",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, Atlantik Çam rengimiz açık kahve tonlarında olup doğal ahşap görünümündedir. 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, bu üründen engelli yakınım için satın almak istiyorum ama yatağımız yerden çok yüksek değil. Yer ile yatak arasında ki profil yüksekliği kaç cm dir acaba?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba en düşük 47 cm, en yüksek 73 cm olmaktadır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba ürün yazıcı taşıyabilir mi? ağırlık kaldırma kapasitesi nedir?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,ürünün taşıma kapasitesi max 8-10 kgdir.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ceviz renk elinizde mevcut mu yoksa çam rengi mi oluyor hepsi.",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ceviz renk üretimimiz mevcuttur, hepsi çam rengi olmamaktadır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba görsellerde yükseklik en yüksek 73 cm görünüyor. Özelliklerde 73 cm görünüyor. Ancak sorulan sorularda yüksekliğin en yüksek 63 cm olarak belirtmişsiniz. Ürünün en yüksek boyu kaç cm dir?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, en yüksek 73 cm. olarak kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "eşime at desim belki depoyr goturduyse vakarim talep.olusturum.ama temin edilse bile zaten aynısı gelecekmsaglam degil",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürünle alakalı normalde bu şekilde bir dönüş almıyoruz, ürünümüz çok satan bir üründür ve kullanım alanına göre sağlamdır, kullanım kapasitesinin üzerinde kullanım sağlanmamalıdır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "tornavida ile montajı mümkün mü?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tornavidaya gerek yok, paket içerisinden çıkan alyan ile kolaylıkla kurulum yapabilirsiniz 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ürün paketlenmesi ile beraber kaç kg-dır?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 5,1 kg. dır . 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "İç cm yükseliyor acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sitede yazmaktadır.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "cam ve ceviz dediğiniz, ürünün rengi mi malzeme farkı mı var",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tek fark rengidir efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Masanın ahşap kısmının ölçüsü nedir 70x40 mı?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, yabla ölçüsü 40x60 cm. dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Bazı müşterilerin paylaştığı görsellerde siyah çerçeveli gibi. O şekilde seçebiliyor muyuz?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ortası atlantik gibi kenarları da siyah bantlıdır.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Anladım fakat hangi kargo ile gönderiyorsunuz?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba , Trendyol Ekspres ile gelecektir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "PTT ile gönderebilir misiniz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, TY Ekspress ile gönderilecektir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba en kisa ve en uzun olculeri nedir acaba? Daha onceki sorularda farkli cevaplar gordum. Cok tesekkurler",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, en kısa 43 cm. ve en uzun 73 cm. olarak kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ders çalışmaı için uygun olur mu yükseklik ayarı kayar mı ağırlık olunca",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün taşıma kapasitesi 5 kg. dır.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ek bir alet e ihtiyaç duymadan paketin içindeki lerle kurulumu yapabilir miyim",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, paket içerisinden çıkan kurulum kılavuzu ve alyan ile kolaylıkla kurulum yapabilirsiniz 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Kenarları oval olma şansı varmı acaba teşekkürler",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "tekerlekli ve tekerleksiz kullanılabilir mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, üründe tekerlek mevcut değildir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "farklı renklerde yok mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba öncelikle, çam ve beyaz rengi de mevcuttur 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ilk iki masanın ölçüsü aynı mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, açıklama kısmında tüm ürün özellikleri mevcuttur. 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba beyaz renk ile bu renk arasında ne gibi fark var?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, renk farkı var sadece 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "masa kullanılmadığı zaman katlanirmi yoksa hep acikmi kaliyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, masa katlanır değil efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sakremento renkte suntalam kısmın etrafı siyah mı acaba, yorumlardaki bazı fotoğraflarda siyah bazılarında değil gözüküyor. Daha önceden aldığım sakremento meşe rengindeki Ceramical çalışma masası ile renkleri uyuşur mu?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, şu an koyu kahve ve kenarları siyah şeritli efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, mobilyamın yerden yüksekliği çok az da, masanın ayağının kalınlığı ya da yerden yüksekliği kaç cm? Mobilyanın altına girer mi diye soruyorum",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba profil yüksekliği 35 mm'dir.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba, koltuğun altına giren ayakların uzunluğu kaç mm? koltuk ve zemin arasında 22mm lik bir bosluk var oraya girebilir mi öğrenmek için aoruyorum.",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, koltuk altına giren profil 25x35 mm. dir efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhabaalar ortaokul ogrencısı ders yapacak uygunmudur .koltukta veya sandalyeyle uyumku olurmu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,evet rahatlıkla kullanım sağlayabilir efendim ayrıca yükseklik alçaklık ayarıda yapılabiliyor.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar laptop ve kitap sığarmı ders çalışma masası yapmayı düşünüyorumda",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 40x60 cm. ölçülerindedir. Bu ölçülere göre değerlendirebilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Masanın yere değen kısmındaki metal ayağın uzunluğu ne kadar",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba 37 cm'dir. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "boyu ayarlanabilir mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün yükseklik ayarlıdır. Min.47 cm. ve max. 73 cm. olarak kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Mutfak fırınımı koymak istiyorum sağlam mıdır taşır mı acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, bu ürünün taşıma kapasitesi 5 kg.dır . Fırın tarzı eşyalarınız için MB1 tercih etmelisiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "mrb bu ürününun yükseklik ayarlama özelliği var mı ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, evet yükseklik ayarlanabilir özelliğe sahiptir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ahşap üst tablanın köşeleri ovalmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tabla köşeli ancak köşeler yuvarlatılmıştır.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürünün farklı boyutları mevcut mu?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kurulumu kolay mı acaba nasıl kuruyoruz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba kurulum klavuzu ile rahatlıkla kurabilirsiniz.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürünün boyunu nasıl ayarlıyoruz. cıvata sıkarak mi yoksa kademe delikleri mi var",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ayar vidasını sıkarak istediğiniz yükseklikte kullanıyorsunuz efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ceviz rengi mevcut mudur? Tşk",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sakramento ile aynı barkoda sahiptir, görseldeki gelir efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar kurulumunu yapabileceğimiz bir videomuz mevcut mu acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, video mevcut değil efendim, montaj kılavuzundaki adımları takip ederek kurulumu tamamlamalısınız. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhhaba yere değen profilin ebatları kkaça kaç.kotuğun altına girecekmi onun için öğrenmek istiyordum",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba profiller 25x35 mm'dir.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "iyi günler atlantik çam rengini göndermeniz mümkün müdür?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba seçtiğiniz renk gönderilebilmektedir. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "6 yas boyu 120 cm cocuk icin rahat kullanabilirmiyiz boyutunu ayarliyabilirmiyiz ders yaparken kullanmak icin",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 73 cm e kadar yükseltebilirsiniz",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba. Bazı cevaplarda 63 cm bazılarında 73 cm yazılmıs. Net bilgi alabilir miyiz? en yüksek hali kac cm?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,en yüksek hali 73cmdir efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhabalar kolay gelsin. ürünü en düşük seviyeye getirdiğimizde yerden yüksekliği kaç cm oluyor acaba? iki farklı şekilde kullanmam gerekiyor da...",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün en düşük seviyede 43 cm. dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba, bilgisayarım için alicam ama mouse düzgün çalışır mi yani yüzeyi tırtıklı gibi mi yoksa düz, pürüzsüz mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sadece atlantik çam rengi tırtıklıdır ki onda da çok rahat çalışırsınız, diğer renkler zaten tırtıklı değil efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba bu şekildeki masanın daha büyük boyutlu olanı mevcut mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, bu modelde başka ölçülere ait masamız bulunmamaktadır",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar urun sallanma yada esmeme yapiyor mu? calusma konforu acisindan sormak istedim",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün doğru kurulumda hiç bir sorun çıkarmaz efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Yükseklik ayarlanabiliyor mu?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sorunuzdaki görselde bulunan ürün yükseklik ayarlıdır. SP3 model ise sabittir.124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Montaj ekipmanları içerisinde mi ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün tüm aparatları ve montaj kılavuzu ile birlikte gönderilmektedir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, Koltuğun altına giren yerin demirin kalınlığı yükseklik ölçüsü kaç cm'dir?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün profili 25x35 mm.dir efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürün görsellerdekine göre çok büyük duruyor en alt seviyeye getirdik ama düşürmek için farklı bir yöntem var mıydı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürün açıklama kısmında tüm ölçüler mevcuttur 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "mrb. Yukseklik max ne kadar oluyor?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, max yükseklik 63 cm. dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba sakramento rengi için yorumlarda iki ayrı renk gelmiş şeklinde gözüküyor hangisini gönderiyorsunuz acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, koyu renk ve kenarları siyah bantlıdır efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "genişlik 100 120 cm olabilir mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için renkler ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba. En yüksek ayarda 66cm mi oluyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,en yüksek durumda 73 cm oluyor.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba. Ürün paketleme dahil kaç kq?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün paket ağırlığı 4,8 kg. dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba genisligi ve uzunlugu daha cok olan urununuz var mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için renkler ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ayakları baza altına itildiğinde sığar mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün profilleriz 25x35 mm.dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "80x40 olarak mevcut mu? Bilgisayar için alacağım 60 çok küçük olacak.",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Siyah ayak ahşap yeri beyaz varmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba; beyaz modelimiz mevcut.386 https://www.trendyol.com/ceramical/spa-yukseklik-ayarli-laptop-sehpasi-beyaz-p-60884571?merchantId=471988&filterOverPriceListings=false",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, paketin çekisi kaç kilo?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün paket ağırlığı 4,8 kg. dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba tartarmısız kaç kg?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün ağırlığı 4.5 kg. dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "laptop ve klavye aynı anda sığar mı katiplige hazırlanıyorum onun için alacağım?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,rahatlıkla sığar efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kurulum nasıl yapılır",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, kurulumu son derece basittir. Montaj kılavuzu ve gerekli tüm aparatları ürün ile birlikte gönderilmektedir. İyi akşamlar dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "uzunluğu nedir tahtanin",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün 40x60 cm.dir. Yüksekliği min. 47 ve max.73 cm.dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ben 2 çocuğum için 2 tane almak istiyorum. İç içe girebilir mi? Veya iç içe girebilen modelleriniz var mı?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ayak aralıkları aynı olduğundan iç içe girmez efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Demiri eğilmiş fotoğraflar var. Bu konuda ciddi şüphe oluşturuyor. şahsen alıcaktım ama paramı çöpe atmak istemiyorum. Bu konuda bi çalışma yapdınız mı? Garanti durumu nedir?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, söz konusu üründe bu tarz bir eğilme yaşanmaz efendim. Taşıma kapasitesi 5 kg. dır. Kapasitesi üzerinde yük bindirilmediği sürece sorunsuzdur.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Koyu ceviz rengi almam gerekiyor, koyu ceviz rengi var mıdır ? Yapabilir misiniz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, en koyu rengimiz görseldeki renktir efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kardeşim ürün daha elime geçmedi ama tekerlek takmak istesem olurmu. veya resmini atsanız alsam olurmu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba tekerlek takmanıza uygun tasarlanmamıştır. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Küçük duruyor ders çalışmak için iyi mi sizce iki kitap sığar mı 😅",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün 40x60 cm. ölçülerindedir. Bu ölçüyü baz alarak değerlendirebilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Yerden yukseklık olarak en dusuk 43 cm mı mesela daha asagı ayarlanamazmı ornegın 35 cm ??",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba öncelikle, en düşük 43 cm dir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kanepenin ayak yüksekliği 7 cm altına girermi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba evet gidecektir.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Hiç yükseltme yapmadığımızda yüksekliği 43 cn mi ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 47 cm. dir efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Masanın boyu ayarlanabiliyor mu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürünümüzün başlığından da anlaşılacağı üzere ayarlanabilir özelliği mevcuttur. 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "urunun yüksekliyi 100 cm olurmu namaz kilmak icin alacagim tesekkur",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kurulum için ne gerekli tornavida yeterli mi ? yeterli ise t mi yıldız tornavida mi gerekli",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tüm kurulum aparatları ürün ile birlikte gelmektedir. Ekstra bir alete gerek yoktur. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "vidanın denk geldiği yerlerde delik olmadığı için ne kadar güçlü sıksak da mouse kullanırken kolumuzu koysak kayıyor,bu normal mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, üründe vidanın karşılığı delik değil sıkışarak sabitlenmektedir. Kolunuzu koyduğunuzda kaymamalı, vidaları biraz daha sıkmalısınız.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kurulumu kolay mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, kurulumu son derece kolay efendim, ürün montaj kılavuzu ve gerekli tüm aparatları ile birlikte gönderilmektedir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Kaç kg acaba yatağın üzerinde alsak olur mu ki",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sorunuz tam anlaşılmadı ama ürün ağırlığı 4,6 kg.dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "hangi kargo firması ile gönderim yapıyorsunuz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba , Trendyol Ekspress ile gelecektir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "yukarıda yükseklık 73 cm yazıyo ama siz yorumlarda 63 yazmıssınız bunun boyu tam olarak kaç",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, en yüksek 73 cm. ancak 63 cm. de kullanmanız çok daha sağlıklı olur. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Montajda matkap kullanmam gerekir mi yoksa tornavida ile yapabilir miyim? Ona göre montaj hizmeti alacağım.",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, matkap veya tornavida kullanılnıyor efendim, vidaları alyan ile sıkılıyor ve o da ürünle birlikte geliyor zaten.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "50 ye 70 kağıt sığan boyutu varmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sığmaz efendim, ürün 40x60 cm. ölçülerindedir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ahşap rengi olanın yüzeyi vernikli mi, vernikli değilse pürüzsüz mü",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün yüzeyi pürüzsüzdür. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "İyi geceler merhaba, ürün atlantik çam modeliyle aynı ebatlarda mı ? Yoksa atlantik çam modeliniz daha mı büyük? Teşekkürler",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, Atlantik Çam modeli de ayarlı ve aynı ebatlardadır efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhabalar kenarları siyah olan gelir değil mi bazi yorumlarda farklı gördüm",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün kenarı siyah bantlı olarak gönderilecektir. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "tekrar sökebilir mıyız vidaları",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tabiki sökebilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Genişliği 70 cm olan varmı acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "yere yapisiyor mu ben laptopta oyun oynuyorum oyun oynarken sallanma titreme vs oluyormu masada",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün sallantı yapmıyor efendim ancak ekstra bir yapışma özelliği yoktur.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürünü videolu olarak yollarmisiniz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün videosu mevcut değildir. Montaj kılavuzundaki adımları takip ederek kurulumu tamamlayabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "ürünün yüksekliği en fazla kaç santim ayarlanıyor? tüm net ölçüleri yazar mısınız? iyi çalışmalar.",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün tablası 40x60 cm. dir. En alçak 43 cm. ve en yüksek 73 cm. olarak kullanabilirsiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Üstteki suntayıda full siyah renk istiyorum yaparmısınız",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba sakramento dediğiniz renk ile atlantik çam arasındaki fark nedir, ben en açık renk olanını istiyorum, hangisini almam gerekir",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, kahve tonlarındaki en açık renk Atlantik Çam rengidir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "masanın yüzeyi düz mü yoksa tırtıklar var mı? Teknik resim için kullanacağım çizgi çekerken düz olması gerekiyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, sadece atlantik çam tırtıklıdır efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "birde ayaklara tekerlek eklenir mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "en yüksek ve en alçak cm si ile en boy ölçülerini yazar mısınız. sorularda farklı cevaplar verilmiş emin olmak istedim",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürünü en alçak 45 cm. ve en yüksek 73 cm. olarak kullanabilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba Yüksekliğe ilgi duyuyorum. Açık pozisyonda kaç santimetre? Her yere farklı ve farklı cevaplar yazmışsınız ama boyunu bulamadım. Açıldığında yüksekliği kaç cm?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün en alçak 43 cm. ve en yüksek 73 cm. olarak kullanılmaktadır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Sadece ayakları satın alabiliyor muyuz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, parça satışımız mevcut değildir.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "dikiş masası olarak kullanıla bilinirmi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,hayır efendim taşıma kapasitesi max 5 kgdir.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürün kaç kilo?)",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün ağırlığı 4,6 kg.dır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba 50 cm olarak ayarlayabilir miyiz ürünü",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,evet efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Dikiş makinam 7 kg onun için uygunmu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün taşıma kapasitesi 5 kg.dır. İyi günler dileriz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "üzerinde yazı yazacağım da baskıya dayanabilir mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,elbette dayanır efendim ayrıca yükselik ayarıda mevcuttur.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba yanıtladığınız sorulara baktım fakat max yükseklik olarak bazılarına 73 bazılarına 63 demişsiniz hangisi doğru?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, son yükseklik 73 cm dir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "kolay gelsin masa ile beraber gönderdiğiniz alyan anahtar ölcüsü boy ve genişlik kaç mm ve cm yazarmisiniz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba alyan ölçüsü metrik 6dır efendim. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba. yere paralel olup koltuk altina giren demirin yüksekliği nedir acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 25x35 mm.dir efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, 40*70 cm ürününüz var mıdır?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için renkler ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ürün katlanabilir özelliği varmi alt tarafı bükülüyor mu mesela",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, üründe katlanma özelliği mevcut değil efendim, sadece yükseklik ayarlıdır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "direksiyon seti bagligcam masaya kullanışlı olurmu tartarmi yani.",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Mrhaba, ürünün taşıma kapasitesi 5 kg.dır. Fazlasını yüklenmemelisiniz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba kaç kilo taşır acaba, mutfağımda kullanmak istiyorum",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,ürün ölçü ve özellikleri ürün açıklamalarda mevcuttur efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Kurulum için bir video vs mevcut muydu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "İnternet ortamında kurulum videosu mevcuttur.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, yükseklik ayarı için iç demirde delikler mi var yoksa sıkıştırarak mı yüksekliği ayarlanıyor?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, dış ayaklardaki vidayı sıkıştırarak yüksekliğini ayarlayabilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba iyi akşamlar nekadr ağırlık kaldırabilir",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba maksimum 5 kg. taşıma kapasitesi vardır.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaaba metal rengi gold olarak varmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba bu ürünü engelli bir yakınım için alacağım yatağı yerden çok yüksek değil 3 cm, acaba profilin yerde olan ayağı kaç santim yüksekliktedir?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba profil yüksekliği 25 mm'dir. 386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "koltukta değilde yerde otururken rahat kullanılır mı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "evet rahatlıkla kullanır.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "urunun maksimum ayarlanabilenen yuksekligi ne ogrenebilir miyim yatagim ideal yataklardan daha yuksek",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, maksimum yüksekliği 73 cm. dir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ürünün tahta kısmı yanları ve uzunluğu kac cm tam olarak net bir bilgi verebilirmisiniz boyu değil! Ürünün üst tabakasının yan ve uzunluğu!",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,40x60cmdir.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba yüzey ölçüleri nedir en-boy",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün 40x60 cm. ölçülerindedir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "boyu ayarlanabilir mi ?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün yükseklik ayarlıdır efendim. En alçak 43 cm. ve en yüksek 73 cm. olabiliyor. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, demonte halde gelecek olan kutunun ebatı büyük boy bir valize sığacak şekilde mi ve kutunun ağırlığı ne kadar acaba?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba,ürün ölçü ve özellikleri ürün açıklamalarda mevcuttur efendim.478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba 3 cm gizli ayaklı koltuk için uygun mu?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba profilin yerden yüksekliği 2.5 cm'dir. Halı kullanıyorsanız uygun olmayacaktır.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "70 ×50 en olarak varmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ürünler fabrikasyon üretim olduğu için model, renk ve ölçüler standarttır. Teşekkür eder iyi günler dileriz.",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "69 cm lik yere sığarmı ve ders çalışmak için alaiyorum olurmu büyük sandalye le oturucam",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün 40x60 cm. ölçülerindedir. Min. 43 cm. ve max. 73 cm. olarak kullanabilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba matkap gerekiyor mu acaba ? Yoksa direk alıp kurabilir miyim?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, paket içerisinden çıkan alyan ile kolaylıkla kurulum yapabilirsiniz, herhangi bir el aletine gerek yoktur. Teşekkür ederiz. 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Masanın genişlik olarak boyutu bulunmakta mı? (örnegin pc çalışma masası gibi..)",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün 40x60 cm. ölçülerindedir efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Monte etmek için matkap gerekiyor mu? Evimde böyle malzemeler yok alacağım ama nasıl monte edilir kendi kendime bilmiyorum",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün kurulum için gerekli tüm aparatları ve montaj kılavuzu ile birlikte gönderilmektedir efendim. İyi günler dileriz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Atlantik çam ve sakramento arasındaki renk veya desem farkı nedir? Fotoğraflardan tam anlaşılmıyor",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Atlantik Çam kahve tonlarındaki en açık renktir, sakramento ise iki tondur ve koyu renktir ayrıca kenarları siyah bantlıdır. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba yükseklik 73 diyor 80 varmı elinizde baZı soruları okudum en faZla 63 demişsiniz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, en son yükseklik 73 cm dir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba masa ölçüleri ve yüksekliği nedir acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün 40x60 cm. ölçülerine sahiptir. En alçak 43 cm. ve en yüksek 73 cm. olarak kullanabilirsiniz.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "yüksekliği ayarlarken vida gibi döndürmek mi gerekiyor ayarı döndürünce mi açılıyor yoksa çekince mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "vidayla efendim...478",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Selamünaleyküm abi bu",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, nasıl yardımcı olabiliriz? 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhabalar üst tablası sunta mı mdf mi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, suntalam efendim.. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhabalar, ayak demir kalınlığı kaç santimdir? Hasta yatağı için alacağım ama yattığı yatak yere yakın olduğu için soruyorum. Yatağın altına demiri sığar mı diye. Ayak demirlerinin kalınlığını net olarak söyleyebilir misiniz?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, ürün profilleri 25x35 mm. efendim. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Tekerlekli ürünmü acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, tekerlek özelliği mevcut değildir 113",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Hocam montaj için tornavida yeterli mi alyan anahtarı da gerekir mi?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba, montaj için gerekli tüm aparatlar birlikte gönderilmektedir. 124",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nYükseklik\n73 cm\nGenişlik\n60 cm\nDerinlik\n40 cm\nRenk\nKahverengi\nMateryal\nSuntalam\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba koltuğun önünde ders çalışılır mı yükseklik olarak",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba maksimum yükseklik 73 cm olmaktadır.386",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ]
+]

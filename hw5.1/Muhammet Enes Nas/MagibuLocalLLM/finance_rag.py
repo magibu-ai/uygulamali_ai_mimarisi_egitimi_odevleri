@@ -1,0 +1,142 @@
+"""Finans bilgi bankasi uzerinde RAG: parcalama, vektor arama ve TOPRAKLANMIS cevap.
+
+Bu dosyanin tek bir amaci var: model, sadece bilgi bankasinda yazani soylesin.
+Bunu iki kapi ile saglariz:
+
+    1. ARAMA KAPISI     -> benzerlik esigin altindaysa LLM hic cagrilmaz.
+    2. URETIM KAPISI    -> LLM'e "sadece bu metinlerden cevapla" talimati verilir.
+
+Ikisinden biri gecilemezse cevap: REFUSAL ("Bilmiyorum ...").
+
+Neden bu kadar katiyiz? Cunku finans sorularinda uydurulmus bir tanim, uydurulmus
+bir hava durumundan cok daha pahaliya mal olur.
+"""
+
+import chromadb
+
+import config
+import ollama_client
+
+# Bilgi bulunamadiginda verilecek sabit cevap.
+REFUSAL = "Bilmiyorum — bu bilgi finans bilgi bankasinda bulunmuyor."
+
+SYSTEM_PROMPT = f"""Sen bir finans egitim asistanisin.
+
+Kurallar:
+1. SADECE asagida verilen bilgi parcalarindaki bilgiyi kullan.
+2. Genel finans bilgini KESINLIKLE kullanma. Metinde yoksa, senin icin yoktur.
+3. Parcalar soruyu cevaplamaya yetmiyorsa, aynen su cumleyi yaz ve baska hicbir sey ekleme:
+{REFUSAL}
+4. Cevabini Turkce, kisa ve sade yaz.
+5. ASLA "al", "sat", "yatirim yap" gibi tavsiye verme. Sadece kavrami acikla.
+"""
+
+
+def chunk_text(text: str, size: int = 220, overlap: int = 40) -> list[str]:
+    """Uzun metni, uclari birbirine binen kelime pencerelerine boler.
+
+    Bindirme (overlap) sayesinde bir cumle tam iki parcanin arasina dusup kaybolmaz.
+    """
+    words = text.split()
+    if not words:
+        return []
+    step = size - overlap
+    chunks = []
+    for start in range(0, len(words), step):
+        window = words[start : start + size]
+        if window:
+            chunks.append(" ".join(window))
+        if start + size >= len(words):
+            break
+    return chunks
+
+
+def get_collection(embed_key: str = config.EMBED_MODEL):
+    """Secilen embedding modeline ait Chroma koleksiyonunu acar/olusturur.
+
+    Her model icin AYRI koleksiyon kullaniriz: iki modelin vektorleri farkli
+    uzaylarda yasar, karistirilirsa arama sonuclari anlamsiz olur.
+    """
+    client = chromadb.PersistentClient(path=config.DB_PATH)
+    return client.get_or_create_collection(
+        name=f"finans_bilgi_{embed_key}",
+        metadata={"hnsw:space": "cosine"},  # mesafe = 1 - kosinus benzerligi
+        embedding_function=None,            # vektorleri biz uretiyoruz (Ollama ile)
+    )
+
+
+def search(question: str, embed_key: str = config.EMBED_MODEL, k: int = 4) -> list[dict]:
+    """Soruyu vektore cevirip en yakin k parcayi getirir."""
+    collection = get_collection(embed_key)
+    if collection.count() == 0:
+        return []
+
+    query_vector = ollama_client.embed([question], embed_key, kind="query")[0]
+    result = collection.query(
+        query_embeddings=[query_vector],
+        n_results=min(k, collection.count()),
+        include=["documents", "metadatas", "distances"],
+    )
+
+    hits = []
+    for text, meta, distance in zip(
+        result["documents"][0], result["metadatas"][0], result["distances"][0]
+    ):
+        hits.append(
+            {
+                "text": text,
+                "title": meta.get("title", "-"),
+                "url": meta.get("url", "-"),
+                "source": meta.get("source", "-"),
+                "similarity": 1.0 - distance,
+            }
+        )
+    return hits
+
+
+def answer_finance(question: str, embed_key: str = config.EMBED_MODEL, k: int = 4) -> dict:
+    """Finans kavram sorusunu sadece indekslenmis bilgi bankasina dayanarak cevaplar."""
+    hits = search(question, embed_key, k)
+
+    # --- 1. KAPI: arama ---
+    # Hicbir parca esigi gecemediyse LLM'i hic cagirmayiz; uyduramaz.
+    # Esik, kullanilan embedding modeline gore degisir (bkz. ollama_client.EMBED_MODELS).
+    threshold = ollama_client.EMBED_MODELS[embed_key]["min_similarity"]
+    relevant = [h for h in hits if h["similarity"] >= threshold]
+    if not relevant:
+        return {"answer": REFUSAL, "sources": [], "grounded": False}
+
+    # --- 2. KAPI: uretim ---
+    context = "\n\n".join(
+        f"[{i}] {h['title']}\n{h['text']}" for i, h in enumerate(relevant, start=1)
+    )
+    message = ollama_client.chat(
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": f"BILGI PARCALARI:\n{context}\n\nSORU: {question}"},
+        ],
+        temperature=0.0,  # yaraticilik yok, sadece metne sadakat
+    )
+    answer = (message.get("content") or "").strip() or REFUSAL
+
+    # Model "Bilmiyorum" dediyse kaynak gostermenin anlami yok.
+    grounded = REFUSAL.split("—")[0].strip().lower() not in answer.lower()
+
+    # Ayni baslikdan birden fazla parca gelmis olabilir; kaynak listesinde
+    # her baslik bir kez, en yuksek benzerlik skoruyla gorunsun.
+    sources: list[dict] = []
+    if grounded:
+        seen: set[str] = set()
+        for hit in relevant:  # relevant zaten benzerlige gore sirali
+            if hit["title"] not in seen:
+                seen.add(hit["title"])
+                sources.append(
+                    {
+                        "title": hit["title"],
+                        "source": hit["source"],
+                        "url": hit["url"],
+                        "similarity": round(hit["similarity"], 3),
+                    }
+                )
+
+    return {"answer": answer, "sources": sources, "grounded": grounded}

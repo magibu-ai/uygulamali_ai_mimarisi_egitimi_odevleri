@@ -1,0 +1,13 @@
+unsloth
+gliner
+gliner2
+torch
+transformers
+datasets
+peft
+trl
+seqeval
+matplotlib
+pandas
+python-dotenv
+huggingface_hub

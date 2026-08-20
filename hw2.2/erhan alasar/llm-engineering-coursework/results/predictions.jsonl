@@ -1,0 +1,500 @@
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "476cfa6993af478b", "section": "YGS Denemeleri", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "9e98929c6dc382e7", "section": "Adalet", "expected": "D", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "3c56f6e75364a7d8", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "C", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "cccf765afc8b4def", "section": "KPSS Denemeleri", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "009b6973c9d39897", "section": "Aşçılık", "expected": "E", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "6dd191466c35409b", "section": "TUS", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "3818872b1bbcdf2f", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "09e4a1dbb413ab92", "section": "Emlak ve Emlak Yönetimi", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "883498b75b2e8bf2", "section": "Tarih", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "7938832a61421f4d", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "19e096980666fc9f", "section": "Lojistik", "expected": "E", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "64975910d94f6f1a", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "d283b51c40c6cc24", "section": "Özel Koruma ve Güvenlik", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "5a5989d62a42da81", "section": "Aşçılık", "expected": "A", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "3e65e7c1080db5ca", "section": "KPSS Denemeleri", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "d4ae50d01f36892f", "section": "Bankacılık ve Sigortacılık", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "cc2b1f58aa7af58c", "section": "Dış Ticaret", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "6ec614761155e641", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "0eafb1219024ffb0", "section": "Çağrı Merkezi Hizmetleri", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "ba67448f22f211a3", "section": "Adalet", "expected": "C", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "b95e6201a35f2e30", "section": "Aşçılık", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "b0995131080336be", "section": "Adalet", "expected": "B", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "a7ab79ed68fa175e", "section": "Uluslar Arası İlişkiler", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "8c69cfd8ef16390c", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "3799066244aef2d8", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "2cd8c7d652d932ad", "section": "Tarih", "expected": "D", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "617e223cf868620b", "section": "Sağlık Kurumları İşletmeciliği", "expected": "C", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "ca424e424516e8c4", "section": "Sağlık Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "cf94b247cf1a2913", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "10f5cba664667dea", "section": "KPSS Denemeleri", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "105d92b0e1431489", "section": "Bankacılık ve Sigortacılık", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "6d9fd53e1a6c6cde", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "2d97a26afaff9bf9", "section": "Adalet", "expected": "E", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "3573a39dafe1e817", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "77fcb289c1a2d781", "section": "İşletme Yönetimi", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "49c1ef3b81f4d9f5", "section": "İlahiyat", "expected": "C", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "8623a43fb523ecf3", "section": "Adalet", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "1f5cfc987661089e", "section": "Adalet", "expected": "D", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "81f7899932a4765e", "section": "TUS", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "7f16495d12b97016", "section": "İlahiyat", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "aa5b428a2df33a4e", "section": "İlahiyat", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "0c1f6f8ccb174c7e", "section": "Adalet", "expected": "C", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "a3153333c7cd3eb9", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "1a4c13e2b20b35c2", "section": "Muhasebe ve Vergi Uygulamaları", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "88267e771c78a566", "section": "İşletme Yönetimi", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "2973e47cf324a442", "section": "TUS", "expected": "E", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "7bfb68f51f576ca9", "section": "Özel Koruma ve Güvenlik", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "c4506e4964ef6658", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "90840329be71e8d5", "section": "Laborant ve Veteriner Sağlık", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "9eac5fd7fca5a7a7", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "354f0dbcb93eefd9", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "c37b939d34522de1", "section": "Adalet", "expected": "D", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "541aa119f106a8dc", "section": "TUS", "expected": "C", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "6c667494232dca45", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "11bd05b4ee31cab0", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "e925500d3241a456", "section": "Bankacılık ve Sigortacılık", "expected": "A", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "455ee25ef6837902", "section": "TUS", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "5612c5baf3886b24", "section": "Adalet", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "a39460f8860ebe41", "section": "Çağrı Merkezi Hizmetleri", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "bd507f393060295a", "section": "Çocuk Gelişimi", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "3dda612f7697fe73", "section": "Sağlık Kurumları İşletmeciliği", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "5a4f27fd185b95de", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "aac547499c728701", "section": "Dış Ticaret", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "b0fdd648c43a582f", "section": "Adalet", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "d5a862546ed6f8ee", "section": "TUS", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "09e132a8a9d4e36c", "section": "Çağrı Merkezi Hizmetleri", "expected": "C", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "35173769db7a2d5d", "section": "YGS Denemeleri", "expected": "E", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "efde01558c5db326", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "d0d067195fb94b1e", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "105673630348968e", "section": "Emlak ve Emlak Yönetimi", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "cda34ea7c5292cbe", "section": "Aşçılık", "expected": "B", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "fa404007af0a72eb", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "c807c72f21b5ce60", "section": "Felsefe", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "d42805d54446f64f", "section": "Dış Ticaret", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "57fb2414ea7d5314", "section": "Dış Ticaret", "expected": "A", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "7a0171ba4a3cf56f", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "E", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "57108e313b36b7f4", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "d536ae25e2119b8d", "section": "Elektrik Enerjisi Üretim,İletim ve Dağıtımı", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "7902698f39394a16", "section": "YGS Denemeleri", "expected": "A", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "8cb09efce1c450b8", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "5999afddf90103ad", "section": "Adalet", "expected": "A", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "7beabbfb313b154e", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "c80e06d3906732f8", "section": "Aşçılık", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "e5baac4c99d73d84", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "48e9a6fbb886ee7a", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "7202cddd1437b27b", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "0b38633d14e573ab", "section": "Adalet", "expected": "A", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "0dd78dda4689c2fb", "section": "Adalet", "expected": "D", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "461a6fe0ed7dfdce", "section": "Adalet", "expected": "B", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "69555b9009c30eb0", "section": "Türk Dili ve Edebiyatı", "expected": "A", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "2a59b0f4e7c6e729", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "11aa3dfc6ed9706e", "section": "Adalet", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "0c5b2d966c6f74a4", "section": "KPSS Denemeleri", "expected": "D", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "ed7adb6e5d3bc337", "section": "Aşçılık", "expected": "C", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "4b81f0aa894c4679", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "C", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "883948bf0cc1f88c", "section": "Aşçılık", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "1c1eaf1fa641bb22", "section": "Adalet", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "5faff82a119fa2ec", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "6269f360c768fd22", "section": "Aşçılık", "expected": "D", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "LangUsta-MCQ-Letter-LoRA", "id": "7d5df8ef8eb16f4b", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "476cfa6993af478b", "section": "YGS Denemeleri", "expected": "D", "predicted": "B", "raw_output": "B: (2", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "9e98929c6dc382e7", "section": "Adalet", "expected": "D", "predicted": "B", "raw_output": "B: Gün y", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "3c56f6e75364a7d8", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "C", "predicted": "B", "raw_output": "B: Dağı", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "cccf765afc8b4def", "section": "KPSS Denemeleri", "expected": "C", "predicted": "B", "raw_output": "B: Sivas", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "009b6973c9d39897", "section": "Aşçılık", "expected": "E", "predicted": "B", "raw_output": "B: Menu Mali", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "6dd191466c35409b", "section": "TUS", "expected": "A", "predicted": "B", "raw_output": "B: Ure", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "3818872b1bbcdf2f", "section": "Adalet", "expected": "B", "predicted": "B", "raw_output": "B: PDF", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "09e4a1dbb413ab92", "section": "Emlak ve Emlak Yönetimi", "expected": "E", "predicted": "B", "raw_output": "B: İske", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "883498b75b2e8bf2", "section": "Tarih", "expected": "E", "predicted": "E", "raw_output": "E: Grup", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "7938832a61421f4d", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "C", "raw_output": "C: Hare", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "19e096980666fc9f", "section": "Lojistik", "expected": "E", "predicted": "C", "raw_output": "C: Okul", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "64975910d94f6f1a", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "B", "raw_output": "B: Shen K", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "d283b51c40c6cc24", "section": "Özel Koruma ve Güvenlik", "expected": "D", "predicted": "B", "raw_output": "B: Maliy", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "5a5989d62a42da81", "section": "Aşçılık", "expected": "A", "predicted": "B", "raw_output": "B: 1", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "3e65e7c1080db5ca", "section": "KPSS Denemeleri", "expected": "A", "predicted": "C", "raw_output": "C: Özgü", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "d4ae50d01f36892f", "section": "Bankacılık ve Sigortacılık", "expected": "E", "predicted": "B", "raw_output": "B: Alacak", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "cc2b1f58aa7af58c", "section": "Dış Ticaret", "expected": "B", "predicted": "E", "raw_output": "E: Makine", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "6ec614761155e641", "section": "Adalet", "expected": "A", "predicted": "B", "raw_output": "B: İpt", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "0eafb1219024ffb0", "section": "Çağrı Merkezi Hizmetleri", "expected": "D", "predicted": "B", "raw_output": "B: Kâ", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "ba67448f22f211a3", "section": "Adalet", "expected": "C", "predicted": "B", "raw_output": "B: Hiper", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "b95e6201a35f2e30", "section": "Aşçılık", "expected": "C", "predicted": "C", "raw_output": "C: Abon", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "b0995131080336be", "section": "Adalet", "expected": "B", "predicted": null, "raw_output": "Francis Hutches", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "a7ab79ed68fa175e", "section": "Uluslar Arası İlişkiler", "expected": "E", "predicted": "B", "raw_output": "B: Simet", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "8c69cfd8ef16390c", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "D", "predicted": "B", "raw_output": "B: Asya", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "3799066244aef2d8", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "B", "raw_output": "B: Sade", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "2cd8c7d652d932ad", "section": "Tarih", "expected": "D", "predicted": "B", "raw_output": "B: Salg", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "617e223cf868620b", "section": "Sağlık Kurumları İşletmeciliği", "expected": "C", "predicted": "B", "raw_output": "B: Gidd", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "ca424e424516e8c4", "section": "Sağlık Yönetimi", "expected": "B", "predicted": "B", "raw_output": "B: Sağlık ek", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "cf94b247cf1a2913", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "B", "raw_output": "B: Satış", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "10f5cba664667dea", "section": "KPSS Denemeleri", "expected": "C", "predicted": "B", "raw_output": "B: MGK", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "105d92b0e1431489", "section": "Bankacılık ve Sigortacılık", "expected": "B", "predicted": "C", "raw_output": "C: Turiz", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "6d9fd53e1a6c6cde", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "B", "raw_output": "B: 1", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "2d97a26afaff9bf9", "section": "Adalet", "expected": "E", "predicted": "C", "raw_output": "C: Taş", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "3573a39dafe1e817", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "B", "raw_output": "B: Paris", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "77fcb289c1a2d781", "section": "İşletme Yönetimi", "expected": "B", "predicted": "B", "raw_output": "B: Eş", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "49c1ef3b81f4d9f5", "section": "İlahiyat", "expected": "C", "predicted": "B", "raw_output": "B: Hasano", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "8623a43fb523ecf3", "section": "Adalet", "expected": "E", "predicted": "C", "raw_output": "C: Rekl", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "1f5cfc987661089e", "section": "Adalet", "expected": "D", "predicted": "B", "raw_output": "B: Dolay", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "81f7899932a4765e", "section": "TUS", "expected": "E", "predicted": "B", "raw_output": "B: Hipo", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "7f16495d12b97016", "section": "İlahiyat", "expected": "A", "predicted": "B", "raw_output": "B: I-", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "aa5b428a2df33a4e", "section": "İlahiyat", "expected": "B", "predicted": "E", "raw_output": "E: Objekt", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "0c1f6f8ccb174c7e", "section": "Adalet", "expected": "C", "predicted": "B", "raw_output": "B: Rind", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "a3153333c7cd3eb9", "section": "Adalet", "expected": "E", "predicted": "B", "raw_output": "B: Vak", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "1a4c13e2b20b35c2", "section": "Muhasebe ve Vergi Uygulamaları", "expected": "E", "predicted": "B", "raw_output": "B: Eş", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "88267e771c78a566", "section": "İşletme Yönetimi", "expected": "D", "predicted": null, "raw_output": "Antalya'n", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "2973e47cf324a442", "section": "TUS", "expected": "E", "predicted": "E", "raw_output": "E: Oto", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "7bfb68f51f576ca9", "section": "Özel Koruma ve Güvenlik", "expected": "C", "predicted": "C", "raw_output": "C: Aktiv", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "c4506e4964ef6658", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "B", "raw_output": "B: Yine", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "90840329be71e8d5", "section": "Laborant ve Veteriner Sağlık", "expected": "D", "predicted": "C", "raw_output": "C: Bata", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "9eac5fd7fca5a7a7", "section": "Adalet", "expected": "A", "predicted": "B", "raw_output": "B: Gelen", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "354f0dbcb93eefd9", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "C", "raw_output": "C: Anne bab", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "c37b939d34522de1", "section": "Adalet", "expected": "D", "predicted": "E", "raw_output": "E: gelb", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "541aa119f106a8dc", "section": "TUS", "expected": "C", "predicted": "B", "raw_output": "B: Spinal", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "6c667494232dca45", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "B", "raw_output": "B: Bask", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "11bd05b4ee31cab0", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "B", "raw_output": "B: Akıl", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "e925500d3241a456", "section": "Bankacılık ve Sigortacılık", "expected": "A", "predicted": "E", "raw_output": "E: Rasy", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "455ee25ef6837902", "section": "TUS", "expected": "D", "predicted": "B", "raw_output": "B: Neisser", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "5612c5baf3886b24", "section": "Adalet", "expected": "D", "predicted": "B", "raw_output": "B: Hz.", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "a39460f8860ebe41", "section": "Çağrı Merkezi Hizmetleri", "expected": "E", "predicted": "B", "raw_output": "B: Örg", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "bd507f393060295a", "section": "Çocuk Gelişimi", "expected": "D", "predicted": "E", "raw_output": "E: 1", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "3dda612f7697fe73", "section": "Sağlık Kurumları İşletmeciliği", "expected": "E", "predicted": "A", "raw_output": "A: Sos", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "5a4f27fd185b95de", "section": "Adalet", "expected": "B", "predicted": "B", "raw_output": "B: Resmi", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "aac547499c728701", "section": "Dış Ticaret", "expected": "B", "predicted": "B", "raw_output": "B: Somut", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "b0fdd648c43a582f", "section": "Adalet", "expected": "C", "predicted": "B", "raw_output": "B: Araç", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "d5a862546ed6f8ee", "section": "TUS", "expected": "A", "predicted": "B", "raw_output": "B: Akant", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "09e132a8a9d4e36c", "section": "Çağrı Merkezi Hizmetleri", "expected": "C", "predicted": "D", "raw_output": "D: Kral", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "35173769db7a2d5d", "section": "YGS Denemeleri", "expected": "E", "predicted": "B", "raw_output": "B: Betim", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "efde01558c5db326", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "B", "raw_output": "B: Anak", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "d0d067195fb94b1e", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "B", "raw_output": "B: Türk T", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "105673630348968e", "section": "Emlak ve Emlak Yönetimi", "expected": "A", "predicted": "B", "raw_output": "B: Çalışan", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "cda34ea7c5292cbe", "section": "Aşçılık", "expected": "B", "predicted": "B", "raw_output": "B: Lash", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "fa404007af0a72eb", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "A", "predicted": "B", "raw_output": "B: Sergü", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "c807c72f21b5ce60", "section": "Felsefe", "expected": "A", "predicted": "E", "raw_output": "E: Ekonom", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "d42805d54446f64f", "section": "Dış Ticaret", "expected": "C", "predicted": "B", "raw_output": "B: Karar", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "57fb2414ea7d5314", "section": "Dış Ticaret", "expected": "A", "predicted": "B", "raw_output": "B: Prag", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "7a0171ba4a3cf56f", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "E", "predicted": "B", "raw_output": "B: iletişim yok", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "57108e313b36b7f4", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "B", "raw_output": "B: I ve", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "d536ae25e2119b8d", "section": "Elektrik Enerjisi Üretim,İletim ve Dağıtımı", "expected": "A", "predicted": "B", "raw_output": "B: XPS", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "7902698f39394a16", "section": "YGS Denemeleri", "expected": "A", "predicted": "D", "raw_output": "D: İnsanlığın", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "8cb09efce1c450b8", "section": "Adalet", "expected": "B", "predicted": "B", "raw_output": "B: Visk", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "5999afddf90103ad", "section": "Adalet", "expected": "A", "predicted": "B", "raw_output": "B: Temel", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "7beabbfb313b154e", "section": "Adalet", "expected": "E", "predicted": "C", "raw_output": "C: Normal mal", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "c80e06d3906732f8", "section": "Aşçılık", "expected": "A", "predicted": "C", "raw_output": "C: Uzman", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "e5baac4c99d73d84", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "B", "raw_output": "B: Doğ", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "48e9a6fbb886ee7a", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "C", "raw_output": "C: Mil sist", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "7202cddd1437b27b", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "B", "predicted": "E", "raw_output": "E: Tekrar", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "0b38633d14e573ab", "section": "Adalet", "expected": "A", "predicted": "C", "raw_output": "C: Niç", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "0dd78dda4689c2fb", "section": "Adalet", "expected": "D", "predicted": "C", "raw_output": "C: İtt", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "461a6fe0ed7dfdce", "section": "Adalet", "expected": "B", "predicted": "B", "raw_output": "B: Sened", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "69555b9009c30eb0", "section": "Türk Dili ve Edebiyatı", "expected": "A", "predicted": "B", "raw_output": "B: Genel", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "2a59b0f4e7c6e729", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "B", "raw_output": "B: ISO", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "11aa3dfc6ed9706e", "section": "Adalet", "expected": "B", "predicted": "B", "raw_output": "B: Arbeitsk", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "0c5b2d966c6f74a4", "section": "KPSS Denemeleri", "expected": "D", "predicted": "C", "raw_output": "C: Kanun", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "ed7adb6e5d3bc337", "section": "Aşçılık", "expected": "C", "predicted": null, "raw_output": "I ve II", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "4b81f0aa894c4679", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "C", "predicted": "B", "raw_output": "B: Personelin", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "883948bf0cc1f88c", "section": "Aşçılık", "expected": "E", "predicted": "C", "raw_output": "C: Keçi", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "1c1eaf1fa641bb22", "section": "Adalet", "expected": "A", "predicted": "C", "raw_output": "C: Özel eğ", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "5faff82a119fa2ec", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "B", "raw_output": "B: Psik", "correct": true}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "6269f360c768fd22", "section": "Aşçılık", "expected": "D", "predicted": "C", "raw_output": "C: Atık", "correct": false}
+{"model": "Qwen2.5-0.5B-Instruct", "id": "7d5df8ef8eb16f4b", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "C", "raw_output": "C: GPS gibi", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "476cfa6993af478b", "section": "YGS Denemeleri", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "9e98929c6dc382e7", "section": "Adalet", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "3c56f6e75364a7d8", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "cccf765afc8b4def", "section": "KPSS Denemeleri", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "009b6973c9d39897", "section": "Aşçılık", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "6dd191466c35409b", "section": "TUS", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "3818872b1bbcdf2f", "section": "Adalet", "expected": "B", "predicted": "D", "raw_output": "D: TBB", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "09e4a1dbb413ab92", "section": "Emlak ve Emlak Yönetimi", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "883498b75b2e8bf2", "section": "Tarih", "expected": "E", "predicted": "D", "raw_output": "D: İzley", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "7938832a61421f4d", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "D", "raw_output": "D: GC oran", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "19e096980666fc9f", "section": "Lojistik", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "64975910d94f6f1a", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "D", "raw_output": "D: Etienne", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "d283b51c40c6cc24", "section": "Özel Koruma ve Güvenlik", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "5a5989d62a42da81", "section": "Aşçılık", "expected": "A", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "3e65e7c1080db5ca", "section": "KPSS Denemeleri", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "d4ae50d01f36892f", "section": "Bankacılık ve Sigortacılık", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "cc2b1f58aa7af58c", "section": "Dış Ticaret", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "6ec614761155e641", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "0eafb1219024ffb0", "section": "Çağrı Merkezi Hizmetleri", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "ba67448f22f211a3", "section": "Adalet", "expected": "C", "predicted": "C", "raw_output": "C: Emet", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "b95e6201a35f2e30", "section": "Aşçılık", "expected": "C", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "b0995131080336be", "section": "Adalet", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "a7ab79ed68fa175e", "section": "Uluslar Arası İlişkiler", "expected": "E", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "8c69cfd8ef16390c", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "3799066244aef2d8", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "2cd8c7d652d932ad", "section": "Tarih", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "617e223cf868620b", "section": "Sağlık Kurumları İşletmeciliği", "expected": "C", "predicted": "C", "raw_output": "C: Bernstein", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "ca424e424516e8c4", "section": "Sağlık Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "cf94b247cf1a2913", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "10f5cba664667dea", "section": "KPSS Denemeleri", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "105d92b0e1431489", "section": "Bankacılık ve Sigortacılık", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "6d9fd53e1a6c6cde", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "D", "raw_output": "D: 1", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "2d97a26afaff9bf9", "section": "Adalet", "expected": "E", "predicted": "D", "raw_output": "D: Bağ", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "3573a39dafe1e817", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "77fcb289c1a2d781", "section": "İşletme Yönetimi", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "49c1ef3b81f4d9f5", "section": "İlahiyat", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "8623a43fb523ecf3", "section": "Adalet", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "1f5cfc987661089e", "section": "Adalet", "expected": "D", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "81f7899932a4765e", "section": "TUS", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "7f16495d12b97016", "section": "İlahiyat", "expected": "A", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "aa5b428a2df33a4e", "section": "İlahiyat", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "0c1f6f8ccb174c7e", "section": "Adalet", "expected": "C", "predicted": "B", "raw_output": "B", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "a3153333c7cd3eb9", "section": "Adalet", "expected": "E", "predicted": "C", "raw_output": "C: Cema", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "1a4c13e2b20b35c2", "section": "Muhasebe ve Vergi Uygulamaları", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "88267e771c78a566", "section": "İşletme Yönetimi", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "2973e47cf324a442", "section": "TUS", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "7bfb68f51f576ca9", "section": "Özel Koruma ve Güvenlik", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "c4506e4964ef6658", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "E", "raw_output": "E: Tanı", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "90840329be71e8d5", "section": "Laborant ve Veteriner Sağlık", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "9eac5fd7fca5a7a7", "section": "Adalet", "expected": "A", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "354f0dbcb93eefd9", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "c37b939d34522de1", "section": "Adalet", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "541aa119f106a8dc", "section": "TUS", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "6c667494232dca45", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "11bd05b4ee31cab0", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "e925500d3241a456", "section": "Bankacılık ve Sigortacılık", "expected": "A", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "455ee25ef6837902", "section": "TUS", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "5612c5baf3886b24", "section": "Adalet", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "a39460f8860ebe41", "section": "Çağrı Merkezi Hizmetleri", "expected": "E", "predicted": "D", "raw_output": "D: Denge", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "bd507f393060295a", "section": "Çocuk Gelişimi", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "3dda612f7697fe73", "section": "Sağlık Kurumları İşletmeciliği", "expected": "E", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "5a4f27fd185b95de", "section": "Adalet", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "aac547499c728701", "section": "Dış Ticaret", "expected": "B", "predicted": "B", "raw_output": "B", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "b0fdd648c43a582f", "section": "Adalet", "expected": "C", "predicted": "C", "raw_output": "C: Zily", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "d5a862546ed6f8ee", "section": "TUS", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "09e132a8a9d4e36c", "section": "Çağrı Merkezi Hizmetleri", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "35173769db7a2d5d", "section": "YGS Denemeleri", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "efde01558c5db326", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "d0d067195fb94b1e", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "105673630348968e", "section": "Emlak ve Emlak Yönetimi", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "cda34ea7c5292cbe", "section": "Aşçılık", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "fa404007af0a72eb", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "c807c72f21b5ce60", "section": "Felsefe", "expected": "A", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "d42805d54446f64f", "section": "Dış Ticaret", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "57fb2414ea7d5314", "section": "Dış Ticaret", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "7a0171ba4a3cf56f", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "57108e313b36b7f4", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "d536ae25e2119b8d", "section": "Elektrik Enerjisi Üretim,İletim ve Dağıtımı", "expected": "A", "predicted": "B", "raw_output": "B: XPS", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "7902698f39394a16", "section": "YGS Denemeleri", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "8cb09efce1c450b8", "section": "Adalet", "expected": "B", "predicted": "B", "raw_output": "B: Visk", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "5999afddf90103ad", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "7beabbfb313b154e", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "c80e06d3906732f8", "section": "Aşçılık", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "e5baac4c99d73d84", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "48e9a6fbb886ee7a", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "7202cddd1437b27b", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "0b38633d14e573ab", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "0dd78dda4689c2fb", "section": "Adalet", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "461a6fe0ed7dfdce", "section": "Adalet", "expected": "B", "predicted": "D", "raw_output": "D: Tanzimat", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "69555b9009c30eb0", "section": "Türk Dili ve Edebiyatı", "expected": "A", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "2a59b0f4e7c6e729", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "11aa3dfc6ed9706e", "section": "Adalet", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "0c5b2d966c6f74a4", "section": "KPSS Denemeleri", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "ed7adb6e5d3bc337", "section": "Aşçılık", "expected": "C", "predicted": "E", "raw_output": "E: I,", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "4b81f0aa894c4679", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "C", "predicted": "D", "raw_output": "D", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "883948bf0cc1f88c", "section": "Aşçılık", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "1c1eaf1fa641bb22", "section": "Adalet", "expected": "A", "predicted": "D", "raw_output": "D: S on", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "5faff82a119fa2ec", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "6269f360c768fd22", "section": "Aşçılık", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Qwen2.5-1.5B-Instruct", "id": "7d5df8ef8eb16f4b", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "D", "raw_output": "D: Telev", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "476cfa6993af478b", "section": "YGS Denemeleri", "expected": "D", "predicted": null, "raw_output": "(24,", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "9e98929c6dc382e7", "section": "Adalet", "expected": "D", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "3c56f6e75364a7d8", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "cccf765afc8b4def", "section": "KPSS Denemeleri", "expected": "C", "predicted": "A", "raw_output": "A: Kony", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "009b6973c9d39897", "section": "Aşçılık", "expected": "E", "predicted": "C", "raw_output": "C: Menü", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "6dd191466c35409b", "section": "TUS", "expected": "A", "predicted": "A", "raw_output": "A: Mycoplasma", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "3818872b1bbcdf2f", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A: RTF", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "09e4a1dbb413ab92", "section": "Emlak ve Emlak Yönetimi", "expected": "E", "predicted": "A", "raw_output": "A: Gör", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "883498b75b2e8bf2", "section": "Tarih", "expected": "E", "predicted": "A", "raw_output": "A: Yal", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "7938832a61421f4d", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "A", "raw_output": "A: Ş", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "19e096980666fc9f", "section": "Lojistik", "expected": "E", "predicted": null, "raw_output": "Doldurul", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "64975910d94f6f1a", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "A", "raw_output": "A: İ", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "d283b51c40c6cc24", "section": "Özel Koruma ve Güvenlik", "expected": "D", "predicted": "A", "raw_output": "A: İ", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "5a5989d62a42da81", "section": "Aşçılık", "expected": "A", "predicted": "A", "raw_output": "A: 1", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "3e65e7c1080db5ca", "section": "KPSS Denemeleri", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "d4ae50d01f36892f", "section": "Bankacılık ve Sigortacılık", "expected": "E", "predicted": "A", "raw_output": "A: Nakit", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "cc2b1f58aa7af58c", "section": "Dış Ticaret", "expected": "B", "predicted": "A", "raw_output": "A: Havac", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "6ec614761155e641", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A: Kes", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "0eafb1219024ffb0", "section": "Çağrı Merkezi Hizmetleri", "expected": "D", "predicted": "A", "raw_output": "A: Ü", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "ba67448f22f211a3", "section": "Adalet", "expected": "C", "predicted": "A", "raw_output": "A: Miy", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "b95e6201a35f2e30", "section": "Aşçılık", "expected": "C", "predicted": "C", "raw_output": "C: Abon", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "b0995131080336be", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A: Francis Hut", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "a7ab79ed68fa175e", "section": "Uluslar Arası İlişkiler", "expected": "E", "predicted": "A", "raw_output": "A: Asimet", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "8c69cfd8ef16390c", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "D", "predicted": "D", "raw_output": "D", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "3799066244aef2d8", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "2cd8c7d652d932ad", "section": "Tarih", "expected": "D", "predicted": "A", "raw_output": "A: Bör", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "617e223cf868620b", "section": "Sağlık Kurumları İşletmeciliği", "expected": "C", "predicted": "D", "raw_output": "D: Lenin", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "ca424e424516e8c4", "section": "Sağlık Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A, B,", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "cf94b247cf1a2913", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "10f5cba664667dea", "section": "KPSS Denemeleri", "expected": "C", "predicted": "A", "raw_output": "A: MGK", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "105d92b0e1431489", "section": "Bankacılık ve Sigortacılık", "expected": "B", "predicted": "A", "raw_output": "A: Tari", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "6d9fd53e1a6c6cde", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "A", "raw_output": "A: 1", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "2d97a26afaff9bf9", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A: Tasin", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "3573a39dafe1e817", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "A", "raw_output": "A: Versailles", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "77fcb289c1a2d781", "section": "İşletme Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A: Kont", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "49c1ef3b81f4d9f5", "section": "İlahiyat", "expected": "C", "predicted": "A", "raw_output": "A: Tür", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "8623a43fb523ecf3", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A: Yön", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "1f5cfc987661089e", "section": "Adalet", "expected": "D", "predicted": "A", "raw_output": "A: Fiz", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "81f7899932a4765e", "section": "TUS", "expected": "E", "predicted": "A", "raw_output": "A: Yay", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "7f16495d12b97016", "section": "İlahiyat", "expected": "A", "predicted": "A", "raw_output": "A: I-", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "aa5b428a2df33a4e", "section": "İlahiyat", "expected": "B", "predicted": "C", "raw_output": "C: Sos", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "0c1f6f8ccb174c7e", "section": "Adalet", "expected": "C", "predicted": "A", "raw_output": "A: Mec", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "a3153333c7cd3eb9", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A: Devlet", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "1a4c13e2b20b35c2", "section": "Muhasebe ve Vergi Uygulamaları", "expected": "E", "predicted": "A", "raw_output": "A: İ", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "88267e771c78a566", "section": "İşletme Yönetimi", "expected": "D", "predicted": "A", "raw_output": "A: Antaly", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "2973e47cf324a442", "section": "TUS", "expected": "E", "predicted": "A", "raw_output": "A: Mitok", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "7bfb68f51f576ca9", "section": "Özel Koruma ve Güvenlik", "expected": "C", "predicted": "A", "raw_output": "A: Hastal", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "c4506e4964ef6658", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "A", "raw_output": "A: Sorum", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "90840329be71e8d5", "section": "Laborant ve Veteriner Sağlık", "expected": "D", "predicted": "A", "raw_output": "A: Fet", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "9eac5fd7fca5a7a7", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A: Yay", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "354f0dbcb93eefd9", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "A", "raw_output": "A: Mutlu", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "c37b939d34522de1", "section": "Adalet", "expected": "D", "predicted": null, "raw_output": "Seçenek", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "541aa119f106a8dc", "section": "TUS", "expected": "C", "predicted": null, "raw_output": "Seçenek", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "6c667494232dca45", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "A", "raw_output": "A: Devlet", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "11bd05b4ee31cab0", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "A", "raw_output": "A: Duy", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "e925500d3241a456", "section": "Bankacılık ve Sigortacılık", "expected": "A", "predicted": "A", "raw_output": "A: Uy", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "455ee25ef6837902", "section": "TUS", "expected": "D", "predicted": "A", "raw_output": "A: Brucell", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "5612c5baf3886b24", "section": "Adalet", "expected": "D", "predicted": "A", "raw_output": "A: Hz.", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "a39460f8860ebe41", "section": "Çağrı Merkezi Hizmetleri", "expected": "E", "predicted": "A", "raw_output": "A: Yap", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "bd507f393060295a", "section": "Çocuk Gelişimi", "expected": "D", "predicted": "A", "raw_output": "A: insan", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "3dda612f7697fe73", "section": "Sağlık Kurumları İşletmeciliği", "expected": "E", "predicted": "A", "raw_output": "A: Sos", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "5a4f27fd185b95de", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A: İ", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "aac547499c728701", "section": "Dış Ticaret", "expected": "B", "predicted": "A", "raw_output": "A: Topl", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "b0fdd648c43a582f", "section": "Adalet", "expected": "C", "predicted": "A", "raw_output": "A: Fiil", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "d5a862546ed6f8ee", "section": "TUS", "expected": "A", "predicted": "A", "raw_output": "A: Ü", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "09e132a8a9d4e36c", "section": "Çağrı Merkezi Hizmetleri", "expected": "C", "predicted": "A", "raw_output": "A: Kü", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "35173769db7a2d5d", "section": "YGS Denemeleri", "expected": "E", "predicted": "A", "raw_output": "A: Geç", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "efde01558c5db326", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "A", "raw_output": "A: Elekt", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "d0d067195fb94b1e", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A: ODT", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "105673630348968e", "section": "Emlak ve Emlak Yönetimi", "expected": "A", "predicted": "A", "raw_output": "A: Değ", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "cda34ea7c5292cbe", "section": "Aşçılık", "expected": "B", "predicted": "A", "raw_output": "A: Hoch", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "fa404007af0a72eb", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "A", "predicted": "A", "raw_output": "A: Mih", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "c807c72f21b5ce60", "section": "Felsefe", "expected": "A", "predicted": "A", "raw_output": "A: Askeri", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "d42805d54446f64f", "section": "Dış Ticaret", "expected": "C", "predicted": "A", "raw_output": "A: Taraf", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "57fb2414ea7d5314", "section": "Dış Ticaret", "expected": "A", "predicted": "A", "raw_output": "A: İ", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "7a0171ba4a3cf56f", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "E", "predicted": "A", "raw_output": "A: Gü", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "57108e313b36b7f4", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "A", "raw_output": "A: Yal", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "d536ae25e2119b8d", "section": "Elektrik Enerjisi Üretim,İletim ve Dağıtımı", "expected": "A", "predicted": "A", "raw_output": "A: EPS", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "7902698f39394a16", "section": "YGS Denemeleri", "expected": "A", "predicted": "A", "raw_output": "A: Felse", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "8cb09efce1c450b8", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A: Bası", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "5999afddf90103ad", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A: İ", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "7beabbfb313b154e", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A: İ", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "c80e06d3906732f8", "section": "Aşçılık", "expected": "A", "predicted": "A", "raw_output": "A: Merke", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "e5baac4c99d73d84", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "A", "raw_output": "A: Tari", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "48e9a6fbb886ee7a", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A: Mil art", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "7202cddd1437b27b", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "B", "predicted": "A", "raw_output": "A: Kemi", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "0b38633d14e573ab", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A: Sarı", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "0dd78dda4689c2fb", "section": "Adalet", "expected": "D", "predicted": "A", "raw_output": "A: Sovyet", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "461a6fe0ed7dfdce", "section": "Adalet", "expected": "B", "predicted": "D", "raw_output": "D: Tanzim", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "69555b9009c30eb0", "section": "Türk Dili ve Edebiyatı", "expected": "A", "predicted": "C", "raw_output": "C: Genel", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "2a59b0f4e7c6e729", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "A", "raw_output": "A: Ç", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "11aa3dfc6ed9706e", "section": "Adalet", "expected": "B", "predicted": null, "raw_output": "Seçenek", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "0c5b2d966c6f74a4", "section": "KPSS Denemeleri", "expected": "D", "predicted": "A", "raw_output": "A: Y�", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "ed7adb6e5d3bc337", "section": "Aşçılık", "expected": "C", "predicted": "A", "raw_output": "A: Yal", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "4b81f0aa894c4679", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "C", "predicted": "A", "raw_output": "A: Personelin", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "883948bf0cc1f88c", "section": "Aşçılık", "expected": "E", "predicted": "A", "raw_output": "A: At", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "1c1eaf1fa641bb22", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A: Tanı", "correct": true}
+{"model": "SmolLM2-1.7B-Instruct", "id": "5faff82a119fa2ec", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "A", "raw_output": "A: Topl", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "6269f360c768fd22", "section": "Aşçılık", "expected": "D", "predicted": "A", "raw_output": "A: Sü", "correct": false}
+{"model": "SmolLM2-1.7B-Instruct", "id": "7d5df8ef8eb16f4b", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "A", "raw_output": "A: Yeni", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "476cfa6993af478b", "section": "YGS Denemeleri", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "9e98929c6dc382e7", "section": "Adalet", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "3c56f6e75364a7d8", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "C", "predicted": "C", "raw_output": "C\n\nA", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "cccf765afc8b4def", "section": "KPSS Denemeleri", "expected": "C", "predicted": "E", "raw_output": "E\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "009b6973c9d39897", "section": "Aşçılık", "expected": "E", "predicted": "D", "raw_output": "D\n\nUyg", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "6dd191466c35409b", "section": "TUS", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "3818872b1bbcdf2f", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "09e4a1dbb413ab92", "section": "Emlak ve Emlak Yönetimi", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "883498b75b2e8bf2", "section": "Tarih", "expected": "E", "predicted": "E", "raw_output": "E\n\nÇünkü", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "7938832a61421f4d", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "19e096980666fc9f", "section": "Lojistik", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "64975910d94f6f1a", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "d283b51c40c6cc24", "section": "Özel Koruma ve Güvenlik", "expected": "D", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "5a5989d62a42da81", "section": "Aşçılık", "expected": "A", "predicted": "C", "raw_output": "C\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "3e65e7c1080db5ca", "section": "KPSS Denemeleri", "expected": "A", "predicted": "B", "raw_output": "B\n\nUyg", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "d4ae50d01f36892f", "section": "Bankacılık ve Sigortacılık", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "cc2b1f58aa7af58c", "section": "Dış Ticaret", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "6ec614761155e641", "section": "Adalet", "expected": "A", "predicted": "B", "raw_output": "B\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "0eafb1219024ffb0", "section": "Çağrı Merkezi Hizmetleri", "expected": "D", "predicted": "C", "raw_output": "C\n\nA", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "ba67448f22f211a3", "section": "Adalet", "expected": "C", "predicted": "D", "raw_output": "D\n\nUç", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "b95e6201a35f2e30", "section": "Aşçılık", "expected": "C", "predicted": "E", "raw_output": "E\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "b0995131080336be", "section": "Adalet", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "a7ab79ed68fa175e", "section": "Uluslar Arası İlişkiler", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "8c69cfd8ef16390c", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "3799066244aef2d8", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": null, "raw_output": "Yanlış olan", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "2cd8c7d652d932ad", "section": "Tarih", "expected": "D", "predicted": "C", "raw_output": "C\n\n**A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "617e223cf868620b", "section": "Sağlık Kurumları İşletmeciliği", "expected": "C", "predicted": "C", "raw_output": "C\n\nAç", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "ca424e424516e8c4", "section": "Sağlık Yönetimi", "expected": "B", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "cf94b247cf1a2913", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "10f5cba664667dea", "section": "KPSS Denemeleri", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "105d92b0e1431489", "section": "Bankacılık ve Sigortacılık", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "6d9fd53e1a6c6cde", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "D", "predicted": "C", "raw_output": "C\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "2d97a26afaff9bf9", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "3573a39dafe1e817", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "C", "raw_output": "C\n\nA", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "77fcb289c1a2d781", "section": "İşletme Yönetimi", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "49c1ef3b81f4d9f5", "section": "İlahiyat", "expected": "C", "predicted": "C", "raw_output": "C: Topl", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "8623a43fb523ecf3", "section": "Adalet", "expected": "E", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "1f5cfc987661089e", "section": "Adalet", "expected": "D", "predicted": "C", "raw_output": "C\n\nA", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "81f7899932a4765e", "section": "TUS", "expected": "E", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "7f16495d12b97016", "section": "İlahiyat", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "aa5b428a2df33a4e", "section": "İlahiyat", "expected": "B", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "0c1f6f8ccb174c7e", "section": "Adalet", "expected": "C", "predicted": "C", "raw_output": "C\n\n**A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "a3153333c7cd3eb9", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "1a4c13e2b20b35c2", "section": "Muhasebe ve Vergi Uygulamaları", "expected": "E", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "88267e771c78a566", "section": "İşletme Yönetimi", "expected": "D", "predicted": "C", "raw_output": "C\n\n**A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "2973e47cf324a442", "section": "TUS", "expected": "E", "predicted": "C", "raw_output": "C\n\n**A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "7bfb68f51f576ca9", "section": "Özel Koruma ve Güvenlik", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "c4506e4964ef6658", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "90840329be71e8d5", "section": "Laborant ve Veteriner Sağlık", "expected": "D", "predicted": "E", "raw_output": "E\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "9eac5fd7fca5a7a7", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "354f0dbcb93eefd9", "section": "Çocuk Gelişimi", "expected": "C", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "c37b939d34522de1", "section": "Adalet", "expected": "D", "predicted": "C", "raw_output": "C\n\n**A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "541aa119f106a8dc", "section": "TUS", "expected": "C", "predicted": "C", "raw_output": "C\n\nA", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "6c667494232dca45", "section": "Çocuk Gelişimi", "expected": "A", "predicted": "C", "raw_output": "C\n\nAç", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "11bd05b4ee31cab0", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "e925500d3241a456", "section": "Bankacılık ve Sigortacılık", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "455ee25ef6837902", "section": "TUS", "expected": "D", "predicted": "C", "raw_output": "C\n\nAç", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "5612c5baf3886b24", "section": "Adalet", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "a39460f8860ebe41", "section": "Çağrı Merkezi Hizmetleri", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "bd507f393060295a", "section": "Çocuk Gelişimi", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "3dda612f7697fe73", "section": "Sağlık Kurumları İşletmeciliği", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "5a4f27fd185b95de", "section": "Adalet", "expected": "B", "predicted": "C", "raw_output": "C\n\nAç", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "aac547499c728701", "section": "Dış Ticaret", "expected": "B", "predicted": "A", "raw_output": "A\n\nİşte", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "b0fdd648c43a582f", "section": "Adalet", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "d5a862546ed6f8ee", "section": "TUS", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "09e132a8a9d4e36c", "section": "Çağrı Merkezi Hizmetleri", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "35173769db7a2d5d", "section": "YGS Denemeleri", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "efde01558c5db326", "section": "Çağrı Merkezi Hizmetleri", "expected": "B", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "d0d067195fb94b1e", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "105673630348968e", "section": "Emlak ve Emlak Yönetimi", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "cda34ea7c5292cbe", "section": "Aşçılık", "expected": "B", "predicted": "C", "raw_output": "C\n\nAç", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "fa404007af0a72eb", "section": "Parakende Satış ve Mağaza Yöneticiliği", "expected": "A", "predicted": "C", "raw_output": "C\n\n**A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "c807c72f21b5ce60", "section": "Felsefe", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "d42805d54446f64f", "section": "Dış Ticaret", "expected": "C", "predicted": "C", "raw_output": "C", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "57fb2414ea7d5314", "section": "Dış Ticaret", "expected": "A", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "7a0171ba4a3cf56f", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "E", "predicted": "E", "raw_output": "E", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "57108e313b36b7f4", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "C", "raw_output": "C: I ve", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "d536ae25e2119b8d", "section": "Elektrik Enerjisi Üretim,İletim ve Dağıtımı", "expected": "A", "predicted": "C", "raw_output": "C\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "7902698f39394a16", "section": "YGS Denemeleri", "expected": "A", "predicted": "C", "raw_output": "C\n\n**A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "8cb09efce1c450b8", "section": "Adalet", "expected": "B", "predicted": "C", "raw_output": "C\n\nAç", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "5999afddf90103ad", "section": "Adalet", "expected": "A", "predicted": "B", "raw_output": "B\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "7beabbfb313b154e", "section": "Adalet", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "c80e06d3906732f8", "section": "Aşçılık", "expected": "A", "predicted": "C", "raw_output": "C\n\nA:", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "e5baac4c99d73d84", "section": "Bankacılık ve Sigortacılık", "expected": "D", "predicted": "C", "raw_output": "C\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "48e9a6fbb886ee7a", "section": "Emlak ve Emlak Yönetimi", "expected": "B", "predicted": "C", "raw_output": "C\n\nA", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "7202cddd1437b27b", "section": "Menkul Kıymetler ve Sermaye Piyasası", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "0b38633d14e573ab", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "0dd78dda4689c2fb", "section": "Adalet", "expected": "D", "predicted": "C", "raw_output": "C", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "461a6fe0ed7dfdce", "section": "Adalet", "expected": "B", "predicted": "C", "raw_output": "C\n\nÇünkü", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "69555b9009c30eb0", "section": "Türk Dili ve Edebiyatı", "expected": "A", "predicted": "D", "raw_output": "D\n\nUlus", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "2a59b0f4e7c6e729", "section": "Bankacılık ve Sigortacılık", "expected": "C", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "11aa3dfc6ed9706e", "section": "Adalet", "expected": "B", "predicted": "C", "raw_output": "C\n\nAç", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "0c5b2d966c6f74a4", "section": "KPSS Denemeleri", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "ed7adb6e5d3bc337", "section": "Aşçılık", "expected": "C", "predicted": "C", "raw_output": "C\n\n**A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "4b81f0aa894c4679", "section": "Büro Yönetimi ve Yönetici Asistanlığı", "expected": "C", "predicted": "C", "raw_output": "C\n\nUmar", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "883948bf0cc1f88c", "section": "Aşçılık", "expected": "E", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "1c1eaf1fa641bb22", "section": "Adalet", "expected": "A", "predicted": "A", "raw_output": "A", "correct": true}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "5faff82a119fa2ec", "section": "Çocuk Gelişimi", "expected": "B", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "6269f360c768fd22", "section": "Aşçılık", "expected": "D", "predicted": "A", "raw_output": "A", "correct": false}
+{"model": "Gemma-3-1B-Instruct-4bit", "id": "7d5df8ef8eb16f4b", "section": "Fotoğrafçılık ve Kameramanlık", "expected": "D", "predicted": "E", "raw_output": "E", "correct": false}

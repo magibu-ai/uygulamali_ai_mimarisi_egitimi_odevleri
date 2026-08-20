@@ -1,0 +1,6 @@
+bitsandbytes>=0.46.1
+json
+torch
+transformers
+yaml
+re

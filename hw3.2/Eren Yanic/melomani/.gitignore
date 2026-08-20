@@ -1,0 +1,12 @@
+# Secrets — never commit, never deploy
+.env
+.env.*
+!.env.example
+
+# Local database built from db/schema.sql + db/seed.sql at first run
+melomani.db
+*.db-journal
+*.db-wal
+
+node_modules/
+.DS_Store

@@ -1,0 +1,75 @@
+{
+  "corpus_chunks": 1019,
+  "total_questions": 50,
+  "calibration": {
+    "positive": 10,
+    "negative": 10
+  },
+  "test": {
+    "positive": 20,
+    "negative": 10
+  },
+  "unique_positive_evidence_chunks": 30,
+  "negative_absence_checks": {
+    "cal_neg_01": {
+      "alvarado skoru": 0
+    },
+    "cal_neg_02": {
+      "fev1/fvc": 0
+    },
+    "cal_neg_03": {
+      "child-pugh": 0
+    },
+    "cal_neg_04": {
+      "egfr": 0
+    },
+    "cal_neg_05": {
+      "mitral kapak alanı": 0
+    },
+    "cal_neg_06": {
+      "glasgow koma skoru": 0
+    },
+    "cal_neg_07": {
+      "fakoemülsifikasyon": 0
+    },
+    "cal_neg_08": {
+      "levetirasetam": 0
+    },
+    "cal_neg_09": {
+      "total kalça protezi": 0
+    },
+    "cal_neg_10": {
+      "bazal-bolus": 0
+    },
+    "test_neg_01": {
+      "hipertrofik kardiyomiyopati": 0
+    },
+    "test_neg_02": {
+      "meld skoru": 0
+    },
+    "test_neg_03": {
+      "romberg testi": 0
+    },
+    "test_neg_04": {
+      "inr hedefi": 0
+    },
+    "test_neg_05": {
+      "apgar skoru": 0
+    },
+    "test_neg_06": {
+      "karlofça antlaşması": 0
+    },
+    "test_neg_07": {
+      "timsort": 0
+    },
+    "test_neg_08": {
+      "olympus mons": 0
+    },
+    "test_neg_09": {
+      "canberra": 0
+    },
+    "test_neg_10": {
+      "heisenberg belirsizlik ilkesi": 0
+    }
+  }
+}

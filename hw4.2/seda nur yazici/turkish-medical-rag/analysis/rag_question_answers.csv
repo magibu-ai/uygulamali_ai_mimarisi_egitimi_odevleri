@@ -1,0 +1,183 @@
+﻿question_number,question_type,question,threshold,top1_similarity,top1_title,top1_child_id,top1_parent_id,top1_url,decision,threshold_correct,answer,is_fallback,context_parent_count,source_parent_ids,source_titles,source_urls,embedding_seconds,search_seconds,generation_seconds,total_seconds
+1,positive,Angelman sendromunun belirtileri nelerdir?,0.57,0.8157849311828613,Angelman Sendromu,doc_0001_parent_001_child_003,doc_0001_parent_001,https://www.memorial.com.tr/hastaliklar/angelman-sendromu-nedir-belirtileri-nelerdir,ACCEPT,True,"Angelman sendromunun belirtileri şunlardır:
+
+- Gelişim geriliği (ilk aylarında kendisini belli etmeyen, 6-12 aylık dönemde gelişim geriliği ile fark edilebilir)
+- Entelektüel yetersizlik
+- Konuşma bozukluğu veya konuşma yokluğu
+- Öğrenme güçlüğü
+- Epilepsi (tekrarlayan nöbetler)
+- Denge sorunları (ataksi)
+- Açıktan, sarışın ve renkli gözlü olma
+- Mikrosefali (baş çevresi ölçüsünün yaş ve cinsiyete göre ortalamanın altında olması)
+- Tipik yüz görünümü
+- Şaşılık
+- Skolyoz
+
+Bu belirtiler genellikle erken çocukluk döneminde ortaya çıkar.",False,2,doc_0001_parent_001 | doc_0001_parent_002,Angelman Sendromu | Angelman Sendromu,https://www.memorial.com.tr/hastaliklar/angelman-sendromu-nedir-belirtileri-nelerdir | https://www.memorial.com.tr/hastaliklar/angelman-sendromu-nedir-belirtileri-nelerdir,1.4873899000231177,0.16477690008468926,13.970506699988618,15.849901200039312
+2,positive,Bradikardi nedir ve belirtileri nelerdir?,0.57,0.7454380393028259,Bradikardi (yavaş kalp hızı) nedir?,doc_0087_parent_001_child_002,doc_0087_parent_001,https://www.memorial.com.tr/hastaliklar/bradikardi-yavas-kalp-hizi-nedir,ACCEPT,True,"Bradikardi, kalp atış hızının normalde 60-100 seviyelerinde olması gereken düşük seviyada olmasıdır. Bradikardi belirtileri şunlardır:
+
+- Yorgunluk veya halsizlik
+- Baş dönmesi veya göz kararması
+- Bilinç bulanıklığı, konfüzyon
+- Bayılma (veya bayılacak gibi olma) atakları
+- Nefes darlığı
+- Egzersiz kapasitesinde azalma, egzersizle çabuk yorulma
+- Kalp durması
+
+Bu belirtiler, kalp hızının düşük olduğu durumlarda ortaya çıkabilir. Daha ciddi durumlarda kalp yetmezliği, ani kalp durması veya ölüme yol açabilir.",False,2,doc_0087_parent_001 | doc_0087_parent_002,Bradikardi (yavaş kalp hızı) nedir? | Bradikardi (yavaş kalp hızı) nedir?,https://www.memorial.com.tr/hastaliklar/bradikardi-yavas-kalp-hizi-nedir | https://www.memorial.com.tr/hastaliklar/bradikardi-yavas-kalp-hizi-nedir,0.6208774999249727,0.03137590002734214,12.424408999970183,13.098479700041935
+3,positive,Böbrek yetmezliğinin belirtileri nelerdir?,0.57,0.7794309854507446,Böbrek Yetmezliği Nedir? Böbrek Yetmezliği Belirtileri Nelerdir?,doc_0070_parent_002_child_002,doc_0070_parent_002,https://www.memorial.com.tr/saglik-rehberi/sicak-havada-az-su-icmek-bobrekleri-yoruyor,ACCEPT,True,"Böbrek yetmezliğinin belirtileri şunlardır:
+
+- İdrar miktarında azalma  
+- Ödem (özellikle ayaklarda)  
+- Aşırı yorgun hissetme  
+- Mide bulantısı ve kusma  
+- İştahsızlık  
+- Kilo kaybı  
+- İdrar görünümünde köpüklü olma gibi değişikler  
+- Kas krampları  
+- Ciltte kuruluk ve kaşıntı  
+- Konkansiyon bozukluğu  
+- Erkeklerde ereksiyon sorunları  
+- Uyku sorunları  
+- Göz çevresinde şişlik  
+- Baş ağrısı  
+- Göğüs ağrısı ve nefes darlığı  
+- Kan basıncında yükselme",False,3,doc_0070_parent_002 | doc_0070_parent_001 | doc_0012_parent_001,Böbrek Yetmezliği Nedir? Böbrek Yetmezliği Belirtileri Nelerdir? | Böbrek Yetmezliği Nedir? Böbrek Yetmezliği Belirtileri Nelerdir? | Böbrekte Kist Nedir? Böbrek Kisti Belirtileri Nelerdir?,https://www.memorial.com.tr/saglik-rehberi/sicak-havada-az-su-icmek-bobrekleri-yoruyor | https://www.memorial.com.tr/saglik-rehberi/sicak-havada-az-su-icmek-bobrekleri-yoruyor | https://www.memorial.com.tr/saglik-rehberi/bobrekte-kist,0.6193079000804573,0.02570150000974536,105.0099113000324,105.68410269997548
+4,positive,Migrene ne iyi gelir?,0.57,0.6057906746864319,Migrene Ne İyi Gelir? Migren Nasıl Geçer?,doc_0435_parent_001_child_002,doc_0435_parent_001,https://www.memorial.com.tr/saglik-rehberi/migrene-ne-iyi-gelir,ACCEPT,True,"Migreni tetikleyen faktörlerden uzak durmak, doktorun reçete edeceği ilaçlarda rahatlama sağlamak ve sessiz ve karanlık bir ortamda dinlenmek, soğuk ya da sıcak kompres uygulamak, nane ve lavanta yağını koklamak, stresi yönetmek, ıhlamur, papatya ya da zencefil çayı içmek, kafeinsiz kahve içmek, böğürtlen, ahududu, çilek ve yaban mersini, karpuz ve muz tüketmek, brokoli ve ipanaktan yararlanmak, uyku düzenine sahip olmak, düzenli egzersiz yapmak ve migreni takip etmek gibi yöntemler migreni iyi gelenlerdir.",False,1,doc_0435_parent_001,Migrene Ne İyi Gelir? Migren Nasıl Geçer?,https://www.memorial.com.tr/saglik-rehberi/migrene-ne-iyi-gelir,0.51762709999457,0.02955350000411272,10.370309000019915,10.939381400006823
+5,positive,Hamileliğin ilk haftasında mide bulantısı olur mu?,0.57,0.7978948354721069,Gebelik Dönemindeki Şikâyetleri Önlemek İçin Pratik Öneriler,doc_0033_parent_001_child_001,doc_0033_parent_001,https://www.memorial.com.tr/saglik-rehberi/gebelik-donemindeki-sikayetleri-onlemek-icin-pratik-oneriler,ACCEPT,True,"Hamileliğin ilk haftasında mide bulantısı olabilir. Dokümanda belirtiler şöyledir: ""Hamileliğin ilk haftası hormonal değişimlere bağlı olarak mide bulantısı olabilir.""",False,3,doc_0033_parent_001 | doc_0065_parent_005 | doc_0065_parent_004,Gebelik Dönemindeki Şikâyetleri Önlemek İçin Pratik Öneriler | Hamilelik Belirtileri Nelerdir? Gebelikte İlk Belirtiler | Hamilelik Belirtileri Nelerdir? Gebelikte İlk Belirtiler,https://www.memorial.com.tr/saglik-rehberi/gebelik-donemindeki-sikayetleri-onlemek-icin-pratik-oneriler | https://www.memorial.com.tr/saglik-rehberi/gebelere-yaz-tatili-onerileri | https://www.memorial.com.tr/saglik-rehberi/gebelere-yaz-tatili-onerileri,0.617550199967809,0.011724099982529879,75.64753279997967,76.30790190002881
+6,positive,Rahim iltihabı kısırlığa neden olabilir mi?,0.57,0.7194490432739258,Rahim İltihabı,doc_0439_parent_002_child_003,doc_0439_parent_002,https://www.memorial.com.tr/saglik-rehberi/rahim-iltihabi,ACCEPT,True,"Rahim iltihabı, rahim içini ve tüpleri etkileyebilir ve bu nedenle kısırlığa sebep olabilir. Dokümanda belirtiler arasında ""Kısırlık Yapar mı?"" sorusu ve yanıt bulunur.",False,2,doc_0439_parent_002 | doc_0439_parent_001,Rahim İltihabı | Rahim İltihabı,https://www.memorial.com.tr/saglik-rehberi/rahim-iltihabi | https://www.memorial.com.tr/saglik-rehberi/rahim-iltihabi,0.6736148999771103,0.04610150004737079,17.43240270006936,18.16489300003741
+7,positive,Multipl miyelom kemik iliği kanseri midir?,0.57,0.7951300144195557,Multipl Miyelom nedir? Tedavi yöntemleri nelerdir?,doc_0322_parent_001_child_001,doc_0322_parent_001,https://www.memorial.com.tr/hastaliklar/multipl-miyelom-nedir,ACCEPT,True,"Multipl miyelom kemik iliği kanseri midir?  
+**Cevap:** Evet, Multipl miyelom kemik iliği kanseri türüdür.",False,3,doc_0322_parent_001 | doc_0172_parent_001 | doc_0322_parent_003,Multipl Miyelom nedir? Tedavi yöntemleri nelerdir? | Miyelom Tedavisinde Umut Verici Gelişmeler | Multipl Miyelom nedir? Tedavi yöntemleri nelerdir?,https://www.memorial.com.tr/hastaliklar/multipl-miyelom-nedir | https://www.memorial.com.tr/saglik-rehberi/miyelom-tedavisinde-umut-verici-gelismeler | https://www.memorial.com.tr/hastaliklar/multipl-miyelom-nedir,0.5908160000108182,0.01720889995340258,67.34907140000723,67.98497260001022
+8,positive,Egzama nedir ve en sık görülen belirtileri nelerdir?,0.57,0.777804434299469,"Egzama Nedir, Ne İyi Gelir? Egzama Nedenleri ve Belirtileri",doc_0299_parent_001_child_001,doc_0299_parent_001,https://www.memorial.com.tr/hastaliklar/egzama-nedir-egzama-nasil-gecer,ACCEPT,True,"Egzama, ciltte döküntü, cilt kuruluğu ve kaşıntıya neden olan kalıtsal ve kronik inflamatuar cilt rahatsızlığıdır. En sık görülen belirtileri, ciltte kaşıntı, döküntü, kuruluğu, şişliği ve pullanmayı içerir.",False,3,doc_0299_parent_001 | doc_0299_parent_002 | doc_0299_parent_003,"Egzama Nedir, Ne İyi Gelir? Egzama Nedenleri ve Belirtileri | Egzama Nedir, Ne İyi Gelir? Egzama Nedenleri ve Belirtileri | Egzama Nedir, Ne İyi Gelir? Egzama Nedenleri ve Belirtileri",https://www.memorial.com.tr/hastaliklar/egzama-nedir-egzama-nasil-gecer | https://www.memorial.com.tr/hastaliklar/egzama-nedir-egzama-nasil-gecer | https://www.memorial.com.tr/hastaliklar/egzama-nedir-egzama-nasil-gecer,0.674869199981913,0.009133000043220818,66.34633660002146,67.04827250004746
+9,positive,Atel ne işe yarar ve hangi durumlarda kullanılır?,0.57,0.7582961320877075,Atel Nedir? Atel Neden Kullanılır ve Ne İşe Yarar?,doc_0053_parent_001_child_002,doc_0053_parent_001,https://www.memorial.com.tr/saglik-rehberi/atel-nedir,ACCEPT,True,"Atel, kırık, incinme ve burkulmalar gibi yaralanma durumlarında, yaralanan bölgeyi hareketsiz hale getirmek ve ağrıya karşı koruyucu bir destek sağlama amacıyla kullanılır. Atel, özellikle kemik kırıklarında, burkulmalar ve karpal tünel sendromu gibi durumlarda, yaralanan bölgenin hareketsiz kalması ve acısının hafiflemesi için tercih edilir. Ayrıca, yaralanan bölgeye baskı uygulanarak kanamayı durdurmak, kan dolaşımını korumak ve şok belirtilerini önlemek için de kullanılır. Atel, yaralanma sonrası etkilenen bölgenin şişmesi durumunda da tedavi olarak kullanılır.",False,2,doc_0053_parent_001 | doc_0053_parent_002,Atel Nedir? Atel Neden Kullanılır ve Ne İşe Yarar? | Atel Nedir? Atel Neden Kullanılır ve Ne İşe Yarar?,https://www.memorial.com.tr/saglik-rehberi/atel-nedir | https://www.memorial.com.tr/saglik-rehberi/atel-nedir,0.6454985999735072,0.01142160000745207,22.29885609995108,22.96653619990684
+10,positive,Göz seğirmesi neden olur ve nasıl tedavi edilir?,0.57,0.8336731791496277,Göz Seğirmesi Neden Olur? Sağ ve Sol Göz Seğirmesi,doc_0253_parent_002_child_004,doc_0253_parent_002,https://www.memorial.com.tr/saglik-rehberi/goz-segirmesi-nedir-goz-segirmesi-nedenleri,ACCEPT,True,"Göz seğirmesi, genellikle uykusuzluk, göz yorgunluğu, stres, aşırı kafein tüketimi, elektrolit, vitamin ve mineral eksikliği, göz kuruluğu, sigara kullanımı ve bazı ilaçların kullanımı sonucu ortaya çıkan istemsiz kas kasılmaları ile oluşur. 
+
+Göz seğirmesinin tedavisi, nedenlerin kontrolü ve uygun tedavi uygulanmasıyla yapılır. Hafif seyreden göz seğirmesi için şu yöntemler uygulanabilir:
+
+- Uyku düzeni korunmalı.
+- Kardiyo ve egzersiz yapılmalı.
+- Gerektiğinde güneş gözlüğü kullanılmalı.
+- Kafein ve alkol tüketimi sınırlanmalı.
+- Etkilenen göze ılık kompres uygulanabilir.
+- Göz damlası kullanılabilir.
+- Uzun süreli bilgisayar, televizyon ve telefon ekranına bakılmaması önerilir.
+- B ve B12 vitamini içeren besinler tüketilmeli.
+- Göz seğirmesi sıklıkla arttığında doktora başvurulmalı.
+
+Kronik ve şiddetli göz seğirmesi için miyektomi ameliyatı, göz kapağı kaslarının alınmasıyla tedavi edilebilir.",False,3,doc_0253_parent_002 | doc_0253_parent_001 | doc_0253_parent_003,Göz Seğirmesi Neden Olur? Sağ ve Sol Göz Seğirmesi | Göz Seğirmesi Neden Olur? Sağ ve Sol Göz Seğirmesi | Göz Seğirmesi Neden Olur? Sağ ve Sol Göz Seğirmesi,https://www.memorial.com.tr/saglik-rehberi/goz-segirmesi-nedir-goz-segirmesi-nedenleri | https://www.memorial.com.tr/saglik-rehberi/goz-segirmesi-nedir-goz-segirmesi-nedenleri | https://www.memorial.com.tr/saglik-rehberi/goz-segirmesi-nedir-goz-segirmesi-nedenleri,0.6382885000202805,0.0072601999854668975,91.81951940001454,92.48770689999219
+11,positive,Prematüre bebeklerde kronik akciğer hastalığı görülebilir mi?,0.57,0.7268111109733582,Prematüre Bebeklerin Akciğer Sorunları,doc_0194_parent_001_child_001,doc_0194_parent_001,https://www.memorial.com.tr/saglik-rehberi/premature-bebeklerin-akciger-sorunlari,ACCEPT,True,"Prematüre bebeklerde kronik akciğer hastalığı (BPD) görülebilir. Dokümanda belirtiler şöyle verilmiştir: ""Kronik akciğer hastalığı nedir? Erken doğan her çocukta olur mu?"" ve ""Kronik akciğer hastalığı gelişme sıklığı <1000 gr doğan bebeklerde % 30, 501- 750 gr doğan bebeklerde ise %52 dolaylarındadır."" Bu bilgiler, prematüre bebeklerde kronik akciğer hastalığı olabileceğini göstermektedir.",False,3,doc_0194_parent_001 | doc_0247_parent_001 | doc_0453_parent_002,Prematüre Bebeklerin Akciğer Sorunları | Dünyaya Erken Merhaba Diyenler | Gebelik Zehirlenmesi (Preeklampsi) Nedir? Belirtileri ve Nedenleri,https://www.memorial.com.tr/saglik-rehberi/premature-bebeklerin-akciger-sorunlari | https://www.memorial.com.tr/saglik-rehberi/dunyaya-erken-merhaba-diyenler | https://www.memorial.com.tr/saglik-rehberi/gebelik-zehirlenmesi-preeklampsi,0.7268014999572188,0.00897710002027452,83.79614580003545,84.56225229997654
+12,positive,Kemik erimesi riskini artıran faktörler nelerdir?,0.57,0.6675316691398621,Kemik Erimesine Karşı Önleminizi Genç Yaşlarda Alın,doc_0049_parent_001_child_003,doc_0049_parent_001,https://www.memorial.com.tr/saglik-rehberi/kemik-erimesine-karsi-onleminizi-genc-yaslarda-alin,ACCEPT,True,"Kemik erimesi riskini artıran faktörler şu şekilde listelenmiştir:
+
+1. İleri yaş
+2. Cinsiyet (kadınlarda daha sık görülüyor)
+3. Aile öyküsü
+4. Düşmeler
+5. Uzun süre kortizon içeren ilaç kullanımı
+6. Romatoid artrit
+7. Aşırı alkol tüketimi
+8. Sigara içilemi
+9. Düşük beden kitle indeksi
+10. Yetersiz kalsiyum alımı
+11. D vitamini yetmezliği
+12. Hareketsizlik
+13. Menopoza girdikten sonra
+14. Boyunuz 3 santimetreden fazla kısaldı
+15. Vücut kütle indeksiniz 19 kg/m²'nin altında
+16. Günlük 10 dakikadan az güneş ışığına maruz kalmışsınız
+17. Süt veya süt ürünleri tüketiminiz yetersiz mi?",False,2,doc_0049_parent_001 | doc_0275_parent_001,Kemik Erimesine Karşı Önleminizi Genç Yaşlarda Alın | Osteoporoza Karşı,https://www.memorial.com.tr/saglik-rehberi/kemik-erimesine-karsi-onleminizi-genc-yaslarda-alin | https://www.memorial.com.tr/saglik-rehberi/osteoporoza-karsi,0.6817501001060009,0.01647240004967898,28.523869399912655,29.234958199900575
+13,positive,Balık tüketmenin sağlığa faydaları nelerdir?,0.57,0.7483547329902649,Balık yemenin faydaları nelerdir?,doc_0467_parent_001_child_001,doc_0467_parent_001,https://www.memorial.com.tr/saglik-rehberi/balik-yemenin-faydalari-nelerdir,ACCEPT,True,"Balık tüketmenin sağlığa faydaları şunlardır:
+
+1. **Bağışıklık sistemini korur**: Balıkta bulunan omega-3 yağ asitleri, bağışıklık sistemini güçlendirir ve iltihaplanmayı önler.
+
+2. **Zeka gelişimini destekler**: Balıkta bulunan omega-3 yağ asitleri, özellikle çocuklar için beyin gelişimini ve sinir sisteminin gelişimini hızlandırır.
+
+3. **Kemik ve kas sağlığını korur**: Balıkta bulunan protein ve besin değerleri, kemiklerin güçlü ve sağlıklı kalmasını sağlar.
+
+4. **Depresyonun zararlı etkilerini yok eder**: Balık tüketimi, depresyonun gelişimini yavaşlatır.
+
+5. **Selenyum ve D vitamini açısından zengin**: Balık, selenyum ve D vitamini açısından zengin bir besin kaynağıdır. Selenyum bağışıklık sistemini güçlendirirken, D vitamini kemiklerin ve dişlerin sağlıklı kalmasına yardımcı olur.
+
+6. **Protein kaynağıdır**: Balık, yüksek protein içeren besin kaynağıdır. Protein, büyüme, bağışıklık ve vücut fonksiyonlarının korunması için önemlidir.
+
+7. **Omega-3 yağ asitleri sağlar**: Balıkta bulunan omega-3 yağ asitleri, görme, kavrama ve motor becerilerini geliştirir ve beyin gelişimini destekler.
+
+8. **Ç",False,3,doc_0467_parent_001 | doc_0467_parent_003 | doc_0467_parent_002,Balık yemenin faydaları nelerdir? | Balık yemenin faydaları nelerdir? | Balık yemenin faydaları nelerdir?,https://www.memorial.com.tr/saglik-rehberi/balik-yemenin-faydalari-nelerdir | https://www.memorial.com.tr/saglik-rehberi/balik-yemenin-faydalari-nelerdir | https://www.memorial.com.tr/saglik-rehberi/balik-yemenin-faydalari-nelerdir,0.6672360999509692,0.00932069995906204,73.12724359997083,73.82275910000317
+14,positive,Emilim bozukluğu nedir ve hangi belirtilere yol açabilir?,0.57,0.7821414470672607,Emilim Bozukluğu Nedir? Belirtileri Nelerdir?,doc_0367_parent_002_child_004,doc_0367_parent_002,https://www.memorial.com.tr/hastaliklar/emilim-bozuklugu-nedir-belirtileri-nelerdir,ACCEPT,True,"Emilim bozukluğu, besin maddelerinin vücutta etkili bir şekilde emilmesini engelleyen bir sindirim bozukluğudur. Bu bozukluk, ince bağırsakta besinlerin tam olarak sindirilememesi veya emilmesi sonucu ortaya çıkar. Emilim bozukluğu, karın ağrısı, karın bölgesinde şişkinlik ve aşırı gaz oluşumu, mide bulantısı ve kusma, ishal, yağlı dışkılama, aşırı kilo kaybı, kas erimesi, sinirlilik, ilgisizlik ve yorgunluk gibi belirtilere yol açabilir.",False,2,doc_0367_parent_002 | doc_0367_parent_001,Emilim Bozukluğu Nedir? Belirtileri Nelerdir? | Emilim Bozukluğu Nedir? Belirtileri Nelerdir?,https://www.memorial.com.tr/hastaliklar/emilim-bozuklugu-nedir-belirtileri-nelerdir | https://www.memorial.com.tr/hastaliklar/emilim-bozuklugu-nedir-belirtileri-nelerdir,0.7408182999351993,0.016004499979317188,25.283713100012392,26.054418599931523
+15,positive,Alerji nedir ve alerjik belirtiler nelerdir?,0.57,0.6739442348480225,Alerji,doc_0325_parent_001_child_002,doc_0325_parent_001,https://www.memorial.com.tr/saglik-rehberi/alerji,ACCEPT,True,"Alerji, vücudun gösterdiği normal tepkinin aşırı olması şeklinde tanımlanabilir. Alerjik belirtiler, tutulan hedef organa bağlı olarak gelişir ve şu şekilde listelenir:  
+- Burun tıkanıklığı  
+- Sabahları hapşırık krizleri  
+- Burun akıntısı  
+- Gözlerde yanma – batma  
+- Geniz akıntısı  
+- Öksürük  
+- Nefes darlığı  
+- Hırıltı  
+- Kaşıntı  
+- Döküntü  
+- Dudakta – dilde şişme  
+- Tekrarlayan orta kulak iltihapları  
+- Sinüzit.",False,3,doc_0325_parent_001 | doc_0293_parent_001 | doc_0245_parent_001,Alerji | Alerjik Hastalıklar İklim Değişikliği İle Yaygınlaşıyor | Çocuğunuzu Bahar Alerjilerinden Uzak Tutun,https://www.memorial.com.tr/saglik-rehberi/alerji | https://www.memorial.com.tr/saglik-rehberi/alerjik-hastaliklar-iklim-degisikligi-ile-yayginlasiyor | https://www.memorial.com.tr/saglik-rehberi/cocugunuzu-bahar-alerjilerinden-uzak-tutun,0.6420021000085399,0.015488100005313754,81.4730697000632,82.15577880002093
+16,positive,İç kanamanın belirtileri nelerdir?,0.57,0.8258857131004333,İç Kanama Nedir? İç Kanama Belirtileri Nelerdir?,doc_0375_parent_001_child_001,doc_0375_parent_001,https://www.memorial.com.tr/saglik-rehberi/ic-kanama-belirtileri,ACCEPT,True,"İç kanamanın belirtileri şunlardır:
+
+- İç kanamanın olduğu yerde ağrı
+- Kanama bölgesinde morarma
+- Göğüs boşluğu, karın boşluğu ve kaslarda ağrı
+- Kanamanın yansıması olarak kusmukta, dışkıda, idrarda veya vajinada kanama
+- Nefes darlığı
+- Kan kaybına bağlı ciltte solgunluk
+- Baş dönmesi
+- Görme sorunları ya da çift görme
+- Bilinç kaybı
+- Halsizlik ve yorgunluk
+- Düşük kan basıncı
+- Hafıza kaybı
+- Mide bulantısı ve karın ağrısı
+- Kan kusmak
+- Göz, burun ya da kulaktan kan sızması
+- Organ yetmezliği
+- Nöbet ve koma",False,3,doc_0375_parent_001 | doc_0375_parent_002 | doc_0375_parent_003,İç Kanama Nedir? İç Kanama Belirtileri Nelerdir? | İç Kanama Nedir? İç Kanama Belirtileri Nelerdir? | İç Kanama Nedir? İç Kanama Belirtileri Nelerdir?,https://www.memorial.com.tr/saglik-rehberi/ic-kanama-belirtileri | https://www.memorial.com.tr/saglik-rehberi/ic-kanama-belirtileri | https://www.memorial.com.tr/saglik-rehberi/ic-kanama-belirtileri,0.5888718999922276,0.007169199991039932,62.7711968999356,63.38195120007731
+17,positive,Antibiyotikler ne işe yarar?,0.57,0.7951251864433289,Antibiyotik Nedir? Antibiyotik Ne İşe Yarar?,doc_0192_parent_001_child_003,doc_0192_parent_001,https://www.memorial.com.tr/saglik-rehberi/antibiyotikler-doktor-kontrolunde-kullanilmali,ACCEPT,True,"Antibiyotikler, bakterilerin çoğalmasını durdurmak veya öldürmek için tasarlanmış antimikrobiyal ilaçlardır. Bu ilaçlar, özellikle bakterilerin neden olduğu enfeksiyonlarda kullanılır. Antibiyotikler, enfeksiyonun belirtilerini azaltır, iyileşme sürecini hızlandırır ve enfeksiyonun başkalarına yayılmasını önler. Antibiyotikler, sadece bakterilerin neden olduğu enfeksiyonlarda etkilidir. Virüslerin neden olduğu enfeksiyonlar için yararlı değildir.",False,3,doc_0192_parent_001 | doc_0315_parent_001 | doc_0192_parent_002,Antibiyotik Nedir? Antibiyotik Ne İşe Yarar? | Antibiyotik Nedir? Antibiyotik Ne İşe Yarar? | Antibiyotik Nedir? Antibiyotik Ne İşe Yarar?,https://www.memorial.com.tr/saglik-rehberi/antibiyotikler-doktor-kontrolunde-kullanilmali | https://www.memorial.com.tr/saglik-rehberi/antibiyotik-nedir | https://www.memorial.com.tr/saglik-rehberi/antibiyotikler-doktor-kontrolunde-kullanilmali,0.6382603999227285,0.05868970009032637,71.92349200008903,72.64186059997883
+18,positive,Kolera nasıl bulaşır ve belirtileri nelerdir?,0.57,0.8328015804290771,"Kolera Nedir? Kolera Belirtileri Nelerdir, Nasıl Bulaşır?",doc_0301_parent_001_child_003,doc_0301_parent_001,https://www.memorial.com.tr/hastaliklar/kolera-nedir-nasil-bulasir,ACCEPT,True,"Kolera, vibrio cholerae bakterisiyle kontamine olmuş yiyecek veya suyun tüketilmesiyle oluşur. Kolera bulaşması, dışkı yoluyla gerçekleşir. Enfekte olan kişinin dışkısından bulaşan yiyecek veya su, bulaşmayı sağlar.
+
+Kolera belirtileri şunlardır:
+- Bol sulu ishal
+- Kusma
+- Karın ve bacaklarda kramp
+- Vücutta aşırı sıvı kaybı
+- Şok
+- Ağız kuruluğu
+- İdrar çıkışında azalma
+- Huzursuzluk
+- Sinirlilik
+- Kan basıncının düşmesi
+- Cilt mukozalarında kuruma
+- Cildin elastikiyetini kaybetmesi
+- Kalp atışının hızlanması
+- Gözlerin çukurlaşması",False,3,doc_0301_parent_001 | doc_0301_parent_003 | doc_0200_parent_001,"Kolera Nedir? Kolera Belirtileri Nelerdir, Nasıl Bulaşır? | Kolera Nedir? Kolera Belirtileri Nelerdir, Nasıl Bulaşır? | Kolit ve Ülseratif Kolit Nedir? Nedenleri, Belirtileri ve Tedavisi",https://www.memorial.com.tr/hastaliklar/kolera-nedir-nasil-bulasir | https://www.memorial.com.tr/hastaliklar/kolera-nedir-nasil-bulasir | https://www.memorial.com.tr/hastaliklar/kolit-ve-ulseratif-kolit-nedir,0.6501662998925894,0.007431600010022521,73.53445030003786,74.20855739992112
+19,positive,Depresyonun belirtileri nelerdir?,0.57,0.8376100063323975,Depresyon Nedir? Depresyon Belirtileri Nelerdir?,doc_0022_parent_001_child_002,doc_0022_parent_001,https://www.memorial.com.tr/saglik-rehberi/depresyon-nedir,ACCEPT,True,"Depresyonun belirtileri şunlardır:
+
+- Sürekli üzgün, mutsuz ve umutsuz hissetme  
+- Keder ve umutsuzluk içinde olma  
+- Depresif ruh hali  
+- İlgi duyulan ve zevk alınan aktivitelere karşı ilgi kaybı  
+- Uyku sorunları (uykuya dalamama, sık uyanma)  
+- İştahta artış ya da azalma  
+- Her şeyi ağırdan alarak yapmaya başlama  
+- Konsantrasyon eksikliği  
+- Başkalarına karşı sinirli olma ve hoşgörüsüz davranma  
+- Kendini değersiz hissetme  
+- Cinsel istekte azalma  
+- Enerji düşüklüğü  
+- İntihar gibi kendisine zarar verme düşüncelerine sahip olma  
+- Rutin olarak yapılan işleri yerine getirmeme",False,3,doc_0022_parent_001 | doc_0022_parent_002 | doc_0220_parent_001,Depresyon Nedir? Depresyon Belirtileri Nelerdir? | Depresyon Nedir? Depresyon Belirtileri Nelerdir? | Kronik yorgunluk sendromu nedir? Belirtileri ve tedavisi nedir?,https://www.memorial.com.tr/saglik-rehberi/depresyon-nedir | https://www.memorial.com.tr/saglik-rehberi/depresyon-nedir | https://www.memorial.com.tr/hastaliklar/kronik-yorgunluk-sendromu-nedir-belirtileri-ve-tedavisi-nedir,0.604521399945952,0.012031599995680153,96.8708851999836,97.5071133999154
+20,positive,Zahter nedir ve ne amaçla kullanılır?,0.57,0.6627798080444336,Zahter Nedir? Zahter Faydaları Nelerdir?,doc_0438_parent_001_child_001,doc_0438_parent_001,https://www.memorial.com.tr/saglik-rehberi/zahterin-faydalari-nelerdir,ACCEPT,True,"Zahter, ballıbabagiller (Lamiaceae) familyasının Tymbra spicata türüne ait, Filistin ve Cezayir başta olmak üzere orta doğuda yetiştirilen bir bitkidir. Kuru haldeki zahter, gıda aroması, soslar, likör, parfümeri sektöründe hammadde üretimi için kullanılır. Zahter, karvakrol, timol, p-simen, y-terpinen gibi uçucu bileşenlerden oluşur ve ana uçucu bileşeni karvakroldur. Zahter, mikroorganizmaların çoğalması, vücutta enfekte olması ve hastalık yapıcı etkilerini azaltmak için antioksidan ve antibakteriyel özellikleri vardır. Ayrıca, sindirim sistemi problemlerinde destekleyici olur, mide iltihaplarını azaltır, gastrit ve ülser gibi ciddi problemlerin aşılmasına yardımcı olur. Zahter, saç dökülmesini önlemek için saç foliküllerini besler.",False,1,doc_0438_parent_001,Zahter Nedir? Zahter Faydaları Nelerdir?,https://www.memorial.com.tr/saglik-rehberi/zahterin-faydalari-nelerdir,0.6626625000499189,0.014650799916125834,13.866388700087555,14.553191900020465
+21,negative,Toyota Corolla'nın motor hacmi kaç cc?,0.57,0.3313779830932617,CTO (Kronik Total Oklüzyon) tedavisi nasıl yapılır?,doc_0021_parent_001_child_002,doc_0021_parent_001,https://www.memorial.com.tr/tedavi-yontemleri/cto-kronik-total-okluzyon-tedavisi-nasil-yapilir,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.5057044998975471,0.011245300062000751,0.0,0.5169858000008389
+22,negative,Python'da bir liste nasıl sıralanır?,0.57,0.32583874464035034,Kan Grupları Nelerdir? Kan Grupları Neyi İfade Eder?,doc_0353_parent_002_child_003,doc_0353_parent_002,https://www.memorial.com.tr/saglik-rehberi/kan-gruplari,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.5127176999812946,0.01058889995329082,0.0,0.5233323000138626
+23,negative,İstanbul'dan Ankara'ya hızlı tren kaç saat sürer?,0.57,0.37621009349823,İç Kanama Nedir? İç Kanama Belirtileri Nelerdir?,doc_0375_parent_001_child_004,doc_0375_parent_001,https://www.memorial.com.tr/saglik-rehberi/ic-kanama-belirtileri,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.5548272000160068,0.016301600029692054,0.0,0.5711542000062764
+24,negative,Fransa'nın başkenti neresidir?,0.57,0.2614917755126953,EGFR (GFR) Nedir? EGFR Düşüklüğü ve Yüksekliği Ne Anlama Gelir?,doc_0144_parent_001_child_002,doc_0144_parent_001,https://www.memorial.com.tr/tani-ve-testler/gfr-nedir-gfr-testi-neden-yapilir,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.5265911999158561,0.010789000079967082,0.0,0.5374091999838129
+25,negative,Bir üçgenin alanı nasıl hesaplanır?,0.57,0.3357701897621155,Hamilelik Belirtileri Nelerdir? Gebelikte İlk Belirtiler,doc_0065_parent_002_child_004,doc_0065_parent_002,https://www.memorial.com.tr/saglik-rehberi/gebelere-yaz-tatili-onerileri,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.517420299933292,0.010894000064581633,0.0,0.5283509999280795
+26,negative,Windows 11'de masaüstü arka planı nasıl değiştirilir?,0.57,0.3032710552215576,MS hastalarının dikkat etmesi gereken 6 altın kural,doc_0336_parent_001_child_002,doc_0336_parent_001,https://www.memorial.com.tr/saglik-rehberi/ms-hastalarinin-dikkat-etmesi-gereken-6-altin-kural,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.5875100999837741,0.016402099980041385,0.0,0.6039534999290481
+27,negative,GitHub'da yeni bir repository nasıl oluşturulur?,0.57,0.30500274896621704,Kan Grupları Nelerdir? Kan Grupları Neyi İfade Eder?,doc_0353_parent_001_child_001,doc_0353_parent_001,https://www.memorial.com.tr/saglik-rehberi/kan-gruplari,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.4918341999873519,0.014631600002758205,0.0,0.5065048999385908
+28,negative,Türk kahvesi kaç dakika pişirilmelidir?,0.57,0.5336636304855347,Doğru Koşullarda Hazırlanmayan Turşu Zehirleyebilir,doc_0354_parent_001_child_001,doc_0354_parent_001,https://www.memorial.com.tr/saglik-rehberi/dogru-kosullarda-hazirlanmayan-tursu-zehirleyebilir,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.5873077999567613,0.013880199985578656,0.0,0.6012237999821082
+29,negative,Dünya'nın Güneş etrafındaki bir turu kaç gün sürer?,0.57,0.4312848448753357,Göz altı Işık Dolgusu Nedir? Göz altı Işık Dolgusu Nasıl Yapılır​?,doc_0350_parent_001_child_005,doc_0350_parent_001,https://www.memorial.com.tr/tedavi-yontemleri/gozalti-isik-dolgusu,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.6182172999251634,0.014123100088909268,0.0,0.6323739999206737
+30,negative,SQL'de iki tablo nasıl JOIN edilir?,0.57,0.27344226837158203,Diplopi (Çift Görme) Nedir? Diplopi Neden Olur?,doc_0428_parent_001_child_001,doc_0428_parent_001,https://www.memorial.com.tr/saglik-rehberi/diplopi-nedir,REJECT,True,Bu sorunun cevabı dokümanlarımda yer almamaktadır,True,0,,,,0.5266673000296578,0.009432399994693696,0.0,0.5361367999576032

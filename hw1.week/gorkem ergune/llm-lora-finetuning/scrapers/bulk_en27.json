@@ -1,0 +1,228 @@
+{
+    "train": [
+        [
+            {
+                "content": "what is compiler design basics?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Compilers translate source code into machine code. Phases: Lexical analysis (tokenization) — convert character stream into tokens. 'int x = 5;' → [INT, IDENTIFIER(x), EQUALS, NUMBER(5), SEMICOLON]. Tools: regex patterns, finite automata. Lex/Flex. Syntax analysis (parsing) — convert tokens into Abstract Syntax Tree (AST) based on grammar rules. Context-free grammars (BNF notation). Parser types: recursive descent (LL, top-down, easy to write by hand), shift-reduce (LR, bottom-up, handles more grammars). Tools: Yacc/Bison. Semantic analysis — type checking, scope resolution, symbol table management. Is this variable declared? Do types match? Intermediate representation — transform AST into IR (three-address code, SSA form). Platform-independent. Optimization — dead code elimination, constant folding, loop unrolling, inlining, register allocation. NP-hard in general. Code generation — emit target code (machine code, bytecode, LLVM IR). Register allocation, instruction selection. Runtime: compiled (C, Go, Rust — ahead-of-time), interpreted (Python, Ruby — line by line), JIT (Java, JavaScript V8 — compile at runtime based on hot paths). LLVM: modular compiler infrastructure. Frontend (Clang for C/C++, Rustc) → LLVM IR → optimization passes → backend (x86, ARM). Understanding compilers helps with: writing better code, building DSLs, understanding performance characteristics. Gorkem's gorkem-os project involves low-level code generation concepts.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Compiler, lexer, parser, AST, semantic analysis, code generation, LLVM, JIT, optimization.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is REST API design best practices?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "REST (Representational State Transfer) API design principles for clean, maintainable APIs. Resource naming: use nouns not verbs. /users not /getUsers. Plural for collections (/users), singular resource accessed by ID (/users/123). Nested resources for relationships: /users/123/posts. HTTP methods: GET (read, idempotent, cacheable), POST (create), PUT (full update, idempotent), PATCH (partial update), DELETE (remove, idempotent). Status codes: 200 (OK), 201 (Created), 204 (No Content), 400 (Bad Request), 401 (Unauthorized), 403 (Forbidden), 404 (Not Found), 409 (Conflict), 422 (Unprocessable Entity), 429 (Too Many Requests), 500 (Internal Server Error). Pagination: offset-based (?page=2&limit=20 — simple but skip is O(n)), cursor-based (?cursor=abc123&limit=20 — efficient for large datasets, used by Twitter/Slack). Filtering and sorting: ?status=active&sort=-created_at (- prefix for descending). Consistent error responses: { error: { code, message, details } }. Versioning: /api/v1/users. HATEOAS: responses include links to related actions. Authentication: Bearer tokens in Authorization header. Rate limiting: X-RateLimit-* headers. Documentation: OpenAPI/Swagger — auto-generate interactive docs. Tools: Postman for testing, Bruno (open source alternative). Gorkem's projects use REST APIs — following these principles makes APIs intuitive and maintainable.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "REST API, resource naming, HTTP methods, status codes, pagination, filtering, OpenAPI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is TCP/IP and how does the internet work?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TCP/IP is the protocol stack that powers the internet. Four layers: Application layer — HTTP, HTTPS, DNS, FTP, SMTP, WebSocket. Protocols applications use to communicate. Transport layer — TCP (reliable, ordered delivery — web, email, file transfer) and UDP (unreliable, fast — video streaming, gaming, DNS). TCP uses three-way handshake (SYN → SYN-ACK → ACK) to establish connection. Internet layer — IP (Internet Protocol). IP addresses identify devices. IPv4 (32-bit, 4.3 billion addresses, running out) and IPv6 (128-bit, virtually unlimited). Routing: packets hop between routers using routing tables. Link layer — Ethernet, WiFi. Physical transmission of data. How a web request works: 1) DNS resolution — browser asks DNS server to resolve domain to IP. 2) TCP connection — three-way handshake with server. 3) TLS handshake — if HTTPS, negotiate encryption. 4) HTTP request — GET /index.html. 5) Server processes request. 6) HTTP response — status code, headers, body. 7) Browser renders HTML. Key concepts: NAT (translate private IPs to public), DHCP (auto-assign IPs), ports (identify services on a host — 80 HTTP, 443 HTTPS, 22 SSH), firewalls (filter traffic by rules). Understanding networking helps debug connectivity issues, design distributed systems, and optimize performance.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TCP/IP, networking, DNS, HTTP, TLS, routing, ports, three-way handshake, IPv4, IPv6.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is database indexing strategies?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Indexes speed up database queries by creating a data structure that maps column values to row locations. Without an index, the database scans every row (full table scan). B-tree index (default in most databases): balanced tree structure. O(log n) lookup. Good for equality and range queries (WHERE age > 25). Works well with ORDER BY. Hash index: O(1) for equality lookups but doesn't support range queries. Composite index: index on multiple columns. Column order matters — (last_name, first_name) is different from (first_name, last_name). Leftmost prefix principle: a composite index (A, B, C) can be used for queries on (A), (A, B), or (A, B, C), but NOT (B, C) alone. Partial index (PostgreSQL): index only rows that match a condition. CREATE INDEX ON orders (status) WHERE status = 'pending'. Smaller, faster. Covering index: includes all columns needed by a query. Database reads index only, never touches table (index-only scan). GIN index: for full-text search, arrays, JSONB. GiST: for geometric data, full-text search. When NOT to index: small tables (scan is fast enough), columns with very low cardinality (boolean), tables with frequent writes (indexes slow down INSERT/UPDATE/DELETE). Monitor with EXPLAIN ANALYZE to verify index usage. Don't over-index — each index costs write performance and storage.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Database indexing, B-tree, hash, composite, partial, covering, GIN, EXPLAIN ANALYZE.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Linux administration essentials?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Linux is the foundation of modern infrastructure. Essential knowledge: File system: / (root), /etc (config), /var (logs, variable data), /home (user dirs), /tmp (temporary), /usr (user programs), /opt (optional software). Everything is a file — devices, processes, sockets. Permissions: rwx (read, write, execute) for owner, group, others. chmod 755, chown user:group. Process management: ps aux (list processes), top/htop (real-time monitoring), kill -9 PID (force kill), systemctl (manage services). Package management: apt (Debian/Ubuntu), yum/dnf (RHEL/CentOS), pacman (Arch). Networking: ip addr (show IPs), ss/netstat (show connections), curl (HTTP requests), dig/nslookup (DNS lookup), iptables/nftables (firewall). Disk: df -h (disk usage), du -sh (directory size), mount/umount, lsblk (list block devices). Text processing: grep, sed, awk, sort, uniq, wc, cut — pipe them together for powerful data processing. SSH: secure remote access. Key-based auth (ssh-keygen), config file (~/.ssh/config), tunneling (-L for local port forward). Cron: schedule recurring tasks. crontab -e to edit. Shell scripting: bash scripts for automation. Variables, loops, conditionals, functions. Logs: /var/log/, journalctl for systemd logs. Always know how to: find files (find), search content (grep), monitor resources (top, free, iostat), check logs.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Linux, file system, permissions, process management, SSH, cron, networking, shell script.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is search engine optimization SEO for developers?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SEO ensures your website appears in search engine results. Developers play a crucial role beyond content. Technical SEO: crawlability — search engines must be able to discover and read your pages. robots.txt (control what's crawled), XML sitemap (list all pages), proper HTTP status codes (301 for permanent redirects, 404 for not found). Indexability — pages must be indexable. noindex meta tag for pages you don't want indexed. Canonical URLs to avoid duplicate content. Rendering — Google can render JavaScript but prefers server-rendered HTML. SSR/SSG is better for SEO than client-side rendering. Performance — Core Web Vitals (LCP, INP, CLS) are ranking factors. Fast sites rank higher. Mobile-first indexing — Google primarily uses mobile version for indexing. Responsive design is essential. Structured data — Schema.org markup (JSON-LD) helps search engines understand content. Rich snippets in search results (reviews, recipes, events). Semantic HTML — use proper heading hierarchy (h1 → h2 → h3), descriptive link text, alt text for images. URL structure — clean, descriptive URLs (/blog/what-is-react vs /page?id=123). Internal linking — help search engines discover related pages, distribute page authority. HTTPS — ranking signal. Always use HTTPS. For Next.js/React: use SSR or SSG for important pages, implement proper meta tags (title, description, og tags), use next/head or metadata API. SEO is a collaboration between developers, content creators, and marketing.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SEO, technical SEO, crawlability, indexing, structured data, Core Web Vitals, sitemap.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is zero-knowledge proofs and blockchain basics?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Blockchain is a distributed, immutable ledger. Blocks contain transactions, each block references the previous block's hash — forming a chain. If any block is tampered with, all subsequent hashes change. Consensus mechanisms: Proof of Work (Bitcoin — miners solve computational puzzles, energy-intensive), Proof of Stake (Ethereum 2.0 — validators stake tokens, energy-efficient), others (Proof of Authority, DPoS). Smart contracts: programs stored on blockchain that execute automatically when conditions are met. Ethereum (Solidity), Solana (Rust). DeFi (Decentralized Finance), NFTs, DAOs built on smart contracts. Zero-knowledge proofs (ZKP): prove you know something without revealing it. Example: prove you're over 18 without revealing your age. Types: zk-SNARKs (succinct, non-interactive — small proof, fast verification, trusted setup), zk-STARKs (scalable, transparent — no trusted setup, larger proofs). Applications: privacy-preserving transactions (Zcash), identity verification without data exposure, scalability (zk-rollups compress many transactions into one proof — zkSync, StarkNet). For developers: understand the concepts rather than the math. Web3 development: Hardhat/Foundry (development frameworks), ethers.js/viem (JavaScript libraries), MetaMask (wallet integration). Whether or not you work in crypto, ZKPs and decentralized systems are influencing broader computer science — privacy, verification, trust.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Blockchain, zero-knowledge proofs, zk-SNARK, smart contracts, consensus, Ethereum, ZKP.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is concurrency and parallelism?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Concurrency: dealing with multiple tasks at once (structure). Parallelism: doing multiple tasks at once (execution). Concurrency is about design, parallelism is about hardware. Concurrency models: Threads — OS-level threads share memory. Challenges: race conditions (two threads modify same data), deadlocks (threads wait for each other's locks), thread safety. Synchronization: mutexes (mutual exclusion locks), semaphores, read-write locks. Async/Await — single-threaded concurrency for I/O-bound tasks. Event loop processes tasks without blocking. Python asyncio, JavaScript async/await, Rust tokio. Great for network I/O, file I/O. Actor Model — actors are independent units that communicate via messages. No shared state. Erlang/Elixir (built for this), Akka (JVM). CSP (Communicating Sequential Processes) — goroutines communicate through channels. Go's model. Simple, composable. When to use what: I/O-bound (waiting for network, disk) → async/await or threads. CPU-bound (computation) → processes or true parallelism. Python's GIL: Global Interpreter Lock means only one thread executes Python bytecode at a time. For CPU-bound: use multiprocessing. For I/O-bound: threading or asyncio both work. Rust: fearless concurrency — ownership system prevents data races at compile time. No GIL, no garbage collector. Common pitfalls: race conditions, deadlocks, livelocks, starvation. Use higher-level abstractions (thread pools, channels, async) over raw threads when possible.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Concurrency, parallelism, threads, async, actor model, CSP, goroutines, race condition, GIL.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is data modeling and database design?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Data modeling structures how data is organized, stored, and accessed. Relational modeling (SQL databases): entities become tables, attributes become columns, relationships become foreign keys. Normalization: 1NF (atomic values, no repeating groups), 2NF (no partial dependencies), 3NF (no transitive dependencies). Eliminates redundancy but increases joins. Denormalization: intentionally add redundancy for read performance. Common in read-heavy applications. Entity-Relationship (ER) diagrams: visual representation of entities, attributes, relationships (one-to-one, one-to-many, many-to-many). Many-to-many requires junction/join table. NoSQL modeling: different approach — model for query patterns, not relationships. Document stores (MongoDB): embed related data in single document. Denormalized by design. Model data the way your application reads it. Key-value stores (Redis, DynamoDB): access pattern is get/put by key. Design keys carefully. Wide-column stores (Cassandra): partition key determines data distribution. Model around queries, not entities. Graph databases (Neo4j): nodes and relationships. Perfect for social networks, recommendation engines. Choose based on: access patterns (how will data be queried?), consistency requirements, scale requirements, team expertise. Most applications: start with PostgreSQL. It handles 95% of use cases. Add NoSQL for specific needs (caching → Redis, search → Elasticsearch, graph queries → Neo4j).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Data modeling, normalization, denormalization, ER diagram, NoSQL, document, graph database.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is system reliability engineering SRE?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SRE (Site Reliability Engineering) applies software engineering to operations problems. Created by Google. Core principles: SLI (Service Level Indicator) — measurable metric of service quality. Examples: request latency p99, error rate, availability percentage. SLO (Service Level Objective) — target value for an SLI. Example: 99.9% availability (allows ~8.7 hours downtime/year). SLA (Service Level Agreement) — contract with consequences. SLO with penalties for breach. Error budget — if SLO is 99.9%, error budget is 0.1%. If you haven't used your error budget, push features faster. If budget is spent, freeze deployments and focus on reliability. Toil: manual, repetitive, automatable work. SRE goal: eliminate toil through automation. Monitoring: alert on symptoms (high error rate) not causes (CPU high). Incident management: detect → respond → mitigate → resolve → postmortem. Blameless postmortems: focus on what happened and how to prevent, not who to blame. Change management: progressive rollouts (canary → percentage → full), feature flags, automated rollbacks. Capacity planning: predict growth, provision ahead. Practices: chaos engineering (intentionally inject failures — Netflix Chaos Monkey), game days (practice incident response), runbooks (step-by-step guides for common issues). SRE bridges the gap between development speed and operational stability.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SRE, SLO, SLI, error budget, toil, incident management, postmortem, chaos engineering.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is dynamic programming explained simply?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Dynamic programming (DP) solves problems by breaking them into overlapping subproblems and storing results to avoid recomputation. Two properties: optimal substructure (optimal solution contains optimal solutions to subproblems) and overlapping subproblems (same subproblems solved multiple times). Classic example — Fibonacci: naive recursion is O(2^n) because it recomputes the same values. DP stores results: O(n). Two approaches: Top-down (memoization) — recursive with cache. Start with the big problem, break down, cache results. More intuitive. def fib(n, memo={}): if n in memo: return memo[n]; memo[n] = fib(n-1) + fib(n-2). Bottom-up (tabulation) — iterative, build up from base cases. Fill a table from small to large. Often more efficient (no recursion overhead). dp = [0, 1]; for i in range(2, n+1): dp[i] = dp[i-1] + dp[i-2]. Common DP problems: coin change (minimum coins to make amount), longest common subsequence, knapsack problem (maximize value within weight limit), edit distance (transform one string to another), longest increasing subsequence. How to identify DP problems: 'find minimum/maximum', 'count number of ways', 'is it possible to...' with constraints that suggest overlapping subproblems. Strategy: define state, define transition, identify base cases, determine order of computation. DP is the most commonly tested topic in coding interviews after arrays and strings.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Dynamic programming, memoization, tabulation, Fibonacci, knapsack, overlapping subproblems.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is graph algorithms and their applications?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Graphs model relationships: nodes (vertices) and edges. Representations: adjacency list (space efficient for sparse graphs), adjacency matrix (O(1) edge lookup). BFS (Breadth-First Search): explore level by level using a queue. Finds shortest path in unweighted graphs. Applications: shortest path, social network connections (degrees of separation), web crawling. O(V+E). DFS (Depth-First Search): explore as deep as possible using a stack/recursion. Applications: cycle detection, topological sorting, connected components, maze solving. O(V+E). Dijkstra's algorithm: shortest path with weighted edges (non-negative weights). Priority queue. O((V+E)logV). Applications: GPS navigation, network routing. Bellman-Ford: handles negative weights. O(VE). Detects negative cycles. Floyd-Warshall: all-pairs shortest path. O(V³). Topological sort: ordering of DAG nodes where every edge goes from earlier to later. Applications: build systems (dependency resolution), course prerequisites, task scheduling. Minimum Spanning Tree: Kruskal's (sort edges, add smallest that doesn't create cycle — Union-Find) and Prim's (grow tree from start vertex — priority queue). Applications: network design, clustering. Strongly Connected Components: Tarjan's algorithm, Kosaraju's algorithm. Applications: analyzing social networks, compiler optimization. Graph algorithms are fundamental to many real-world systems — social networks, maps, scheduling, compilers.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Graph algorithms, BFS, DFS, Dijkstra, topological sort, MST, shortest path, DAG.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is event loop in JavaScript and Node.js?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The event loop is how JavaScript handles asynchronous operations despite being single-threaded. Call stack: executes functions in LIFO order. Synchronous code runs here. When a function is called, it's pushed onto the stack. When it returns, it's popped. Blocking: if the call stack is busy with a long computation, nothing else can run — the UI freezes (browser) or the server can't handle requests (Node.js). Web APIs / Node APIs: when you call setTimeout, fetch, or fs.readFile, the operation is handed off to the runtime (browser or Node). The call stack is free to continue. Callback queue (Task queue): when an async operation completes, its callback is placed in the queue. Microtask queue: Promises (.then), MutationObserver, queueMicrotask. Higher priority than task queue. The event loop: continuously checks — is the call stack empty? If yes, take the first item from the microtask queue. If microtask queue is empty, take from the task queue. Push it onto the call stack. This is why: setTimeout(fn, 0) doesn't execute immediately — it waits for the call stack to empty. Promise callbacks execute before setTimeout callbacks (microtasks before macrotasks). Practical implications: don't block the main thread (use Web Workers for CPU-intensive tasks), understand async operation ordering, use async/await for readable async code (syntactic sugar over Promises). Node.js event loop has additional phases: timers, pending callbacks, idle, poll, check (setImmediate), close callbacks.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Event loop, call stack, microtask, macrotask, callback queue, async, single-threaded, Node.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is mobile development approaches?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Mobile development choices and trade-offs. Native: platform-specific code. iOS (Swift/SwiftUI), Android (Kotlin/Jetpack Compose). Best performance, full platform API access, best UX. But: separate codebases, separate teams, doubled effort. Cross-platform: React Native (JavaScript/React, Meta) — compiles to native components. Hot reload, large ecosystem. Used by: Instagram, Discord, Shopify. Good performance for most apps. Flutter (Dart, Google) — renders its own widgets using Skia engine. Consistent UI across platforms, fast, good DX. Used by: Google Pay, BMW, eBay Motors. Growing rapidly. Capacitor/Ionic (web technologies) — wrap web app in native WebView. Easiest if you know web dev. Performance trade-off for complex UIs. .NET MAUI (C#, Microsoft) — cross-platform from single C# codebase. Good for enterprises already in Microsoft ecosystem. PWA (Progressive Web App): web app with native-like features. Service workers for offline, push notifications, installable. No app store needed. Limited native API access. When to choose what: need maximum performance or heavy native APIs (AR, Bluetooth, complex animations)? → Native. Need to ship fast with one codebase, acceptable performance? → React Native or Flutter. Have a web team, app is content-focused? → PWA or Capacitor. Flutter vs React Native: Flutter has better consistency and performance, React Native has larger ecosystem and easier hiring (JavaScript).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mobile development, React Native, Flutter, native, PWA, cross-platform, Swift, Kotlin.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

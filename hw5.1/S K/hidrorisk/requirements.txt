@@ -1,0 +1,5 @@
+requests>=2.31    # Ollama ve internet aramasi icin HTTP
+numpy             # SPI sayisal islemleri
+pandas            # CSV ve zaman serisi islemleri
+scipy             # Gamma ve normal dagilim ile SPI hesabi
+matplotlib       # SPI zaman serisi grafigi

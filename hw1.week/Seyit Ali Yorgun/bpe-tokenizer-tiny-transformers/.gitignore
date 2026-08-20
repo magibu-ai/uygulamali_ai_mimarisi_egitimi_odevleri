@@ -1,0 +1,12 @@
+# Sanal ortam (277 MB — depoya girmez)
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Upstream repo ayrı bir projedir; klonlanarak alınır (README'ye bkz.)
+single_letter_transformers/
+
+# BPE token'larıyla eğitilmiş eski modeller — teslimin parçası değil
+proje/checkpoints_bpe/

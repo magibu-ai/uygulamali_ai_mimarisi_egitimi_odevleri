@@ -1,0 +1,324 @@
+{
+    "train": [
+        [
+            {
+                "content": "data lake ve data warehouse farkı ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Data Warehouse yapılandırılmış, temizlenmiş veri için — SQL ile sorgulama, BI raporları, iş analitiği. Şema önceden tanımlı (schema-on-write). Araçlar: Snowflake, BigQuery, Redshift, Azure Synapse. Data Lake ham veriyi olduğu gibi saklar — yapılandırılmış, yarı-yapılandırılmış, yapılandırılmamış (JSON, CSV, resim, video). Şema okuma zamanında uygulanır (schema-on-read). Araçlar: S3 + Athena, HDFS, Azure Data Lake. Lakehouse (yeni trend): ikisinin birleşimi — Delta Lake, Apache Iceberg, Apache Hudi. Ham veriyi lake'te sakla, üstüne warehouse benzeri yapı koy. Hangisini seç: iş analizi ve BI → warehouse, ML ve ham veri analizi → lake, ikisi de → lakehouse. Data swamp'a dikkat — organize edilmemiş data lake çöplüğe döner.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Data Lake, Data Warehouse, Lakehouse, schema-on-write, schema-on-read, Delta Lake.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "quantum computing yazılımcıları nasıl etkileyecek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Quantum computing klasik bilgisayarların yapamadığı bazı hesaplamaları yapabilen teknoloji. Qubit süperpozisyon (0 ve 1 aynı anda) ve dolanıklık (entanglement) kullanır. Potansiyel etki alanları: kriptografi (RSA kırılabilir — post-quantum cryptography'ye geçiş başladı), ilaç keşfi (molekül simülasyonu), optimizasyon problemleri, malzeme bilimi, ML (quantum machine learning). Mevcut durum: NISQ (Noisy Intermediate-Scale Quantum) dönemindeyiz — qubit'ler gürültülü ve hata oranı yüksek. Pratik quantum advantage henüz sınırlı. Yazılımcılar için: Qiskit (IBM), Cirq (Google), PennyLane ile quantum programlama deneyebilirsin. Klasik bilgisayarların yerini almayacak — belirli problem türlerinde tamamlayıcı olacak. 5-10 yıl içinde daha pratik uygulamalar göreceğiz. Şimdilik temelleri öğrenmek yeterli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Quantum computing, qubit, süperpozisyon, Qiskit, post-quantum cryptography, NISQ.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Python GIL nedir performansı nasıl etkiler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GIL (Global Interpreter Lock) CPython'da aynı anda sadece bir thread'in Python bytecode çalıştırmasına izin veren kilit. CPU-bound işlerde multi-threading fayda sağlamaz — hatta overhead yüzünden daha yavaş olabilir. I/O-bound işlerde (ağ istekleri, dosya okuma) GIL sorun değil — thread I/O beklerken GIL bırakılır. Çözümler: multiprocessing (her process kendi GIL'i), asyncio (I/O-bound için), C extension (NumPy gibi GIL'i bırakır), alternatif interpreter (PyPy, Jython). Python 3.13+ ile 'free-threaded' mod geliyor — GIL opsiyonel olacak. Pratikte: web server'lar için GIL sorun değil (her istek I/O-bound), ML training için NumPy/PyTorch zaten C'de çalışır. GIL Python'un en çok yanlış anlaşılan konusu — korkma ama bil.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GIL, CPython, multi-threading, multiprocessing, asyncio, free-threaded, I/O-bound.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Go goroutine ve channel ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Go'nun concurrency modeli goroutine ve channel üzerine kurulu. Goroutine hafif thread — go func() ile başlatırsın, binlercesini aynı anda çalıştırabilirsin (normal thread'in 1/1000'i kadar bellek kullanır). Channel goroutine'ler arası güvenli iletişim — ch := make(chan int), ch <- 42 gönder, val := <-ch al. Select statement birden fazla channel'ı dinler. Buffered channel: make(chan int, 10) — buffer dolana kadar bloklama yok. 'Don't communicate by sharing memory, share memory by communicating' — Go'nun felsefesi. WaitGroup goroutine'lerin bitmesini beklemek için. Context iptal sinyali ve timeout için. Go'nun concurrency modeli CSP (Communicating Sequential Processes) teorisine dayanır. Web server'lar, CLI araçları, microservices için mükemmel.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Go, goroutine, channel, concurrency, select, WaitGroup, Context, CSP.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "TypeScript advanced types neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TypeScript'in güçlü tip sistemi JavaScript'e güvenlik katıyor. Generic'ler: function identity<T>(arg: T): T — tip parametresi ile esnek ve güvenli fonksiyonlar. Conditional types: T extends string ? A : B — tipe göre farklı tip döndür. Mapped types: { [K in keyof T]: boolean } — mevcut tipten yeni tip türet. Utility types: Partial<T>, Required<T>, Pick<T, K>, Omit<T, K>, Record<K, V> — çok kullanışlı. Template literal types: type Event = `on${Capitalize<string>}` — string pattern'leri tip olarak tanımla. Discriminated unions: type Shape = Circle | Rectangle — type narrowing ile güvenli. infer keyword: conditional type içinde tip çıkarımı. keyof, typeof, indexed access types. Bu özellikleri bilmek TypeScript'i JavaScript+Annotations'dan çok daha güçlü bir dile dönüştürür.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TypeScript, generics, conditional types, mapped types, utility types, discriminated union.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Python'da metaclass ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Metaclass sınıfların sınıfıdır — sınıfların nasıl oluşturulacağını kontrol eder. Normal sınıf obje oluşturur, metaclass sınıf oluşturur. type Python'daki varsayılan metaclass. Kullanım: ORM framework'leri (Django Model'daki Field tanımları metaclass ile çalışır), API validation, singleton pattern, abstract base class zorlama. class Meta(type) ile kendi metaclass'ını yaz, __new__ veya __init_subclass__ override et. Pratikte çoğu projede metaclass'a ihtiyaç duymazsın — decorator ve class decorator genelde yeterli. 'Metaclass kullanman gerekip gerekmediğini bilmiyorsan, kullanmana gerek yok' — Tim Peters. Ama framework geliştiriyorsan veya DSL oluşturuyorsan çok güçlü bir araç.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Python metaclass, type, ORM, Django Model, __new__, framework.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "mobil uygulama mimarisi nasıl olmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Mobil uygulamalarda temiz mimari çok önemli — kod büyüdükçe spagetti olması kolay. MVVM (Model-View-ViewModel): en yaygın — View UI'ı gösterir, ViewModel iş mantığını ve state'i yönetir, Model veriyi temsil eder. Clean Architecture katmanları: Presentation (UI), Domain (iş mantığı, use case'ler), Data (repository, API, local DB). MVI (Model-View-Intent): tek yönlü veri akışı — Redux benzeri, state management net. Repository pattern: veri kaynağını soyutla — API'dan mı local DB'den mi geldiğini UI bilmesin. Dependency injection: Dagger/Hilt (Android), Riverpod (Flutter). Offline-first: local database (Room/SQLite, Hive) + sync mekanizması. Navigation: type-safe navigation (Jetpack Navigation, go_router). Test: unit test (ViewModel), widget test (UI), integration test (tam akış).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mobil mimari, MVVM, Clean Architecture, MVI, Repository, DI, offline-first.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "dbt (data build tool) ne yapar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "dbt veri dönüşümünü SQL ile yapmanı sağlayan araç — analytics engineering'in temel aracı. ELT'nin T'si. SELECT ile dönüşüm yaz, dbt bunu materialized view veya tablo olarak oluşturur. Avantajları: version control (SQL dosyaları Git'te), modülerlik (model'ler birbirine ref ile bağlanır), dokümantasyon (otomatik DAG ve lineage), test (not_null, unique, accepted_values, custom test), DRY (Jinja macro'lar ile tekrar kullanılabilir SQL). dbt Core açık kaynak (CLI), dbt Cloud yönetilen servis (scheduler, IDE, CI/CD). Snowflake, BigQuery, Redshift, PostgreSQL ile çalışır. Data Analyst'ten Analytics Engineer'a geçiş dbt ile mümkün — SQL biliyorsan hemen başlayabilirsin. Veri ekiplerinin vazgeçilmez aracı haline geldi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "dbt, data build tool, analytics engineering, SQL transformation, Jinja, lineage.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "state management karşılaştırması: Redux vs Zustand vs Jotai?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "State management React'te en tartışmalı konulardan biri. Redux: en eski ve en kapsamlı — büyük ekipler ve karmaşık state için. Redux Toolkit boilerplate'i azalttı ama yine de öğrenmesi zor. Zustand: minimal, hook-based — create ile store oluştur, component'te useStore ile kullan. Boilerplate yok, öğrenmesi kolay, küçük-orta projeler için ideal. Jotai: atom-based (Recoil benzeri) — her state parçası bağımsız atom, bottom-up yaklaşım. Fine-grained re-render — sadece değişen atom'u kullanan component yeniden render olur. React Query/TanStack Query: server state için — API verisi cache'leme, senkronizasyon, invalidation. Tavsiye: çoğu proje için Zustand + React Query yeterli. Redux sadece çok karmaşık client state varsa. Context API basit global state için (tema, dil) ama sık değişen state için performans sorunu yaratır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "State management, Redux, Zustand, Jotai, React Query, atom, boilerplate.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AR/VR development nasıl başlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AR (Artırılmış Gerçeklik) gerçek dünyaya dijital öğeler ekler, VR (Sanal Gerçeklik) tamamen dijital ortam oluşturur. AR araçları: ARKit (iOS), ARCore (Android), AR.js (web), Vuforia. VR araçları: Unity (C#, en popüler), Unreal Engine (C++, yüksek kalite), A-Frame (web VR). Apple Vision Pro ile spatial computing yeni bir dönem başlattı — visionOS, SwiftUI ile geliştirme. Meta Quest için Unity ile VR uygulama geliştirmek erişilebilir bir başlangıç. WebXR API'sı ile tarayıcıda AR/VR deneyimi oluşturabilirsin — Three.js ile 3D. Kullanım alanları: eğitim (sanal laboratuvar), sağlık (cerrahi simülasyon), gayrimenkul (sanal tur), oyun, endüstri (bakım rehberi). 3D modelleme bilgisi (Blender) büyük avantaj. Pazar büyüyor ama henüz mainstream değil — erken öğrenenler avantajlı olacak.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AR, VR, Unity, ARKit, ARCore, Apple Vision Pro, WebXR, spatial computing.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ETL pipeline nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ETL (Extract, Transform, Load) veriyi kaynaktan çekme, dönüştürme ve hedef sisteme yükleme süreci. Extract: API, veritabanı, dosya, streaming kaynakları. Transform: temizleme (null'lar, duplikatlar), format dönüşümü, aggregation, iş kuralları uygulama, data quality kontrolleri. Load: data warehouse, data lake, veritabanı. Modern yaklaşım ELT: ham veriyi önce yükle, dönüşümü warehouse içinde yap (BigQuery, Snowflake güçlü işlem kapasitesi sunuyor). Araçlar: Apache Airflow (orchestration), dbt (transformation), Fivetran/Airbyte (extraction), Spark (büyük veri). Best practices: idempotent pipeline (tekrar çalıştırılabilir), incremental loading (sadece yeni/değişen veri), data quality checks, monitoring ve alerting, retry mekanizması, schema evolution handling. Pipeline'ı DAG (Directed Acyclic Graph) olarak modellersin — Airflow tam bunu yapar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ETL, ELT, pipeline, Airflow, dbt, Fivetran, data quality, DAG.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Core Web Vitals ne nasıl optimize edilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Core Web Vitals Google'ın web performans metrikleri — SEO sıralamasını etkiler. LCP (Largest Contentful Paint): en büyük içerik ne kadar sürede görünüyor? Hedef: 2.5s altı. Optimize: resimleri optimize et (WebP, lazy loading), critical CSS inline et, font preload, server response time düşür. INP (Interaction to Next Paint): kullanıcı etkileşimine ne kadar hızlı tepki veriyor? Hedef: 200ms altı. Optimize: heavy JavaScript'i böl, web worker kullan, long task'ları parçala. CLS (Cumulative Layout Shift): sayfa ne kadar kayıyor? Hedef: 0.1 altı. Optimize: resimlere width/height ver, font-display: swap kullan, dinamik içeriğe yer ayır. Ölçüm: Lighthouse, PageSpeed Insights, Chrome DevTools Performance tab, Web Vitals extension. Performans sürekli izlenmeli — her deploy sonrası kontrol et.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Core Web Vitals, LCP, INP, CLS, Lighthouse, performans, SEO.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "blockchain ve Web3 gerçekte ne durumda?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Blockchain ve Web3 hakkında çok hype var ama gerçekçi bakmak lazım. Blockchain güçlü yönleri: değiştirilemez kayıt tutma, merkezi otoriteye gerek olmadan güven, akıllı sözleşmeler ile otomatik işlemler. Gerçek kullanım alanları: kripto para (Bitcoin, Ethereum), DeFi (merkezi olmayan finans), supply chain tracking, dijital kimlik, NFT (dijital sahiplik kanıtı). Sorunları: ölçeklenebilirlik (Ethereum saniyede ~30 işlem vs Visa ~65000), enerji tüketimi (PoW — Bitcoin), karmaşık UX (cüzdan yönetimi, gas fee), regülasyon belirsizliği, scam ve dolandırıcılık yaygınlığı. Web3 vizyonu güzel (kullanıcı verisi kontrolü, merkezi olmayan uygulamalar) ama henüz mainstream adoption yok. Yazılımcı olarak öğrenmekte fayda var ama tüm yumurtalarını bu sepete koyma. Solidity öğrenmek istiyorsan Ethereum geliştirici dökümantasyonu iyi bir başlangıç.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Blockchain, Web3, Ethereum, DeFi, NFT, ölçeklenebilirlik, Solidity, gerçekçi bakış.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Apache Airflow ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Airflow iş akışlarını (workflow) programatik olarak tanımlama, zamanlama ve izleme platformu. DAG (Directed Acyclic Graph) ile görevleri ve bağımlılıkları tanımlarsın — Python kodu ile. Operator'ler: BashOperator, PythonOperator, PostgresOperator, S3Operator vb. Zamanlama: cron benzeri schedule (her gün saat 2'de çalıştır). Sensor'ler: bir koşul sağlanana kadar bekle (dosya geldi mi, API hazır mı). XCom: görevler arası veri paylaşımı. Web UI: DAG durumunu görselleştirir, logları gösterir, manuel tetikleme. Pool ve Queue ile kaynak yönetimi. Alerting: görev başarısız olursa email/Slack bildirimi. Alternatifler: Prefect, Dagster (daha modern), Luigi. ETL pipeline'ları, ML workflow'ları, veri kalite kontrolleri için standart araç. Docker Compose ile kolayca kurulabilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Airflow, DAG, Operator, Sensor, scheduling, ETL orchestration, web UI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "edge computing ne IoT'da neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Edge computing veriyi merkezi bulut yerine kaynağa yakın işleme — cihazda veya yakın sunucuda. Neden: latency (otonom araç 100ms cloud gecikmesi bekleyemez), bandwidth (her IoT sensörünün tüm verisini cloud'a göndermek pahalı), privacy (veri cihazda kalır), reliability (internet kesilse bile çalışır). IoT'da: akıllı fabrika sensörleri yerel olarak anomali tespit eder, sadece önemli event'leri cloud'a gönderir. CDN'ler edge computing'in erken örneği. Cloudflare Workers, AWS Lambda@Edge, Azure IoT Edge. AI at the edge: TensorFlow Lite, ONNX Runtime ile ML modellerini mobil cihaz veya Raspberry Pi'da çalıştır. Fog computing: edge ve cloud arası katman. 5G edge computing'i güçlendirecek — düşük latency + yüksek bandwidth. Görkem'in IoT veya embedded AI projeleri için edge computing bilgisi değerli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Edge computing, IoT, latency, bandwidth, TensorFlow Lite, Cloudflare Workers, 5G.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "React Server Components ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "React Server Components (RSC) component'lerin sunucuda çalışıp HTML olarak client'a gönderilmesini sağlar. Client Component'ler tarayıcıda çalışır (interaktif — useState, onClick). Server Component'ler sunucuda çalışır — veritabanına doğrudan erişir, bundle size'a eklenmez, SEO dostu. Next.js App Router RSC'yi varsayılan yapar — 'use client' directive ile client component belirtirsin. Avantajları: daha küçük JavaScript bundle, daha hızlı ilk yükleme, sunucu kaynaklarına doğrudan erişim, waterfall azaltma. Dikkat: Server Component'lerde state ve event handler kullanamazsın. Streaming ile progressive rendering — sunucu hazır olan parçaları önce gönderir. Paradigma değişikliği — React'in geleceği server-first yaklaşımında.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "React Server Components, RSC, Next.js App Router, use client, streaming, bundle size.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Playwright ile E2E test nasıl yazılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Playwright Microsoft'un geliştirdiği modern E2E test framework'ü — Chromium, Firefox, WebKit'i destekler. Cypress'e göre avantajları: birden fazla tarayıcı, birden fazla tab/window, iframe desteği, daha hızlı. Kurulum: npm init playwright@latest. Test yazma: test('login', async ({ page }) => { await page.goto('/login'); await page.fill('#email', 'test@test.com'); await page.click('button[type=submit]'); await expect(page).toHaveURL('/dashboard'); }). Auto-waiting: element hazır olana kadar otomatik bekler. Locator'lar: getByRole, getByText, getByTestId — erişilebilirlik odaklı seçiciler. Code generation: npx playwright codegen ile tarayıcıda tıkla, test kodu otomatik oluşsun. Trace viewer: başarısız testlerin adım adım ekran görüntüsü ve network logları. CI/CD'de: GitHub Actions ile her PR'da otomatik çalıştır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Playwright, E2E testing, auto-waiting, locator, codegen, trace viewer, CI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "React Native ve Flutter karşılaştırması?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İki büyük cross-platform framework. React Native: JavaScript/TypeScript, React bilgisi varsa hızlı başlangıç, native component'ler kullanır (platform UI'ına uygun görünüm), Expo ile kolay kurulum, büyük JavaScript ekosistemi, hot reload. Flutter: Dart dili (öğrenmesi kolay ama yeni), kendi rendering engine'i (Skia — her platformda aynı görünüm), widget-based, çok hızlı UI rendering, material ve cupertino widget'ları. Performans: Flutter genelde daha iyi (kendi engine'i), RN new architecture (Fabric, TurboModules) ile farkı kapattı. Ekosistem: RN daha büyük (JavaScript), Flutter hızla büyüyor. Karar: React/JS biliyorsan RN, sıfırdan başlıyorsan Flutter, native görünüm önemliyse RN, pixel-perfect custom UI istiyorsan Flutter. İkisi de production-ready — Instagram, Airbnb (eski) RN; Google Pay, BMW Flutter kullanıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "React Native, Flutter, Dart, cross-platform, Expo, Skia, performans karşılaştırma.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Apache Kafka ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kafka dağıtık event streaming platformu — saniyede milyonlarca mesaj işleyebilir. Kullanım alanları: microservices arası iletişim, real-time data pipeline, event sourcing, log aggregation, activity tracking. Kavramlar: topic (mesaj kategorisi), partition (paralellik birimi), producer (mesaj gönderen), consumer (mesaj alan), consumer group (load balancing), broker (Kafka sunucusu), offset (mesaj pozisyonu). RabbitMQ'dan farkı: Kafka mesajları saklar (retention period kadar), replay edebilirsin. RabbitMQ push model, Kafka pull model. Kafka Connect: harici sistemlerle entegrasyon (DB'den Kafka'ya, Kafka'dan S3'e). Kafka Streams: stream processing kütüphanesi. Alternatifler: Amazon Kinesis, Apache Pulsar, Redis Streams. Kafka öğrenmesi zor ama büyük ölçekli veri akışı için endüstri standardı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kafka, event streaming, topic, partition, consumer group, Kafka Connect, retention.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Rust ownership ve borrowing sistemi nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Rust'ın en benzersiz özelliği — memory safety'yi garbage collector olmadan sağlar. Ownership kuralları: her değerin tek bir owner'ı var, owner scope'tan çıkınca değer otomatik temizlenir (drop), ownership transfer edilebilir (move). Borrowing: değeri ödünç al — &x (immutable borrow, birden fazla olabilir) veya &mut x (mutable borrow, aynı anda sadece bir tane). Bu kurallar compile time'da kontrol edilir — runtime overhead yok. Sonuç: null pointer yok, data race yok, use-after-free yok, double free yok. Öğrenmesi zor — 'borrow checker ile kavga etmek' Rust öğrenmenin doğal parçası. Ama öğrenince C/C++ seviyesinde performans ve memory safety bir arada. WebAssembly, sistem programlama, CLI araçları için mükemmel. Görkem'in gorkem-os projesi gibi düşük seviye çalışmalar için ideal.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Rust, ownership, borrowing, borrow checker, memory safety, move, drop.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

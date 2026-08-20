@@ -1,0 +1,420 @@
+{
+    "train": [
+        [
+            {
+                "content": "What are design patterns?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Design patterns are proven solutions to recurring problems in software development. The Gang of Four book defines 23 fundamental patterns. Most well-known: Singleton (single instance), Factory (object creation), Observer (event listening), Strategy (algorithm swapping), MVC (Model-View-Controller). Each pattern solves a specific problem. You don't need to memorize them all but understanding the concepts improves your code quality. They come up in interviews too. Most commonly used in Python and Java. Part of writing clean, maintainable code.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Design patterns, GoF, Singleton, Factory, Observer, MVC, interviews.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is A/B testing?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A/B testing is showing users two different versions of a product and measuring which performs better. For example, you changed a button's color — does blue or red get more clicks? Half the users see version A, half see version B, and results are statistically compared. Google, Netflix, Amazon run A/B tests constantly. Tools like Optimizely and Google Optimize exist. It's the foundation of data-driven decision making. Widely used in product management and UI/UX design.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "A/B testing explanation, button example, tools, data-driven decisions.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Why is caching important?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Caching means storing frequently accessed data in a fast-access location. If a database query takes 100ms, reading from cache takes 1ms. It dramatically improves user experience. Redis is the most popular in-memory cache. CDN caches static files. Browser cache keeps CSS/JS files locally. Application-level cache stores API responses. Cache invalidation (when to update) is the hardest part — there's a famous saying: 'there are two hard things in computer science: cache invalidation and naming things.'",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Caching importance, Redis, CDN, browser cache, invalidation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What are the SOLID principles?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SOLID consists of 5 object-oriented design principles proposed by Robert C. Martin. S — Single Responsibility: each class should do one thing. O — Open/Closed: open for extension, closed for modification. L — Liskov Substitution: subtypes should be substitutable for their base types. I — Interface Segregation: prefer small, specific interfaces over large ones. D — Dependency Inversion: depend on abstractions, not concrete classes. Writing code that follows these principles means maintainable, testable, and scalable code. Frequently asked in technical interviews.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SOLID principles, S-O-L-I-D explanation, why important, interviews.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is BERT?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "BERT (Bidirectional Encoder Representations from Transformers) is a language model released by Google in 2018. As the name suggests, it's bidirectional — it looks at words on both sides of a token to understand context. While GPT processes text left-to-right, BERT processes in both directions. It's excellent for text classification, question answering, sentiment analysis, and named entity recognition. You can fine-tune it for your own tasks. Gorkem's writing-analyzer project uses similar NLP techniques to analyze text patterns.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "BERT explanation, bidirectional, use cases.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is regex?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Regex (Regular Expression) is a tool for pattern matching in text. Used for email validation, phone number extraction, URL finding, log file analysis. For example [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,} is an email pattern. In Python you use the re module, in JavaScript the RegExp object. Looks complex at first but it's incredibly powerful once you learn it. You can practice online at regex101.com. Every developer should know basic regex — it saves hours of manual string processing.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Regex explanation, use cases, email example, practice resource.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How do you deploy a machine learning model?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "After training a model you need to serve it to users — that's deployment. Several approaches: serve as a REST API — use Flask or FastAPI to create an endpoint. Package in a Docker container for portability and reproducibility. Deploy to cloud platforms — AWS SageMaker, Google Vertex AI, Azure ML. Demo with Hugging Face Spaces — add a UI with Gradio or Streamlit. Edge deployment — TFLite or ONNX for mobile devices. MLOps tools — MLflow, Weights & Biases for model versioning and monitoring. Gorkem's wiki2bpe project publishes to Hugging Face Hub.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Model deployment methods, API, Docker, cloud, HF, MLOps.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is API rate limiting?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Rate limiting restricts the number of requests that can be made to an API within a certain time period. For example, 100 requests per minute. Why? To protect the server from overload, prevent DDoS attacks, ensure fair usage. It returns a 429 Too Many Requests HTTP status code. In our scraping scripts we need to be mindful of rate limiting too — being polite to servers is important. Token bucket and sliding window algorithms are used for rate limiting implementation.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Rate limiting explanation, 429 status, DDoS protection, algorithms.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is a GraphQL subscription?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GraphQL subscription is a feature that provides real-time data streaming. Unlike regular queries and mutations, subscriptions work over WebSocket and deliver instant data from server to client. For example, in a chat app it auto-updates when a new message arrives. Live data streaming on a dashboard. Price changes in a stock app. Apollo Client and Server support this feature. To achieve the same with REST API you'd need polling or set up WebSocket yourself — GraphQL subscriptions make it much cleaner.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GraphQL subscription, real-time, WebSocket, Apollo, use cases.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How do microservices communicate?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Microservice communication happens in two ways: synchronous and asynchronous. Synchronous: direct calls via REST API or gRPC — simple but couples services together. Asynchronous: message queues (RabbitMQ, Apache Kafka) — services don't wait for each other, messages are placed in a queue and the other service picks them up when ready. Event-driven architecture works on this principle. gRPC is faster than REST because it uses Protocol Buffers. Large systems prefer async because one service crashing doesn't affect others.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Microservice communication, sync/async, Kafka, gRPC, event-driven.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is OAuth?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OAuth is an authorization protocol — those 'Sign in with Google', 'Sign in with GitHub' buttons use OAuth. The user doesn't have to share their password with your application; instead they verify their identity through Google or GitHub. OAuth 2.0 is the current standard. It uses access tokens and refresh tokens. OAuth integration is very common in app development — social login, API access, third-party integrations. Firebase Authentication, Auth0, and Passport.js make OAuth implementation easier.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OAuth explanation, social login, tokens, Firebase, Auth0.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is serverless?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Serverless means running code without managing servers. Servers exist of course, but the cloud provider manages them. AWS Lambda, Google Cloud Functions, Azure Functions are examples. You write a function, it runs when triggered by an event (HTTP request, file upload, timer). Benefits: automatic scaling, pay only for what you use, no infrastructure management. Drawbacks: cold start latency, not suitable for long-running processes, vendor lock-in. Great for event-driven architectures and API backends.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Serverless explanation, Lambda, Cloud Functions, pros/cons.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is data augmentation?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Data augmentation is the technique of multiplying existing data through various transformations. For images: rotation, scaling, cropping, color jittering, flipping, noise addition. For text: synonym replacement, sentence reordering, random deletion, back-translation. The goal is to reduce overfitting by exposing the model to more variations. Especially effective when you have limited data. Gorkem's YOLO project likely uses data augmentation because custom object detection with small datasets absolutely needs augmentation to work well.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Data augmentation, image and text techniques, overfitting reduction.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is WebSocket?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebSocket is a protocol that provides a persistent connection between client and server. In normal HTTP, a connection opens and closes for each request. With WebSocket, the connection opens once and enables two-way communication — the server can also send messages to the client. Ideal for chat applications, live notifications, real-time games, stock trading apps. Socket.io is the most popular JavaScript library. Python has websockets library and FastAPI WebSocket support. Any real-time project needs WebSocket.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebSocket, HTTP difference, chat, real-time applications.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Why is GPU important for AI?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GPU (Graphics Processing Unit) was originally for graphics but its architecture enables parallel computation. AI models are heavy on matrix multiplication — and GPUs with thousands of small cores do these multiplications in parallel. Training that takes hours on CPU can take minutes on GPU. NVIDIA's CUDA platform made GPU programming accessible. Google has TPUs too. You can rent GPUs in the cloud — Google Colab offers free GPU, Kaggle too. GPU is essential for training but CPU might suffice for inference in some cases.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GPU importance, parallel computing, CUDA, cloud GPU, Colab.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is a CDN?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CDN (Content Delivery Network) caches static content (images, CSS, JS files) on servers at different points around the world. When a user in Turkey visits the site, it loads from the Istanbul CDN server instead of going to the main server in the US. Result: faster page loading, less server load, better user experience. Cloudflare, AWS CloudFront, Akamai are popular CDNs. If you're publishing a website, using a CDN is the first step in performance optimization.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CDN explanation, caching, speed, Cloudflare, CloudFront.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does a load balancer do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A load balancer distributes incoming requests across multiple servers to balance the load. If one server handles 1000 requests, 3 servers behind a load balancer handle 3000. Benefits: high availability (if one server crashes, others continue), performance (load is distributed), scalability (add more servers). Nginx, HAProxy, AWS ELB are popular load balancers. Distribution algorithms include round-robin, least-connections, IP hash. Essential for large-scale applications.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Load balancer, load distribution, HA, Nginx, algorithms.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is SSH?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SSH (Secure Shell) is a protocol that lets you securely connect to a remote server. You connect via terminal with ssh user@server. Data is encrypted so it's secure. Used for server management, file transfer (SCP/SFTP), port forwarding. With SSH key pairs (public/private key) you can log in without passwords — adding SSH keys to GitHub works on the same principle. SSH is mandatory for connecting to cloud servers. Every developer needs to know how to use SSH.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SSH explanation, secure connection, key pairs, GitHub, cloud.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is gRPC?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "gRPC is a high-performance RPC (Remote Procedure Call) framework developed by Google. Advantages over REST: binary serialization with Protocol Buffers (smaller and faster than JSON), runs on HTTP/2 (multiplexing, streaming), strong type checking, automatic code generation. Much more efficient than REST for microservice communication. Supported in Python, Go, Java, C++ and many other languages. Disadvantage: can't call directly from browser (needs gRPC-Web), debugging is harder than REST. Becoming the standard for microservice communication in large systems.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "gRPC explanation, Protocol Buffers, HTTP/2, REST comparison.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What's the difference between overfitting and underfitting?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Overfitting is when the model memorizes the training data — performs great on training data but poorly on new data. Underfitting is when the model hasn't learned enough — performs badly on both training and test data. Overfitting solutions: more data, dropout, regularization, data augmentation, early stopping. Underfitting solutions: more complex model, more epochs, better feature engineering. The balance between the two is what makes a good model. When Gorkem trains models, finding this sweet spot is critical.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Overfitting vs underfitting, solutions, balance.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is cross-validation?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Cross-validation is a more reliable way to evaluate model performance. The most common is k-fold: you split data into k parts, each time using one part for testing and the rest for training, repeating k times. You take the average of results. Much more reliable than a single train-test split because you use all data for both training and testing. Especially important with small datasets. 5-fold and 10-fold are most common. Stratified k-fold preserves class balance — used with imbalanced datasets.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Cross-validation, k-fold, why reliable, stratified.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is feature engineering?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Feature engineering is the process of extracting features from raw data that help the model learn better. For example, from a date column you can extract year, month, day, day of week, is it a holiday or not. From text data: word count, sentence length, capital letter ratio. For numerical data: normalization, standardization, log transformation. Good feature engineering is sometimes more important than model selection — a simple model with good features can outperform a complex model. In Kaggle competitions, feature engineering is often what separates winners.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Feature engineering, date/text/numerical features, Kaggle importance.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is a loss function?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A loss function measures how far the model's predictions are from the actual values. During training you try to minimize this value. For classification you use cross-entropy loss, for regression MSE (Mean Squared Error). If loss is decreasing, the model is learning; if it's increasing, something is wrong. In overfitting, training loss decreases but validation loss increases. The foundation of deep learning is optimization — and optimization is based on the loss function. Understanding loss curves is essential for debugging model training.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Loss function, cross-entropy, MSE, overfitting detection.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is technical debt?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Technical debt is the accumulated cost of shortcuts taken for quick solutions. Every piece of code where you said 'it works for now, we'll fix it later' is a bit of technical debt. You move fast at first but over time the code becomes unmaintainable, adding new features gets harder, bugs increase. Managing technical debt is important: do regular refactoring, code reviews, write tests. Zero technical debt isn't realistic but keeping it under control is necessary. Especially common in startups because speed is the priority.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Technical debt, shortcuts, refactoring, code review, startups.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What do batch size and learning rate mean?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Batch size is the number of samples fed to the model at once. Smaller batch size means noisier gradients but potentially better generalization, larger batch size is more stable but uses more memory. Common values: 16, 32, 64, 128. Learning rate determines how much the model updates at each step. Too large and it overshoots the optimal point, too small and it learns too slowly. Usually you start with 0.001. Learning rate scheduling (reducing over time) and warmup are common techniques. Hyperparameter tuning starts with getting these two right.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Batch size and learning rate, values, hyperparameter tuning.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is an epoch?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "An epoch means the entire training dataset has passed through the model once. If you say 10 epochs, the data passes through 10 times. Too few epochs lead to underfitting, too many lead to overfitting. To find the right number, use early stopping — it stops training when validation loss starts increasing. Typically 10-100 epochs are used depending on the project. You need to monitor model performance after each epoch. Gorkem monitors training metrics closely when fine-tuning models.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Epoch, underfitting-overfitting balance, early stopping.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

@@ -1,0 +1,404 @@
+{
+    "train": [
+        [
+            {
+                "content": "what is the difference between SQL and NoSQL in practice?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "In practice, the choice between SQL and NoSQL depends on your data access patterns more than data type. SQL (PostgreSQL, MySQL) excels at: complex queries with JOINs, transactions requiring ACID guarantees, structured data with clear relationships, reporting and analytics, data integrity constraints. Use for: e-commerce (orders, payments), banking, ERP, any system where data consistency is critical. NoSQL types for specific use cases: Document (MongoDB) — content management, user profiles, catalogs where schema varies per item. Key-Value (Redis) — caching, sessions, rate limiting — sub-millisecond access. Wide-Column (Cassandra) — time-series data, IoT sensor data, write-heavy workloads at massive scale. Graph (Neo4j) — social networks, recommendation engines, knowledge graphs, fraud detection. Modern reality: PostgreSQL with JSONB handles many document-store use cases. Most startups start with PostgreSQL and only add specialized databases when specific performance requirements emerge. Polyglot persistence: use the right database for each use case within the same application. Gorkem's banking project correctly uses SQL for ACID guarantees.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SQL vs NoSQL, PostgreSQL, MongoDB, Redis, Cassandra, Neo4j, polyglot persistence.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is fine-tuning LLMs with LoRA?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning method for large language models. Instead of updating all model weights (billions of parameters), LoRA freezes the original weights and adds small trainable matrices to specific layers. For a weight matrix W (d×d), LoRA adds two small matrices A (d×r) and B (r×d) where r << d (rank, typically 4-64). The update is W' = W + BA — only r × d × 2 parameters instead of d × d. Benefits: 90-99% fewer trainable parameters, much less GPU memory needed (fine-tune 7B models on a single GPU), training is faster, multiple LoRA adapters can share the same base model. QLoRA: combines LoRA with 4-bit quantization — fine-tune a 65B model on a single 48GB GPU. Gorkem's current project creates training data for LoRA fine-tuning — the quality and diversity of this data directly impacts the fine-tuned model's performance. Tools: Hugging Face PEFT library, Axolotl, Unsloth (2x faster training).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LoRA, fine-tuning, QLoRA, parameter-efficient, PEFT, LLM, rank, adapters.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the actor model of concurrency?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The actor model treats actors as the fundamental unit of computation. Each actor: has private state (no shared memory), communicates via asynchronous messages, can create new actors, can change its behavior for the next message. Key principle: no shared state = no locks = no deadlocks = no race conditions. Messages are processed one at a time per actor — sequential within an actor, concurrent across actors. Languages/frameworks: Erlang/Elixir (OTP — built-in actor model, 'let it crash' philosophy, used by WhatsApp, Discord), Akka (JVM — Scala/Java), Microsoft Orleans (.NET — virtual actors/grains), Proto.Actor (multi-language). Erlang's 'let it crash': instead of defensive error handling, let actors crash and restart them. Supervisor hierarchies manage fault recovery. This is how Erlang achieves nine-nines (99.9999999%) availability. When to use: distributed systems, real-time applications, IoT device management, game servers, chat systems. The actor model naturally maps to distributed systems — actors can be on different machines, same message-passing semantics.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Actor model, Erlang, Akka, OTP, let it crash, message passing, supervisor, concurrency.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is MLOps and why is it important?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "MLOps applies DevOps principles to machine learning — managing the full ML lifecycle from development to production. ML-specific challenges: data versioning (code + data + model = reproducibility), model training reproducibility, model monitoring (data drift, concept drift), A/B testing models, feature stores. Pipeline stages: 1) Data collection and validation. 2) Feature engineering (feature store for reuse). 3) Model training (experiment tracking — MLflow, Weights & Biases). 4) Model evaluation (offline metrics + business metrics). 5) Model registry (version models like code). 6) Deployment (model serving — TensorFlow Serving, Triton, BentoML). 7) Monitoring (data drift detection, performance degradation). Tools ecosystem: MLflow (experiment tracking, model registry), DVC (data version control), Kubeflow (Kubernetes-native ML), Airflow (workflow orchestration), Great Expectations (data validation), Evidently (model monitoring). The gap between a Jupyter notebook model and production ML system is enormous — MLOps bridges it. Most ML projects fail in production, not in development.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "MLOps, ML lifecycle, MLflow, DVC, model serving, data drift, feature store, monitoring.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is API versioning strategies?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "API versioning handles backward-incompatible changes without breaking existing clients. Strategies: 1) URL path: /api/v1/users, /api/v2/users. Most common, clear, easy to understand. Downside: URL changes for every version. 2) Query parameter: /api/users?version=2. Less clean but doesn't change path. 3) Header: Accept: application/vnd.api.v2+json or custom header X-API-Version: 2. Cleanest URLs but harder to test (can't paste URL in browser). 4) No versioning — evolve API without versions. Add new fields (never remove), use expansion (include extra data via ?expand=profile). Works for simple APIs. Best practices: version at the API level, not per-endpoint. Support at least N-1 versions. Deprecation: announce deprecation well in advance, set sunset dates, return Deprecation and Sunset headers. Migration guide for each version. Breaking changes that require versioning: removing fields, changing field types, changing response structure, removing endpoints. Non-breaking changes (no versioning needed): adding new fields, adding new endpoints, adding optional parameters.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "API versioning, URL path, header, backward compatible, deprecation, breaking changes.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is edge computing in web development?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Edge computing runs code close to users at CDN edge servers — reducing latency from hundreds of milliseconds to single-digit milliseconds. Platforms: Cloudflare Workers (V8 isolates, 0ms cold start, 200+ locations), Vercel Edge Functions (built on Cloudflare), AWS Lambda@Edge (CloudFront integration), Deno Deploy, Fastly Compute. Use cases: personalization (geo-based content, A/B testing at edge), authentication (verify JWT at edge, reject unauthorized before hitting origin), API routing, image optimization, HTML streaming, bot detection. Limitations: limited runtime (no Node.js APIs, limited file system), short execution time (typically 10-50ms), limited memory, eventual consistency for data. Edge databases: Cloudflare D1 (SQLite at edge), Turso (distributed SQLite), PlanetScale (MySQL), Neon (PostgreSQL with edge caching). Pattern: heavy processing at origin, lightweight routing/personalization at edge. Edge is not a replacement for traditional servers — it's a complement. The trend is toward pushing more logic to the edge for better user experience, especially for global applications.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Edge computing, Cloudflare Workers, edge functions, CDN, latency, Vercel Edge, D1.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is test coverage and how much is enough?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Test coverage measures what percentage of your code is executed during tests. Types: line coverage (lines executed), branch coverage (if/else branches taken), function coverage (functions called), statement coverage. Tools: Istanbul/nyc (JavaScript), coverage.py (Python), JaCoCo (Java). How much is enough? 100% coverage is usually not worth the effort — diminishing returns, brittle tests, false confidence. Industry targets: 70-80% is a good practical target. But: 100% coverage doesn't mean no bugs — you can cover every line with tests that don't assert the right things. Focus on: critical business logic (payment processing — high coverage), complex algorithms (edge cases), error handling paths, security-sensitive code. Don't focus on: simple getters/setters, framework boilerplate, generated code, UI layout. Mutation testing: a better quality measure — introduces small code changes (mutations) and checks if tests catch them. If a mutation survives, your tests are weak. Tools: Stryker (JS), mutmut (Python). Coverage as a metric: track trends (declining = concern), don't use as a gate (blocking PRs at 80% leads to low-value tests).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Test coverage, line coverage, branch coverage, Istanbul, mutation testing, quality, testing.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is load testing and how to do it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Load testing verifies your application handles expected (and peak) traffic. Types: 1) Load test — expected traffic level, sustained duration. Does it handle normal load? 2) Stress test — beyond expected capacity. Where does it break? 3) Spike test — sudden traffic burst. How does it handle sudden load? 4) Soak test — sustained load for extended period. Memory leaks? Resource exhaustion? Tools: k6 (modern, JavaScript scripting, Grafana integration), Apache JMeter (GUI, older but powerful), Locust (Python scripting), Artillery (YAML + JS), Gatling (Scala). Key metrics to monitor: response time (p50, p95, p99), throughput (requests/second), error rate, resource utilization (CPU, memory, connections). Process: 1) Define scenarios (user flows, not just endpoints). 2) Set performance goals (p95 < 200ms at 1000 RPS). 3) Run baseline test. 4) Identify bottlenecks (database queries? external APIs? CPU?). 5) Optimize. 6) Re-test. 7) Set up continuous performance testing in CI/CD. Common bottlenecks: N+1 queries, missing indexes, no caching, synchronous external API calls, connection pool exhaustion. Load test in a production-like environment, not your laptop.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Load testing, k6, JMeter, stress test, performance, p95, throughput, bottleneck.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is a vector database?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Vector databases store and search high-dimensional vectors (embeddings) efficiently. Traditional databases search by exact match or range — vector databases find the most similar vectors using approximate nearest neighbor (ANN) search. How: text/images → embedding model → 768-1536 dimensional vector → stored in vector DB → query vector compared to stored vectors via cosine similarity or L2 distance. Use cases: RAG (retrieve relevant documents for LLM context), semantic search (search by meaning, not keywords), recommendation systems, image similarity, anomaly detection. Popular options: Pinecone (managed, easy), Weaviate (open-source, hybrid search), Chroma (lightweight, great for prototyping), Milvus (high-scale), Qdrant (Rust-based, fast), pgvector (PostgreSQL extension — start here if you use Postgres). Indexing algorithms: HNSW (Hierarchical Navigable Small World — most popular, good accuracy), IVF (Inverted File Index — faster for large datasets), Product Quantization (compress vectors). For Gorkem's RAG projects: embed documents → store in vector DB → retrieve similar chunks → feed to LLM.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Vector database, embeddings, ANN, HNSW, Pinecone, Weaviate, Chroma, pgvector, RAG.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the Twelve-Factor App in detail?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The Twelve-Factor methodology defines best practices for modern cloud-native applications. Factor 1 (Codebase): one repo per app, deploy to multiple environments from same codebase. Factor 2 (Dependencies): declare explicitly (package.json, requirements.txt), isolate (venv, Docker). Factor 3 (Config): environment variables for everything that changes between deploys (DB URL, API keys, feature flags). Factor 4 (Backing services): databases, caches, queues are attached resources — swap via config change, no code change. Factor 5 (Build, release, run): strict separation — build creates executable, release combines with config, run starts processes. Factor 6 (Processes): stateless, share-nothing. Store state in database/Redis, not filesystem or memory. Factor 7 (Port binding): app self-contained, exports HTTP via port binding. Factor 8 (Concurrency): scale by adding process instances, not making processes larger. Factor 9 (Disposability): fast startup, graceful shutdown. Handle SIGTERM. Factor 10 (Dev/prod parity): minimize gaps between environments. Factor 11 (Logs): write to stdout, let the platform aggregate. Factor 12 (Admin processes): run management tasks as one-off processes using the same codebase. These factors align perfectly with Docker and Kubernetes deployments.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Twelve-Factor App, cloud-native, stateless, disposability, config, backing services.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is model quantization?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Quantization reduces model size and inference speed by using lower precision numbers. Float32 (full precision): 4 bytes per parameter. Float16/BFloat16 (half precision): 2 bytes, minimal quality loss. Int8 (8-bit): 1 byte, slight quality loss but 4x smaller. Int4 (4-bit): 0.5 bytes, noticeable but often acceptable quality loss for inference. GPTQ: post-training quantization for GPT-style models. AWQ (Activation-aware Weight Quantization): preserves important weights. GGUF: quantization format for llama.cpp — run models on CPU. Benefits: 7B model goes from 28GB (FP32) to 3.5GB (4-bit) — fits on consumer hardware. Trade-offs: lower precision = slightly lower quality, but 4-bit quantized large model often outperforms full-precision small model. Tools: bitsandbytes (HF integration), llama.cpp (CPU inference), GGUF (universal format), vLLM (production serving). For Gorkem's fine-tuning project: train in FP16/BF16, deploy quantized for inference.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Quantization, Int8, Int4, GPTQ, AWQ, GGUF, bitsandbytes, model compression, inference.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Progressive Web App PWA?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Progressive Web Apps bring native app experiences to the web. Features: 1) Installable — add to home screen, launch like native app (no browser chrome). 2) Offline capable — service workers cache assets and API responses. 3) Push notifications — re-engage users like native apps. 4) Responsive — works on any device. 5) Fast — precaching critical resources. Key technologies: Service Worker (JavaScript proxy between app and network — intercept requests, cache responses, background sync), Web App Manifest (manifest.json — name, icons, theme color, display mode), Cache API (programmatic caching), IndexedDB (client-side database). Service worker strategies: cache-first (offline-first, fast), network-first (fresh data, fallback to cache), stale-while-revalidate (serve cache, update in background). Limitations: no access to some native APIs (contacts, SMS, Bluetooth — improving with Project Fugu), iOS Safari support is limited, no app store distribution (though some stores accept PWAs). When to build PWA: content-heavy apps, e-commerce (fast repeat visits), news sites, dashboards. When not to: heavy native API usage, games, AR/VR. PWAs are an excellent choice for a first mobile strategy before building native apps.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PWA, service worker, offline, manifest, push notifications, cache API, installable.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is an ORM and should you use one?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ORM (Object-Relational Mapping) maps database tables to programming language objects. Instead of writing SQL, you work with objects: User.objects.filter(age__gt=25) (Django ORM) generates SELECT * FROM users WHERE age > 25. Popular ORMs: Django ORM (Python), SQLAlchemy (Python, flexible), Prisma (TypeScript, type-safe), TypeORM (TypeScript), Hibernate (Java), Entity Framework (.NET), Sequelize (Node.js). Benefits: write less boilerplate SQL, database-agnostic (switch PostgreSQL to MySQL), migrations built-in, protection against SQL injection (parameterized queries), productivity (complex queries in fewer lines). Drawbacks: performance overhead, N+1 query problem (lazy loading fetches related objects one by one), complex queries may need raw SQL anyway, abstracts away SQL (developers don't learn SQL), generated SQL can be suboptimal. Best approach: use ORM for simple CRUD, raw SQL for complex queries and performance-critical paths. Always check generated SQL with EXPLAIN. Query builders (Knex.js, SQLAlchemy Core) offer a middle ground — more control than ORM, safer than raw SQL. Understanding SQL fundamentals is essential regardless of ORM use.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ORM, Django ORM, SQLAlchemy, Prisma, TypeORM, N+1, SQL injection, query builder.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Terraform and how to use it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Terraform by HashiCorp is the most popular Infrastructure as Code tool. It manages cloud resources declaratively — describe what you want, Terraform figures out how to create it. HCL (HashiCorp Configuration Language): resource 'aws_instance' 'web' { ami = 'ami-123', instance_type = 't3.micro' }. Workflow: terraform init (download providers) → terraform plan (preview changes, dry run) → terraform apply (make changes) → terraform destroy (tear down). State: Terraform tracks real infrastructure in a state file. Store remotely: S3 + DynamoDB for locking (team collaboration). Modules: reusable infrastructure components — like functions for infrastructure. Use modules for VPCs, ECS clusters, database setups. Providers: AWS, GCP, Azure, Cloudflare, GitHub, Kubernetes — 3000+ providers. Best practices: use modules for reusability, separate environments with workspaces or separate state files, use variables and outputs, pin provider versions, never commit .tfstate files. Alternatives: Pulumi (real programming languages), AWS CDK (TypeScript/Python for CloudFormation), OpenTofu (open-source Terraform fork). Terraform is essential for any DevOps/SRE role.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Terraform, HCL, Infrastructure as Code, state, modules, providers, plan, apply.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the difference between Webpack, Vite, and other bundlers?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "JavaScript bundlers combine modules into optimized bundles for the browser. Webpack: the established standard — handles everything (JS, CSS, images, fonts). Configuration-heavy but extremely flexible. Plugins and loaders for any use case. Slow for large projects due to bundling everything. Vite: next-generation — uses native ES modules in development (no bundling, instant server start), Rollup for production build. 10-100x faster dev server than Webpack. Created by Evan You (Vue.js creator). Default for Vue, adopted by React (Create React App → Vite migration). Rollup: focused on library bundling — produces smaller, cleaner output. Tree-shaking pioneer. Used by Vite for production. esbuild: written in Go — 10-100x faster than JS-based bundlers. Used by Vite for dependency pre-bundling and TypeScript transpilation. Turbopack: Vercel's Rust-based bundler — successor to Webpack (same creator), used in Next.js. Still maturing. SWC: Rust-based compiler — replaces Babel for TypeScript/JSX transformation. Used by Next.js and Vite. Recommendation: new projects → Vite (fast, great DX). Libraries → Rollup or tsup. Existing Webpack projects → migrate to Vite when practical. Next.js → built-in Turbopack.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Webpack, Vite, Rollup, esbuild, Turbopack, SWC, bundler, ES modules, tree-shaking.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is the importance of code reviews?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Code reviews are one of the most valuable practices in software development. Benefits: catch bugs before they reach production, knowledge sharing (team learns each other's code), maintain code quality and consistency, mentoring opportunity, reduce bus factor (more than one person understands each part). What to look for: correctness (does it solve the problem?), edge cases, security issues, performance implications, readability, test coverage, naming, unnecessary complexity. How to review: understand the context (read the PR description, linked issue), review file by file, focus on logic not style (let linters handle formatting), suggest don't demand, ask questions when unsure. How to give feedback: be specific ('this could cause N+1 queries' not 'this is slow'), explain why, offer alternatives, praise good code too. How to receive feedback: don't take it personally, assume good intent, ask for clarification if needed. Automation: CI checks for linting, formatting, test coverage, type checking before human review. Review size: small PRs get better reviews — aim for under 400 lines. Large PRs get rubber-stamped — break into smaller, logical chunks.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Code review, PR review, feedback, knowledge sharing, best practices, bugs, quality.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is dependency injection and why use it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Dependency injection (DI) provides dependencies to a class from outside rather than the class creating them internally. Without DI: class UserService { constructor() { this.db = new PostgresDB() } } — tightly coupled, hard to test. With DI: class UserService { constructor(db: Database) { this.db = db } } — pass any Database implementation. Benefits: 1) Testability — inject mock database in tests. 2) Flexibility — swap implementations without changing the class (PostgresDB → MongoDB). 3) Single Responsibility — class doesn't manage its dependencies' lifecycle. 4) Loose coupling — depend on abstractions, not implementations. DI frameworks: Spring (Java — annotation-based @Autowired), NestJS (TypeScript — decorators), .NET DI (built into framework), Python (no framework needed — just pass arguments). Constructor injection (recommended) vs setter injection vs interface injection. IoC container: manages object creation and dependency resolution. Inversion of Control: instead of the class controlling its dependencies, the container controls them. Over-engineering warning: for simple scripts and small projects, just pass arguments — you don't need a DI framework for everything.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Dependency injection, DI, IoC, testing, loose coupling, Spring, NestJS, constructor injection.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is chaos engineering in practice?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Chaos engineering discovers system weaknesses through controlled experiments in production. Netflix's Simian Army: Chaos Monkey (kills instances), Latency Monkey (injects delays), Chaos Gorilla (kills entire AZ). Getting started: 1) Start with game days — planned exercises where team manually tests failure scenarios. 2) Identify steady state metrics — what does 'healthy' look like? 3) Start in staging, graduate to production. 4) Begin with simple experiments — kill a pod, inject 500ms latency to a dependency. 5) Automate experiments that consistently pass — run them continuously. Experiment ideas: database connection failure, third-party API timeout, DNS failure, disk full, high CPU, certificate expiry, incorrect clock, leader election in distributed system. Tools: Gremlin (SaaS, easy to start), Chaos Mesh (Kubernetes), Litmus (Kubernetes, CNCF), AWS Fault Injection Simulator. Key principles: minimize blast radius (start small), have a hypothesis, automate rollback, always have a way to stop the experiment. Chaos engineering isn't about breaking things randomly — it's about building confidence through scientific method. Document findings, fix issues, re-run experiments.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Chaos engineering, game days, Netflix, Gremlin, Chaos Mesh, blast radius, experiments.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is A/B testing?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A/B testing compares two versions to determine which performs better. Process: 1) Hypothesis — 'changing the button color from blue to green will increase click rate.' 2) Split traffic — randomly assign users to control (A) or treatment (B). 3) Measure — track the metric you're optimizing (conversion rate, click rate, revenue). 4) Analyze — use statistical tests to determine if the difference is significant. Statistical concepts: p-value (probability of observing this difference by chance — typically p < 0.05), confidence interval, statistical power (probability of detecting a real effect — aim for 80%), sample size (calculate before starting — use power analysis). Pitfalls: peeking at results before sufficient sample size (inflates false positives), testing too many variations simultaneously (multiple comparison problem — use Bonferroni correction), novelty effect (users react to any change initially). Tools: Google Optimize (deprecated), LaunchDarkly, Statsig, Optimizely, or custom with feature flags. Duration: run until you reach required sample size, not until you see significance. For ML: A/B test model versions in production — offline metrics don't always correlate with business metrics.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "A/B testing, hypothesis, p-value, sample size, statistical significance, feature flags.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is WebRTC?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebRTC (Web Real-Time Communication) enables peer-to-peer audio, video, and data sharing directly between browsers without plugins or servers. How it works: 1) Signaling — exchange session descriptions (SDP) and network candidates (ICE) through a signaling server (WebSocket). 2) ICE/STUN/TURN — find the best network path. STUN discovers public IP behind NAT. TURN relays traffic when direct connection impossible (~10-20% of cases). 3) DTLS/SRTP — encrypted media streams. 4) Peer connection established — media flows directly between browsers. APIs: getUserMedia (access camera/mic), RTCPeerConnection (manage peer connection), RTCDataChannel (arbitrary data). Use cases: video calls (Google Meet, Zoom web), screen sharing, file transfer, live streaming, real-time gaming. Challenges: NAT traversal, firewall issues, varying network conditions (adaptive bitrate), many-to-many calls (need SFU — Selective Forwarding Unit: mediasoup, Janus, LiveKit). SFU: server receives all streams and selectively forwards — more scalable than mesh for group calls. WebRTC is the only way to do low-latency real-time communication in the browser.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebRTC, peer-to-peer, ICE, STUN, TURN, SFU, signaling, real-time, video call.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is service mesh and when do you need one?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A service mesh handles service-to-service communication in microservices — networking, security, and observability without changing application code. How: sidecar proxy (Envoy) deployed alongside each service intercepts all network traffic. Features: 1) Traffic management — routing rules, load balancing, circuit breaking, retries, timeouts. 2) Security — mutual TLS (mTLS) between services automatically, authorization policies. 3) Observability — distributed tracing, metrics, access logs without instrumenting code. Popular options: Istio (most popular, feature-rich, complex), Linkerd (simpler, lightweight, CNCF), Consul Connect (HashiCorp), AWS App Mesh. When you need one: many microservices (50+), need mTLS everywhere, complex traffic routing (canary deployments, traffic splitting), need observability across services. When you don't: few services (under 10), simple routing needs, team doesn't have K8s expertise. Complexity tax: service mesh adds operational overhead — more moving parts, debugging proxy issues, resource consumption (sidecar per pod). eBPF-based meshes (Cilium) are emerging — no sidecar overhead.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Service mesh, Istio, Linkerd, Envoy, sidecar, mTLS, traffic management, observability.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is semantic versioning?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Semantic Versioning (SemVer) uses MAJOR.MINOR.PATCH format. MAJOR (1.0.0 → 2.0.0): breaking changes — API incompatible, users must update code. MINOR (1.0.0 → 1.1.0): new features, backward compatible — safe to update. PATCH (1.0.0 → 1.0.1): bug fixes, backward compatible — always update. Pre-release: 1.0.0-alpha, 1.0.0-beta.1, 1.0.0-rc.1. 0.x.x: initial development — anything can change, no stability guarantee. Rules: once 1.0.0 is released, public API is defined. Any breaking change requires major bump. Deprecate before removing. In package managers: ^1.2.3 (caret) — allows minor and patch updates (1.x.x). ~1.2.3 (tilde) — allows only patch updates (1.2.x). 1.2.3 (exact). Lock files (package-lock.json, Pipfile.lock) — pin exact versions for reproducible builds. Conventional Commits: commit messages indicate version bumps — feat: → minor, fix: → patch, BREAKING CHANGE: → major. Tools: semantic-release automates versioning based on commits.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Semantic versioning, SemVer, MAJOR, MINOR, PATCH, caret, tilde, conventional commits.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is database query optimization?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Query optimization makes database queries faster and use fewer resources. Steps: 1) EXPLAIN ANALYZE — understand the query plan. Look for: sequential scans (missing index?), nested loops (can hash join work?), high cost estimates. 2) Add appropriate indexes — B-tree for equality and range, GIN for full-text search and JSONB, partial indexes for filtered queries. 3) Avoid SELECT * — only select columns you need. 4) Fix N+1 queries — use JOINs or batch loading instead of querying in a loop. 5) Use connection pooling — PgBouncer for PostgreSQL. 6) Denormalize carefully — materialized views for expensive JOINs. 7) Pagination — cursor-based (WHERE id > last_id) is more efficient than OFFSET. 8) Use LIMIT — don't load all rows when you only display 20. 9) Cache expensive queries — Redis for frequently accessed data. 10) Vacuum and analyze — keep PostgreSQL statistics up to date. Common anti-patterns: using LIKE '%pattern%' (can't use index — use full-text search), calling functions on indexed columns (WHERE LOWER(email) = ... — use expression index), unnecessary DISTINCT, correlated subqueries.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Query optimization, EXPLAIN ANALYZE, indexing, N+1, pagination, materialized views, cache.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is feature engineering for machine learning?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Feature engineering transforms raw data into meaningful inputs for ML models — often the difference between a mediocre and excellent model. Numerical features: scaling (StandardScaler, MinMaxScaler), log transform (skewed distributions), binning (age → age groups), polynomial features (x² interactions). Categorical features: one-hot encoding (small cardinality), label encoding (ordinal), target encoding (high cardinality — category → mean of target), embedding (learned representation). Text features: TF-IDF, word count, sentiment score, named entities, embeddings (sentence-transformers). Date/time: day of week, hour, is_weekend, days_since_event, cyclical encoding (sin/cos for hour). Missing values: imputation (mean, median, mode, KNN), indicator column (is_missing as feature). Feature selection: correlation analysis, mutual information, recursive feature elimination, L1 regularization (Lasso). Automated: Featuretools (automated feature engineering), scikit-learn Pipeline + ColumnTransformer. Important: always fit on training data, transform test data — avoid data leakage. Domain knowledge is the most powerful feature engineering tool.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Feature engineering, encoding, scaling, TF-IDF, feature selection, data leakage, Pipeline.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is Supabase and how does it compare to Firebase?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Supabase is an open-source Firebase alternative built on PostgreSQL. Features: PostgreSQL database (full SQL, extensions, RLS), real-time subscriptions, authentication (social login, email, phone), storage (S3-compatible file storage), edge functions (Deno-based serverless), vector embeddings (pgvector for AI). Firebase: Google's BaaS — Firestore (NoSQL document DB), Realtime Database, Authentication, Cloud Storage, Cloud Functions, hosting. Key differences: Supabase uses PostgreSQL (SQL, relational, ACID) vs Firebase's Firestore (NoSQL, eventually consistent). Supabase is open-source (self-hostable) vs Firebase is proprietary. Supabase has Row Level Security (RLS) for fine-grained access control. Supabase pricing is more predictable (based on resources, not reads/writes). When to choose Supabase: need relational data, SQL queries, open-source matters, want to avoid vendor lock-in, need vector search for AI. When to choose Firebase: heavily invested in Google ecosystem, need offline-first mobile support, simpler NoSQL model fits your data. Both are excellent for rapid prototyping — get a backend running in minutes.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Supabase, Firebase, PostgreSQL, BaaS, real-time, authentication, open-source, pgvector.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

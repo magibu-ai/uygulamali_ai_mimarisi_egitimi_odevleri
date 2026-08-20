@@ -1,0 +1,228 @@
+{
+    "train": [
+        [
+            {
+                "content": "PostgreSQL ileri seviye özellikleri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "PostgreSQL en gelişmiş açık kaynak ilişkisel veritabanıdır. Temel SQL'in ötesinde ileri özellikler. İndeksler: B-tree (varsayılan, eşitlik ve aralık için iyi), GIN (tam metin arama, JSONB, diziler), GiST (geometrik, tam metin), BRIN (büyük sıralı veri — zaman damgaları). Partial index: CREATE INDEX ON orders (status) WHERE status = 'pending' — daha küçük, daha hızlı. JSONB: indekslemeyle JSON verisi sakla ve sorgula. İlişkisel ve belge modelini birleştir. Operatörler: ->, ->>, @>, ?, ||. GIN ile indeksle. CTE'ler (Common Table Expressions): okunabilir karmaşık sorgular için WITH cümleciği. Hiyerarşik veriler için özyinelemeli CTE'ler (organizasyon şemaları, kategoriler). Window fonksiyonları: ROW_NUMBER(), RANK(), LAG(), LEAD(), SUM() OVER (PARTITION BY ...). Gruplamadan veri analizi. Analitik için son derece güçlü. Tam metin arama: tsvector, tsquery, to_tsvector(), ts_rank(). Temel arama için Elasticsearch'e gerek yok. Bölümleme: büyük tabloları aralık, liste veya hash ile böl. Büyük veri setlerinde sorgu performansını artırır. LISTEN/NOTIFY: PostgreSQL içinde pub/sub. Veritabanı değişikliklerinden olay tetikle. Materialized view'lar: önbelleğe alınmış sorgu sonuçları. Row-level security (RLS): satır bazında erişim kontrol politikaları. Supabase tarafından kullanılır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PostgreSQL, indeksler, JSONB, CTE, window fonksiyonları, tam metin arama, bölümleme, RLS.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "modern build araçları Vite vs Webpack nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Build araçları kodunuzu üretim için paketler, dönüştürür ve optimize eder. Webpack — yerleşik paketleyici. Giriş noktası → bağımlılık grafiği → paketler. Loader'lar dosyaları dönüştürür (babel-loader, css-loader). Plugin'ler işlevselliği genişletir. Yapılandırma ağır ama son derece esnek. Code splitting, tree shaking, hot module replacement. Vite — Evan You tarafından yeni nesil build aracı. Geliştirme: native ES modülleri kullanır — paketleme gerekmez, anında sunucu başlatma, anında HMR. Üretim: Rollup ile paketler. Vite neden daha hızlı: dev sunucusu paketlemez — dosyaları ESM olarak sunar, tarayıcı import'ları yönetir. Sadece talep üzerine dosyaları dönüştürür. Webpack sunum öncesi her şeyi paketler. esbuild — Go tabanlı, son derece hızlı JavaScript/TypeScript paketleyici. Vite tarafından bağımlılık ön-paketleme için kullanılır. Webpack'ten 10-100x daha hızlı. Turbopack — Vercel tarafından Rust tabanlı paketleyici (Next.js). Webpack'in halefi. SWC — Rust tabanlı JavaScript derleyici. Babel'in yerini alır. Next.js ve Vite tarafından kullanılır. Babel'den 20x daha hızlı. Bun — paketleyici içeren JavaScript runtime. Hepsi bir arada: runtime, paket yöneticisi, paketleyici, test çalıştırıcı. Öneri: yeni projeler Vite kullansın.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Vite, Webpack, esbuild, Turbopack, SWC, Bun, paketleyici, ESM, HMR, code splitting.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılım mimari desenleri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Mimari desenler yazılım sistemlerinin üst düzey yapısını tanımlar. Monolitik — tek deployable birim. Başlangıçta geliştirmesi, test etmesi, deploy etmesi basit. Büyüdükçe yönetilemez hale gelir. İyi: MVP'ler, küçük ekipler. Microservices — ağ üzerinden iletişen bağımsız servisler. Bağımsız deployment, ölçeklendirme, teknoloji seçimleri. İyi: büyük ekipler, farklı ölçeklendirme ihtiyaçları. Event-Driven — bileşenler olaylar aracılığıyla iletişir. Gevşek bağlantı, ölçeklenebilirlik, dayanıklılık. İyi: gerçek zamanlı işleme, karmaşık iş akışları. Serverless — olaylar tarafından tetiklenen fonksiyonlar, bulut tarafından yönetilir. Altyapı yönetimi yok. Katmanlı (N-tier) — yatay katmanlar: sunum, iş mantığı, veri erişimi. Her katman sadece komşu katmanlarla iletişir. Basit, iyi anlaşılmış. Hexagonal (Portlar ve Adaptörler) — çekirdek domain mantığı merkezde, adaptörler dış dünyaya bağlanır. Test etmesi kolay, uygulamaları değiştirmek kolay. Clean Architecture (Uncle Bob) — eşmerkezli daireler: varlıklar, kullanım durumları, arayüz adaptörleri, framework'ler. Bağımlılık kuralı: iç daireler dış daireler hakkında hiçbir şey bilmez. CQRS — okuma ve yazma modellerini ayır. Bağımsız optimize et. Modüler Monolith — net modül sınırlarıyla monolith. Her iki dünyanın en iyisi. Ekip boyutuna, karmaşıklığa, ölçek gereksinimlerine göre seç — hype'a göre değil.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mimari desenler, monolitik, microservices, hexagonal, clean architecture, CQRS, modüler.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "web güvenliği OWASP top 10 nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OWASP Top 10 — en kritik web uygulaması güvenlik riskleri. 1) Bozuk Erişim Kontrolü — kullanıcıların yetkisiz kaynaklara erişmesi. Düzeltme: varsayılan olarak reddet, izinleri sunucu tarafında kontrol et, RBAC kullan. 2) Kriptografik Hatalar — hassas veri ifşası. Düzeltme: aktarımda (TLS) ve durağanda şifrele, güçlü algoritmalar kullan (AES-256, parolalar için bcrypt), hassas veriyi loglamadan. 3) Injection — SQL injection, NoSQL injection, OS command injection. Düzeltme: parametreli sorgular, girdi doğrulama, ORM'ler. 4) Güvensiz Tasarım — güvenlik mimarisinin eksikliği. Düzeltme: tehdit modelleme, güvenli tasarım desenleri. 5) Güvenlik Yanlış Yapılandırması — varsayılan kimlik bilgileri, gereksiz özellikler, ayrıntılı hatalar. 6) Savunmasız Bileşenler — bilinen güvenlik açıkları olan eski bağımlılıklar. Düzeltme: npm audit, Dependabot, düzenli güncellemeler. 7) Kimlik Doğrulama Hataları — zayıf parolalar, eksik MFA. 8) Veri Bütünlüğü Hataları — güvenilmeyen veriye güvenmek. 9) Günlükleme Hataları — ihlalleri tespit edememek veya yanıt verememek. 10) SSRF (Sunucu Tarafı İstek Sahteciliği) — sunucunun istenmeyen konumlara istek yapması. Güvenliği ilk günden uygulayın — sonradan eklemek pahalı ve eksiktir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OWASP, injection, XSS, CSRF, kimlik doğrulama, erişim kontrolü, güvenlik, şifreleme, SSRF.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "kimlik doğrulama desenleri web uygulamaları için?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kimlik doğrulama kimliği doğrular. Yaygın web uygulama desenleri. Oturum tabanlı: kullanıcı giriş yapar → sunucu oturum oluşturur → oturum ID'sini cookie'de saklar → sonraki istekler cookie'yi içerir → sunucu doğrular. Artılar: sunucu oturumları kontrol eder (kolay iptal), HttpOnly cookie'ler (XSS'e güvenli). Eksiler: sunucu tarafı depolama, ölçeklendirme paylaşılan oturum deposu gerektirir (Redis). JWT: kullanıcı giriş yapar → sunucu imzalı JWT oluşturur → istemci token'ı saklar → Authorization header'da gönderir. Artılar: stateless (sunucu depolaması yok), servisler arası çalışır. Eksiler: kolay iptal edilemez (sona erene kadar), oturum ID'sinden daha büyük, refresh token'ları yönetmeli. Parolasız: e-posta ile sihirli bağlantı, SMS kodu, kimlik doğrulayıcı uygulaması. Daha iyi UX, sızacak parola yok. OAuth/Sosyal giriş: kimlik doğrulamayı Google, GitHub'a devret. Sürtünmeyi azaltır. Passkey'ler/WebAuthn: cihaz biyometrileri kullanarak kriptografik kimlik doğrulama. Parola yok. Kimlik doğrulamanın geleceği. MFA: bildiğin (parola) + sahip olduğun (telefon/anahtar) + olduğun (biyometrik). Uygulama: üretim için auth'u kendin inşa etme — Auth0, Clerk, Firebase Auth, NextAuth.js, Supabase Auth kullan.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kimlik doğrulama, oturum, JWT, OAuth, parolasız, passkey, MFA, Auth0, NextAuth.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Tailwind CSS ve utility-first yaklaşım nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tailwind CSS utility-first bir CSS framework'üdür. Özel CSS yazmak yerine tasarımları önceden oluşturulmuş utility sınıflarıyla birleştirin. Geleneksel: .btn { background-color: blue; padding: 8px 16px; border-radius: 4px; }. Tailwind: className='bg-blue-500 px-4 py-2 rounded'. Avantajlar: isimlendirme derdi yok (.card-wrapper-inner gibi isimlere elveda), tutarlı tasarım sistemi (boşluk skalası, renk paleti), responsive tasarım (sm:, md:, lg: önekleri), dark mode (dark: öneki), durum varyantları (hover:, focus:, active:), kullanılmayan CSS yok (üretimde kullanılmayan sınıfları ayıklar). Özelleştirme: tailwind.config.js — özel renkler, fontlar, boşluk, breakpoint'lerle temayı genişlet. Keyfi değerler: tek seferlik değerler için w-[137px]. @apply direktifi — tekrarlanan utility kombinasyonlarını CSS sınıflarına çıkar (idareli kullan). Plugin'ler: @tailwindcss/typography (zengin metin için prose sınıfları), @tailwindcss/forms, daisyUI (Tailwind üzerine bileşen kütüphanesi). Yaygın eleştiri: 'çirkin HTML' — ama stilin işaretlemeyle birlikte konumlanması aslında bir özellik, hata değil. Dosyalar arasında bağlam değiştirme yok. Bileşen çıkarma (React bileşenleri) ilgili utility'leri doğal olarak gruplar. React, Next.js, Vue ile mükemmel uyum.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Tailwind CSS, utility-first, responsive, dark mode, özelleştirme, purge, bileşen çıkarma.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ileri seviye TypeScript özellikleri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TypeScript'in tip sistemi temel tiplerin ötesinde inanılmaz güçlüdür. Generics — birden fazla tipte çalışan yeniden kullanılabilir kod yaz: function identity<T>(arg: T): T. extends ile kısıtla. Utility tipler — Partial<T> (tüm özellikler opsiyonel), Required<T>, Pick<T, Keys>, Omit<T, Keys>, Record<K, V>, Readonly<T>. Conditional tipler — type IsString<T> = T extends string ? 'yes' : 'no'. Tip seviyesinde programlamayı güçlendirir. Template literal tipler — type EventName = `on${Capitalize<string>}`. Mapped tipler — özellikleri dönüştür: type Optional<T> = { [K in keyof T]?: T[K] }. Discriminated unions — type Shape = Circle | Square, her birinde 'kind' alanı. TypeScript ayırıcıya göre tipi daraltır. Infer anahtar kelimesi — conditional tipler içinde tipleri çıkar: type ReturnType<T> = T extends (...args: any[]) => infer R ? R : never. Branded tipler — yapısal olarak aynı tipleri uyumsuz yap: type USD = number & { __brand: 'USD' }. USD ve EUR karıştırmayı önler. Const assertions — as const değerleri readonly yapar ve literal tipleri daraltır. Satisfies operatörü — genişletmeden tipi doğrula. Type guard'lar — tipleri daraltan çalışma zamanı kontrolleri: value is Type. Bu özellikler geliştirici deneyiminden ödün vermeden tip güvenli API'ler sağlar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TypeScript, generics, utility tipler, conditional tipler, discriminated unions, branded, infer.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "paket yönetimi npm yarn pnpm nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Paket yöneticileri JavaScript bağımlılıklarını kurar ve yönetir. npm — Node Package Manager. Node.js ile birlikte gelir. package.json bağımlılıkları tanımlar, npm install node_modules ve package-lock.json oluşturur. Komutlar: npm install (tüm bağımlılıklar), npm install paket (bağımlılık ekle), npm run script, npx (kurmadan paketleri çalıştır). yarn — Facebook'un alternatifi. Deterministik kurulumlar için yarn.lock. yarn 1 (Classic) — paralel kurulumlar, npm 5'ten daha hızlı. yarn 2+ (Berry) — Plug'n'Play (PnP) — node_modules yok, bağımlılıklar .yarn/cache'te zip dosyaları olarak saklanır. Daha hızlı kurulumlar, daha az disk alanı. Ama bazı paketlerle uyumluluk sorunları. pnpm — performanslı npm. İçerik adreslenebilir depo — paketin her versiyonu diskte bir kez saklanır, projelere hard-link'lenir. Birden fazla proje ile büyük disk tasarrufu. Katı node_modules — bildirilmemiş bağımlılıklara erişimi önler (phantom bağımlılıklar). En hızlı kurulum süreleri. Monorepo desteği workspaces ile (üçü de destekler). Lockfile'lar: package-lock.json (npm), yarn.lock (yarn), pnpm-lock.yaml (pnpm). Lockfile'ları her zaman commit'leyin. Bağımlılık türleri: dependencies (üretim), devDependencies (sadece geliştirme), peerDependencies (tüketici tarafından sağlanması beklenen). Öneri: yeni projeler için pnpm (en hızlı, en katı).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "npm, yarn, pnpm, paket yönetimi, node_modules, lockfile, workspaces, monorepo.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Git ileri seviye iş akışları nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Temel git add/commit/push'ın ötesinde. Dallanma stratejileri: Git Flow — main, develop, feature, release, hotfix dalları. Yapılandırılmış ama ağır. Sürüm tabanlı yazılım için iyi. GitHub Flow — main + feature dalları. Basit. PR → review → main'e merge → deploy. Trunk-Based Development — herkes main'e commit eder (veya kısa ömürlü dallar). Tamamlanmamış iş için feature flag'ler. CI/CD dostu. İleri komutlar: git rebase — commit'leri başka dalın üzerine tekrar oynat. Doğrusal geçmiş. git cherry-pick — belirli commit'i başka dala uygula. Hotfix'ler için yararlı. git bisect — hatayı hangi commit'in tanıttığını bulmak için ikili arama. git stash — commit edilmemiş değişiklikleri geçici olarak kaydet. git reflog — tüm HEAD değişikliklerinin günlüğü. Kaybolan commit'leri kurtar, hataları geri al. git worktree — bir repo'dan birden fazla çalışma dizini. İki dalda eşzamanlı çalış. Commit en iyi uygulamaları: atomik commit'ler (commit başına tek mantıksal değişiklik), anlamlı mesajlar (emir kipi — 'Kullanıcı kimlik doğrulaması ekle'), conventional commits (feat:, fix:, docs:, refactor:). .gitignore: her zaman node_modules, .env, build artifact'leri, IDE yapılandırmalarını yoksay. Hook'lar: pre-commit (lint), commit-msg (mesaj doğrulama), pre-push (test çalıştır). Husky + lint-staged kolay kurulum için.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Git, rebase, cherry-pick, bisect, Git Flow, trunk-based, hooks, conventional commits.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Redis ve önbellekleme stratejileri nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Redis bellekte çalışan bir veri yapısı deposudur — önbellek, mesaj broker ve veritabanı olarak kullanılır. Veri yapıları: String'ler (basit anahtar-değer, sayaçlar), List'ler (kuyruklar, son öğeler), Set'ler (benzersiz koleksiyonlar, etiketler), Sorted Set'ler (liderlik tabloları, öncelik kuyrukları), Hash'ler (nesne benzeri depolama), Stream'ler (olay günlükleri). Önbellekleme stratejileri: Cache-Aside (Lazy Loading) — uygulama önbelleği kontrol eder, miss ise → DB'den oku → önbelleğe yaz → döndür. En yaygın. Basit ama ilk istek yavaş. Write-Through — önbelleğe ve DB'ye eşzamanlı yaz. Veri önbellekte her zaman taze ama yazmalar daha yavaş. Write-Behind — önbelleğe yaz, DB'ye asenkron yaz. Hızlı yazmalar ama önbellek çökerse veri kaybı riski. Önbellek geçersizleştirme: TTL (Time To Live) — N saniye sonra süresi dolsun. Basit ama sona erene kadar eski veri. Olay tabanlı — veri değişikliğinde geçersiz kıl. Daha karmaşık ama her zaman taze. Redis özellikleri: pub/sub (gerçek zamanlı mesajlaşma), Lua scripting (atomik işlemler), kalıcılık (RDB snapshot, AOF logları), kümeleme (yatay ölçeklendirme), Redis Sentinel (yüksek kullanılabilirlik). Kullanım alanları: oturum depolama, rate limiting (INCR + EXPIRE), gerçek zamanlı liderlik tabloları, önbellekleme, iş kuyrukları (BullMQ Redis kullanır).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Redis, önbellekleme, cache-aside, write-through, TTL, veri yapıları, pub/sub, oturum.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "tarayıcı render ve kritik render yolu nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tarayıcıların sayfaları nasıl render ettiğini anlamak performansı optimize etmeye yardımcı olur. Kritik Render Yolu: 1) HTML'i ayrıştır → DOM (Document Object Model) ağacı. 2) CSS'i ayrıştır → CSSOM (CSS Object Model) ağacı. 3) DOM + CSSOM'u birleştir → Render Ağacı (sadece görünür elemanlar). 4) Layout (reflow) — her elemanın boyutunu ve konumunu hesapla. 5) Paint — pikselleri doldur (renkler, kenarlıklar, gölgeler, metin). 6) Composite — boyanan katmanları birleştir, z-index'i yönet. Render bloklayan kaynaklar: CSS render'ı bloklar (tarayıcı boyamadan önce CSSOM'a ihtiyaç duyar). <head> içindeki harici stil sayfaları render'ı bloklar. JavaScript HTML ayrıştırmayı bloklar (tarayıcı script'i yürütmek için durur). Optimizasyon: <script defer> — paralel indir, HTML ayrıştırıldıktan sonra yürüt. <script async> — paralel indir, indirilince hemen yürüt. Critical CSS — ekranın üst kısmındaki CSS'i <head>'e inline ekle, gerisini asenkron yükle. Preload — <link rel='preload'> tarayıcıya kaynağı erken indirmesi için ipucu verir. Reflow vs Repaint: layout özelliklerini değiştirmek (genişlik, yükseklik, konum) reflow tetikler (pahalı). Görsel özellikleri değiştirmek (renk, arka plan) sadece repaint tetikler. Virtual DOM (React) — diffing algoritması gerçek DOM güncellemelerini minimize eder.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Tarayıcı render, DOM, CSSOM, kritik render yolu, reflow, repaint, defer, async.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Next.js nedir ne zaman kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Next.js, Vercel tarafından geliştirilen production-ready web uygulamaları için React framework'üdür. Render stratejileri: SSR (Server-Side Rendering) — her istekte sunucuda render et. Dinamik, kişiselleştirilmiş içerik için iyi. SSG (Static Site Generation) — build zamanında render et. En hızlı, önbelleğe alınabilir. Bloglar, dokümanlar, pazarlama sayfaları için iyi. ISR (Incremental Static Regeneration) — arka plan yenilemesiyle SSG. Taze veriyle statik performans. App Router (Next.js 13+) — varsayılan olarak React Server Components. Server Components: sunucuda render edilir, istemci JavaScript'i yok, doğrudan veritabanı erişimi. Client Components: 'use client' direktifi, etkileşimli, hooks kullanır. Temel özellikler: dosya tabanlı yönlendirme (app/page.tsx = /), layout'lar (rotalar arası paylaşılan UI), loading.ui.tsx ve error.tsx, API rotaları (app/api/route.ts), middleware (istek tamamlanmadan önce kod çalıştır — auth, yönlendirmeler), Image bileşeni (otomatik optimizasyon, lazy loading, WebP), Font optimizasyonu (next/font). Ne zaman Next.js kullanmalı: SEO-kritik sayfalar, e-ticaret, içerik ağırlıklı siteler, full-stack React uygulamaları. Ne zaman KULLANMAMALI: basit SPA (Vite + React daha hafif), React olmayan statik site (Astro). Deployment: Vercel (sorunsuz), Docker, herhangi bir Node.js hosting.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Next.js, SSR, SSG, ISR, App Router, Server Components, Vercel, dosya tabanlı yönlendirme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "monorepo vs polyrepo nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Monorepo — tüm projeler/paketler tek bir depoda. Polyrepo — her proje kendi deposunda. Monorepo avantajları: kod paylaşımı (paylaşılan araçlar, tipler, yapılandırmalar), atomik değişiklikler (API ve istemciyi tek commit'te güncelle), tutarlı araçlar (tek linting yapılandırması, tek CI pipeline'ı), projeler arası daha kolay refactoring, birleşik versiyon geçmişi. Monorepo zorlukları: depo boyutu büyür, özel araçlar gerektirir, CI karmaşıklığı (sadece değişeni build/test et), erişim kontrolü (herkes her şeyi görür). Araçlar: Turborepo (Vercel — artımlı build'ler, önbelleleme, paralellik), Nx (güçlü, React/Angular/Node plugin'leri), Lerna (eski, daha az bakımlı), pnpm workspaces (yerleşik, hafif), Bazel (Google-ölçeğinde build'ler). Polyrepo avantajları: net sahiplik, bağımsız versiyonlama ve deployment, daha küçük depolar, repo başına daha basit CI, repo bazında erişim kontrolü. Polyrepo zorlukları: depolar arası bağımlılık yönetimi, kod tekrarı, tutarsız araçlar, çapraz kesim değişiklikleri yapmak zor. Kim neyi kullanır: Google, Meta, Microsoft monorepo kullanır. Çoğu startup monorepo ile başlar. Hybrid yaklaşım: ilgili servisler için monorepo, gerçekten bağımsız servisler için ayrı depolar. Seç: küçük-orta ekip, paylaşılan kod → monorepo. Bağımsız ekiplerle büyük organizasyon → polyrepo.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Monorepo, polyrepo, Turborepo, Nx, workspaces, kod paylaşımı, atomik değişiklikler, CI/CD.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "React tasarım desenleri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Ölçeklenebilir React uygulamaları için yaygın desenler. Compound Components — örtük durum paylaşarak birlikte çalışan bileşenler. <Select><Option>...</Option></Select> gibi. Dahili olarak React.Children veya Context kullanır. Render Props — JSX döndüren bir fonksiyonu prop olarak geç. Ebeveyne render kontrolü verir, çocuk mantığı yönetir. Çoğunlukla hook'larla değiştirildi. Custom Hooks — yeniden kullanılabilir mantığı 'use' ile başlayan fonksiyonlara çıkar. useLocalStorage, useFetch, useDebounce. Modern React'te en önemli desen. Higher-Order Components (HOC) — bileşen alan, geliştirilmiş bileşen döndüren fonksiyon. withAuth(Component). Artık daha az yaygın, hook'lar tercih edilir. Controlled vs Uncontrolled — controlled: React form durumunu yönetir (value + onChange). Uncontrolled: DOM durumu yönetir (ref). Controlled daha fazla kontrol verir. Provider Pattern — ağacın tepesinde Context Provider, tüketiciler paylaşılan duruma erişir. Tema, auth, locale için iyi. Sık değişen durum için kullanma (yeniden render'a neden olur). Container/Presentation — veri mantığını UI'dan ayır. Composition over inheritance — React'te her zaman. Asla bileşenleri extend etme. children prop, render props veya hooks kullan.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "React desenleri, compound components, custom hooks, HOC, controlled, provider, composition.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Kariyer Copilotu</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- =================================================
+             SOL PANEL
+        ================================================== -->
+        <aside class="sidebar">
+
+            <!-- LOGO -->
+            <div class="logo-area">
+                <div class="logo-icon">
+                    🚀
+                </div>
+
+                <div>
+                    <h1>Kariyer Copilotu</h1>
+                    <p>AI Destekli Kariyer Asistanı</p>
+                </div>
+            </div>
+
+
+            <!-- =================================================
+                 İSTATİSTİKLER
+            ================================================== -->
+            <section class="sidebar-section">
+
+                <div class="section-title">
+                    <span>📊</span>
+                    <h2>Başvuru Özeti</h2>
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <span class="stat-label">
+                            Toplam
+                        </span>
+
+                        <strong
+                            class="stat-value"
+                            id="toplamBasvuru"
+                        >
+                            0
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span class="stat-label">
+                            Başvuruldu
+                        </span>
+
+                        <strong
+                            class="stat-value"
+                            id="basvurulduSayisi"
+                        >
+                            0
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span class="stat-label">
+                            Mülakat
+                        </span>
+
+                        <strong
+                            class="stat-value"
+                            id="mulakatSayisi"
+                        >
+                            0
+                        </strong>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <span class="stat-label">
+                            Reddedildi
+                        </span>
+
+                        <strong
+                            class="stat-value"
+                            id="reddedildiSayisi"
+                        >
+                            0
+                        </strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================================
+                 BAŞVURULAR
+            ================================================== -->
+            <section class="sidebar-section applications-section">
+
+                <div class="section-title">
+                    <span>💼</span>
+                    <h2>Başvurularım</h2>
+                </div>
+
+                <div
+                    class="applications-list"
+                    id="basvuruListesi"
+                >
+
+                    <div class="empty-state">
+                        Başvurular yükleniyor...
+                    </div>
+
+                </div>
+
+            </section>
+
+        </aside>
+
+
+        <!-- =================================================
+             ANA İÇERİK
+        ================================================== -->
+        <main class="main-content">
+
+            <!-- ÜST BAR -->
+            <header class="topbar">
+
+                <div>
+                    <h2>Kariyer Asistanı</h2>
+                    <p>
+                        Başvurularını yönet, şirketleri araştır
+                        ve kariyer sürecini takip et.
+                    </p>
+                </div>
+
+                <div class="model-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        Qwen3.5:9b
+                    </span>
+
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 CHAT
+            ================================================== -->
+            <section class="chat-area">
+
+                <div
+                    class="chat-messages"
+                    id="chatMessages"
+                >
+
+                    <!-- KARŞILAMA MESAJI -->
+                    <div class="message assistant-message">
+
+                        <div class="message-avatar">
+                            🚀
+                        </div>
+
+                        <div class="message-content">
+
+                            <div class="message-header">
+                                Kariyer Copilotu
+                            </div>
+
+                            <div class="message-text">
+                                Merhaba! İş başvurularını yönetmek,
+                                şirketler hakkında araştırma yapmak
+                                veya kariyer sürecini takip etmek için
+                                bana soru sorabilirsin.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ÖRNEK SORULAR -->
+                    <div
+                        class="suggestions"
+                        id="suggestions"
+                    >
+
+                        <button
+                            class="suggestion-button"
+                            data-message="Başvurularımı listele."
+                        >
+                            Başvurularımı listele
+                        </button>
+
+                        <button
+                            class="suggestion-button"
+                            data-message="Başvurularımın genel durumu nasıl?"
+                        >
+                            Başvuru istatistiklerim
+                        </button>
+
+                        <button
+                            class="suggestion-button"
+                            data-message="Önümüzdeki 30 gün içinde mülakatım var mı?"
+                        >
+                            Yaklaşan mülakatlar
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     TOOL ÇAĞRISI GÖSTERİMİ
+                ================================================== -->
+                <div
+                    class="tool-panel hidden"
+                    id="toolPanel"
+                >
+
+                    <div class="tool-panel-header">
+
+                        <span>
+                            🔧 Kullanılan Araçlar
+                        </span>
+
+                        <button
+                            id="toolPanelClose"
+                            class="tool-close-button"
+                            aria-label="Tool panelini kapat"
+                        >
+                            ×
+                        </button>
+
+                    </div>
+
+                    <div
+                        class="tool-list"
+                        id="toolList"
+                    >
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     MESAJ GİRİŞİ
+                ================================================== -->
+                <div class="chat-input-area">
+
+                    <form
+                        class="chat-form"
+                        id="chatForm"
+                    >
+
+                        <textarea
+                            id="messageInput"
+                            placeholder="Kariyer Copilotu'na bir şey sor..."
+                            rows="1"
+                            autocomplete="off"
+                        ></textarea>
+
+                        <button
+                            type="submit"
+                            class="send-button"
+                            id="sendButton"
+                        >
+                            <span>
+                                Gönder
+                            </span>
+
+                            <span>
+                                ➤
+                            </span>
+                        </button>
+
+                    </form>
+
+                    <p class="input-info">
+                        Kariyer Copilotu, iş başvuruların için
+                        SQLite veritabanı ve gerektiğinde web araması kullanır.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- =================================================
+         JAVASCRIPT
+    ================================================== -->
+    <script src="app.js"></script>
+
+</body>
+</html>app js 

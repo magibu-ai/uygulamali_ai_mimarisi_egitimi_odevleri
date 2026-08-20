@@ -1,0 +1,101 @@
+﻿ID,Kategori,Beklenen Cevap,Ham Tahmin,Ham Durum,FT Tahmin,FT Durum
+1,Senaryo 1: Yönlendirme,C,C,✅ Doğru,B,❌ Yanlış
+2,Senaryo 1: Yönlendirme,A,D,❌ Yanlış,D,❌ Yanlış
+3,Senaryo 1: Yönlendirme,D,C,❌ Yanlış,A,❌ Yanlış
+4,Senaryo 1: Yönlendirme,D,D,✅ Doğru,C,❌ Yanlış
+5,Senaryo 1: Yönlendirme,A,C,❌ Yanlış,B,❌ Yanlış
+6,Senaryo 2: Doğrudan Ders Soruları,D,B,❌ Yanlış,A,❌ Yanlış
+7,Senaryo 2: Doğrudan Ders Soruları,A,B,❌ Yanlış,B,❌ Yanlış
+8,Senaryo 2: Doğrudan Ders Soruları,C,D,❌ Yanlış,C,✅ Doğru
+9,Senaryo 2: Doğrudan Ders Soruları,D,A,❌ Yanlış,C,❌ Yanlış
+10,Senaryo 2: Doğrudan Ders Soruları,D,B,❌ Yanlış,B,❌ Yanlış
+11,Senaryo 3: Selamlaşma ve Kimlik,A,A,✅ Doğru,A,✅ Doğru
+12,Senaryo 3: Selamlaşma ve Kimlik,B,B,✅ Doğru,B,✅ Doğru
+13,Senaryo 3: Selamlaşma ve Kimlik,C,C,✅ Doğru,C,✅ Doğru
+14,Senaryo 3: Selamlaşma ve Kimlik,A,A,✅ Doğru,A,✅ Doğru
+15,Senaryo 3: Selamlaşma ve Kimlik,B,D,❌ Yanlış,B,✅ Doğru
+16,Senaryo 4: Müfredat Dışı / Reddetme,D,B,❌ Yanlış,D,✅ Doğru
+17,Senaryo 4: Müfredat Dışı / Reddetme,C,D,❌ Yanlış,C,✅ Doğru
+18,Senaryo 4: Müfredat Dışı / Reddetme,A,D,❌ Yanlış,A,✅ Doğru
+19,Senaryo 4: Müfredat Dışı / Reddetme,B,C,❌ Yanlış,B,✅ Doğru
+20,Senaryo 4: Müfredat Dışı / Reddetme,D,C,❌ Yanlış,C,❌ Yanlış
+21,Senaryo 1: Yönlendirme,B,B,✅ Doğru,B,✅ Doğru
+22,Senaryo 1: Yönlendirme,D,D,✅ Doğru,D,✅ Doğru
+23,Senaryo 1: Yönlendirme,A,D,❌ Yanlış,D,❌ Yanlış
+24,Senaryo 1: Yönlendirme,C,C,✅ Doğru,C,✅ Doğru
+25,Senaryo 1: Yönlendirme,B,B,✅ Doğru,B,✅ Doğru
+26,Senaryo 2: Doğrudan Ders Soruları,D,C,❌ Yanlış,C,❌ Yanlış
+27,Senaryo 2: Doğrudan Ders Soruları,A,B,❌ Yanlış,B,❌ Yanlış
+28,Senaryo 2: Doğrudan Ders Soruları,C,A,❌ Yanlış,C,✅ Doğru
+29,Senaryo 2: Doğrudan Ders Soruları,D,C,❌ Yanlış,C,❌ Yanlış
+30,Senaryo 2: Doğrudan Ders Soruları,B,B,✅ Doğru,B,✅ Doğru
+31,Senaryo 3: Selamlaşma ve Kimlik,C,C,✅ Doğru,C,✅ Doğru
+32,Senaryo 3: Selamlaşma ve Kimlik,A,C,❌ Yanlış,C,❌ Yanlış
+33,Senaryo 3: Selamlaşma ve Kimlik,B,B,✅ Doğru,B,✅ Doğru
+34,Senaryo 3: Selamlaşma ve Kimlik,D,D,✅ Doğru,D,✅ Doğru
+35,Senaryo 3: Selamlaşma ve Kimlik,A,C,❌ Yanlış,A,✅ Doğru
+36,Senaryo 4: Müfredat Dışı / Reddetme,C,B,❌ Yanlış,A,❌ Yanlış
+37,Senaryo 4: Müfredat Dışı / Reddetme,B,B,✅ Doğru,B,✅ Doğru
+38,Senaryo 4: Müfredat Dışı / Reddetme,D,D,✅ Doğru,D,✅ Doğru
+39,Senaryo 4: Müfredat Dışı / Reddetme,A,D,❌ Yanlış,D,❌ Yanlış
+40,Senaryo 4: Müfredat Dışı / Reddetme,B,C,❌ Yanlış,C,❌ Yanlış
+41,Senaryo 1: Yönlendirme,D,D,✅ Doğru,D,✅ Doğru
+42,Senaryo 1: Yönlendirme,B,B,✅ Doğru,A,❌ Yanlış
+43,Senaryo 1: Yönlendirme,C,C,✅ Doğru,C,✅ Doğru
+44,Senaryo 1: Yönlendirme,A,C,❌ Yanlış,B,❌ Yanlış
+45,Senaryo 1: Yönlendirme,D,D,✅ Doğru,D,✅ Doğru
+46,Senaryo 2: Doğrudan Ders Soruları,B,A,❌ Yanlış,A,❌ Yanlış
+47,Senaryo 2: Doğrudan Ders Soruları,C,C,✅ Doğru,C,✅ Doğru
+48,Senaryo 2: Doğrudan Ders Soruları,A,C,❌ Yanlış,C,❌ Yanlış
+49,Senaryo 2: Doğrudan Ders Soruları,D,B,❌ Yanlış,D,✅ Doğru
+50,Senaryo 2: Doğrudan Ders Soruları,B,D,❌ Yanlış,B,✅ Doğru
+51,Senaryo 3: Selamlaşma ve Kimlik,A,A,✅ Doğru,A,✅ Doğru
+52,Senaryo 3: Selamlaşma ve Kimlik,C,B,❌ Yanlış,C,✅ Doğru
+53,Senaryo 3: Selamlaşma ve Kimlik,B,B,✅ Doğru,B,✅ Doğru
+54,Senaryo 3: Selamlaşma ve Kimlik,D,D,✅ Doğru,D,✅ Doğru
+55,Senaryo 3: Selamlaşma ve Kimlik,B,B,✅ Doğru,B,✅ Doğru
+56,Senaryo 4: Müfredat Dışı / Reddetme,A,C,❌ Yanlış,C,❌ Yanlış
+57,Senaryo 4: Müfredat Dışı / Reddetme,D,A,❌ Yanlış,A,❌ Yanlış
+58,Senaryo 4: Müfredat Dışı / Reddetme,C,D,❌ Yanlış,C,✅ Doğru
+59,Senaryo 4: Müfredat Dışı / Reddetme,B,D,❌ Yanlış,D,❌ Yanlış
+60,Senaryo 4: Müfredat Dışı / Reddetme,A,C,❌ Yanlış,C,❌ Yanlış
+61,Senaryo 1: Yönlendirme,C,C,✅ Doğru,C,✅ Doğru
+62,Senaryo 1: Yönlendirme,A,D,❌ Yanlış,D,❌ Yanlış
+63,Senaryo 1: Yönlendirme,D,D,✅ Doğru,C,❌ Yanlış
+64,Senaryo 1: Yönlendirme,B,C,❌ Yanlış,B,✅ Doğru
+65,Senaryo 1: Yönlendirme,C,C,✅ Doğru,C,✅ Doğru
+66,Senaryo 2: Doğrudan Ders Soruları,B,C,❌ Yanlış,C,❌ Yanlış
+67,Senaryo 2: Doğrudan Ders Soruları,A,B,❌ Yanlış,B,❌ Yanlış
+68,Senaryo 2: Doğrudan Ders Soruları,D,A,❌ Yanlış,D,✅ Doğru
+69,Senaryo 2: Doğrudan Ders Soruları,B,D,❌ Yanlış,B,✅ Doğru
+70,Senaryo 2: Doğrudan Ders Soruları,A,D,❌ Yanlış,A,✅ Doğru
+71,Senaryo 3: Selamlaşma ve Kimlik,D,D,✅ Doğru,D,✅ Doğru
+72,Senaryo 3: Selamlaşma ve Kimlik,A,A,✅ Doğru,A,✅ Doğru
+73,Senaryo 3: Selamlaşma ve Kimlik,C,C,✅ Doğru,C,✅ Doğru
+74,Senaryo 3: Selamlaşma ve Kimlik,B,B,✅ Doğru,B,✅ Doğru
+75,Senaryo 3: Selamlaşma ve Kimlik,D,D,✅ Doğru,D,✅ Doğru
+76,Senaryo 4: Müfredat Dışı / Reddetme,B,D,❌ Yanlış,B,✅ Doğru
+77,Senaryo 4: Müfredat Dışı / Reddetme,D,C,❌ Yanlış,D,✅ Doğru
+78,Senaryo 4: Müfredat Dışı / Reddetme,B,D,❌ Yanlış,B,✅ Doğru
+79,Senaryo 4: Müfredat Dışı / Reddetme,A,D,❌ Yanlış,D,❌ Yanlış
+80,Senaryo 4: Müfredat Dışı / Reddetme,D,D,✅ Doğru,B,❌ Yanlış
+81,Senaryo 1: Yönlendirme,B,B,✅ Doğru,B,✅ Doğru
+82,Senaryo 1: Yönlendirme,C,A,❌ Yanlış,C,✅ Doğru
+83,Senaryo 1: Yönlendirme,A,A,✅ Doğru,A,✅ Doğru
+84,Senaryo 1: Yönlendirme,D,D,✅ Doğru,D,✅ Doğru
+85,Senaryo 1: Yönlendirme,A,D,❌ Yanlış,D,❌ Yanlış
+86,Senaryo 2: Doğrudan Ders Soruları,C,A,❌ Yanlış,C,✅ Doğru
+87,Senaryo 2: Doğrudan Ders Soruları,B,A,❌ Yanlış,A,❌ Yanlış
+88,Senaryo 2: Doğrudan Ders Soruları,D,C,❌ Yanlış,D,✅ Doğru
+89,Senaryo 2: Doğrudan Ders Soruları,A,C,❌ Yanlış,C,❌ Yanlış
+90,Senaryo 2: Doğrudan Ders Soruları,B,B,✅ Doğru,B,✅ Doğru
+91,Senaryo 3: Selamlaşma ve Kimlik,C,C,✅ Doğru,C,✅ Doğru
+92,Senaryo 3: Selamlaşma ve Kimlik,D,D,✅ Doğru,D,✅ Doğru
+93,Senaryo 3: Selamlaşma ve Kimlik,A,A,✅ Doğru,A,✅ Doğru
+94,Senaryo 3: Selamlaşma ve Kimlik,B,B,✅ Doğru,B,✅ Doğru
+95,Senaryo 3: Selamlaşma ve Kimlik,C,C,✅ Doğru,C,✅ Doğru
+96,Senaryo 4: Müfredat Dışı / Reddetme,D,B,❌ Yanlış,D,✅ Doğru
+97,Senaryo 4: Müfredat Dışı / Reddetme,A,A,✅ Doğru,A,✅ Doğru
+98,Senaryo 4: Müfredat Dışı / Reddetme,B,D,❌ Yanlış,B,✅ Doğru
+99,Senaryo 4: Müfredat Dışı / Reddetme,C,C,✅ Doğru,B,❌ Yanlış
+100,Senaryo 4: Müfredat Dışı / Reddetme,D,C,❌ Yanlış,C,❌ Yanlış

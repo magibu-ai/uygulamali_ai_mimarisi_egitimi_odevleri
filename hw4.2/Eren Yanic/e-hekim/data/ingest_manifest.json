@@ -1,0 +1,39 @@
+{
+  "source_dataset": "umutertugrul/turkish-hospital-medical-articles",
+  "embedding_model": "magibu/embeddingmagibu-200m",
+  "embedding_dim": 768,
+  "selection_seed": 42,
+  "raw_articles": 24612,
+  "cleaned_articles": 20549,
+  "selected_articles": 1000,
+  "articles_per_source": {
+    "acibadem": 72,
+    "anadolusaglik": 72,
+    "atlas": 72,
+    "baskentistanbul": 72,
+    "bayindir": 72,
+    "florence": 72,
+    "guven": 71,
+    "liv": 71,
+    "medicalpark": 71,
+    "medicalpoint": 71,
+    "medicana": 71,
+    "medipol": 71,
+    "memorial": 71,
+    "yeditepe": 71
+  },
+  "chunks": 2714,
+  "chunk_target_tokens": 512,
+  "chunk_overlap_tokens": 64,
+  "chunk_min_tokens": 32,
+  "token_stats": {
+    "mean": 419.7767133382461,
+    "median": 477.0,
+    "p95": 534.0,
+    "min": 34,
+    "max": 586
+  },
+  "chunks_per_article": 2.71,
+  "collection": "ehekim_chunks",
+  "elapsed_seconds": 310.1
+}

@@ -1,0 +1,33 @@
+# Vektör Veritabanı (ChromaDB saklama dizinleri)
+chroma_db/
+*.db
+*.sqlite3
+
+# Python Önbellek ve Derleme Dosyaları
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Sanal Ortamlar (Virtual Environments)
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Çevre Değişkenleri ve Hassas Bilgiler
+.env
+.env.local
+
+# IDE ve Editör Yapılandırmaları
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# İşletim Sistemi Geçici Dosyaları
+.DS_Store
+Thumbs.db
+*.log

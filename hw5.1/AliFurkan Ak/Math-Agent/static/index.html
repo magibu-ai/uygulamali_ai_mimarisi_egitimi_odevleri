@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathAgent - Matematiksel Hesaplama Asistanı</title>
+    <meta name="description" content="Matematiksel hesaplamalarınız için akıllı sohbet asistanı.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-calculator"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>MathAgent</h1>
+                    <p class="subtitle">Matematiksel Hesaplama Asistanı</p>
+                </div>
+            </div>
+
+            <div class="header-controls">
+                <div class="status-badge" id="statusBadge">
+                    <span class="status-dot"></span>
+                    <span id="statusText">Bağlanıyor...</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Chat Body -->
+        <main class="chat-main">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Message Card -->
+                <div class="message assistant-message welcome-card">
+                    <div class="avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <h3>Merhaba! Ben MathAgent 👋</h3>
+                        <p>Matematiksel hesaplamalarınız için buradayım.</p>
+                        
+                        <div class="feature-pills">
+                            <div class="pill"><i class="fa-solid fa-square-root-variable"></i> Matematiksel Hesaplamalar</div>
+                            <div class="pill"><i class="fa-solid fa-globe"></i> Matematik Web Araması</div>
+                            <div class="pill pill-guard"><i class="fa-solid fa-shield-halved"></i> Sadece Matematik & Selamlaşma</div>
+                        </div>
+
+                        <p class="quick-title">Örnek bir işlem seçebilir veya yazabilirsiniz:</p>
+                        <div class="quick-prompts">
+                            <button class="prompt-chip" onclick="sendQuickPrompt('456 ile 789 sayısını çarp')">
+                                🔢 456 x 789
+                            </button>
+                            <button class="prompt-chip" onclick="sendQuickPrompt('100 ile 200 arasındaki asal sayıları bul')">
+                                🔍 Asal Sayılar (100-200)
+                            </button>
+                            <button class="prompt-chip" onclick="sendQuickPrompt('Dünyanın yarıçapı kaç km\'dir?')">
+                                🌐 Dünyanın Yarıçapı
+                            </button>
+                            <button class="prompt-chip" onclick="sendQuickPrompt('3x3 matris determinantı hesapla: [[1, 2, 3], [0, 1, 4], [5, 6, 0]]')">
+                                📐 Matris Determinantı
+                            </button>
+                            <button class="prompt-chip" onclick="sendQuickPrompt('Merhaba nasılsın?')">
+                                👋 Merhaba
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Input Bar -->
+        <footer class="chat-footer">
+            <form id="chatForm" class="input-form">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="userInput" 
+                        placeholder="Matematiksel işleminizi yazın... (Örn: 25 faktöriyel hesapla veya matris çarpımı yap)" 
+                        rows="1"
+                        required
+                    ></textarea>
+                    <button type="submit" id="sendBtn" class="send-btn" title="Gönder">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </form>
+            <div class="footer-note">
+                <i class="fa-solid fa-circle-info"></i> Matematiksel işlemleriniz ve selamlaşma için asistanınızla sohbet edebilirsiniz.
+            </div>
+        </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

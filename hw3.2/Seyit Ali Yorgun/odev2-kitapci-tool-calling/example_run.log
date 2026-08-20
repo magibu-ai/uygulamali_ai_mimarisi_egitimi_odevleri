@@ -1,0 +1,32 @@
+>>> Kullanıcı: 1984 kitabından 2 adet sipariş vermek istiyorum, adım Ayşe.
+```
+[Tur 1] Araç Çağrıları:
+   -> list_books(query='1984')
+   <- [{'id': 2, 'title': '1984', 'author': 'George Orwell', 'price': 120.0, 'stock': 6}]
+[Tur 2] Araç Çağrıları:
+   -> create_order(book_id=2, customer_name='Ayşe', quantity=2)
+   <- {'order_id': 2, 'book_title': '1984', 'quantity': 2, 'customer_name': 'Ayşe', 'total_price': 240.0, 'status': 'confirmed'}
+```
+
+**Yanıt:**
+Siparişiniz alındı. Sipariş numaranız: 2. Kitap: 1984, Adet: 2, Müşteri: Ayşe, Toplam Fiyat: 240.0, Durum: Onaylandı.
+
+>>> Kullanıcı: Harry Potter var mı?
+```
+[Tur 1] Araç Çağrıları:
+   -> list_books(query='Harry Potter')
+   <- []
+```
+
+**Yanıt:**
+Bu kitap katalogda yok.
+
+>>> Kullanıcı: 1 numaralı siparişimin durumu ne?
+```
+[Tur 1] Araç Çağrıları:
+   -> check_order_status(order_id=1)
+   <- {'order_id': 1, 'quantity': 2, 'customer_name': 'Ayşe', 'status': 'confirmed', 'created_at': '2026-08-03T19:38:37.105375+00:00', 'book_title': '1984'}
+```
+
+**Yanıt:**
+1 numaralı siparişiniz onaylanmıştır. Sipariş ettiğiniz kitap "1984", adet 2, müşterinin adı "Ayşe".

@@ -1,0 +1,580 @@
+{
+    "train": [
+        [
+            {
+                "content": "multimodal AI ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Multimodal AI, birden fazla veri tipini (metin, görüntü, ses, video) anlayan ve üreten modeller. GPT-4V görüntü ve metin anlıyor. DALL-E metinden görüntü üretiyor. CLIP metin ve görüntü embedding'lerini aynı uzayda temsil ediyor. Whisper ses → metin dönüşümü. Gemini (Google) multimodal olarak tasarlandı. Neden önemli: gerçek dünya multimodal — insanlar görüyor, duyuyor, okuyor, konuşuyor. Tek modality yeterli değil karmaşık görevler için. Uygulamalar: görüntüden soru cevaplama, video analizi, metin+görüntü araması. Vision Transformer (ViT) görüntüyü transformer ile işliyor. Gelecek multimodal — her şeyi anlayan AI.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Multimodal AI, GPT-4V, DALL-E, CLIP, Whisper, Gemini, ViT.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AI ile sağlık alanında neler yapılıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI sağlıkta devrim yaratıyor. Tıbbi görüntüleme: röntgen, MR, CT taramalarında hastalık tespiti (kanser, retina hastalıkları) — bazen radyologlardan daha doğru. İlaç keşfi: AlphaFold protein yapılarını tahmin ediyor — ilaç geliştirme sürecini kısaltıyor. Klinik karar destek: hasta verilerinden risk tahmini. Sağlık chatbot'ları: semptom değerlendirme. Genomik: DNA analizi, kişiselleştirilmiş tıp. Wearable cihazlar: Apple Watch EKG. Ruh sağlığı: Görkem'in depression-phq9-analysis projesi bu alana giriyor. Zorluklar: veri gizliliği (HIPAA), model güvenilirliği (hayati kararlar), düzenleyici onay. Health-tech en hızlı büyüyen AI uygulama alanlarından.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI sağlık, tıbbi görüntüleme, AlphaFold, ilaç keşfi, wearable, PHQ-9.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "jamstack ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Jamstack: JavaScript, APIs, Markup. Modern web geliştirme yaklaşımı — statik sayfalar + API çağrıları. Geleneksel: sunucu her istekte sayfayı oluşturur. Jamstack: sayfalar build time'da oluşturulur (statik), dinamik veriler API ile çekilir. Avantajları: çok hızlı (CDN'den serv edilir), güvenli (sunucu yok, saldırı yüzeyi az), ölçeklenebilir, ucuz hosting. Araçlar: Next.js, Gatsby, Astro, Hugo, 11ty. Headless CMS: Strapi, Contentful, Sanity — içerik yönetimi API üzerinden. Hosting: Vercel, Netlify, Cloudflare Pages. Blog, portfolyo, landing page, e-ticaret için ideal. Görkem'in portfolyosu muhtemelen Jamstack ile yapılmış.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Jamstack, statik, API, CDN, Next.js, Astro, headless CMS, Vercel.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "hangi laptop yazılım geliştirme için uygun?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yazılım geliştirme için laptop seçimi: RAM: minimum 16GB (8GB sıkıntı, 32GB ideal özellikle AI için). İşlemci: M1/M2/M3 Mac veya Intel i7/AMD Ryzen 7+. SSD: minimum 512GB (HDD kullanma). Ekran: 14-15 inç, yüksek çözünürlük. İşletim sistemi: macOS (geliştirici dostu, Unix tabanlı), Linux (ücretsiz, çok esnek), Windows (WSL2 ile iyi). Mac: MacBook Air M2/M3 mükemmel — batarya, performans, sessizlik. ThinkPad: Linux için ideal, dayanıklı. GPU: AI eğitimi yapacaksan NVIDIA GPU gerekli (ama çoğu şeyi cloud'da yapabilirsin). Bütçeye göre karar ver ama RAM'den kısma.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Laptop seçimi, RAM, SSD, macOS, Linux, MacBook, ThinkPad, GPU.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Hugging Face ekosistemi ne sunuyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Hugging Face AI dünyasının GitHub'ı. Hub: binlerce model, dataset, Space (demo) barındırıyor. Transformers kütüphanesi: 200+ model mimarisi, tek API ile kullanım. Datasets kütüphanesi: binlerce veri seti, streaming ile büyük verileri işle. Tokenizers: Rust ile yazılmış hızlı tokenizer'lar. PEFT: LoRA gibi verimli fine-tuning. TRL: RLHF ile eğitim. Accelerate: multi-GPU eğitim. Gradio/Spaces: demo oluştur ve paylaş. Inference API: modelleri API olarak kullan. AutoTrain: kodlamadan model eğit. Görkem'in wiki2bpe projesi HF Hub'a publish ediliyor. Ücretsiz plan bile çok şey sunuyor. AI geliştiricileri için olmazsa olmaz platform.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Hugging Face, Hub, Transformers, Datasets, PEFT, Gradio, Spaces, AutoTrain.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "federated learning ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Federated learning, veriyi merkezi bir yere toplamadan, verinin olduğu yerde model eğitme. Her cihaz (telefon, hastane) kendi verisinde model günceller, sadece model güncellemeleri (gradient'ler) merkeze gönderilir. Avantajları: gizlilik (veri cihazda kalır), iletişim tasarrufu (tüm veriyi göndermek yerine küçük güncellemeler), düzenleme uyumu (GDPR). Google Gboard bunu kullanıyor — klavye önerilerini kullanıcı verisi telefondan çıkmadan eğitiyor. Sağlık alanında: hastaneler veriyi paylaşmadan birlikte model eğitebilir. Zorluklar: non-IID veri, iletişim overhead, heterogeneous devices. PySyft ve Flower framework'leri.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Federated learning, gizlilik, Gboard, sağlık, PySyft, Flower.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yapay zeka gerçekten zeki mi?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bu felsefi bir soru aslında. Şu anki AI 'dar yapay zeka' — belirli görevlerde insanlardan iyi (satranç, görüntü tanıma, metin üretme) ama genel zeka yok. ChatGPT çok ikna edici metinler yazıyor ama dünyayı anlamıyor, deneyimlemiyorum, hissetmiyor. Pattern matching yapıyor — eğitim verisindeki kalıpları bulup uygulıyor. AGI (Artificial General Intelligence) henüz çok uzak — belki onlarca yıl. 'Zeki' tanımı bile tartışmalı. Ama AI çok güçlü bir araç — doğru kullanılırsa insanlığa çok faydalı olabilir. Görkem bu aracı insanların hayatını iyileştirmek için kullanıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yapay zeka, zeka, dar AI, AGI, pattern matching, felsefe.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılım geliştirmede en önemli 3 beceri ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "1) Problem çözme: teknik bilgiden daha önemli. Bir problemi tanımlama, analiz etme, parçalara ayırma ve çözme becerisi. Algoritmik düşünme bununla ilgili. 2) İletişim: fikrlerini açıkça ifade etme, teknik konuları basit anlatma, yazılı iletişim (PR description, dökümantasyon), dinleme. 3) Öğrenme yeteneği: teknoloji sürekli değişiyor — bugün bildiğin framework yarın yerini başkasına bırakabilir. Hızlı öğrenme, adapte olma, merakı canlı tutma. Bunlar programlama dillerinden ve framework'lerden daha değerli — diller öğrenilir ama bu 3 beceri çekirdek. Görkem bu becerilere sahip — farklı alanlarda proje yapması bunu gösteriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "3 beceri, problem çözme, iletişim, öğrenme yeteneği, adaptasyon.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımda mentörlük ilişkisi nasıl olmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İyi bir mentörlük ilişkisi: düzenli buluşma (haftada veya iki haftada bir, 30-60 dk), gündem hazırla (boş gelme), somut sorular sor (genel değil spesifik), geri bildirimi kabul et, eyleme geç (söyleneni uygula), şeffaf ol (bilmediğini söyle, zor durumları paylaş). Mentörden bekleme: sihirli cevaplar — kendi yolunu sen bulacaksın, mentör yol gösterir. İlişki süresi: genelde 3-12 ay, doğal olarak evrilir. Birden fazla mentör olabilir — kariyer mentörü, teknik mentör, sektör mentörü. Tersi de yap — başkalarına mentörlük ver. 'Öğretmek en iyi öğrenme yöntemidir.' ayarlicazhocam da bir tür dijital mentorluk aracı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mentörlük, düzenli buluşma, gündem, geri bildirim, dijital mentorluk.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AI ile müzik üretmek mümkün mü?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Evet! AI müzik üretimi hızla gelişiyor. Araçlar: Suno AI, Udio (metin → müzik), AIVA (film müziği), Jukebox (OpenAI), MusicGen (Meta). Teknoloji: transformer tabanlı modeller müzik pattern'larını öğreniyor. MIDI üretimi, ses sentezi, şarkı sözü yazma. Tartışma: telif hakkı — AI eğitim verisindeki müzikleri kullanıyor, orijinal mi yoksa kopya mı? Müzisyenler işini kaybedecek mi? Bence AI müzisyenlerin aracı olacak — ilham, demo, fikir geliştirme. Ama insan duygusu ve yaratıcılığı AI'ın henüz yakalaması zor olan bir şey. Görkem'in AI projeleri bu tür yaratıcı uygulamalara da genişleyebilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI müzik, Suno, MusicGen, telif hakkı, yaratıcılık, transformer.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "open source AI modelleri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Açık kaynak AI modelleri: LLM'ler — Llama 3 (Meta), Mistral/Mixtral, Gemma (Google), Phi (Microsoft), Falcon, Yi. Görüntü — Stable Diffusion (Stability AI), SDXL. Ses — Whisper (OpenAI), Bark. Embedding — sentence-transformers, E5. Code — CodeLlama, StarCoder, DeepSeek Coder. Avantajları: ücretsiz, özelleştirilebilir (fine-tuning), gizlilik (kendi sunucunda çalıştır), şeffaflık. Dezavantajları: GPT-4/Claude kadar güçlü değil (henüz), deploy ve yönetim gerekir. Hugging Face Hub binlerce model barındırıyor. Ollama ile lokal çalıştırabilirsin. vLLM ve TGI ile production'da serv edebilirsin. Açık kaynak AI demokratikleşmeyi sağlıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Açık kaynak AI, Llama, Mistral, Stable Diffusion, Whisper, Hugging Face, Ollama.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "attention is all you need makalesi ne anlatıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "2017'de Google'ın yayınladığı, modern AI'ı değiştiren makale. Ana fikir: RNN ve CNN'e gerek yok, sadece attention mekanizması yeterli — bu yüzden 'Attention Is All You Need'. Transformer mimarisini tanıttı. Encoder-decoder yapısı, multi-head self-attention, positional encoding, feed-forward networks. Neden devrim: paralel hesaplama (RNN sıralı), uzun bağımlılıkları yakalama, ölçeklenebilirlik. Bu makaleden sonra: BERT (encoder), GPT (decoder), T5 (encoder-decoder) doğdu. NLP'yi tamamen dönüştürdü ve artık vision (ViT), speech, protein yapısı gibi alanlara da yayıldı. Görkem'in miniature-transformers projesi bu makaleyi implemente ediyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Attention Is All You Need, transformer, 2017, encoder-decoder, devrim.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "electron nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Electron, web teknolojileriyle (HTML, CSS, JS) masaüstü uygulaması geliştirme framework'ü. Chromium + Node.js kullanır. VS Code, Slack, Discord, Figma (eski versiyonu), Notion hep Electron. Avantajları: web bilgiyle masaüstü uygulama yap, cross-platform (Windows, Mac, Linux). Dezavantajları: yüksek bellek kullanımı (her uygulama kendi Chromium'u), büyük dosya boyutu, native performanstan düşük. Alternatifler: Tauri (Rust tabanlı, çok daha hafif), Flutter Desktop, .NET MAUI. Tauri Electron'a göre %10 boyutunda. Ama Electron'un ekosistemi ve olgunluğu hala çok güçlü. Görkem masaüstü uygulaması yapacaksa Tauri güzel bir seçenek.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Electron, masaüstü, Chromium, VS Code, Slack, Tauri, bellek kullanımı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "anomaly detection nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Anomaly detection (anomali tespiti), normal olmayan verileri bulma. Kullanım alanları: fraud detection (sahte işlem), network intrusion (siber saldırı), manufacturing (hatalı ürün), health (anormal hasta verisi). Yöntemler: Statistical — z-score, IQR. ML — Isolation Forest, One-Class SVM, Local Outlier Factor. Deep learning — Autoencoder (yeniden oluşturulamayan veri anormal). Time series — değişim noktası tespiti. Unsupervised: etiketli veri yok (çoğu durumda anomali çok az). Supervised: etiketli anomali varsa (fraud dataset). PyOD Python kütüphanesi birçok anomali tespiti algoritması sunuyor. Görkem'in email-phishing-detection projesi bir tür anomali tespiti.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Anomaly detection, fraud, Isolation Forest, Autoencoder, PyOD, phishing.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AI ile eğitim nasıl dönüşüyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI eğitimi kişiselleştiriyor. Adaptive learning: her öğrencinin seviyesine göre içerik uyarlama (Khan Academy, Duolingo). AI tutor: birebir açıklama ve soru çözme (ChatGPT, Khanmigo). Otomatik değerlendirme: essay grading, kod değerlendirme. İçerik üretimi: ders materyali, soru bankası otomatik oluşturma. Çeviri: dil bariyerini kaldırma. Erişilebilirlik: görme/işitme engelli öğrenciler için asistan. ayarlicazhocam da AI eğitim aracı — YKS öğrencilerine strateji, yazılım öğrencilerine teknik destek. Riskler: academik dürüstlük (kopya), teknoloji bağımlılığı, dijital uçurum (erişimi olmayan öğrenciler). AI öğretmenin yerini almaz ama öğretmenin aracı olur.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI eğitim, adaptive learning, Khan Academy, Duolingo, ayarlicazhocam, riskler.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yapay zeka startup'ı kurmak istiyorum nereden başlamalıyım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI startup'ı kurmak heyecan verici ama zorlu. Adımlar: 1) Problem bul — gerçek bir sorunu AI ile çöz (teknoloji aramak değil, problem aramak). 2) Domain bilgisi edin — sağlık, finans, eğitim gibi. 3) MVP yap — mükemmel model değil, çalışan prototip. 4) Validation — gerçek kullanıcılarla test et. 5) Takım kur — teknik + iş tarafı. 6) Business model — SaaS, API, danışmanlık. 7) Yatırım veya bootstrap. AI-specific zorluklar: veri toplama, model performansı garantisi zor, hesaplama maliyeti, AI hype vs gerçekçi beklenti. Görkem ayarlicazhocam ile bu yolda. Y Combinator, AI Grant, Google for Startups AI programları destek sunuyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI startup, problem, MVP, validation, business model, Y Combinator, ayarlicazhocam.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AI agent'lar nedir ve nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI agent, LLM'i araçlarla (tools) birleştiren otonom sistem. LLM düşünür, plan yapar, araçları kullanarak görevleri yerine getirir. Araçlar: web araması, dosya okuma/yazma, kod çalıştırma, API çağrısı, veritabanı sorgusu. ReAct pattern: Reason (düşün) → Act (araç kullan) → Observe (sonucu gör) → tekrarla. Framework'ler: LangChain, LlamaIndex, CrewAI, AutoGen. Görkem'in python-llm-agent projesi bunu yapıyor. Örnekler: müşteri destek agentı, araştırma asistanı, kod yazma agentı. Multi-agent: birden fazla agent birlikte çalışır — biri araştırır, biri yazar, biri review eder. 2024-2025'in en büyük trendi — AI agent'lar. ayarlicazhocam da bir tür AI agent.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI agent, ReAct, LangChain, araçlar, multi-agent, python-llm-agent.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "self-supervised learning ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Self-supervised learning, etiketlenmemiş veriden kendi gözetim sinyalini üreten öğrenme. Supervised learning'de insan etiketler gerekir (pahalı), self-supervised'da veri kendi etiketini oluşturur. Örnekler: BERT — cümledeki kelimeyi mask'le, modeli tahmin ettir. GPT — sonraki kelimeyi tahmin et. Contrastive learning (SimCLR, MoCo) — aynı görüntünün farklı augmentation'larını yakınlaştır, farklı görüntüleri uzaklaştır. Neden önemli: etiketlenmemiş veri sınırsız, etiketli veri pahalı. İnternetteki tüm metin ve görüntülerle eğitilebilir. Foundation models (GPT, DALL-E, CLIP) hep self-supervised. Gelecek AI'ın temeli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Self-supervised learning, BERT masking, GPT next-token, contrastive, foundation model.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "computer science vs computer engineering farkı ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Computer Science (Bilgisayar Bilimi): daha teorik — algoritmalar, hesaplama teorisi, matematik ağırlıklı, yazılım odaklı. Computer Engineering (Bilgisayar Mühendisliği): donanım + yazılım — devre tasarımı, mikroişlemciler, gömülü sistemler, işletim sistemi. Pratikte: iş piyasasında çok az fark, ikisi de yazılım pozisyonlarına başvurabilir. CS daha çok teori ve araştırma, CE daha çok mühendislik ve uygulama. Türkiye'de: bilgisayar mühendisliği daha yaygın. ABD'de: CS daha popüler. Görkem bilgisayar mühendisliği okuyor — hem donanım bilgisi (gorkem-os) hem yazılım bilgisi var. Önemli olan bölüm ismi değil — ne yaptığın ve ne bildiğin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CS vs CE, teori vs mühendislik, donanım, yazılım, iş piyasası.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AI ile otonom araçlar nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Otonom araçlar birden fazla AI teknolojisini birleştiriyor. Algılama: kamera, lidar, radar ile çevre algılama — YOLO gibi nesne tespiti, lane detection. Lokalizasyon: GPS + HD harita + SLAM (Simultaneous Localization and Mapping). Planlama: güzergah planlama, engel kaçınma, trafik kuralları. Kontrol: direksiyon, gaz, fren kontrolü. Seviyeleri: L0 (tam manuel) → L5 (tam otonom). Tesla Autopilot L2, Waymo L4. Deep learning + reinforcement learning + sensor fusion kullanılıyor. Simulation (CARLA) ile eğitim. Zorlukllar: edge case'ler (beklenmedik durumlar), etik kararlar (tramvay problemi), hava koşulları, düzenlemeler. Henüz tam otonom (L5) uzak ama ilerliyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Otonom araçlar, lidar, YOLO, SLAM, Tesla, Waymo, reinforcement learning.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımcı olarak ilk 100 gün nasıl geçmeli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İlk 100 gün yeni bir işte çok kritik. İlk 30 gün: gözlemle ve öğren. Kod tabanını anla, projeyi kur, küçük bug'lar fix et, takım dinamiklerini öğren, soru sor (aptalca soru yoktur). 30-60 gün: küçük feature'lar geliştir, code review'lara katıl, mentörünle düzenli konuş, takım ritüellerini (standup, retro) benimse. 60-100 gün: daha büyük görevler al, kendi fikirlerini paylaş, pair programming yap, dökümantasyona katkıda bulun. Genel: fazla mesai yapma (sürdürülebilir ol), herkesle iyi ilişki kur, şirket kültürünü anla, not al. İlk işinde hata yapmak normal — önemli olan öğrenmek.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "İlk 100 gün, gözlem, küçük görevler, mentör, takım, sürdürülebilirlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "synthetic data nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Synthetic data (sentetik veri), gerçek veriye benzeyen ama yapay olarak üretilmiş veri. Neden: gerçek veri az (nadir hastalıklar), gizlilik (hasta verisi paylaşılamaz), maliyet (etiketleme pahalı), dengesiz veri (fraud detection'da fraud çok az). Yöntemler: GAN ile görüntü üretme, LLM ile metin üretme, rule-based generation, SMOTE (azınlık sınıfı oversampling). Bu projede de sentetik veri üretiyoruz — programatik olarak Q&A çiftleri oluşturuyoruz. Dikkat: sentetik veri gerçeğin kalitesini tam yakalayamayabilir — idealde gerçek + sentetik karışımı kullan. Gartner'a göre 2030'a kadar verinin çoğu sentetik olacak.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Synthetic data, GAN, LLM, SMOTE, gizlilik, Gartner, kalite.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AI model bias nasıl tespit edilir ve azaltılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Model bias, modelin belirli gruplara karşı ayrımcılık yapması. Örnekler: kredi modeli kadınlara karşı ayrımcı, yüz tanıma koyu tenli insanlarda daha düşük doğruluk. Tespit: farklı demografik gruplar için performansı ayrı ölç, confusion matrix her grup için. Fairness metrics: demographic parity, equalized odds, calibration. Azaltma: Pre-processing — veri dengesi, temsiliyet artırma. In-processing — fairness constraint'li eğitim. Post-processing — tahmin eşiklerini gruplara göre ayarla. Araçlar: AI Fairness 360 (IBM), Fairlearn (Microsoft). Bias tamamen sıfırlanamaz ama azaltılabilir. Veri toplama aşamasından itibaren düşünülmeli. Etik AI geliştirmenin temel konusu.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Model bias, ayrımcılık, fairness, demographic parity, AI Fairness 360, etik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "web component nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Web Components, tarayıcı standartı custom HTML elementleri. Üç teknoloji: Custom Elements (kendi HTML tag'ini tanımla: <user-card>), Shadow DOM (izole stil ve DOM — CSS çakışması olmaz), HTML Templates (<template> ile yeniden kullanılabilir yapılar). Framework'e bağımlı değil — vanilla JavaScript ile yazılır. Lit (Google) Web Components geliştirmeyi kolaylaştırır. Avantajları: framework agnostic (React, Vue, Angular ile beraber çalışır), standart (browser support iyi), encapsulation. Dezavantajları: React/Vue kadar kolay değil, ekosistem daha küçük. Micro-frontend'lerde çok kullanılır — farklı framework'ler arasında paylaşılan komponent.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Web Components, Custom Elements, Shadow DOM, Lit, encapsulation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "recommender system nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Öneri sistemleri (recommendation system) iki temel yaklaşım: 1) Collaborative filtering — benzer kullanıcıların beğendiği ürünleri öner (Netflix). User-based: 'sana benzeyen kullanıcılar bunu izledi'. Item-based: 'bunu izleyenler bunu da izledi'. Matrix factorization (SVD) ile. 2) Content-based filtering — ürün özelliklerine göre öner. 'Aksiyon filmi izledin → başka aksiyon filmleri'. TF-IDF veya embedding ile benzerlik. 3) Hybrid — ikisinin birleşimi (çoğu gerçek sistem). Deep learning tabanlı: Neural Collaborative Filtering, transformer tabanlı. Cold start problemi: yeni kullanıcı/ürün için veri yok. A/B testing ile optimize edilir. Amazon satışlarının %35'i öneri sisteminden gelyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Recommender system, collaborative filtering, content-based, hybrid, cold start.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "model interpretability neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Model interpretability (yorumlanabilirlik), modelin kararlarını anlayabilmek. Neden önemli: 1) Güven — kullanıcılar modele güvensin. 2) Hata tespiti — model yanlış sebepten doğru tahmin yapabilir. 3) Yasal zorunluluk — GDPR, EU AI Act açıklanabilirlik istiyor. 4) İyileştirme — modeli anlarsan geliştirebilirsin. Yöntemler: feature importance (hangi özellikler önemli), SHAP değerleri (her özelliğin katkısı), LIME (lokal açıklama), attention visualization (transformer'da nereye bakıyor), gradient-based methods (saliency maps). Basit modeller (lineer regresyon, decision tree) inherently interpretable. Karmaşık modeller (deep learning) için post-hoc açıklama gerekiyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Interpretability, SHAP, LIME, attention, GDPR, EU AI Act.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yapay zeka öğrenmek için matematik şart mı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Temel düzeyde başlamak için şart değil ama derinleşmek için kesinlikle gerekli. Scikit-learn ile model eğitebilirsin matematik bilmeden — ama model neden çalışıyor veya çalışmıyor anlamazsın. Gerekli matematik: lineer cebir (matris çarpımı, eigenvector), kalkülüs (gradient, türev — backpropagation için), olasılık ve istatistik (Bayes, dağılımlar, hipotez testi). Korkmana gerek yok — üniversite seviyesi yeterli, matematikçi olmak gerekmez. 3Blue1Brown kanalı matematiği görsel ve sezgisel anlatıyor. Statquest istatistik için harika. Matematik anlayışı seni sıradan AI kullanıcısından AI mühendisine dönüştürür.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI için matematik, lineer cebir, kalkülüs, olasılık, 3Blue1Brown.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "htmx nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "htmx, HTML attribute'ları ile AJAX istekleri yapan hafif bir kütüphane. JavaScript yazmadan dinamik web sayfaları oluşturabilirsin. Örnek: <button hx-get='/api/data' hx-target='#result'>Yükle</button> — butona tıklayınca API'dan veri çeker ve #result elementine yazar. Avantajları: framework öğrenmeden dinamik UI, küçük (14KB), backend framework'le uyumlu (Django, Flask, Go). Dezavantajları: karmaşık SPA'lar için yetersiz, ekosistem küçük. Server-side rendering + htmx = simple stack. React/Vue'ya alternatif değil ama her proje React gerektirmez. Full-stack web framework'lerle (Laravel, Rails, Django) mükemmel çalışır. Basitlik güçtür.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "htmx, AJAX, HTML attribute, server-side, basitlik, Django, Flask.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "NLP'nin temel görevleri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "NLP (Natural Language Processing) temel görevleri: 1) Text Classification — metin sınıflandırma (spam, duygu analizi). 2) Named Entity Recognition (NER) — isim, yer, kurum tespiti. 3) Sentiment Analysis — duygu analizi (olumlu/olumsuz). 4) Machine Translation — makine çevirisi (Görkem'in NMT projesi). 5) Question Answering — soru cevaplama. 6) Text Summarization — metin özetleme. 7) Text Generation — metin üretme (GPT). 8) Part-of-Speech Tagging — kelime türü etiketleme. 9) Tokenization — metin parçalama (wiki2bpe). 10) Information Extraction — bilgi çıkarma. spaCy, NLTK, Hugging Face Transformers temel araçlar. Görkem NLP'de çok güçlü — birçok projesi bu alana giriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "NLP görevleri, classification, NER, sentiment, translation, QA, summarization.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımda documentation neden kimse yazmak istemiyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Dökümantasyon yazılımın en ihmal edilen ama en önemli parçalarından biri. Neden yazılmıyor: sıkıcı görülüyor, zaman alıyor, kod değişince güncellenmesi lazım, 'kod kendini açıklıyor' yanılgısı. Neden yazılmalı: yeni katılan biri projeyi anlasın, 6 ay sonra kendin bile unutuyorsun, API kullanıcıları bilsin, bakım kolaylaşsın. İyi dökümantasyon: README (proje nedir, kurulum, kullanım), API docs (Swagger), code comments (sadece 'neden' için), architecture docs (büyük resim). Araçlar: Docusaurus, MkDocs, GitBook, Notion. 'Dökümantasyon yazma zamanım yok' diyorsan — dökümantasyon olmadan harcanan zaman çok daha fazla.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Dökümantasyon, README, API docs, Swagger, Docusaurus, neden önemli.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "bilgisayar görüşü (CV) temel görevleri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Computer Vision temel görevleri: 1) Image Classification — görüntü sınıflandırma (kedi/köpek). 2) Object Detection — nesne tespiti ve lokalizasyonu (YOLO, Faster R-CNN). 3) Semantic Segmentation — piksel düzeyinde sınıflandırma. 4) Instance Segmentation — her nesneyi ayrı ayrı segmente et (Mask R-CNN). 5) Face Detection/Recognition — yüz algılama/tanıma (Görkem'in projeleri). 6) Pose Estimation — vücut pozisyonu tespiti. 7) OCR — optik karakter tanıma. 8) Image Generation — görüntü üretme (GAN, Diffusion). 9) Video Analysis — video analizi. OpenCV, torchvision, detectron2 temel araçlar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CV görevleri, classification, detection, segmentation, YOLO, face recognition.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "time series forecasting nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Time series forecasting, zaman serisi verisiyle gelecek değerleri tahmin etme. Örnekler: hisse senedi fiyatı, hava durumu, ürün satışı, enerji tüketimi, trafik yoğunluğu. Geleneksel yöntemler: ARIMA, Exponential Smoothing, Prophet (Facebook). ML yöntemleri: XGBoost, LightGBM (feature engineering ile). Deep learning: LSTM, GRU, Transformer (Informer, Temporal Fusion Transformer). Son trend: foundation models for time series (TimeGPT, Lag-Llama). Özellikler: trend (genel yön), seasonality (mevsimsellik), cyclic (döngüsel), noise. Değerlendirme: MAE, RMSE, MAPE. Feature engineering: lag features, rolling statistics, date features. Görkem'in veri analizi bilgisi buna uygulanabilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Time series, ARIMA, Prophet, LSTM, Transformer, trend, seasonality.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "react native vs flutter detaylı karşılaştırma",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "React Native: Meta tarafından, JavaScript/TypeScript, native component'ları kullanır (bridge üzerinden), Expo ile hızlı başlangıç, React biliyorsan kolay geçiş, büyük community, hot reload, OTA update (CodePush). Flutter: Google tarafından, Dart dili, kendi rendering engine'i (Skia/Impeller), pixel-perfect UI kontrolü, Material ve Cupertino widget'lar, daha iyi performans (bridge yok), web ve desktop desteği de var. İş piyasası: her ikisi de talep görüyor ama React Native biraz daha fazla. Performans: Flutter > React Native (Hermes engine ile fark azaldı). UI: Flutter daha esnek ve güzel. Geliştirme hızı: ikisi de iyi. Seçim: takımın JavaScript biliyorsa RN, yeni başlıyorsan Flutter.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "React Native vs Flutter, bridge, Skia, Expo, Dart, performans, UI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılım dünyasında Türkiye'nin yeri ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Türkiye'de yazılım sektörü hızla büyüyor. Güçlü yanlar: genç ve yetenekli nüfus, güçlü üniversiteler (ODTÜ, Boğaziçi, İTÜ, Bilkent, Yeditepe), aktif startup ekosistemi (Peak Games, Getir, Trendyol, Dream Games), maliyet avantajı (global şirketler için). Zayıf yanlar: beyin göçü, maaş dengesizliği (TL/dolar), bürokratik engeller. Gelişen alanlar: fintech, gaming, AI, e-ticaret. Topluluklar: Kommunity, Deep Learning Türkiye, Teknolot, Python Istanbul. Hackathon'lar: BTK, Google DSC, MLH. Türkiye'den dünyaya açılmak mümkün — remote çalışma, freelance, kendi SaaS'ını kur. Görkem bu potansiyeli kullanarak global ölçekte projeler üretiyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Türkiye yazılım, startup, üniversiteler, beyin göçü, topluluklar, global.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "terminal/komut satırı neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Komut satırı (CLI) her yazılımcının bilmesi gereken temel beceri. Neden: GUI'den çok daha hızlı (dosya işlemleri, arama, toplu işlem). Git CLI bilmek zorunlu. Sunucu yönetimi SSH ile terminal üzerinden. Docker, kubectl, npm hep CLI. Otomasyon: bash script ile tekrarlayan görevleri otomatize et. Temel komutlar: ls, cd, mkdir, rm, cp, mv, grep, find, cat, head, tail, chmod, ssh, curl, wget. Shell: bash veya zsh (Oh My Zsh ile güzelleştir). Terminal multiplexer: tmux ile birden fazla pencere. Alias'lar: sık kullandığın uzun komutları kısalt. Başlangıçta korkutucu görünür ama pratikle çok doğal hale gelir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Terminal, CLI, bash, komutlar, Git, SSH, tmux, Oh My Zsh.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "kotlin multiplatform nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kotlin Multiplatform (KMP), tek Kotlin kod tabanıyla Android, iOS, web ve masaüstü uygulama geliştirme. JetBrains tarafından geliştiriliyor. İş mantığını (networking, veritabanı, state management) paylaş, UI'ı platforma özel yap. Compose Multiplatform ile UI de paylaşılabiliyor. Avantajları: Kotlin güçlü ve modern bir dil, Google Android'in resmi dili olarak destekliyor, iş mantığı paylaşımı. Dezavantajları: Flutter/RN kadar olgun değil, iOS tarafı hala gelişiyor. Netflix, Cash App, Philips KMP kullanıyor. Gelecek: Google Flutter'ı, JetBrains KMP'yi destekliyor — her ikisi de büyüyecek. Android developer'lar için doğal geçiş.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kotlin Multiplatform, KMP, Compose, Android, iOS, paylaşılan kod.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

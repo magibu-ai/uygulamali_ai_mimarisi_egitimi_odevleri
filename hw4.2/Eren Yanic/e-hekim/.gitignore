@@ -1,0 +1,34 @@
+# Secrets — never commit, never upload
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Virtualenv / build
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Local vector database (rebuild with scripts/ingest.py)
+chroma_db/
+
+# Generated artefacts too large or too derived to track.
+# Exception: the chunk/vector dataset is the project's deliverable, so it is
+# tracked. (The Hugging Face Hub honours this file on upload — an ignored path
+# is silently dropped from the commit.)
+data/*.parquet
+!data/ehekim_chunks.parquet
+!data/benchmark_questions.parquet
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# OS noise
+.DS_Store
+Thumbs.db

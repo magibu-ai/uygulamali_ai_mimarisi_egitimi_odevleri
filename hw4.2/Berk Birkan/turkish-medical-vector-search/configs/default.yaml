@@ -1,0 +1,48 @@
+project:
+  seed: 42
+
+dataset:
+  repo_id: umutertugrul/turkish-medical-articles
+  split: train
+  branch_query: Dermatoloji
+  sample_size: 500
+  min_text_length: 200
+
+chunking:
+  target_tokens: 512
+  overlap_tokens: 64
+  min_chunk_tokens: 80
+  separators:
+    - "\n\n"
+    - "\n"
+    - ". "
+    - " "
+
+embedding:
+  model_id: magibu/embeddingmagibu-200m
+  dimension: 768
+  normalize: true
+  batch_size: 32
+
+vector_store:
+  provider: chromadb
+  collection_name: turkish_dermatology_articles
+  distance_metric: cosine
+  persist_directory: data/chroma
+
+retrieval:
+  top_k: 5
+  threshold: 0.4240
+  abstention_message: Bu sorunun cevabı dokümanlarımda yer almamaktadır.
+
+benchmark:
+  calibration_positive: 10
+  calibration_negative: 10
+  test_positive: 20
+  test_negative: 10
+
+optional_llm:
+  enabled: false
+  model_id: Qwen/Qwen3-1.7B
+  load_in_4bit: true
+  max_new_tokens: 384

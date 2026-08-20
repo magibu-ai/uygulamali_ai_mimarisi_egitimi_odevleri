@@ -1,0 +1,32 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.data_tools/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Runtime artifacts
+data/raw/
+data/interim/
+data/processed/
+data/chroma/
+artifacts/
+models/
+
+# Keep small, versioned benchmark inputs and placeholders
+!data/benchmark/
+!data/benchmark/**
+!data/**/.gitkeep

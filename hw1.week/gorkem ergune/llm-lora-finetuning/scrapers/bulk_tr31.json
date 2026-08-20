@@ -1,0 +1,212 @@
+{
+    "train": [
+        [
+            {
+                "content": "Görkem'in ayarlicazhocam botu nasıl eğitildi?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in ayarlicazhocam botu LoRA (Low-Rank Adaptation) fine-tuning tekniği ile eğitilir. LoRA, büyük dil modellerini tüm ağırlıkları güncellemeden ince ayar yapmayı sağlar — modelin ağırlık matrislerine düşük ranklı adaptasyon matrisleri ekleyerek. Bu yaklaşım: daha az GPU belleği gerektirir (tüm modeli eğitmeye kıyasla), daha hızlı eğitim sağlar, orijinal modelin genel yeteneklerini korurken özel bilgi ekler. Eğitim verisi hazırlama süreci: 1) El yazımı girişler — Görkem tarafından özenle hazırlanmış soru-cevap çiftleri, botun kişiliğini ve uzmanlığını tanımlar. 2) Scraper'lar — Stack Overflow, GitHub, Wikipedia, DevTo, HuggingFace gibi kaynaklardan otomatik veri toplama. 3) Bulk generator'lar — Python scriptleri ile çeşitli konularda (AI/ML, sistem tasarımı, güvenlik, web geliştirme, kariyer, Görkem'in projeleri) kapsamlı eğitim verisi üretme. Veri formatı: her girdi bir kullanıcı mesajı ve asistan yanıtından oluşur, düşünme (thinking) alanı modelin iç akıl yürütmesini yakalar. Hem Türkçe hem İngilizce veri — iki dilli bot. merge_all.py tüm kaynaklardan gelen veriyi birleştirir. Bu süreç veri mühendisliği, NLP ve model eğitimi becerilerini gösterir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Görkem, ayarlicazhocam, LoRA, fine-tuning, eğitim verisi, scraper, bulk generator, iki dilli.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "semantik versiyonlama semver nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Semantik versiyonlama (semver) yazılım sürümlerindeki değişikliklerin doğasını iletir. Format: MAJOR.MINOR.PATCH (ör. 2.4.1). MAJOR — kırıcı değişiklikler. Mevcut kod güncelleme gerektirebilir. MINOR — yeni özellikler, geriye uyumlu. Mevcut kod çalışmaya devam eder. PATCH — hata düzeltmeleri, geriye uyumlu. Ön sürüm: 1.0.0-alpha.1, 1.0.0-beta.2, 1.0.0-rc.1. Sürüm 0.x.y — her şey değişebilir, API kararlı değil. İlk kararlı sürüm 1.0.0'dır. package.json'da: ^1.4.2 (caret — minor ve patch güncellemelerine izin ver), ~1.4.2 (tilde — sadece patch güncellemelerine izin ver), 1.4.2 (tam — güncelleme yok). Kilit dosyalar (package-lock.json) tekrar üretilebilir build'ler için tam sürümleri sabitler. Kütüphaneler için: semver'ı sıkı takip et — minor sürümlerdeki kırıcı değişiklikler ekosisteme zarar verir. CalVer (Takvim Versiyonlama) bir alternatiftir: Ubuntu 24.04, Python 3.12. Araçlar: semantic-release (commit mesajlarından versiyonlamayı otomatikleştir), standard-version, changesets (monorepo'lar için).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Semver, versiyonlama, MAJOR, MINOR, PATCH, kırıcı değişiklikler, package.json, caret, tilde.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "üretimde test nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Üretimde test, yazılım davranışını gerçek ortamda güvenli bir şekilde doğrular. Pervasız değil — yapılandırılmış ve kontrollü. Teknikler: Canary deployment'lar — küçük kullanıcı yüzdesine deploy et (%1-5). Hata oranlarını, gecikmeyi, iş metriklerini izle. Sağlıklıysa kademeli artır. Metrik bozulmasında otomatik rollback. Feature flag'ler — özellikleri dahili kullanıcılar, beta kullanıcıları veya trafik yüzdesi için etkinleştir. İzleme ile kademeli yayılım. A/B testi — trafiği varyantlar arasında böl, hangisinin daha iyi performans gösterdiğini ölç. Kaos mühendisliği — dayanıklılığı test etmek için üretimde hatalar enjekte et. Netflix Chaos Monkey rastgele instance'ları sonlandırır. Staging'de oyun günleriyle başla, üretime mezun ol. Gölge trafik (dark launching) — kullanıcıları etkilemeden üretim trafiğini yeni versiyona kopyala. Yanıtları karşılaştır. Gerçek kullanıcılar etkilenmeden önce sorunları yakala. Sentetik izleme — üretimde sürekli çalışan otomatik testler. Kullanıcı akışlarını simüle et (giriş, satın alma). Akışlar başarısız olduğunda uyar. Neden üretimde test: staging asla üretimi mükemmel yansıtmaz (farklı veri, farklı yük, farklı entegrasyonlar). Güvenlik rayları: feature flag'ler, canary deployment'lar, otomatik rollback'ler, circuit breaker'lar, hata bütçeleri. Üretimde test, üretim öncesi testi tamamlar — yerini almaz.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Üretimde test, canary, feature flag, kaos mühendisliği, gölge trafik, sentetik izleme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "geliştirici deneyimi DX nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Geliştirici Deneyimi (DX) geliştiriciler için Kullanıcı Deneyimi (UX) kullanıcılar için ne ise odur. İyi DX geliştiricileri üretken, mutlu ve etkili kılar. API DX: açık dokümantasyon, tutarlı adlandırma, yardımcı hata mesajları, etkileşimli playground (Swagger UI), popüler dillerde SDK'lar, hızlı başlangıç kılavuzları. Kötü DX: şifreli hata kodları, tutarsız endpoint'ler, eski dokümanlar. Araç DX: hızlı geri bildirim döngüleri (Vite'ın anında HMR'ı vs webpack'in yavaş rebuild'leri), mantıklı varsayılanlar (Next.js kutudan çıktığı gibi çalışır), iyi CLI çıktısı (renkli, yapılandırılmış, eyleme dönüştürülebilir), kademeli açıklama (varsayılan olarak basit, gerektiğinde güçlü). Framework DX: TypeScript desteği (otomatik tamamlama, tip kontrolü), hot reload, yardımcı hata katmanları (Next.js hata ekranı kaynak kodunu gösterir), durumların %80'i için çalışan iyi varsayılanlar. Dahili DX: hızlı CI/CD (< 10 dk), kolay yerel geliştirme kurulumu (docker-compose up), net onboarding dokümantasyonu, tutarlı kodlama standartları (linting ile otomatik). DX metrikleri: ilk commit'e kadar süre (yeni geliştirici ne kadar hızlı katkıda bulunabilir?), hata çözme süresi, geliştirici memnuniyeti. Neden DX önemli: üretken geliştiriciler daha hızlı gönderir, mutlu geliştiriciler daha uzun kalır. DX'e yatırım yap: geliştirici portalları (Backstage), dahili dokümantasyon, platform mühendisliği ekipleri.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Geliştirici deneyimi, DX, API tasarımı, araçlar, onboarding, geri bildirim döngüleri, dokümantasyon.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "progressive web apps PWA nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Progressive Web Apps (PWA) native uygulama benzeri deneyimler sağlayan web uygulamalarıdır. Temel teknolojiler: Service Worker — arka planda çalışan JavaScript, ağ isteklerini keser. Sağlar: çevrimdışı işlevsellik (cache-first strateji), push bildirimleri, arka plan senkronizasyonu. Web App Manifest — uygulamayı tanımlayan JSON dosyası (ad, simgeler, tema rengi, görüntüleme modu). Sağlar: kurulum istemi (Ana Ekrana Ekle), bağımsız pencere (tarayıcı UI'ı olmadan), açılış ekranı. HTTPS — PWA için gerekli. Yetenekler: çevrimdışı destek, kurulabilir, push bildirimleri, arka plan senkronizasyonu, duyarlı. Önbellekleme stratejileri: Cache First (önbellekten sun, ağa yedek — hızlı, çevrimdışı destek), Network First (ağı dene, önbelleğe yedek — taze veri), Stale While Revalidate (önbelleği sun, arka planda güncelle — her iki dünyanın en iyisi). Workbox (Google kütüphanesi) service worker ve önbelleklemeyi basitleştirir. Native uygulamalara göre avantajlar: uygulama mağazası yok (anında güncellemeler, onay süreci yok), tek kod tabanı, arama motorları ile keşfedilebilir, daha küçük indirme boyutu, tüm platformlarda çalışır. Sınırlamalar: sınırlı native API erişimi (Project Fugu ile gelişiyor), iOS Safari'nin sınırlı PWA desteği. PWA'lar içerik ağırlıklı uygulamalar, e-ticaret, sosyal medya için harika.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PWA, Service Worker, Web App Manifest, çevrimdışı, kurulabilir, önbellekleme, Workbox, push.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem'in teknoloji yığını ve tercihleri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem kişisel tercih yerine problem alanına göre araçlar seçerek birden fazla teknoloji yığını genelinde çalışır. AI/ML yığını: Python (ML için birincil), PyTorch (derin öğrenme framework'ü — miniature-transformers, NMT), scikit-learn (klasik ML — phishing-domain-detection), YOLO/ultralytics (bilgisayar görmesi — yolo-custom-detector), OpenCV/dlib (yüz tanıma — facelock), Hugging Face (model hub, tokenizer'lar). Sistem programlama: C (gorkem-os — OS geliştirme), Assembly (x86 — düşük seviye gorkem-os bileşenleri). Web geliştirme: JavaScript/TypeScript, React, Node.js (banking-management-system ve web projeleri). Veri ve NLP: özel BPE tokenizer (wiki2bpe), sequence-to-sequence modeller (NMT), doğal dil işleme pipeline'ları. Geliştirme araçları: Git/GitHub (versiyon kontrolü, portföy hosting), VS Code (birincil editör), Linux (geliştirme ortamı), Docker (konteynerleştirme). Bu genişlik — assembly'den Python'a, OS çekirdeklerinden web uygulamalarına, klasik ML'den derin öğrenmeye — çok yönlülüğü gösterir. Görkem 'bir Python geliştiricisi' veya 'bir web geliştiricisi' olarak tanımlanmaz — her problem için doğru aracı seçen bir mühendistir. Bu zihniyet güçlü mühendisleri framework uzmanlarından ayırır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Görkem, teknoloji yığını, Python, PyTorch, C, React, araçlar, çok yönlülük, mühendislik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "dokümantasyon güdümlü geliştirme nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Dokümantasyon güdümlü geliştirme, dokümantasyonu koddan önce veya kodla birlikte yazar, sonra değil. Yaklaşımlar: README güdümlü geliştirme — önce README'yi yaz. Projenin ne yaptığını, nasıl kullanılacağını, API örneklerini tanımla. Bu sizi uygulamadan önce kullanıcı deneyimini düşünmeye zorlar. Tasarım dokümanları — önemli özellikler başlamadan önce tasarım dokümanı yaz. Problem ifadesi, önerilen çözüm, düşünülen alternatifler, ödünleşimler. Kod yazmadan önce geri bildirim al. API dokümantasyonu önce — uygulamadan önce API sözleşmesini (OpenAPI spesifikasyonu) tasarla. Frontend ve backend ekipleri paralel çalışabilir. Mimari Karar Kayıtları (ADR) — belirli teknik kararların neden verildiğini belgele. Şablon: başlık, durum, bağlam (neden), karar (ne), sonuçlar (ödünleşimler). Her önemli teknik karar için ADR oluştur. Faydalar: net düşünmeye zorlar (yazmak belirsiz düşünceyi ortaya çıkarır), paralel çalışmayı mümkün kılar (ekipler arayüzler üzerinde anlaşır), kurumsal bilgi oluşturur (bu neden böyle tasarlandı?), yanlış anlaşılmayı azaltır (herkes aynı spec'i okur). Araçlar: Docusaurus, Mintlify, GitBook doküman siteleri için. Markdown'da diyagramlar için Mermaid. Yaygın hata: koddan sonra doküman yazmak — güncelleme sıkıcı olduğu için dokümanlar bayatlar. Kod yazarken doküman yaz. Dokümanları teslim edileceklerin parçası olarak gör, düşünce sonrası değil.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Dokümantasyon güdümlü, README, tasarım dokümanları, ADR, API-first, Docusaurus, RFC, mimari.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "web worker'lar ve tarayıcıda çoklu iş parçacığı nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Web Worker'lar tarayıcılarda çoklu iş parçacığını mümkün kılar. JavaScript tek ana thread'de çalışır — ağır hesaplama UI güncellemelerini ve kullanıcı etkileşimini bloklar. Web Worker'lar arka plan thread'inde JavaScript çalıştırır, ana thread'i duyarlı tutar. Türleri: Dedicated Worker — bir sayfa için bir worker. new Worker('worker.js') ile oluşturulur. postMessage/onmessage ile iletişim (verinin yapısal klonlanması). Shared Worker — aynı originden birden fazla sayfa arasında paylaşılır. Paylaşılan durum (sohbet bağlantıları, önbellekler) için yararlı. Service Worker — uygulama ve ağ arasında proxy. Ağ isteklerini keser, çevrimdışı işlevsellik, push bildirimleri, arka plan senkronizasyonu sağlar. PWA'ların temeli. Sınırlamalar: Worker'lar DOM'a ERİŞEMEZ, window nesnesine erişemez. fetch, WebSocket, IndexedDB, importScripts kullanabilir. Kullanım alanları: ağır hesaplama (görüntü işleme, veri ayrıştırma, şifreleme), veri işleme (büyük dosyaların CSV/JSON ayrıştırması), WebAssembly (maksimum performans için worker thread'inde Wasm çalıştır), AI çıkarımı (UI'ı bloklamadan tarayıcıda ML modelleri çalıştır). Transferable nesneler: büyük veri için (ArrayBuffer) kopya yerine transfer kullan — sıfır kopya, çok daha hızlı. Comlink kütüphanesi RPC tarzı API ile Worker iletişimini basitleştirir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Web Worker, çoklu iş parçacığı, Service Worker, postMessage, arka plan thread, PWA, Comlink.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yeşil yazılım mühendisliği nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yeşil yazılım mühendisliği yazılımın çevresel etkisini minimize eder. Yazılım karbon emisyonlarına şu yollarla katkıda bulunur: enerji tüketimi (sunucular, veri merkezleri, cihazlar), gömülü karbon (donanım üretimi), ağ enerjisi (veri transferi). İlkeler: Enerji verimliliği — daha az CPU, bellek, ağ kullanmak için kodu optimize et. Verimli algoritmalar enerji tüketimini azaltır. Talep şekillendirme — iş yüklerini daha fazla yenilenebilir enerjinin olduğu zamanlara/konumlara kaydır. Karbon farkındalıklı hesaplama. Donanım verimliliği — kullanımı maksimize et. Serverless ve otomatik ölçeklendirme boştaki kaynakları önler. Bir meşgul sunucu on yetersiz kullanılan sunucudan daha yeşildir. Pratik eylemler: görselleri ve varlıkları optimize et (daha küçük dosyalar = daha az transfer enerjisi), lazy loading (kullanıcıların görmeyeceğini yükleme), verimli önbellekleme (gereksiz hesaplamayı azalt), yeşil bulut bölgeleri seç, JavaScript paket boyutunu azalt (daha az kod indirme, ayrıştırma, yürütme), verimli veri formatları kullan (dahili servisler için JSON yerine protobuf), altyapıyı doğru boyutlandır (aşırı provizyonlama). Yeşil kodlama performans optimizasyonuyla uyumludur — daha hızlı, daha yalın kod aynı zamanda daha yeşil koddur. Sürdürülebilirlik iş gereksinimi haline geliyor — AB düzenlemeleri, kurumsal ESG hedefleri.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yeşil yazılım, karbon, enerji verimliliği, sürdürülebilirlik, SCI, talep şekillendirme, optimizasyon.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "veritabanı işlemleri ve ACID nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Veritabanı işlemleri (transaction) birden fazla operasyonu tek bir iş birimine gruplar. Ya tüm operasyonlar başarılı olur (commit) ya da hiçbiri olmaz (rollback). ACID özellikleri: Atomicity (Bölünmezlik) — ya hep ya hiç. İşlemdeki herhangi bir operasyon başarısız olursa tüm değişiklikler geri alınır. Banka transferi: A hesabından borçlandır VE B hesabına alacaklandır — ikisi de başarılı olmalı. Consistency (Tutarlılık) — işlem veritabanını bir geçerli durumdan diğerine getirir. Tüm kısıtlamalar (yabancı anahtarlar, benzersiz, kontrol) korunur. Isolation (Yalıtım) — eşzamanlı işlemler birbirini etkilemez. Yalıtım seviyeleri (en az katıdan en katıya): Read Uncommitted (dirty read olası), Read Committed (dirty read yok, PostgreSQL varsayılanı), Repeatable Read, Serializable (en katı, işlemler birbiri ardına çalışmış gibi). Yüksek yalıtım = daha fazla kilitleme = daha düşük verim. Durability (Dayanıklılık) — commit edildikten sonra veri çökmelere dayanır. Diske yazılır (WAL — Write-Ahead Log). Dağıtık işlemler: 2PC (İki Aşamalı Taahhüt) — koordinatör tüm katılımcılara hazırlanmalarını, sonra taahhüt etmelerini söyler. Yavaş ama tutarlı. Saga deseni — telafi edici eylemlerle yerel işlemler dizisi. Eventually consistent ama daha ölçeklenebilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ACID, transaction, atomicity, isolation, durability, consistency, 2PC, saga, yalıtım seviyeleri.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "tip sistemleri ve tip güvenliği nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tip sistemleri tip hatalarını önlemek için değerleri ve ifadeleri sınıflandırır. Statik tipleme: tipler derleme zamanında kontrol edilir. Hatalar çalıştırmadan önce yakalanır. TypeScript, Java, Rust, Go, C++. Dinamik tipleme: tipler çalışma zamanında kontrol edilir. Daha esnek ama hatalar çalışma zamanında ortaya çıkar. JavaScript, Python, Ruby. Güçlü tipleme: katı tip kuralları, örtük dönüşümler kısıtlı. Python ('1' + 1 TypeError fırlatır), Rust. Zayıf tipleme: örtük tip dönüşümlerine izin verilir. JavaScript ('1' + 1 = '11'). TypeScript tip sistemi: yapısal tipleme (şekil önemlidir, isim değil — doğru özelliklere sahipse uyumludur), union tipler (string | number), intersection tipler (A & B), generics (<T>), tip çıkarımı (derleyici tipleri anlar), tip daraltma (typeof, instanceof, discriminated unions). Statik tiplemenin faydaları: hataları erken yakala (yazım hataları, yanlış argüman tipleri, null erişim), daha iyi IDE desteği (otomatik tamamlama, refactoring), kendi kendini belgeleyen (tipler dokümantasyon görevi görür), daha güvenli refactoring (derleyici kırılmaları yakalar). Kademeli tipleme: tipleri aşamalı olarak ekle. strict: false ile TypeScript, mypy ile Python. Görkem'in projeleri: web projeleri için TypeScript, ML kodu için Python tip ipuçları, sistem programlama için Rust sahiplik sistemi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Tip sistemi, statik tipleme, TypeScript, yapısal, union, generics, tip güvenliği, kademeli.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ters proxy ve Nginx nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Ters proxy istemciler ve backend sunucuları arasında oturur, istemci isteklerini uygun sunuculara iletir. Faydalar: yük dengeleme (istekleri sunuculara dağıt), SSL sonlandırma (HTTPS'i proxy'de yönet, dahili iletişim HTTP olabilir), önbellekleme (yanıtları önbelleğe al, backend yükünü azalt), güvenlik (backend sunucu detaylarını gizle, header'lar ekle, rate limiting), sıkıştırma (gzip/brotli yanıtlar). Nginx — en popüler ters proxy ve web sunucusu. Yapılandırma: server blokları sanal hostları, location blokları URL yönlendirmesini tanımlar. Örnek: proxy_pass http://backend; istekleri backend sunucusuna iletir. Statik dosya sunma: Nginx statik dosyaları doğrudan sunmada üstündür (Node.js/Python'dan daha hızlı). Statik varlıklar için Nginx, dinamik istekleri uygulama sunucusuna proxy olarak kullan. Yaygın kurulumlar: Nginx → Node.js (Express/Fastify), Nginx → Python (Gunicorn/uWSGI), Nginx → birden fazla microservice (yol tabanlı yönlendirme). Alternatifler: Caddy (otomatik HTTPS, daha basit yapılandırma, Go tabanlı), HAProxy (TCP/HTTP yük dengeleme, yüksek performans), Traefik (cloud-native, otomatik keşif, Docker/K8s entegrasyonu). Docker kurulumu: uygulama konteynerlerinin önünde ters proxy olarak Nginx konteyneri. Üretim için: uygulama sunucunuzun önüne her zaman ters proxy koyun. Uygulamanızın yönetmemesi gereken endişeleri yönetir: TLS, rate limiting, statik dosyalar, gzip.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Ters proxy, Nginx, yük dengeleme, SSL sonlandırma, önbellekleme, Caddy, statik dosyalar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "veri pipeline'ları ve ETL nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Veri pipeline'ları veriyi kaynaktan hedefe taşır ve dönüştürür. ETL (Extract, Transform, Load): geleneksel yaklaşım. Kaynaklardan veri çıkar (veritabanları, API'ler, dosyalar) → Dönüştür (temizle, normalize et, topla, birleştir) → Veri ambarına yükle. Dönüşüm yüklemeden önce gerçekleşir. ELT (Extract, Load, Transform): modern yaklaşım. Çıkar → Ham veriyi ambara yükle → Ambar hesaplama gücünü kullanarak dönüştür (dbt ile SQL). Ambarlar yeterince güçlü — dönüşümü onlara bırak. Batch vs Streaming: batch (veriyi zamanlanmış aralıklarla işle — saatlik, günlük), streaming (veriyi geldiği anda gerçek zamanlı işle). Araçlar: Batch: Apache Airflow (iş akışı orkestrasyonu, Python'da DAG'lar), dbt (ambarda SQL dönüşümleri), Apache Spark (dağıtık veri işleme). Streaming: Apache Kafka (olay akış platformu), Apache Flink (akış işleme), Kafka Streams, AWS Kinesis (yönetilen akış). Orkestrasyon: Airflow (en popüler), Prefect (modern, Pythonic), Dagster (yazılım tanımlı varlıklar), Temporal (iş akışı motoru). Modern veri yığını: Fivetran/Airbyte (çıkar ve yükle) → Snowflake/BigQuery (ambar) → dbt (dönüştür) → Looker/Metabase (BI). Veri kalitesi: Great Expectations, dbt testleri. Basit başla — cron job'daki Python scripti küçük ölçek için geçerli bir veri pipeline'ıdır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Veri pipeline, ETL, ELT, Airflow, dbt, Kafka, Spark, streaming, batch, veri ambarı.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

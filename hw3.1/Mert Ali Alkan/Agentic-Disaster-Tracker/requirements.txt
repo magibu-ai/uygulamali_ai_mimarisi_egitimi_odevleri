@@ -1,0 +1,6 @@
+transformers>=4.40.0
+spaces
+requests
+accelerate
+huggingface_hub<1.0.0
+fastapi==0.111.1

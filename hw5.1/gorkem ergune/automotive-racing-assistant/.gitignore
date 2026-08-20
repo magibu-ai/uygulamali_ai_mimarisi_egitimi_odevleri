@@ -1,0 +1,64 @@
+# --- Python bytecode / caches ---
+__pycache__/
+*.py[cod]
+*.pyo
+*$py.class
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# --- OS / editor metadata ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Logs ---
+*.log
+
+# --- Test / type / coverage caches ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# --- Generated evaluation / scratch outputs ---
+# (deterministic tests print to stdout; these are ad-hoc eval artifacts only)
+compare_out.json
+eval_out.json
+before.json
+after*.json
+tests/eval/output/
+scratch/
+*.scratch
+
+# --- Chroma / RAG artifacts (should not appear in this project; guard anyway) ---
+chroma_db/
+.chroma/
+*.sqlite
+*.sqlite3
+
+# --- Local model files (models live in Ollama, never in the repo) ---
+*.gguf
+*.bin
+*.pt
+*.safetensors

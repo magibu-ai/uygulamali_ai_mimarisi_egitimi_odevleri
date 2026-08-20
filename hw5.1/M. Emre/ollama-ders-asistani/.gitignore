@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ders kitabi metinleri telifli oldugu icin depoya alinmaz.
+# Ornek olarak veri/ornek.txt birakilmistir.
+veri/*.txt
+!veri/ornek.txt
+chroma_db/
+index.log

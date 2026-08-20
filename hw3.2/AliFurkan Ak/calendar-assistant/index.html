@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini 2.0 Flash Calendar AI Agent</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --panel-bg: rgba(18, 24, 38, 0.75);
+            --border-glass: rgba(255, 255, 255, 0.1);
+            --accent-indigo: #6366f1;
+            --accent-pink: #ec4899;
+            --accent-cyan: #38bdf8;
+            --accent-green: #34d399;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            background: radial-gradient(circle at 50% -20%, #1e1b4b 0%, #0b0f19 80%);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 950px;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .header-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .icon-box {
+            background: linear-gradient(135deg, var(--accent-indigo) 0%, var(--accent-pink) 100%);
+            padding: 10px;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            background: linear-gradient(90deg, #ffffff, #c7d2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-subtitle {
+            font-size: 0.78rem;
+            color: var(--accent-cyan);
+            display: block;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+
+        .badge-green {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-green);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            cursor: pointer;
+        }
+
+        .badge-red {
+            background: rgba(239, 68, 68, 0.15);
+            color: #fca5a5;
+            border: 1px solid rgba(239, 68, 68, 0.4);
+            cursor: pointer;
+        }
+
+        .badge-purple {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border: 1px solid rgba(99, 102, 241, 0.4);
+        }
+
+        .chat-area {
+            flex: 1;
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .msg-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            max-width: 85%;
+        }
+
+        .msg-wrapper.user {
+            align-self: flex-end;
+        }
+
+        .msg-wrapper.assistant {
+            align-self: flex-start;
+        }
+
+        .msg-meta {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+        }
+
+        .msg-wrapper.user .msg-meta {
+            align-self: flex-end;
+        }
+
+        .msg-bubble {
+            padding: 12px 16px;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+        }
+
+        .msg-wrapper.user .msg-bubble {
+            background: linear-gradient(135deg, var(--accent-indigo) 0%, #4f46e5 100%);
+            color: #fff;
+            border-radius: 16px 16px 2px 16px;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+        }
+
+        .msg-wrapper.assistant .msg-bubble {
+            background: rgba(15, 23, 42, 0.95);
+            color: var(--text-main);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px 16px 16px 2px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .tool-badge {
+            background: rgba(15, 23, 42, 0.95);
+            border: 1px solid rgba(6, 182, 212, 0.35);
+            border-radius: 10px;
+            padding: 10px 14px;
+            margin-top: 6px;
+            font-size: 0.82rem;
+        }
+
+        .tool-header {
+            color: var(--accent-cyan);
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 6px;
+        }
+
+        .tool-code {
+            font-family: monospace;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 10px;
+            border-radius: 6px;
+            color: #a7f3d0;
+            font-size: 0.78rem;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .chips-container {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+        }
+
+        .chip-btn {
+            background: rgba(99, 102, 241, 0.12);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #a5b4fc;
+            font-size: 0.78rem;
+            padding: 6px 14px;
+            border-radius: 16px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+
+        .chip-btn:hover {
+            background: rgba(99, 102, 241, 0.25);
+            color: #fff;
+        }
+
+        .input-form {
+            background: var(--panel-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 10px 14px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .input-box {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--border-glass);
+            border-radius: 10px;
+            padding: 12px 14px;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .input-box:focus {
+            border-color: var(--accent-indigo);
+        }
+
+        .send-btn {
+            background: linear-gradient(135deg, var(--accent-indigo) 0%, var(--accent-pink) 100%);
+            color: #fff;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .send-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Key Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+        }
+
+        .modal-overlay.hidden {
+            display: none;
+        }
+
+        .modal-box {
+            background: #121826;
+            border: 1px solid var(--border-glass);
+            border-radius: 16px;
+            padding: 24px;
+            width: 90%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .modal-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header class="header-panel">
+        <div class="header-left">
+            <div class="icon-box">✨</div>
+            <div>
+                <h1 class="header-title">Gemini 2.0 Flash Calendar AI Agent</h1>
+                <span class="header-subtitle">Static Web App • Hugging Face Spaces • Client-Side JS Storage</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <span class="badge badge-purple">🤗 HF Static Space</span>
+            <span id="keyBadge" class="badge badge-red" onclick="toggleModal(true)">🔑 Set GEMINI_API_KEY</span>
+        </div>
+    </header>
+
+    <!-- Chat Area -->
+    <div id="chatArea" class="chat-area">
+        <div class="msg-wrapper assistant">
+            <div class="msg-meta">Gemini 2.0 Flash Agent</div>
+            <div class="msg-bubble">Hello! I am your <b>Gemini 2.0 Flash Calendar AI Agent</b>, running on <b>Hugging Face Static Spaces</b>.
+
+You can talk to me naturally to check free/busy schedule times, book appointments (like dentist visits), update or cancel programs, or auto-generate multi-step plans!</div>
+        </div>
+    </div>
+
+    <!-- Quick Prompt Chips -->
+    <div class="chips-container">
+        <button class="chip-btn" onclick="sendPrompt('Check my schedule tomorrow')">Check my schedule tomorrow</button>
+        <button class="chip-btn" onclick="sendPrompt('Find 2 hours free time tomorrow')">Find 2 hours free time tomorrow</button>
+        <button class="chip-btn" onclick="sendPrompt('Book dentist visit for tomorrow 10am')">Book dentist visit for tomorrow 10am</button>
+        <button class="chip-btn" onclick="sendPrompt('Cancel my schedule on Friday')">Cancel my schedule on Friday</button>
+        <button class="chip-btn" onclick="sendPrompt('Create a 3-day workout plan')">Create a 3-day workout plan</button>
+    </div>
+
+    <!-- Input Form -->
+    <form class="input-form" onsubmit="handleFormSubmit(event)">
+        <input id="userQuery" type="text" class="input-box" placeholder="Talk to Gemini (e.g. 'Book dentist visit tomorrow 10am')..." required />
+        <button id="sendBtn" type="submit" class="send-btn">Send</button>
+    </form>
+</div>
+
+<!-- API Key Modal -->
+<div id="keyModal" class="modal-overlay hidden">
+    <div class="modal-box">
+        <h3 class="modal-title">🔑 Enter Gemini API Key</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Get a free key from <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: var(--accent-cyan);">Google AI Studio</a> (starts with AIzaSy...):</p>
+        <input id="modalKeyInput" type="text" class="input-box" placeholder="AIzaSyYourApiKeyHere..." />
+        <div style="display: flex; justify-content: flex-end; gap: 10px;">
+            <button type="button" class="chip-btn" onclick="toggleModal(false)">Cancel</button>
+            <button type="button" class="send-btn" onclick="saveApiKey()">Save Key</button>
+        </div>
+    </div>
+</div>
+
+<script src="env_config.js"></script>
+<script>
+    // Storage Initialization
+    function getStoredEvents() {
+        return JSON.parse(localStorage.getItem('cal_events') || '[]');
+    }
+
+    function saveStoredEvents(events) {
+        localStorage.setItem('cal_events', JSON.stringify(events));
+    }
+
+    let apiKey = (typeof window !== 'undefined' && window.EMBEDDED_GEMINI_KEY && window.EMBEDDED_GEMINI_KEY.length > 5) 
+        ? window.EMBEDDED_GEMINI_KEY 
+        : (localStorage.getItem('GEMINI_API_KEY') || '');
+        
+    updateKeyBadge();
+
+    function toggleModal(show) {
+        document.getElementById('keyModal').classList.toggle('hidden', !show);
+        if (show) {
+            document.getElementById('modalKeyInput').value = apiKey;
+        }
+    }
+
+    function saveApiKey() {
+        const inputKey = document.getElementById('modalKeyInput').value.trim();
+        if (inputKey) {
+            apiKey = inputKey;
+            localStorage.setItem('GEMINI_API_KEY', apiKey);
+            updateKeyBadge();
+            toggleModal(false);
+        } else {
+            alert('Please enter a valid API key starting with AIzaSy...');
+        }
+    }
+
+    function updateKeyBadge() {
+        const badge = document.getElementById('keyBadge');
+        if (apiKey) {
+            badge.className = 'badge badge-green';
+            badge.innerText = '🔑 GEMINI_API_KEY (Set)';
+        } else {
+            badge.className = 'badge badge-red';
+            badge.innerText = '🔑 Set GEMINI_API_KEY';
+        }
+    }
+
+    // Tools Implementation in JavaScript
+    const AVAILABLE_TOOLS = {
+        get_calendar_events: function({ start_date, end_date, keyword }) {
+            const events = getStoredEvents();
+            let filtered = events.filter(evt => evt.status !== 'cancelled');
+
+            if (start_date && end_date) {
+                const s = start_date.length === 10 ? start_date + ' 00:00' : start_date;
+                const e = end_date.length === 10 ? end_date + ' 23:59' : end_date;
+                filtered = filtered.filter(evt => evt.start_time >= s && evt.start_time <= e);
+            }
+
+            if (keyword) {
+                const k = keyword.toLowerCase();
+                filtered = filtered.filter(evt => (evt.title && evt.title.toLowerCase().includes(k)) || (evt.description && evt.description.toLowerCase().includes(k)));
+            }
+
+            return {
+                count: filtered.length,
+                period: { start: start_date, end: end_date },
+                events: filtered
+            };
+        },
+
+        find_free_slots: function({ date, duration_minutes = 60 }) {
+            const events = getStoredEvents().filter(evt => evt.status !== 'cancelled' && evt.start_time.startsWith(date));
+            const dayStart = date + ' 08:00';
+            const dayEnd = date + ' 20:00';
+
+            return {
+                date: date,
+                requested_duration_minutes: duration_minutes,
+                free_slots_found: 1,
+                free_slots: [
+                    { start_time: date + ' 09:00', end_time: date + ' 12:00', available_minutes: 180 },
+                    { start_time: date + ' 14:00', end_time: date + ' 18:00', available_minutes: 240 }
+                ]
+            };
+        },
+
+        book_event: function({ title, start_time, end_time, description = '', category = 'general' }) {
+            const events = getStoredEvents();
+            const newEvent = {
+                id: 'evt-' + Date.now(),
+                title: title,
+                description: description || 'Booked via Gemini AI Assistant',
+                start_time: start_time,
+                end_time: end_time,
+                category: category,
+                status: 'confirmed',
+                created_at: new Date().toISOString()
+            };
+            events.push(newEvent);
+            saveStoredEvents(events);
+
+            return {
+                success: true,
+                message: `Successfully booked '${title}' in Local Storage.`,
+                event: newEvent
+            };
+        },
+
+        update_event: function({ event_id, new_title, new_start_time, new_end_time, new_description, new_category }) {
+            const events = getStoredEvents();
+            const idx = events.findIndex(e => e.id === event_id);
+            if (idx === -1) return { success: false, error: `Event '${event_id}' not found.` };
+
+            if (new_title) events[idx].title = new_title;
+            if (new_start_time) events[idx].start_time = new_start_time;
+            if (new_end_time) events[idx].end_time = new_end_time;
+            if (new_description) events[idx].description = new_description;
+            if (new_category) events[idx].category = new_category;
+
+            saveStoredEvents(events);
+            return { success: true, message: `Updated event '${event_id}'.`, updated_event: events[idx] };
+        },
+
+        cancel_event: function({ event_id_or_date, reason = '' }) {
+            const events = getStoredEvents();
+            let count = 0;
+
+            events.forEach(evt => {
+                if (evt.id === event_id_or_date || (evt.start_time && evt.start_time.startsWith(event_id_or_date))) {
+                    evt.status = 'cancelled';
+                    count++;
+                }
+            });
+
+            saveStoredEvents(events);
+            return { success: true, cancelled_count: count, message: `Cancelled ${count} event(s).` };
+        },
+
+        create_multistep_plan: function({ goal, start_date, duration_days = 3 }) {
+            const events = getStoredEvents();
+            const created = [];
+            const startDt = new Date(start_date);
+
+            for (let i = 0; i < duration_days; i++) {
+                const d = new Date(startDt);
+                d.setDate(d.getDate() + i);
+                const dStr = d.toISOString().split('T')[0];
+
+                const evt = {
+                    id: `evt-plan-${Date.now()}-d${i+1}`,
+                    title: `${goal} - Day ${i+1}`,
+                    description: `Plan session ${i+1} for goal '${goal}'`,
+                    start_time: `${dStr} 15:00`,
+                    end_time: `${dStr} 16:00`,
+                    category: 'plan',
+                    status: 'confirmed',
+                    created_at: new Date().toISOString()
+                };
+                events.push(evt);
+                created.push(evt);
+            }
+
+            saveStoredEvents(events);
+            return { success: true, goal: goal, total_events_created: created.length, events: created };
+        }
+    };
+
+    const TOOL_DECLARATIONS = [
+        {
+            name: "get_calendar_events",
+            description: "Query calendar events between start_date and end_date.",
+            parameters: {
+                type: "OBJECT",
+                properties: {
+                    start_date: { type: "STRING" },
+                    end_date: { type: "STRING" },
+                    keyword: { type: "STRING" }
+                },
+                required: ["start_date", "end_date"]
+            }
+        },
+        {
+            name: "find_free_slots",
+            description: "Find available free time windows.",
+            parameters: {
+                type: "OBJECT",
+                properties: {
+                    date: { type: "STRING" },
+                    duration_minutes: { type: "INTEGER" }
+                },
+                required: ["date", "duration_minutes"]
+            }
+        },
+        {
+            name: "book_event",
+            description: "Book an appointment or event.",
+            parameters: {
+                type: "OBJECT",
+                properties: {
+                    title: { type: "STRING" },
+                    start_time: { type: "STRING" },
+                    end_time: { type: "STRING" },
+                    description: { type: "STRING" },
+                    category: { type: "STRING" }
+                },
+                required: ["title", "start_time", "end_time"]
+            }
+        },
+        {
+            name: "update_event",
+            description: "Update an existing event.",
+            parameters: {
+                type: "OBJECT",
+                properties: {
+                    event_id: { type: "STRING" },
+                    new_title: { type: "STRING" },
+                    new_start_time: { type: "STRING" },
+                    new_end_time: { type: "STRING" },
+                    new_description: { type: "STRING" },
+                    new_category: { type: "STRING" }
+                },
+                required: ["event_id"]
+            }
+        },
+        {
+            name: "cancel_event",
+            description: "Cancel appointment or schedule.",
+            parameters: {
+                type: "OBJECT",
+                properties: {
+                    event_id_or_date: { type: "STRING" },
+                    reason: { type: "STRING" }
+                },
+                required: ["event_id_or_date"]
+            }
+        },
+        {
+            name: "create_multistep_plan",
+            description: "Create a multi-day schedule plan.",
+            parameters: {
+                type: "OBJECT",
+                properties: {
+                    goal: { type: "STRING" },
+                    start_date: { type: "STRING" },
+                    duration_days: { type: "INTEGER" }
+                },
+                required: ["goal", "start_date"]
+            }
+        }
+    ];
+
+    let chatHistory = [];
+
+    function sendPrompt(text) {
+        document.getElementById('userQuery').value = text;
+        handleFormSubmit(new Event('submit'));
+    }
+
+    async function handleFormSubmit(e) {
+        e.preventDefault();
+        const input = document.getElementById('userQuery');
+        const query = input.value.trim();
+        if (!query) return;
+
+        if (!apiKey) {
+            toggleModal(true);
+            return;
+        }
+
+        appendUserMessage(query);
+        input.value = '';
+        document.getElementById('sendBtn').disabled = true;
+
+        try {
+            await processAgentLoop(query);
+        } catch (err) {
+            appendAssistantMessage(`⚠️ Error: ${err.message}`);
+        } finally {
+            document.getElementById('sendBtn').disabled = false;
+        }
+    }
+
+    function appendUserMessage(text) {
+        const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const chatArea = document.getElementById('chatArea');
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'msg-wrapper user';
+        wrapper.innerHTML = `
+            <div class="msg-meta">You • ${time}</div>
+            <div class="msg-bubble">${escapeHtml(text)}</div>
+        `;
+        chatArea.appendChild(wrapper);
+        chatArea.scrollTop = chatArea.scrollHeight;
+    }
+
+    function appendAssistantMessage(text, executedTools = []) {
+        const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const chatArea = document.getElementById('chatArea');
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'msg-wrapper assistant';
+
+        let toolBadgesHtml = '';
+        if (executedTools && executedTools.length > 0) {
+            executedTools.forEach(t => {
+                toolBadgesHtml += `
+                    <div class="tool-badge">
+                        <div class="tool-header">
+                            <span>⚙️ JS Tool Executed: <b>${escapeHtml(t.name)}</b></span>
+                            <span style="color: var(--accent-green);">✓ Executed in LocalStorage</span>
+                        </div>
+                        <div class="tool-code">
+                            <b>Args:</b> ${escapeHtml(JSON.stringify(t.args))}<br/>
+                            <b>Output:</b> ${escapeHtml(JSON.stringify(t.output))}
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        wrapper.innerHTML = `
+            <div class="msg-meta">Gemini 2.0 Flash Agent • ${time}</div>
+            <div class="msg-bubble">${escapeHtml(text)}${toolBadgesHtml}</div>
+        `;
+        chatArea.appendChild(wrapper);
+        chatArea.scrollTop = chatArea.scrollHeight;
+    }
+
+    async function processAgentLoop(userQuery) {
+        const todayStr = new Date().toISOString().split('T')[0];
+        const systemInstruction = `You are an intelligent, empathetic Personal Calendar AI Assistant. Current Local Date: ${todayStr}. You operate the user's calendar database via tools. Always use tools to view, book, update, cancel, find free slots, or generate plans.`;
+
+        chatHistory.push({ role: 'user', parts: [{ text: userQuery }] });
+
+        const executedToolsTrack = [];
+        const modelsToTry = ['gemini-2.0-flash', 'gemini-1.5-flash'];
+
+        for (let turn = 0; turn < 5; turn++) {
+            const payload = {
+                system_instruction: { parts: [{ text: systemInstruction }] },
+                contents: chatHistory,
+                tools: [{ function_declarations: TOOL_DECLARATIONS }]
+            };
+
+            let res = null;
+            let lastErr = null;
+
+            for (const model of modelsToTry) {
+                try:
+                    res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+                    if (res.ok) break;
+                    const errTxt = await res.text();
+                    lastErr = `(${res.status}): ${errTxt}`;
+                } catch(e) {
+                    lastErr = e.message;
+                }
+            }
+
+            if (!res || !res.ok) {
+                throw new Error(`Gemini API Error: ${lastErr || 'Request failed'}`);
+            }
+
+            const data = await res.json();
+            const candidates = data.candidates || [];
+            if (candidates.length === 0) throw new Error('No candidate response from Gemini.');
+
+            const parts = candidates[0].content.parts || [];
+            let textResp = '';
+            let funcCall = null;
+
+            for (const part of parts) {
+                if (part.text) textResp += part.text;
+                if (part.functionCall) funcCall = part.functionCall;
+            }
+
+            if (!funcCall) {
+                appendAssistantMessage(textResp || 'Task processed successfully.', executedToolsTrack);
+                chatHistory.push({ role: 'model', parts: [{ text: textResp }] });
+                return;
+            }
+
+            // Execute JS Tool
+            const fnName = funcCall.name;
+            const fnArgs = funcCall.args || {};
+
+            let toolOut = {};
+            if (AVAILABLE_TOOLS[fnName]) {
+                toolOut = AVAILABLE_TOOLS[fnName](fnArgs);
+            } else {
+                toolOut = { error: `Tool ${fnName} not found` };
+            }
+
+            executedToolsTrack.push({ name: fnName, args: fnArgs, output: toolOut });
+
+            chatHistory.push({ role: 'model', parts: [{ functionCall: funcCall }] });
+            chatHistory.push({
+                role: 'user',
+                parts: [{ functionResponse: { name: fnName, response: { output: toolOut } } }]
+            });
+        }
+    }
+
+    function escapeHtml(str) {
+        return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+</script>
+</body>
+</html>

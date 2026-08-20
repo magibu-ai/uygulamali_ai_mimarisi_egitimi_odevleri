@@ -1,0 +1,532 @@
+{
+    "train": [
+        [
+            {
+                "content": "How important is English for a software developer?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "English is absolutely essential in software. Why: most documentation is in English, Stack Overflow is in English, the best resources are in English, English is required for working at global companies, communication in open-source projects is in English. Technical English is different from everyday English — learning technical terms is easier because you already use them (variable, function, database). To improve: read English documentation, watch English YouTube channels (Fireship, Traversy Media, 3Blue1Brown), read English blogs, write code comments in English. Gorkem receives education in English — that's a huge advantage.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "English importance, documentation, global career, technical English, YouTube.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Why is linear algebra important for AI?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Linear algebra is the mathematical language of AI. Neural networks are fundamentally matrix multiplication — input data is a matrix, weights are a matrix, output is matrix multiplication. Vectors and matrices: embeddings are vectors, weights are matrices, the attention mechanism is matrix multiplication. Eigenvalues and eigenvectors: PCA (dimensionality reduction) relies on these. SVD (Singular Value Decomposition): recommendation systems, data compression. Determinant and inverse matrix: used in regression solutions. 3Blue1Brown's 'Essence of Linear Algebra' series is the best resource — visual and intuitive. Learn linear algebra, understand AI deeply.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Linear algebra, matrix multiplication, embedding, PCA, SVD, 3Blue1Brown.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is infrastructure as code?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Infrastructure as Code (IaC) means defining and managing infrastructure through code. Instead of manually setting up servers, you define them in YAML/HCL files using Terraform, Pulumi, or CloudFormation. Run terraform apply and infrastructure is automatically created. Advantages: reproducibility (create the same infrastructure as many times as you want), version control (track infrastructure changes in Git), automation (deploy infrastructure via CI/CD), documentation (code describes the infrastructure). Ansible for configuration management, Terraform for infrastructure provisioning. A fundamental skill for DevOps engineers.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "IaC, Terraform, Ansible, CloudFormation, DevOps, version control.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What did you do at the Tikla Gelsin Foodathon?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tikla Gelsin Foodathon was a hackathon focused on the food delivery sector. Gorkem participated and developed a food-tech solution. Areas of work could include order optimization, delivery route planning, improving customer experience, or AI-based menu recommendations. Food-tech is a growing sector and technology makes a big difference here. Hackathons also provide opportunities to meet industry professionals and receive mentorship. These events feed the entrepreneurial spirit as well.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Foodathon, food technology, ordering, AI recommendation, entrepreneurship.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What did you do at the Med Health hackathon?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Med Health (Mediterranean Health) was a health technology focused hackathon. Gorkem developed a technology solution in the healthcare domain. Projects like early warning systems, patient monitoring apps, or health data analysis may have been built. This aligns with Gorkem's depression-phq9-analysis project — he has interest in health technology. Health-tech startups are among the most invested sectors. Hackathon experience provides great stories to tell in job interviews.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Med Health hackathon, health technology, early warning, health-tech.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How do I contribute to open-source projects?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Open-source contribution is very valuable for your career. Getting started: search for 'good first issue' or 'help wanted' labeled issues on GitHub. Find projects aligned with your interests. First contributions can be small — typo fixes, documentation improvements, simple bug fixes. Steps: fork the project, create a branch, make changes, submit a PR. Read CONTRIBUTING.md — each project has different rules. Big projects: first-contributions repo, freeCodeCamp, VS Code, Python. Contributing: you see real-world code, receive code review, do networking, looks great on CV. Gorkem being active on GitHub shows he lives this culture.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Open source, good first issue, fork, PR, CONTRIBUTING.md, CV.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is a service mesh?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A service mesh is an infrastructure layer that manages communication between microservices. Sidecar proxies (small proxies running alongside each service) handle traffic management. What it provides: inter-service encryption (mTLS), traffic management (canary deployment, A/B testing), retry and circuit breaker, observability (every request is traceable). Istio is the most popular service mesh. Linkerd is a lighter alternative. Consul Connect is HashiCorp's solution. When it's needed: many microservices (50+). Adds unnecessary complexity in small systems. Usually used together with Kubernetes.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Service mesh, Istio, sidecar proxy, mTLS, canary deployment.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Can you tell me about the BTK Hackathon experience?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "BTK Hackathon was an e-commerce focused hackathon that Gorkem participated in. In these events you typically develop a product or prototype within 24-48 hours. You gain teamwork, quick decision-making, and coding under pressure experience. Under the e-commerce theme, solutions like AI-powered recommendation systems, chatbots, and automation may have been developed. Hackathons are very valuable on a CV because they show you can solve real-world problems, work in teams, and rapidly prototype. Presenting to judges is a bonus experience.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "BTK Hackathon, e-commerce, teamwork, prototyping, presentation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "I want to develop mobile apps, where should I start?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "There are several paths for mobile development. Native: Swift for iOS (Xcode), Kotlin for Android (Android Studio) — best performance but two separate codebases. Cross-platform: React Native (JavaScript), Flutter (Dart) — single codebase works on both platforms. Flutter has become very popular recently, making beautiful UIs is easy. For beginners Flutter is recommended — Dart is easy to learn, hot reload for fast development, rich widget library. For a first project make a simple todo app or weather app. Google Codelabs and Flutter.dev are free resources. Also learn the App Store and Google Play publishing process.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mobile development, Swift, Kotlin, Flutter, React Native, getting started.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What should I consider when designing a REST API?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "REST API design has certain rules. URLs should be nouns (not verbs): /users, /products (GET /users good, GET /getUsers bad). Use HTTP methods correctly: GET (read), POST (create), PUT (update), DELETE (remove), PATCH (partial update). Return correct status codes: 200 success, 201 created, 400 bad request, 401 unauthorized, 404 not found, 500 server error. Add versioning: /api/v1/users. Use pagination for large lists. Filtering and sorting via query parameters. Link related resources with HATEOAS. Security: authentication, rate limiting, input validation. Good documentation: Swagger/OpenAPI.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "REST API, URL design, HTTP methods, status codes, pagination, Swagger.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does the ETL process mean?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ETL: Extract, Transform, Load. The fundamental process of data engineering. Extract: pulling data from various sources — databases, APIs, files, web scraping. Transform: cleaning, converting, merging data — filling missing values, formatting, calculations. Load: loading processed data into target database or data warehouse. Apache Airflow is popular for automating ETL processes. dbt (data build tool) is used for the transform step. In large companies, data engineers build and manage ETL pipelines. Our scraping project is actually an ETL process too.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ETL, extract, transform, load, Airflow, dbt, data engineering.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does the pandas library do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "pandas is the fundamental Python library for data analysis and manipulation. DataFrame structure — consists of rows and columns like a table. Reads data from CSV, Excel, JSON, SQL. Filtering, grouping, merging, pivot tables. Missing data management (NaN handling). Time series analysis. Lets you quickly analyze large datasets. df.head(), df.describe(), df.groupby() are the most used functions. Visualization with matplotlib and seaborn. The first step of data science and ML pipelines is usually loading and exploring data with pandas. Every data professional needs to know this library.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "pandas, DataFrame, data analysis, CSV, filtering, grouping.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to prevent developer burnout?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Burnout is very common in the software industry. Symptoms: loss of motivation, fatigue, irritability, decreased productivity, hating code. To prevent: establish work-life balance — close the computer when work hours end. Get a hobby — do something outside of coding (sports, music, cooking). Take regular vacations. Learn to say no — don't accept every project. Let go of perfectionism. Take care of physical health — exercise, sleep, nutrition. Don't neglect social relationships. If you're experiencing burnout, don't hesitate to seek professional help. Software should be a part of your life, not your entire life.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Burnout, work-life balance, hobbies, perfectionism, physical health.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What does a message queue do?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A message queue is a tool that enables asynchronous communication between services. A producer puts a message in the queue, a consumer picks it up when ready. Why use it: decoupling services, load balancing, reliability (messages don't get lost), scalability. Popular solutions: RabbitMQ (general purpose, easy), Apache Kafka (high volume, streaming), AWS SQS (managed), Redis (simple queues). Example: when an order is placed on an e-commerce site, stock update, email sending, invoice creation — all placed as messages in the queue and processed by respective services. Standard in microservice architectures.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Message queue, RabbitMQ, Kafka, asynchronous communication, decoupling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is Tailwind CSS?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tailwind CSS is a utility-first CSS framework. In traditional CSS you give class names and write styles in separate files. In Tailwind you write small utility classes directly in HTML: class='bg-blue-500 text-white p-4 rounded-lg'. Advantages: fast development, consistent design, easy responsive, minimal custom CSS files. Disadvantages: HTML gets cluttered, takes getting used to. JIT (Just-in-Time) mode generates only the classes you use — keeps file size small. Can be used with component libraries like Headless UI and DaisyUI. Very popular — many modern projects use Tailwind.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Tailwind CSS, utility-first, pros/cons, JIT, DaisyUI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What's the difference between React and Vue?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "React and Vue are both frontend frameworks/libraries. React, developed by Facebook, uses JSX (write HTML inside JavaScript), huge ecosystem, most demanded in job listings. Vue has an easier learning curve, is template-based (HTML-like), very productive for small-medium projects, developed by Evan You. State management: Redux/Zustand for React, Vuex/Pinia for Vue. React is more flexible but requires more decisions, Vue is more opinionated but you start faster. Angular exists too — by Google, TypeScript mandatory, common in enterprise. Whichever you choose, the concept is the same — component-based UI.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "React vs Vue, JSX, template, ecosystem, Angular, component-based.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is WebAssembly (WASM)?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "WebAssembly is a binary format that enables running code at near-native speed in browsers. You can run code written in C, C++, Rust in the browser. Why it matters: where JavaScript performance isn't enough — 3D games, video editing, scientific computing, CAD applications. Figma uses WASM, Google Earth too. It doesn't replace JavaScript — they work together. With WASI (WebAssembly System Interface) it can run outside browsers too — serverless, edge computing. An important technology for performance-critical applications.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "WebAssembly, WASM, native performance, Rust, Figma, WASI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to get started with game development?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Game development is an exciting field. Engine selection: Unity (C#, most common, 2D and 3D), Unreal Engine (C++/Blueprint, AAA quality, free), Godot (GDScript, open source, lightweight). Unity or Godot recommended for beginners. First project: make a simple platformer, pong, or flappy bird clone. Core concepts: game loop, sprites, collision detection, physics, input handling. Gorkem's raylib-space-shooter project is game development in C — raylib is lightweight and great for learning. Game development is both fun and teaches multiple CS topics together: graphics, physics, AI, networking.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Game development, Unity, Unreal, Godot, raylib, starter projects.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to get into cybersecurity?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Cybersecurity is a vast field. Subdomains: penetration testing, incident response, security operations (SOC), application security, network security, forensics. Getting started: networking fundamentals (TCP/IP, DNS, HTTP), Linux command line, Python scripting. Practice platforms: TryHackMe, HackTheBox, OverTheWire. Certifications: CompTIA Security+, CEH, OSCP. Join CTF (Capture The Flag) competitions — fun and educational. Gorkem's email-phishing-detection project is the intersection of security and AI. You can also earn money through bug bounty programs — HackerOne, Bugcrowd.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Cybersecurity, penetration testing, TryHackMe, certifications, CTF, bug bounty.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What are git branching strategies?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "There are several branching strategies in Git. Git Flow: main, develop, feature, release, hotfix branches — structured for large teams. GitHub Flow: main + feature branches, merge via PR — simple and effective. Trunk-based development: everyone frequently merges into main with short-lived branches — compatible with CI/CD. GitLab Flow: GitHub Flow + environment branches (staging, production). GitHub Flow is recommended for beginners — simple but effective. Create feature branch, open PR, get code review, merge. Commit messages should be meaningful. Use naming conventions: feature/login, bugfix/auth-error.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Git branching, Git Flow, GitHub Flow, trunk-based, PR, code review.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What do agile and scrum mean?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Agile is a flexible, iterative approach to software development — instead of long planning, you progress in short cycles (sprints). Scrum is Agile's most popular framework. Sprint (2-4 weeks), daily standup (15 min daily meeting), sprint review, sprint retrospective are core rituals. Roles: Product Owner (decides what to build), Scrum Master (manages the process), Development Team (develops). Backlog: list of work to do. User story: 'As a user I want X so that Y' format. Tracked with tools like Jira, Trello, Linear. Most software companies use Scrum or Kanban.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Agile, Scrum, sprint, daily standup, Product Owner, Jira.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Why is probability and statistics important for AI?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Probability and statistics are at the foundation of machine learning. Bayes' theorem: classification, spam filters, naive Bayes. Probability distributions: Gaussian (normal distribution), Bernoulli, Poisson — for understanding model assumptions. Hypothesis testing: A/B testing, comparing model performance. Maximum likelihood estimation: optimizing model parameters. Correlation and regression: relationships between variables. Confidence intervals and p-values: statistical significance of results. Even overfitting is a statistical concept — bias-variance tradeoff. Khan Academy and StatQuest YouTube channel are good resources.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Probability, statistics, Bayes, distributions, hypothesis testing, MLE.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Why should I use TypeScript?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TypeScript adds type safety to JavaScript. In JavaScript you get 'undefined is not a function' errors at runtime; in TypeScript the editor warns you while you're still writing code. Advantages: fewer bugs, better IDE support (auto-complete, refactoring), code reads like documentation, maintenance easier in large projects. Disadvantages: learning curve, compilation step, might be overkill for small projects. Big companies (Google, Microsoft, Airbnb) use TypeScript. React, Vue, Node.js projects can all be written in TypeScript. If starting a new project, start with TypeScript.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TypeScript, type safety, JavaScript difference, pros/cons.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How should I plan a software project?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Project planning is the key to success. First step: clearly define requirements — what will be done, what won't (scope). Create wireframes or mockups — with Figma. Determine technical architecture — frontend, backend, database, API design. Break work into small pieces — each completable in 1-2 days. Prioritize — start with MVP (Minimum Viable Product), develop the most important features first. Establish git branching strategy. Set up CI/CD. Create a timeline but stay flexible. Do regular progress checks. Gorkem learned rapid planning at hackathons — shipping a product in 48 hours requires good planning.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Project planning, requirements, wireframes, MVP, prioritization, CI/CD.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What do monitoring and observability mean?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Monitoring is watching whether systems are running. Observability is being able to understand the internal state of a system. Three pillars: Metrics (numerical measurements — CPU, memory, request count), Logs (records of events), Traces (a request's journey through the system). Prometheus + Grafana are standard for metrics. ELK Stack (Elasticsearch, Logstash, Kibana) for log management. Jaeger or Zipkin for distributed traces. Alert systems: notification when a metric exceeds threshold — PagerDuty, Opsgenie. 'You can't manage what you can't measure' — monitoring in production is a must. Cornerstone of SRE (Site Reliability Engineering) culture.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Monitoring, observability, Prometheus, Grafana, ELK, traces, SRE.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "When should GraphQL be used?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GraphQL is a query language developed by Facebook. Difference from REST: the client requests exactly the data it needs — no more, no less (no over-fetching or under-fetching). Single endpoint: /graphql, all queries go here. When to use: multiple clients (web, mobile) with different data needs, fetching related data in a single query, when frontend needs fast iteration. When not to use: simple CRUD API, file uploads, heavy real-time applications (REST+WebSocket might be simpler). Apollo and Relay are popular client libraries.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GraphQL, REST difference, over-fetching, single endpoint, Apollo, when to use.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is explainable AI (XAI)?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Explainable AI is about making AI model decisions interpretable. Deep learning models are typically black-box — they make correct predictions but can't explain why. This is a problem in critical domains like healthcare, law, and finance. Methods: LIME (Local Interpretable Model-agnostic Explanations), SHAP (SHapley Additive exPlanations), attention visualization, feature importance. For example, for a credit rejection you can provide an explanation like 'rejected because income was too low'. The EU AI Act requires explainability for high-risk AI systems. Transparency is essential for trustworthy AI.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "XAI, LIME, SHAP, black-box, transparency, EU AI Act.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "How to do visualization with matplotlib and seaborn?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "matplotlib is Python's fundamental visualization library — you can make line graphs, bar charts, scatter plots, histograms, pie charts. plt.plot(), plt.bar(), plt.scatter() are basic functions. seaborn is built on top of matplotlib and offers prettier, statistical graphics — heatmap, violin plot, box plot, pair plot. sns.heatmap() is widely used for correlation matrix visualization. Both libraries work perfectly with pandas DataFrames. Visualization is crucial for data analysis and presentation — a picture is worth a thousand words.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "matplotlib, seaborn, chart types, heatmap, data visualization.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What is Next.js?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Next.js is a full-stack framework built on top of React. React alone only does client-side rendering; Next.js adds server-side rendering (SSR), static site generation (SSG), and API routes. Very important for SEO — search engines index SSR pages better. File-based routing — add a file to the pages folder and it automatically becomes a route. Performance features like image optimization, code splitting, middleware. Easy deployment with Vercel (the company behind Next.js). Has become the standard for modern web development. Gorkem's portfolio site might use a similar framework.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Next.js, SSR, SSG, SEO, file-based routing, Vercel.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What do books add to a developer?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Reading develops thinking skills and provides perspective. Software books: Clean Code (Robert Martin), The Pragmatic Programmer, Design Patterns (GoF), Cracking the Coding Interview, System Design Interview. General: Atomic Habits (habits), Deep Work (focus), The Lean Startup (entrepreneurship). Technical books provide depth that blogs and videos can't. Even 30 minutes a week of regular reading helps. E-books or Audible are options too. Applying what you read is important — just reading isn't enough. If you get even one actionable takeaway from a book, it's worth it.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Reading books, Clean Code, Pragmatic Programmer, Atomic Habits, regular reading.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "What's the difference between data science and machine learning?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Data Science is a broader field — data collection, cleaning, analysis, visualization, and insight extraction. The intersection of statistics, domain knowledge, and programming. Machine Learning is a subset of data science — algorithms that automatically learn from data. A data scientist does data analysis with SQL, pandas, matplotlib, creates dashboards, presents reports for business decisions. An ML engineer trains models, builds pipelines, deploys. Both use Python but have different focus areas. Kaggle is a great platform for both data science and ML.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Data Science vs ML, difference, data scientist, ML engineer, Kaggle.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Why is AI ethics important?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI ethics means thinking about AI's impact on society. Bias: if training data is biased, the model will be biased too — discrimination in hiring, credit evaluation. Privacy: surveillance with face recognition, personal data usage. Transparency: black-box models can't explain their decisions (explainable AI is important). Deepfakes: generating fake content. Job displacement: unemployment risk from automation. Weapons: autonomous weapons. As AI developers we need to think about these issues. Regulations like the EU AI Act are coming. Responsible AI principles: fairness, transparency, privacy, safety. Technology isn't neutral — how it's used matters.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI ethics, bias, privacy, transparency, deepfakes, responsible AI, EU AI Act.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Flutter or React Native?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Both are cross-platform mobile development frameworks. Flutter: by Google, Dart language, its own rendering engine (Skia), beautiful UI, hot reload, Material Design and Cupertino widgets. React Native: by Meta, JavaScript/TypeScript, uses native components, large ecosystem, easy transition for web developers. Performance: Flutter is slightly better (own engine). Community: React Native is larger but Flutter is growing fast. Job listings: both are common. My recommendation: if you know JavaScript go with React Native, if starting from scratch go with Flutter. Both are good choices.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Flutter vs React Native, performance, community, job listings.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

@@ -1,0 +1,20 @@
+# Turkish Medical RAG
+# Recommended Python version: 3.11
+
+# Data processing
+numpy>=1.26,<3.0
+pandas>=2.2,<3.0
+pyarrow>=15.0,<23.0
+
+# Hugging Face
+huggingface-hub>=0.34,<2.0
+transformers>=4.51,<5.0
+sentence-transformers>=4.1,<6.0
+accelerate>=1.0,<2.0
+safetensors>=0.4,<1.0
+
+# Deep Learning
+torch>=2.6,<3.0
+
+# Vector Database
+chromadb==1.5.9

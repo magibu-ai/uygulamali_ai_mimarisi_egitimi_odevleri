@@ -1,0 +1,1252 @@
+{
+    "train": [
+        [
+            {
+                "content": "attention mekanizması ne işe yarıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Attention (dikkat) mekanizması, modelin bir dizideki farklı pozisyonlara farklı ağırlıklar vermesini sağlıyor. Klasik RNN'lerde uzun cümlelerde bilgi kayboluyordu — cümlenin başı unutuluyordu. Attention bunu çözdü. 'The cat sat on the mat because it was tired' cümlesinde 'it' kelimesi 'cat'e dikkat etmeli. Self-attention'da her kelime diğer tüm kelimelere bakıyor. Multi-head attention ise farklı dikkat kalıplarını paralel öğreniyor. Transformer mimarisinin temeli bu. Query, Key, Value üçlüsüyle çalışır — Query ne arıyorsun, Key neyin var, Value ne veriyorsun. Görkem'in miniature-transformers projesinde bu detaylı implement ediliyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Attention mekanizması, self-attention, multi-head, QKV, transformer temeli.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "embedding nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Embedding, kelimeler, cümleler veya dokümanları sayısal vektörlere dönüştürme işlemi. Neden? Bilgisayarlar metinle çalışamaz, sayılarla çalışır. Ama düz sayılar değil — anlamı koruyan sayılar. Mesela 'kral' ve 'kraliçe' kelimeleri birbirine yakın vektörlerle temsil edilir çünkü anlamları benzer. Word2Vec, GloVe gibi klasik yöntemler var, şimdi BERT, Sentence-BERT gibi modeller kullanılıyor. Embedding'ler benzerlik araması, sınıflandırma, kümeleme ve RAG'da kullanılıyor. Vector database'lerde embedding'ler saklanır ve benzer dokümanlar bulunur. NLP'nin temel taşlarından biri.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Embedding açıklaması, kelimeden vektöre, Word2Vec, BERT, kullanım alanları.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AYT matematik için hangi konulara öncelik vermeliyim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AYT matematikte en çok soru gelen konular: limit-türev-integral üçlüsü, fonksiyonlar, logaritma, diziler ve seriler. Bu 5 konu sınavın neredeyse yarısını oluşturuyor. Eğer zamanın kısıtlıysa bu konulara ağırlık ver. Limit-türev-integral birbiriyle bağlantılı olduğu için sırasıyla çalış. Fonksiyonlar zaten her yerde karşına çıkıyor. Olasılık ve kombinatorik de önemli ama daha az soru geliyor. Geometri tarafında analitik geometri ve katı cisimler kritik. Ama şunu unutma: her konuyu yüzeysel bilmektense, az konuyu derinlemesine bilmek daha çok net getirir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AYT matematik konu önceliği, limit-türev-integral, strateji.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CNN nedir ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CNN (Convolutional Neural Network), yani evrişimli sinir ağı, görüntü işleme için tasarlanmış bir derin öğrenme mimarisi. İnsan beyninin görsel korteksinden esinlenmiş. Şöyle çalışıyor: görüntü üzerinde küçük filtreler (kernel) gezdirerek özellikleri çıkarıyor — kenarlar, köşeler, renkler gibi. Her katmanda daha karmaşık özellikler öğreniyor — ilk katman çizgiler, sonraki katman şekiller, daha sonraki katman nesneler. Görüntü sınıflandırma, nesne tespiti, yüz tanıma gibi görevlerde kullanılıyor. Görkem'in YOLO ve FaceLock projeleri CNN tabanlı. Eğer computer vision'a girmek istiyorsan CNN'i çok iyi anlamalısın.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CNN açıklaması, evrişim, filtreler, katmanlar, kullanım alanları.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "python llm agent projesi ne yapıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Python LLM Agent, Görkem'in geliştirdiği LLM tabanlı bir Python kodlama ajanı. Temel fikir şu: bir dil modeline görev veriyorsun ve o sana Python kodu yazıyor, çalıştırıyor, hataları düzeltiyor. Ajan yapıları şu an AI dünyasında çok popüler — sadece soru-cevap değil, gerçek görevleri otonom şekilde yapabilen sistemler. Bu proje de o konseptin güzel bir örneği.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LLM agent, Python kodu üretimi, otonom görev yürütme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılım mülakatlarında ne soruluyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yazılım mülakatları genelde birkaç aşamadan oluşuyor. İlk aşama telefon görüşmesi — motivasyonun, deneyimlerin sorulur. Sonra teknik mülakat — algoritma ve veri yapısı soruları, genelde LeetCode tarzı. Array, string, linked list, tree, graph, dynamic programming konularından sorulabilir. Bazı şirketler system design da soruyor — bir sistemi nasıl tasarlarsın, ölçeklendirirsin. Bir de live coding olabilir — paylaşılan ekranda gerçek zamanlı kod yazarsın. Take-home assignment veren şirketler de var — eve proje verirler, birkaç günde yaparsın. Hazırlık için LeetCode'da haftada 3-5 soru çöz, Cracking the Coding Interview kitabını oku. Ve mock interview yap — arkadaşınla veya Pramp gibi platformlarda.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mülakat aşamaları, algoritma, system design, live coding, hazırlık.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "teknik blog yazmaya değer mi?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kesinlikle değer. Teknik blog yazmanın birçok faydası var: birincisi, bir konuyu başkasına anlatmak için önce kendin çok iyi anlamalısın, yani yazarken öğrenirsin. İkincisi, Google'da indexlenir ve insanlar seni bulur — bu da networking ve iş fırsatı demek. Üçüncüsü, portfolyona ekleyebilirsin. Platform olarak Medium, Dev.to, Hashnode veya kendi GitHub Pages siten olabilir. Haftada 1 yazı bile yeterli. Konular: bir projeyi nasıl yaptığın, bir problemi nasıl çözdüğün, bir teknoloji hakkında öğrendiklerin. Mükemmel olmasına gerek yok, samimi ve faydalı olsun yeter.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Teknik blog yazma, faydaları, platformlar, içerik önerileri.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "test yazmak neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Test yazmak, kodunun doğru çalıştığını kanıtlamanın yolu. 'Çalışıyor gibi görünüyor' yetmez — edge case'lerde, beklenmeyen inputlarda ne oluyor? Unit test tek bir fonksiyonu test eder, integration test parçaların bir arada çalışmasını test eder, end-to-end test tüm sistemi test eder. Test yazmak başta zaman kaybı gibi görünür ama uzun vadede çok zaman kazandırır — bir değişiklik yaptığında testler çalıştırırsın ve neyin bozulduğunu hemen görürsün. TDD (Test Driven Development) yaklaşımında önce test yazarsın, sonra kodu. pytest (Python), Jest (JavaScript) popüler test framework'leri. Profesyonel yazılımda test yazmayan kod, kabul edilmiyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Test yazma önemi, unit/integration/e2e, TDD, pytest, Jest, uzun vadeli fayda.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "veritabanı türleri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İki ana kategori var: SQL (ilişkisel) ve NoSQL (ilişkisel olmayan). SQL veritabanları tablolar halinde veri saklar, satırlar ve sütunlar var. Örneğin PostgreSQL, MySQL, SQLite. Yapılandırılmış veri için ideal — kullanıcı bilgileri, siparişler gibi. NoSQL ise farklı modeller sunuyor: document-based (MongoDB), key-value (Redis), graph (Neo4j), column-family (Cassandra). Yapılandırılmamış veya hızlı değişen veriler için iyi. Hangisini seçeceğin projeye bağlı. Görkem'in study-tracker uygulaması SQLite kullanıyor mesela — lokal, hafif ve offline çalışıyor. Başlangıç için SQL öğren, sonra ihtiyacına göre NoSQL'e geç.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SQL vs NoSQL, veritabanı türleri, PostgreSQL, MongoDB, kullanım senaryoları.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem nasıl bu kadar çok proje yapabiliyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in bu kadar üretken olmasının birkaç sebebi olabilir. Birincisi, tutku — sevdiğin işi yaparken zaman farklı akar. İkincisi, disiplin — her gün biraz bile olsa bir şeyler yapmak, zamanla büyük birikim oluşturur. Üçüncüsü, hackathon'lar — kısa sürede bir ürün ortaya koymak zorunda kalınca çok hızlı öğrenirsin. Dördüncüsü, üniversite dersleriyle sinerji — dersteki bilgiyi projede uygulayınca hem dersi hem projeyi öğreniyorsun. Ve beşincisi, muhtemelen mükemmeliyetçilik yapmıyor — projeyi bitirip paylaşıyor, 'daha iyisini yapayım' diye ertelemiyor. Bu çok önemli bir özellik.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Üretkenlik analizi, tutku, disiplin, hackathon, mükemmeliyetçilikten kaçınma.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "NoSQL neden tercih edilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "NoSQL veritabanları şu durumlarda tercih edilir: verin yapısal olarak çok farklı olabiliyorsa (schema-less), çok büyük miktarda veri var ve yatay ölçekleme gerekiyorsa, hız kritik ve milisaniye seviyesinde yanıt gerekiyorsa, gerçek zamanlı uygulamalar (chat, gaming, IoT) yapıyorsan. MongoDB en popüler document-based NoSQL — JSON benzeri dokümanlar saklıyor. Redis key-value store — cache için harika. Cassandra büyük veri için — Facebook ve Netflix kullanıyor. Neo4j graph database — sosyal ağ ilişkileri için ideal. Ama her şey için NoSQL kullanma — finansal veriler, ilişkisel veriler için SQL hala en iyi seçenek. Doğru aracı doğru iş için kullan.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "NoSQL kullanım senaryoları, MongoDB, Redis, Cassandra, Neo4j, ne zaman SQL.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Hugging Face nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Hugging Face, AI dünyasının GitHub'ı gibi düşün. Binlerce hazır model, veri seti ve demo barındıran bir platform. transformers kütüphanesiyle bir modeli 3 satır kodla yükleyip kullanabilirsin. Model Hub'da BERT, GPT, LLaMA, Whisper gibi modeller var. Datasets kütüphanesiyle veri setlerine erişebilirsin. Spaces ile demo uygulamalar oluşturabilirsin. Görkem'in wiki2bpe projesi tokenizer'ını Hugging Face Hub'a yayınlıyor. Eğer NLP veya genel AI ile çalışıyorsan Hugging Face'i bilmek zorunlu — sektörün standart platformu haline geldi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Hugging Face tanıtım, transformers, Model Hub, Datasets, Spaces.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "fen bilimleri nasıl daha iyi öğrenilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Fen bilimlerinde en önemli şey kavramsal anlama. Formül ezberlemek yerine formülün nereden geldiğini anla. Fizik'te kuvvet, enerji ve hareket temel üçlüsü — bunları anlayınca diğer konular üzerine biner. Kimya'da periyodik tablo ve kimyasal bağlar temel. Biyoloji'de hücre yapısı ve genetik en önemli konular. Deney videoları izle, görsel öğrenme fen bilimlerinde çok etkili. Khan Academy Türkçe'de güzel kaynaklar var. Bir de soru çözerken sadece doğru cevabı bulmaya değil, yanlış şıkların neden yanlış olduğunu anlamaya çalış.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Fen bilimleri öğrenme stratejisi, kavramsal anlama, görsel öğrenme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "miniature transformers from scratch projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bu proje Görkem'in sıfırdan transformer mimarisi uygulaması. Jupyter Notebook formatında, yani adım adım öğretici bir şekilde yazılmış. Transformer, modern yapay zekanın temeli — GPT, BERT, Claude hepsi transformer tabanlı. Bunu sıfırdan yazmak, attention mekanizmasını, positional encoding'i, multi-head attention'ı gerçekten anlamak demek. Eğer derin öğrenmeyi ciddi anlamda öğrenmek istiyorsan bu tarz from-scratch projeleri çok değerli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Transformer mimarisi, from scratch implementasyon, attention mekanizması.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "transformer mimarisi nasıl çalışıyor basitçe?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Transformer, 2017'de Google'ın 'Attention Is All You Need' makalesiyle tanıtıldı ve yapay zekayı değiştirdi. Temel fikir şu: attention (dikkat) mekanizması. Bir cümledeki her kelime, diğer tüm kelimelere 'bakıyor' ve hangilerinin kendisiyle ilgili olduğunu öğreniyor. Mesela 'Kedi süt içti çünkü acıktı' cümlesinde 'acıktı' kelimesi 'kedi'ye dikkat ediyor çünkü acıkan kedi. Encoder ve decoder olmak üzere iki kısımdan oluşuyor. GPT sadece decoder kullanıyor, BERT sadece encoder. Görkem'in miniature-transformers-from-scratch projesi tam olarak bunu sıfırdan implement ediyor. Bu mimarıyı anlamak modern AI'yı anlamanın anahtarı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Transformer açıklaması, attention mekanizması, encoder-decoder.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "worldcup bpe tokenizer projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bu projede Görkem, 2022 FIFA Dünya Kupası hakkındaki Wikipedia makalelerinden 1024 kelime boyutunda özel bir BPE tokenizer eğitmiş. Encode ve decode analizi de yapmış. Aslında wiki2bpe'nin daha küçük ve odaklı bir versiyonu gibi düşünebilirsin. Spesifik bir konudaki metinlerle tokenizer eğitmek, o alandaki terimleri daha iyi tokenize etmesini sağlıyor. Mesela 'Messi' kelimesini tek token olarak algılaması gibi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Worldcup BPE tokenizer, vocab_size=1024, özel alan tokenizer'ı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "2026'da hangi teknolojiler öne çıkıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "2026'da birkaç alan çok parlak: Büyük Dil Modelleri (LLM) ve onların uygulamaları — RAG, AI ajanları, code generation. Edge AI — yapay zekanın bulut yerine cihazda çalışması, mobil ve IoT uygulamaları. Computer Vision'da otonom araçlar ve endüstriyel uygulamalar büyüyor. MLOps — model deployment ve yönetimi artık bir disiplin haline geldi. Quantum computing henüz erken ama gelecek vaadediyor. Low-code/no-code platformlar yaygınlaşıyor ama geliştiricilerin yerini alamıyor. Ve tabii ki siber güvenlik — AI saldırılara karşı AI savunma. Görkem'in çalışma alanları — AI, CV, NLP — tam da bu trendlerle örtüşüyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "2026 teknoloji trendleri, LLM, Edge AI, MLOps, CV, siber güvenlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "transfer learning ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Transfer learning, bir görev için öğrenilmiş bilginin başka bir göreve aktarılması. Sıfırdan model eğitmek çok pahalı ve veri gerektirir. Ama ImageNet'te milyonlarca görüntüyle eğitilmiş bir modeli alıp, mesela sadece 100 fotoğrafla kedi-köpek sınıflandırması yapabilirsin. Model zaten kenarları, şekilleri, dokuları öğrenmiş — sen sadece son katmanı değiştirip kendi sınıflarını öğretiyorsun. Görkem'in YOLO projesi de transfer learning kullanıyor — YOLO zaten genel nesne tespiti bilir, sen kendi nesnelerini öğretiyorsun. NLP'de de aynı mantık: BERT'i alıp sentiment analizi için fine-tune edersin. Modern AI'ın olmazsa olmazı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Transfer learning, ImageNet, fine-tuning, YOLO örneği, neden önemli.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımcı olmak için matematik şart mı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Şart mı sorusunun cevabı: hangi alana gireceğine bağlı. Web geliştirme, mobil uygulama, backend geliştirme gibi alanlarda ileri matematik gerekmez — temel mantık ve problem çözme yeteneği yeter. Ama yapay zeka, makine öğrenmesi, bilgisayar grafikleri, kriptografi gibi alanlarda matematik çok önemli — lineer cebir, istatistik, kalkülüs lazım. Görkem'in AI projelerinde ciddi matematik var — model eğitimi, loss fonksiyonları, optimizasyon hep matematik. Ama web uygulaması yapmak istiyorsan matematik seni durdurmasın. Önemli olan algoritmik düşünme becerisi, bu da pratikle gelişir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yazılımda matematik gerekliliği, alana göre değişir, algoritmik düşünme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "startup kurmak istiyorum nereden başlamalıyım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Startup kurmak istiyorsan ilk adım bir problem bulmak. Teknolojiyle değil, problemle başla. İnsanların gerçekten yaşadığı bir sorunu çözen bir ürün düşün. Sonra MVP (minimum viable product) yap — en basit versiyonu. Mükemmel olmasına gerek yok, çalışan bir şey olsun. Bunu potansiyel kullanıcılara göster ve geri bildirim al. Görkem'in yaklaşımına bak — hackathon'larda find-the-best gibi gerçek sorunları çözen projeler yapıyor. Finansman için TÜBİTAK destekleri, melek yatırımcılar ve hızlandırma programları var. Ama en önemlisi: tek başına yapma, bir co-founder bul. Farklı becerilere sahip biriyle çalışmak çok daha verimli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Startup kurma, problem-çözüm, MVP, finansman, co-founder.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "edge computing nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Edge computing, veri işlemeyi bulut sunucuları yerine verinin üretildiği yere — yani 'kenara' — taşımak demek. Bir fabrikadaki sensör verisini buluta göndermek yerine orada işlersin. Avantajları: düşük gecikme (latency), bant genişliği tasarrufu, gizlilik. Özellikle IoT cihazları, otonom araçlar, akıllı şehirler için kritik. Edge AI ise yapay zeka modellerini doğrudan cihazda çalıştırmak — mesela telefonundaki yüz tanıma buluta gitmeden cihazda çalışıyor. TFLite, ONNX Runtime gibi araçlar modelleri küçültüp edge cihazlarda çalıştırmayı sağlıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Edge computing tanımı, avantajlar, IoT, Edge AI, TFLite.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem'in en etkileyici projesi hangisi sence?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bence gorkem-os en etkileyici olanı. Sıfırdan işletim sistemi yazmak, bilgisayar mühendisliğinin en zor ve en derin konularından biri. Çoğu mühendis bunu hiç denemez bile. Bootloader yazman, bellek yönetimi kurman, kesme işleyicileri yazman gerekiyor — C ve Assembly ile. Bu proje tek başına Görkem'in teorik bilgiyi pratiğe ne kadar iyi döktüğünü gösteriyor. Ama tabii ki herkesin bakış açısı farklı olabilir — AI ile ilgilenen biri turkish-english-nmt'yi daha etkileyici bulabilir, mobil geliştirme ile ilgilenen Build Your Target Body'yi tercih edebilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "En etkileyici proje değerlendirmesi, gorkem-os, kişisel görüş.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "freelance mı çalışmalıyım yoksa şirkette mi?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İkisinin de avantajları var. Şirkette çalışmanın artıları: düzenli gelir, sosyal güvence, mentorluk, takım çalışması deneyimi, büyük projelerde çalışma fırsatı. Freelance'ın artıları: esneklik, kendi saatlerini belirleme, potansiyel olarak daha yüksek kazanç, farklı projelerle çalışma. Benim önerim: önce bir şirkette 2-3 yıl çalış, tecrübe kazan, sektörü öğren, network kur. Sonra istersen freelance'a geç. Direkt freelance başlamak riskli çünkü hem teknik hem de iş yönetimi becerisi lazım. Görkem gibi hem kendi projelerini yapıp hem de öğrenci olarak devam etmek de bir opsiyon — bu şekilde hem öğreniyorsun hem üretiyorsun.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Freelance vs şirket karşılaştırması, kariyer stratejisi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "LLM hallucination nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Halüsinasyon, bir dil modelinin tamamen uydurma bilgi üretmesi. Model çok kendinden emin bir şekilde yanlış bilgi verir — var olmayan kitaplar, uydurma istatistikler, sahte alıntılar. Neden oluyor? Çünkü LLM'ler istatistiksel kalıplarla çalışır, gerçek bir bilgi tabanına sahip değiller. En olası token'ı tahmin ederler ve bazen bu tahmin gerçekle örtüşmez. Bununla başa çıkmak için: RAG kullan, fact-checking yap, modelin belirsiz olduğu durumları tespit et (uncertainty estimation), yanıtlara kaynak eklet. Fine-tuning de halüsinasyonu azaltabilir çünkü model spesifik bilgileri öğrenir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Halüsinasyon açıklaması, neden oluyor, çözüm yöntemleri, RAG.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "LeetCode'da nasıl ilerlemeliyim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "LeetCode'a başlıyorsan şöyle ilerle: önce Easy sorularla başla — Array, String, HashMap konuları. Haftada 3-5 soru çöz, acele etme. Her soruyu çözdükten sonra Discussion bölümüne bak — başkalarının çözümlerinden çok şey öğrenirsin. Bir soru 30 dakikada çözülmüyorsa çözümüne bak ve anla, sonra ertesi gün tekrar çöz. Medium soruları geçtikten sonra Hard'lara bak ama Hard'lar mülakat için genelde gerekmez. Blind 75 veya NeetCode 150 listelerini takip et — en önemli soruları kategorize etmişler. Ve kağıt kalemle çöz, doğrudan IDE'ye yazmadan önce algoritmayı tasarla.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "LeetCode ilerleme stratejisi, Easy-Medium-Hard, Blind 75, Discussion, tekrar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "açık kaynak lisansları ne anlama geliyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Açık kaynak lisansları, kodunu paylaşırken başkalarının ne yapabileceğini belirler. MIT lisansı en serbestlerden biri — istediğin gibi kullan, değiştir, ticari projede kullan, sadece orijinal lisansı koru. Apache 2.0 benzer ama patent hakları da veriyor. GPL daha kısıtlayıcı — kodu kullanan herkes kendi kodunu da açık kaynak yapmalı. BSD de MIT'e benzer, serbest. Creative Commons genelde içerik (metin, görsel) için kullanılır. Hangi lisansı seçeceğin projenin amacına bağlı: maximum paylaşım istiyorsan MIT, katkıda bulunanları korumak istiyorsan Apache, açık kalmasını garantilemek istiyorsan GPL. Görkem'in projeleri GitHub'da açık kaynak.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Açık kaynak lisansları, MIT, Apache, GPL, BSD, seçim kriterleri.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CV'me ne yazmalıyım yazılımcı olarak?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yazılımcı CV'si klasik CV'den farklı olmalı. En üstte kısa bir özet — 2-3 cümleyle kim olduğunu ve ne yaptığını anlat. Teknik beceriler bölümü — diller, framework'ler, araçlar. Projeler bölümü — en önemli 3-5 projen, her biri için kısa açıklama, kullanılan teknolojiler ve varsa link. İş deneyimi — staj, freelance, part-time her şeyi yaz. Eğitim — üniversite, sertifikalar, online kurslar. Yapma hataları: 3 sayfadan uzun CV, teknik olmayan gereksiz bilgiler, fotoğraf (ABD ve Avrupa firmaları istemiyor), 'Microsoft Office biliyorum' yazmak. GitHub ve LinkedIn linklerini mutlaka ekle. CV'yi her pozisyona göre özelleştir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yazılımcı CV hazırlama, içerik, format, hatalar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "sosyal medya bağımlılığından nasıl kurtulurum çalışırken?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bu çok yaygın bir problem. Birkaç somut öneri: telefonunu başka odaya koy veya uçak moduna al. Forest veya Flora gibi uygulamaları kullan — telefona dokunmazsan sanal ağaç büyüyor. Bilgisayarında sosyal medya sitelerini engelleyen uzantılar kur — Cold Turkey, StayFocusd gibi. Pomodoro tekniğini uygula: 25 dakika çalış, 5 dakika mola. Molalarda sosyal medyaya bakabilirsin ama sadece o 5 dakikada. Bildirimlerini kapat — her bildirim dikkatini bölüyor ve geri dönmesi 23 dakika sürüyor araştırmalara göre. Ve en önemlisi: sosyal medyada geçirdiğin zamanı izle. Haftada 20 saat harcadığını görünce motivasyonun artar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Sosyal medya bağımlılığı, pratik çözümler, uygulama önerileri, Pomodoro.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "imposter syndrome yaşıyorum normal mi?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Çok normal ve neredeyse herkes yaşıyor, özellikle yazılım dünyasında. 'Yeterince iyi değilim, başkaları çok daha iyi, bir gün herkes benim aslında bilmediğimi anlayacak' düşünceleri imposter syndrome belirtileri. Gerçek şu: en deneyimli geliştiriciler bile sürekli yeni şeyler öğreniyor ve bilmedikleri tonla konu var. Hiç kimse her şeyi bilmiyor. Bunu yenmek için: başarılarını kaydet, küçük de olsa. Bildiklerini başkalarına öğret — birinin gözlerinin parladığını görünce kendine güvenin artar. Kendini geçmişteki seninle kıyasla, başkalarıyla değil. Ve şunu unutma: eğer imposter syndrome yaşıyorsan, bu demektir ki sınırlarını zorluyorsun, bu iyi bir şey.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Imposter syndrome, normalleştirme, başa çıkma yöntemleri.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "face detection pipeline projesi neden 140 bin görüntü kullanmış?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "140 bin görüntü kullanmasının sebebi modelin güvenilirliğini büyük ölçekte test etmek. Küçük veri setlerinde model iyi çalışıyor gibi görünebilir ama gerçek dünyada binlerce farklı yüz, açı, ışık koşulu var. Bu kadar büyük bir veri setiyle test edince CPU'da görüntü başına 11 milisaniye gibi bir hız elde etmesi gerçekten etkileyici. MediaPipe kullanması da akıllıca çünkü hafif ve hızlı bir framework.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Büyük veri seti ile güvenilirlik testi, MediaPipe performansı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "veri bilimi ve yapay zeka arasındaki fark ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Veri bilimi ve yapay zeka birbiriyle ilişkili ama farklı alanlar. Veri bilimi, veriden anlam çıkarmaya odaklanır — istatistik, veri analizi, görselleştirme, iş zekası. Bir veri bilimci 'geçen yılın satış verilerini analiz et ve gelecek çeyrek için tahmin yap' der. Yapay zeka ise makinelerin insan gibi düşünme ve karar verme yeteneğini geliştirmeye odaklanır — görüntü tanıma, doğal dil işleme, otonom sistemler. ML, yapay zekanın bir alt dalı. Pratikte çok örtüşüyor — bir veri bilimci ML modelleri kullanır, bir AI mühendisi veri analizi yapar. Görkem'in projeleri daha çok AI tarafına ağırlıklı ama veri bilimi becerileri de var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Veri bilimi vs yapay zeka, farklar, örtüşme, pratik karşılaştırma.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "API nedir ve neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "API (Application Programming Interface), iki yazılımın birbiriyle konuşmasını sağlayan arayüz. Bir restoran menüsü gibi düşün: sen müşteri olarak menüden seçim yaparsın, garson (API) siparişini mutfağa (sunucu) iletir ve yemeği (veri) sana getirir. Mutfakta ne olduğunu bilmene gerek yok. Web'de en yaygın olan REST API — HTTP istekleriyle (GET, POST, PUT, DELETE) çalışır. Görkem'in scraping projelerinde ve hackathon projelerinde API'ler çok kullanılıyor. Mesela find-the-best projesi 21 farklı pazaryerinin API'sine bağlanıyor. Bir yazılımcı olarak API okumayı ve kullanmayı öğrenmek şart.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "API açıklaması, REST, HTTP, kullanım örnekleri.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Yeditepe Üniversitesi nasıl bir yer?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yeditepe İstanbul'un Anadolu yakasında, Ataşehir-Kayışdağı bölgesinde. Kampüsü büyük ve yeşil. Bilgisayar mühendisliği bölümü kaliteli bir eğitim veriyor, İngilizce eğitim yapılıyor ki bu çok önemli. Vakıf üniversitesi olduğu için burs imkanları da var. İstanbul'da olmanın avantajı staj ve iş fırsatlarına yakın olmak — Maslak'ta, Levent'te tonla teknoloji şirketi var. Görkem orada okuyor ve gördüğün gibi üniversite dışında da çok aktif — kendi projeleri, hackathon'lar, startup. Üniversite sana çerçeveyi verir ama içeriği sen doldurursun.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yeditepe tanıtım, konum, eğitim dili, burs, İstanbul avantajı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CI/CD nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CI/CD, Continuous Integration ve Continuous Deployment'ın kısaltması. CI, kodunu her push ettiğinde otomatik olarak testlerin çalışması ve build alınması demek. CD ise testler geçtikten sonra otomatik olarak canlıya deploy edilmesi. Yani sen kodu push'la, gerisi otomatik. GitHub Actions, Jenkins, GitLab CI popüler araçlar. Neden önemli? Manuel deployment'ta hata yapma riski yüksek, CI/CD ile her şey otomatik ve tekrarlanabilir. Büyük şirketlerde günde yüzlerce deployment yapılıyor CI/CD sayesinde. Öğrenmek istiyorsan GitHub Actions ile başla, kendi projene basit bir CI pipeline kur.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CI/CD açıklaması, GitHub Actions, otomatik test ve deployment.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "YOLO custom detector projesinde hangi YOLO versiyonu kullanılıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem bu projede YOLO11 kullanmış, yani en güncel versiyonlardan biri. Projenin güzel tarafı şu: sadece modeli çalıştırmıyor, baştan sona tüm süreci kapsıyor. Kendi veri setini topluyorsun, etiketliyorsun, modeli eğitiyorsun ve sonra gerçek dünyada test ediyorsun. Yani mesela 'kedileri tanısın' dersen kendi kedi fotoğraflarınla modeli eğitebilirsin. YOLO zaten hız konusunda çok iyi, gerçek zamanlı tespit yapabiliyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YOLO11 versiyonu, veri toplama to detection pipeline.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "REST API ile GraphQL arasındaki fark ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "REST API'de her kaynak için ayrı endpoint var — /users, /posts, /comments gibi. Her istekte sabit bir veri yapısı döner, fazla veya eksik veri alabilirsin. GraphQL'de tek bir endpoint var ve tam olarak istediğin veriyi sorarsın — ne fazla ne eksik. REST daha basit ve yaygın, GraphQL daha esnek ama öğrenme eğrisi var. Küçük projeler için REST yeterli, büyük ve karmaşık veri yapılarında GraphQL avantajlı. Facebook GraphQL'i icat etti çünkü mobil uygulamalarında veri transferini optimize etmek istedi. İkisini de bilmek iyi ama önce REST'i öğren.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "REST vs GraphQL karşılaştırması, endpoint, veri yapısı, kullanım alanları.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yurt dışında master yapmak istiyorum ne yapmalıyım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yurt dışı master için hazırlık erken başlamalı. Şunlar gerekiyor: GPA — 3.0+ olması lazım çoğu okul için. İngilizce sınavı — TOEFL veya IELTS, üniversiteye göre değişir. GRE — bazı okullar kaldırdı ama hala isteyen var. Referans mektupları — en az 2-3 hocanızdan. Statement of Purpose — neden bu program, neden bu üniversite, gelecek planların. Portfolyo — projeler, yayınlar, araştırma deneyimi. Finansman önemli: burs seçenekleri var — Fulbright, TÜBİTAK, üniversite bursları. Avrupa'da birçok master programı ücretsiz (Almanya, Norveç). Başvuru sürecini 1 yıl önceden başlat. Deadlines kasım-ocak arası genelde.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yurt dışı master hazırlığı, GPA, TOEFL, GRE, SOP, burs, zaman çizelgesi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "burnout yaşıyorum ne yapmalıyım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Burnout yazılım dünyasında çok yaygın ve ciddi bir durum. Öncelikle kendini suçlama — bu zayıflık değil. Birkaç adım: birincisi, bir süre tamamen mola ver. Ekranlardan uzaklaş, doğaya çık, hobilerle ilgilen. İkincisi, çalışma saatlerini sınırla — haftada 40 saatten fazla çalışmak uzun vadede verimsizlik. Üçüncüsü, hayır demeyi öğren — her projeyi, her görevi almak zorunda değilsin. Dördüncüsü, rutinler oluştur — düzenli uyku, egzersiz, sosyal aktiviteler. Beşincisi, gerekirse profesyonel destek al. Yazılım maratondur, sprint değil. Kendine iyi bakmazsan koşamazsın.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Burnout çözümleri, mola, sınır koyma, rutin, profesyonel destek.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yapay zeka etiği neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yapay zeka etiği çok kritik çünkü AI artık hayatımızın her alanında. Birkaç temel endişe: Bias (önyargı) — eğitim verisi önyargılıysa model de önyargılı olur. Mesela yüz tanıma sistemleri bazı etnik gruplarda daha kötü çalışabiliyor. Gizlilik — AI kişisel verileri işliyor, bunun sınırları ne? Şeffaflık — bir AI sistemi neden o kararı verdi, açıklayabiliyor mu? İstihdam — AI iş kayıplarına yol açıyorsa sosyal sorumluluk kimin? Deepfake — sahte içerik üretimi, bilgi kirliliği. Bu konuları düşünmeden AI geliştirmek tehlikeli. Sorumlu AI geliştirme (Responsible AI) artık bir zorunluluk.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI etiği, bias, gizlilik, şeffaflık, deepfake, sorumlu AI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "sana bir soru sorabilir miyim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tabii ki! Bunun için buradayım zaten. Görkem'in projeleri hakkında, yazılım öğrenme yol haritası, YKS stratejileri, kariyer tavsiyeleri, teknik konular — her şey olabilir. Sor bakalım!",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Basit soru daveti, samimi yanıt.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "görüşürüz",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görüşürüz! İstediğin zaman tekrar gel, her türlü sorunla yardımcı olurum. Kendine iyi bak!",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Veda yanıtı, samimi kapanış.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "remote çalışmak için ne yapmam lazım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Remote çalışmak istiyorsan önce İngilizce'ni güçlendir çünkü uluslararası şirketlerin çoğu İngilizce iletişim kuruyor. LinkedIn profilini İngilizce yaz ve 'Open to Work' seçeneğini aç, remote filtresi koy. Remote iş platformlarını takip et: We Work Remotely, Remote.co, AngelList, LinkedIn Remote Jobs. GitHub'ın güçlü olsun, açık kaynak projelere katkıda bulun. Timezone farkını göz önünde bulundur — Avrupa şirketleri Türkiye ile uyumlu saatlerde çalışıyor. Portfolio'n ve önceki işlerin önemli, referanslar da çok işe yarıyor. Bir de asenkron iletişim becerini geliştir — remote çalışmada yazılı iletişim çok kritik.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Remote çalışma gereksinimleri, platformlar, İngilizce, timezone.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "tercih yaparken nelere dikkat etmeliyim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tercih yaparken şu faktörleri değerlendir: birincisi, o bölümü gerçekten isteyip istemediğin — 4 yıl boyunca sevmediğin bir şeyi okumak çok zor. İkincisi, şehir — İstanbul, Ankara, İzmir gibi büyük şehirler staj ve iş imkanı açısından avantajlı. Üçüncüsü, üniversitenin o bölümdeki kadrosu ve altyapısı — bazı üniversiteler belirli bölümlerde çok güçlü. Dördüncüsü, burs imkanları — vakıf üniversitelerinde burslu okumak devlette okumaktan bile ucuz olabilir. Beşincisi, mezun iş bulma oranları — üniversitenin kariyer merkezinden bu bilgiyi alabilirsin. Ve son olarak, puanına göre gerçekçi tercihler yap ama hayallerini de listeye koy.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Tercih stratejisi, şehir, kadro, burs, iş imkanı faktörleri.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "her gün kod yazmak gerekli mi?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Popüler bir söylem var: 'her gün kod yaz, 100 Days of Code yap.' Ama gerçek şu: kalite > sıklık. Her gün 10 dakika anlamsız kod yazmaktansa, haftada 3 gün 2 saat odaklanarak proje yapmak çok daha verimli. Tabii ki düzenlilik önemli ama obsesif olmaya gerek yok. Bazı günler öğren, oku, araştır — bu da gelişim. Bazı günler dinlen — beyin dinlendiğinde daha iyi çalışır. Görkem de muhtemelen her gün kod yazmıyor ama projelerine bakınca sürekli bir üretkenlik var. Önemli olan sürdürülebilir bir tempo bulmak.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Her gün kodlama miti, kalite vs sıklık, sürdürülebilirlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Git ve GitHub arasındaki fark ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Git bir versiyon kontrol sistemi — kodundaki değişiklikleri takip eder, geri alabilirsin, dallanma (branch) yapabilirsin. Bilgisayarında lokal çalışır. GitHub ise Git'in bulut versiyonu — kodunu internette saklarsın, başkalarıyla paylaşırsın, birlikte çalışabilirsin. Git olmadan GitHub kullanabilirsin ama anlamı olmaz. Temel komutlar: git init, git add, git commit, git push, git pull, git branch, git merge. Her gün bu komutları kullanacaksın. Görkem'in 30'dan fazla reposu var GitHub'da — her projesi orada. Bir yazılımcı için Git bilmemek, bir şoförün araba kullanmayı bilmemesi gibi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Git vs GitHub farkı, temel komutlar, önem.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "writing analyzer tam olarak hangi parametreleri analiz ediyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Writing Analyzer, akademik ve resmi metinleri çeşitli NLP parametreleriyle analiz eden bir model. Muhtemelen cümle uzunluğu, kelime çeşitliliği, okunabilirlik indeksi, pasif/aktif cümle oranı, bağlaç kullanımı gibi metrikleri ölçüyor. Hem İngilizce hem Türkçe çalışıyor ki bu önemli çünkü Türkçe'nin yapısı İngilizce'den çok farklı — eklemeli bir dil olması analizi zorlaştırıyor. Görkem bu projeyle NLP'nin sadece chatbot'lardan ibaret olmadığını, metin kalitesi ölçümü gibi pratik alanlarda da kullanılabileceğini göstermiş.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Metin analiz parametreleri, TR-EN farkı, NLP uygulama alanları.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "open source projelere nasıl katkıda bulunabilirim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Open source'a katkıda bulunmak hem öğrenmek hem de görünürlük kazanmak için harika. Başlamak için: GitHub'da 'good first issue' veya 'beginner friendly' etiketli issue'ları ara. Bir projeyi fork'la, bir issue seç, çöz ve pull request aç. İlk katkın küçük olabilir — bir typo düzeltmek, dokümantasyon eklemek bile sayılır. Büyük projelerden korkma ama gerçekçi ol — Linux kernel'a ilk gün katkı yapmayı bekleme. Daha küçük, aktif projelerde başla. Görkem'in projeleri de açık kaynak mesela — gorkemergune hesabından fork'layıp katkıda bulunabilirsin. Open source katkıları CV'de çok değerli görülüyor, özellikle büyük şirketler buna bakıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Open source katkı, good first issue, pull request, görünürlük.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımda kadınlar neden az?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tarihsel ve kültürel birçok faktör var. Eskiden bilgisayar bilimi aslında kadın ağırlıklıydı — Ada Lovelace, Grace Hopper gibi öncüler. Ama 1980'lerden itibaren kişisel bilgisayarların 'erkek oyuncağı' olarak pazarlanmasıyla denge bozuldu. Toplumsal baskılar, rol modellerin azlığı, iş yerindeki kültür sorunları hep etken. Ama durum değişiyor — Women Who Code, Django Girls, She Codes gibi topluluklar büyüyor. Teknoloji şirketleri çeşitlilik programları yürütüyor. Eğer bu alandaysan veya girmek istiyorsan, bilmelisin ki teknoloji herkes için ve çeşitli takımlar daha iyi ürünler üretiyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yazılımda cinsiyet dengesizliği, tarihsel arka plan, değişim, topluluklar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem hangi IDE kullanıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kesin olarak bilemem ama projelerine bakınca Python projeleri için büyük ihtimalle VS Code veya PyCharm kullanıyor. Jupyter Notebook'ları çok — DeepLearningBootcamp, email-phishing-detection, miniature-transformers hep notebook formatında. C projeleri için VS Code veya CLion kullanıyor olabilir. TypeScript/React projeleri için VS Code en yaygın seçenek. Aslında hangi IDE kullandığın o kadar önemli değil — önemli olan aracını iyi tanıman. VS Code ile başlamak en mantıklısı çünkü neredeyse her dil için eklentisi var ve ücretsiz.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "IDE tahmini, VS Code, PyCharm, Jupyter, IDE seçimi tavsiyeleri.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "teşekkür ederim çok yardımcı oldun",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Rica ederim, ne demek! Başka bir sorun olduğunda her zaman buradayım. Bol bol proje yap, öğrenmeye devam et. Başarılar!",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Teşekkür yanıtı, motive edici kapanış.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "dershaneye gitmeden YKS'ye hazırlanabilir miyim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kesinlikle hazırlanabilirsin. İnternette o kadar kaliteli ücretsiz kaynak var ki dershane artık eskisi kadar zorunlu değil. YouTube'da Matematik Olimpiyatlarından YKS'ye kadar her seviyede konu anlatımı var. Tonguç Akademi, Hocalara Geldik gibi kanallar çok faydalı. Ama şunu bil: dershanenin asıl avantajı disiplin sağlaması ve düzenli deneme sınavları. Evde hazırlanacaksan kendi programını yapmalı ve buna sadık kalmalısın. Her hafta deneme çöz, puanlarını takip et. Bir de çalışma arkadaşı bul — birlikte çalışmak motivasyonu artırır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Dershanesiz hazırlık, online kaynaklar, disiplin, deneme takibi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "YKS'ye son 3 ayda nasıl hazırlanmalıyım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Son 3 ay deneme dönemi. Artık yeni konu çalışma, bildiklerini pekiştir. Haftada en az 3 deneme çöz — 1 TYT, 1 AYT, 1 de karma olabilir. Her denemeden sonra mutlaka analiz yap: hangi konularda yanlış yapıyorsun, zaman yönetimin nasıl, hangi soruları boş bırakıyorsun. Yanlışlarını bir deftere yaz ve haftalık tekrar et. Sınav günü stratejini şimdiden belirle — önce hangi bölüme bakacaksın, zor soruda ne kadar duracaksın. Son 1 hafta ise hiç deneme çözme, sadece hafif tekrar yap ve dinlen. Sınava zinde girmek çok önemli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Son 3 ay stratejisi, deneme çözme, analiz, sınav günü planı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Docker nedir ve neden kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Docker, uygulamalarını container'lar içinde çalıştırmanı sağlayan bir platform. Container, uygulamanın çalışması için gereken her şeyi — kod, bağımlılıklar, ayarlar — tek bir pakette topluyor. Şöyle düşün: 'bende çalışıyor ama sende çalışmıyor' problemini ortadan kaldırıyor çünkü herkes aynı container'ı çalıştırıyor. Dockerfile yazarsın, image oluşturursun, container çalıştırırsın. Özellikle deployment ve CI/CD süreçlerinde çok kullanılıyor. Kubernetes ile birlikte büyük ölçekli sistemlerde container yönetimi yapılıyor. Şirketlerde çalışacaksan Docker bilmek neredeyse zorunlu.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Docker açıklaması, container, Dockerfile, deployment, neden önemli.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "YKS'de Türkçe netlerimi nasıl artırabilirim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Türkçe'de net artırmak için önce paragraf sorularına odaklan çünkü sınavda en çok oradan soru geliyor. Her gün en az 2 paragraf çöz ve yanlış yaptıklarını analiz et — neden yanlış yaptığını anlamak, doğru cevabı bilmekten daha önemli. Dil bilgisi konularında özellikle cümle türleri, fiil çatıları ve anlatım bozukluklarını çok iyi öğren. Bunlar neredeyse her sınavda çıkıyor. Bir de düzenli kitap oku — roman, deneme, makale fark etmez. Okuma hızın ve anlama kapasiten artar. TYT Türkçe'de 40 soru var ve bunların çoğu anlama becerisi gerektiriyor, ezbere dayalı değil.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Türkçe net artırma stratejisi, paragraf, dil bilgisi, okuma alışkanlığı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "fine-tuning ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Fine-tuning, önceden eğitilmiş bir modeli kendi özel veri setinle yeniden eğitmek demek. Şöyle düşün: GPT veya BERT gibi modeller milyarlarca kelimeyle genel bilgi öğrenmiş. Ama sen mesela hukuk metinlerini anlayan bir model istiyorsan, bu genel modeli hukuk verileriyle fine-tune edersin. Model zaten dil bilgisini öğrenmiş, sen sadece alan bilgisini ekliyorsun. Bu, sıfırdan eğitmekten çok daha hızlı ve ucuz. Görkem'in turkish-english-nmt projesi tam bir fine-tuning örneği — MarianMT'yi Türkçe-İngilizce çeviri için fine-tune etmiş. Biz de şu an ayarlicazhocam için fine-tuning verisi hazırlıyoruz.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Fine-tuning açıklaması, pre-trained model, alan özelleştirme, örnek.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "üniversitede staj ne zaman yapılmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İdeal olarak 2. sınıfın yazında ilk stajını yap. Çoğu üniversite 3. sınıftan sonra zorunlu staj istiyor ama erken başlamak çok avantajlı. İlk stajın küçük bir startup'ta veya yazılım şirketinde olabilir — büyük şirketler genelde 3. ve 4. sınıf öğrencilerini tercih ediyor. Staja başvurmadan önce en az bir proje yapmış ol ve GitHub'ına koy. Stajda öğrenmeye odaklan, maaş ikinci planda olsun ilk stajda. İkinci stajını daha büyük bir şirkette yapmayı hedefle. Staj deneyimi olan mezunlar, deneyimsiz mezunlara göre çok daha kolay iş buluyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Staj zamanlaması, ilk staj, büyük şirket vs startup, hazırlık.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "üniversitede not ortalaması ne kadar önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Şöyle söyleyeyim: hiçbir şirket senden transkript istemiyor. 2.5 ile 3.5 arasında mezun olan iki kişiden projesi ve deneyimi olan her zaman tercih ediliyor. Ama bu demek değil ki dersleri boşla — bazı dersler (algoritmalar, veri yapıları, işletim sistemleri) gerçekten çok önemli ve iyi öğrenmen lazım. Ayrıca burs alıyorsan not ortalaması şartı olabilir. Yüksek lisans veya yurt dışı istiyorsan GPA önem kazanır. Ama genel olarak: iyi bir not ortalaması + projeler > mükemmel not ortalaması + sıfır proje. Görkem'in başarısına bak — projeler ve gerçek dünya deneyimi konuşuyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Not ortalaması önemi, projeler vs notlar, burs, yüksek lisans durumu.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "banking management system projesi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in Python ile yazdığı bir banka yönetim sistemi. Muhtemelen hesap oluşturma, para yatırma/çekme, transfer, bakiye sorgulama gibi temel bankacılık işlemlerini simüle ediyor. Bu tarz projeler yazılıma yeni başlayanlar için çok iyi çünkü OOP (nesne yönelimli programlama) pratiği yapıyorsun, veri yapılarını öğreniyorsun, dosya işlemleri yapıyorsun. Her yazılımcının portföyünde bu tarz bir proje olmalı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Banka yönetim sistemi, OOP pratiği, başlangıç seviye proje.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "üniversitede ilk yıl ne yapmalıyım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İlk yıl çok kritik çünkü hem alışma dönemi hem de temel atma dönemi. Birkaç önerim var: birincisi, dersleri ciddiye al, özellikle matematik ve programlama derslerini. Bu temeller üzerine her şey inşa ediliyor. İkincisi, kulüplere katıl — yazılım kulübü, yapay zeka kulübü varsa mutlaka git. Üçüncüsü, bir yan proje başlat — basit bir web sitesi, bir mobil uygulama, bir bot, ne olursa olsun. Dördüncüsü, GitHub hesabını aç ve her projeyi oraya koy. Beşincisi, networking yap — hocalarınla, asistanlarla, üst sınıflarla tanış. Görkem de Yeditepe'de okurken sadece derslere bağımlı kalmamış, kendi projelerini yapmış. İlk yıldan itibaren bu alışkanlıkları edinmek seni çok öne taşır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Üniversite ilk yıl tavsiyeleri, dersler, kulüpler, projeler, networking.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "bilgisayar mühendisliği ile yazılım mühendisliği farkı ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bilgisayar mühendisliği daha geniş kapsamlı — hem donanım hem yazılım kapsıyor. İşletim sistemleri, bilgisayar mimarisi, gömülü sistemler, sayısal tasarım gibi donanım dersleri de alırsın. Yazılım mühendisliği ise sadece yazılım tarafına odaklanır — yazılım tasarımı, test, proje yönetimi, yazılım kalitesi. İş piyasasında ikisi de aynı işlere başvurabiliyor, pek fark yok. Türkiye'de yazılım mühendisliği bölümü daha az yaygın, bilgisayar mühendisliği daha tercih ediliyor. Görkem bilgisayar mühendisliği okuyor ve hem yazılım (AI projeleri, web/mobil) hem de donanım yakını işler (gorkem-os) yapıyor. Hangisini seçersen seç, önemli olan ne öğrendiğin ve ne ürettiğin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CE vs SE farkı, müfredat, iş piyasası, Türkiye durumu.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "agile ve scrum nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Agile bir yazılım geliştirme felsefesi, Scrum ise Agile'ın en popüler framework'ü. Eski yöntem (Waterfall) şuydu: önce tüm gereksinimleri topla, sonra tasarla, sonra kodla, sonra test et. Ama müşteriler ne istediklerini başta bilmiyor ve gereksinimler değişiyor. Agile diyor ki: küçük parçalara böl, her 2 haftada (sprint) çalışan bir şey teslim et, geri bildirim al, adapte ol. Scrum'da daily standup (günlük toplantı), sprint planning, sprint review, retrospective gibi seremoniler var. Product Owner, Scrum Master, Development Team rolleri var. Şirketlerde çalışacaksan Agile/Scrum bilmek gerekli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Agile felsefesi, Scrum framework'ü, sprint, roller, Waterfall karşılaştırması.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Kaggle'da yarışmalara katılmak faydalı mı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Çok faydalı. Kaggle yarışmaları sana gerçek dünya problemleri veriyor ve dünya çapında diğer geliştiricilerle rekabet ediyorsun. Öğrenme açısından harika çünkü yarışma bittikten sonra kazananların çözümlerini inceleyebiliyorsun — bu tek başına çok öğretici. CV'nde de iyi durur. Başlangıç için Getting Started yarışmalarıyla başla — Titanic survival prediction klasik bir başlangıç. Sonra playground yarışmalara geç. Leaderboard'da iyi sıralama almak büyük prestij ama ana amaç öğrenmek olsun. Kaggle kernels/notebooks da çok değerli, başkalarının kodlarını okumak öğrenmek için altın.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kaggle faydaları, yarışma seviyeleri, öğrenme stratejisi, CV'ye etkisi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "microservices ile monolith arasındaki fark ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Monolith mimaride tüm uygulama tek bir kod tabanında, tek bir birim olarak çalışır. Geliştirmesi basit, deploy etmesi kolay ama büyüdükçe karmaşıklaşır. Microservices'te her özellik ayrı bir servis olarak çalışır — kullanıcı servisi, ödeme servisi, bildirim servisi gibi. Her biri bağımsız deploy edilebilir, farklı dillerde yazılabilir. Ama karmaşıklığı var: servisler arası iletişim, veri tutarlılığı, monitoring. Başlangıç için monolith yap, büyüdükçe microservices'e geç. Netflix, Uber gibi büyük şirketler microservices kullanıyor çünkü ekipleri bağımsız çalışabiliyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Monolith vs microservices, avantajlar, dezavantajlar, ne zaman hangisi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "bilgisayar mühendisliğinde hangi dersler zor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Genellikle herkesin zorlandığı dersler: Veri Yapıları ve Algoritmalar — düşünme şeklini değiştirmen gerekiyor, soyut düşünme becerisi lazım. İşletim Sistemleri — düşük seviye konseptler, process yönetimi, bellek yönetimi. Bilgisayar Mimarisi — donanım tarafı, assembly dili. Diferansiyel Denklemler ve Lineer Cebir — matematik tarafı güçlü olmazsa zorlanırsın. Veritabanı Sistemleri — ilk başta kolay gibi görünür ama normalizasyon ve optimizasyon konuları derinleşir. Ama 'zor' demek 'yapılamaz' demek değil. Düzenli çalışırsan ve hocadan yardım alırsan her dersi geçersin. Görkem'in c-foundations reposu mesela CSE 114 dersinin notlarını ve lab çözümlerini içeriyor, bu tarz kaynaklar çok işe yarar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Zor dersler listesi, veri yapıları, OS, bilgisayar mimarisi, matematik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "junior developer olarak ilk işimi nasıl bulabilirim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İlk işi bulmak en zoru ama imkansız değil. Şunları yap: GitHub'ını doldur, en az 3-5 tane kaliteli proje olsun. Bir kişisel web siten olsun — basit de olsa. LinkedIn'de aktif ol, teknik içerikler paylaş. Meetup'lara ve tech etkinliklerine katıl. Başvurularında sadece büyük şirketlere değil, startup'lara da bak — startup'larda daha çok şey öğrenirsin. CV'nde projelerini ve teknik becerilerini öne çıkar, okul notlarını kimse pek önemsemiyor. Mülakata hazırlan — LeetCode'dan kolay ve orta seviye sorular çöz. Behavioral sorulara da hazırlıklı ol. Ve en önemlisi: reddedilmekten korkma, herkes ilk başta çok red alır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "İlk iş bulma stratejisi, GitHub, LinkedIn, startup, mülakat hazırlığı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "prompt engineering nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Prompt engineering, yapay zeka modelinden en iyi sonucu almak için istekleri (prompt'ları) doğru şekilde formüle etme sanatı. Aynı soruyu farklı şekillerde sorduğunda çok farklı kalitede yanıtlar alabilirsin. Temel teknikler: few-shot prompting (örnek vererek sormak), chain-of-thought (adım adım düşünmesini istemek), role-playing (modele bir rol vermek), system prompts (genel davranış kuralları belirlemek). 'Bana Python kodu yaz' demek yerine 'Sen deneyimli bir Python geliştiricisisin. Şu problemi çözen, hata kontrolü olan, yorumlu bir kod yaz' demek çok daha iyi sonuç verir. Bu alan şu an çok değerli — şirketler prompt engineer arıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Prompt engineering, few-shot, chain-of-thought, teknikler, kariyer.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yapay zeka iş piyasasını nasıl etkiliyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI iş piyasasını iki şekilde etkiliyor: bazı işleri otomatikleştiriyor, bazı yeni iş alanları yaratıyor. Tekrarlayan, rutin işler — veri girişi, basit müşteri hizmetleri, temel çeviri — AI tarafından yapılıyor artık. Ama AI geliştirici, ML mühendisi, prompt engineer, AI etik uzmanı gibi yepyeni pozisyonlar ortaya çıktı. Benim önerim: AI'nın yerini alamayacağı becerileri geliştir — yaratıcılık, eleştirel düşünme, liderlik, empati. Ve AI araçlarını kullanmayı öğren — AI ile çalışmayı bilen çalışanlar, bilmeyenlere göre çok daha değerli. AI'dan korkmak yerine onu araç olarak kullan.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI ve iş piyasası, otomasyon, yeni pozisyonlar, tavsiyeler.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "siber güvenlik alanına nasıl giriş yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Siber güvenlik çok geniş bir alan. Giriş yapmak için: önce temel ağ bilgisi öğren — TCP/IP, DNS, HTTP, firewall. Linux öğren — çoğu güvenlik aracı Linux'ta çalışıyor. Python scripting bilmek çok faydalı. TryHackMe ve HackTheBox gibi platformlarda pratik yap — bunlar oyunlaştırılmış güvenlik eğitim platformları. Capture The Flag (CTF) yarışmalarına katıl. Sertifikalar önemli — CompTIA Security+, CEH, OSCP gibi. Görkem'in email-phishing-detection projesi siber güvenlik ve NLP'nin kesişiminde güzel bir örnek. Türkiye'de siber güvenlik uzmanı çok aranan bir profil.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Siber güvenlik giriş, ağ bilgisi, Linux, TryHackMe, CTF, sertifikalar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "clean code nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Clean code, okunabilir, anlaşılır ve bakımı kolay kod demek. Robert C. Martin'in aynı isimli kitabı bu konunun kutsal kitabı sayılır. Temel prensipler: anlamlı değişken ve fonksiyon isimleri kullan (x yerine userAge), fonksiyonlar tek bir iş yapsın (Single Responsibility), tekrar eden kodu ortadan kaldır (DRY — Don't Repeat Yourself), yorum yazmaya gerek olmayacak kadar anlaşılır kod yaz, fonksiyonlar kısa olsun (20-30 satırdan fazla olmamalı). Code review yaptırarak da kod kaliteni artırabilirsin. Hızlı ve çalışan kod yazmak önemli ama okunabilir ve sürdürülebilir kod yazmak daha önemli — çünkü kodu yazarken 1 kez yazarsın ama 100 kez okursun.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Clean code prensipleri, isimlendirme, SRP, DRY, okunabilirlik, Martin.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "BLEU skoru ne anlama geliyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "BLEU (Bilingual Evaluation Understudy) makine çevirisinin kalitesini ölçen bir metrik. 0 ile 1 arasında değer alır, 1 mükemmel çeviri demek. İnsan çevirisiyle makine çevirisini karşılaştırarak n-gram örtüşmesine bakıyor. 40+ BLEU genelde iyi kabul edilir. Görkem'in turkish-english-nmt projesi 43 BLEU almış ki bu fine-tuned bir model için güzel bir sonuç. Ama BLEU mükemmel bir metrik değil — anlam yerine kelime eşleşmesine bakıyor. Bu yüzden ROUGE, METEOR, BERTScore gibi alternatif metrikler de kullanılıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "BLEU skoru açıklaması, 0-1 aralığı, n-gram, alternatif metrikler.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "YKS'de zaman yönetimi nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TYT'de 120 soru için 135 dakikan var, yani soru başına yaklaşık 1 dakika 7 saniye. AYT'de 80 soru için 180 dakika, soru başına 2 dakika 15 saniye. Stratejin şöyle olsun: önce kolay soruları çöz, zor soruları işaretle ve geç. Bir soruda 2 dakikadan fazla takılıyorsan bırak, dönüp bakarsın. TYT'de Türkçe genelde hızlı çözülür, matematikte zaman sıkışır. Denemelerde mutlaka kronometre kullan ve gerçek sınav koşullarını simüle et. Evde rahat ortamda çözmek ile gerçek sınavda çözmek çok farklı şeyler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YKS zaman yönetimi, TYT/AYT soru başı süre, strateji.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "web scraping yasal mı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bu gri bir alan. Genel olarak: kamuya açık verileri scrape etmek çoğu ülkede yasal. Ama sitenin robots.txt dosyasına ve kullanım şartlarına uymalısın. Kişisel verileri scrape etmek KVKK (Türkiye) ve GDPR (Avrupa) kapsamında sorunlu. Rate limiting uygula — sunucuyu aşırı yükleme. Login gerektiren verileri scrape etmek genelde kullanım şartlarına aykırı. Araştırma amaçlı scraping daha kabul görüyor. Görkem'in wiki2bpe projesi Wikipedia'dan scraping yapıyor ki Wikipedia'nın API'si ve lisansı buna izin veriyor. Bizim scraping scriptlerimiz de Stack Overflow, Dev.to gibi sitelerin API'lerini kullanıyor. API kullanmak her zaman direkt scraping'den daha güvenli ve yasal.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Web scraping yasallığı, robots.txt, KVKK, GDPR, API kullanımı, etik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "RAG nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "RAG, Retrieval-Augmented Generation'ın kısaltması. Yapay zeka modelini bir bilgi tabanıyla birleştiren bir mimari. Normal bir LLM sadece eğitim verisindeki bilgiyi kullanır ve halüsinasyon yapabilir. RAG'da ise model önce ilgili belgeleri bir veri tabanından çeker (retrieval), sonra bu belgeleri bağlam olarak kullanarak yanıt üretir (generation). Mesela bir şirketin iç dokümantasyonunu RAG ile modele bağlarsan, model o şirkete özel sorulara doğru yanıt verebilir. Vector database (Pinecone, Weaviate, ChromaDB) ile embedding'ler kullanılarak benzer dokümanlar bulunur. Şu an enterprise AI çözümlerinin çoğu RAG tabanlı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "RAG açıklaması, retrieval + generation, vector database, enterprise kullanım.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "GAN nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GAN, Generative Adversarial Network — Üretici Çekişmeli Ağ. İki sinir ağından oluşur: Generator (üretici) ve Discriminator (ayırt edici). Generator sahte görüntüler üretir, Discriminator gerçek mi sahte mi ayırt etmeye çalışır. İkisi birbirini sürekli geliştirerek, sonunda Generator çok gerçekçi görüntüler üretmeyi öğrenir. Deepfake teknolojisi GAN tabanlı. Sanat üretimi, stil transferi, görüntü iyileştirme gibi alanlarda kullanılıyor. Ama etik sorunları da var — sahte içerik üretimi, manipülasyon. GAN'lar artık diffusion modelleriyle (Stable Diffusion, DALL-E) rekabet ediyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GAN açıklaması, generator-discriminator, deepfake, etik sorunlar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Kubernetes nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kubernetes (kısaca K8s), container'ları yöneten bir orkestrasyon platformu. Docker container'lar oluşturur, Kubernetes bu container'ları büyük ölçekte yönetir — otomatik ölçekleme, yük dengeleme, kendini iyileştirme, rolling update yapıyor. Bir container çökerse otomatik yenisini başlatır. 100-1000 container'ı yönetmen gerektiğinde Docker tek başına yetmez, K8s devreye girer. Google tarafından geliştirildi, şimdi açık kaynak. Cloud native uygulamaların standart altyapısı haline geldi. AWS EKS, Google GKE, Azure AKS yönetilen K8s hizmetleri sunuyor. Karmaşık ama öğrenmeye değer.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kubernetes tanımı, container orkestrasyonu, ölçekleme, cloud native.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem'in projeleri arasında ortak bir tema var mı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kesinlikle var: problem çözme ve sıfırdan inşa etme. Görkem bir problemi alıp çözüm üreten biri. FaceLock güvenlik problemi, find-the-best fiyat karşılaştırma problemi, email-phishing-detection siber güvenlik problemi çözüyor. Bir de her şeyi sıfırdan yapmayı seviyor — from scratch OS, from scratch transformer, from scratch tokenizer. Bu yaklaşım öğrenme açısından çok değerli çünkü hazır kütüphaneler kullanmak yerine altındaki mantığı anlıyorsun. Üçüncü tema ise çeşitlilik — hem AI hem low-level hem mobil hem web tarafında aktif. Bu da full-stack bir mühendis profili çiziyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Projeler arası tema analizi, problem çözme, from scratch, çeşitlilik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yapay zeka öğrenmek için İngilizce bilmek şart mı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Maalesef evet, büyük ölçüde şart. Araştırma makaleleri İngilizce, dökümantasyonlar İngilizce, en iyi kurslar İngilizce, Stack Overflow İngilizce, Hugging Face İngilizce. Türkçe kaynaklar var ama sınırlı ve genelde güncel değil. Ama korkma — teknik İngilizce günlük İngilizce'den farklı ve öğrenmesi daha kolay. Terimler evrensel: model, training, dataset, loss, accuracy hep aynı. ArXiv makaleleri okumak başta zor gelir ama alışırsın. Görkem'in tüm projeleri İngilizce dokümante edilmiş — bu da onun global topluluğa hitap etmesini sağlıyor. İngilizce öğrenmeye yatırım yap, karşılığını fazlasıyla alırsın.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI için İngilizce gerekliliği, teknik İngilizce, kaynaklar, global topluluk.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "pynput macos macro projesi ne işe yarıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bu proje macOS için bir Python makrosu. Yapılandırılabilir tuş dizilerini döngüye sokabiliyor ve Karabiner-Elements aracılığıyla fare düğmesi toggle'ı destekliyor. Yani tekrarlayan tuş kombinasyonlarını otomatikleştirebiliyorsun. Mesela bir oyunda sürekli aynı tuşa basman gerekiyorsa veya iş akışında tekrarlayan işlemler varsa bunu kullanabilirsin. Küçük ama pratik bir otomasyon aracı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "macOS makro, pynput, Karabiner-Elements, otomasyon.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

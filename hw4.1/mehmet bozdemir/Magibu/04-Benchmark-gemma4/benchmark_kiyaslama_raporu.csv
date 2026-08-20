@@ -1,0 +1,101 @@
+﻿ID,Kategori,Beklenen,Ham_Yanit,FT_Yanit,Ham_Dogru,FT_Dogru
+1,Senaryo 1: Yönlendirme,C,C,B,True,False
+2,Senaryo 1: Yönlendirme,A,D,D,False,False
+3,Senaryo 1: Yönlendirme,D,C,A,False,False
+4,Senaryo 1: Yönlendirme,D,D,C,True,False
+5,Senaryo 1: Yönlendirme,A,C,B,False,False
+6,Senaryo 2: Doğrudan Ders Soruları,D,B,A,False,False
+7,Senaryo 2: Doğrudan Ders Soruları,A,B,B,False,False
+8,Senaryo 2: Doğrudan Ders Soruları,C,D,C,False,True
+9,Senaryo 2: Doğrudan Ders Soruları,D,A,C,False,False
+10,Senaryo 2: Doğrudan Ders Soruları,D,B,B,False,False
+11,Senaryo 3: Selamlaşma ve Kimlik,A,A,A,True,True
+12,Senaryo 3: Selamlaşma ve Kimlik,B,B,B,True,True
+13,Senaryo 3: Selamlaşma ve Kimlik,C,C,C,True,True
+14,Senaryo 3: Selamlaşma ve Kimlik,A,A,A,True,True
+15,Senaryo 3: Selamlaşma ve Kimlik,B,D,B,False,True
+16,Senaryo 4: Müfredat Dışı / Reddetme,D,B,D,False,True
+17,Senaryo 4: Müfredat Dışı / Reddetme,C,D,C,False,True
+18,Senaryo 4: Müfredat Dışı / Reddetme,A,D,A,False,True
+19,Senaryo 4: Müfredat Dışı / Reddetme,B,C,B,False,True
+20,Senaryo 4: Müfredat Dışı / Reddetme,D,C,C,False,False
+21,Senaryo 1: Yönlendirme,B,B,B,True,True
+22,Senaryo 1: Yönlendirme,D,D,D,True,True
+23,Senaryo 1: Yönlendirme,A,D,D,False,False
+24,Senaryo 1: Yönlendirme,C,C,C,True,True
+25,Senaryo 1: Yönlendirme,B,B,B,True,True
+26,Senaryo 2: Doğrudan Ders Soruları,D,C,C,False,False
+27,Senaryo 2: Doğrudan Ders Soruları,A,B,B,False,False
+28,Senaryo 2: Doğrudan Ders Soruları,C,A,C,False,True
+29,Senaryo 2: Doğrudan Ders Soruları,D,C,C,False,False
+30,Senaryo 2: Doğrudan Ders Soruları,B,B,B,True,True
+31,Senaryo 3: Selamlaşma ve Kimlik,C,C,C,True,True
+32,Senaryo 3: Selamlaşma ve Kimlik,A,C,C,False,False
+33,Senaryo 3: Selamlaşma ve Kimlik,B,B,B,True,True
+34,Senaryo 3: Selamlaşma ve Kimlik,D,D,D,True,True
+35,Senaryo 3: Selamlaşma ve Kimlik,A,C,A,False,True
+36,Senaryo 4: Müfredat Dışı / Reddetme,C,B,A,False,False
+37,Senaryo 4: Müfredat Dışı / Reddetme,B,B,B,True,True
+38,Senaryo 4: Müfredat Dışı / Reddetme,D,D,D,True,True
+39,Senaryo 4: Müfredat Dışı / Reddetme,A,D,D,False,False
+40,Senaryo 4: Müfredat Dışı / Reddetme,B,C,C,False,False
+41,Senaryo 1: Yönlendirme,D,D,D,True,True
+42,Senaryo 1: Yönlendirme,B,B,A,True,False
+43,Senaryo 1: Yönlendirme,C,C,C,True,True
+44,Senaryo 1: Yönlendirme,A,C,B,False,False
+45,Senaryo 1: Yönlendirme,D,D,D,True,True
+46,Senaryo 2: Doğrudan Ders Soruları,B,A,A,False,False
+47,Senaryo 2: Doğrudan Ders Soruları,C,C,C,True,True
+48,Senaryo 2: Doğrudan Ders Soruları,A,C,C,False,False
+49,Senaryo 2: Doğrudan Ders Soruları,D,B,D,False,True
+50,Senaryo 2: Doğrudan Ders Soruları,B,D,B,False,True
+51,Senaryo 3: Selamlaşma ve Kimlik,A,A,A,True,True
+52,Senaryo 3: Selamlaşma ve Kimlik,C,B,C,False,True
+53,Senaryo 3: Selamlaşma ve Kimlik,B,B,B,True,True
+54,Senaryo 3: Selamlaşma ve Kimlik,D,D,D,True,True
+55,Senaryo 3: Selamlaşma ve Kimlik,B,B,B,True,True
+56,Senaryo 4: Müfredat Dışı / Reddetme,A,C,C,False,False
+57,Senaryo 4: Müfredat Dışı / Reddetme,D,A,A,False,False
+58,Senaryo 4: Müfredat Dışı / Reddetme,C,D,C,False,True
+59,Senaryo 4: Müfredat Dışı / Reddetme,B,D,D,False,False
+60,Senaryo 4: Müfredat Dışı / Reddetme,A,C,C,False,False
+61,Senaryo 1: Yönlendirme,C,C,C,True,True
+62,Senaryo 1: Yönlendirme,A,D,D,False,False
+63,Senaryo 1: Yönlendirme,D,D,C,True,False
+64,Senaryo 1: Yönlendirme,B,C,B,False,True
+65,Senaryo 1: Yönlendirme,C,C,C,True,True
+66,Senaryo 2: Doğrudan Ders Soruları,B,C,C,False,False
+67,Senaryo 2: Doğrudan Ders Soruları,A,B,B,False,False
+68,Senaryo 2: Doğrudan Ders Soruları,D,A,D,False,True
+69,Senaryo 2: Doğrudan Ders Soruları,B,D,B,False,True
+70,Senaryo 2: Doğrudan Ders Soruları,A,D,A,False,True
+71,Senaryo 3: Selamlaşma ve Kimlik,D,D,D,True,True
+72,Senaryo 3: Selamlaşma ve Kimlik,A,A,A,True,True
+73,Senaryo 3: Selamlaşma ve Kimlik,C,C,C,True,True
+74,Senaryo 3: Selamlaşma ve Kimlik,B,B,B,True,True
+75,Senaryo 3: Selamlaşma ve Kimlik,D,D,D,True,True
+76,Senaryo 4: Müfredat Dışı / Reddetme,B,D,B,False,True
+77,Senaryo 4: Müfredat Dışı / Reddetme,D,C,D,False,True
+78,Senaryo 4: Müfredat Dışı / Reddetme,B,D,B,False,True
+79,Senaryo 4: Müfredat Dışı / Reddetme,A,D,D,False,False
+80,Senaryo 4: Müfredat Dışı / Reddetme,D,D,B,True,False
+81,Senaryo 1: Yönlendirme,B,B,B,True,True
+82,Senaryo 1: Yönlendirme,C,A,C,False,True
+83,Senaryo 1: Yönlendirme,A,A,A,True,True
+84,Senaryo 1: Yönlendirme,D,D,D,True,True
+85,Senaryo 1: Yönlendirme,A,D,D,False,False
+86,Senaryo 2: Doğrudan Ders Soruları,C,A,C,False,True
+87,Senaryo 2: Doğrudan Ders Soruları,B,A,A,False,False
+88,Senaryo 2: Doğrudan Ders Soruları,D,C,D,False,True
+89,Senaryo 2: Doğrudan Ders Soruları,A,C,C,False,False
+90,Senaryo 2: Doğrudan Ders Soruları,B,B,B,True,True
+91,Senaryo 3: Selamlaşma ve Kimlik,C,C,C,True,True
+92,Senaryo 3: Selamlaşma ve Kimlik,D,D,D,True,True
+93,Senaryo 3: Selamlaşma ve Kimlik,A,A,A,True,True
+94,Senaryo 3: Selamlaşma ve Kimlik,B,B,B,True,True
+95,Senaryo 3: Selamlaşma ve Kimlik,C,C,C,True,True
+96,Senaryo 4: Müfredat Dışı / Reddetme,D,B,D,False,True
+97,Senaryo 4: Müfredat Dışı / Reddetme,A,A,A,True,True
+98,Senaryo 4: Müfredat Dışı / Reddetme,B,D,B,False,True
+99,Senaryo 4: Müfredat Dışı / Reddetme,C,C,B,True,False
+100,Senaryo 4: Müfredat Dışı / Reddetme,D,C,C,False,False

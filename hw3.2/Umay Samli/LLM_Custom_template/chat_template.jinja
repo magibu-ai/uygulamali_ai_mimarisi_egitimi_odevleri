@@ -1,0 +1,37 @@
+{{- bos_token -}}
+{%- set state = namespace(previous_role=none) -%}
+{%- for message in messages -%}
+    {%- set role = message['role'] -%}
+
+    {#- Yalnızca desteklenen rollere izin ver. -#}
+    {%- if role not in ['system', 'user', 'assistant'] -%}
+        {{- raise_exception('Desteklenmeyen rol: ' + role) -}}
+    {%- endif -%}
+
+    {#- System mesajı varsa yalnızca ilk sırada bulunabilir. -#}
+    {%- if role == 'system' and not loop.first -%}
+        {{- raise_exception('System mesajı yalnızca konuşmanın başında olabilir.') -}}
+    {%- endif -%}
+
+    {#- System mesajından sonra user/assistant sırasını doğrula. -#}
+    {%- if role == 'user' and state.previous_role == 'user' -%}
+        {{- raise_exception('Arka arkaya iki user mesajı kullanılamaz.') -}}
+    {%- elif role == 'assistant' and state.previous_role != 'user' -%}
+        {{- raise_exception('Assistant mesajından önce bir user mesajı olmalıdır.') -}}
+    {%- endif -%}
+
+    {#- Bu basit şablonda mesaj içeriği metin olmalıdır. -#}
+    {%- if message['content'] is not string -%}
+        {{- raise_exception('Mesaj içeriği metin (string) olmalıdır.') -}}
+    {%- endif -%}
+
+    {{- '<|' + role + '|>\n' -}}
+    {{- message['content'] | trim -}}
+    {{- '\n' + eos_token + '\n' -}}
+    {%- set state.previous_role = role -%}
+{%- endfor -%}
+
+{#- Modelden yeni cevap isteniyorsa assistant turunu aç. -#}
+{%- if add_generation_prompt -%}
+    {{- '<|assistant|>\n' -}}
+{%- endif -%}

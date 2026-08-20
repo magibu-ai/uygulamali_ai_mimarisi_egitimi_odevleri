@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>e-hekim — Türkçe Tıbbi Anlamsal Arama ve RAG</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">✚</span>
+      <div>
+        <h1>e-hekim</h1>
+        <p class="tagline">Türkçe hastane makaleleri üzerinde anlamsal arama ve RAG</p>
+      </div>
+    </div>
+    <dl class="index-stats" id="index-stats">
+      <div><dt>Parça</dt><dd id="stat-chunks">—</dd></div>
+      <div><dt>Model</dt><dd id="stat-model">—</dd></div>
+      <div><dt>Boyut</dt><dd id="stat-dim">—</dd></div>
+    </dl>
+  </header>
+
+  <section class="panel" aria-labelledby="mode-legend">
+    <h2 id="mode-legend" class="sr-only">Çalışma modu</h2>
+    <div class="modes" role="radiogroup" aria-label="Çalışma modu">
+      <button type="button" class="mode is-active" id="mode-search" role="radio" aria-checked="true">
+        <span class="mode-title">Anlamsal Arama</span>
+        <span class="mode-sub">API anahtarı gerekmez</span>
+      </button>
+      <button type="button" class="mode" id="mode-rag" role="radio" aria-checked="false">
+        <span class="mode-title">RAG — Yanıt Üret</span>
+        <span class="mode-sub">Kendi API anahtarınız</span>
+      </button>
+    </div>
+
+    <form id="query-form" autocomplete="off">
+      <label class="field">
+        <span class="label">Soru</span>
+        <textarea id="query" name="query" rows="3" required
+          placeholder="Örn: Migren atağını tetikleyen faktörler nelerdir?"
+          maxlength="1000"></textarea>
+      </label>
+
+      <div class="controls">
+        <label class="field">
+          <span class="label">Benzerlik eşiği <output id="threshold-out" for="threshold">0.55</output></span>
+          <input type="range" id="threshold" name="threshold" min="0" max="1" step="0.01" value="0.55">
+          <span class="hint">Bu değerin altındaki sonuçlar elenir; RAG modunda model hiç çağrılmaz.</span>
+        </label>
+        <label class="field field-narrow">
+          <span class="label">Maksimum sonuç</span>
+          <input type="number" id="top-k" name="top_k" min="1" max="20" value="5">
+          <span class="hint">Vektör veritabanından dönecek en fazla parça sayısı.</span>
+        </label>
+      </div>
+
+      <fieldset class="rag-only" id="rag-settings" hidden>
+        <legend>Model ve kimlik bilgisi</legend>
+        <div class="controls">
+          <label class="field">
+            <span class="label">Sağlayıcı</span>
+            <select id="provider"></select>
+          </label>
+          <label class="field">
+            <span class="label">Model</span>
+            <select id="model"></select>
+          </label>
+        </div>
+        <label class="field">
+          <span class="label">API anahtarı <span class="hint-inline" id="key-hint"></span></span>
+          <input type="password" id="api-key" name="api-key" autocomplete="off"
+            autocapitalize="off" autocorrect="off" spellcheck="false"
+            placeholder="Anahtarınız yalnızca bu sekmenin belleğinde tutulur">
+          <span class="hint">
+            Anahtar diske, çereze veya tarayıcı deposuna <strong>yazılmaz</strong>; yalnızca
+            bu isteğin başlığında yerel sunucuya iletilir ve sunucuda saklanmaz.
+            Sayfayı yenilediğinizde silinir.
+            <a id="console-link" href="#" target="_blank" rel="noopener noreferrer">Anahtar oluştur ↗</a>
+          </span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="include-reasoning">
+          <span>Modelin düşünme (reasoning) çıktısını göster</span>
+        </label>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit" class="primary" id="submit-btn">Ara</button>
+        <button type="button" class="ghost" id="clear-btn">Temizle</button>
+        <span class="status" id="status" role="status" aria-live="polite"></span>
+      </div>
+    </form>
+  </section>
+
+  <section id="error" class="alert alert-error" hidden></section>
+
+  <section id="answer-card" class="panel answer" hidden>
+    <h2>Yanıt</h2>
+    <div id="answer-body" class="answer-body"></div>
+    <p id="refusal-note" class="refusal-note" hidden></p>
+    <details id="reasoning-wrap" hidden>
+      <summary>Düşünme çıktısı</summary>
+      <pre id="reasoning-body"></pre>
+    </details>
+    <p class="usage" id="usage"></p>
+  </section>
+
+  <section id="results-section" hidden>
+    <div class="results-head">
+      <h2 id="results-heading">Kaynak parçalar</h2>
+      <span class="results-meta" id="results-meta"></span>
+    </div>
+    <ol id="results" class="results"></ol>
+  </section>
+
+  <footer class="foot">
+    <p>
+      Bilgi amaçlıdır, tıbbi teşhis veya tedavi önerisi değildir. Kaynak:
+      <a href="https://huggingface.co/datasets/umutertugrul/turkish-hospital-medical-articles"
+         target="_blank" rel="noopener noreferrer">turkish-hospital-medical-articles</a> (CC BY 4.0).
+    </p>
+  </footer>
+
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

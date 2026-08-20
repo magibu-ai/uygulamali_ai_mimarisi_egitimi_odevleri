@@ -1,0 +1,975 @@
+{
+  "0": {
+    "soru_final": "Merhaba, bu ürünün 3 kapaklı veya 5 kapaklı modeli var mı?",
+    "dogru_cevap": "Merhaba, bu ürünümüzün hem 3 kapaklı hem de 5 kapaklı modelleri mevcuttur. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, bu ürünümüz sadece 4 kapaklı olarak üretilmektedir. 3 veya 5 kapaklı modelleri bulunmamaktadır.",
+    "kaba_dogru_bilgi": "Evet, 3 ve 5 kapaklı modelleri var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "1": {
+    "soru_final": "Merhaba, bu ürünün 2 kapaklı modeli mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüzün 2 kapaklı bir modeli bulunmamaktadır. İlginiz için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet bu ürünümüzün 2 kapaklı bir modeli de mevcuttur.",
+    "kaba_dogru_bilgi": "Yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "7": {
+    "soru_final": "Merhaba, bu ürünün 70 cm genişliğinde bir modeli mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüzün 70 cm genişliğinde bir modeli bulunmamaktadır. İlginiz için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet, bu ürünümüzün 70 cm genişliğinde bir modeli mevcuttur.",
+    "kaba_dogru_bilgi": "Yok, 70 cm modeli yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "4": {
+    "soru_final": "Merhaba, bu country tarzı beyaz suntalam gövdeye sahip, 140 cm genişliğinde, 4 kapaklı ve çekmeceli ürününüzün farklı renk seçenekleri mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüz sadece beyaz renkte mevcuttur. Farklı bir renk seçeneği bulunmamaktadır. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet bu ürünümüz ceviz ve siyah renk seçenekleriyle de mevcuttur.",
+    "kaba_dogru_bilgi": "Hayır, sadece beyaz var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "2": {
+    "soru_final": "Merhaba, bu ürünün 6 kapaklı modeli mevcut mu?",
+    "dogru_cevap": "Merhaba, evet 6 kapaklı modeli de mevcuttur. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, bu ürün sadece 4 kapaklı olarak üretilmektedir. 6 kapaklı modeli bulunmamaktadır.",
+    "kaba_dogru_bilgi": "Evet var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "5": {
+    "soru_final": "Merhaba, bu ürünün 180 cm veya daha geniş modelleri mevcut mu diye merak ediyorum.",
+    "dogru_cevap": "Merhaba, ürünümüzün mevcut genişliği 140 cm'dir. Maalesef 180 cm veya daha geniş bir modeli bulunmamaktadır. İlginiz için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet ürünümüz 180 cm genişliğinde de mevcuttur.",
+    "kaba_dogru_bilgi": "Yok, 140 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "8": {
+    "soru_final": "Merhaba, bu dolabın şifonyeri var mı? Diva mega şifonyeri ile takım yapabilir miyim?",
+    "dogru_cevap": "Merhaba, evet, Diva mega şifonyeri mevcuttur ve bu dolapla takım olarak kullanabilirsiniz. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, bu dolabın şifonyeri bulunmamaktadır. İzel Country şifonyeri ile takım yapamazsınız.",
+    "kaba_dogru_bilgi": "Evet, Diva mega şifonyeri var. İzel Country şifonyer ile takım olur.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "3": {
+    "soru_final": "Merhaba, bu gardırobun aynalı bir modeli mevcut mu? Diva Country 4 kapak 2 çekmeceli aynalı gardırop olarak aratabilir miyim?",
+    "dogru_cevap": "Merhaba, evet, bu ürünün aynalı modeli mevcuttur. Diva Country 4 kapak 2 çekmeceli aynalı gardırop olarak aratarak ürünümüze ulaşabilirsiniz. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, maalesef bu ürünün aynalı bir modeli bulunmamaktadır. Sadece aynasız olarak üretilmektedir.",
+    "kaba_dogru_bilgi": "Evet, aynalı modeli var. Diva Country 4 kapak 2 çekmeceli aynalı gardırop diye arat.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "11": {
+    "soru_final": "Ürün kapakları MDF mi?",
+    "dogru_cevap": "Merhaba, ürünümüzün kapakları MDF üzerine membran kaplamadır. Gövde kısmında ise suntalam malzeme kullanılmıştır. Bilginize sunarız.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün kapakları suntalam malzemedir. Gövde kısmı ise MDF üzerine membran kaplamadır. Bilginize sunarız.",
+    "kaba_dogru_bilgi": "Kapaklar MDF üzeri membran, gövde suntalam.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "13": {
+    "soru_final": "Ürünün garantisi ne kadar?",
+    "dogru_cevap": "Merhaba, ürünümüz 2 yıl garanti kapsamındadır. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüz 1 yıl garanti kapsamındadır.",
+    "kaba_dogru_bilgi": "2 yıl.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "10": {
+    "soru_final": "Merhaba, bu dolabın çalışma masası özelliği var mı diye merak ediyorum?",
+    "dogru_cevap": "Merhaba, bu ürünümüz maalesef çalışma masası özelliğine sahip değildir efendim. İzel çalışma masası modelimizi inceleyebilirsiniz.",
+    "yanlis_bilgi": "Merhaba, evet bu dolabın çalışma masası özelliği bulunmaktadır.",
+    "kaba_dogru_bilgi": "Yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "14": {
+    "soru_final": "Ürünün kurulumu için video veya şema var mı? Kurulum şeması ürünle birlikte gönderiliyor mu?",
+    "dogru_cevap": "Merhaba, ürünümüzle birlikte kurulum şeması gönderilmektedir. Maalesef kurulum videosu bulunmamaktadır. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, ürünümüzle birlikte hem kurulum videosu hem de kurulum şeması gönderilmektedir. Keyifli alışverişler dileriz.",
+    "kaba_dogru_bilgi": "Kurulum şeması var, video yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "12": {
+    "soru_final": "Merhaba, bu country tarzı beyaz 4 kapaklı çekmeceli dolabın tamamı MDF mi, yoksa farklı malzemeler mi kullanılmış?",
+    "dogru_cevap": "Merhaba, bu country tarzı dolabımızın tamamı MDF değildir. Gövde kısmı suntalam malzemeden, kapakları ise MDF malzemeden üretilmiştir. Bilginize sunarız.",
+    "yanlis_bilgi": "Merhaba, bu country tarzı beyaz 4 kapaklı çekmeceli dolabımızın tamamı MDF malzemeden üretilmiştir.",
+    "kaba_dogru_bilgi": "Gövde sunta, kapaklar MDF.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "9": {
+    "soru_final": "Merhaba, bu dolabın komidini var mı? İzel Country şifonyer ile takım yapabilir miyim?",
+    "dogru_cevap": "Merhaba, bu ürünümüzün kendi komidini bulunmamaktadır. Ancak İzel Country şifonyer ile takım olarak kullanabilirsiniz. İlginiz için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet bu dolabın kendi komidini de mevcuttur ve takım olarak satılmaktadır.",
+    "kaba_dogru_bilgi": "Hayır, komidini yok. İzel Country şifonyer ile takım.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "16": {
+    "soru_final": "Merhaba, ürününüzle ilgileniyorum. Ürün özellikleri arasında kargo firması bilgisi göremedim, siz hangi kargo firması ile çalışıyorsunuz?",
+    "dogru_cevap": "Merhaba, ürünlerimizin gönderimini anlaşmalı olduğumuz Horoz Lojistik ile sağlıyoruz. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünlerimizin gönderimini MNG Kargo ile sağlıyoruz. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Horoz Lojistik.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "15": {
+    "soru_final": "Merhaba, ürününüzün kurulum hizmeti var mı? Benzer ürünlerde bazen kurulum hizmeti de olabiliyor diye sordum.",
+    "dogru_cevap": "Merhaba, ürünümüz için kurulum hizmeti tarafımızca sağlanmamaktadır. Bu konuda Trendyol üzerinden destek alabilirsiniz. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, ürünümüz için kurulum hizmeti mevcuttur. Montajı sizin tarafınızdan yapılabilir.",
+    "kaba_dogru_bilgi": "Kurulum yok. Trendyol'a sor.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "18": {
+    "soru_final": "Merhaba, bu country tarzı beyaz dolabın ayaklı mı yoksa yere sıfır mı olduğunu öğrenebilir miyim?",
+    "dogru_cevap": "Merhaba, bu dolabımız bazalıdır ve yere sıfır olarak tasarlanmıştır, ayaklı kullanıma uygun değildir. Bilginize sunarız.",
+    "yanlis_bilgi": "Merhaba, bu country tarzı beyaz dolabımız ayaklıdır ve yere sıfır kullanıma uygun değildir.",
+    "kaba_dogru_bilgi": "Dolap bazalı, ayaklı değil.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "22": {
+    "soru_final": "Ürünün derinliği kaç cm?",
+    "dogru_cevap": "Merhaba, ürünümüzün derinliği 44 cm olarak belirtilmiştir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım!",
+    "yanlis_bilgi": "Merhaba, ürünümüzün derinliği 45 cm'dir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım!",
+    "kaba_dogru_bilgi": "44 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "19": {
+    "soru_final": "Merhaba, country tarzı beyaz renkli, 4 kapaklı, çekmeceli dolabınızın askı borusu kaç cm uzunluğundadır?",
+    "dogru_cevap": "Merhaba, dolabımızın askı borusu 64,4 cm uzunluğundadır. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, dolabımızın askı borusu 80 cm uzunluğundadır. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "kaba_dogru_bilgi": "64,4 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "25": {
+    "soru_final": "Ürünün boruları/iskeleti hangi malzemeden yapılmıştır? Ürünün genel boyutları 85x45x155 cm, rengi gri ve İskandinav stilindedir.",
+    "dogru_cevap": "Ürünümüzün boruları plastikten üretilmiştir. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Ürünümüzün boruları metalden üretilmiştir. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "kaba_dogru_bilgi": "Plastik.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "20": {
+    "soru_final": "Ürünün tam ölçüleri (genişlik, derinlik, yükseklik) nedir?",
+    "dogru_cevap": "Merhaba, ürünümüzün genişliği 85 cm, derinliği 45 cm ve yüksekliği 155 cm'dir. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarız!",
+    "yanlis_bilgi": "Merhaba, ürünümüzün genişliği 80 cm, derinliği 40 cm ve yüksekliği 150 cm'dir. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarız!",
+    "kaba_dogru_bilgi": "85x45x155 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "17": {
+    "soru_final": "Merhaba, ürün özelliklerinde çekmeceli olduğu belirtilen bu dolapta frenleme sistemi (yavaş kapanma) mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüzde frenli menteşe özelliği bulunmamaktadır. Dolaplarımızda standart ray sistemi kullanılmaktadır. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet bu dolapta yavaş kapanma özelliği olan frenli menteşe sistemi mevcuttur. Keyifli alışverişler dileriz.",
+    "kaba_dogru_bilgi": "Hayır, frenli menteşe yok. Standart ray var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "21": {
+    "soru_final": "Ürünün genişliği tam olarak 85 cm mi, yoksa biraz daha mı dar? Ürün özelliklerinde 85 cm olarak belirtilmiş ama emin olamadım.",
+    "dogru_cevap": "Merhaba, ürünümüzün genişliği 85 cm olarak belirtilmiş olsa da, gerçekte 80 cm civarında düşünebilirsiniz. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüzün genişliği tam olarak 85 cm'dir. Farklı bir bilgi söz konusu değildir.",
+    "kaba_dogru_bilgi": "80 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "6": {
+    "soru_final": "Merhaba, bu ürünün 135 cm genişliğinde bir modeli olup olmadığını öğrenmek istemiştim.",
+    "dogru_cevap": "Merhaba, ürünümüz 140 cm genişliğindedir ve maalesef 135 cm genişliğinde bir alternatifi bulunmamaktadır. İlginiz için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet ürünümüz 135 cm genişliğinde de mevcuttur.",
+    "kaba_dogru_bilgi": "Yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "27": {
+    "soru_final": "Ürünün kumaşı/kılıfı nasıldır?",
+    "dogru_cevap": "Ürünümüz spunbond cinsi tela kumaştan üretilmiştir. Bu bilgi, ürünün kalitesi ve dayanıklılığı hakkında size fikir verecektir. Başka sorularınız olursa çekinmeden sorabilirsiniz!",
+    "yanlis_bilgi": "Ürünümüz pamuklu bir kumaştan üretilmiştir. Bu sayede oldukça yumuşak ve nefes alabilir bir yapıya sahiptir.",
+    "kaba_dogru_bilgi": "Spunbond tela.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "28": {
+    "soru_final": "Ürünün askılık kısmı var mı ve kaç cm olduğunu öğrenebilir miyim? Ürün özellikleri kısmında bu bilgiye rastlamadım.",
+    "dogru_cevap": "Elbette, ürünümüzün 1 adet 40 cm'lik askılık bölümü bulunmaktadır. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Üründe askılık bölümü mevcut değildir.",
+    "kaba_dogru_bilgi": "40 cm askısı var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "30": {
+    "soru_final": "Merhaba, bahsettiğiniz klasik tarzdaki gri renkli, İskandinav stilindeki İskandinav stilindeki 85x45x155 cm ölçülerindeki raflı ürününüzün fermuarı tek mi, çift mi?",
+    "dogru_cevap": "Merhaba, ürünümüz iki adet fermuara sahiptir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüz tek adet fermuara sahiptir. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "İki fermuarı var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "32": {
+    "soru_final": "Ürünün dış kılıfı pakete dahil mi?",
+    "dogru_cevap": "Evet, ürünümüzün dış kılıfı paket içeriğine dahildir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Hayır, ürünümüzün dış kılıfı paket içeriğine dahil değildir.",
+    "kaba_dogru_bilgi": "Evet, kılıfı var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "29": {
+    "soru_final": "Ürünün fermuarı var mı?",
+    "dogru_cevap": "Merhaba, ürünümüz fermuarlı bir tasarıma sahiptir. Bu özelliğiyle hem şık hem de kullanışlı bir seçenektir. Başka sorularınız olursa lütfen çekinmeyin!",
+    "yanlis_bilgi": "Merhaba, ürünümüz fermuarsızdır. İskandinav stilinde klasik bir tasarıma sahiptir. Başka sorularınız olursa lütfen çekinmeyin!",
+    "kaba_dogru_bilgi": "Evet, fermuarlı.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "31": {
+    "soru_final": "Klasik ve İskandinav stilindeki gri renkli, 85x45x155 cm ölçülerindeki raflı ürününüzle birlikte kaç adet bez raf gönderiliyor?",
+    "dogru_cevap": "Ürünümüzle birlikte toplam 8 adet bez raf gönderilmektedir. Bu şık ve kullanışlı ürünle yaşam alanınıza modern bir dokunuş katabilirsiniz!",
+    "yanlis_bilgi": "Ürünümüzle birlikte 6 adet bez raf gönderilmektedir. Bu şık ve kullanışlı ürünle yaşam alanınıza modern bir dokunuş katabilirsiniz!",
+    "kaba_dogru_bilgi": "8 adet raf var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "33": {
+    "soru_final": "Ürünün kurulum kılavuzu ve montaj desteği hakkında bilgi verebilir misiniz? Ürünle birlikte gelen kurulum videosuna ulaşmak için bir karekod da bulunuyor mu?",
+    "dogru_cevap": "Elbette, ürünümüzle birlikte kurulum kılavuzu gönderilmektedir. Ayrıca, kurulum videosuna yönlendiren bir karekod da kılavuzun üzerinde yer almaktadır. Kurulum sırasında herhangi bir sorun yaşamanız halinde, kılavuzda belirtilen destek hattımızdan yardım alabilirsiniz. Size yardımcı olmaktan memnuniyet duyarız!",
+    "yanlis_bilgi": "Üzgünüz, ürünümüzle birlikte herhangi bir kurulum kılavuzu veya montaj desteği sağlanmamaktadır. Kendi başınıza kurmanız gerekmektedir.",
+    "kaba_dogru_bilgi": "Kılavuz yanında, karekod var. Sorun olursa kılavuzdaki numarayı ara.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "34": {
+    "soru_final": "Ürününüzü MNG Kargo (DHL e-commerce) ile mi gönderiyorsunuz?",
+    "dogru_cevap": "Evet, ürünümüzü MNG Kargo (DHL e-commerce) ile güvenle adresinize ulaştırıyoruz. Başka sorularınız olursa çekinmeden sorabilirsiniz.",
+    "yanlis_bilgi": "Hayır, ürünümüzü Aras Kargo ile gönderiyoruz.",
+    "kaba_dogru_bilgi": "MNG Kargo (DHL e-commerce) ile.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "37": {
+    "soru_final": "Ürün kolay taşınabilir mi? Yaklaşık ağırlığı ne kadar?",
+    "dogru_cevap": "Evet, ürünümüz yaklaşık 3 ila 3.5 kg ağırlığındadır, bu sayede oldukça kolay taşınabilir bir yapıya sahiptir. Başka sorularınız olursa çekinmeden sorabilirsiniz!",
+    "yanlis_bilgi": "Hayır, ürünümüz oldukça ağırdır ve taşınması zordur. Yaklaşık 15-20 kg civarındadır.",
+    "kaba_dogru_bilgi": "3-3.5 kg, taşınır.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "38": {
+    "soru_final": "Ürünün garanti süresi ne kadar?",
+    "dogru_cevap": "Ürünümüz 6 ay garanti kapsamındadır. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Ürünümüz maalesef garanti kapsamında değildir.",
+    "kaba_dogru_bilgi": "6 ay.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "35": {
+    "soru_final": "İstanbul'a kargonun ulaşması ortalama kaç gün sürüyor?",
+    "dogru_cevap": "İstanbul içi teslimatlarımızda ürününüzün maksimum 2 gün içinde elinizde olacağını öngörüyoruz. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "İstanbul'a teslimat süresi 3-4 gün arasında değişmektedir.",
+    "kaba_dogru_bilgi": "Maksimum 2 gün.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "36": {
+    "soru_final": "Ürünün paketli halinin ağırlığı ve boyutları hakkında bilgi verebilir misiniz? Özellikle kutu ölçüleri merak ediyorum.",
+    "dogru_cevap": "Elbette, ürünümüz paketli halde yaklaşık 3 ila 3.5 kilogram ağırlığındadır. Kutu ölçüleri ise yaklaşık 42x25x18 cm'dir. Başka sorularınız olursa çekinmeden sorabilirsiniz!",
+    "yanlis_bilgi": "Ürünümüz paketli halde yaklaşık 5-6 kilogram ağırlığındadır ve kutu ölçüleri 50x30x20 cm'dir.",
+    "kaba_dogru_bilgi": "3-3.5 kg, kutu 42x25x18 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "23": {
+    "soru_final": "Ürünün yüksekliği kaç cm?",
+    "dogru_cevap": "Merhaba, ürünümüzün yüksekliği 155 cm'dir. Size yardımcı olmaktan mutluluk duyarız!",
+    "yanlis_bilgi": "Merhaba, ürünümüzün yüksekliği 145 cm'dir. İlginiz için teşekkür ederiz.",
+    "kaba_dogru_bilgi": "155 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "39": {
+    "soru_final": "Ürünün kurulumu kolay mı ve alet gerektiriyor mu? Boruların aparatlara takılarak monte edildiği bilgisi doğru mudur?",
+    "dogru_cevap": "Evet, ürünümüzün kurulumu oldukça pratiktir. Herhangi bir alete gerek duymadan, boruları aparatlara takarak kolayca monte edebilirsiniz. Size yardımcı olmaktan mutluluk duyarız!",
+    "yanlis_bilgi": "Hayır, ürünümüzün kurulumu için özel aletler gerekmektedir ve montajı oldukça zordur.",
+    "kaba_dogru_bilgi": "Evet, alet gerekmez. Borular aparatlara takılır.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "41": {
+    "soru_final": "Ürünü balkonda kullanmak istiyorum, suya dayanıklılık durumu nedir?",
+    "dogru_cevap": "Merhaba, ürünümüz yoğun suya maruz kaldığında su geçirebilir. Bu nedenle banyo gibi ıslak alanlarda veya yoğun neme maruz kalacak yerlerde kullanılması tavsiye edilmemektedir. Balkon gibi alanlarda kullanımda hava koşullarına bağlı olarak dikkatli olmanızı öneririz. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüz tamamen suya dayanıklıdır ve balkonunuzda gönül rahatlığıyla kullanabilirsiniz. Yoğun neme veya suya maruz kalsa bile hiçbir sorun yaşamazsınız.",
+    "kaba_dogru_bilgi": "Su geçirir, ıslak yerlerde kullanma.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "45": {
+    "soru_final": "Ürün özelliklerinde beyaz olarak belirtilmiş ancak soru cevaplarda kum taşı rengi olduğu söyleniyor. Ürünün rengi kum taşı mı, yoksa beyaz mı?",
+    "dogru_cevap": "Merhaba, ürünümüz kum taşı rengindedir. Bilgilendirme için teşekkür ederiz, en kısa sürede açıklama kısmını güncelleyeceğiz.",
+    "yanlis_bilgi": "Merhaba, ürünümüz beyaz renktedir. Açıklamada belirtildiği gibi beyazdır.",
+    "kaba_dogru_bilgi": "Kum taşı.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "44": {
+    "soru_final": "Ürünün rengi nedir?",
+    "dogru_cevap": "Ürünümüz antrasit gri, yani koyu gri tonlarında bir renge sahiptir. Beğeneceğinizi umuyoruz!",
+    "yanlis_bilgi": "Ürünümüz antrasit gri, yani koyu gri tonlarında bir renge sahiptir. Ancak bu renk stoklarımızda tükenmiştir.",
+    "kaba_dogru_bilgi": "Gri.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "42": {
+    "soru_final": "Ürünün taşıma kapasitesi hakkında bilgi verebilir misiniz? Özellikle her bir rafın ve askının ne kadar ağırlık taşıyabileceğini öğrenmek istiyorum.",
+    "dogru_cevap": "Merhaba, ürünümüzün her bir rafı ve askısı, doğru kurulum ve dengeli ağırlık yerleştirmesi ile ortalama 5-6 kg taşıma kapasitesine sahiptir. Bu bilgi, genel kullanım deneyimlerine dayanmaktadır. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün her bir rafı ve askısı ortalama 10-15 kg taşıma kapasitesine sahiptir. Bu kapasite, ürünün sağlamlığı sayesinde rahatlıkla kullanılabilir.",
+    "kaba_dogru_bilgi": "5-6 kg taşıyabilir.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "40": {
+    "soru_final": "Merhaba, bu ürünü kurarken rafları veya çubukları takmama gibi bir seçeneğimiz var mı? Yani bazı rafları eksik monte edebilir miyiz?",
+    "dogru_cevap": "Merhaba! Evet, ürünümüzü kurarken isteğe bağlı olarak bazı rafları takmama seçeneğiniz bulunmaktadır. Ancak bu durumun kılıfın tam oturmasını etkileyebileceğini belirtmek isteriz. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarız!",
+    "yanlis_bilgi": "Merhaba, ürünümüzü kurarken tüm rafların takılması zorunludur. Hiçbir raf eksik monte edilemez. Anlayışınız için teşekkür ederiz.",
+    "kaba_dogru_bilgi": "Evet, rafları takmayabilirsin ama kılıf oturmaz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "24": {
+    "soru_final": "Ürün özelliklerinde raf aralıkları hakkında bilgi göremedim, acaba raf yükseklikleri ne kadar?",
+    "dogru_cevap": "Merhaba, ürünümüzün raf yükseklikleri 30 cm'dir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün raf yükseklikleri 40 cm'dir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "kaba_dogru_bilgi": "30 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "43": {
+    "soru_final": "Klasik ve İskandinav tarzıyla dikkat çeken, 85x45x155 cm ölçülerindeki gri renkli raflı ürünümüzü yüklük olarak kullanabilir miyim?",
+    "dogru_cevap": "Merhaba, bu ürünümüz İskandinav tarzını yansıtan şık bir tasarıma sahiptir. Ancak yüklük olarak kullanılması tavsiye edilmemektedir. Farklı bir ihtiyacınız için yardımcı olabilirim.",
+    "yanlis_bilgi": "Merhaba, bu ürünümüz İskandinav tarzını yansıtan şık bir tasarıma sahiptir ve yüklük olarak kullanıma uygundur. 85x45x155 cm ölçülerindeki bu gri renkli raflı ürünümüz, eşyalarınızı rahatlıkla depolamanızı sağlayacaktır.",
+    "kaba_dogru_bilgi": "Yüklük için uygun değil.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "26": {
+    "soru_final": "Raflar hangi malzemeden yapılmıştır?",
+    "dogru_cevap": "Raflarımız bez malzemeden üretilmiştir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Raflarımız ahşap malzemeden üretilmiştir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "kaba_dogru_bilgi": "Raflar bez.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "47": {
+    "soru_final": "Ürün görsellerinde yer alan teknik çizimde ayna fonksiyonu ile ilgili bir detay bulunuyor mu?",
+    "dogru_cevap": "Merhaba efendim, ürün görsellerinde yer alan teknik çizimde ayna fonksiyonu ile ilgili bir detay bulunuyor mu diye kontrol edebilirsiniz. Bu çizim, ürünün tüm özelliklerini detaylı bir şekilde göstermektedir.",
+    "yanlis_bilgi": "Merhaba efendim, ürünümüz aynasızdır ve ayna taktırma gibi bir opsiyonumuz bulunmamaktadır.",
+    "kaba_dogru_bilgi": "Teknik çizime bak, orada yazar.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "49": {
+    "soru_final": "Merhaba, bu country stilindeki beyaz, kapaklı dolabınızın tek kapaklı bir alternatifi mevcut mu?",
+    "dogru_cevap": "Merhaba, bu modelimiz 8 kapaklı olarak tasarlanmıştır. Tek kapaklı bir alternatifi şu an için bulunmamaktadır. Başka bir ürünümüzle ilgili yardımcı olabileceğim bir konu olursa lütfen çekinmeyin.",
+    "yanlis_bilgi": "Merhaba, evet bu modelin tek kapaklı alternatifi mevcuttur.",
+    "kaba_dogru_bilgi": "Tek kapaklısı yok, 8 kapaklı.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "48": {
+    "soru_final": "Merhaba, bu modelin aynalı kapaklı bir versiyonu bulunuyor mu? Teknik çiziminde bu bilgi yer alıyor mu?",
+    "dogru_cevap": "Merhaba, ürünümüz aynasız olarak tasarlanmıştır. Teknik çiziminde de bu detay belirtilmiştir. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet bu modelin aynalı kapaklı versiyonu da mevcut. Teknik çiziminde bu bilgi yer alıyor.",
+    "kaba_dogru_bilgi": "Aynasız. Teknik çizime bak.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "55": {
+    "soru_final": "Ürünün malzemesi nedir? Suntalam mı, MDF mi?",
+    "dogru_cevap": "Merhaba, ürünümüz komple suntalam malzemeden üretilmiştir. Bilginize sunarız.",
+    "yanlis_bilgi": "Merhaba, ürünümüz komple MDF malzemeden üretilmiştir. Bilginize sunarız.",
+    "kaba_dogru_bilgi": "Sunta.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "54": {
+    "soru_final": "Ürünün farklı renk seçenekleri mevcut mu? Beyaz haricinde bir renk seçeneği var mı?",
+    "dogru_cevap": "Merhaba, bu ürünümüz sadece beyaz renk seçeneği ile satışa sunulmaktadır. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet bu ürünümüz beyaz, siyah ve ceviz renk seçenekleri ile de mevcuttur.",
+    "kaba_dogru_bilgi": "Hayır, sadece beyaz var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "53": {
+    "soru_final": "Merhaba, bu ürünün şifonyer veya komodin gibi tamamlayıcı parçaları mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüzün şifonyer veya komodin gibi tamamlayıcı parçaları maalesef mevcut değil efendim. Yardımcı olabileceğimiz başka bir konu olursa lütfen çekinmeyin.",
+    "yanlis_bilgi": "Merhaba, evet bu ürünümüzün şifonyer ve komodin gibi tamamlayıcı parçaları da mevcuttur. Ürünlerimizi incelemek için mağazamızı ziyaret edebilirsiniz.",
+    "kaba_dogru_bilgi": "Yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "51": {
+    "soru_final": "Merhaba, ürünleriniz arasında makyaj masası, komidin ve şifonyer gibi ek ürünler de bulunuyor mu? Varsa onları da almak istiyorum.",
+    "dogru_cevap": "Merhaba, bu ürünümüzle ilgili makyaj masası, komidin veya şifonyer gibi ek ürünlerimiz maalesef bulunmamaktadır. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet makyaj masası, komidin ve şifonyer modellerimiz mevcuttur. Hemen size linklerini göndereyim.",
+    "kaba_dogru_bilgi": "Yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "50": {
+    "soru_final": "Merhaba, country tarzı beyaz suntalam gövdeye sahip, 8 kapaklı, aynasız, 218 cm genişliğinde ve 52 cm derinliğindeki bu dolabın alanıma uygun farklı ebatlarda veya modüler olarak seçilebilecek parçaları mevcut mu?",
+    "dogru_cevap": "Merhaba, bu modelimiz belirttiğiniz ölçülerde ve sabit bir tasarıma sahiptir. Maalesef farklı ebatlarda veya modüler olarak seçilebilecek ek parçaları bulunmamaktadır. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet bu dolabın modüler parçalarını seçebilir, alanınıza göre farklı ebatlarda sipariş verebilirsiniz. Farklı renk seçeneklerimiz de mevcuttur.",
+    "kaba_dogru_bilgi": "Hayır, yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "58": {
+    "soru_final": "Merhaba, ürünün yüksekliği (boyu) hakkında bilgi alabilir miyim? Ayaklar dahil mi?",
+    "dogru_cevap": "Merhaba, ürünümüzün ayakları dahildir. Yükseklik bilgisi için ürün özelliklerinde belirtilen ölçülere göz atabilirsiniz.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün ayakları dahil değildir. Yükseklik bilgisi için ürün özelliklerinde belirtilen ölçülere göz atabilirsiniz.",
+    "kaba_dogru_bilgi": "Evet, ayaklar dahil.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "61": {
+    "soru_final": "Ürünün ayakları demonte mi geliyor, yoksa montajlı mı? Ürün görseldeki gibi mi geliyor?",
+    "dogru_cevap": "Merhaba, ürünümüz görseldeki haliyle size ulaşmaktadır. Ayakları demonte olarak gönderilmemektedir.",
+    "yanlis_bilgi": "Merhaba, ürünümüz demonte olarak gönderilmektedir. Ayaklarını kendiniz monte etmeniz gerekmektedir.",
+    "kaba_dogru_bilgi": "Görseldeki gibi, demonte değil.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "59": {
+    "soru_final": "Merhaba, ürünün robot süpürgelerin altına girebilmesi için ayak yüksekliği ne kadar?",
+    "dogru_cevap": "Merhaba, ürünümüzün ayak yüksekliği 12 cm'dir. Bu sayede robot süpürgeleriniz rahatlıkla altına girebilir. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün ayak yüksekliği 12 cm değildir. Robot süpürgeler altına giremez.",
+    "kaba_dogru_bilgi": "12 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "63": {
+    "soru_final": "Merhaba, bu retro tarzı beyaz kapaklı dolabın montajı nasıl yapılıyor? Montaj videosu veya kılavuzu mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüz için maalesef bir montaj videosu bulunmuyor efendim. Ürünle birlikte gelen montaj kılavuzunu takip ederek kolayca kurulumunu gerçekleştirebilirsiniz.",
+    "yanlis_bilgi": "Merhaba, bu retro tarzı beyaz kapaklı dolabın montajı için detaylı bir montaj kılavuzu ve adım adım gösteren bir montaj videosu mevcuttur efendim.",
+    "kaba_dogru_bilgi": "Montaj videosu yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "62": {
+    "soru_final": "Ürünün ayakları plastik mi, yoksa ahşap mı?",
+    "dogru_cevap": "Merhaba, ürünümüzün ayakları plastiktir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün ayakları ahşaptır. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "kaba_dogru_bilgi": "Plastik.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "57": {
+    "soru_final": "Merhaba, ürünün gövde materyalini merak ediyorum. Suntalam mı yoksa MDF mi kullanılmış?",
+    "dogru_cevap": "Merhaba, ürünümüz 1. sınıf yonga levhadan (sunta) üretilmiştir. Bilgi almak istediğiniz başka bir konu olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüz MDF malzemeden üretilmiştir. Suntalam malzeme kullanılmamıştır.",
+    "kaba_dogru_bilgi": "Sunta.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "60": {
+    "soru_final": "Merhaba, bu ürünü sipariş etmeyi düşünüyorum. Ürünle birlikte askılık borusu gönderiliyor mu?",
+    "dogru_cevap": "Merhaba, evet efendim. Ürünümüzle birlikte askılık borusu gönderilmektedir. Başka bir sorunuz olursa lütfen çekinmeyin.",
+    "yanlis_bilgi": "Merhaba, hayır efendim. Ürünümüzle birlikte askılık borusu gönderilmemektedir.",
+    "kaba_dogru_bilgi": "Evet, gönderiliyor.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "65": {
+    "soru_final": "Merhaba, bu ürünün ayakları takılmadan kullanılması mümkün müdür?",
+    "dogru_cevap": "Merhaba, ürünümüz ayakları takılmadan kullanıma uygun değildir efendim. Ayakları ürüne entegre bir şekilde tasarlanmıştır. Yardıma ihtiyacınız olursa lütfen çekinmeyin.",
+    "yanlis_bilgi": "Merhaba, ürünümüz ayakları takılmadan da rahatlıkla kullanılabilir efendim. Ayakları opsiyoneldir.",
+    "kaba_dogru_bilgi": "Hayır, ayaksız kullanılamaz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "64": {
+    "soru_final": "Ürünün montajı için ek aletlere ihtiyaç var mı? Kurulum hizmeti sağlıyor musunuz?",
+    "dogru_cevap": "Merhaba, ürünümüzün kurulum hizmeti tarafımızca sağlanmamaktadır. Kurulum için Trendyol ile iletişime geçerek destek alabilirsiniz. Anlayışınız için teşekkür eder, sağlıklı günler dileriz.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün kurulumu için özel aletlere ihtiyacınız yoktur, kolayca kendiniz monte edebilirsiniz. Kurulum hizmetimiz de mevcuttur.",
+    "kaba_dogru_bilgi": "Kurulum hizmetimiz yok. Trendyol'a sor.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "67": {
+    "soru_final": "Dolabın rafları sabit midir, yoksa hareketli mi?",
+    "dogru_cevap": "Merhaba, dolabımızın hem sabit hem de hareketli raf seçenekleri bulunmaktadır. İhtiyaçlarınıza göre her ikisinden de faydalanabilirsiniz.",
+    "yanlis_bilgi": "Merhaba, dolabımızın rafları tamamen sabittir, hareketli raf seçeneği bulunmamaktadır.",
+    "kaba_dogru_bilgi": "Hem sabit hem de hareketli rafı var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "56": {
+    "soru_final": "Dolabın arka panellerinin malzemesi nedir?",
+    "dogru_cevap": "Merhaba, dolabımızın arka panelleri de gövde malzemesiyle aynı şekilde suntalamdan üretilmiştir. Size yardımcı olmaktan mutluluk duyarız!",
+    "yanlis_bilgi": "Merhaba, dolabımızın arka panelleri metaldir efendim.",
+    "kaba_dogru_bilgi": "Suntalam.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "68": {
+    "soru_final": "Merhaba, bu dolabın raflarını çıkarıp tamamını askılık olarak kullanabilir miyiz? Ürün özelliklerinde hareketli raf bilgisi göremedim de.",
+    "dogru_cevap": "Merhaba, dolabımızın yalnızca hareketli rafları çıkarılabilir. Sabit raflar çıkarılamamaktadır. Yardımcı olabileceğimiz başka bir konu olursa lütfen çekinmeyin.",
+    "yanlis_bilgi": "Merhaba, dolabımızın rafları sabit olup çıkarılamamaktadır. Bu nedenle tamamını askılık olarak kullanmanız mümkün değildir.",
+    "kaba_dogru_bilgi": "Evet, hareketli rafları çıkarabilirsin.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "70": {
+    "soru_final": "Merhaba, ürününüzü hangi kargo firması ile gönderiyorsunuz? Horoz Lojistik ile anlaşmanız olduğunu duymuştum, doğru mudur?",
+    "dogru_cevap": "Merhaba! Evet, ürünlerimizi anlaşmamız gereği Horoz Lojistik ile gönderiyoruz. Size yardımcı olmaktan mutluluk duyarız!",
+    "yanlis_bilgi": "Merhaba, ürünümüzü MNG Kargo ile gönderiyoruz.",
+    "kaba_dogru_bilgi": "Evet, Horoz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "66": {
+    "soru_final": "Merhaba, bu ürünün raflarını hareket ettirebiliyor muyuz, yoksa sabit mi duruyorlar?",
+    "dogru_cevap": "Merhaba, ürünümüzdeki raflar hareketli olup, kolayca çıkarılıp takılabilir. Bu sayede kullanım alanınızı dilediğiniz gibi düzenleyebilirsiniz. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüzdeki raflar sabit olup, yerleri değiştirilemez veya çıkarılamaz.",
+    "kaba_dogru_bilgi": "Raflar hareketli, çıkarılabilir.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "52": {
+    "soru_final": "Merhaba, bu ürünün farklı kapak sayısı olan versiyonları mevcut mu diye merak ediyorum. Şu anki ürün 4 kapaklı görünüyor.",
+    "dogru_cevap": "Merhaba, ilginiz için teşekkür ederiz. Şu an için farklı kapak sayısına sahip versiyonları satışta bulunmamaktadır efendim.",
+    "yanlis_bilgi": "Merhaba, evet ürünümüz 2 ve 6 kapaklı versiyonlarıyla da mevcuttur.",
+    "kaba_dogru_bilgi": "Hayır, yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "72": {
+    "soru_final": "Ürün kaç paket halinde gönderiliyor?",
+    "dogru_cevap": "Merhaba, ürününüz 2 paket halinde gönderilmektedir. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, ürününüz tek paket halinde gönderilmektedir. Anlayışınız için teşekkür ederiz.",
+    "kaba_dogru_bilgi": "2 paket.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "71": {
+    "soru_final": "Merhaba, ürününüzün tahmini teslimat süresi hakkında bilgi almak istiyorum. Ürününüzün 20 iş günü termin süresi olduğunu belirttiniz, bu süreye hafta sonları ve resmi tatiller dahil mi?",
+    "dogru_cevap": "Merhaba, ürünümüzün teslimat süresi 20 iş günüdür. Bu süreye hafta sonları ve resmi tatiller dahil değildir. Anlayışınız için teşekkür eder, sağlıklı günler dileriz.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün teslimat süresi 20 iş günüdür. Bu süreye hafta sonları ve resmi tatiller de dahildir. Anlayışınız için teşekkür eder, sağlıklı günler dileriz.",
+    "kaba_dogru_bilgi": "20 iş günü. Hafta sonu ve tatil yok.",
+    "alakasiz_sablon": "Merhaba, hafta sonu çalışmamız yoktur. Sizlere yardımcı olabilmemiz adına hafta içi mesajınızı tekrar iletmeniz halinde tarafınıza yardımcı olunacaktır. Anlayışınız için teşekkür eder, sağlıklı günler dileriz."
+  },
+  "73": {
+    "soru_final": "Ürünün profilleri/iskeleti/boruları/çubukları/bağlantı aparatları hangi malzemeden yapılmıştır?",
+    "dogru_cevap": "Ürünümüzün profilleri, iskeleti, boruları, çubukları ve bağlantı aparatları dayanıklı plastikten üretilmiştir. Size yardımcı olmaktan memnuniyet duyarız!",
+    "yanlis_bilgi": "Ürünümüzün profilleri, iskeleti, boruları, çubukları ve bağlantı aparatları metal malzemeden üretilmiştir.",
+    "kaba_dogru_bilgi": "Plastik.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "78": {
+    "soru_final": "Ürünle birlikte yedek parça gönderiliyor mu? Her parçadan 1 adet yedek gönderildiği bilgisi doğru mu?",
+    "dogru_cevap": "Evet, ürünümüzle birlikte her parçadan 1 adet yedek gönderilmektedir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Hayır, ürünümüzle birlikte yedek parça gönderilmemektedir.",
+    "kaba_dogru_bilgi": "Evet, her parçadan 1 adet yedek var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "74": {
+    "soru_final": "Merhaba, bu modern tarz gri renkli ürününüzün rafları hangi malzemeden yapılmıştır? Farklı bir malzeme seçeneği mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüzün rafları bez malzemeden üretilmiştir. Eğer plastik raflı bir model arayışındaysanız, mağazamızı ziyaret ederek farklı seçeneklerimizi inceleyebilirsiniz. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, bu ürünümüzün rafları plastik malzemeden üretilmiştir. Farklı bir malzeme seçeneği bulunmamaktadır. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Raflar bezdir. Plastik raflı modeller için mağazaya bak.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "75": {
+    "soru_final": "Ürünün genişlik, yükseklik ve derinlik ölçüleri nedir? Ürün Özellikleri kısmında genişlik 155 cm, yükseklik 160 cm ve derinlik 45 cm olarak belirtilmiş, ancak bazı cevaplarda genişlik 158 cm, yükseklik 155 cm ve derinlik 44 cm olarak da geçiyor. Bu konudaki net bilgiyi öğrenebilir miyim?",
+    "dogru_cevap": "Merhaba, ürünümüzün genişliği 155 cm, yüksekliği 155 cm ve derinliği 44 cm olarak belirtilmiştir. Ürün özelliklerinde yer alan ölçülerde olası bir yazım hatası olabilir. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün genişliği 158 cm, yüksekliği 160 cm ve derinliği 45 cm'dir. Ürün özelliklerinde belirtilen ölçüler doğrudur.",
+    "kaba_dogru_bilgi": "Genişlik 155, yükseklik 155, derinlik 44. Özelliklerdeki 160/45 yanlış.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "77": {
+    "soru_final": "Ürünün hangi renk seçenekleri mevcuttur? Özellikle pembe rengi hakkında bilgi alabilir miyim?",
+    "dogru_cevap": "Merhaba, ürünümüz antrasit gri (koyu gri) olarak mevcuttur. Ayrıca bej ve krem rengi seçeneklerimiz de bulunmaktadır. Pembe rengi ise şu an için stoklarımızda olmayabilir, bu konuda yardımcı olamadığımız için üzgünüz.",
+    "yanlis_bilgi": "Ürünümüz pembe renktedir. Bej ve krem renkleri de mevcuttur.",
+    "kaba_dogru_bilgi": "Gri, bej, krem var. Pembe yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "79": {
+    "soru_final": "Üründe askılık bulunuyor mu ve kaç adet? Ürünle birlikte 2 adet 40 cm'lik askı gönderiliyor mu?",
+    "dogru_cevap": "Evet, ürünümüzle birlikte 2 adet 40 cm'lik askı gönderilmektedir. Beğeneceğinizi umuyoruz!",
+    "yanlis_bilgi": "Hayır, ürünle birlikte askı bulunmamaktadır.",
+    "kaba_dogru_bilgi": "Evet, 2 adet 40 cm askı var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "76": {
+    "soru_final": "Merhaba, ürünün raflarının ve askılıklarının ölçülerini öğrenebilir miyim?",
+    "dogru_cevap": "Elbette, size yardımcı olmaktan memnuniyet duyarım. Ürünümüzün rafları 40x40 cm ve 35x40 cm boyutlarındadır. Askılıkları ise 40 cm uzunluğundadır. Başka sorularınız olursa lütfen çekinmeyin!",
+    "yanlis_bilgi": "Ürünümüzün rafları 50x50 cm ve 45x50 cm boyutlarındadır. Askılıkları ise 50 cm uzunluğundadır.",
+    "kaba_dogru_bilgi": "Raflar 40x40 cm ve 35x40 cm, askılıklar 40 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "80": {
+    "soru_final": "Plastik raflı veya farklı genişliklerde (örneğin 135 cm, 180 cm, 185 cm) modelleriniz var mı?",
+    "dogru_cevap": "Elbette, plastik raflı modellerimiz mevcuttur. Ayrıca, belirttiğiniz gibi 135 cm, 180 cm ve 185 cm gibi farklı genişlik seçeneklerimiz de bulunmaktadır. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Maalesef plastik raflı modellerimiz bulunmamaktadır. Sadece mevcut ölçülerde ve belirtilen malzemelerle üretim yapmaktayız.",
+    "kaba_dogru_bilgi": "Evet, plastik raflı var. 135, 180, 185 cm de var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "81": {
+    "soru_final": "Ürün hangi kargo firması ile gönderiliyor? Sitenizde MNG Kargo olarak görünüyor ama emin olamadım.",
+    "dogru_cevap": "Merhaba, ürünümüz genellikle MNG Kargo ile gönderilmektedir. Nadiren de olsa DHL e-commerce ve DHL ile de gönderimlerimiz olabilmektedir. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Ürünümüz sadece Yurtiçi Kargo ile gönderilmektedir.",
+    "kaba_dogru_bilgi": "MNG Kargo. Bazen DHL de oluyor.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "82": {
+    "soru_final": "Ürün hangi şehirden gönderiliyor? Bir önceki mesajda Balıkesir olarak belirtilmişti, bu bilgi doğru mu?",
+    "dogru_cevap": "Merhaba, ürünümüz İstanbul'dan gönderilmektedir. Balıkesir bilgisi doğru değildir. Yardımcı olabileceğim başka bir konu olursa lütfen çekinmeyin!",
+    "yanlis_bilgi": "Merhaba, ürünümüz Balıkesir'den gönderilmektedir. İstanbul bilgisi doğru değildir. Yardımcı olabileceğim başka bir konu olursa lütfen çekinmeyin!",
+    "kaba_dogru_bilgi": "İstanbul'dan.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "84": {
+    "soru_final": "Ürünün garanti süresi ne kadar?",
+    "dogru_cevap": "Ürünümüzün garanti süresi 2 yıldır. Bu süre zarfında herhangi bir sorun yaşamanız durumunda destek ekibimizle iletişime geçebilirsiniz.",
+    "yanlis_bilgi": "Ürünümüzün garanti süresi 3 yıldır. Bu süre zarfında herhangi bir sorun yaşamanız durumunda destek ekibimizle iletişime geçebilirsiniz.",
+    "kaba_dogru_bilgi": "2 yıl.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "69": {
+    "soru_final": "Merhaba, bu dolabın içindeki rafları takmadan sadece askılık olarak kullanabilir miyiz? Rafları takmazsak bir sorun olur mu?",
+    "dogru_cevap": "Merhaba, rafları takmadan sadece askılık olarak kullanmanız durumunda dolabın gövdesinde kayma meydana gelebilir. Bu nedenle bu şekilde kullanılması uygun değildir efendim. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, rafları takmadan sadece askılık olarak kullanabilirsiniz. Gövdede herhangi bir kayma veya sorun yaşanmaz.",
+    "kaba_dogru_bilgi": "Rafları takmazsan kayma olur, uygun değil.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "85": {
+    "soru_final": "Ürünün kurulumu nasıl yapılıyor ve kurulum videosu var mı? Ürün demonte olarak mı geliyor?",
+    "dogru_cevap": "Merhaba, ürün demonte olarak gönderilmektedir. Kurulum kılavuzu ile kolayca kurulumunu gerçekleştirebilirsiniz. Ayrıca ürünümüzün kurulum videosu da mevcuttur. Yardıma ihtiyacınız olursa lütfen çekinmeden tekrar sorun.",
+    "yanlis_bilgi": "Merhaba, ürün demonte olarak gönderilmez, montajı yapılmış şekilde adresinize teslim edilir. Kurulum kılavuzu veya videosu bulunmamaktadır.",
+    "kaba_dogru_bilgi": "Demonte gelir, kılavuz var, videosu da var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "89": {
+    "soru_final": "Ürünün bez kısımları makinede yıkanabilir mi?",
+    "dogru_cevap": "Merhaba, ürünümüzün bez kısımlarını soğuk suda, kısa devirde veya elde nazikçe yıkayabilirsiniz. Bilgi almak istediğiniz başka bir konu olursa lütfen çekinmeyin!",
+    "yanlis_bilgi": "Merhaba, ürünümüzün bez kısımları kesinlikle yıkanamaz. Bilgi almak istediğiniz başka bir konu olursa lütfen çekinmeyin!",
+    "kaba_dogru_bilgi": "Evet, bez kısımları soğuk suda, kısa devirde veya elde yıkanır.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "87": {
+    "soru_final": "Ürünün taşıma kapasitesi hakkında bilgi verebilir misiniz? Özellikle her raf ve askının ortalama ne kadar ağırlık taşıyabileceğini merak ediyorum.",
+    "dogru_cevap": "Elbette, ürünümüzün her rafı ve askısı ortalama 5 ila 10 kg ağırlık taşıyabilmektedir. Ürününüzü daha uzun ömürlü kullanabilmeniz için ağırlığı dengeli bir şekilde yerleştirmenizi öneririz. Başka sorularınız olursa çekinmeden sorabilirsiniz!",
+    "yanlis_bilgi": "Ürünümüzün taşıma kapasitesi hakkında net bir bilgi bulunmamaktadır. Ancak genel olarak ağır eşyalar için uygun değildir.",
+    "kaba_dogru_bilgi": "5-10 kg arası taşıyor raflar ve askılar. Dengeye dikkat.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "88": {
+    "soru_final": "Ürünün ön yüzü kapalı mı ve nasıl açılıyor? Ürünün ön yüzünde kaç adet fermuar bulunuyor?",
+    "dogru_cevap": "Merhaba, ürünümüzün ön yüzü kapalıdır ve sağ, sol ve ortada olmak üzere toplam 3 adet fermuar ile kolayca açılıp kapanabilmektedir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüzün ön yüzü açık ve herhangi bir fermuarı bulunmamaktadır. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Evet, önü kapalı. 3 fermuarı var, sağda, solda ve ortada.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "86": {
+    "soru_final": "Ürünün montajı satıcı tarafından yapılıyor mu ve ücretli mi?",
+    "dogru_cevap": "Merhaba, ürünümüzün montaj hizmeti tarafımızca verilmemektedir. Ancak Trendyol üzerinden ek bir ücret karşılığında montaj hizmeti alabilirsiniz. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüzün montajı tarafımızca ücretsiz olarak yapılmaktadır. Montaj için randevu oluşturabilirsiniz.",
+    "kaba_dogru_bilgi": "Montaj yok. Trendyol'dan alabilirsin.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "92": {
+    "soru_final": "Ürünün fermuarları kolay kolay bozulmayacak kadar dayanıklı mı?",
+    "dogru_cevap": "Elbette, ürünümüzün fermuarları kolay kolay bozulmayacak şekilde tasarlanmış olup oldukça dayanıklıdır. Memnuniyetiniz bizim için önemlidir.",
+    "yanlis_bilgi": "Maalesef ürünümüzün fermuarları pek dayanıklı değildir, sık sık bozulabilir.",
+    "kaba_dogru_bilgi": "Fermuarlar dayanıklı, bozulmaz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "90": {
+    "soru_final": "Merhaba, ürününüzü yüklük veya yatak dolabı olarak kullanmayı düşünüyorum. Ürün özelliklerinde bu kullanım şekline dair bir bilgi göremedim, bu konuda yardımcı olabilir misiniz?",
+    "dogru_cevap": "Merhaba, ürünümüzü yüklük veya yatak dolabı olarak kullanıma uygun olmadığını belirtmek isteriz. Rafları bez malzemeden olduğu için ağır eşyalar için tavsiye edilmemektedir. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, ürünümüzü yüklük veya yatak dolabı olarak rahatlıkla kullanabilirsiniz. Rafları oldukça sağlamdır ve ağır eşyalar için uygundur.",
+    "kaba_dogru_bilgi": "Hayır, olmaz. Rafları bez, taşımaz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "93": {
+    "soru_final": "Ürünün bez kılıfı yırtılırsa yedek temin edilebilir mi? Ürün menşei Türkiye'dir.",
+    "dogru_cevap": "Evet, ürününüzün bez kılıfı yırtılırsa yedek temini mümkündür. Bu konuda size yardımcı olabilmemiz için lütfen destek hattımızla iletişime geçiniz.",
+    "yanlis_bilgi": "Hayır, ürününüzün bez kılıfı yırtılırsa yedek temini mümkün değildir.",
+    "kaba_dogru_bilgi": "Evet, yedek kılıf var. Destek hattını ara.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "94": {
+    "soru_final": "Ürünün içindeki borular kırılırsa yedek parça temin edilebilir mi?",
+    "dogru_cevap": "Evet, yedek parça temini mümkündür. Bu konuda size yardımcı olabilmemiz için lütfen destek hattımızla iletişime geçiniz.",
+    "yanlis_bilgi": "Hayır, kırılan borular için yedek parça temini mümkün değildir.",
+    "kaba_dogru_bilgi": "Evet, yedek parça var. Destek hattını ara.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "91": {
+    "soru_final": "Ürünün toplam ağırlığı ne kadar? Ürün özellikleri arasında ağırlık bilgisi yer almıyor.",
+    "dogru_cevap": "Ürünümüzün ağırlığı ortalama 3.5 ila 5 kg arasında değişmektedir. Koli ağırlığı ise yaklaşık 4 ila 4.5 kg civarındadır. Bilginize sunarız.",
+    "yanlis_bilgi": "Ürünümüzün ağırlığı ortalama 10 ila 15 kg arasında değişmektedir. Koli ağırlığı ise yaklaşık 11 ila 12 kg civarındadır. Bilginize sunarız.",
+    "kaba_dogru_bilgi": "3.5-5 kg arası. Koli 4-4.5 kg.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "46": {
+    "soru_final": "Ürün görselinde dolap üstüne belirtilen ölçülerde 700 yazan nedir? Ürünün teknik çizimi görsellerde mevcut mu?",
+    "dogru_cevap": "Merhaba efendim, ürünün teknik çizimi görsellerde mevcuttur. İncelemenizi rica ederiz.",
+    "yanlis_bilgi": "Merhaba efendim, ürünün teknik çizimi görsellerde bulunmamaktadır. Farklı bir modelimize bakmak ister misiniz?",
+    "kaba_dogru_bilgi": "Çizim görsellerde var, oraya bak.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "95": {
+    "soru_final": "Ürünün raf sayısını azaltıp çoğaltmak mümkün mü?",
+    "dogru_cevap": "Merhaba, ürünümüzün raf sayısını azaltmak mümkündür ancak arttırmak mümkün değildir. Bu konuda yardımcı olabileceğimiz başka bir konu olursa lütfen çekinmeyin.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün raf sayısını arttırmak mümkündür ancak azaltmak mümkün değildir. Bu konuda yardımcı olabileceğimiz başka bir konu olursa lütfen çekinmeyin.",
+    "kaba_dogru_bilgi": "Rafı azaltırsın, arttıramazsın.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "96": {
+    "soru_final": "Merhaba, ürünün koli boyutları hakkında bilgi alabilir miyim? Ürün özelliklerinde göremedim.",
+    "dogru_cevap": "Elbette, yardımcı olayım. Ürünümüzün koli boyutları 44x24x23 cm olarak belirtilmiştir. Başka sorularınız olursa lütfen çekinmeyin!",
+    "yanlis_bilgi": "Ürünümüzün koli boyutu 44x24x23 cm'dir.",
+    "kaba_dogru_bilgi": "44x24x23 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "97": {
+    "soru_final": "Ürünün genişliği, derinliği ve yüksekliği kaç cm? Ürün özelliklerinde genişlik 120 cm, derinlik 43 cm olarak belirtilmiş, ancak yükseklik bilgisi eksik.",
+    "dogru_cevap": "Merhaba, ürünümüzün ölçüleri şu şekildedir: Genişlik 120 cm, Derinlik 44 cm ve Yükseklik 173 cm. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüzün ölçüleri şu şekildedir: Genişlik 120 cm, Derinlik 43 cm ve Yükseklik 150 cm. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Genişlik 120 cm, Derinlik 44 cm, Yükseklik 173 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "98": {
+    "soru_final": "Merhaba, ürün özelliklerinde genel ölçüler belirtilmiş ancak aynanın kendi ölçüsü hakkında bilgi göremedim. Ürünün aynalı olduğunu biliyorum, aynanın kendi ölçüsü nedir?",
+    "dogru_cevap": "Merhaba, ürünümüzün aynalı olduğunu ve modern bir stile sahip olduğunu belirtmiştiniz. Aynanın kendi ölçüsü 147,5 cm x 20 cm'dir. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün aynalı olduğunu belirtmiştiniz ancak aynanın kendi ölçüsü hakkında bir bilgi bulunmamaktadır. Genel ürün ölçüleri 120 cm x 43 cm'dir.",
+    "kaba_dogru_bilgi": "Ayna ölçüsü 147,5x20.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "101": {
+    "soru_final": "Merhaba, bu dolabın askılıklarının boyu ve genişliği hakkında bilgi alabilir miyim?",
+    "dogru_cevap": "Elbette, dolabımızın askılıklarının ölçüsü yükseklik 84 cm ve genişlik 57 cm'dir. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Üzgünüm, bu dolabın askılıkları mevcut değildir.",
+    "kaba_dogru_bilgi": "Askılıklar 84x57 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "100": {
+    "soru_final": "Merhaba, bu dolabın raf aralığı ve genişliği hakkında bilgi alabilir miyim?",
+    "dogru_cevap": "Elbette, yardımcı olayım! Dolabımızın raf aralığı 42 cm, raf genişliği ise 57 cm'dir. Başka sorularınız olursa çekinmeden sorun lütfen!",
+    "yanlis_bilgi": "Üzgünüm, bu ürünün raf aralığı ve genişliği hakkında bir bilgi bulunmuyor.",
+    "kaba_dogru_bilgi": "Raf arası 42 cm, genişlik 57 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "102": {
+    "soru_final": "Merhaba, ürünün alt askılık yeri yüksekliği hakkında bilgi alabilir miyim?",
+    "dogru_cevap": "Merhaba efendim, ürünümüzün alt askılık yeri yüksekliği 72 cm'dir. Başka bir sorunuz olursa yardımcı olmaktan mutluluk duyarım.",
+    "yanlis_bilgi": "Merhaba efendim, ürünümüzün alt askılık yeri yüksekliği 60 cm'dir. Başka bir sorunuz olursa yardımcı olmaktan mutluluk duyarım.",
+    "kaba_dogru_bilgi": "72 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "106": {
+    "soru_final": "Merhaba, ürünün aynası nasıl yapıştırılmıştır?",
+    "dogru_cevap": "Merhaba, ürünümüzün aynası çift taraflı bant ve silikon ile yapıştırılmıştır. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün aynası vidalı bir sistemle monte edilmiştir.",
+    "kaba_dogru_bilgi": "Çift taraflı bant ve silikon.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "103": {
+    "soru_final": "Merhaba, ürünün kulp uzunluğu hakkında bilgi alabilir miyim? Ürün özelliklerinde 160'lık kulp kullanıldığı belirtilmişti, bu doğru mu?",
+    "dogru_cevap": "Merhaba, ürünümüzde 160 cm'lik kulplar kullanılmaktadır. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım!",
+    "yanlis_bilgi": "Merhaba, ürünümüzde 160 cm'lik kulplar kullanılmamaktadır. Farklı bir modelimizi inceleyebilirsiniz.",
+    "kaba_dogru_bilgi": "Evet, 160 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "107": {
+    "soru_final": "Dolabın rengi parlak beyaz mı, mat beyaz mı?",
+    "dogru_cevap": "Merhaba, dolabımızın rengi mat beyazdır. Bilgi almak istediğiniz başka bir konu olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, dolabımızın rengi parlak beyazdır. Bilgi almak istediğiniz başka bir konu olursa yardımcı olmaktan memnuniyet duyarım.",
+    "kaba_dogru_bilgi": "Mat beyaz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "104": {
+    "soru_final": "Dolabın malzemesi nedir?",
+    "dogru_cevap": "Merhaba, dolabımızın gövde materyali 1. kalite suntalamdır. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, dolabımızın gövde materyali MDF'dir. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Suntalam.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "83": {
+    "soru_final": "Merhaba, ürününüzü almak istiyorum ancak bulunduğum yer bir köy. Köylere veya belirli bölgelere kargo gönderimi yapılıyor mu?",
+    "dogru_cevap": "Merhaba, anlayışınız için teşekkür ederiz. Ürünümüzle ilgilendiğiniz için memnuniyet duyduk. Ancak, köylere özel kargo gönderimi hizmetimiz bulunmamaktadır. Sadece MNG Kargo ile anlaşmamız mevcuttur. Farklı bir konuda yardımcı olabileceğimizi lütfen çekinmeden belirtin.",
+    "yanlis_bilgi": "Merhaba, ürünümüzle ilgilendiğiniz için teşekkür ederiz. Köylere de gönderim yapıyoruz, MNG Kargo ile tüm Türkiye'ye teslimatımız mevcut.",
+    "kaba_dogru_bilgi": "Köylere gönderim yok. Sadece MNG Kargo.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "109": {
+    "soru_final": "Merhaba, bu ürünün siyah veya gri rengi mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüz sadece beyaz renkte mevcuttur. Farklı renk seçenekleri için yardımcı olabileceğim başka bir ürünümüz olup olmadığını sorabilirsiniz.",
+    "yanlis_bilgi": "Merhaba, evet ürünümüz siyah ve gri renk seçenekleriyle de mevcuttur.",
+    "kaba_dogru_bilgi": "Hayır, sadece beyazı var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "112": {
+    "soru_final": "Merhaba, bu dolabı sipariş etmeyi düşünüyorum. Ürün özelliklerinde vidaların gönderilip gönderilmediği belirtilmemiş, ancak dolabın montajı için vidaların gerekli olduğunu biliyorum. Dolabı sabitlemek için vidalar gönderiliyor mu?",
+    "dogru_cevap": "Merhaba, ürünümüzü tercih ettiğiniz için teşekkür ederiz. Dolabın montajı için gerekli vidalar ürün ile birlikte gönderilmektedir. Size yardımcı olmaktan mutluluk duyarız!",
+    "yanlis_bilgi": "Merhaba, dolabın montajı için vidalar gönderilmemektedir. Sadece montaj için gerekli parçalar mevcuttur.",
+    "kaba_dogru_bilgi": "Evet, vidalar gönderiliyor.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "113": {
+    "soru_final": "Merhaba, ürünün dolap kulpları kaç mm'dir?",
+    "dogru_cevap": "Merhaba, ürünümüzün dolap kulpları 160 mm'dir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün dolap kulpları 120 mm'dir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "kaba_dogru_bilgi": "160 mm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "115": {
+    "soru_final": "Merhaba, ürün özelliklerinde dolabın arka suntasının montajı hakkında bir bilgi göremedim. Bu dolabın arka suntası çivi ile mi monte ediliyor, yoksa farklı bir montaj yöntemi mi kullanılıyor?",
+    "dogru_cevap": "Merhaba, evet efendim, dolabımızın arka suntası çivi ile monte edilmektedir. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, hayır efendim, dolabımızın arka suntası çivi ile monte edilmemektedir. Farklı bir montaj yöntemi kullanılmaktadır.",
+    "kaba_dogru_bilgi": "Evet, çiviyle.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "99": {
+    "soru_final": "Dolap kapağı açıkken ileriye doğru ne kadar yer kaplar? Ürünün derinliği 43 cm olarak belirtilmiş.",
+    "dogru_cevap": "Merhaba, kapakları tam açtığınızda yaklaşık 82 cm civarında bir alan kaplayacaktır. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, kapakları tam açtığınızda yaklaşık 43 cm civarında bir alan kaplayacaktır. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "82 cm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "105": {
+    "soru_final": "Dolabın suntalam kalınlığı kaç mm?",
+    "dogru_cevap": "Merhaba, dolabımızın suntalam kalınlığı 18 mm'dir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, dolabımızın suntalam kalınlığı 16 mm'dir. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "18 mm.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "120": {
+    "soru_final": "Merhaba, ürünleriniz hangi kargo firması ile gönderiliyor? Özellikle CEVA LOJİSTİK ile gönderim yapılıp yapılmadığını merak ediyorum.",
+    "dogru_cevap": "Merhaba, ürünlerimizi CEVA LOJİSTİK güvencesiyle adresinize ulaştırıyoruz. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünlerimizi MNG Kargo ile gönderiyoruz. CEVA LOJİSTİK ile çalışmıyoruz.",
+    "kaba_dogru_bilgi": "CEVA LOJİSTİK.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "119": {
+    "soru_final": "Merhaba, bu ürünün ayaklı modeli mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüz maalesef ayaklı model olarak bulunmamaktadır. İlginiz için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, evet bu ürünümüzün ayaklı modeli mevcuttur. Hemen sepetinize ekleyebilirsiniz.",
+    "kaba_dogru_bilgi": "Hayır, yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "118": {
+    "soru_final": "Merhaba, bu beyaz gardırobun aynasız bir modeli mevcut mu? Sitenizde aynalı modelleri inceledim ancak aynasız seçeneğini göremedim.",
+    "dogru_cevap": "Merhaba, elbette yardımcı olurum. Aynasız bir model arayışınız için bu ürünümüzün aynasız seçeneği mevcuttur. İncelemek isterseniz linkini sizinle paylaşabilirim: https://www.trendyol.com/metalia/4-kapili-beyaz-gardrop-dolap-gm-050-p-97912032?boutiqueId=61&merchantId=106538",
+    "yanlis_bilgi": "Merhaba, bu ürünümüzün aynasız bir modeli bulunmamaktadır. Sadece aynalı olarak üretilmektedir.",
+    "kaba_dogru_bilgi": "Evet, aynasız modeli var. Linki bu: https://www.trendyol.com/metalia/4-kapili-beyaz-gardrop-dolap-gm-050-p-97912032?boutiqueId=61&merchantId=106538",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "121": {
+    "soru_final": "Merhaba, ürününüzün kaç koli ve kaç desi olarak gönderildiğini öğrenebilir miyim?",
+    "dogru_cevap": "Merhaba efendim, ürünümüz 2 koli ve 61 desi olarak tarafınıza gönderilmektedir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba efendim, ürünümüz 3 koli ve 75 desi olarak tarafınıza gönderilmektedir.",
+    "kaba_dogru_bilgi": "2 koli 61 desi.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "108": {
+    "soru_final": "Merhaba, bu ürünün antrasit veya füme rengi seçeneği mevcut mu?",
+    "dogru_cevap": "Merhaba, bu ürünümüz sadece beyaz renkte mevcuttur. Farklı renk seçenekleri için yardımcı olabileceğim başka ürünlerimiz de bulunuyor, dilerseniz inceleyebilirsiniz.",
+    "yanlis_bilgi": "Merhaba, evet efendim antrasit ve füme renkleri de mevcuttur.",
+    "kaba_dogru_bilgi": "Hayır, sadece beyaz var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "114": {
+    "soru_final": "Merhaba, bu dolabın ayakları var mı yoksa bazalı bir model mi? Ayak takılabiliyor mu?",
+    "dogru_cevap": "Merhaba efendim, bu ürünümüz bazalı bir modeldir. Bu nedenle ayak takılamamaktadır. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba efendim, ürünümüzün ayakları mevcuttur ve ayak takılabilir.",
+    "kaba_dogru_bilgi": "Bazalı, ayak takılmaz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "122": {
+    "soru_final": "Merhaba, ürününüzün gönderileceği il hakkında bilgi alabilir miyim? Kayseri'den gönderildiğini duydum, doğru mudur?",
+    "dogru_cevap": "Merhaba, evet efendim, ürünümüz Kayseri'den gönderilmektedir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüz İstanbul'dan gönderilmektedir. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Evet, Kayseri.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "123": {
+    "soru_final": "Merhaba, bu ürününüzü sipariş etmeyi düşünüyorum. Ürün kaç parça halinde geliyor?",
+    "dogru_cevap": "Merhaba efendim, ürününüz demonte olarak 2 koli halinde gönderilmektedir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba efendim, ürününüz demonte olarak tek koli halinde gönderilmektedir. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "2 koli.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "124": {
+    "soru_final": "Ürünün garanti süresi ne kadar?",
+    "dogru_cevap": "Ürünümüz 2 yıl garanti kapsamındadır. Bu süre zarfında herhangi bir sorun yaşamanız durumunda yardımcı olmaktan memnuniyet duyarız.",
+    "yanlis_bilgi": "Ürünümüz 1 yıl garanti kapsamındadır.",
+    "kaba_dogru_bilgi": "2 yıl.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "126": {
+    "soru_final": "Merhaba, bu ürünün kurulumunu kendimiz yapabilir miyiz? Ürün demonte olarak mı geliyor?",
+    "dogru_cevap": "Merhaba, evet efendim, ürün demonte olarak gelmektedir ve kurulumunu kendiniz yapabilirsiniz.",
+    "yanlis_bilgi": "Merhaba, hayır efendim, ürün demonte olarak gelmemektedir ve kurulumu tarafımızca yapılmaktadır.",
+    "kaba_dogru_bilgi": "Evet, kendiniz yapabilirsiniz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "125": {
+    "soru_final": "Merhaba, ürün demonte olarak mı geliyor, kurulumu alıcıya mı ait?",
+    "dogru_cevap": "Merhaba efendim, ürünlerimiz demonte olarak gönderilmektedir. İlginiz için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba efendim, ürünlerimiz demonte olarak gönderilmemektedir. Kurulumu tarafımızca yapılmaktadır.",
+    "kaba_dogru_bilgi": "Evet, demonte geliyor.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "116": {
+    "soru_final": "Merhaba, bu dolabın bağlantı türü nedir, minifix mi, vida mı yoksa T bağlantı mı kullanılıyor?",
+    "dogru_cevap": "Merhaba, ürünümüzün bağlantı tipi minifixtir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüz vidalı bağlantı tipine sahiptir. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Minifix.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "130": {
+    "soru_final": "Merhaba, bu dolabın montajlanacak yerleri işaretli mi?",
+    "dogru_cevap": "Merhaba, evet, montajlanacak yerler işaretlidir. Size yardımcı olmaktan mutluluk duyarız!",
+    "yanlis_bilgi": "Merhaba, maalesef montajlanacak yerler işaretli değildir.",
+    "kaba_dogru_bilgi": "Evet.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "127": {
+    "soru_final": "Ürünü kurmak için şarjlı matkap kullanmamız uygun olur mu?",
+    "dogru_cevap": "Merhaba, ürünümüzü kurarken şarjlı matkap kullanabilirsiniz. Size yardımcı olmaktan mutluluk duyarız!",
+    "yanlis_bilgi": "Merhaba, ürünümüzü kurarken kesinlikle şarjlı matkap kullanmamalısınız. Sadece el aletleri ile kurulum mümkündür.",
+    "kaba_dogru_bilgi": "Evet, matkapla kurabilirsin.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "129": {
+    "soru_final": "Merhaba, ürününüzün kurulum şeması ile birlikte mi gönderildiğini merak ediyorum?",
+    "dogru_cevap": "Merhaba, evet ürünümüz kurulum şeması ile birlikte gönderilmektedir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüz kurulum şeması olmadan gönderilmektedir. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Evet, şeması var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "128": {
+    "soru_final": "Merhaba, ürününüzü sipariş etmeyi düşünüyorum. Kurulumu için bir video mevcut mu, yoksa sadece talimatlarla mı ilerlemem gerekiyor?",
+    "dogru_cevap": "Merhaba, bu ürünümüz için kurulum videosu bulunmamaktadır efendim. Kurulumu talimatlarla kolayca gerçekleştirebilirsiniz. Başka sorularınız olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, evet, ürünümüzün detaylı bir kurulum videosu mevcuttur. Siparişiniz sonrası size linkini gönderebiliriz.",
+    "kaba_dogru_bilgi": "Video yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "117": {
+    "soru_final": "Merhaba, ürün özelliklerinde menteşelerin stoplu olup olmadığına dair bir bilgi göremedim. Bu ürünün menteşeleri stoplu mudur?",
+    "dogru_cevap": "Merhaba, ürünümüzün menteşeleri stoplu değildir. Yardimci olabilecegim baska bir konu olursa lütfen çekinmeyin.",
+    "yanlis_bilgi": "Merhaba, ürünümüzün menteşeleri stopludur. Bu modern tasarımlı, beyaz renkli ve aynalı dolabımızla ilgili başka sorularınız varsa yanıtlamaktan memnuniyet duyarım.",
+    "kaba_dogru_bilgi": "Hayır, stoplu değil.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "132": {
+    "soru_final": "Merhaba, bu ürünün dolap içi rafları sabit mi, yoksa sökülüp takılabilir mi?",
+    "dogru_cevap": "Merhaba, bu ürünümüzün dolap içi rafları sabittir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, bu ürünümüzün dolap içi rafları sökülüp takılabilir özelliktedir. İlginiz için teşekkür ederiz!",
+    "kaba_dogru_bilgi": "Raflar sabit.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "110": {
+    "soru_final": "Merhaba, ürünün suntalam gövde malzemesi ve beyaz rengi olduğunu görüyorum. Sonomo rengi seçeneği de mevcut mudur?",
+    "dogru_cevap": "Merhaba, ürünümüz suntalam malzemeden üretilmiştir ve beyaz rengi mevcuttur. Sonomo rengi seçeneği de bulunmaktadır. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürünümüz suntalam malzemeden üretilmiştir ve beyaz rengi mevcuttur. Maalesef sonomo rengi seçeneğimiz bulunmamaktadır.",
+    "kaba_dogru_bilgi": "Evet, suntalam, sonomo var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "131": {
+    "soru_final": "Merhaba, dolap içi rafların yerleri değiştirilebilir mi? Ürün özelliklerinde bu bilgi yer almıyor.",
+    "dogru_cevap": "Merhaba, dolap içi rafların yerleri maalesef değiştirilemiyor, çünkü delikler sabit bir düzende tasarlanmıştır. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba, dolap içi rafların yerleri kolayca değiştirilebilir. İstediğiniz gibi ayarlayabilirsiniz.",
+    "kaba_dogru_bilgi": "Hayır, delikler denk gelmez.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "133": {
+    "soru_final": "Merhaba, ürün sıfır mı yoksa ikinci el mi satılıyor?",
+    "dogru_cevap": "Merhaba, ürünlerimiz tamamen sıfırdır. Güvenle sipariş verebilirsiniz. Başka bir sorunuz olursa lütfen çekinmeyin!",
+    "yanlis_bilgi": "Merhaba, ürün ikinci eldir ve kullanılmış olabilir.",
+    "kaba_dogru_bilgi": "Sıfır.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "136": {
+    "soru_final": "Merhaba, bu dolabın genişliği 120 cm, derinliği 43 cm ve 4 adet kapaklıdır. Aynalı bir modeldir. Bu dolapta çekmece var mı?",
+    "dogru_cevap": "Merhaba, bu ürünümüzün çekmece özelliği bulunmamaktadır. İlginiz için teşekkür ederiz.",
+    "yanlis_bilgi": "Malesef efendim, bu dolapta çekmece özelliği yoktur.",
+    "kaba_dogru_bilgi": "Çekmece yok.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "134": {
+    "soru_final": "Merhaba, bu dolapların depolama imkanları hakkında bilgi alabilir miyim? Özellikle iç hacmi ve raf düzenlemesi hakkında merak ediyorum.",
+    "dogru_cevap": "Merhaba, bu modern tarz dolaplarımız 120 cm genişliğe, 43 cm derinliğe ve 4 adet kapaklı bölmeye sahiptir. Suntalam malzemeden üretilmiş olup, beyaz rengi ve aynalı özelliği ile hem şık hem de fonksiyonel bir kullanım sunar. İç depolama alanı ve raf düzenlemesi hakkında daha detaylı bilgi için ürün açıklamalarını inceleyebilirsiniz. Size yardımcı olmaktan mutluluk duyarım!",
+    "yanlis_bilgi": "Merhaba, bu dolaplar maalesef depolama imkanı sunmuyor, sadece dekoratif amaçlıdır.",
+    "kaba_dogru_bilgi": "Evet, 120x43 cm, 4 kapaklı. İçini sen hallet.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "138": {
+    "soru_final": "Merhaba, ürün görselinde yer alan kıyafetler gerçek boyutlarda mı yoksa bilgisayar ortamında mı hazırlanmış bir görsel kullanılıyor?",
+    "dogru_cevap": "Merhaba, ürün görseli bilgisayar ortamında hazırlanmış bir tasarımdır, bu nedenle içerisindeki kıyafetler gerçek boyutlarda değildir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba, ürün görselindeki kıyafetler gerçek boyutlardadır. Bilgisayar ortamında hazırlanmış bir görsel değildir.",
+    "kaba_dogru_bilgi": "Görsel gerçek değil, bilgisayarda yapıldı.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "137": {
+    "soru_final": "Merhaba, bu dolabın içine yorgan, yastık gibi büyük hacimli ürünler konulabilir mi?",
+    "dogru_cevap": "Merhaba, tabii ki efendim. Dolabımızın iç hacmi yorgan, yastık gibi ürünleri rahatlıkla depolamanıza imkan tanıyacaktır. Başka bir sorunuz olursa yardımcı olmaktan memnuniyet duyarım.",
+    "yanlis_bilgi": "Merhaba, bu dolabın içine yorgan ve yastık gibi ürünler sığmaz, sadece küçük eşyalar için uygundur.",
+    "kaba_dogru_bilgi": "Evet, koyabilirsin.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "111": {
+    "soru_final": "Merhaba, bu dolabın montajı için gerekli aletler paket içeriğinde mevcut mu?",
+    "dogru_cevap": "Merhaba efendim, dolabımızın montajı için gerekli olan tüm hırdavat seti ürün paketinin içerisine eklenmektedir. İlginiz için teşekkür ederiz!",
+    "yanlis_bilgi": "Merhaba efendim, maalesef montaj için gerekli aletler paket içeriğinde bulunmamaktadır. Bu aletleri ayrıca temin etmeniz gerekmektedir.",
+    "kaba_dogru_bilgi": "Evet, montaj aletleri pakette var.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  },
+  "135": {
+    "soru_final": "Merhaba, bu dolabın iki ayrı parça olarak kullanılıp kullanılamayacağını öğrenmek istiyorum. Ürün özelliklerinde bu konuda bir bilgi göremedim.",
+    "dogru_cevap": "Merhaba efendim, bu ürünümüz iki ayrı parça olarak kullanıma uygun değildir. Anlayışınız için teşekkür ederiz.",
+    "yanlis_bilgi": "Merhaba efendim, bu ürünümüz iki ayrı parça olarak rahatlıkla kullanıma uygundur. İstediğiniz gibi bölebilirsiniz.",
+    "kaba_dogru_bilgi": "Hayır, ayrı kullanılamaz.",
+    "alakasiz_sablon": "Merhaba, ürün ölçü/malzeme bilgileri açıklama kısmında yer almaktadır. Detaylı olarak açıklama kısmında inceleyebilirsiniz."
+  }
+}

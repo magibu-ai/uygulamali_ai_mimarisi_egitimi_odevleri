@@ -1,0 +1,324 @@
+[
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba ölçüleri nedir",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Tüm özellikleri yazan bölüme tıkladığınızda detaylı bilgi mevcut efendim",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "hepsi icindemi",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Sandalye ve iç yatak dahil değildir haricinde mobilyalar dahildir",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Ücreti nedir",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba 187000 TL",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "merhaba yatak kitapliktan ayrı kullanılabiliyor mu?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba evet ayrı ayrı kullanabilirsiniz",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "dolap boyutu nedir uçtan uca?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "300.cm en komple",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "240 duvar boyutununa sığarmı",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Evet modüler olduğu için parça parça da yerleşim yapabilirsiniz",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "yatak en ve boy kaç cm çalışma.masasi en ve boy kaç cm dolap derinliği kaç cm",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "300. Cm en komple masa. Dolap alan kaplar 50.cm.derinlik 210.cm.yeerden yükseklik 90x190 cm yatak ölçüsü",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "PEKİ NERDEN BÖYLE BİR SATIŞ YAPILABİLİR BİLGİLENDİRME YAPABİLİR MİSİNİZ",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Bu soruya buradan cevap veremiyorum sistem engelliyor",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba fotoğrafdaki her şey dahil midir",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba evet dahildir aksesuarlar ve iç yatak dahil değildir",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Mehaba, ürün açıklamasında yavrulu yatak yok yazıyor, satış içeriği sadece masa ve dolap modülü mü?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba yatak dahildir",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Merhaba yatak olmadan satın alınabilir mi?",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Normalde satışını yapıyoruz ancak Trendyol üzerinden özelleştirme yapamıyoruz",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Renk seçeneği kardela var ama satın al diyince sadece beyaz çıkıyor ne yapmalıyım acaba",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Satın aldıktan sonra renk detayını buradan bize yazarsanız o şekilde üretimini yapabiliriz",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Yatagın ölçüsünü biraz daha büyük yaptırabilir miyiz 1.5 kişil olarak düşünenilrsnz",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "100 cm olarak yapabilriiz",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ],
+  [
+    {
+      "content": "Sen bir marangoz ustasısın. Aşağıdaki ürünün satıcısısın.\nÜrün Özellikleri: Ürün Özellikleri\nMateryal\nMDF\nRenk\nBeyaz\nGaranti Süresi\n2 Yıl\nYavrulu Yatak\nYok\nStil\nModern\nMenşei\nTR\nGüvenlik Bilgileri\nÜrün Güvenliği Bilgileri\nDetayları Gör",
+      "images": null,
+      "role": "system",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "karyola hariç sadece dolap çalışma masası ne kadar olur",
+      "images": null,
+      "role": "user",
+      "thinking": null,
+      "tool_calls": null
+    },
+    {
+      "content": "Trendyol üzerinden olan satışlarda özelleştirme yapamıyoruz",
+      "images": null,
+      "role": "assistant",
+      "thinking": null,
+      "tool_calls": null
+    }
+  ]
+]

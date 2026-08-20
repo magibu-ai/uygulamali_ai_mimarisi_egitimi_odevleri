@@ -1,0 +1,83 @@
+{#-
+  ============================================================================
+  Custom Chat Template (Jinja2) — Tool-Calling destekli
+  ----------------------------------------------------------------------------
+  Roller        : system | user | assistant | tool
+  Özel token'lar: <|im_start|> ... <|im_end|>  (ChatML tarzı, tek satırda net)
+  Tool desteği  : - `tools` değişkeni verilirse araç şemaları system bloğuna
+                    JSON olarak gömülür.
+                  - assistant mesajındaki `tool_calls` -> <tool_call>{...}</tool_call>
+                  - tool (fonksiyon) sonucu -> role="tool" bloğu içinde döner.
+  Değişkenler   : messages, tools, add_generation_prompt, bos_token
+  ============================================================================
+-#}
+{{- bos_token -}}
+
+{#- 1) Araç (tool) tanımlarını system mesajına enjekte et --------------------#}
+{%- if tools %}
+    {%- set tool_json = tools | tojson(indent=2) %}
+    {%- set system_prefix %}Sen bir tool-calling asistanısın. Yalnızca aşağıda tanımlı araçları kullanabilirsin.
+Bir aracı çağırman gerektiğinde, cevabını tam olarak şu formatta ver:
+<tool_call>{"name": "arac_adi", "arguments": {"param": "deger"}}</tool_call>
+Araç sonucu sana "tool" rolüyle döndürülecek. Yanıtlarını YALNIZCA araçtan dönen
+gerçek veriye dayandır; veritabanında/araçta olmayan bilgiyi uydurma.
+
+# Kullanilabilir Araclar
+{{ tool_json }}{% endset %}
+{%- endif %}
+
+{#- 2) İlk mesaj system ise onu prefix ile birleştir --------------------------#}
+{%- set loop_messages = messages %}
+{%- if messages[0]['role'] == 'system' %}
+    {%- set first_system = messages[0]['content'] %}
+    {%- set loop_messages = messages[1:] %}
+    {{- '<|im_start|>system\n' }}
+    {%- if tools %}{{- system_prefix + '\n\n' }}{% endif %}
+    {{- first_system | trim + '<|im_end|>\n' }}
+{%- elif tools %}
+    {{- '<|im_start|>system\n' + system_prefix + '<|im_end|>\n' }}
+{%- endif %}
+
+{#- 3) Diyalog turlarını sırayla işle -----------------------------------------#}
+{%- for message in loop_messages %}
+    {%- set role = message['role'] %}
+
+    {#- 3a) USER --------------------------------------------------------------#}
+    {%- if role == 'user' %}
+        {{- '<|im_start|>user\n' + message['content'] | trim + '<|im_end|>\n' }}
+
+    {#- 3b) ASSISTANT ---------------------------------------------------------#}
+    {%- elif role == 'assistant' %}
+        {{- '<|im_start|>assistant\n' }}
+        {%- set has_text = message['content'] is defined and message['content'] %}
+        {%- if has_text %}
+            {{- message['content'] | trim }}
+        {%- endif %}
+        {%- if message['tool_calls'] %}
+            {%- for tc in message['tool_calls'] %}
+                {%- set fn = tc['function'] if tc['function'] is defined else tc %}
+                {%- set args = fn['arguments'] %}
+                {%- if args is string %}{% set args_str = args %}
+                {%- else %}{% set args_str = args | tojson %}{% endif %}
+                {%- if not loop.first or has_text %}{{- '\n' }}{% endif %}
+                {{- '<tool_call>{"name": "' + fn['name'] + '", "arguments": ' + args_str + '}</tool_call>' }}
+            {%- endfor %}
+        {%- endif %}
+        {{- '<|im_end|>\n' }}
+
+    {#- 3c) TOOL (fonksiyon sonucu) -------------------------------------------#}
+    {%- elif role == 'tool' %}
+        {%- set content = message['content'] %}
+        {%- if content is not string %}{% set content = content | tojson %}{% endif %}
+        {{- '<|im_start|>tool\n<tool_response>' + content | trim + '</tool_response><|im_end|>\n' }}
+
+    {#- 3d) Ek system mesajı (nadir) ------------------------------------------#}
+    {%- elif role == 'system' %}
+        {{- '<|im_start|>system\n' + message['content'] | trim + '<|im_end|>\n' }}
+    {%- endif %}
+{%- endfor %}
+
+{#- 4) Üretim istemi: modeli asistan turuna hazırla ---------------------------#}
+{%- if add_generation_prompt %}
+    {{- '<|im_start|>assistant\n' }}
+{%- endif %}

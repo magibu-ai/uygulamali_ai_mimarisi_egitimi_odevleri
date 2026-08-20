@@ -1,0 +1,4 @@
+ollama
+tavily-python
+pydantic
+chromadb

@@ -1,0 +1,196 @@
+{
+    "train": [
+        [
+            {
+                "content": "yolo-custom-detector projesi nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "YOLO (You Only Look Once) gerçek zamanlı nesne tanıma algoritması. Görkem'in yolo-custom-detector projesi önceden eğitilmiş YOLO modelini custom dataset üzerinde fine-tune ediyor. Süreç: 1) Veri toplama ve etiketleme (bounding box çizme — LabelImg, Roboflow). 2) YOLO model seçimi (YOLOv5, YOLOv8 — Ultralytics). 3) Data augmentation (flip, rotate, brightness değişimi). 4) Transfer learning ile eğitim (önceden öğrenilmiş ağırlıklar + custom son katmanlar). 5) Evaluation (mAP, precision, recall). 6) Inference (gerçek zamanlı video/resim üzerinde tespit). YOLO'nun özelliği: tek geçişte hem bounding box hem sınıf tahmini — bu yüzden çok hızlı (real-time). Pratik uygulamalar: güvenlik kamerası, araç tespiti, ürün tanıma, tıbbi görüntü analizi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YOLO, nesne tanıma, custom detector, transfer learning, bounding box, mAP.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AI bias ve fairness neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI modelleri eğitim verisindeki önyargıları öğrenir ve pekiştirir. Örnekler: işe alım AI'ı kadınlara karşı önyargılı (Amazon'un durumu), yüz tanıma koyu tenli insanlarda daha düşük doğruluk, kredi puanlama belirli etnik gruplara karşı ayrımcı. Neden oluyor: eğitim verisi dengesiz (tarihsel önyargıları yansıtıyor), özellik seçimi (zip code ırkla korelasyon), proxy variables. Çözümler: veri denetimi (dataset'teki dengesizlikleri kontrol et), fairness metrics (demographic parity, equalized odds, calibration), bias mitigation (pre-processing, in-processing, post-processing), çeşitli ekipler (farklı bakış açıları). EU AI Act yüksek riskli AI sistemleri için zorunlu denetim getiriyor. Model card ve datasheets ile şeffaflık sağla. Responsible AI sadece teknik değil, sosyal sorumluluk — Görkem gibi AI geliştiricileri bu konuda bilinçli olmalı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI bias, fairness, discrimination, EU AI Act, responsible AI, dataset, mitigation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "imposter syndrome nasıl aşılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Imposter syndrome — kendini yeterli görmeme, 'bir gün beni yakalayacaklar' hissi — yazılımcılarda çok yaygın (%70'e kadar). Nedenleri: sürekli yeni teknoloji (hep geride hissedersin), sosyal medyada herkes uzman görünür, alan çok geniş (her şeyi bilmek imkansız). Çözümler: 'brag document' tut — başarılarını, çözdüğün problemleri, öğrendiklerini yaz, kötü hissettiğinde oku. 6 ay önceki halinle kıyasla, başkalarıyla değil. Bilmemek normal — kıdemli geliştiriciler de her gün Google'lıyor. Başkalarına mentor ol — öğretince ne kadar bildiğini fark edersin. Topluluğa katıl — herkesin benzer zorluklar yaşadığını gör. 'Fake it till you make it' yerine 'learn it as you do it'. Görkem'in 30+ projesi bile imposter syndrome hissettirmeyebilir — ama o projeler onun yetkinliğinin kanıtı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Imposter syndrome, brag document, öz güven, topluluk, mentor, kıyaslama.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "facelock yüz tanıma projesi nasıl?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in facelock projesi yüz tanıma ile kimlik doğrulama sistemi. Çalışma prensibi: 1) Yüz tespiti (face detection): Haar Cascade, MTCNN veya dlib ile görüntüde yüzleri bul. 2) Yüz hizalama (alignment): gözlerin pozisyonuna göre yüzü normalize et. 3) Özellik çıkarma (embedding): FaceNet, ArcFace veya dlib'in 128-boyutlu face encoding'i ile yüzü vektöre dönüştür. 4) Karşılaştırma: yeni yüz vektörünü kayıtlı vektörlerle karşılaştır (cosine similarity veya Euclidean distance). Eşik değerin altındaysa eşleşme var. Güvenlik konuları: fotoğrafla aldatma (liveness detection gerekli — göz kırpma, kafa hareketi), aydınlatma koşulları, maske ile tanıma. Python'da face_recognition kütüphanesi kolay bir başlangıç. Gerçek dünya uygulamaları: telefon kilidi, bina giriş sistemi, devam takibi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Facelock, yüz tanıma, face detection, embedding, cosine similarity, liveness detection.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "YKS matematik çalışma stratejisi ne olmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "YKS matematikte başarı için sistematik çalışma şart. TYT matematik: temel kavramlar (sayılar, cebir, geometri temelleri) — formülleri ezberle değil anla, bol soru çöz. AYT matematik: limit, türev, integral, olasılık, kombinatorik — kavramsal anlayış çok önemli. Kaynak önerileri: 3D Yayınları, Acil Yayınları, Karekök soru bankası, TYT için Palme temel matematik. Günde en az 1-2 saat matematik çalış — süreklilik önemli, 1 hafta çalışıp 1 hafta bırakma. Deneme sınavlarını düzenli çöz (haftada en az 1), yanlışlarını analiz et ve tekrar yap. Zamanlama: kolay soruları hızlı çöz, zor sorulara takılma (puan kayıp). Konu takibi tut — hangi konuları bitirdiğini, hangilerinde zayıf olduğunu izle. Matematik bir günde öğrenilmez — sabır ve süreklilik ile herkes gelişir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "YKS, matematik, TYT, AYT, soru bankası, deneme, çalışma stratejisi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "startup fikri nasıl doğrulanır validation?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Fikir doğrulama startup'ın en kritik aşaması — çoğu startup kimsenin istemediği bir şeyi inşa ederek başarısız oluyor. Adımlar: 1) Problem var mı? — gerçek insanlarla konuş (en az 20-30 kişi), problem yaşıyorlar mı, nasıl çözüyorlar şu an? 2) Çözümünü satabilir misin? — ürünü yapmadan önce landing page yap, email topla, pre-order al. 3) MVP (Minimum Viable Product) — en basit versiyonu çıkar, gerçek kullanıcılarla test et. 4) Metrikler: kullanıcılar geri geliyor mu (retention), ödemeye razı mı (willingness to pay), başkalarına öneriyor mu (NPS). 'Mom test' kitabı harika — insanlar nazik olduğu için 'harika fikir' derler, doğru soru sormayı öğren. Lean Startup metodolojisi: Build → Measure → Learn döngüsü. Fikir ucuz, uygulama (execution) değerli — aynı fikri 10 kişi düşünmüştür, fark eden uygulayandır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Startup validation, MVP, Mom Test, Lean Startup, customer discovery, problem-solution fit.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "en sık yapılan kodlama hataları neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Her geliştiricinin yaptığı klasik hatalar: 1) Off-by-one error — döngüde bir fazla veya bir eksik iterasyon. 2) Null/undefined kontrolü yapmamak — NullPointerException'ın babası. 3) Error handling'i ihmal etmek — try/except ile tüm hataları yutmak. 4) Hardcoded değerler — magic number ve string'ler. 5) Copy-paste programlama — Stack Overflow'dan anlamadan kopyalamak. 6) Premature optimization — önce doğru çalışsın, sonra hızlandır. 7) Test yazmamak — 'çalışıyor gibi görünüyor' testing değildir. 8) Git commit mesajı yazmamak — 'fix', 'update', 'asdf'. 9) Overengineering — basit probleme karmaşık çözüm. 10) Dökümantasyon yazmamak — 6 ay sonra kendi kodunu anlayamazsın. Bu hataları herkes yapar — önemli olan fark etmek ve düzeltmek. Linter, formatter, code review bu hataları yakalar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kodlama hataları, off-by-one, null check, error handling, copy-paste, testing.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "deepfake tehlikeli mi nasıl tespit edilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Deepfake yapay zeka ile gerçekçi sahte video/ses üretme. Tehlikeleri: dezenformasyon (politikacıların sahte videoları), dolandırıcılık (CEO'nun sesini taklit edip para transferi yaptırma — gerçek vakalar var), itibar zedeleme, kişisel gizlilik ihlali. Tespit yöntemleri: yüz detaylarındaki tutarsızlıklar (göz kırpma, diş, saç sınırı), ışık ve gölge uyumsuzlukları, metadata analizi, frekans analizi (GAN'lar belirli frekans pattern'leri bırakır). Araçlar: Microsoft Video Authenticator, Deepware Scanner, FakeCatcher (Intel). Önlem: medya okuryazarlığı (her gördüğüne inanma), kaynak doğrulama, dijital imza/watermark teknolojileri. Pozitif kullanımlar da var: film endüstrisi (yaşlandırma efektleri), eğitim, engelli bireylere ses sentezi. Dual-use technology — teknoloji iyi veya kötü kullanılabilir, önemli olan bilinçli yaklaşım.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Deepfake, GAN, tespit, dezenformasyon, medya okuryazarlığı, dual-use.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "pitch deck nasıl hazırlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Pitch deck yatırımcılara startup'ını anlattığın sunum — genelde 10-15 slide. Yapı (Guy Kawasaki 10/20/30 kuralı — 10 slide, 20 dk, 30 punkt font): 1) Problem — gerçek ve büyük bir sorun. 2) Çözüm — senin yaklaşımın. 3) Market büyüklüğü — TAM, SAM, SOM. 4) İş modeli — nasıl para kazanacaksın? 5) Traction — kullanıcı sayısı, gelir, büyüme. 6) Takım — neden siz? 7) Rekabet — rakiplere karşı avantajın. 8) Finansal projeksiyonlar — 3-5 yıllık. 9) İstek — ne kadar yatırım, ne için kullanacaksın? 10) İletişim. Tasarım: temiz, az metin çok görsel, tutarlı renkler. Storytelling: problem → çözüm → neden şimdi → neden biz akışı. Türkiye'de yatırımcılar: BIC Angels, Galata Business Angels, 500 Istanbul, teknokent destek programları.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Pitch deck, yatırımcı, market büyüklüğü, traction, storytelling, BIC Angels.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CS bölümü neden iyi bir tercih?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bilgisayar Mühendisliği/Bilimi 2020'lerin en stratejik bölüm seçimlerinden biri. Neden: her sektör dijitalleşiyor — sağlık, finans, eğitim, tarım, eğlence hepsinde yazılımcı lazım. İstihdam: mezuniyet öncesi bile staj ve iş bulma imkanı yüksek. Maaş: Türkiye'de ve dünyada en yüksek maaş alan mesleklerden. Esneklik: remote çalışma, freelance, kendi işini kurma, farklı sektörlere geçiş. Sürekli öğrenme: teknoloji değişiyor, sıkılmazsın. Girişimcilik: yazılım bilgisi ile düşük maliyetle ürün çıkarabilirsin. Dikkat: CS sadece kodlama değil — matematik, algoritma, sistem tasarımı, problem çözme. Bölüm zorlanabilir ama karşılığı büyük. Görkem Yeditepe CS'de okuyor ve bu seçimden memnun — hem akademik hem pratik gelişim sunuyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CS bölümü, istihdam, maaş, remote, girişimcilik, Yeditepe, kariyer.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "miniature-transformers projesi ne anlatıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in miniature-transformers projesi 'Attention Is All You Need' makalesinin temel fikirlerini sıfırdan implemente ediyor. Transformer mimarisinin ana bileşenlerini kodlar: multi-head self-attention, positional encoding, feed-forward network, layer normalization. Amacı: transformer'ın nasıl çalıştığını derinden anlamak — sadece PyTorch'un nn.Transformer'ını çağırmak yerine her katmanı elle yazmak. Bu yaklaşım çok değerli çünkü modern AI'ın (GPT, BERT, T5, ViT) temelini oluşturan mimariyi içselleştirirsin. Proje eğitim amaçlı — production-grade değil ama öğrenme için mükemmel. Eğer sen de AI'ı derinlemesine anlamak istiyorsan, benzer bir proje yapmanı öneriyorum: basit bir text generation veya translation task'ı için küçük transformer eğit.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "miniature-transformers, Attention Is All You Need, self-attention, positional encoding, sıfırdan implementasyon.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımcı sağlığı nasıl korunur?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Yazılımcıların en çok şikayet ettiği sağlık sorunları ve çözümleri. Göz: 20-20-20 kuralı (her 20 dk'da 20 saniye 20 feet uzağa bak), ekran parlaklığını ortam ışığına ayarla, mavi ışık filtresi (Night Shift, f.lux), yıllık göz muayenesi. Sırt/boyun: ergonomik sandalye (lomber destek), monitör göz hizasında, her saat ayağa kalk ve ger, core güçlendirme egzersizleri. Bilek: ergonomik klavye (split keyboard), mouse alternatifi (trackball, vertical mouse), bilek egzersizleri, bilek yastığı kullanma (bileği bükük tutar). Genel: günde 30 dk egzersiz (yürüyüş bile yeterli), su iç (kahveden çok), uyku düzeni (7-8 saat), ekran dışı hobi edin. Mental: sosyal izolasyondan kaçın, iş-yaşam dengesi kur, gerekirse profesyonel destek al. Vücudun kodun çalıştığı donanım — bakımını ihmal etme.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Yazılımcı sağlığı, göz, sırt, bilek, ergonomi, egzersiz, mental sağlık.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

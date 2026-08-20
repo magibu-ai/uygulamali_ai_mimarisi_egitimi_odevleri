@@ -1,0 +1,17 @@
+services:
+  wiki-db:
+    image: paradedb/paradedb:0.25.0-pg17
+    container_name: wiki-import-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-kg}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-kg}
+      POSTGRES_DB: ${POSTGRES_DB:-knowledge_graph}
+    ports:
+      - "${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - wiki_pgdata:/var/lib/postgresql/data
+      - ./schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+
+volumes:
+  wiki_pgdata:

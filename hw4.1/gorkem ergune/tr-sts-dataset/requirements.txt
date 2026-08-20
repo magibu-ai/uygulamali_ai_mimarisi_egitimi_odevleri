@@ -1,0 +1,5 @@
+sentence-transformers>=3.0
+huggingface_hub>=0.24
+numpy
+matplotlib
+python-docx

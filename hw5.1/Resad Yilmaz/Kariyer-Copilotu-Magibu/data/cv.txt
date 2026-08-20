@@ -1,0 +1,884 @@
+# AHMET DEMİR – CURRICULUM VITAE
+
+## KİŞİSEL PROFİL
+
+Ahmet Demir, Bilgisayar Mühendisliği mezunu ve özellikle Data Engineering, Artificial Intelligence, Machine Learning, Backend Development ve Cloud Technologies alanlarında kariyer hedefleyen genç bir yazılım ve veri mühendisidir.
+
+Üniversite eğitimi boyunca yazılım geliştirme, veri tabanı sistemleri, veri mühendisliği, makine öğrenmesi, doğal dil işleme, bilgisayarlı görü, yapay zeka uygulamaları ve bulut teknolojileri üzerine teorik ve uygulamalı çalışmalar gerçekleştirmiştir.
+
+Python ve SQL başta olmak üzere çeşitli programlama dilleri ve veri teknolojileriyle proje deneyimine sahiptir. Büyük veri setleri üzerinde veri temizleme, dönüşüm, analiz, modelleme ve görselleştirme işlemleri gerçekleştirmiştir.
+
+Data Warehouse mimarileri, ETL süreçleri, ilişkisel veri tabanları, API geliştirme ve makine öğrenmesi modellerinin üretim ortamlarına alınması konularına ilgi duymaktadır.
+
+Teknik problemlere sistematik yaklaşmayı, araştırma yapmayı, yeni teknolojileri öğrenmeyi ve öğrendiği teknolojileri gerçek projelerde uygulamayı önemsemektedir.
+
+Kariyer hedefi; Data Engineer, Machine Learning Engineer, AI Engineer veya Backend Engineer rollerinden birinde profesyonel olarak gelişmek ve zaman içerisinde ölçeklenebilir veri ve yapay zeka sistemleri geliştiren ekiplerde sorumluluk almaktır.
+
+# EĞİTİM
+
+## İstanbul Teknik Üniversitesi
+
+Bilgisayar Mühendisliği Lisans Programı
+
+Eğitim Dönemi: 2021 – 2025
+
+Genel Not Ortalaması: 3.42 / 4.00
+
+Lisans eğitimi süresince algoritmalar, veri yapıları, veri tabanı sistemleri, yapay zeka, makine öğrenmesi, bilgisayar ağları, işletim sistemleri, yazılım mühendisliği, dağıtık sistemler ve bulut teknolojileri üzerine eğitim almıştır.
+
+Bitirme projesinde büyük ölçekli iş ilanlarının analiz edilmesi ve adayların özgeçmişleriyle iş ilanlarının eşleştirilmesi üzerine bir yapay zeka sistemi geliştirmiştir.
+
+# İLGİLİ DERSLER
+
+* Data Structures and Algorithms
+* Database Management Systems
+* Advanced Database Systems
+* Artificial Intelligence
+* Machine Learning
+* Deep Learning
+* Natural Language Processing
+* Computer Vision
+* Data Mining
+* Big Data Analytics
+* Distributed Systems
+* Cloud Computing
+* Software Engineering
+* Operating Systems
+* Computer Networks
+* Object Oriented Programming
+* Web Programming
+* Linear Algebra
+* Probability and Statistics
+* Optimization Methods
+* Information Retrieval
+* Data Warehousing
+* Business Intelligence
+
+# TEKNİK YETENEKLER
+
+## Programlama Dilleri
+
+Python:
+İleri seviyede veri işleme, backend geliştirme, makine öğrenmesi ve otomasyon projelerinde kullanılmaktadır.
+
+Python ile pandas, NumPy, scikit-learn, PyTorch, TensorFlow, FastAPI, Flask, BeautifulSoup, Selenium ve Requests kütüphaneleriyle çalışılmıştır.
+
+SQL:
+İleri seviyede ilişkisel veri tabanı sorguları, JOIN işlemleri, CTE, window functions, aggregation, subquery, query optimization ve veri analizi işlemleri gerçekleştirilmiştir.
+
+Java:
+Nesne yönelimli programlama, veri yapıları ve temel backend uygulamalarında kullanılmıştır.
+
+JavaScript:
+Web tabanlı uygulamalarda frontend geliştirme amacıyla kullanılmıştır.
+
+HTML ve CSS:
+Responsive web arayüzleri ve dashboard uygulamalarının geliştirilmesinde kullanılmıştır.
+
+Bash:
+Linux ortamında temel otomasyon, dosya işlemleri ve uygulama çalıştırma süreçlerinde kullanılmıştır.
+
+# VERİ TABANI TEKNOLOJİLERİ
+
+PostgreSQL:
+İlişkisel veri tabanı tasarımı, tablo oluşturma, indeksleme, trigger, view ve gelişmiş SQL sorguları üzerinde çalışılmıştır.
+
+MySQL:
+Web uygulamalarında ilişkisel veri depolama amacıyla kullanılmıştır.
+
+SQLite:
+Küçük ve orta ölçekli masaüstü ve prototip uygulamalarında kullanılmıştır.
+
+Microsoft SQL Server:
+T-SQL, stored procedure, view ve veri analizi işlemleri gerçekleştirilmiştir.
+
+MongoDB:
+Doküman tabanlı veri saklama ve NoSQL veri modelleri üzerinde temel proje deneyimi bulunmaktadır.
+
+Redis:
+Cache mekanizmaları ve hızlı veri erişimi için temel seviyede kullanılmıştır.
+
+# DATA ENGINEERING YETENEKLERİ
+
+## ETL
+
+Extract, Transform, Load süreçleri üzerinde uygulamalı deneyime sahiptir.
+
+Farklı kaynaklardan veri çekme, veriyi temizleme, dönüştürme ve hedef veri tabanına yükleme işlemleri gerçekleştirmiştir.
+
+ETL pipeline tasarımında hata yönetimi, logging, veri doğrulama ve yeniden çalıştırılabilir süreçler üzerine çalışmıştır.
+
+## Apache Airflow
+
+DAG yapıları oluşturmuştur.
+
+Veri pipeline'larının zamanlanması ve bağımlılık yönetimi üzerinde çalışmıştır.
+
+PythonOperator ve BashOperator gibi operatörleri kullanmıştır.
+
+Pipeline hata durumlarını gözlemleme ve log inceleme deneyimi bulunmaktadır.
+
+## Apache Spark
+
+PySpark kullanarak büyük veri setleri üzerinde transformation ve aggregation işlemleri gerçekleştirmiştir.
+
+DataFrame API kullanmıştır.
+
+Spark SQL üzerinde sorgular geliştirmiştir.
+
+Partitioning ve caching kavramlarını öğrenmiş ve test ortamlarında uygulamıştır.
+
+## Apache Kafka
+
+Producer ve Consumer yapısını öğrenmiştir.
+
+Gerçek zamanlı veri akışı senaryoları üzerine küçük ölçekli uygulamalar geliştirmiştir.
+
+Event-driven architecture kavramına hakimdir.
+
+# DATA WAREHOUSE
+
+Data Warehouse temel kavramlarına hakimdir.
+
+Fact Table ve Dimension Table yapılarını kullanmıştır.
+
+Star Schema ve Snowflake Schema tasarımları geliştirmiştir.
+
+Slowly Changing Dimension yöntemleri üzerine çalışmalar gerçekleştirmiştir.
+
+SCD Type 1:
+Eski verinin doğrudan yeni veriyle değiştirilmesi.
+
+SCD Type 2:
+Geçmiş kayıtların korunması ve yeni kayıt eklenerek değişiklik tarihçesinin tutulması.
+
+SCD Type 3:
+Önceki değerin ayrı bir kolon içerisinde saklanması.
+
+Data Mart ve Enterprise Data Warehouse kavramları üzerine teorik ve uygulamalı çalışmalar gerçekleştirmiştir.
+
+# BUSINESS INTELLIGENCE
+
+Power BI kullanarak çeşitli dashboard'lar geliştirmiştir.
+
+Power BI üzerinde:
+
+* Veri modeli oluşturma
+* DAX
+* Measures
+* Calculated Columns
+* Relationships
+* KPI tasarımı
+* Dashboard geliştirme
+
+konularında deneyime sahiptir.
+
+Tableau ile temel dashboard ve veri görselleştirme çalışmaları gerçekleştirmiştir.
+
+# MACHINE LEARNING
+
+Supervised Learning ve Unsupervised Learning yöntemlerine hakimdir.
+
+Çalıştığı algoritmalar:
+
+* Linear Regression
+* Logistic Regression
+* Decision Tree
+* Random Forest
+* Gradient Boosting
+* XGBoost
+* LightGBM
+* Support Vector Machines
+* K-Nearest Neighbors
+* Naive Bayes
+* K-Means Clustering
+* DBSCAN
+* Principal Component Analysis
+
+Model değerlendirme metrikleri konusunda bilgi sahibidir.
+
+Classification problemlerinde:
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* ROC-AUC
+* Confusion Matrix
+
+metriklerini kullanmıştır.
+
+Regression problemlerinde:
+
+* MAE
+* MSE
+* RMSE
+* R2 Score
+
+metriklerini kullanmıştır.
+
+# DEEP LEARNING
+
+PyTorch ve TensorFlow kullanarak temel derin öğrenme modelleri geliştirmiştir.
+
+Çalıştığı konular:
+
+* Artificial Neural Networks
+* Convolutional Neural Networks
+* Recurrent Neural Networks
+* LSTM
+* Transfer Learning
+* Embedding Layers
+* Transformers
+
+GPU üzerinde model eğitimi konusunda temel deneyime sahiptir.
+
+Model training sırasında loss, learning rate, epoch, batch size, optimizer ve regularization gibi hiperparametrelerle çalışmıştır.
+
+# NATURAL LANGUAGE PROCESSING
+
+Metin sınıflandırma ve anlamsal benzerlik projeleri geliştirmiştir.
+
+Çalıştığı konular:
+
+* Text preprocessing
+* Tokenization
+* Stop word removal
+* Stemming
+* Lemmatization
+* TF-IDF
+* Word2Vec
+* Sentence Embeddings
+* Transformer Models
+* Semantic Search
+* Text Classification
+* Named Entity Recognition
+* Sentiment Analysis
+
+Hugging Face Transformers kütüphanesini kullanmıştır.
+
+BERT tabanlı modeller üzerinde fine-tuning çalışmaları gerçekleştirmiştir.
+
+# GENERATIVE AI
+
+Large Language Model tabanlı uygulamalar üzerine projeler geliştirmiştir.
+
+Çalıştığı konular:
+
+* LLM inference
+* Prompt Engineering
+* System Prompt Design
+* Structured Output
+* Function Calling
+* Tool Calling
+* Retrieval Augmented Generation
+* Vector Databases
+* Embeddings
+* Semantic Search
+* Context Management
+
+Open-source modelleri yerel ortamda çalıştırmak için Ollama kullanmıştır.
+
+Qwen, Llama ve Mistral ailesindeki çeşitli modelleri test etmiştir.
+
+# RAG
+
+Retrieval Augmented Generation mimarisine hakimdir.
+
+RAG pipeline geliştirme sırasında:
+
+1. Dokümanların alınması
+2. Metnin parçalara bölünmesi
+3. Embedding oluşturulması
+4. Vector Database'e kaydedilmesi
+5. Kullanıcı sorusunun embedding'e dönüştürülmesi
+6. Semantic Search gerçekleştirilmesi
+7. En alakalı dokümanların modele gönderilmesi
+8. Kaynaklara dayalı cevap oluşturulması
+
+adımlarını uygulamıştır.
+
+ChromaDB ve FAISS kullanmıştır.
+
+Sentence Transformers kullanarak embedding üretmiştir.
+
+# COMPUTER VISION
+
+OpenCV kullanarak temel görüntü işleme projeleri geliştirmiştir.
+
+Çalıştığı konular:
+
+* Image preprocessing
+* Resize
+* Cropping
+* Thresholding
+* Edge Detection
+* Blur
+* Image filtering
+* Perspective Transform
+* Object Detection
+* Image Classification
+
+CNN tabanlı görüntü sınıflandırma modelleri geliştirmiştir.
+
+# OCR
+
+OCR sistemleri üzerine proje deneyimi bulunmaktadır.
+
+Tesseract OCR ve PaddleOCR araçlarını kullanmıştır.
+
+OCR öncesinde görüntü iyileştirme yöntemleri uygulamıştır.
+
+Bunlar arasında:
+
+* Grayscale
+* Thresholding
+* Deskew
+* Noise Reduction
+* Perspective Transformation
+* Contrast Enhancement
+
+bulunmaktadır.
+
+# BACKEND DEVELOPMENT
+
+FastAPI ile REST API geliştirmiştir.
+
+Çalıştığı konular:
+
+* GET endpoint
+* POST endpoint
+* PUT endpoint
+* DELETE endpoint
+* Request validation
+* Pydantic models
+* JSON responses
+* Error handling
+* Middleware
+* CORS
+* API documentation
+
+Flask ile küçük ölçekli backend projeleri geliştirmiştir.
+
+# WEB TEKNOLOJİLERİ
+
+HTML, CSS ve JavaScript kullanarak web arayüzleri geliştirmiştir.
+
+REST API'lerle frontend-backend iletişimi gerçekleştirmiştir.
+
+Fetch API kullanmıştır.
+
+JSON verilerini frontend tarafında işlemiştir.
+
+Responsive web tasarımı konusunda deneyime sahiptir.
+
+# CLOUD
+
+AWS üzerinde temel uygulamalar gerçekleştirmiştir.
+
+Kullandığı servisler:
+
+* EC2
+* S3
+* RDS
+* IAM
+* Lambda
+
+Docker kullanarak uygulamalar container haline getirilmiştir.
+
+Dockerfile oluşturma ve Docker Compose kullanma deneyimine sahiptir.
+
+# DEVOPS VE ARAÇLAR
+
+Git:
+Branch, merge, commit, push, pull ve conflict çözme işlemleri gerçekleştirmiştir.
+
+GitHub:
+Projelerini version control altında tutmuş ve takım çalışmalarında kullanmıştır.
+
+Docker:
+Python uygulamalarını container haline getirmiştir.
+
+Linux:
+Ubuntu ortamında proje geliştirme ve deployment işlemleri gerçekleştirmiştir.
+
+Postman:
+REST API testlerinde kullanılmıştır.
+
+VS Code:
+Ana geliştirme ortamı olarak kullanılmaktadır.
+
+# PROFESYONEL DENEYİM
+
+## Data Engineering Intern
+
+TechNova Solutions
+
+Haziran 2024 – Eylül 2024
+
+Data Engineering ekibinde stajyer olarak görev almıştır.
+
+Şirket içerisindeki satış ve müşteri verilerinin farklı kaynaklardan alınarak merkezi veri ambarına aktarılması süreçlerinde görev almıştır.
+
+Python ve SQL kullanarak veri temizleme scriptleri geliştirmiştir.
+
+CSV, Excel, JSON ve REST API kaynaklarından veri alınması üzerine çalışmıştır.
+
+PostgreSQL veri tabanında veri kalite kontrolleri gerçekleştirmiştir.
+
+ETL pipeline süreçlerinde veri doğrulama ve hata kontrol mekanizmalarının geliştirilmesine destek olmuştur.
+
+Apache Airflow üzerinde çalışan DAG'leri incelemiş ve küçük veri pipeline'ları geliştirmiştir.
+
+Power BI raporlarında kullanılan veri setlerinin hazırlanmasına yardımcı olmuştur.
+
+SQL sorgularında performans problemi bulunan bazı sorguları analiz ederek indeksleme ve sorgu optimizasyonu üzerine çalışmalar gerçekleştirmiştir.
+
+# PROFESYONEL DENEYİM
+
+## Machine Learning Intern
+
+DataMind AI
+
+Ocak 2025 – Nisan 2025
+
+Machine Learning ekibinde staj yapmıştır.
+
+Müşteri yorumlarının otomatik sınıflandırılması üzerine NLP projesinde görev almıştır.
+
+Python ve pandas kullanarak veri temizleme işlemleri gerçekleştirmiştir.
+
+Metinlerden gereksiz karakterleri temizleme, tokenization ve veri normalizasyonu işlemleri uygulamıştır.
+
+TF-IDF ve Logistic Regression kullanarak başlangıç modeli geliştirmiştir.
+
+Daha sonra BERT tabanlı bir model kullanarak performans karşılaştırması yapılmıştır.
+
+Modelin precision, recall ve F1 score değerleri incelenmiştir.
+
+Hugging Face Transformers üzerinde model inference süreçleri gerçekleştirilmiştir.
+
+Model sonuçlarının REST API üzerinden sunulması için FastAPI ile servis geliştirilmesine destek olmuştur.
+
+# PROJE 1 – JOBMATCH AI
+
+JobMatch AI, iş ilanlarıyla aday CV'lerini anlamsal olarak eşleştiren yapay zeka tabanlı bir sistemdir.
+
+Sistem Python ve FastAPI ile geliştirilmiştir.
+
+İş ilanları ve CV metinleri Sentence Transformers kullanılarak embedding vektörlerine dönüştürülmüştür.
+
+Cosine Similarity kullanılarak aday ile iş ilanı arasındaki anlamsal benzerlik hesaplanmıştır.
+
+Sonuçlar yüzde bazlı uyumluluk skoru olarak gösterilmiştir.
+
+Sistem ayrıca adayın eksik yeteneklerini belirlemektedir.
+
+Örneğin bir Data Engineer ilanında:
+
+Python,
+SQL,
+Airflow,
+Spark,
+Kafka,
+Docker
+
+bekleniyorsa ve adayın CV'sinde Kafka bulunmuyorsa sistem bunu eksik yetenek olarak göstermektedir.
+
+Backend FastAPI ile geliştirilmiştir.
+
+Frontend HTML, CSS ve JavaScript ile hazırlanmıştır.
+
+SQLite veri tabanı kullanılmıştır.
+
+# PROJE 2 – SMART DOCUMENT RAG
+
+Smart Document RAG, kullanıcıların yükledikleri belgeler hakkında doğal dilde soru sorabilmesini sağlayan bir RAG uygulamasıdır.
+
+Belgeler önce metne dönüştürülmektedir.
+
+Metin daha küçük chunk'lara ayrılmaktadır.
+
+Sentence Transformers ile embedding oluşturulmaktadır.
+
+ChromaDB içerisinde vektörler saklanmaktadır.
+
+Kullanıcı sorusu embedding'e dönüştürülerek semantic search gerçekleştirilmektedir.
+
+En alakalı doküman parçaları bulunarak LLM'e context olarak gönderilmektedir.
+
+Modelin yalnızca bulunan kaynaklara dayanarak cevap vermesi için system prompt geliştirilmiştir.
+
+Uygulamada hallucination azaltmak amacıyla benzerlik eşikleri kullanılmıştır.
+
+# PROJE 3 – CUSTOMER CHURN PREDICTION
+
+Telekom müşterilerinin aboneliklerini sonlandırma ihtimalini tahmin eden Machine Learning projesidir.
+
+Veri setinde müşteri demografik bilgileri, abonelik türleri, kullanım süresi, aylık ücret ve sözleşme bilgileri bulunmaktadır.
+
+Eksik veriler temizlenmiştir.
+
+Categorical değişkenler encode edilmiştir.
+
+Random Forest ve XGBoost modelleri test edilmiştir.
+
+Cross Validation uygulanmıştır.
+
+Feature Importance değerleri analiz edilmiştir.
+
+En önemli faktörler arasında sözleşme süresi, aylık ücret ve müşteri hizmetleri kullanım sıklığı belirlenmiştir.
+
+# PROJE 4 – REAL TIME LOG PIPELINE
+
+Gerçek zamanlı uygulama loglarını işlemek amacıyla geliştirilen Data Engineering projesidir.
+
+Uygulamalar tarafından üretilen loglar Kafka üzerinden yayınlanmaktadır.
+
+Kafka Consumer ile mesajlar alınmıştır.
+
+PySpark Streaming kullanılarak loglar işlenmiştir.
+
+İşlenmiş veriler PostgreSQL veri tabanına kaydedilmiştir.
+
+Apache Airflow günlük batch raporlarının oluşturulması için kullanılmıştır.
+
+Grafana dashboard üzerinden hata oranları ve uygulama performansı izlenmiştir.
+
+# PROJE 5 – E-COMMERCE DATA WAREHOUSE
+
+Bir e-ticaret platformu için Data Warehouse tasarlanmıştır.
+
+FactSales tablosu merkezi fact table olarak kullanılmıştır.
+
+Dimension tablolar:
+
+DimCustomer
+DimProduct
+DimDate
+DimStore
+DimCategory
+
+olarak tasarlanmıştır.
+
+Star Schema kullanılmıştır.
+
+Müşteri bilgilerinin tarihsel değişimlerini korumak için SCD Type 2 uygulanmıştır.
+
+ETL pipeline Python ve SQL kullanılarak geliştirilmiştir.
+
+Power BI üzerinde satış dashboard'u hazırlanmıştır.
+
+# PROJE 6 – AI CUSTOMER SUPPORT ASSISTANT
+
+Müşteri sorularını yanıtlayan LLM tabanlı bir chatbot geliştirilmiştir.
+
+Sistem şirket dokümanlarını kullanarak RAG üzerinden cevap üretmektedir.
+
+FastAPI backend kullanılmıştır.
+
+ChromaDB vector database olarak kullanılmıştır.
+
+Sentence Transformers ile embedding oluşturulmuştur.
+
+LLM yerel olarak Ollama üzerinden çalıştırılmıştır.
+
+Tool Calling özelliği kullanılarak müşteri bilgileri SQL veri tabanından alınmıştır.
+
+Modelin veritabanında bulunmayan müşteri bilgilerini uydurmasını önlemek amacıyla system prompt geliştirilmiştir.
+
+# PROJE 7 – COMPUTER VISION QUALITY CONTROL
+
+Üretim hattındaki ürünlerde hata tespiti yapan görüntü işleme sistemi geliştirilmiştir.
+
+OpenCV kullanılarak görüntüler preprocess edilmiştir.
+
+CNN modeli ile ürün görüntüleri normal ve hatalı olarak sınıflandırılmıştır.
+
+Transfer Learning yöntemi kullanılmıştır.
+
+ResNet modeli üzerinde fine-tuning gerçekleştirilmiştir.
+
+Model validation set üzerinde değerlendirilmiştir.
+
+# PROJE 8 – SALES FORECASTING
+
+Geçmiş satış verilerini kullanarak gelecek satış miktarlarını tahmin eden sistem geliştirilmiştir.
+
+Time Series Analysis uygulanmıştır.
+
+Feature engineering gerçekleştirilmiştir.
+
+Lag features oluşturulmuştur.
+
+Moving average değerleri hesaplanmıştır.
+
+XGBoost ve Prophet modelleri karşılaştırılmıştır.
+
+Model sonuçları RMSE ve MAE metrikleriyle değerlendirilmiştir.
+
+# SQL BİLGİSİ
+
+SQL konusunda güçlü bilgiye sahiptir.
+
+Aşağıdaki konular üzerinde çalışmıştır:
+
+* SELECT
+* WHERE
+* ORDER BY
+* GROUP BY
+* HAVING
+* INNER JOIN
+* LEFT JOIN
+* RIGHT JOIN
+* FULL OUTER JOIN
+* UNION
+* UNION ALL
+* CASE WHEN
+* Subquery
+* CTE
+* Recursive CTE
+* Window Functions
+* ROW_NUMBER
+* RANK
+* DENSE_RANK
+* LEAD
+* LAG
+* PARTITION BY
+* Stored Procedure
+* View
+* Index
+* Trigger
+* Transaction
+
+# PYTHON BİLGİSİ
+
+Python üzerinde:
+
+* Data Structures
+* Functions
+* Object Oriented Programming
+* File Operations
+* Exception Handling
+* API Requests
+* Web Scraping
+* Data Processing
+* Machine Learning
+* Backend Development
+
+alanlarında çalışmıştır.
+
+# VERİ ANALİZİ
+
+Pandas ve NumPy kullanarak:
+
+* Missing value analysis
+* Duplicate detection
+* Data cleaning
+* Filtering
+* Aggregation
+* GroupBy
+* Merge
+* Join
+* Pivot Table
+* Statistical analysis
+
+işlemleri gerçekleştirmiştir.
+
+Matplotlib ve Plotly kullanarak veri görselleştirme çalışmaları yapmıştır.
+
+# MÜLAKATTA ÖNE ÇIKARILABİLECEK DATA ENGINEERING DENEYİMLERİ
+
+Data Engineer pozisyonlarında aşağıdaki deneyimleri öne çıkarabilir:
+
+Python ile veri işleme.
+
+İleri SQL sorguları.
+
+PostgreSQL deneyimi.
+
+ETL pipeline geliştirme.
+
+Apache Airflow.
+
+Apache Spark.
+
+Kafka.
+
+Data Warehouse tasarımı.
+
+Star Schema.
+
+Fact ve Dimension tablolar.
+
+SCD Type 1 ve Type 2.
+
+Docker.
+
+AWS.
+
+Power BI.
+
+REST API veri kaynaklarıyla çalışma.
+
+# MÜLAKATTA ÖNE ÇIKARILABİLECEK AI DENEYİMLERİ
+
+AI Engineer pozisyonlarında aşağıdaki konular öne çıkarılabilir:
+
+Machine Learning.
+
+Deep Learning.
+
+Natural Language Processing.
+
+Computer Vision.
+
+Transformer modelleri.
+
+Hugging Face.
+
+RAG.
+
+Embedding.
+
+ChromaDB.
+
+LLM.
+
+Prompt Engineering.
+
+Tool Calling.
+
+FastAPI ile model servis etme.
+
+# TAKIM ÇALIŞMASI
+
+Üniversite projelerinde 3-5 kişilik takımlarda görev almıştır.
+
+Git ve GitHub kullanarak ekip içinde kod paylaşımı gerçekleştirmiştir.
+
+Issue ve branch kullanımı konusunda deneyime sahiptir.
+
+Görevlerin küçük parçalara ayrılması ve takım üyeleri arasında dağıtılması konusunda deneyim kazanmıştır.
+
+# PROBLEM ÇÖZME
+
+Problemleri küçük ve yönetilebilir parçalara ayırarak çözmeyi tercih etmektedir.
+
+Bir hata oluştuğunda logları inceleme, problemi yeniden üretme ve sorunun kaynağını izole etme yaklaşımını kullanmaktadır.
+
+Stack Overflow, GitHub Issues ve resmi dokümantasyonlardan araştırma yaparak teknik problemlere çözüm üretmektedir.
+
+# YABANCI DİL
+
+Türkçe:
+Ana dil.
+
+İngilizce:
+B2 seviyesi.
+
+Teknik dokümantasyon okuyabilir.
+
+İngilizce API dokümantasyonlarını takip edebilir.
+
+Teknik toplantılarda ve yazılı iletişimde İngilizce kullanabilir.
+
+# SERTİFİKALAR
+
+Python for Data Science
+
+SQL Advanced
+
+Machine Learning Fundamentals
+
+AWS Cloud Practitioner Essentials
+
+Docker Fundamentals
+
+Apache Spark Basics
+
+Data Engineering Fundamentals
+
+Power BI Data Analyst Fundamentals
+
+# KATILDIĞI EĞİTİMLER
+
+Data Engineering Bootcamp
+
+Machine Learning Bootcamp
+
+Generative AI Workshop
+
+LLM Application Development Workshop
+
+SQL Advanced Training
+
+Cloud Computing Workshop
+
+Docker and Kubernetes Fundamentals
+
+# KARİYER HEDEFLERİ
+
+Kısa vadeli hedefi Data Engineer veya AI Engineer olarak profesyonel kariyerine başlamaktır.
+
+Orta vadede büyük ölçekli veri sistemleri, gerçek zamanlı veri pipeline'ları ve üretim ortamındaki AI sistemleri konusunda uzmanlaşmayı hedeflemektedir.
+
+Uzun vadede veri mühendisliği ve yapay zeka sistemlerinin birlikte kullanıldığı platformların tasarımı konusunda teknik liderlik seviyesine ulaşmak istemektedir.
+
+# TERCİH EDİLEN POZİSYONLAR
+
+Data Engineer
+
+Junior Data Engineer
+
+Machine Learning Engineer
+
+Junior Machine Learning Engineer
+
+AI Engineer
+
+Generative AI Engineer
+
+Backend Developer
+
+Data Analyst
+
+Business Intelligence Developer
+
+NLP Engineer
+
+# İLGİ ALANLARI
+
+Artificial Intelligence
+
+Data Engineering
+
+Machine Learning
+
+Generative AI
+
+Large Language Models
+
+Retrieval Augmented Generation
+
+Cloud Computing
+
+Distributed Systems
+
+Data Warehousing
+
+Backend Development
+
+Automation
+
+Open Source Technologies
+
+# GENEL DEĞERLENDİRME
+
+Ahmet Demir, veri mühendisliği ile yapay zekanın kesiştiği alanlara ilgi duyan bir Bilgisayar Mühendisliği mezunudur.
+
+Python, SQL, FastAPI, PostgreSQL, Apache Airflow, Spark, Kafka, Docker, Machine Learning, NLP, RAG ve LLM teknolojileri üzerine akademik ve proje bazlı deneyime sahiptir.
+
+Özellikle Data Engineering, AI Engineering ve Machine Learning Engineering pozisyonları için teknik altyapısını geliştirmeye devam etmektedir.
+
+Gerçek dünya problemleri üzerinde uygulamalı projeler geliştirmeyi ve öğrendiği teknolojileri çalışan sistemlere dönüştürmeyi kariyer gelişiminin önemli bir parçası olarak görmektedir.

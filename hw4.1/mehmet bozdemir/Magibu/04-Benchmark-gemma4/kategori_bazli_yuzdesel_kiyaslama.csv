@@ -1,0 +1,5 @@
+﻿Kategori,Toplam,Ham_Dogru,FT_Dogru,Ham Başarı (%),FT Başarı (%),Fark (%)
+Senaryo 1: Yönlendirme,25,16,14,64.0,56.0,-8.0
+Senaryo 2: Doğrudan Ders Soruları,25,3,12,12.0,48.0,36.0
+Senaryo 3: Selamlaşma ve Kimlik,25,21,24,84.0,96.0,12.0
+Senaryo 4: Müfredat Dışı / Reddetme,25,5,13,20.0,52.0,32.0

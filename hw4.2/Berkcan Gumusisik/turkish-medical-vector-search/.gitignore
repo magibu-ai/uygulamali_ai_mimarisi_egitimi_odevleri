@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Vector store (rebuildable from build_index.py) — not committed
+chroma_db/
+
+# HF / model caches
+.cache/
+
+# macOS
+.DS_Store

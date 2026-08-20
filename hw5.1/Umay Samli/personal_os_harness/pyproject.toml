@@ -1,0 +1,50 @@
+[project]
+name = "personal-os-harness"
+version = "0.1.0"
+description = "Experimental command-line harness for a personalized planning and personal operating system"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "psycopg-pool>=3.2",
+    "psycopg[binary]>=3.2",
+    "python-dotenv>=1.0",
+    "requests>=2.31",
+    "typer>=0.12",
+]
+
+[project.scripts]
+personal-os = "personal_os.cli:main"
+personal-os-chat = "personal_os.chat_cli:main"
+
+[dependency-groups]
+dev = [
+    "pyright>=1.1.400",
+    "pytest>=8.0",
+    "ruff>=0.12",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/personal_os"]
+
+[tool.pyright]
+include = ["src", "tests", "main.py"]
+pythonVersion = "3.11"
+typeCheckingMode = "strict"
+venvPath = "."
+venv = ".venv"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+markers = ["integration: requires the local PostgreSQL Compose stack"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

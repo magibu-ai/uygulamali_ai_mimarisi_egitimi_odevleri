@@ -1,0 +1,9 @@
+Bu dosya, veri klasorunun beklenen bicimini gostermek icin birakilmis kucuk bir ornektir.
+Gercek ders kitabi metinleri telifli oldugu icin depoya dahil edilmemistir.
+Kendi metinlerinizi bu klasore fizik.txt, kimya.txt, tarih.txt gibi adlarla koyun; dosya adi ders adi olarak kullanilir.
+Metinlerde ozel bir bicim aranmaz, duz metin yeterlidir.
+Her satir bir cumle ya da paragraf olabilir; parcalama katmani satir ve cumle sinirlarini kendisi bulur.
+Ornegin asagidaki gibi duz cumleler yeterlidir.
+Bir cismin ivmesi, uzerine etki eden net kuvvetle dogru, kutlesiyle ters orantilidir.
+Mol, bir maddenin 6,02 x 10 uzeri 23 tanecik iceren miktarina verilen isimdir.
+Turkiye Buyuk Millet Meclisi 23 Nisan 1920 tarihinde Ankara'da acilmistir.

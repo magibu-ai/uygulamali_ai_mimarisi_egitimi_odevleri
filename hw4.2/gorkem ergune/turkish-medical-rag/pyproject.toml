@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turkish-medical-rag"
+version = "0.1.0"
+description = "Turkish medical vector search and RAG system (academic assignment)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "pyyaml>=6.0",
+  # Dataset acquisition (Phase 1) and chunk-size tokenizer (Phase 2).
+  "datasets>=2.14",
+  "tiktoken>=0.7",
+  # Embedding generation + validation (Phase 3).
+  "numpy>=1.24",
+  "sentence-transformers>=2.2",
+  # Vector database + retrieval (Phase 4).
+  "chromadb>=0.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  # Web UI demo (scripts/app.py) — `streamlit run scripts/app.py`.
+  "streamlit>=1.30",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"

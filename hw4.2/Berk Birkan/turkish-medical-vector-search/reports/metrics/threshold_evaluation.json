@@ -1,0 +1,92 @@
+{
+  "model_id": "magibu/embeddingmagibu-200m",
+  "top_k": 5,
+  "threshold_selection": {
+    "source_split": "calibration_only",
+    "false_accept_cost": 2.0,
+    "false_reject_cost": 1.0,
+    "selected_threshold": 0.4240220785140991,
+    "calibration_positive_score_min": 0.431279718875885,
+    "calibration_positive_score_max": 0.7740194797515869,
+    "calibration_negative_score_min": 0.22627627849578857,
+    "calibration_negative_score_max": 0.41676443815231323
+  },
+  "calibration": {
+    "classification": {
+      "tp": 10,
+      "fn": 0,
+      "fp": 0,
+      "tn": 10,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0,
+      "negative_rejection_rate": 1.0,
+      "weighted_error_cost": 0.0
+    },
+    "retrieval": {
+      "exact_chunk_recall@1": 0.6,
+      "parent_document_recall@1": 0.7,
+      "exact_chunk_recall@3": 0.8,
+      "parent_document_recall@3": 0.8,
+      "exact_chunk_recall@5": 0.9,
+      "parent_document_recall@5": 0.9
+    },
+    "error_analysis": {
+      "positive_score_min": 0.431279718875885,
+      "positive_score_max": 0.7740194797515869,
+      "negative_score_min": 0.22627627849578857,
+      "negative_score_max": 0.41676443815231323,
+      "false_reject_question_ids": [],
+      "false_accept_question_ids": [],
+      "expected_parent_missing_at_5": [
+        "cal_pos_03"
+      ],
+      "expected_chunk_missing_at_5": [
+        "cal_pos_03"
+      ]
+    }
+  },
+  "test": {
+    "classification": {
+      "tp": 19,
+      "fn": 1,
+      "fp": 0,
+      "tn": 10,
+      "precision": 1.0,
+      "recall": 0.95,
+      "f1": 0.9743589743589743,
+      "accuracy": 0.9666666666666667,
+      "negative_rejection_rate": 1.0,
+      "weighted_error_cost": 1.0
+    },
+    "retrieval": {
+      "exact_chunk_recall@1": 0.5,
+      "parent_document_recall@1": 0.5,
+      "exact_chunk_recall@3": 0.7,
+      "parent_document_recall@3": 0.7,
+      "exact_chunk_recall@5": 0.85,
+      "parent_document_recall@5": 0.85
+    },
+    "error_analysis": {
+      "positive_score_min": 0.40129029750823975,
+      "positive_score_max": 0.8251563906669617,
+      "negative_score_min": 0.11623877286911011,
+      "negative_score_max": 0.3402160406112671,
+      "false_reject_question_ids": [
+        "test_pos_08"
+      ],
+      "false_accept_question_ids": [],
+      "expected_parent_missing_at_5": [
+        "test_pos_02",
+        "test_pos_10",
+        "test_pos_17"
+      ],
+      "expected_chunk_missing_at_5": [
+        "test_pos_02",
+        "test_pos_10",
+        "test_pos_17"
+      ]
+    }
+  }
+}

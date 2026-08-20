@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" role="img" aria-label="Vector database icon">
+  <g fill="#e0f2fe" stroke="#0e7490" stroke-width="2.5">
+    <ellipse cx="24" cy="12" rx="15" ry="6"/>
+    <path d="M9 12 v10 c0 3.3 6.7 6 15 6 s15 -2.7 15 -6 v-10" fill="#f0f9ff"/>
+    <path d="M9 22 v10 c0 3.3 6.7 6 15 6 s15 -2.7 15 -6 v-10" fill="#e0f2fe"/>
+  </g>
+  <g fill="#2563eb">
+    <circle cx="24" cy="12" r="2.2"/>
+    <circle cx="17" cy="26" r="2"/>
+    <circle cx="31" cy="27" r="2"/>
+  </g>
+</svg>

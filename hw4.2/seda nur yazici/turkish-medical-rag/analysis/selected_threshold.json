@@ -1,0 +1,25 @@
+{
+    "selected_threshold": 0.57,
+    "exact_threshold": 0.5695658326148987,
+    "selection_method": "midpoint_between_max_negative_and_min_positive",
+    "embedding_model": "Qwen/Qwen3-Embedding-0.6B",
+    "distance_metric": "cosine",
+    "benchmark_total": 30,
+    "benchmark_positive": 20,
+    "benchmark_negative": 10,
+    "positive_min_similarity": 0.6044837236404419,
+    "negative_max_similarity": 0.5346479415893555,
+    "observed_gap": 0.06983578205108643,
+    "metrics": {
+        "tp": 20,
+        "tn": 10,
+        "fp": 0,
+        "fn": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "specificity": 1.0,
+        "f1": 1.0,
+        "balanced_accuracy": 1.0
+    }
+}

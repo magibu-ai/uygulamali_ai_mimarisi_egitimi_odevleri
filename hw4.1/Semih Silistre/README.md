@@ -1,0 +1,10 @@
+# Semih Silistre — hw4.1
+
+## Hugging Face
+
+> Dosyalar tek repoda: https://huggingface.co/datasets/uyzem/uygulamali-ai-mimarisi
+
+| Tur | Repo | Link |
+|---|---|---|
+| dataset | `sadecebirisii/sts-cumle-benzerligi-turkish-dataset` | https://huggingface.co/datasets/sadecebirisii/sts-cumle-benzerligi-turkish-dataset/discussions/1 |
+

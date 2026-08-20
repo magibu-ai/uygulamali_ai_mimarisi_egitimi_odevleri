@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Ortam değişkenleri (API key'ler asla commit'lenmez)
+.env
+
+# Veritabanı (ilk çalıştırmada seed'den yeniden üretilir)
+cinema.db
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Test / cache
+.pytest_cache/
+.gradio/

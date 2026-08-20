@@ -1,0 +1,65 @@
+{%- if messages and messages[0]['role'] == 'system' -%}
+<|im_start|>system
+{{ messages[0]['content'] | trim }}
+{%- if tools is defined and tools %}
+<tools>
+{%- for tool in tools %}
+{{ tool | tojson }}
+{%- endfor %}
+</tools>
+{%- endif %}
+<|im_end|>
+{%- set loop_messages = messages[1:] -%}
+
+{%- else -%}
+{%- set loop_messages = messages -%}
+
+{%- if tools is defined and tools %}
+<|im_start|>system
+Kullanılabilir araçlar aşağıda verilmiştir.
+<tools>
+{%- for tool in tools %}
+{{ tool | tojson }}
+{%- endfor %}
+</tools>
+<|im_end|>
+{%- endif %}
+{%- endif %}
+
+
+{%- for message in loop_messages %}
+
+{%- if message['role'] == 'user' %}
+<|im_start|>user
+{{ message['content'] | trim }}
+<|im_end|>
+
+{%- elif message['role'] == 'assistant' %}
+<|im_start|>assistant
+{%- if message['content'] %}
+{{ message['content'] | trim }}
+{%- endif %}
+
+{%- if message['tool_calls'] is defined and message['tool_calls'] %}
+{%- for tool_call in message['tool_calls'] %}
+<tool_call>
+{{ tool_call | tojson }}
+</tool_call>
+{%- endfor %}
+{%- endif %}
+<|im_end|>
+
+{%- elif message['role'] == 'tool' %}
+<|im_start|>tool
+<tool_response>
+{{ message['content'] }}
+</tool_response>
+<|im_end|>
+
+{%- endif %}
+{%- endfor %}
+
+
+{%- if add_generation_prompt %}
+<|im_start|>assistant
+{%- endif %}

@@ -1,0 +1,181 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "search_products",
+      "description": "Open Food Facts üzerinde ürün arar.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "max_sugars_100g": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 100
+          },
+          "excluded_ingredients": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "default": 5
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_product_details",
+      "description": "Ürünü barkoduyla doğrular ve ayrıntılarını getirir.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "barcode": {
+            "type": "string",
+            "pattern": "^\\d{8,14}$"
+          }
+        },
+        "required": [
+          "barcode"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "add_to_shopping_list",
+      "description": "Ürünün mevcut miktarına belirtilen adedi ekler.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "barcode": {
+            "type": "string",
+            "pattern": "^\\d{8,14}$"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 1
+          }
+        },
+        "required": [
+          "barcode"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "ensure_in_shopping_list",
+      "description": "Ürünün listede en az belirtilen miktarda bulunmasını sağlar; varsa gereksiz artış yapmaz.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "barcode": {
+            "type": "string",
+            "pattern": "^\\d{8,14}$"
+          },
+          "minimum_quantity": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 1
+          }
+        },
+        "required": [
+          "barcode"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "set_shopping_list_quantity",
+      "description": "Ürünün listedeki toplam miktarını tam olarak ayarlar.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "barcode": {
+            "type": "string",
+            "pattern": "^\\d{8,14}$"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50
+          }
+        },
+        "required": [
+          "barcode",
+          "quantity"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "remove_from_shopping_list",
+      "description": "Ürünün miktarını azaltır veya ürünü tamamen listeden kaldırır.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "barcode": {
+            "type": "string",
+            "pattern": "^\\d{8,14}$"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 1
+          },
+          "remove_all": {
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "barcode"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_shopping_list",
+      "description": "SQLite üzerinde kayıtlı alışveriş listesini getirir.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  }
+]

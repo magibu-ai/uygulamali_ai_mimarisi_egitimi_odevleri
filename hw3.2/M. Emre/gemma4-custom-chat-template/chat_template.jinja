@@ -1,0 +1,206 @@
+{#- =====================================================================
+    Biyoloji Çalışma Koçu — Özel Chat Template (Gemma 4 token uyumlu)
+
+    Amaç: system / user / assistant / tool rollerini ve tool-calling
+    parametrelerini modelin tanıdığı özel token'larla sarmalamak.
+
+    Resmi Gemma 4 şablonu 385 satırdır; düşünme kanalları, multimodal
+    içerik, legacy Google + OpenAI çift tool formatı ve derin şema
+    özyinelemesi taşır. Bu şablon onların hepsini çıkarır ve yalnızca
+    metin + tool-calling akışına odaklanır.
+
+    Girdi değişkenleri:
+      messages               OpenAI biçiminde mesaj listesi
+      tools                  OpenAI biçiminde araç şeması listesi (opsiyonel)
+      add_generation_prompt  True ise sonda boş model turu açılır
+      bos_token              opsiyonel
+      varsayilan_talimat     system mesajı yokken kullanılacak talimat
+
+    Üretilen biçim:
+      <|turn>system  ... <|tool>declaration:...<tool|> <turn|>
+      <|turn>user    ... <turn|>
+      <|turn>model   <|tool_call>call:ad{...}<tool_call|>
+                     <|tool_response>response:ad{...}<tool_response|>
+                     düz cevap metni <turn|>
+===================================================================== -#}
+
+{#- --------------------------------------------------------------
+    MAKRO 1: deger()
+    Python değerini Gemma'nın DSL biçimine çevirir.
+    String'ler <|"|> özel token'ı ile sarmalanır; bu token tokenizer'da
+    tek parçadır, kullanıcı metninden asla üretilemez -> enjeksiyon
+    ve kaçış (escape) sorunu tokenizer seviyesinde çözülür.
+    Sıra önemli: Python'da bool bir int'tir ve string bir sequence'tır.
+-------------------------------------------------------------- -#}
+{%- macro deger(v) -%}
+    {%- if v is none -%}
+        null
+    {%- elif v is string -%}
+        <|"|>{{ v }}<|"|>
+    {%- elif v is boolean -%}
+        {{ 'true' if v else 'false' }}
+    {%- elif v is mapping -%}
+        {%- set ns = namespace(ilk=true) -%}
+        {
+        {%- for k, val in v | dictsort -%}
+            {%- if not ns.ilk %},{% endif -%}
+            {%- set ns.ilk = false -%}
+            {{- k -}}:{{- deger(val) -}}
+        {%- endfor -%}
+        }
+    {%- elif v is sequence -%}
+        [
+        {%- for oge in v -%}
+            {{- deger(oge) -}}{%- if not loop.last %},{% endif -%}
+        {%- endfor -%}
+        ]
+    {%- else -%}
+        {{ v }}
+    {%- endif -%}
+{%- endmacro -%}
+
+{#- --------------------------------------------------------------
+    MAKRO 2: arac_tanimi()
+    OpenAI function şemasını Gemma'nın declaration biçimine çevirir:
+      declaration:ad{description:<|"|>..<|"|>,parameters:{properties:{
+        param:{description:<|"|>..<|"|>,type:<|"|>STRING<|"|>}},
+        required:[<|"|>param<|"|>],type:<|"|>OBJECT<|"|>}}
+    Sadeleştirme: iç içe object parametreleri desteklenmez; bu proje
+    düz parametreli üç araç kullanır (terim_ara / quiz_getir / cevap_kaydet).
+-------------------------------------------------------------- -#}
+{%- macro arac_tanimi(arac) -%}
+    {%- set fn = arac['function'] if 'function' in arac else arac -%}
+    declaration:{{- fn['name'] -}}{description:{{- deger(fn.get('description', '')) -}}
+    {%- set p = fn.get('parameters') -%}
+    {%- if p -%}
+        ,parameters:{
+        {%- if p.get('properties') -%}
+            properties:{
+            {%- for ad, ozellik in p['properties'] | dictsort -%}
+                {{- ad -}}:{
+                {%- if ozellik.get('description') -%}
+                    description:{{- deger(ozellik['description']) -}},
+                {%- endif -%}
+                {%- if ozellik.get('enum') -%}
+                    enum:{{- deger(ozellik['enum']) -}},
+                {%- endif -%}
+                type:{{- deger(ozellik.get('type', 'string') | upper) -}}}
+                {%- if not loop.last %},{% endif -%}
+            {%- endfor -%}
+            },
+        {%- endif -%}
+        {%- if p.get('required') -%}
+            required:{{- deger(p['required']) -}},
+        {%- endif -%}
+        type:{{- deger(p.get('type', 'object') | upper) -}}}
+    {%- endif -%}
+    }
+{%- endmacro -%}
+
+{#- --------------------------------------------------------------
+    MAKRO 3: arac_sonucu()
+    Veritabanından dönen gerçek veriyi sarmalar. Bu blok halüsinasyon
+    engelinin temelidir: model cevabını yalnızca buradaki veriye
+    dayandırmalıdır.
+-------------------------------------------------------------- -#}
+{%- macro arac_sonucu(ad, icerik) -%}
+    {{- '<|tool_response>' -}}
+    {%- if icerik is mapping -%}
+        response:{{- ad -}}{
+        {%- for k, v in icerik | dictsort -%}
+            {{- k -}}:{{- deger(v) -}}{%- if not loop.last %},{% endif -%}
+        {%- endfor -%}
+        }
+    {%- else -%}
+        response:{{- ad -}}{value:{{- deger(icerik) -}}}
+    {%- endif -%}
+    {{- '<tool_response|>' -}}
+{%- endmacro -%}
+
+{#- ===================== GÖVDE BAŞLANGICI ===================== -#}
+{{- bos_token | default('', true) -}}
+
+{#- BLOK 1: system turu.
+    system mesajı yoksa AMA araçlar varsa yine de açılır; yoksa modele
+    araç tanımları hiç ulaşmaz (sessiz hata). -#}
+{%- set sistem_var = messages and messages[0]['role'] in ['system', 'developer'] -%}
+{%- set kalan_mesajlar = messages[1:] if sistem_var else messages -%}
+{%- if sistem_var or tools -%}
+    {{- '<|turn>system\n' -}}
+    {%- if sistem_var -%}
+        {{- messages[0]['content'] | trim -}}
+    {%- else -%}
+        {{- varsayilan_talimat | default('Sen bir biyoloji çalışma koçusun. Yanıtlarını YALNIZCA araçlardan dönen gerçek veriye dayandır. Araç veri döndürmediyse bilgi uydurma, kaynağında bulunmadığını söyle.', true) | trim -}}
+    {%- endif -%}
+    {%- if tools -%}
+        {%- for arac in tools -%}
+            {{- '<|tool>' -}}{{- arac_tanimi(arac) | trim -}}{{- '<tool|>' -}}
+        {%- endfor -%}
+    {%- endif -%}
+    {{- '<turn|>\n' -}}
+{%- endif -%}
+
+{#- BLOK 2: ana döngü.
+    Gemma'nın iki kuralı:
+      1) assistant rolü metinde "model" adıyla yazılır.
+      2) tool sonuçları KENDİ turunu açmaz; açık model turunun içine girer.
+         Böylece  model -> tool -> model  zinciri tek bir turda kalır.
+    ns.acik_rol o an açık olan turu tutar; yeni tur açılmadan önce
+    öncekini kapatırız. -#}
+{%- set ns = namespace(acik_rol=None) -%}
+{%- for mesaj in kalan_mesajlar -%}
+    {%- set rol = 'model' if mesaj['role'] == 'assistant' else mesaj['role'] -%}
+
+    {%- if rol == 'tool' -%}
+        {%- if ns.acik_rol != 'model' -%}
+            {%- if ns.acik_rol -%}{{- '<turn|>\n' -}}{%- endif -%}
+            {{- '<|turn>model\n' -}}
+            {%- set ns.acik_rol = 'model' -%}
+        {%- endif -%}
+        {{- arac_sonucu(mesaj.get('name') or 'arac', mesaj.get('content')) -}}
+
+    {%- else -%}
+        {#- Açık model turu varken yeni bir model mesajı geldiyse tur devam eder. -#}
+        {%- if not (rol == 'model' and ns.acik_rol == 'model') -%}
+            {%- if ns.acik_rol -%}{{- '<turn|>\n' -}}{%- endif -%}
+            {{- '<|turn>' + rol + '\n' -}}
+            {%- set ns.acik_rol = rol -%}
+        {%- endif -%}
+
+        {%- if mesaj.get('content') -%}
+            {{- mesaj['content'] | trim -}}
+        {%- endif -%}
+
+        {%- if mesaj.get('tool_calls') -%}
+            {%- for cagri in mesaj['tool_calls'] -%}
+                {%- set f = cagri['function'] if 'function' in cagri else cagri -%}
+                {{- '<|tool_call>call:' + f['name'] + '{' -}}
+                {%- set argumanlar = f.get('arguments') -%}
+                {%- if argumanlar is mapping -%}
+                    {%- for k, v in argumanlar | dictsort -%}
+                        {{- k -}}:{{- deger(v) -}}{%- if not loop.last %},{% endif -%}
+                    {%- endfor -%}
+                {%- elif argumanlar is string -%}
+                    {#- Bazı istemciler argümanları JSON string olarak yollar.
+                        Şablon içinde JSON parse edilemez; dış süslü parantezi
+                        atıp DSL parantezleriyle çakışmasını önleriz. -#}
+                    {%- set arg_metin = argumanlar | trim -%}
+                    {%- if arg_metin[:1] == '{' and arg_metin[-1:] == '}' -%}
+                        {{- arg_metin[1:-1] -}}
+                    {%- else -%}
+                        {{- arg_metin -}}
+                    {%- endif -%}
+                {%- endif -%}
+                {{- '}<tool_call|>' -}}
+            {%- endfor -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}
+
+{#- Son açık turu kapat. -#}
+{%- if ns.acik_rol -%}{{- '<turn|>\n' -}}{%- endif -%}
+
+{#- BLOK 3: modele sıra ver. Bu tur bilinçli olarak kapatılmaz. -#}
+{%- if add_generation_prompt -%}
+    {{- '<|turn>model\n' -}}
+{%- endif -%}

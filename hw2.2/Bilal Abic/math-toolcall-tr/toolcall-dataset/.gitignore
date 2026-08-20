@@ -1,0 +1,16 @@
+# Sirlar - asla commit'lenmez
+.env
+.env.*
+!.env.example
+
+# Ara/hacimli ciktilar
+data/questions.json
+data/train_openai.jsonl
+data/train_gemini.jsonl
+__pycache__/
+*.pyc
+
+# NOT: asagidaki egitim dosyalari BILEREK paylasilir (git add ile eklenir):
+#   data/train_sharegpt.jsonl   -> Colab/Unsloth bunu kullanir
+#   data/dataset.json           -> tam provenance (hangi model, hangi konu)
+#   data/dataset_chat.json      -> sohbet formati

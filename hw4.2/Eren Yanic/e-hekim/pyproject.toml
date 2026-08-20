@@ -1,0 +1,46 @@
+[project]
+name = "e-hekim"
+version = "1.0.0"
+description = "Turkish medical RAG and semantic search over hospital articles (ChromaDB + embeddingmagibu-200m)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+dependencies = [
+    # API layer
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.34",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.6",
+    "python-dotenv>=1.0",
+    # Vector store
+    "chromadb>=1.0",
+    # Embeddings
+    "sentence-transformers>=5.2",
+    "transformers>=5.0",
+    "torch>=2.6",
+    # Data / ingestion
+    "datasets>=3.0",
+    "huggingface-hub>=0.28",
+    "pandas>=2.2",
+    "pyarrow>=18.0",
+    # LLM providers (OpenAI-compatible)
+    "openai>=1.60",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "httpx>=0.28",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ehekim"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

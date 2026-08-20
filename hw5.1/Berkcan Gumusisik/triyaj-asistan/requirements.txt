@@ -1,0 +1,5 @@
+# Triyaj Asistanı — bağımlılıklar
+chromadb>=1.0      # vektör veritabanı
+datasets>=3.0      # Hugging Face veri setini indirmek için
+requests>=2.31     # Ollama ve web API'leri için HTTP
+flask>=3.0         # web arayüzü (app.py) — terminal için gerekmez

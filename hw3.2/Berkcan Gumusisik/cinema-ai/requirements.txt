@@ -1,0 +1,6 @@
+# Cinema-AI bağımlılıkları
+openai>=1.30.0        # OpenAI-uyumlu istemci (Groq, HF router, vLLM/TGI hepsi için)
+gradio>=5.0,<6.0      # Canlı web arayüzü (HF Space) — 5.x stabil, messages formatı
+jinja2>=3.1.0         # Custom chat template render
+python-dotenv>=1.0.0  # .env dosyasından ortam değişkenleri
+pytest>=8.0.0         # Testler

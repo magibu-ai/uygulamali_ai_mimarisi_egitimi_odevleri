@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "4934a895ad4ca5ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d1ee351d639f62d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "da48293ad994a897",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a680dbaa12a1a005",
+    "type": "split",
+    "children": [
+      {
+        "id": "0be9de40e0409870",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97a30c83fe109b29",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "32f3750ad9321233",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "dc5b21bb6b89c70e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7caeddb6de38fe24",
+    "type": "split",
+    "children": [
+      {
+        "id": "d50d91153d13b60b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc83c24b30f87a0f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03 What is Transformers/03_02 Anatomy of the transfomer block.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "367ef7c38ecdfa0b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03 What is Transformers/03_02 Anatomy of the transfomer block.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "42bfe9880f35033c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "394d1f9a3183368c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "eec238cdb6dabe6b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03 What is Transformers/03_02 Anatomy of the transfomer block.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "da48293ad994a897",
+  "lastOpenFiles": [
+    "04 How LLMs Work/04_06 Summary.md",
+    "04 How LLMs Work/04_05 Train Transformer - GPT From Scratch.md",
+    "04 How LLMs Work/04_04 Train Embeddings - Word2Vec Skip-Gram.md",
+    "04 How LLMs Work/04_03 Basic Tokenizer - BPE From Scratch.md",
+    "04 How LLMs Work/04_02 XOR Neural Net - Backpropagation.md",
+    "04 How LLMs Work/04_01 Simple Chat - Pattern Matching.md",
+    "03 What is Transformers/03_24 Summary.md",
+    "03 What is Transformers/03_23 Hands On Coding a Miniature Transformers for Sequence Classification.md",
+    "03 What is Transformers/03_21 Pretraining, Fine Tuning and Transfer Learning in Transformers.md",
+    "03 What is Transformers/03_18 FeedForward Network.md",
+    "03 What is Transformers/03_14 Casual attention with Dropouts.md",
+    "03 What is Transformers/03_10 From Embeddings to Queries, Keys and Values.md",
+    "03 What is Transformers/03_06 Transformers Block.md",
+    "03 What is Transformers/03_02 Anatomy of the transfomer block.md",
+    "03 What is Transformers/03_01 Introduction to Large Language Models.md",
+    "03 What is Transformers/03_17 Layer Normalization.md",
+    "03 What is Transformers/03_08 Self Attention Mechanism.md",
+    "03 What is Transformers/03_11 A Quick Note on Matrix Multiplication.md",
+    "03 What is Transformers/03_09 Understanding the Input Embedding Matrix.md",
+    "03 What is Transformers/03_03 Tokenization.md",
+    "03 What is Transformers/03_05 Word Embedding.md",
+    "03 What is Transformers/03_07 The Need for Attention Mechanism.md",
+    "03 What is Transformers/03_19 Shortcut Connections.md",
+    "03 What is Transformers/03_04 Byte Pair Encoding.md",
+    "03 What is Transformers/Transformersjpg.md",
+    "README.md",
+    "03 What is Transformers/Transformersjpg",
+    "04 How LLMs Work",
+    "03 What is Transformers",
+    "02 What is ANN",
+    "01 What is AI"
+  ]
+}

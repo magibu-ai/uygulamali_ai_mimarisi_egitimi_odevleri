@@ -1,0 +1,84 @@
+{
+  "domains": [
+    {
+      "domain_name": "Ayakkabı",
+      "categories": ["Spor Ayakkabı", "Klasik Ayakkabı", "Bot", "Sandalet", "Topuklu Ayakkabı", "Terlik"],
+      "brands": ["Nike", "Adidas", "Puma", "New Balance", "Derimod", "Skechers", "Harley Davidson", "Birkenstock"],
+      "colors": ["Siyah", "Beyaz", "Lacivert", "Taba", "Kırmızı", "Bej", "Gri", "Taba"],
+      "sizes": ["36 Numara", "38 Numara", "40 Numara", "42 Numara", "44 Numara"],
+      "target_audiences": ["Erkek", "Kadın", "Çocuk", "Unisex"]
+    },
+    {
+      "domain_name": "Çanta",
+      "categories": ["Sırt Çantası", "Omuz Çantası", "El Çantası", "Valiz", "Bel Çantası", "Laptop Çantası"],
+      "brands": ["Eastpak", "Pierre Cardin", "Samsonite", "Herschel", "Benetton", "Calvin Klein", "ÇantaPark"],
+      "colors": ["Siyah", "Haki", "Lacivert", "Bordo", "Vizon", "Hardal", "Desenli"],
+      "sizes": ["Küçük Boy", "Orta Boy", "Büyük Boy", "Kabin Boy", "Standart"],
+      "target_audiences": ["Erkek", "Kadın", "Çocuk", "Unisex"]
+    },
+    {
+      "domain_name": "Giyim",
+      "categories": ["T-Shirt", "Kot Pantolon", "Mont", "Sweatshirt", "Gömlek", "Elbise", "Ceket", "Tayt"],
+      "brands": ["Mavi", "LC Waikiki", "DeFacto", "Zara", "Mango", "Koton", "Levi's", "Pull&Bear", "Jack & Jones"],
+      "colors": ["Siyah", "Beyaz", "Mavi", "Haki", "Bordo", "Krem", "Taş Rengi", "Antrasit"],
+      "sizes": ["XS Beden", "S Beden", "M Beden", "L Beden", "XL Beden", "XXL Beden"],
+      "target_audiences": ["Erkek", "Kadın", "Çocuk", "Unisex"]
+    },
+    {
+      "domain_name": "Aksesuar",
+      "categories": ["Güneş Gözlüğü", "Kol Saati", "Deri Kemer", "Cüzdan", "Şapka", "Atkı", "Gümüş Takı"],
+      "brands": ["Ray-Ban", "Casio", "Fossil", "Seiko", "Guess", "Tommy Hilfiger", "Police"],
+      "colors": ["Siyah", "Kahverengi", "Altın Sarısı", "Gümüş", "Şeffaf", "Taba"],
+      "sizes": ["Standart Beden", "Ayarlanabilir", "Eklem Boyu"],
+      "target_audiences": ["Erkek", "Kadın", "Unisex"]
+    },
+    {
+      "domain_name": "Elektronik",
+      "categories": ["Akıllı Telefon", "Laptop", "Tablet", "Televizyon", "Kablosuz Kulaklık", "Akıllı Saat"],
+      "brands": ["Samsung", "Apple", "Xiaomi", "Lenovo", "Sony", "Anker", "Asus", "Huawei", "LG"],
+      "colors": ["Uzay Grisi", "Gece Siyahı", "Buz Beyazı", "Rose Gold", "Gümüş", "Gece Mavisi"],
+      "sizes": ["128 GB", "256 GB", "512 GB", "15.6 inç", "65 inç", "44 mm"],
+      "target_audiences": ["Genel"]
+    },
+    {
+      "domain_name": "Ev & Mutfak",
+      "categories": ["Kahve Makinesi", "Airfryer", "Blender Seti", "Yemek Takımı", "Tencere Seti", "Çay Makinesi"],
+      "brands": ["Karaca", "Philips", "Arzum", "Fakir", "Korkmaz", "Tefal", "Bosch", "Beko"],
+      "colors": ["Mat Siyah", "Inox", "Kırmızı", "Rose Gold", "Beyaz", "Krem"],
+      "sizes": ["1.5 Litre", "4 Litre", "6 Kişilik", "12 Kişilik", "Tek Kişilik"],
+      "target_audiences": ["Mutfak"]
+    },
+    {
+      "domain_name": "Mobilya & Dekorasyon",
+      "categories": ["Çalışma Masası", "Oyuncu Koltuğu", "Kitaplık", "Berjer", "Halı", "Nevresim Takımı"],
+      "brands": ["IKEA", "Vivense", "Taç", "Bellona", "Yataş", "Enza Home", "xDrive"],
+      "colors": ["Ahşap", "Anthracite", "Beyaz", "Ceviz", "Gri", "Yeşil"],
+      "sizes": ["Tek Kişilik", "Çift Kişilik", "160x230 cm", "Standart"],
+      "target_audiences": ["Ev"]
+    },
+    {
+      "domain_name": "Kozmetik",
+      "categories": ["Parfüm", "Ruj", "Maskara", "Fondöten", "Oje", "Allık"],
+      "brands": ["L'Oreal Paris", "Maybelline", "MAC", "Flormar", "Avon", "Golden Rose", "Chanel"],
+      "colors": ["Kırmızı", "Nude", "Şeffaf", "Pembe", "Şeftali Tonu", "Bordo"],
+      "sizes": ["30 ml", "50 ml", "100 ml", "Mat Bitiş", "Işıltılı"],
+      "target_audiences": ["Kadın", "Unisex"]
+    },
+    {
+      "domain_name": "Kişisel Bakım",
+      "categories": ["Yüz Temizleme Jeli", "Nemlendirici Krem", "Güneş Kremi", "Şampuan", "Saç Kurutma Makinesi"],
+      "brands": ["Nivea", "La Roche-Posay", "Avène", "CeraVe", "Dyson", "Braun", "Elidor", "Vichy"],
+      "colors": ["Doğal", "Şeffaf", "Beyaz"],
+      "sizes": ["50 ml", "100 ml", "200 ml", "400 ml", "50 SPF"],
+      "target_audiences": ["Kadın", "Erkek", "Unisex"]
+    },
+    {
+      "domain_name": "Spor & Outdoor",
+      "categories": ["Termos", "Kamp Çadırı", "Pilates Matı", "Bisiklet", "Dumbbell Seti", "Spor Çantası"],
+      "brands": ["Stanley", "Decathlon", "Quechua", "Nike", "Under Armour", "Voit", "Salomon"],
+      "colors": ["Haki Green", "Siyah", "Mat Gri", "Turuncu", "Mavi"],
+      "sizes": ["0.75 Litre", "1 Litre", "2 Kişilik", "4 Kişilik", "10 kg"],
+      "target_audiences": ["Erkek", "Kadın", "Unisex"]
+    }
+  ]
+}

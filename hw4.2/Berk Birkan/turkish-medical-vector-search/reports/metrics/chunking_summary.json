@@ -1,0 +1,23 @@
+{
+  "article_count": 500,
+  "chunk_count": 1019,
+  "embedding_model": "magibu/embeddingmagibu-200m",
+  "tokenizer_patch": "not_applied_custom_split_pretokenizer",
+  "target_tokens": 512,
+  "overlap_tokens": 64,
+  "min_chunk_tokens": 80,
+  "token_count": {
+    "min": 83,
+    "median": 428,
+    "mean": 385.0186457311089,
+    "max": 512
+  },
+  "chunks_per_article": {
+    "min": 1,
+    "median": 2.0,
+    "mean": 2.038,
+    "max": 28
+  },
+  "articles_without_chunks": 0,
+  "chunks_over_target": 0
+}

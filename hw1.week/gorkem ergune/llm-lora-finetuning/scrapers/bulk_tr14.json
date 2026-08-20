@@ -1,0 +1,196 @@
+{
+    "train": [
+        [
+            {
+                "content": "REST API tasarım kuralları neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İyi REST API tasarımı: URL'lerde isim kullan (GET /users, POST /users, GET /users/123, PUT /users/123, DELETE /users/123), fiil kullanma (/getUser değil). HTTP status code'ları doğru kullan: 200 OK, 201 Created, 204 No Content, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 422 Unprocessable Entity, 500 Internal Server Error. Pagination: ?page=2&limit=20 veya cursor-based (daha performanslı). Filtering: ?status=active&role=admin. Sorting: ?sort=created_at&order=desc. Versioning: /api/v1/users veya Accept header. Response format tutarlı olsun: { data: [...], meta: { total, page } }. HATEOAS: response'ta ilgili resource URL'leri ver. API documentation: OpenAPI/Swagger ile otomatik dökümantasyon.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "REST API, URL naming, HTTP status, pagination, filtering, versioning, OpenAPI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "VS Code en iyi extension'lar hangileri?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Her developer'ın bilmesi gereken VS Code extension'ları: GitLens (Git blame, file history, commit details — Git'i IDE içinde tam kullan), Prettier (otomatik kod formatlama), ESLint/Pylint (lint — hata ve stil kontrolü), GitHub Copilot (AI kod tamamlama), Thunder Client (API test — Postman alternatifi), Docker (container yönetimi), Remote SSH (uzak sunucuda geliştirme), Live Share (pair programming). Dil bazlı: Python extension pack, Jupyter, Vetur/Volar (Vue), ES7+ React snippets. Tema ve görünüm: Material Icon Theme, One Dark Pro. Verimlilik: Todo Tree, Bookmarks, Path Intellisense, Auto Rename Tag. Settings: editor.formatOnSave true yap, bracket pair colorization aç. Snippets: sık kullandığın kod parçaları için custom snippet tanımla. VS Code'un gücü extension ekosisteminde — ama çok fazla extension yüklemek yavaşlatır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "VS Code, extension, GitLens, Prettier, Copilot, Remote SSH, verimlilik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "serverless architecture ne zaman kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Serverless sunucu yönetimi olmadan kod çalıştırma — AWS Lambda, Google Cloud Functions, Azure Functions. Event-driven: HTTP istek, dosya yükleme, cron job, mesaj kuyruğu tetikler. Avantajları: sunucu yönetimi yok, otomatik ölçekleme (0'dan binlerce instance'a), kullandığın kadar öde, hızlı deploy. Dezavantajları: cold start (ilk çağrı yavaş, 100ms-birkaç saniye), execution time limiti (15 dk Lambda), vendor lock-in, debugging zor, stateless (state harici saklanmalı). İyi kullanım alanları: API endpoint'leri, image processing, webhook handler, scheduled jobs, IoT data processing. Kötü kullanım alanları: uzun süren işler, sürekli yüksek yük (her zaman çalışan sunucu daha ucuz), karmaşık state yönetimi. Serverless Framework veya SAM ile deploy kolaylaştır. Görkem'in küçük API projeleri için Lambda + API Gateway mükemmel.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Serverless, Lambda, cold start, event-driven, ölçekleme, vendor lock-in.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Git advanced komutları neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Temel Git ötesinde bilmen gereken komutlar: git rebase — commit history'yi temizle (squash, reorder), feature branch'i main'e rebase et (merge commit olmadan düz tarihçe). git cherry-pick — spesifik bir commit'i başka branch'e al. git bisect — hangi commit'in bug'ı tanıttığını binary search ile bul (otomatik!). git stash — yarım kalan çalışmayı geçici olarak kaydet, sonra geri al. git reflog — silinen commit'leri kurtarma (Git'te hiçbir şey gerçekten silinmez). git worktree — birden fazla branch'i aynı anda farklı dizinlerde aç. git blame — her satırı kim, ne zaman yazdı. Interactive staging: git add -p ile dosyanın sadece bir kısmını stage et. .gitattributes: line ending, merge strategy, diff driver ayarları. Pre-commit hooks: commit öncesi lint, format, test çalıştır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Git, rebase, cherry-pick, bisect, stash, reflog, worktree, hooks, advanced.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "discrete math neden CS'de önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Discrete mathematics bilgisayar biliminin matematiksel temeli. Propositional logic: AND, OR, NOT — boolean algebra, devre tasarımı, program doğrulama. Set theory: veri yapıları ve veritabanı temeli. Graph theory: ağ analizi, sosyal medya, harita navigasyon, dependency resolution. Combinatorics: algoritma analizi (kaç farklı sonuç var?), olasılık hesapları. Number theory: kriptografi (RSA, modüler aritmetik, asal sayılar). Recursion ve induction: recursive algoritmaların doğruluğunu ispatlama. Boolean algebra: dijital devre tasarımı, SQL WHERE koşulları. Relation ve function: veritabanı ilişkileri, fonksiyonel programlama. Finite automata ve regular expressions: derleyici tasarımı, pattern matching. CS müfredatında genellikle ilk yıl veriliyor ve sonraki her dersin temeli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Discrete math, logic, graph theory, combinatorics, number theory, recursion, CS temeli.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "URL shortener nasıl tasarlanır system design?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Klasik system design sorusu. Gereksinimler: uzun URL → kısa URL, kısa URL → yönlendirme, analytics (tıklama sayısı). API: POST /shorten { url: '...' } → { short_url: 'abc123' }, GET /abc123 → 301 redirect. ID generation: auto-increment ID'yi base62'ye çevir (a-z, A-Z, 0-9 — 6 karakter ~57 milyar kombinasyon), veya hash (MD5/SHA256'nın ilk 6 karakteri — collision kontrolü gerekli), veya pre-generated unique ID'ler. Veritabanı: key-value store ideal (Redis veya DynamoDB). Cache: popüler kısa URL'leri Redis'te cache'le. Ölçekleme: stateless application server'lar, load balancer, database sharding (hash-based). Analytics: async olarak Kafka/SQS'e yaz, batch process et. Rate limiting: spam önleme. Custom alias: kullanıcı kendi kısa URL'sini seçebilsin. Bu tasarımı interview'da 30-45 dakikada anlatabilmek hedef.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "URL shortener, system design, base62, key-value, caching, sharding, analytics.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "chat uygulaması nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Real-time chat system design. İletişim: WebSocket (bidirectional, persistent connection) veya Server-Sent Events. Mesaj akışı: kullanıcı mesaj gönderir → chat server alır → veritabanına yazar → alıcıya iletir. Online durum: heartbeat ile (30 sn'de bir ping). Veritabanı: mesajlar için Cassandra veya DynamoDB (yazma yoğun, time-sorted), kullanıcı bilgileri için PostgreSQL. Message queue: Kafka veya RabbitMQ ile asenkron işleme. Grup chat: her grubun bir channel'ı var, mesaj tüm üyelere fan-out. Push notification: kullanıcı offline'sa (FCM, APNs). Dosya paylaşımı: S3'e yükle, URL'yi mesajda gönder. End-to-end encryption: Signal Protocol. Ölçekleme: chat server'ları horizontally scale et, consistent hashing ile kullanıcıyı server'a ata. Message delivery: sent, delivered, read receipt'ler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Chat system design, WebSocket, Cassandra, fan-out, push notification, E2E encryption.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "webhook nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Webhook event gerçekleştiğinde HTTP POST ile karşı tarafa bildirim gönderme. Polling'in alternatifi — sürekli 'yeni bir şey var mı?' diye sormak yerine, olunca haber ver. Tasarım best practices: idempotency (aynı event birden fazla gelirse sorun olmasın — idempotency key kullan), retry mekanizması (başarısız olursa exponential backoff ile tekrar dene), timeout (5-30 saniye), signature doğrulama (HMAC ile gelen isteğin gerçekten senden geldiğini doğrula), event payload'u küçük tut (detay gerekiyorsa API'dan çeksin). Dead letter queue: çok kez başarısız olan webhook'ları ayrı sıraya al. Event türlerini filtrele: subscriber sadece ilgilendiği event'leri alsın. Stripe, GitHub, Slack webhook'ları iyi örnekler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Webhook, idempotency, retry, HMAC signature, exponential backoff, dead letter queue.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AWS servislerine genel bakış?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AWS en büyük cloud provider — yüzlerce servis var ama temel olanlar: EC2 (sanal sunucu), S3 (obje depolama — dosya, resim, backup), Lambda (serverless fonksiyonlar), RDS (yönetilen SQL veritabanı — PostgreSQL, MySQL), DynamoDB (NoSQL), SQS (mesaj kuyruğu), SNS (bildirim servisi — pub/sub), CloudFront (CDN), Route 53 (DNS), ECS/EKS (container orchestration), IAM (yetkilendirme), CloudWatch (monitoring). Başlangıç için: S3 + Lambda + API Gateway ile serverless API, EC2 + RDS ile geleneksel web app. Free tier: 12 ay ücretsiz kullanım (sınırlı). Maliyet kontrolü: budget alert kur, kullanmadığın kaynakları kapat. AWS sertifikaları (Cloud Practitioner, Solutions Architect) kariyer için değerli ama pratik deneyim daha önemli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AWS, EC2, S3, Lambda, RDS, DynamoDB, SQS, CloudFront, IAM, free tier.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "API rate limiting nasıl uygulanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Rate limiting API'ını aşırı kullanıma ve DDoS'a karşı korur. Algoritmalar: Token Bucket (en yaygın — belirli hızda token eklenir, istek gelince token harcanır), Leaky Bucket (sabit hızda işleme), Fixed Window (dakikada 100 istek), Sliding Window (daha hassas). Uygulama: Redis ile — INCR komutu ile sayaç artır, TTL ile pencere süresi belirle. Header'larla bilgilendir: X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, Retry-After. Katmanlı limiting: IP bazlı, kullanıcı bazlı, API key bazlı. Araçlar: Express rate limiter, Django Ratelimit, Nginx limit_req, API Gateway (AWS, Kong). 429 Too Many Requests döndür. Farklı endpoint'lere farklı limit: login endpoint daha kısıtlı (brute force önleme).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Rate limiting, Token Bucket, Sliding Window, Redis, 429, API security.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "gradient descent nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gradient descent ML'de loss function'ı minimize etmek için kullanılan optimizasyon algoritması. Fikir: fonksiyonun eğimini (gradient) hesapla ve eğimin tersine küçük adımlar at — tepeye çıkmak yerine vadiye in. Formül: θ = θ - α * ∇J(θ) — θ parametreler, α learning rate, ∇J gradient. Learning rate çok önemli: çok büyükse minimum'u aşarsın (diverge), çok küçükse çok yavaş yakınsarsın. Varyantlar: Batch GD (tüm veri ile gradient, yavaş ama kararlı), Stochastic GD (tek örnek ile, hızlı ama gürültülü), Mini-batch GD (küçük gruplar ile — pratikte en çok kullanılan). Adam optimizer: adaptive learning rate + momentum — çoğu durumda iyi çalışır. Local minima ve saddle point sorunları — momentum ve adaptive methods ile aşılır. Backpropagation gradient descent'i neural network'lere uygular.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gradient descent, learning rate, SGD, Adam, backpropagation, loss function, optimization.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Pomodoro tekniği yazılımcılar için işe yarıyor mu?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Pomodoro: 25 dakika odaklan, 5 dakika mola, 4 pomodoro sonra 15-30 dakika uzun mola. Yazılımcılar için avantajları: dikkat dağınıklığını azaltır (notification kapat, 25 dk boyunca tek görev), tükenmişliği önler (molalar zorunlu), ilerlemeyi ölçer (bugün 8 pomodoro yaptım), başlamayı kolaylaştırır (25 dk kısa, başla bir kere). Dezavantajları: flow state'i bozabilir (tam odaklanmışken timer çalınca kalkma — esnek ol, flow'daysan devam et), toplantı yoğun günlerde uygulamak zor, her iş 25 dk'ya uymaz. Modifikasyonlar: 50/10 (derin çalışma için), 90/20 (ultradian rhythm), esnek pomodoro (25-50 dk arası ayarla). Araçlar: Forest app, Pomotodo, basit timer. Cal Newport'un Deep Work kitabı ile birleştir: pomodoro molalarında shallow work yap (email, Slack). Dene ve sana uygun olanı bul.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Pomodoro, zaman yönetimi, flow state, Deep Work, odaklanma, verimlilik.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

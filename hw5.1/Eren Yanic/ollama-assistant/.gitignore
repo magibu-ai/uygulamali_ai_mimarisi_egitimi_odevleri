@@ -1,0 +1,13 @@
+# Secrets — never commit. The API keys live here.
+.env
+
+# Virtual environment
+.venv/
+
+# Local user data: portfolio database and session logs stay on this machine.
+data/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]

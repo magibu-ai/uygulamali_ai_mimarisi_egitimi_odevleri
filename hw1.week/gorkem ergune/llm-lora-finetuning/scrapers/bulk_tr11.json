@@ -1,0 +1,564 @@
+{
+    "train": [
+        [
+            {
+                "content": "domain-driven design DDD nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "DDD Eric Evans'ın karmaşık iş mantığını modellemek için geliştirdiği yaklaşım. Temel fikir: yazılımın yapısı iş alanının (domain) yapısını yansıtsın. Ubiquitous Language: geliştiriciler ve domain uzmanları aynı dili konuşsun — kodda da bu dil kullanılsın. Bounded Context: büyük sistemi bağımsız bölgelere ayır — her bölgede aynı terim farklı anlam taşıyabilir (Customer siparişte farklı, CRM'de farklı). Entity: kimliği olan nesne (User, Order). Value Object: kimliksiz, değeriyle tanımlanan nesne (Address, Money). Aggregate: tutarlılık sınırı — birlikte değişmesi gereken entity grubu. Repository: aggregate'lere erişim sağlar. Domain Event: 'sipariş oluşturuldu' gibi olaylar. DDD karmaşık iş mantığı olan projeler için çok değerli ama basit CRUD uygulamaları için gereksiz.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "DDD, Bounded Context, Entity, Value Object, Aggregate, Ubiquitous Language.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "OWASP Top 10 nedir kısaca anlat?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OWASP Top 10 en kritik web güvenlik açıklarını listeler. 1) Broken Access Control: yetkisiz erişim (admin sayfasına normal kullanıcı erişimi). 2) Cryptographic Failures: hassas veri şifrelenmemiş (HTTP üzerinden şifre gönderme). 3) Injection: SQL, NoSQL, OS komut enjeksiyonu. 4) Insecure Design: tasarım aşamasında güvenlik düşünülmemiş. 5) Security Misconfiguration: varsayılan şifreler, gereksiz servisler açık. 6) Vulnerable Components: eski/güvenlik açığı olan kütüphaneler. 7) Authentication Failures: zayıf kimlik doğrulama. 8) Software/Data Integrity Failures: güvenilmeyen kaynaklardan güncelleme. 9) Logging & Monitoring Failures: saldırılar tespit edilemiyor. 10) SSRF: sunucu taraflı istek sahteciliği. Her web developer bu listeyi bilmeli ve projesinde kontrol etmeli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OWASP Top 10, web güvenlik, injection, authentication, access control.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "maaş pazarlığı nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Maaş pazarlığı çoğu geliştiricinin kaçındığı ama çok önemli bir beceri. Hazırlık: piyasa araştırması yap (Glassdoor, Levels.fyi, LinkedIn Salary), kendi değerini bil, minimum kabul edebileceğin rakamı belirle. İlk teklifi verme — 'beklentiniz nedir?' sorusuna 'piyasa standardına uygun bir teklif bekliyorum' de veya aralık ver. Teklif geldiğinde hemen kabul etme — 'düşünmem lazım' de, en az 24-48 saat bekle. Karşı teklif yaparken gerekçe sun — piyasa verisi, deneyimin, projelerin, şirkete katacağın değer. Sadece maaş değil — remote çalışma, esnek saat, eğitim bütçesi, hisse opsiyonu, tatil günü de pazarlık konusu. Red: güçsüz göstermez, profesyonellik gösterir. En kötü ihtimal 'hayır' derler — mevcut teklif geçerliliğini korur.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Maaş pazarlığı, salary negotiation, piyasa araştırması, karşı teklif, yan haklar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Docker Compose ve Kubernetes farkı ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Docker Compose tek makine için — birden fazla container'ı docker-compose.yml ile tanımla ve tek komutla başlat. Geliştirme ortamı için mükemmel: web server, database, cache hepsi tek dosyada. Kubernetes ise production-grade — birden fazla makine (cluster) üzerinde container'ları yönetir, auto-scaling, self-healing, rolling updates sağlar. Compose basit ve hızlı, K8s karmaşık ama güçlü. Küçük projeler ve geliştirme ortamı: Compose yeterli. Büyük ölçekli production: Kubernetes gerekli. Arada bir seçenek: Docker Swarm (Compose'a benzer ama multi-machine). Pratik tavsiye: geliştirmede Compose kullan, production'da ihtiyaca göre K8s veya managed servisler (ECS, Cloud Run) değerlendir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Docker Compose, Kubernetes, geliştirme vs production, Swarm, ölçek.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Kubernetes ne işe yarar basitçe anlat?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kubernetes (K8s) container'ları otomatik yöneten bir orkestrasyon platformu. Docker container'larını çalıştırmak kolay — ama 100 container'ı 10 sunucuda yönetmek, birisi çökünce otomatik yeniden başlatmak, yük dengelemek, güncelleme yapmak zor. Kubernetes bunu otomatize eder. Ana kavramlar: Pod (en küçük birim, genelde 1 container), Deployment (Pod'ların istenen durumunu tanımlar), Service (Pod'lara ağ erişimi sağlar), Ingress (dış trafiği yönlendirir). Self-healing: container çökerse otomatik yeniden başlatır. Auto-scaling: yük artınca otomatik yeni pod ekler. Rolling update: sıfır kesinti ile güncelleme. Öğrenmesi zor ama büyük ölçekli uygulamalar için vazgeçilmez. Minikube ile lokal olarak deneyebilirsin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kubernetes, K8s, Pod, Deployment, Service, orchestration, auto-scaling.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "database indexing stratejileri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Index veritabanı sorgularını dramatik şekilde hızlandırır — kitaptaki dizin gibi düşün. B-Tree index en yaygın olanı: eşitlik ve aralık sorguları için ideal. Hash index: sadece eşitlik sorguları için, çok hızlı. Composite index: birden fazla sütun için tek index — WHERE a=1 AND b=2 gibi sorgularda. Partial index: sadece belirli koşulu sağlayan satırlar için index — WHERE status='active' gibi. Covering index: sorgunun ihtiyaç duyduğu tüm sütunları içerir, tabloya gitmeden cevap verir. Dikkat: her index yazma işlemini yavaşlatır ve disk alanı kullanır. EXPLAIN ANALYZE ile sorgu planını incele, gereksiz index'leri sil. İyi bir kural: WHERE, JOIN ve ORDER BY'da kullanılan sütunlara index ekle ama aşırıya kaçma.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Database indexing, B-Tree, Hash, Composite, Partial, Covering index, EXPLAIN.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "time-series database nedir ne zaman kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Time-series database zaman damgalı verileri verimli saklamak ve sorgulamak için optimize edilmiş veritabanları. Kullanım alanları: IoT sensör verileri, sunucu metrikleri (CPU, RAM, disk), finansal veriler (hisse senedi fiyatları), uygulama logları. Popüler seçenekler: InfluxDB (en popüler), TimescaleDB (PostgreSQL üzerine kurulu — SQL kullanabilirsin), Prometheus (monitoring için), QuestDB (çok hızlı). Özellikleri: otomatik veri sıkıştırma, downsampling (eski verileri özetleme), retention policy (eski verileri otomatik silme), hızlı zaman bazlı sorgular. Normal SQL veritabanında da yapabilirsin ama büyük veri hacimlerinde performans farkı belirgin. Görkem'in sunucu monitoring gibi projelerinde çok işe yarar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Time-series DB, InfluxDB, TimescaleDB, Prometheus, IoT, monitoring.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "OAuth2 authentication flow nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OAuth2 üçüncü taraf uygulamalara sınırlı erişim verme protokolü. Authorization Code Flow (en güvenli, web uygulamaları için): 1) Kullanıcı 'Google ile Giriş Yap' tıklar. 2) Google'ın login sayfasına yönlendirilir. 3) Kullanıcı onaylar, Google authorization code döner. 4) Backend bu code'u Google'a gönderir, access token alır. 5) Access token ile kullanıcı bilgilerini çeker. PKCE (Proof Key for Code Exchange): SPA ve mobile uygulamalar için ek güvenlik — code_verifier ve code_challenge ile man-in-the-middle saldırısını engeller. Client Credentials Flow: servisler arası iletişim (kullanıcı yok). Implicit Flow: artık önerilmiyor, PKCE ile Authorization Code kullan. OpenID Connect (OIDC): OAuth2 üzerine kimlik katmanı — id_token ile kullanıcı kimliği doğrulanır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "OAuth2, Authorization Code, PKCE, Client Credentials, OIDC, access token.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CI/CD pipeline nasıl tasarlanır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CI/CD sürekli entegrasyon ve sürekli dağıtım — kod değişikliklerini otomatik test edip deploy etme. İyi bir pipeline: 1) Kod push'landığında otomatik tetiklenir (GitHub webhook). 2) Lint ve format kontrolü (kodun standartlara uygun mu). 3) Unit testler çalışır. 4) Integration testler. 5) Docker image build edilir. 6) Staging ortama deploy edilir. 7) E2E testler staging'de çalışır. 8) Manual approval (production için). 9) Production deploy. Araçlar: GitHub Actions (ücretsiz, kolay), GitLab CI, Jenkins (self-hosted, esnek), CircleCI. Best practice: pipeline'ı hızlı tut (10 dk altı ideal), paralel test çalıştır, cache kullan, fail fast (erken hata yakala). Görkem'in projelerinde GitHub Actions kullanması kolay ve etkili bir başlangıç.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CI/CD, pipeline, GitHub Actions, Jenkins, lint, test, deploy, staging.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "database replication ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Replication veritabanının kopyalarını birden fazla sunucuda tutma. Ana amaçlar: yüksek erişilebilirlik (bir sunucu çökerse diğeri devam eder), okuma performansı (okuma isteklerini replica'lara dağıt), felaket kurtarma (farklı lokasyonda yedek). Tipleri: master-slave (tek yazma noktası, birden fazla okuma), master-master (birden fazla yazma noktası — conflict resolution gerekli), synchronous (veri anında kopyalanır, yavaş ama tutarlı), asynchronous (veri gecikmeli kopyalanır, hızlı ama veri kaybı riski). PostgreSQL streaming replication ile async replica kurulumu oldukça kolay. MongoDB replica set'leri ile otomatik failover sağlar. Read replica'lar okuma yoğun uygulamalarda büyük performans artışı sağlar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Replication, master-slave, master-master, sync, async, failover, read replica.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "secret management nasıl yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Secret'lar (API key, database password, token) kodda saklanmamalı — .env dosyası bile Git'e pushlanabilir. HashiCorp Vault en kapsamlı çözüm: merkezi secret store, erişim kontrolü, audit log, dinamik secret'lar (geçici database credential'ları), secret rotation. Cloud çözümleri: AWS Secrets Manager, GCP Secret Manager, Azure Key Vault — yönetilen servisler, kolay entegrasyon. Kubernetes'te: Sealed Secrets veya External Secrets Operator. CI/CD'de: GitHub Actions Secrets, GitLab CI variables. En az yetki prensibi: her servis sadece ihtiyaç duyduğu secret'lara erişsin. Secret rotation: düzenli aralıklarla değiştir. .gitignore'a .env ekle, pre-commit hook ile secret leak'leri engelle (gitleaks, detect-secrets). Asla hardcode yapma, asla commit'leme.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Secret management, Vault, AWS Secrets Manager, rotation, gitleaks, güvenlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "zero trust architecture ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Zero Trust 'hiçbir şeye güvenme, her şeyi doğrula' prensibi. Geleneksel: ağ içindeysen güvenilirsin (castle-and-moat). Zero Trust: ağ içinde bile olsan her istek doğrulanır. Prensipler: 1) Verify explicitly — her erişim isteğinde kimlik doğrula. 2) Least privilege — minimum gerekli yetki ver. 3) Assume breach — saldırı olduğunu varsay, hasarı sınırla. Uygulamalar: her servis iletişiminde mTLS (mutual TLS), her API çağrısında token doğrulama, network segmentation (micro-segmentation), continuous monitoring, device trust (cihaz güvenlik durumu kontrolü). Google'ın BeyondCorp modeli zero trust'ın öncüsü — VPN yerine identity-aware proxy. Uzaktan çalışma döneminde daha da önemli hale geldi. Uygulama zor ama güvenlik açısından çok değerli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Zero Trust, verify explicitly, least privilege, mTLS, BeyondCorp, micro-segmentation.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "JWT güvenlik best practices neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "JWT (JSON Web Token) kullanırken güvenlik hataları yaygın. Best practices: 1) Güçlü secret key kullan (en az 256-bit, HS256 için). 2) Token'da hassas bilgi tutma — JWT base64 encoded, şifreli değil, herkes okuyabilir. 3) Kısa expiration süresi (access token: 15-30 dk, refresh token: 7-30 gün). 4) alg: none saldırısını engelle — kütüphaneni güncelle ve algorithm'i açıkça belirt. 5) HTTPS zorunlu — token HTTP üzerinden çalınabilir. 6) Token'ı localStorage'da değil httpOnly cookie'de sakla (XSS koruması). 7) Refresh token rotation — her kullanımda yeni refresh token ver, eskisini iptal et. 8) Token blacklist/revocation mekanizması — çıkış yapılınca token iptal edilebilmeli. 9) Audience (aud) ve issuer (iss) claim'lerini doğrula. RS256 (asimetrik) çok servisli sistemlerde HS256'dan daha güvenli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "JWT, güvenlik, expiration, refresh token, httpOnly, RS256, alg none saldırısı.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Prometheus ve Grafana ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Prometheus zaman serisi metrik toplama ve uyarı sistemi, Grafana ise görselleştirme platformu — birlikte monitoring stack oluşturur. Prometheus pull model kullanır — uygulamalardan düzenli aralıklarla metrik çeker (/metrics endpoint). PromQL sorgu dili ile metrikler üzerinde hesaplamalar yaparsın (ortalama CPU, hata oranı). AlertManager ile eşik değer aşılınca uyarı gönderir (Slack, email, PagerDuty). Grafana dashboard'ları görsel ve interaktif — CPU, RAM, istek sayısı, hata oranı gerçek zamanlı gösterir. Node Exporter sistem metriklerini toplar, cAdvisor container metriklerini. Kurulumu: docker-compose ile Prometheus + Grafana + exporters birkaç dakikada ayağa kalkar. Her production sistemi monitoring olmalı — sorunları kullanıcıdan önce fark et.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Prometheus, Grafana, monitoring, PromQL, AlertManager, dashboard, metrik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "clean architecture nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Clean Architecture Robert C. Martin'in (Uncle Bob) önerdiği mimari yaklaşım. Ana fikir: iş mantığı (business logic) dış dünyadan bağımsız olsun — framework, veritabanı, UI değişse bile core domain değişmesin. Katmanlar (içten dışa): Entities (iş kuralları), Use Cases (uygulama mantığı), Interface Adapters (controller, presenter, gateway), Frameworks & Drivers (web framework, DB, UI). Dependency Rule: bağımlılıklar her zaman içe doğru — inner katman outer'ı bilmez. Avantajları: test edilebilirlik (iş mantığını DB olmadan test et), esneklik (PostgreSQL'den MongoDB'ye geç, core değişmez), anlaşılabilirlik. Dezavantajları: küçük projeler için aşırı karmaşık, boilerplate kod fazla. Büyük, uzun ömürlü projeler için değerli — startup MVP'si için overengineering olabilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Clean Architecture, Uncle Bob, dependency rule, entities, use cases, katmanlar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "SRE practices neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SRE (Site Reliability Engineering) Google'ın geliştirdiği operasyon yaklaşımı — yazılım mühendisliği prensiplerini altyapı yönetimine uygular. SLI (Service Level Indicator): ölçülebilir metrikler (latency, error rate, throughput). SLO (Service Level Objective): hedefler (ayda %99.9 uptime). Error Budget: SLO'dan kalan tolerans — %99.9 hedefse ayda 43 dakika downtime kabul edilebilir. Error budget bitmediyse yeni feature çıkar, bittiyse güvenilirliğe odaklan. Toil elimination: tekrarlayan manuel işleri otomatize et. Postmortem culture: hata olduğunda blameless postmortem yap, kök nedeni bul, tekrarını önle. Chaos engineering: kasıtlı olarak hata inject et ve sistemin dayanıklılığını test et. On-call rotation: 7/24 müdahale ekibi. Monitoring ve alerting: anlamlı alarm, alarm yorgunluğu önleme.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SRE, SLI, SLO, Error Budget, postmortem, toil, chaos engineering.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ACID properties ne demek veritabanında?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ACID veritabanı transaction'larının güvenilirliğini sağlayan 4 özellik. Atomicity: transaction ya tamamen tamamlanır ya hiç — para transferinde bir hesaptan düştü ama diğerine eklenmedi olmaz. Consistency: transaction veritabanını geçerli bir durumdan başka geçerli bir duruma taşır — kurallar (constraints) ihlal edilmez. Isolation: eş zamanlı transaction'lar birbirini etkilemez — isolation levels var (Read Uncommitted, Read Committed, Repeatable Read, Serializable). Durability: commit edilen transaction kalıcıdır, sistem çökse bile — WAL (Write-Ahead Logging) ile sağlanır. PostgreSQL tam ACID uyumlu. MongoDB 4.0'dan itibaren multi-document ACID transaction desteği ekledi. Finansal uygulamalarda ACID olmazsa olmaz — Görkem'in banking projesinde bu yüzden SQL kullanılıyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ACID, Atomicity, Consistency, Isolation, Durability, transaction, WAL.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "NoSQL veritabanı türleri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "4 ana NoSQL türü var, her birinin farklı kullanım alanı. Document Store (MongoDB, CouchDB): JSON-benzeri dokümanlar, esnek şema, web uygulamaları için ideal. Key-Value Store (Redis, DynamoDB): basit anahtar-değer çiftleri, çok hızlı, caching ve session yönetimi için. Column-Family (Cassandra, HBase): sütun bazlı saklama, büyük veri analizi ve zaman serisi veriler için. Graph Database (Neo4j, ArangoDB): düğümler ve kenarlarla ilişki modelleme, sosyal ağlar, öneri sistemleri için. Seçim kriterleri: veri modelin ne? Okuma/yazma oranı ne? Tutarlılık mı hız mı önemli? Ne kadar ölçeklenmesi gerekiyor? Polyglot persistence yaklaşımı — farklı veri ihtiyaçları için farklı veritabanları kullan. Örneğin: ana veri PostgreSQL'de, cache Redis'te, arama ElasticSearch'te.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "NoSQL türleri, Document, Key-Value, Column-Family, Graph, polyglot persistence.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CAP theorem ne anlatıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CAP theorem dağıtık sistemlerde 3 özellikten aynı anda en fazla 2'sini sağlayabileceğini söyler. Consistency: her okuma en güncel veriyi döner. Availability: her istek cevap alır (hata bile olsa). Partition Tolerance: ağ bölünmesi olsa bile sistem çalışmaya devam eder. Pratikte partition tolerance zorunlu (ağ her zaman güvenilir değil), bu yüzden seçim CP veya AP arasında. CP sistemler (MongoDB, HBase): tutarlılığı seçer, partition olduğunda bazı istekler reddedilir. AP sistemler (Cassandra, DynamoDB): erişilebilirliği seçer, geçici olarak eski veri dönebilir (eventual consistency). Gerçekte bu tam siyah-beyaz değil — PACELC theorem daha detaylı bir model sunar. Sistem tasarımında bu trade-off'u anlamak kritik.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CAP theorem, Consistency, Availability, Partition Tolerance, CP, AP, PACELC.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "database connection pooling neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Her veritabanı bağlantısı açmak maliyetli — TCP handshake, authentication, memory allocation. Connection pool önceden açılmış bağlantıları yeniden kullanır. Araçlar: PgBouncer (PostgreSQL için, çok popüler), HikariCP (Java), SQLAlchemy pool (Python). Pool boyutu ayarı kritik: çok küçükse istekler bekler, çok büyükse veritabanı aşırı yüklenir. Genel kural: pool_size = (core_count * 2) + disk_sayısı. Serverless ortamlarda özellikle önemli — her Lambda invocation yeni bağlantı açarsa veritabanı çöker. AWS RDS Proxy veya PgBouncer bu sorunu çözer. Connection leak'lere dikkat — bağlantıyı kullandıktan sonra pool'a iade et, try-finally veya context manager kullan.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Connection pooling, PgBouncer, HikariCP, pool boyutu, serverless, connection leak.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "XSS saldırısı ne nasıl korunulur?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "XSS (Cross-Site Scripting) saldırgan web sayfasına kötü amaçlı JavaScript enjekte eder. 3 türü: Stored XSS (veritabanında saklanır, her ziyaretçiyi etkiler — en tehlikeli), Reflected XSS (URL parametresinde taşınır), DOM-based XSS (client-side JavaScript'te). Saldırgan ne yapabilir: session cookie çalma, kullanıcı adına işlem yapma, keylogger, phishing. Korunma: 1) Output encoding — HTML'e yazdırırken özel karakterleri escape et (&lt; &gt; &amp;). 2) Content Security Policy (CSP) header — inline script'leri yasakla. 3) HttpOnly cookie flag — JavaScript'in cookie'ye erişimini engelle. 4) DOMPurify gibi kütüphanelerle HTML sanitization. 5) React, Vue gibi framework'ler varsayılan olarak XSS koruması sağlar (dangerouslySetInnerHTML kullanma). 6) Input validation. Güvenlik baştan düşünülmeli, sonradan eklemek zor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "XSS, Stored, Reflected, DOM-based, CSP, HttpOnly, sanitization, encoding.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CORS nedir neden sorun çıkarır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CORS (Cross-Origin Resource Sharing) tarayıcının farklı origin'lerden gelen istekleri kontrol etme mekanizması. Origin = protokol + domain + port. Frontend localhost:3000'den backend localhost:8000'e istek atarsan CORS hatası alırsın — çünkü farklı origin. Tarayıcı güvenlik için bunu engeller (Same-Origin Policy). Çözüm: backend'de CORS header'ları ayarla — Access-Control-Allow-Origin, Access-Control-Allow-Methods, Access-Control-Allow-Headers. Preflight request: browser önce OPTIONS isteği gönderir (izin var mı diye). Dikkat: Access-Control-Allow-Origin: * production'da tehlikeli — sadece güvendiğin origin'leri belirt. Credentials (cookie) ile CORS: Allow-Origin * olamaz, spesifik origin belirtmelisin. Django'da django-cors-headers, Express'te cors middleware kolayca ayarlanır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CORS, Same-Origin Policy, preflight, Access-Control-Allow-Origin, güvenlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "saga pattern ne zaman kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Saga pattern dağıtık sistemlerde birden fazla servisi kapsayan uzun transaction'ları yönetir. Monolith'te tek database transaction yeterli — ama microservices'te her servisin kendi DB'si var, distributed transaction gerekli. Saga iki tip: Choreography (her servis bir sonraki adımı event ile tetikler — basit ama karmaşık flow'larda takibi zor) ve Orchestration (merkezi bir orchestrator adımları koordine eder — takibi kolay ama single point of failure riski). Compensating transaction: bir adım başarısız olursa önceki adımları geri al (ödeme iade et, stoku geri yükle). Örnek: sipariş oluştur → ödeme al → stok düşür → kargo oluştur — herhangi bir adım başarısız olursa öncekiler compensate edilir. Idempotency önemli — aynı event birden fazla gelirse aynı sonuç olmalı. Saga karmaşık ama distributed transaction'lar için standart çözüm.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Saga, choreography, orchestration, compensating transaction, distributed transaction.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "N+1 query problemi ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "N+1 en yaygın ORM performans sorunlarından biri. Senaryo: 100 blog yazısını çekiyorsun (1 sorgu), sonra her yazının yazarını ayrı ayrı çekiyorsun (100 sorgu) — toplam 101 sorgu. Çözümler: eager loading (ORM'de JOIN ile tek sorguda çek — Django'da select_related/prefetch_related, Rails'de includes, SQLAlchemy'de joinedload), batch loading (N sorgu yerine WHERE id IN (...) ile tek sorgu), DataLoader pattern (GraphQL'de yaygın — istekleri batch'le). Tespit: Django Debug Toolbar, Rails Bullet gem, SQL query logging. Bu problemi görmezden gelmek küçük veri setlerinde sorun olmaz ama ölçeklendiğinde sayfa yükleme süresini dramatik artırır. Her ORM kullanıcısı bu problemi bilmeli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "N+1 query, ORM, eager loading, batch loading, DataLoader, performans.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "strangler fig pattern ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Strangler Fig pattern eski monolith sistemi kademeli olarak yeni sisteme göç etme stratejisi. İsmini boğan incir ağacından alır — ev sahibi ağacı yavaşça sarar ve sonunda tamamen yerini alır. Nasıl çalışır: 1) Yeni feature'ları yeni serviste yaz. 2) Eski sistemin önüne bir facade/proxy koy. 3) Kademeli olarak eski fonksiyonları yeni sisteme taşı. 4) Proxy trafiği yeni sisteme yönlendir. 5) Eski sistem tamamen devre dışı kalınca kaldır. Avantajları: sıfır big-bang riski (tüm sistemi bir anda değiştirmek yerine kademeli), sürekli çalışan bir sistem, her adımda geri dönüş mümkün. Anti-corruption Layer: eski ve yeni sistem arasında çeviri katmanı — eski sistemin kötü tasarımı yeni sisteme bulaşmasın. Martin Fowler bu pattern'i microservices geçişi için özellikle öneriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Strangler Fig, monolith migration, facade, anti-corruption layer, kademeli geçiş.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "database normalization ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Normalization veritabanı tasarımında veri tekrarını azaltmak ve tutarlılığı artırmak için yapılan süreç. 1NF: her hücrede tek değer olsun (tekrarlayan gruplar olmasın). 2NF: 1NF + kısmi bağımlılık olmasın (tüm non-key sütunlar primary key'e tam bağımlı). 3NF: 2NF + geçişli bağımlılık olmasın (A→B→C varsa C ayrı tabloya). BCNF: 3NF'nin daha katı hali. 4NF ve 5NF daha nadir kullanılır — çok değerli bağımlılıklar ve join bağımlılıkları. Pratikte çoğu uygulama 3NF yeterli. Dikkat: aşırı normalization performansı düşürebilir — bazen bilinçli denormalization yapılır (özellikle okuma yoğun sistemlerde). Data warehouse'larda star schema gibi denormalize yapılar tercih edilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Normalization, 1NF, 2NF, 3NF, BCNF, denormalization, data warehouse.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "event-driven architecture nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Event-driven architecture (EDA) sistemin olaylara (event) tepki vererek çalıştığı mimari. Bileşenler: event producer (olayı üreten), event broker (olayı ileten — Kafka, RabbitMQ), event consumer (olayı işleyen). Örnek: kullanıcı sipariş verdi → OrderCreated event → stok servisi stok düşürür + email servisi onay maili gönderir + analitik servisi kaydeder. Avantajları: loose coupling (servisler birbirini bilmez), ölçeklenebilirlik (consumer'ları bağımsız scale et), esneklik (yeni consumer ekle, producer değişmez). Dezavantajları: debugging zor (event akışını takip etmek karmaşık), eventual consistency (anlık tutarlılık yok), event ordering sorunları. Event Sourcing: state'i saklamak yerine tüm event'leri sakla ve replay et — audit trail otomatik. CQRS ile birlikte kullanılır. Büyük ölçekli, dağıtık sistemler için güçlü bir pattern.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Event-driven, EDA, event producer, consumer, Kafka, RabbitMQ, event sourcing.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "remote çalışma verimliliği nasıl artırılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Remote çalışma özgürlük sağlar ama disiplin gerektirir. Fiziksel alan: ayrı bir çalışma alanı oluştur (yatak odasında çalışma), ergonomik masa ve sandalye, iyi aydınlatma. Rutin: her gün aynı saatte başla ve bitir, sabah rutini oluştur (kahve, kısa yürüyüş), 'işe gidiyormuş' gibi hazırlan. Teknik: güvenilir internet bağlantısı, ikinci monitör, noise-cancelling kulaklık, iyi webcam ve mikrofon. Verimlilik: time blocking (takvimde çalışma blokları), Pomodoro (25 dk çalış, 5 dk mola), derin çalışma saatleri belirle (toplantı koyma), notification'ları kapat. İletişim: over-communicate (ofiste olsaydın söyleyeceğinden fazla yaz), async iletişim tercih et, video açarak toplantı yap. Sosyal izolasyon: co-working space, online topluluklar, düzenli sosyalleşme. Sınır koy: iş bitince bilgisayarı kapat, fazla mesaiden kaçın.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Remote çalışma, verimlilik, ergonomi, Pomodoro, time blocking, iletişim, sınır.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "teknik yazarlık becerisi nasıl geliştirilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Teknik yazarlık yazılımcılar için hafife alınan ama çok değerli bir beceri. Nerede kullanırsın: PR description, dökümantasyon, RFC/design doc, blog yazıları, incident report, email, Slack mesajları. İyi teknik yazı prensipleri: net ve kısa ol (gereksiz kelime kullanma), okuyucunu bil (junior'a mı yazıyorsun senior'a mı?), yapı kullan (başlık, liste, paragraf), örneklerle destekle, bir konu bir paragraf. Aktif çatı kullan ('The system processes requests' vs 'Requests are processed by the system'). Jargon'u açıkla veya bağlam ver. Teknik blog yazma en iyi pratik — öğrendiklerini yazarak pekiştirirsin ve online görünürlüğün artar. Araçlar: Grammarly (dilbilgisi), Hemingway Editor (okunabilirlik), Notion/Obsidian (not alma). Görkem blog yazarak hem öğrenir hem portfolio'sunu güçlendirir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Teknik yazarlık, PR description, RFC, blog, Grammarly, aktif çatı, okunabilirlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "developer burnout nasıl aşılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Burnout fiziksel ve duygusal tükenmişlik — yazılımda çok yaygın. Belirtiler: motivasyon kaybı, sürekli yorgunluk, sinirlilik, verimlilik düşüşü, her şeye 'ne fark eder' hissi. Nedenler: aşırı mesai, belirsiz gereksinimler, sürekli bağlam değiştirme, takdir edilmeme, impostor syndrome. Kısa vadeli çözümler: izin al (gerçekten disconnect ol), fiziksel aktivite, uyku düzenini düzelt, küçük ve tamamlanabilir görevlere odaklan. Uzun vadeli: sınır koy (mesai dışı çalışma), 'hayır' demeyi öğren, passion project yap (işten farklı), hobi edin (kodla ilgisi olmayan), terapi veya coaching düşün. Ortam değişikliği bazen gerekli — toksik bir ortamda kalmak uzun vadede zarar verir. Burnout zayıflık değil, aşırı yüklemenin doğal sonucu. Erken müdahale önemli — kronikleşmeden önce aksiyon al.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Burnout, tükenmişlik, belirtiler, çözümler, sınır koyma, izin, terapi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "system design interview'a nasıl hazırlanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "System design interview kıdemli pozisyonlar için kritik. Hazırlık kaynakları: 'Designing Data-Intensive Applications' kitabı (Martin Kleppmann — kutsal kitap), System Design Primer (GitHub), Alex Xu'nun System Design Interview kitapları. Yapı: 1) Gereksinimleri netleştir (fonksiyonel ve non-fonksiyonel). 2) Kapasite tahmini yap (DAU, QPS, depolama). 3) Üst düzey tasarım çiz (API, servisler, veritabanı). 4) Detaylandır (şema tasarımı, API endpoints, trade-off'lar). 5) Darboğazları belirle ve çözüm öner (caching, sharding, CDN). Sık sorulan: URL shortener, chat sistemi, Twitter feed, dosya paylaşım sistemi. Trade-off'ları açıkça tartış — her kararın artısı ve eksisi var. Pratik yap — her gün bir sistem tasarla ve yaz. Mülakat yapan kişi doğru cevap değil düşünce sürecini görmek istiyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "System design interview, DDIA, kapasite tahmini, trade-off, pratik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Terraform ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Terraform Infrastructure as Code (IaC) aracı — bulut altyapısını kod olarak tanımla ve yönet. AWS'de EC2 instance, S3 bucket, RDS database oluşturmak için AWS Console'a tıklamak yerine .tf dosyalarına yazarsın. Avantajları: tekrarlanabilir (aynı altyapıyı farklı ortamlara kur), versiyon kontrolü (altyapı değişikliklerini Git'te takip et), plan komutu (değişiklikleri uygulamadan önce gör), state management (mevcut durumu takip et). HCL (HashiCorp Configuration Language) ile yazılır — öğrenmesi kolay. Terraform vs CloudFormation: Terraform multi-cloud (AWS, GCP, Azure), CloudFormation sadece AWS. terraform init, plan, apply üç temel komut. Modüller ile tekrar kullanılabilir altyapı parçaları oluştur. DevOps mühendisi olmak istiyorsan Terraform bilmek zorunlu.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Terraform, IaC, HCL, plan, apply, multi-cloud, modüller.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "GitOps nedir ArgoCD ne yapar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GitOps, Git'i tek doğru kaynak (single source of truth) olarak kullanarak altyapı ve uygulama yönetimi. Prensip: Git'teki tanım = cluster'daki gerçek durum. Değişiklik yapmak istiyorsan Git'e commit at, otomatik olarak uygulanır. ArgoCD Kubernetes için GitOps aracı — Git repo'sundaki YAML manifest'leri izler ve cluster'ı otomatik senkronize eder. Avantajları: audit trail (tüm değişiklikler Git history'de), rollback (git revert ile geri al), consistency (drift detection — cluster'da manuel değişiklik yapılırsa uyarı verir). ArgoCD web UI'ı güzel — uygulama durumunu görsel olarak gösterir. Workflow: developer PR açar → review → merge → ArgoCD otomatik deploy eder. Pull-based model — cluster dışından kimse doğrudan kubectl apply yapmaz.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "GitOps, ArgoCD, single source of truth, Kubernetes, drift detection, PR-based deploy.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "SQL injection nasıl önlenir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "SQL injection en tehlikeli ve en yaygın güvenlik açıklarından biri. Saldırgan input'a SQL kodu ekler: ' OR 1=1 -- gibi. Sonuç: tüm veritabanı okunabilir, silinebilir, değiştirilebilir. Önleme: 1) Parameterized queries / Prepared statements — ASLA string concatenation ile SQL yazma. Python: cursor.execute('SELECT * FROM users WHERE id = %s', (user_id,)). 2) ORM kullan (Django ORM, SQLAlchemy) — otomatik parameterize eder. 3) Input validation — beklenen format dışındaki girişleri reddet. 4) Least privilege — veritabanı kullanıcısına minimum yetki ver (DROP TABLE yetkisi olmasın). 5) WAF (Web Application Firewall) — ek koruma katmanı. 6) Düzenli güvenlik taraması (OWASP ZAP, SQLMap). Görkem'in projelerinde parameterized query kullanması temel güvenlik pratiği.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "SQL injection, parameterized queries, ORM, input validation, WAF, güvenlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "MongoDB vs PostgreSQL hangisini seçmeliyim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bu tamamen projenin ihtiyaçlarına bağlı. PostgreSQL ilişkisel veritabanı — ACID uyumlu, karmaşık sorgular ve JOIN'ler için mükemmel, finansal uygulamalar ve tutarlılık gereken yerlerde tercih edilir. MongoDB ise NoSQL document store — esnek şema, JSON-benzeri dokümanlar, hızlı prototipleme ve şeması sık değişen projeler için ideal. Performans karşılaştırması: PostgreSQL karmaşık sorgularda üstün, MongoDB yatay ölçeklemede ve yazma yoğun iş yüklerinde avantajlı. Pratikte çoğu web uygulaması için ikisi de işe yarar. E-ticaret, bankacılık gibi tutarlılık gereken yerlerde PostgreSQL; IoT, log analizi, CMS gibi esnek yapı gereken yerlerde MongoDB seç. Görkem'in banking-management-system projesi SQL tabanlı çünkü finansal veri tutarlılığı kritik.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "MongoDB, PostgreSQL, SQL vs NoSQL, ACID, şema esnekliği.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

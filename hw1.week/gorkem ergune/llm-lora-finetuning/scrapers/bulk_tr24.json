@@ -1,0 +1,228 @@
+{
+    "train": [
+        [
+            {
+                "content": "uluslararasilastirma i18n nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Uluslararasilastirma (i18n) uygulamanizi birden fazla dil ve yerel ayar icin hazirlar. Yerellelstirme (l10n) belirli bir yerel ayar icin gercek uyarlamadır. Temel hususlar: 1) Metin cevirisi — kullaniciya yonelik tum dizeleri ceviri dosyalarina cikar (JSON, PO dosyalari). Asla dizeleri sabit kodlamayin. Cogullar ve degiskenler icin ICU MessageFormat kullanin. 2) Tarih/saat bicimlendirme — farkli yerel ayarlar: AA/GG/YYYY (ABD) vs GG/AA/YYYY (Avrupa) vs YYYY-AA-GG (ISO). Intl.DateTimeFormat veya kutuphaneler kullanin (date-fns, Day.js yerel ayarla). 3) Sayi bicimlendirme — 1,234.56 (ABD) vs 1.234,56 (Almanya). Intl.NumberFormat. 4) Para birimi — sembol konumu, ondalik basamaklar para birimine gore degisir. 5) RTL destegi — Arapca, Ibranice sagdan sola okunur. CSS mantiksal ozellikler (margin-inline-start), dir='rtl'. 6) Metin genislemesi — Almanca metin ortalama %30 Ingilizce'den daha uzun. Esnek duzenler tasarlayin. Kutuphaneler: react-intl, next-intl, i18next, vue-i18n. En iyi uygulama: tek dilde bile baslaniyorsa i18n ile baslayin — sonradan ekleme cok daha zordur. Gorkem'in botu Turkce ve Ingilizce icerik sunar — bu proje dogasi geregi iki dillidir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Uluslararasilastirma, i18n, l10n, ceviri, RTL, yerel ayar, tarih formati, react-intl.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "gelistiriciler icin kriptografi temelleri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Her gelistiricinin anlamasi gereken kriptografi temelleri. Simetrik sifreleme: ayni anahtar sifrerler ve cozer. AES-256 standarttir. Hizli, duragan ve aktarilan veriler icin kullanilir. Zorluk: anahtari guvenli sekilde nasil paylasirsiniz? Asimetrik sifreleme: acik anahtar sifreler, ozel anahtar cozer (veya imzalama icin tam tersi). RSA, ECDSA, Ed25519. Daha yavas ama anahtar degisimi sorununu cozer. TLS el sikismasi, SSH, dijital imzalarda kullanilir. Hashleme: tek yonlu fonksiyon, sabit uzunlukta cikti. Veri butunlugu icin SHA-256, sifreler icin bcrypt/argon2. Ozellikler: belirleyici, cig etkisi (kucuk girdi degisikligi → tamamen farkli hash), catismaya direncli. Sifre depolama: ASLA duz metin saklamayin. bcrypt (yerlesik tuz, ayarlanabilir maliyet faktoru), argon2 (bellek-zor, en yeni oneri) veya scrypt kullanin. Sifreler icin ASLA MD5 veya SHA kullanmayin (cok hizli, kaba kuvvete karsi savunmasiz). Dijital imzalar: mesaji hashle, hash'i ozel anahtarla sifrele. Herkes acik anahtarla dogrulayabilir. JWT'lerde, kod imzalamada, blockchain'de kullanilir. Kripto kendiniz uygulamayin — kurulmus kutuphaneler kullanin (libsodium, OpenSSL).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kriptografi, AES, RSA, hashleme, bcrypt, argon2, dijital imzalar, HMAC, TLS.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "performans muhendisligi nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Performans muhendisligi uygulamalarin hiz ve olceklenebilirlik gereksinimlerini karsilamasini saglar. Frontend: Core Web Vitals (LCP, INP, CLS), paket boyutu optimizasyonu (kod bolme, agac sallama), goruntu optimizasyonu (WebP, tembel yukleme), font yukleme stratejileri (font-display: swap), kritik render yolu. Backend: veritabani sorgu optimizasyonu (indeksleme, N+1, onbellekleme), baglanti havuzu, asenkron isleme (agir is icin kuyruklar), yatay olcekleme, onbellekleme katmanlari (Redis, CDN). Profilleme: Chrome DevTools Performance sekmesi (frontend), alev grafikleri (backend), surekli profilleme (Pyroscope). Yuk testi: k6, Locust — kullanicilardan once test edin. Izleme: performans butceleri belirleyin, gerilemeler konusunda uyarin. p50/p95/p99 gecikmeleri (p99 en cok onemli — en kotu deneyim). Yaygin darbogazlar: indekslenmemis veritabani sorgulari, N+1 sorgulari, senkron dis API cagrilari, buyuk JavaScript paketleri, optimize edilmemis goruntüler, eksik onbellekleme. Performans optimizasyonu sureci: olc → darbogazI belirle → duzelt → tekrar olc. Erken optimize etmeyin — once profil cikarin, sonra gercek darbogazI optimize edin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Performans muhendisligi, profilleme, Core Web Vitals, onbellekleme, yuk testi, p99.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "dogal dil isleme NLP boru hatti nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "NLP, insan dilini isler ve anlar. Geleneksel boru hatti: 1) Tokenizasyon — metni tokenlara bol (kelimeler, alt kelimeler). BPE (Gorkem'in wiki2bpe'si), WordPiece, SentencePiece. 2) On isleme — kucuk harfe cevirme, noktalama isareti kaldirma, kokleme/lemmatizasyon, durak kelime kaldirma. 3) Ozellik cikarma — Kelime Cantasi, TF-IDF, kelime gommeleri (Word2Vec, GloVe, FastText). 4) Model — siniflandirma (duygu, spam), NER (adlandirilmis varlik tanima), POS etiketleme, makine cevirisi, ozetleme, soru yanItlama. Modern NLP: onceden egitilmis transformer'lar tum boru hattini degistirdi. BERT (cift yonlu, anlama icin — siniflandirma, NER, QA), GPT (otoregresif, uretim icin — metin tamamlama, sohbet), T5 (metinden metine, cok yonlu). Ince ayar: onceden egitilmis modeli al, goreve ozgu bas ekle, verilerinle egit. Az-atisli ogrenme: prompt'ta ornekler sagla, ince ayar gerekmez. Araclar: Hugging Face Transformers (model merkezi + kutuphane), spaCy (uretim NLP), NLTK (egitim amacli). Gorkem'in NMT projesi diziden diziye ceviriyi uygular, tokenizasyonu (wiki2bpe) sinirsal mimariye (transformer'lar) baglar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "NLP, tokenizasyon, BPE, BERT, GPT, T5, Hugging Face, spaCy, transformer'lar, ince ayar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "gradient boosting XGBoost LightGBM nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gradient boosting agaclari sirayla insaa eder — her agac onceki agaclarin hatalarini duzeltir. Rastgele Orman'dan (paralel agaclar) farkli olarak, gradient boosting artik hatayi tahmin eden agaclar ekler. XGBoost (eXtreme Gradient Boosting): duzenlilesmis gradient boosting. Eksik degerleri isler, yerlesik carpraz dogrulama, paralel agac insaati. Yillarca Kaggle yarismalarina hakim oldu. LightGBM (Microsoft): histogram tabanli ogrenme ve yaprak bazli agac buyumesi ile daha hizli egitim. Buyuk veri setleri icin daha iyi. CatBoost (Yandex): kategorik ozellikleri yerel olarak isler (one-hot kodlama gerekmez), siraali guclendirme asiri uyumu azaltir. Ne zaman kullanilir: tablo/yapilandirilmis veri yarismalarinlar, ozellik zengini veri setleri, yuksek dogruluk gerekli. Onemli parametreler: learning_rate (0.01-0.3), n_estimators (100-1000), max_depth (3-8), early_stopping_rounds. XGBoost vs LightGBM: LightGBM daha hizli ve daha az bellek kullanir, XGBoost daha yerlesik. Ikisi de cogu kiyaslamada Rastgele Orman'i gecer.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gradient boosting, XGBoost, LightGBM, CatBoost, topluluk, siraali, Kaggle, tablo.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "web gelistirmede erisebilirlik a11y nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Erisebilirlik (a11y) web sitelerinin engelli bireyler dahil herkes tarafindan kullanilabilir olmasini saglar. WCAG (Web Icerik Erisebilirlik Yonergeleri) standartlari tanimlar: A Seviyesi (minimum), AA (standart hedef), AAA (ideal). Temel ilkeler (POUR): Algilanabilir (icerik duyulara sunulur — goruntüler icin alt metin, video icin altyazi), Calisitirilabilir (klavyeyle gezilebilir, yeterli sure), Anlasilabilir (acik dil, tahmin edilebilir davranis), Saglam (yardimci teknolojilerle calisir). Yaygin duzeltmeler: anlamsal HTML (<div onclick> degil <button> kullan, <nav>, <main>, <article>), goruntüler icin alt metin, yeterli renk kontrasti (normal metin icin 4.5:1 orani), klavye navigasyonu (sekme sirasi, odak gostergeleri), gerektiginde ARIA nitelikleri (aria-label, aria-describedby, role), form etiketleri. Test: Lighthouse erisebilirlik denetimi, axe DevTools uzantisi, ekran okuyucu testi (NVDA, VoiceOver), yalnizca klavye navigasyon testi. Yasal: ADA (ABD), EAA (AB) erisim mumkunlu web siteleri gerektirir. Is gerekceleri: dunya nufusunun %15'i bir engele sahip, erisim mumkunlu siteler daha iyi SEO'ya sahip. Erisebilirlik sonradan dusunulmemeli — basindan itibaren tasarlayin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Erisebilirlik, a11y, WCAG, ARIA, anlamsal HTML, ekran okuyucu, klavye navigasyonu.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "frontend uygulamalarda durum yonetimi nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Durum yonetimi arayuzunuzdeki zaman icinde degisen verileri yonetir. Durum turleri: yerel (bilesene ozgu — form girdileri, gecisler), paylasilan (birden fazla bilesen — kullanici dogrulama, alisveris sepeti), sunucu (API'den gelen veri — onbelleglenen, senkronize edilen), URL (rota parametreleri, sorgu dizeleri). React durum cozumleri (en basitten en karmasiga): useState/useReducer (yerel durum), Context API (kucuk uygulamalar icin paylasilan durum — yeniden render sorunlarina dikkat), Zustand (basit global depo, minimum sablonlu kod), Redux Toolkit (buyuk uygulamalar icin en populer, tahmin edilebilir, DevTools), TanStack Query (sunucu durumu — onbellekleme, yeniden getirme, sayfalandirma). Vue: Pinia (resmi, composition API), Vuex (eski). Sunucu durumu karmasikligin en buyuk kaynagidir — TanStack Query (React Query), SWR veya Apollo Client (GraphQL) onbellekleme, arka plan yeniden getirme, iyimser guncellemeler ve hata yonetimini isler. Muhtemelen Redux'a ihtiyaciniz yok — cogu durum sunucu durumudur (React Query kullanin) veya yerel durumdur (useState kullanin).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Durum yonetimi, Redux, Zustand, React Query, Context API, sunucu durumu, Pinia, TanStack.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AWS temel servisleri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AWS'nin 200'den fazla servisi var ama bir avuc cogu ihtiyaci karsilar. Hesaplama: EC2 (sanal sunucular), Lambda (sunucusuz fonksiyonlar), ECS/EKS (konteynerler), Fargate (sunucusuz konteynerler). Depolama: S3 (nesne depolama — dosyalar, yedekler, statik barindirma), EBS (EC2 icin blok depolama), EFS (paylasilan dosya sistemi). Veritabani: RDS (yonetilen PostgreSQL/MySQL), DynamoDB (NoSQL anahtar-deger), ElastiCache (yonetilen Redis/Memcached), Aurora (yuksek performansli PostgreSQL/MySQL uyumlu). Ag: VPC (sanal ag), Route 53 (DNS), CloudFront (CDN), ALB/NLB (yuk dengeleyiciler), API Gateway. Guvenlik: IAM (kullanicilar, roller, izinler), Secrets Manager, KMS (sifreleme anahtarlari), WAF (web uygulama guvenlik duvari). Izleme: CloudWatch (metrikler, loglar, uyarilar). Mesajlasma: SQS (mesaj kuyrugu), SNS (pub/sub bildirimler), EventBridge (olay veri yolu). Sunucusuz icin basla: S3 + Lambda + DynamoDB. Geleneksel icin: EC2 + RDS + S3. Ucretsiz katman ogrenmeyi kapsar. AWS sertifikalari kariyer icin degerlidir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AWS, EC2, S3, Lambda, RDS, DynamoDB, VPC, IAM, CloudFront, temel servisler.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "rastgele orman nedir ve ne zaman kullanilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Rastgele Orman, cogunluk oyu (siniflandirma) veya ortalama (regresyon) ile tahmin yapan karar agaclarinin bir toplulugudur. Nasil calisir: 1) Bootstrap ornekleme — egitim verisinin N rastgele alt kumesini olustur (yerine koyarak). 2) Her alt kume uzerinde bir karar agaci insaa et — her bolmede sadece rastgele bir ozellik alt kumesini dikkate al. 3) Tahminleri toplulastir — cogunluk oyu veya ortalama. Buna bagging (Bootstrap AGGregating) denir. Neden calisir: bireysel agaclar asiri uyum gosterebilir, ama bircok ilisiksi agacin ortalamasini almak variyansi artirmadan azaltir. Faydalar: hem siniflandirma hem regresyonu isler, karisik ozellik turleriyle iyi calisir, eksik degerleri isler, ozellik onemi siralamalari saglar, az hiperparametre ayari gerekli, asiri uyuma direncli. Ne zaman kullanilir: tablo verisi (derin ogrenme odasina ragmen yapilandirilmis veri icin hala kral), yorumlanabilir ozellik onemi gerekli, hizli temel model. Ne zaman degil: cok buyuk veri setleri, goruntu/metin verisi (derin ogrenme kullan). Gorkem phishing-domain-detection projesinde Rastgele Orman kullanir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Rastgele Orman, topluluk, bagging, karar agaci, ozellik onemi, siniflandirma, tablo.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "evrisimli sinir agi CNN nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CNN'ler izgara benzeri veriyi — oncelikle goruntuleri — islemek icin tasarlanmistir. Temel katmanlar: Evrisim katmani — filtreler (cekirdekler) goruntu uzerinde kayar, ozellikler tespit eder (kenarlar, dokular, kalipler). Her filtre bir ozellik haritasi uretir. Erken katmanlar dusuk seviyeli ozellikleri (kenarlar), derin katmanlar yuksek seviyeli ozellikleri (yuzler, nesneler) tespit eder. Havuzlama katmani — uzamsal boyutlari azaltir (Max Pooling her penceredeki maksimum degeri alir). Hesaplamayi azaltir ve otelenme degismezligi saglar. Tam bagli katman — sonda, ozellik haritalarini duzlestirir ve siniflandirir. Mimari evrimi: LeNet (1998) → AlexNet (2012, ImageNet cikarisi, ReLU, dropout) → VGGNet (2014, kucuk 3x3 filtrelerle daha derin) → ResNet (2015, atlama baglantilari, 152 katman) → EfficientNet (2019, bilesik olcekleme). Modern: Vision Transformers (ViT) CNN'lere meydan okuyor — goruntuyu parcalara bol, transformer mimarisi uygula. Ama CNN'ler kucuk veri setleri ve kenar dagitimi icin hala hakim. Transfer learning: onceden egitilmis CNN'i ozellik cikarici olarak kullan, son katmanlari ince ayar yap. Gorkem'in yolo-custom-detector'u CNN tabanli mimari kullanir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CNN, evrisimli, havuzlama, ResNet, EfficientNet, ViT, ozellik haritalari, transfer learning.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "dbt ve modern veri yigini nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "dbt (data build tool) SQL kullanarak veri ambarinIzdaki veriyi donusturur. Ozel Python ETL betikleri yerine SELECT ifadeleri yazip dbt gerisini halletsin. Nasil calisir: SQL modelleri (SELECT ifadeleri) yazarsiniz, dbt bunlari veri ambarinizda tablolar veya gorunumler olarak somutlastirir. Ozellikler: bagimlilik yonetimi (ref() fonksiyonu), test (sema testleri, veri testleri), belgelendirme (otomatik uretilen), artimli modeller (sadece yeni veriyi isle), anlik goruntüler (yavas degisen boyutlari izle). Modern Veri Yigini: Fivetran/Airbyte (cikar ve yukle) → Snowflake/BigQuery/Redshift (ambar) → dbt (donustur) → Looker/Metabase (BI/gorsellestirme). Bu ELT kalIbidir (Extract, Load, Transform) geleneksel ETL'ye karsi. Neden ELT: ambarlar donusumu idare edecek kadar guclu, SQL analistler icin Python'dan daha eriselebilir. dbt Core (acik kaynak, CLI) vs dbt Cloud (yonetilen, IDE, zamanlama). Jinja sablonlama: dbt degiskenler, makrolar, kontrol akisi icin SQL'de Jinja kullanir. En iyi uygulamalar: hazırlık modelleri (ham veriyi temizle), ara modeller (is mantigi), pazar modelleri (analistler icin son cikti). dbt analitik muhendisliginin standardi haline geldi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "dbt, modern veri yigini, ELT, SQL donusumu, Snowflake, BigQuery, analitik muhendisligi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Apache Airflow ile veri muhendisligi nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Apache Airflow, veri boru hatlari icin bir is akisi orkestrasyon platformudur. Kavram: is akislarini Python'da Yonlendirilmis Cevrimsiz Grafikler (DAG) olarak tanimlayin. Her dugum bir gorev, kenarlar bagimliliklari tanimlar. Temel ozellikler: zamanlama (cron benzeri), bagimlilik yonetimi, yeniden deneme mantigi, izleme arayuzu, uyari, operatorler araciligiyla genisletilebilirlik. Operatorler: PythonOperator (Python fonksiyonlari calistir), BashOperator (kabuk komutlari), PostgresOperator (SQL sorgulari). Ornek DAG: API'den veri cikar → Python ile donustur → veritabanina yukle → bildirim gonder. Airflow zamanlayicidir, yurutme motoru degil — gorevler islerini baska yerde yapmali (Spark, dbt, Python betikleri). Mimari: Web Sunucusu (arayuz), Zamanlayici (gorevleri tetikler), Isciler (gorevleri yurtur), Meta Veri DB (PostgreSQL). Alternatifler: Prefect (modern, Pythonik), Dagster (yazilim tanimli varliklar), Luigi (daha basit). Daha kucuk boru hatlari icin: cron + betikler yeterli olabilir. Airflow olcekte karmasik, birbirine bagli is akislari icin parlar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Airflow, DAG, is akisi orkestrasyonu, ETL, operatorler, veri boru hatti, zamanlama, Prefect.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "bellek yonetimi programlamada nasil calisir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Bellek yonetimi program verileri icin bellek tahsis eder ve serbest birakir. Yigin (Stack): otomatik, hizli, sinirli boyut. Fonksiyon cagri cercevelerini, yerel degiskenleri, donus adreslerini saklar. LIFO sirasiyla — fonksiyon girisinde tahsis edilir, cikista serbest birakilir. Yigin tasmasi: cok derin ozyineleme. Yigin (Heap): manuel veya GC yonetimli, daha yavas, daha buyuk. Nesneleri, dinamik dizileri, fonksiyon kapsamini asan verileri saklar. Parcalanma olasabilir. Manuel yonetim (C/C++): malloc/free, new/delete. Tam kontrol ama risk: bellek sizintilari (serbest birakmayi unutma), sarkan isaretciler (serbest birakma sonrasi kullanma), cift serbest birakma, arabellek tasmasi. Cop toplama (Java, Python, Go, JS): otomatik — isaretle-ve-supur, kusak GC. Daha kolay ama GC duraklamalari, daha az tahmin edilebilir performans. Sahiplik (Rust): derleme zamani bellek yonetimi. GC yuku yok, manuel serbest birakma yok. Odunc alma kontrolcusu tum bellek hatalarini derleme zamaninda onler. Referans sayma (Python, Swift): referanslari say, sifirda serbest birak. Basit ama dongusel referans sorunu. Bellegi anlamak yardimci olur: performans optimizasyonu, cokmelerin hata ayiklamasi, gorev icin dogru dili secme. Gorkem'in gorkem-os projesi OS duzeyinde bellek yonetimiyle ilgilenir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Bellek yonetimi, yigin, heap, cop toplama, sahiplik, akilli isaretciler, bellek sizintisi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "denetimli, denetimsiz ve pekistirmeli ogrenme arasindaki fark nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Uc ana ML paradigmasi. Denetimli ogrenme: etiketli veriden ogren (girdi-cikti ciftleri). Siniflandirma (kategori tahmin — spam/spam degil) ve regresyon (sayi tahmin — ev fiyati). Algoritmalar: dogrusal/lojistik regresyon, karar agaclari, rastgele orman, SVM, sinir aglari. Denetimsiz ogrenme: etiketsiz veride kalipler bul. Kumeleme (benzer ogeleri grupla — K-means, DBSCAN), boyut azaltma (PCA, t-SNE, UMAP), anomali tespiti (isolation forest). Etiket gerekmiyor — gizli yapiyi kesfet. Pekistirmeli ogrenme: ajan cevre ile etkilesim yoluyla ogrenir, oduller/cezalar alir. Uygulamalar: oyun oynama, robotik, oneri sistemleri. Oz-denetimli ogrenme: veriden kendi etiketlerini uret — maskeli dil modellemesi (BERT), sonraki token tahmini (GPT), kontrastif ogrenme (SimCLR). Modern AI'yi suruyor. Secim: etiketleriniz var mi? (denetimli). Etiket yok ama yapi istiyorsunuz? (denetimsiz). Siraali kararlar? (pekistirmeli). Gorkem'in projeleri bu paradigmalari kapsar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Denetimli, denetimsiz, pekistirmeli ogrenme, siniflandirma, kumeleme, oz-denetimli.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

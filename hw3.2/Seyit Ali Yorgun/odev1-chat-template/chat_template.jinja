@@ -1,0 +1,69 @@
+{#- Custom Jinja2 chat template: system / user / assistant / tool roles + tool-calling -#}
+{{- bos_token -}}
+{%- if messages[0]['role'] == 'system' -%}
+    {%- set system_message = messages[0]['content'] -%}
+    {%- set loop_messages = messages[1:] -%}
+{%- else -%}
+    {%- set system_message = '' -%}
+    {%- set loop_messages = messages -%}
+{%- endif -%}
+
+{#- System bloğu: sistem mesajı + (varsa) tool tanımları JSON olarak gömülür -#}
+{%- if system_message or tools -%}
+    {{- '<|im_start|>system\n' -}}
+    {%- if system_message -%}
+        {{- system_message | trim -}}
+    {%- endif -%}
+    {%- if tools -%}
+        {{- '\n\nAşağıdaki fonksiyonları kullanabilirsin. Bir fonksiyon çağırman gerekiyorsa '
+            'yanıtını SADECE <tool_call>{"name": <fonksiyon_adı>, "arguments": <json_argümanlar>}</tool_call> '
+            'formatında ver. Fonksiyon sonucu <tool_response> etiketiyle sana geri dönecektir.\n\n'
+            '<tools>\n' -}}
+        {%- for tool in tools -%}
+            {{- tool | tojson -}}
+            {{- '\n' -}}
+        {%- endfor -%}
+        {{- '</tools>' -}}
+    {%- endif -%}
+    {{- '<|im_end|>\n' -}}
+{%- endif -%}
+
+{%- for message in loop_messages -%}
+
+    {%- if message['role'] == 'user' -%}
+        {{- '<|im_start|>user\n' + message['content'] | trim + '<|im_end|>\n' -}}
+
+    {%- elif message['role'] == 'assistant' -%}
+        {{- '<|im_start|>assistant\n' -}}
+        {%- if message['content'] -%}
+            {{- message['content'] | trim -}}
+        {%- endif -%}
+        {%- if message.get('tool_calls') -%}
+            {%- for tool_call in message['tool_calls'] -%}
+                {%- if tool_call.get('function') is defined -%}
+                    {%- set tool_call = tool_call['function'] -%}
+                {%- endif -%}
+                {{- '\n<tool_call>\n' -}}
+                {{- {'name': tool_call['name'], 'arguments': tool_call['arguments']} | tojson -}}
+                {{- '\n</tool_call>' -}}
+            {%- endfor -%}
+        {%- endif -%}
+        {{- '<|im_end|>\n' -}}
+
+    {%- elif message['role'] == 'tool' -%}
+        {%- if loop.previtem is not defined or loop.previtem['role'] != 'tool' -%}
+            {{- '<|im_start|>tool\n' -}}
+        {%- endif -%}
+        {{- '<tool_response>\n' -}}
+        {{- message['content'] | trim -}}
+        {{- '\n</tool_response>\n' -}}
+        {%- if loop.nextitem is not defined or loop.nextitem['role'] != 'tool' -%}
+            {{- '<|im_end|>\n' -}}
+        {%- endif -%}
+
+    {%- endif -%}
+{%- endfor -%}
+
+{%- if add_generation_prompt -%}
+    {{- '<|im_start|>assistant\n' -}}
+{%- endif -%}

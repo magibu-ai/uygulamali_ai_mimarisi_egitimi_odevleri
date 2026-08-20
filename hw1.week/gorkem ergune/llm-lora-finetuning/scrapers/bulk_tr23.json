@@ -1,0 +1,276 @@
+{
+    "train": [
+        [
+            {
+                "content": "SQL veritabanlari arasindaki farklar pratikte neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Populer SQL veritabanlarinin onemli farklari var. PostgreSQL: en ozellik zengini acik kaynakli DB. JSONB destegi, tam metin arama, pencere fonksiyonlari, CTE'ler, uzantilar (cografi icin PostGIS, AI icin pgvector). En iyi: karmasik sorgular, veri butunlugu, ileri ozellikler gerektiginde. MySQL: en cok dagitilan acik kaynakli DB. PostgreSQL'den daha basit, basit sorgular icin daha hizli. InnoDB motoru ACID saglar. WordPress, bircok web uygulama tarafindan kullanilir. En iyi: web uygulamalari, okuma agirlikli is yukleri. SQLite: sunucusuz, gomulu, tek dosya veritabani. Ag yok, yapilandirma yok. Mobil uygulamalar, masaustu uygulamalar, gomulu sistemler tarafindan kullanilir. En iyi: yerel depolama, prototipleme, kenar bilisim. CockroachDB: dagitik SQL, PostgreSQL uyumlu. Otomatik parca ayirma, cok bolgeli. En iyi: SQL garantileriyle kuresel uygulamalar. Cogu proje icin: PostgreSQL ile baslayIn — kucuk uygulamalardan buyuk olcekli sistemlere kadar her seyi ele alir. Gorkem'in bankacilik projesi dogru bir sekilde ACID garantileri icin PostgreSQL kullanir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PostgreSQL, MySQL, SQLite, CockroachDB, veritabani karsilastirmasi, ACID, JSONB.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "temiz kod nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Temiz kod okunmasi, anlanmasi ve bakimi kolay koddur. Robert C. Martin'in 'Clean Code' prensipleri: 1) Anlamli isimler — degiskenler, fonksiyonlar, siniflar niyetinizi acmali. getUser() getData() degil, isActive flag degil. 2) Kucuk fonksiyonlar — bir sey yap, iyi yap. Genellikle 5-20 satir. 3) Tek soyutlama seviyesi — ust duzey is mantigini alt duzey detaylarla karistirmayin. 4) DRY (Kendini Tekrarlama) — ama asiri soyutlama yapma. Uc olusma kurali — ucuncu tekrarda soyutla. 5) Yan etkilerden kacin — checkPassword adli fonksiyon oturum baslatmamali. 6) Hata yonetimi — hata kodlari degil istisnalar kullan. null dondurme, istisnalar firlat veya Optional kullan. 7) Yorumlar — sadece kod niyeti ifade edemediginde. TODO, yasal bildirimler, neden aciklama (ne degil). 8) Bicimlendirme — tutarli girintileme, bosluk, satir uzunlugu. Otomatik bicimlendriciler kullan (Prettier, Black). 9) Testler — temiz testler temiz uretim kodu kadar onemli. Hedef mukemmellik degil — bir sonraki gelistirici (genellikle gelecekteki siz) icin bilissel yuku azaltmak. Kod yazildigindan 10 kat daha fazla okunur.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Temiz kod, Robert C. Martin, anlamli isimler, kucuk fonksiyonlar, DRY, bicimlendirme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "XSS nedir ve nasil onlenir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Cross-Site Scripting (XSS) diger kullanicilar tarafindan goruntulenen web sayfalarina kotu amacli JavaScript enjekte eder. Turler: 1) Saklanan XSS — kotu amacli betik veritabaninda saklanir (yorum, profil) ve tum ziyaretcilere sunulur. En tehlikeli. 2) Yansitilan XSS — URL parametresindeki betik sayfa yanitinda yansitilir. Kurbannin kotu amacli baglantiya tiklamasini gerektirir. 3) DOM tabanli XSS — istemci tarafi JavaScript guvenilmeyen veriyi DOM'a isler. Onleme: 1) Cikti kodlamasi — kullanici icerigini render etmeden once HTML varliklarini kacir. < yerine &lt;, & yerine &amp;. 2) Content Security Policy (CSP) basligi — hangi betiklerin yurutulecegini kisitla. 3) Otomatik kacis yapan cerceveler kullan — React JSX'i otomatik kacirir, Django sablonlari otomatik kacirir. 4) HTML girdisini temizle — HTML kabul etmeniz gerekiyorsa DOMPurify (istemci) veya bleach (Python) kullan. 5) HttpOnly cerezler — JavaScript'in oturum cerezlerine erisimini onle. 6) Kullanici girdisiyle innerHTML veya dangerouslySetInnerHTML kullanmayin. XSS oturumlari calabilir, kullanicilari yonlendirebilir ve tus basilarini yakalayabilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "XSS, cross-site scripting, CSP, cikti kodlamasi, DOMPurify, HttpOnly, temizleme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Gorkem'in projelerini benzersiz kilan nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gorkem'in proje portfoyu birkac nedenden dolayi one cikar. 1) Genislik yerine derinlik — bircok yuzeysel proje yerine temelleri anlamak icin seyleri sifirdan insaa eder. miniature-transformers sadece PyTorch'un nn.Transformer'ini kullanmaz — her bileseni elle uygular. 2) Tam yigin kapsama — Assembly duzeyinde OS programlamadan (gorkem-os) ust duzey web uygulamalarina (banking-management-system), ML modellerine (yolo-custom-detector). Bu aralik tum bilisim yigininda anlayisi gosterir. 3) Pratik uygulamalar — her proje gercek bir sorunu cozer: siber guvenlik icin phishing tespiti, kimlik dogrulama icin yuz tanima, dil bariyerleri icin makine cevirisi. 4) Kavramlari baglama — wiki2bpe (tokenizasyon) NMT'ye (ceviri) beslenir, miniature-transformers'a (mimari) baglanir, LLM ince ayara (mevcut proje) yol acar. Her proje onceki bilgi uzerine insa eder. 5) Acik belgelendirme — projelerin problemi, yaklasimi ve nasil calistirilacagini aciklayan README'leri var. Bu sadece kodlamanin otesinde iletisim becerilerini gosterir. Portfolyosu sirketlerin aradigi nitelikleri gosterir: merak, derinlik, genislik ve calisan projeler teslim etme yetenegi.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gorkem projeleri, derinlik, sifirdan, tam yigin, pratik, belgelendirme, portfolyo.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Gorkem'in teknoloji yigini ve becerileri nelerdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gorkem Ergune, Yeditepe Universitesi'nde CS ogrencisi ve kapsamli bir teknoloji yiginina sahip AI Urun Gelistirici. Diller: Python (birincil — AI/ML, web, betik), Java (Spring Boot — kurumsal uygulamalar), JavaScript/TypeScript (web gelistirme), C (sistem programlama), Assembly (OS gelistirme). AI/ML: PyTorch, TensorFlow, scikit-learn, Hugging Face Transformers, YOLO (bilgisayarli gorme), face_recognition, NLP (tokenizasyon, ceviri). Web: React, Next.js, Flask/FastAPI, Spring Boot, REST API'leri. Veritabani: PostgreSQL, MongoDB, Redis, SQLite. DevOps: Docker, Git, GitHub Actions, Linux. Projelerin kapsadigi alanlar: transformer mimarisi (miniature-transformers), nesne tespiti (yolo-custom-detector), yuz tanima (facelock), NLP (NMT, wiki2bpe), isletim sistemleri (gorkem-os), full-stack uygulamalar (banking-management-system), siber guvenlik (phishing-domain-detection), LLM ince ayar (mevcut proje). Portfolyo: gorkemergune.github.io. Benzersiz gucu: derin teorik anlamayi pratik uygulamayla birlestirmek.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gorkem, teknoloji yigini, Python, PyTorch, Spring Boot, React, AI/ML, full-stack, portfolyo.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CORS nedir ve neden var?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CORS (Cross-Origin Resource Sharing) hangi alan adlarinin API'nize bir tarayicidan erisebilecegini kontrol eder. Same-Origin Politikasi: tarayicilar bir kaynaktan (alan:port) digerine istekleri engeller. Bu kotu amacli sitelerin API'nizi kullanicinin cerezleriyle aramasini onler. CORS bunu gevsetir: sunucu izin verilen kaynaklari belirten Access-Control-Allow-Origin basligi gonderir. On kontrol istegi: basit olmayan istekler (PUT, DELETE, ozel basliklar) icin tarayici once izinleri kontrol etmek icin OPTIONS istegi gonderir. Sunucu izin verilen yontemler, basliklar ve kaynaklarla yanit verir. Basliklar: Access-Control-Allow-Origin (hangi alanlar), Access-Control-Allow-Methods (hangi HTTP yontemleri), Access-Control-Allow-Headers (hangi ozel basliklar), Access-Control-Allow-Credentials (cerezlere izin ver). Yaygin hata: kimlik bilgileriyle Access-Control-Allow-Origin: * — izin verilmez, kesin kaynak belirtilmeli. CORS sadece tarayicilara uygulanir — sunucudan sunucuya istekler etkilenmez. Kutuphane: cors middleware (Express), django-cors-headers, Flask-CORS. Hata ayiklama ipucu: CORS hatalari her zaman istemci tarafi — sunucunun yanit basliklarini kontrol edin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CORS, capraz kaynak, same-origin politikasi, on kontrol, Access-Control-Allow-Origin.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "veritabani baglanti yonetimi mikroservislerde nasil yapilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Her mikroservis kendi veritabani baglanti yonetimine ihtiyac duyar. Temel zorluklar: baglanti sinirlari (PostgreSQL varsayilan max_connections=100, tum servisler arasinda paylasilan), baglanti olusturma yuku (baglanti basina 10-50ms), baglanti sizintilari (baglantilari havuza geri dondurmeme). Cozumler: 1) Her servis icinde baglanti havuzu — HikariCP (Java), asyncpg havuzu (Python), pg havuzu (Node.js). Boyut: CPU cekirdeklerinin 2-5 kati, fazlasi degil. 2) Harici baglanti havuzlayici — PgBouncer (PostgreSQL icin en populer). Servisler ile veritabani arasinda durur. Uc mod: oturum (bire-bir), islem (islemler arasinda baglantilari paylasor — onerilen), ifade (en agresif paylasim). 3) Servis duzeyinde veritabani izolasyonu — her mikroservisin kendi veritabani/semasi var. Paylasilan veritabani anti-kalibinden kacin. 4) Okuma replikalari — okuma sorgularini replikalara, yazmalari birincile yonlendir. 5) Baglanti dizesi yonetimi — ortam degiskenleri veya servis kefi kullan, sabit kodlu degil. Izleme: aktif baglantilari, bosta baglantilari, bekleme suresini, baglanti hatalarini takip edin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Baglanti yonetimi, PgBouncer, baglanti havuzu, mikroservisler, max_connections, HikariCP.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Gorkem Ergune kimdir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gorkem Ergune, Istanbul Yeditepe Universitesi'nde Bilgisayar Bilimi ogrencisi ve AI Urun Gelistiricidir. Yapay zeka, makine ogrenimi ve gercek sorunlari cozen yazilim gelistirme konusunda tutkulu. gorkemergune.github.io'daki portfolyosu AI/ML, web gelistirme, sistem programlama ve siber guvenlik alanlarini kapsayan 30'dan fazla projeyi sergilemektedir. Temel projeler: miniature-transformers (AI temellerini anlama), yolo-custom-detector (bilgisayarli gorme), facelock (biyometrik dogrulama), gorkem-os (isletim sistemleri), banking-management-system (full-stack gelistirme), wiki2bpe (NLP tokenizasyon), NMT (makine cevirisi) ve phishing-domain-detection (siber guvenlik ML). Su anki odagi LoRA ile LLM ince ayar — kisisellestirilmis bir AI asistani olusturma. Gorkem'in yaklasimi derinligi genisligin onune koyar — yuksek duzey cerceveler kullanmadan once nasil calistIklarini gercekten anlamak icin seyleri sifirdan insaa eder. Universite egitiminden guclu CS temellerini pratik, uygulamali proje deneyimiyle birlestirmektedir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gorkem Ergune, AI Urun Gelistirici, Yeditepe, CS ogrencisi, portfolyo, projeler, LoRA.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "sozlesme testi nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Sozlesme testi, tam entegrasyon testleri calistirmadan servislerin dogru iletisim kurabildigini dogrular. Sorun: A servisi B servisinin API'sini cagiriyor. B'nin API degisikliklerinin A'yi bozmadigini nasil saglarsin? Entegrasyon testleri yavas, kararsiz ve tum servislerin calismasini gerektirir. Sozlesme testi: 1) Tuketici (A servisi) saglayicidan (B servisi) ne bekledigini tanimlar — bir sozlesme. 2) Saglayici tum tuketici sozlesmelerini karsiladigini dogrular. 3) Saglayici degisiklikleri herhangi bir sozlesmeyi bozarsa, dagitimdan once testler basarisiz olur. Tuketici-Gudumlu Sozlesme Testi (CDCT): tuketiciler sozlesmeleri tanimlar, saglayici hepsini karsilamalidir. Araclar: Pact (en populer — bircok dili destekler), Spring Cloud Contract (Java). Is akisi: tuketici Pact testi yazar → sozlesme dosyasi uretir → Pact Broker araciligiyla paylasilir → saglayici tum sozlesmelere karsi dogrulama yapar → CI sozlesmeler bozulursa dagitimi engeller. Faydalar: hizli (tam yigin calistirmaya gerek yok), guvenilir (kararsiz ag testleri yok), bagimsiz dagItimlari mumkun kilar. Ozellikle bircok servisler arasi bagimlilik olan mikroservis mimarilerinde degerlidir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Sozlesme testi, Pact, tuketici-gudumlu, entegrasyon, mikroservisler, Pact Broker.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "uretim sorunlari nasil hata ayiklanir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Uretim hata ayiklama, baski altinda sistematik yaklasim gerektirir. Adimlar: 1) Kabul et — sorunu dogrula, siddetini degerlendir (P0-P4), paydaşlarla iletisim kur. 2) Triyaj — tum kullanicilar mi etkiliyor yoksa bir alt kume mi? Ne zaman baslamis? Son dagitimlarla iliskilendir. 3) Arastir — panolari kontrol et (hata oranlari, gecikme), loglari (korelasyon ID'leriyle), izleri (dagitik izleme), metrikleri (kaynak kullanimi). 4) Hafiflet — temel nedeni bulmadan hizlica hafifletebilir misiniz? Dagitimi geri al, feature flag'i kapat, olcekle, trafigi yonlendir. 5) Temel neden — hafiflettikten sonra daha derine kaz. Staging'de yeniden uret, loglari analiz et. 6) Duzelt — uygun duzeltmeyi uygula, kapsamlica test et. 7) Postmortem — sucsuz retrospektif, ne oldugunu, ne yapildigini, tekrarlanmasininin nasil onlenecegini belgele. Araclar: PagerDuty/OpsGenie (uyari), Grafana (panolar), Datadog/New Relic (APM), Sentry (hata takibi). Temel ilke: once hafiflet, sonra arastir. Kullanicilar etkilenirken 30 dakika hata ayiklama yapmayin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Uretim hata ayiklama, olay mudahalesi, postmortem, geri alma, triyaj, izleme, Sentry.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "surekli profilleme nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Surekli profilleme, yalnizca hata ayiklama oturumlari sirasinda degil, surekli olarak uretim sistemlerinden performans verilerini yakalahr. Geleneksel profilleme: profiler'i yerel veya staging'de calistir → darbogazlari bul → duzelt → uretim davranisiyla eslesecegini um. Surekli profilleme: her zaman acik, dusuk yuklu uretimde profilleme → gercek performans ozelliklerini gor → yalnizca gercek yuk altinda ortaya cikan darbogazlari bul. Ne yakalahr: CPU profilleri (hangi fonksiyonlar CPU zamani tuketiyor), bellek tahsisleri (nesneler nerede tahsis ediliyor), goroutine/is parcacigi analizi, kilit catismasi. Araclar: Pyroscope (acik kaynak), Grafana Pyroscope, Datadog Continuous Profiler, Google Cloud Profiler. Alev grafikleri: cagri yiginlarinin gorsel temsili — genislik harcanan zamani temsil eder. Genis bloklar = optimize edilecek sicak yollar. Faydalar: kullanicilar fark etmeden performans gerilemeleri bul, kaynak kullanim kaliplarini anla, bulut maliyetlerini azalt (CPU yogun fonksiyonlari optimize et). Yuk: genellikle %1-3 — uretim kullanimi icin tasarlanmistir. Metrikler ve izlerle birlestirildiginde, surekli profilleme gozlemlenebilirlik resmini tamamlar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Surekli profilleme, alev grafigi, Pyroscope, CPU profili, bellek tahsisi, uretim.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "kodda isimlendirmenin onemi nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Isimlendirme programlamanin en zor ve en etkili yonlerinden biridir. Iyi isimler kodu kendini belgeleyen yapar. Degiskenler: ne icerdigini tanimla — customerAge ca degil, isActive flag degil, remainingAttempts n degil. Fonksiyonlar: ne yaptigini tanimla — calculateTotalPrice() calc() degil, validateEmail() check() degil, sendNotification() process() degil. Siniflar: neyi temsil ettigini tanimla — UserRepository Manager degil, PaymentProcessor Handler degil. Boolean'lar: is/has/can/should on eki kullan — isValid, hasPermission, canDelete, shouldRetry. Koleksiyonlar: cogul kullan — users, orders, errorMessages. Kacinilacak: tek harfler (dongulerde i haric), kisaltmalar (usr, mgr), genel isimler (data, info, temp, handler, manager, utils). Uzunluk: degisken kapsami isim uzunlugunu belirler — kisa kapsam = kisa isim (dongude i), uzun kapsam = aciklayici isim (maxRetryAttempts). Tutarlilik: bir terim secin ve ona bagli kalin — fetch/get/retrieve'yi karistirmayin, ayni kavram icin customer/client/user'i karistirmayin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Isimlendirme, temiz kod, kendini belgeleyen, degiskenler, fonksiyonlar, siniflar, okunabilirlik.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "gelistirici deneyimi DX nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gelistirici deneyimi (DX), bir araci, API'yi, cerceve veya platformu kullanmanin ne kadar kolay ve keyifli olduguudr. Iyi DX icerir: 1) Acik belgelendirme — 5 dakikadan kisa surede hizli baslangic, kapsamli API referansi, yaygin kullanim durumlari icin ogretici yazilar. 2) Sezgisel API tasarimi — tutarli adlandirma, tahmin edilebilir davranis, mantikli varsayilanlar. 3) Iyi hata mesajlari — neyin yanlis gittigini VE nasil duzeltilecegini soyle. 4) Hizli geri bildirim donguler — hizli derlemeler, canli yeniden yukleme, aninda test sonuclari. 5) CLI araclari — betiklenebilir, kesfedilebilir (--help iyi calisir). 6) SDK/istemci kutuphaneleri — her dil icin deyimsel kod. Harika DX ile bilinen sirketler: Stripe (API belgelendirme altin standardi), Vercel (tek komutla dagit), Supabase (aninda backend), Cloudflare. Dahili DX de onemli: CI/CD boru hatti hizi, gelistirme ortami kurulumu, monorepo araclari, dahili belgelendirme. DX'e yatirim yapmak karsiligini verir — mutlu gelistiriciler uretken gelistiricilerdir. Gorkem'in projeleri acik README'ler ve proje yapisi araciligiyla iyi DX farkindaliği gostermektedir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Gelistirici deneyimi, DX, belgelendirme, API tasarimi, hata mesajlari, Stripe, SPACE.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "nihai tutarlilik nedir ve nasil yonetilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Nihai tutarlilik, bir yazmadan sonra okumalarin degisikligi hemen yansitmayabilecegi ama sonunda yansitacagi anlamina gelir (genellikle milisaniyeler ila saniyeler). Neden: dagitik sistemler tutarlilik ve kullanilabilirlik arasinda secim yapmali (CAP teoremi). Bircok sistem daha iyi performans ve dayaniklilik icin kullanilabilirlik + nihai tutarlilik secer. Ornekler: DNS yayilimi (48 saate kadar), sosyal medya begenileri (sayac gecikebilir), arama indeksleri (yeni icerik hemen aranabilir degil), CDN onbellek gecersiz kilma. Uygulamada yonetme: 1) Kendi-yazdiklarini-oku tutarliligi — kullanici veri yazdiktan sonra ONLARIN sonraki okumalari guncellemeyi gorsun (replikadan degil birincilden oku). 2) Iyimser UI — UI'yi hemen guncelle, daha sonra sunucuyla uzlastir. Sunucu reddederse, UI'yi geri al. 3) Idempotent islemler — islemleri tekrarlamanin guvenli olacagi sekilde tasarla. Odemeler icin idempotency anahtarlari kullan. 4) Event sourcing — olaylari sakla, durumu turet. 5) Saga deseni — telafi edici eylemlerle dagitik islemleri koordine et. 6) Catisma cozumu — son yazma kazanir, birlestirme veya manuel cozum. CRDT'ler: catismalar olmadan otomatik olarak birlestirilebilen veri yapilari.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Nihai tutarlilik, CAP, kendi-yazdiklarini-oku, iyimser UI, idempotent, CRDT, saga.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "kod kokusu nedir ve nasil duzeltilir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kod kokulari potansiyel sorunlari gosteren kaliplardir — hatalar degil, zayif tasarim isaretleri. Yaygin kokular: 1) Uzun yontem — daha kucuk, odakli fonksiyonlara bol. 2) Buyuk sinif — tek sorumlulukla birden fazla sinifa bol. 3) Ozellik kiskancilligi — yontem kendi sinifinin verisinden cok baska sinifin verisini kullaniyor — yontemi tasi. 4) Veri kumeleri — ayni degisken grubu birlikte goruluyor — bir sinifa cikar. 5) Ilkel takinitisi — kucuk nesneler yerine ilkel turler kullanma (e-posta icin string, para icin int). 6) Switch ifadeleri — cok bicimlilikle degistir. 7) Kodun ne yaptigini aciklayan yorumlar — kod kendini aciklamali, degisken/yontem adlarini degistir. 8) Olu kod — ulasilamaz kod, kullanilmayan degiskenler/fonksiyonlar — sil. 9) Spekulatif genellik — varsayimsal gelecek ihtiyaclar icin tasarlanmis kod — YAGNI. 10) Sihirli sayilar — adlandirilmis sabitlerle degistir. Tespit araclari: SonarQube, Code Climate, ESLint, pylint, PMD. Boy Scout Kurali: kodu buldugunuzdan daha iyi birakin — bir dosyaya her dokundugunuzda bir kokuyu duzelt.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Kod kokusu, yeniden yapilandirma, uzun yontem, ozellik kiskancilligi, SonarQube, YAGNI.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "CSRF nedir ve nasil onlenir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Cross-Site Request Forgery, kimlik dogrulanmis kullanicilari niyetlenmedikleri eylemleri gerceklestirmeye kandlrir. Ornek: bankaniza giris yapmisiniz. <img src='https://banka.com/transfer?alici=saldirgan&tutar=10000'> iceren kotu amacli bir siteyi ziyaret edersiniz. Tarayiciniz istegi banka cerezlerinizle gonderir — bilginiz disinda transfer gerceklesir. Onleme: 1) CSRF tokenlari — sunucu rastgele bir token uretir, formlarda gizli alan ve oturumda dahil eder. Gonderimde sunucu eslestigini dogrular. Saldirgan tokeni bilemez. 2) SameSite cerezleri — Set-Cookie: session=abc; SameSite=Strict. Tarayici, capraz kaynakli isteklerle cerez gondermez. 3) Origin/Referer basliklarini kontrol et — beklenmeyen kaynaklardan gelen istekleri reddet. 4) Ozel basliklar — AJAX istekleri X-CSRF-Token basligi icermeli. Cogu cerceve bunu ele alir: Django varsayilan olarak CSRF middleware icerir, Express'te csurf, Spring'de CSRF korumasi var. SameSite=Lax modern tarayicilarda varsayilandir — CSRF riskini onemli olcude azaltir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "CSRF, cross-site request forgery, CSRF tokeni, SameSite, cerez guvenligi, onleme.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "eslestirmeli programlama ve cete programlama nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Eslestirmeli programlama: iki gelistirici, bir bilgisayar. Surucu kod yazar, Navigato inceleme yapar ve stratejik dusunur. Rolleri sik sik degistirin (her 15-30 dakika). Faydalar: daha az hata (gercek zamanli kod inceleme), bilgi paylasimi, yeni takim uyeleri icin daha hizli ise alim, daha iyi tasarim (iki bakis acisi), azaltilmis baglam degistirme (odakli calisma). Zorluklar: yorucu (yogun isbirligi), kisilik catismalari, icedonukler icin zor, 'iki kisi bir kisinin isini yapiyor' algisi (calismalar eslestirmeli programlamanin daha yuksek kalitede kod urettigini gosteriyor). Cete/topluluk programlama: tum takim bir gorev uzerinde bir bilgisayarda calisir. Bir surucu, digerleri navigate eder. Suruculeri her 10-15 dakika degistirin. Faydalar: tum takim tum kodu anlar, bilgi silolarini ortadan kaldirir, karmasik problemler ve ogrenme icin harika. Uzaktan icin araclar: VS Code Live Share, Tuple. Ne zaman eslestirilir: karmasik ozellikler, kritik hatalar, ise alma, tasarim kararlari. Ne zaman solo: rutin gorevler, iyi anlasilmis is. Gunde 2-3 saat eslestirme ile baslayin, tam zamanli degil — denge anahtar.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Eslestirmeli programlama, cete programlama, surucu, navigator, bilgi paylasimi, Live Share.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

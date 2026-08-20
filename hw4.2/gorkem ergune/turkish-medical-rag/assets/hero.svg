@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 250" width="100%" role="img" aria-label="Medical AI retrieval illustration">
+  <defs>
+    <linearGradient id="tmrBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#eef2ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="998" height="248" rx="20" fill="url(#tmrBg)" stroke="#d7e3ee"/>
+
+  <!-- ECG baseline -->
+  <path d="M40 200 H250 l18 -34 l16 66 l20 -96 l18 60 H1000"
+        fill="none" stroke="#0e7490" stroke-width="4"
+        stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+
+  <!-- Corpus document -->
+  <g transform="translate(70,58)">
+    <rect width="130" height="150" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+    <rect x="20" y="26" width="90" height="9" rx="4.5" fill="#94a3b8"/>
+    <rect x="20" y="48" width="90" height="9" rx="4.5" fill="#cbd5e1"/>
+    <rect x="20" y="70" width="62" height="9" rx="4.5" fill="#cbd5e1"/>
+    <path d="M32 112 h66 M32 130 h48" stroke="#e2e8f0" stroke-width="8" stroke-linecap="round"/>
+    <g transform="translate(86,104)">
+      <rect x="-7" y="-18" width="14" height="36" rx="4" fill="#ef4444"/>
+      <rect x="-18" y="-7" width="36" height="14" rx="4" fill="#ef4444"/>
+    </g>
+  </g>
+
+  <!-- Arrow: corpus -> embeddings -->
+  <g stroke="#0e7490" stroke-width="4" fill="#0e7490">
+    <line x1="228" y1="133" x2="352" y2="133" stroke-linecap="round"/>
+    <polygon points="352,124 372,133 352,142"/>
+  </g>
+
+  <!-- Magnifier over query -->
+  <g transform="translate(410,86)">
+    <circle cx="34" cy="34" r="34" fill="#ffffff" stroke="#0e7490" stroke-width="6"/>
+    <line x1="58" y1="58" x2="86" y2="86" stroke="#0e7490" stroke-width="8" stroke-linecap="round"/>
+    <path d="M18 40 l10 -14 l9 20 l10 -26 l9 20" fill="none" stroke="#ef4444"
+          stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Arrow: query -> embeddings graph -->
+  <g stroke="#0e7490" stroke-width="4" fill="#0e7490">
+    <line x1="520" y1="133" x2="632" y2="133" stroke-linecap="round"/>
+    <polygon points="632,124 652,133 632,142"/>
+  </g>
+
+  <!-- Embedding / AI node graph -->
+  <g transform="translate(690,52)">
+    <g stroke="#93c5fd" stroke-width="2.5">
+      <line x1="30" y1="70" x2="110" y2="24"/>
+      <line x1="30" y1="70" x2="110" y2="118"/>
+      <line x1="110" y1="24" x2="190" y2="60"/>
+      <line x1="110" y1="118" x2="190" y2="60"/>
+      <line x1="110" y1="24" x2="110" y2="118"/>
+      <line x1="190" y1="60" x2="250" y2="100"/>
+      <line x1="110" y1="118" x2="250" y2="100"/>
+    </g>
+    <g fill="#2563eb">
+      <circle cx="30" cy="70" r="11"/>
+      <circle cx="110" cy="24" r="11"/>
+      <circle cx="110" cy="118" r="11"/>
+      <circle cx="190" cy="60" r="13" fill="#0e7490"/>
+      <circle cx="250" cy="100" r="10" fill="#60a5fa"/>
+    </g>
+  </g>
+</svg>

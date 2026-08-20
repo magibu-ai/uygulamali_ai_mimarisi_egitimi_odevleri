@@ -1,0 +1,16 @@
+title: Yerel Asistan - Genel Amaçlı Tool Calling
+emoji: 🤖
+colorFrom: indigo
+colorTo: purple
+sdk: static
+app_file: index.html
+pinned: false
+license: mit
+short_description: Yerel LLM (LM Studio/Ollama) + 9 araçlı genel amaçlı asistan
+tags:
+  - tool-calling
+  - local-llm
+  - lm-studio
+  - ollama
+  - qwen3
+  - turkish

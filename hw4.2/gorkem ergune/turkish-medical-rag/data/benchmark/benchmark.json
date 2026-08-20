@@ -1,0 +1,627 @@
+{
+  "metadata": {
+    "benchmark_version": "1.0",
+    "dataset_name": "umutertugrul/turkish-hospital-medical-articles",
+    "selected_document_count": 300,
+    "chunk_count": 2072,
+    "embedding_model": "ytu-ce-cosmos/turkish-e5-large",
+    "positive_count": 20,
+    "negative_count": 10,
+    "total_count": 30,
+    "methodology": "Positives: authored questions grounded in the selected corpus; each answer verified as an exact evidence excerpt in a specific chunk. Negatives: realistic medical questions on topics with zero lexical presence in the corpus, further confirmed unanswerable by ChromaDB semantic retrieval inspection. Diagnostic pilot queries are intentionally excluded."
+  },
+  "questions": [
+    {
+      "id": "pos_001",
+      "question": "Anemi nedir ve neden ortaya çıkar?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00000_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00000"
+      ],
+      "expected_urls": [
+        "https://atlasuniversitesihastanesi.com/anemi-nedir/"
+      ],
+      "title": "Anemi Nedir?",
+      "source": "atlas",
+      "evidence": "oksijen taşıyan kırmızı kan hücrelerinin eksikliğinde ortaya çıkan durumdur",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_002",
+      "question": "Hepatit virüsünün kaç ana türü vardır?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00001_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00001"
+      ],
+      "expected_urls": [
+        "https://atlasuniversitesihastanesi.com/hepatit-nedir-belirtileri-ve-tedavisi-nasildir/"
+      ],
+      "title": "Hepatit Nedir? Belirtileri ve Tedavisi Nasıldır?",
+      "source": "atlas",
+      "evidence": "A, B, C, D ve E tipleri olarak adlandırılan beş ana türü vardır",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_003",
+      "question": "Çölyak hastalığı hangi proteine karşı gelişen bir hassasiyettir?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00018_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00018"
+      ],
+      "expected_urls": [
+        "https://medipol.com.tr/bilgi-kosesi/roportajlar/colyak-hastaligi-nedir-hastalar-nelere-dikkat-etmelidir"
+      ],
+      "title": "Çölyak Hastalığı Nedir? Hastalar Nelere Dikkat Etmelidir?",
+      "source": "medipol",
+      "evidence": "gluten adlı proteine karşı, ömür boyu süren ve kronikleşen",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_004",
+      "question": "Antibiyotikler bakterilere karşı nasıl etki eder?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00072_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00072"
+      ],
+      "expected_urls": [
+        "https://www.acibadem.com.tr/ilgi-alani/antibiyotikler/"
+      ],
+      "title": "Antibiyotik Nedir, Ne İşe Yarar? Yan Etkileri Nelerdir?",
+      "source": "acibadem",
+      "evidence": "doğrudan öldürerek (bakterisidal) ya da çoğalmalarını engelleyerek (bakteriyostatik)",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_005",
+      "question": "Bulimia nervozada kilo almamak için hangi telafi edici davranışlara başvurulur?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00078_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00078"
+      ],
+      "expected_urls": [
+        "https://www.acibadem.com.tr/ilgi-alani/bulimia-nervoza-nedir/"
+      ],
+      "title": "Bulimia Nervoza Nedir? Bulimia Belirtileri, Nedenleri ve Tedavisi",
+      "source": "acibadem",
+      "evidence": "kusma, aşırı egzersiz veya laksatif kullanımı gibi telafi edici davranışlara",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_006",
+      "question": "İyot eksikliği tiroid bezinde hangi sorunlara yol açar?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00085_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00085"
+      ],
+      "expected_urls": [
+        "https://www.acibadem.com.tr/ilgi-alani/iyot-eksikligi/"
+      ],
+      "title": "İyot Nedir? İyot Eksikliği Belirtileri ve Nedenleri Nelerdir?",
+      "source": "acibadem",
+      "evidence": "tiroid bezinde büyüme (guatr) ve hipotiroidizm gibi sağlık sorunlarına yol açabilir",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_007",
+      "question": "Vaskülit bağışıklık sistemiyle nasıl bir ilişki sonucu ortaya çıkar?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00109_chunk_001"
+      ],
+      "expected_parent_ids": [
+        "doc_00109"
+      ],
+      "expected_urls": [
+        "https://www.acibadem.com.tr/ilgi-alani/vaskulit/"
+      ],
+      "title": "Vaskülit (Damar İltihabı) Nedir? Belirtileri, Nedenleri ve Tedavisi",
+      "source": "acibadem",
+      "evidence": "bağışıklık sisteminin yanlışlıkla kan damarlarına saldırmasıyla ortaya çıkar",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_008",
+      "question": "Veba hastalığı insanlara başlıca nasıl bulaşır?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00110_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00110"
+      ],
+      "expected_urls": [
+        "https://www.acibadem.com.tr/ilgi-alani/veba/"
+      ],
+      "title": "Veba Nedir? Veba Nasıl Bulaşır? Veba Belirtileri ve Tedavisi",
+      "source": "acibadem",
+      "evidence": "esas olarak pireler yoluyla bulaşan ve çok kısa süre içerisinde ölüme yol açabilecek",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_009",
+      "question": "Kıl kurdunun bilimsel (tıbbi) adı nedir?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00120_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00120"
+      ],
+      "expected_urls": [
+        "https://www.anadolusaglik.org/saglik-rehberi/bagirsak-kurdu-nedir-belirtiler-ve-tedavi-yontemleri-nelerdir"
+      ],
+      "title": "Kıl Kurdu Nedir? Belirtileri Nelerdir? Nasıl Dökülür?",
+      "source": "anadolusaglik",
+      "evidence": "Enterobius vermicularis adıyla da bilinen bu parazit",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_010",
+      "question": "D vitamini eksikliği hangi hastalıklara yol açabilir?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00123_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00123"
+      ],
+      "expected_urls": [
+        "https://www.anadolusaglik.org/saglik-rehberi/d-vitamini-eksikliginde-gorulen-hastaliklar-nelerdir"
+      ],
+      "title": "D Vitamini Eksikliğinde Görülen Hastalıklar Nelerdir?",
+      "source": "anadolusaglik",
+      "evidence": "osteoporoz, raşitizm, kalp hastalıkları ve bağışıklık sistemi problemleri",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_011",
+      "question": "Kadınlarda ikinci en sık ölüme neden olan kanser türü hangisidir?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00142_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00142"
+      ],
+      "expected_urls": [
+        "https://www.bayindirhastanesi.com.tr/blog/meme-kanserinden-korkmayin-onleminizi-alin-397"
+      ],
+      "title": "Meme Kanseri Görülme Sıklığı Nedir? Meme Kanserinde Erken Teşhis",
+      "source": "bayindir",
+      "evidence": "kadınlarda ikinci en sık ölüme neden olan kanser türü ise meme kanseridir",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_012",
+      "question": "Yetişkinlerde normal kalp ritmi dakikada kaç atımdır?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00151_chunk_001"
+      ],
+      "expected_parent_ids": [
+        "doc_00151"
+      ],
+      "expected_urls": [
+        "https://www.florence.com.tr/guncel-saglik/kalp-carpintisi"
+      ],
+      "title": "Kalp Çarpıntısı (Taşikardi) Nedir? Neden Olur ve Nasıl Geçer?",
+      "source": "florence",
+      "evidence": "Normal kalp ritmi yetişkinler için dakika 60-100 atım arasında değişkenlik gösterir",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_013",
+      "question": "Zatürre (pnömoni) en çok hangi gruplarda görülür?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00165_chunk_001"
+      ],
+      "expected_parent_ids": [
+        "doc_00165"
+      ],
+      "expected_urls": [
+        "https://www.guven.com.tr/saglik-rehberi/zaturre-belirtileri-nelerdir-nasil-tedavi-edilir"
+      ],
+      "title": "Zatürre Belirtileri Nelerdir? Nasıl Tedavi Edilir?",
+      "source": "guven",
+      "evidence": "okul öncesi dönemdeki (5 yaş altı) çocuklarda, 65 yaş üstü erişkinlerde",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_014",
+      "question": "HIV vücutta hangi sisteme saldırır?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00166_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00166"
+      ],
+      "expected_urls": [
+        "https://www.livhospital.com/liv-saglik-kosesi/aids-belirtileri"
+      ],
+      "title": "AIDS Nedir?",
+      "source": "liv",
+      "evidence": "bağışıklık sistemine saldırarak vücut direncini düşüren bir enfeksiyondur",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_015",
+      "question": "Koklear implant işitmeyi nasıl sağlar?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00174_chunk_001"
+      ],
+      "expected_parent_ids": [
+        "doc_00174"
+      ],
+      "expected_urls": [
+        "https://www.livhospital.com/liv-saglik-kosesi/koklear-implant-biyonik-kulak"
+      ],
+      "title": "Koklear İmplant (Biyonik Kulak) Nedir?",
+      "source": "liv",
+      "evidence": "işitme sinirini doğrudan uyararak çalışırlar",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_016",
+      "question": "Kuduz hastalığı insana nasıl bulaşır?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00180_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00180"
+      ],
+      "expected_urls": [
+        "https://www.medicalpark.com.tr/kuduz-nedir/hg-108"
+      ],
+      "title": "Kuduz Nedir? Kuduz Belirtileri Nelerdir?",
+      "source": "medicalpark",
+      "evidence": "vahşi hayvanlardan insanlara ısırık veya tükürük yoluyla bulaşır",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_017",
+      "question": "Kistik fibrozis nasıl bir hastalıktır?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00198_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00198"
+      ],
+      "expected_urls": [
+        "https://www.medicana.com.tr/saglik-rehberi-detay/12461/kistik-fibrozis"
+      ],
+      "title": "Kistik Fibrozis",
+      "source": "medicana",
+      "evidence": "Genetik bir bozukluk olan kistik  fibrozis hastalığında salgı bezlerinin görevini tam olarak yerine getirememesine",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_018",
+      "question": "En sık görülen demans türü hangisidir?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00214_chunk_001"
+      ],
+      "expected_parent_ids": [
+        "doc_00214"
+      ],
+      "expected_urls": [
+        "https://www.memorial.com.tr/hastaliklar/demans-nedir-demans-hastaligi-belirtileri"
+      ],
+      "title": "Demans (Bunama) Nedir? Demans Belirtileri Nelerdir?",
+      "source": "memorial",
+      "evidence": "En sık görülen demans Alzheimer hastalığıdır",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_019",
+      "question": "Varikosel nedir ve nasıl oluşur?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00217_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00217"
+      ],
+      "expected_urls": [
+        "https://www.memorial.com.tr/hastaliklar/varikosel-nedir-varikosel-belirtileri-ve-tedavisi"
+      ],
+      "title": "Varikosel Nedir? Varikosel Belirtileri, Nedenleri ve Ameliyatı",
+      "source": "memorial",
+      "evidence": "testis torbasında yer alan kanı boşaltmakla görevli toplardamarların genişlemesi",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "pos_020",
+      "question": "Karbonmonoksit zehirlenmesi nedir?",
+      "type": "positive",
+      "expected_chunk_ids": [
+        "doc_00251_chunk_000"
+      ],
+      "expected_parent_ids": [
+        "doc_00251"
+      ],
+      "expected_urls": [
+        "https://www.memorial.com.tr/saglik-rehberi/karbonmonoksit-zehirlenmesi"
+      ],
+      "title": "Karbonmonoksit Zehirlenmesi Nedir? Belirtileri ve Tedavisi",
+      "source": "memorial",
+      "evidence": "renksiz ve kokusuz bir gaz olan karbonmonoksitin solunmasından kaynaklanan ölümcül bir durumdur",
+      "verification": {
+        "answer_present": true,
+        "evidence_is_exact_excerpt": true,
+        "method": "exact evidence excerpt located in the referenced chunk"
+      }
+    },
+    {
+      "id": "neg_001",
+      "question": "Ebola virüsü hastalığı nasıl bulaşır ve belirtileri nelerdir?",
+      "type": "negative",
+      "target_topic": "Ebola virüs hastalığı",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "ebola"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_002",
+      "question": "Kolera hastalığının belirtileri ve tedavisi nelerdir?",
+      "type": "negative",
+      "target_topic": "Kolera",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "kolera"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_003",
+      "question": "Şarbon (antraks) hastalığı insana nasıl bulaşır?",
+      "type": "negative",
+      "target_topic": "Şarbon / antraks",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "şarbon",
+          "anthrax"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_004",
+      "question": "Kabakulak hastalığının belirtileri nelerdir?",
+      "type": "negative",
+      "target_topic": "Kabakulak (parotit)",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "kabakulak"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_005",
+      "question": "Kırım-Kongo kanamalı ateşi nasıl bulaşır?",
+      "type": "negative",
+      "target_topic": "Kırım-Kongo kanamalı ateşi",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "kırım kongo",
+          "kkka"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_006",
+      "question": "Huntington hastalığı nedir ve belirtileri nelerdir?",
+      "type": "negative",
+      "target_topic": "Huntington hastalığı",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "huntington"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_007",
+      "question": "Renk körlüğü neden olur ve nasıl teşhis edilir?",
+      "type": "negative",
+      "target_topic": "Renk körlüğü (renk görme kusuru)",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "renk körlüğü"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_008",
+      "question": "Narkolepsi hastalığının belirtileri nelerdir?",
+      "type": "negative",
+      "target_topic": "Narkolepsi",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "narkolepsi"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_009",
+      "question": "Kekemelik neden olur ve nasıl tedavi edilir?",
+      "type": "negative",
+      "target_topic": "Kekemelik (konuşma bozukluğu)",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "kekemelik"
+        ],
+        "lexical_hits": 0
+      }
+    },
+    {
+      "id": "neg_010",
+      "question": "Kleptomani nedir ve nasıl tedavi edilir?",
+      "type": "negative",
+      "target_topic": "Kleptomani",
+      "expected_chunk_ids": [],
+      "expected_parent_ids": [],
+      "expected_urls": [],
+      "verification": {
+        "answer_present": false,
+        "method": "lexical corpus keyword scan (0 hits) + semantic ChromaDB top-5 inspection (see verify_benchmark.py)",
+        "lexical_keywords": [
+          "kleptomani"
+        ],
+        "lexical_hits": 0
+      }
+    }
+  ]
+}

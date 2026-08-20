@@ -1,0 +1,500 @@
+{
+    "train": [
+        [
+            {
+                "content": "teknik liderlik (tech lead) olmak için neler gerekir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tech lead olmak sadece iyi kod yazmakla olmuyor. Teknik beceriler: mimari kararlar verebilme, farklı teknolojileri değerlendirebilme, code review yapabilme, teknik borcu yönetebilme. İletişim: teknik konuları teknik olmayan kişilere anlatabilme, toplantıları yönetebilme, stakeholder'larla iletişim. Mentorluk: junior'ları yetiştirme, takım üyelerine yol gösterme. Karar verme: tradeoff'ları değerlendirme, risk yönetimi. Genelde 5-8 yıl deneyimle tech lead olunur ama proje bazlı daha erken de olabilir. En büyük geçiş: bireysel katkıcıdan takımın çıktısından sorumlu kişiye dönüşmek.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Tech lead, mimari, iletişim, mentorluk, karar verme, kariyer geçişi.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "ORM ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "ORM (Object-Relational Mapping), veritabanı tablolarını programlama dilindeki sınıflarla temsil etmek. SQL yazmak yerine Python/Java/JS nesneleriyle çalışırsın. Python: SQLAlchemy (en güçlü), Django ORM (Django'ya entegre), Peewee (hafif). JavaScript: Prisma (TypeScript ile harika), Sequelize, TypeORM. Avantajları: SQL bilmeden veritabanı işlemi yap, SQL injection'a karşı koruma, kod tekrarı azalır, veritabanı bağımsız. Dezavantajları: karmaşık sorgularda performans düşebilir, üretilen SQL'i anlamak zor olabilir. İyi bir ORM bilmek production uygulamaları için önemli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "ORM, SQLAlchemy, Django ORM, Prisma, avantaj/dezavantaj.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "transformer mimarisinin bileşenleri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Transformer mimarisi birkaç temel bileşenden oluşur. Input Embedding: kelimeleri vektörlere dönüştürür. Positional Encoding: kelime sırasını kodlar (transformer sıra bilgisini inherent olarak bilmez). Multi-Head Attention: birden fazla attention başlığı farklı ilişkileri yakalar. Feed-Forward Network: her pozisyon için bağımsız bir sinir ağı katmanı. Layer Normalization: eğitimi stabilize eder. Residual Connections: gradient akışını iyileştirir. Encoder: girdiyi anlıyor (BERT). Decoder: çıktı üretiyor (GPT). Encoder-Decoder: çeviri gibi görevler (T5, BART). Görkem'in miniature-transformers projesi tüm bunları sıfırdan implemente ediyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Transformer bileşenleri, embedding, positional encoding, attention, FFN, encoder/decoder.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "clean architecture ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Clean Architecture, Robert C. Martin'in önerdiği bir yazılım mimarisi. Temel fikir: iş mantığını (business logic) dış bağımlılıklardan (framework, veritabanı, UI) izole etmek. Katmanlar içten dışa: Entities (iş kuralları), Use Cases (uygulama kuralları), Interface Adapters (controller, presenter), Frameworks & Drivers (web framework, DB). Bağımlılık kuralı: iç katmanlar dış katmanlara bağımlı olmamalı. Neden önemli: veritabanını değiştirmek istediğinde iş mantığına dokunmazsın, test yazması kolay, bakımı kolay. Hexagonal Architecture ve Onion Architecture benzer kavramlar. Büyük projelerde çok değerli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Clean Architecture, katmanlar, bağımlılık kuralı, izolasyon, Hexagonal.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Python'da virtual environment neden kullanılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Virtual environment (sanal ortam) her proje için izole bir Python ortamı oluşturur. Neden: farklı projelerde farklı kütüphane versiyonları gerekebilir — bir projede Django 3.2, diğerinde Django 4.2. Sistem Python'ına paket yüklemek karmaşa yaratır. python3 -m venv venv ile oluşturursun, source venv/bin/activate ile aktif edersin. pip freeze > requirements.txt ile bağımlılıkları kaydet. pipenv ve poetry daha modern alternatifler — bağımlılık yönetimini de yapar. Docker da bir çözüm ama geliştirme sırasında venv daha pratik. Bu projede de venv kullanıyoruz.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Virtual environment, venv, izolasyon, requirements.txt, pipenv, poetry.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem hangi programlama dillerini biliyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in GitHub profilinden çıkarabildiğimiz kadarıyla: Python (ana dil — AI/ML, NLP, web scraping, backend), JavaScript/TypeScript (web geliştirme, frontend), C (gorkem-os, raylib-space-shooter — sistem programlama, oyun), Java (banking-management-system), Swift veya Kotlin (mobil projeler olabilir). Ayrıca framework ve araçlar: PyTorch, TensorFlow, Flask/FastAPI, React/Next.js, Docker, Git. Python kesinlikle en güçlü olduğu dil — AI projeleri hep Python. Ama çok dillilik (polyglot) değerli — farklı diller farklı düşünme biçimleri öğretir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Programlama dilleri, Python, JavaScript, C, Java, framework'ler, polyglot.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "prompt engineering teknikleri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Prompt engineering, LLM'den en iyi yanıtı almak için prompt'u optimize etme sanatı. Teknikler: Zero-shot — direkt soru sor. Few-shot — birkaç örnek ver. Chain-of-thought (CoT) — 'adım adım düşün' ekle, karmaşık problemlerde çok etkili. System prompt — modele rol ver ('Sen bir Python uzmanısın'). Temperature ayarı — düşük (0.1) daha deterministik, yüksek (0.9) daha yaratıcı. Output format belirt — 'JSON formatında yanıtla'. Negatif prompt — 'şunu yapma' gibi kısıtlamalar. ReAct (Reason+Act) — model düşünür ve aksiyon alır. Tree-of-thought — birden fazla düşünce dalı. İyi prompt yazmak bir beceri — pratikle gelişir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Prompt engineering, zero-shot, few-shot, CoT, temperature, ReAct.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Python'da context manager ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Context manager, bir kaynağı güvenli şekilde açıp kapatmayı sağlayan yapı. with anahtar kelimesiyle kullanılır. En yaygın örnek: with open('file.txt') as f — dosya işlem bitince otomatik kapanır, hata olsa bile. Veritabanı bağlantıları, lock'lar, geçici dosyalar için kullanılır. Kendi context manager'ınızı __enter__ ve __exit__ methodlarıyla veya @contextmanager decorator'ıyla yazabilirsiniz. Neden önemli: resource leak'leri (kaynak sızıntısı) önler. Her zaman with kullanın — try/finally yazmaktan daha temiz ve güvenli.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Context manager, with, dosya, veritabanı, resource leak.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "model quantization ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Quantization, model ağırlıklarını daha düşük hassasiyette temsil etmek. Normal model FP32 (32-bit floating point) kullanır. Quantization ile FP16, INT8, hatta INT4'e düşürürsün. Avantajları: model boyutu küçülür (4x-8x), inference hızlanır, daha az bellek kullanır, edge cihazlarda çalıştırılabilir. Dezavantajları: hafif doğruluk kaybı olabilir ama genelde ihmal edilebilir düzeyde. GPTQ, AWQ, bitsandbytes popüler quantization yöntemleri. QLoRA quantize edilmiş modeli fine-tune ediyor — çok verimli. llama.cpp ile quantize modeller CPU'da bile çalışıyor. Büyük modelleri erişilebilir kılmanın anahtarı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Quantization, FP16, INT8, GPTQ, QLoRA, llama.cpp, model boyutu.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "pair programming ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Pair programming, iki geliştiricinin aynı bilgisayarda birlikte kod yazması. Biri 'driver' (kodu yazar), diğeri 'navigator' (yönlendirir, hataları fark eder, büyük resmi düşünür). Roller düzenli olarak değişir. Avantajları: daha az bug, bilgi paylaşımı, junior'ların hızlı öğrenmesi, zor problemlerde daha iyi çözümler. Dezavantajları: iki kişi bir işe bakıyor gibi görünebilir ama araştırmalar toplam verimliliğin arttığını gösteriyor. Remote'da VS Code Live Share veya Tuple ile yapılabilir. Mob programming ise tüm takımın birlikte kodlaması. Denemeye değer bir pratik.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Pair programming, driver/navigator, bilgi paylaşımı, Live Share, mob programming.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "kod review neden önemli?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kod review (kod inceleme), bir geliştiricinin yazdığı kodun başka bir geliştirici tarafından incelenmesi. Neden: bugları erken yakalar (production'a gitmeden), kod kalitesini artırır, bilgi paylaşımı sağlar (herkes her bölümü öğrenir), tutarlılık sağlar (ortak standartlar). İyi bir review: spesifik yorumlar yap, neden belirt, alternatif öner, olumlu şeyleri de belirt. Kötü bir review: kişisel olmak, küçümsemek, belirsiz yorumlar. GitHub PR review, GitLab merge request review araçları. Her takımda code review kültürü olmalı. LGTM (Looks Good To Me) en güzel 4 harf.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Code review, bug yakalama, bilgi paylaşımı, tutarlılık, PR review, LGTM.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Python decorator ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Decorator, bir fonksiyonun davranışını değiştirmek için kullanılan bir Python özelliği. @ sembolüyle kullanılır. Mesela @login_required bir fonksiyonun sadece giriş yapmış kullanıcılar tarafından çağrılmasını sağlar. @staticmethod, @classmethod, @property yerleşik decorator'lar. Kendi decorator'ını yazabilirsin — loglama, zamanlama, caching için çok kullanışlı. Flask ve Django'da route tanımlamak için decorator kullanılır: @app.route('/home'). Decorator aslında bir fonksiyon alıp yeni bir fonksiyon döndüren fonksiyon — higher-order function kavramı. Python'ın en elegant özelliklerinden biri.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Python decorator, @, login_required, Flask, higher-order function.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "serverless architecture ne zaman kullanılmalı?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Serverless her proje için uygun değil. İyi olduğu yerler: event-driven işler (dosya yüklendi → thumbnail oluştur), API endpoint'ler (az trafikten yüksek trafiğe otomatik ölçeklenme), zamanlanmış görevler (her gece veri temizleme), webhook handler'lar, chatbot backend'leri. Uygun olmadığı yerler: uzun süren işlemler (15 dk limit), düşük gecikme gerektiren uygulamalar (cold start), WebSocket gerektiren uygulamalar, GPU gerektiren AI işlemleri. AWS Lambda + API Gateway + DynamoDB klasik serverless stack. Vercel ve Netlify frontend+serverless birleşimi. Maliyet: az trafikte çok ucuz, yüksek trafikte EC2'den pahalı olabilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Serverless, ne zaman kullanılmalı, Lambda, cold start, maliyet.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Python'da generator ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Generator, lazy evaluation yapan özel bir fonksiyon — değerleri önceden hesaplayıp bellekte tutmak yerine ihtiyaç oldukça üretir. yield anahtar kelimesiyle tanımlarsın. Büyük veri setleriyle çalışırken bellek tasarrufu sağlar. Mesela 10 milyon satırlık dosyayı okurken tamamını belleğe almak yerine generator ile satır satır işlersin. range() aslında bir generator. Kendi generator'ınızı yazabilirsiniz: def fibonacci(): a, b = 0, 1; while True: yield a; a, b = b, a + b. Generator expression da var: (x**2 for x in range(1000)). Veri pipeline'larında çok kullanılır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Python generator, yield, lazy evaluation, bellek tasarrufu, pipeline.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "mikro-frontend nedir?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Mikro-frontend, microservice mantığını frontend'e uygulamak. Büyük bir web uygulaması yerine küçük, bağımsız frontend uygulamaları. Her takım kendi teknolojisini seçebilir (React, Vue, Angular), bağımsız deploy edebilir. Module Federation (Webpack 5) ile runtime'da modüller birleşir. Single-SPA birden fazla framework'ü bir arada çalıştırır. Avantajları: bağımsız deployment, takım otonomisi, ölçeklenebilirlik. Dezavantajları: karmaşıklık, tutarlılık zorlukları, performans etkisi. Büyük organizasyonlar için uygun — IKEA, Spotify kullanıyor. Küçük projeler için gereksiz karmaşıklık.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Mikro-frontend, Module Federation, Single-SPA, bağımsız deployment.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "veri mühendisliği ne yapar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Veri mühendisi, veriyi toplar, depolar, işler ve analiz edilebilir hale getirir. Veri bilimci ve ML mühendisi ham veriyle uğraşmaz — veri mühendisi o veriyi hazırlar. Araçlar: SQL (PostgreSQL, BigQuery), Python (pandas, PySpark), ETL araçları (Apache Airflow, dbt), stream processing (Apache Kafka, Spark Streaming), data warehouse (Snowflake, Redshift, BigQuery), veri modelleme. Data pipeline'lar kurar ve yönetir — veriyi A noktasından B noktasına güvenilir şekilde taşır. Çok talep edilen bir pozisyon — maaşlar yüksek. Modern veri stack: dbt + Snowflake + Airflow + Fivetran.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Veri mühendisliği, ETL, Airflow, dbt, Snowflake, data pipeline, modern stack.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "diffusion modelleri nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Diffusion modelleri (Stable Diffusion, DALL-E, Midjourney), görüntü üretimi için kullanılan generative modeller. İki aşama: forward process — temiz bir görüntüye adım adım gürültü eklenir (Gaussian noise). Reverse process — model bu gürültüyü adım adım kaldırmayı öğrenir. Eğitilmiş model, tamamen gürültülü bir görüntüden başlayıp temiz görüntü üretebilir. Text-to-image: metin prompt'u CLIP ile encoding edilir, diffusion model bunu koşul olarak kullanarak görüntü üretir. U-Net mimarisi gürültü tahmininde kullanılır. Stable Diffusion açık kaynak — kendi bilgisayarında çalıştırabilirsin. Çok heyecan verici bir alan.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Diffusion modeller, Stable Diffusion, DALL-E, forward/reverse process, U-Net.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yapay zeka mühendisi olmak için ne bilmem lazım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "AI mühendisi olmanın yol haritası: Matematik temeli — lineer cebir, calculus, olasılık-istatistik. Python — pandas, numpy, scikit-learn, matplotlib. Makine öğrenmesi — regression, classification, clustering, evaluation metrikleri. Derin öğrenme — PyTorch veya TensorFlow, CNN, RNN, transformer. NLP veya CV alanında uzmanlaşma. MLOps — model deployment, Docker, CI/CD, monitoring. Cloud — AWS/GCP/Azure ML servisleri. Veri — SQL, pandas, veri temizleme. Git. Portföy — Kaggle projeleri, GitHub'da açık kaynak, blog yazıları. Araştırma makaleleri okuma alışkanlığı. Görkem bu yolda ilerliyor ve projeleriyle bunu gösteriyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AI mühendisi, yol haritası, matematik, Python, PyTorch, MLOps, portföy.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "PostgreSQL ile MySQL arasındaki fark ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "İkisi de popüler SQL veritabanları ama farklılıklar var. PostgreSQL: daha gelişmiş özellikler (JSONB, array desteği, full-text search), ACID uyumlu, extensible (PostGIS gibi eklentiler), complex query'lerde güçlü, açık kaynak. MySQL: daha basit ve hızlı kurulum, read-heavy uygulamalarda iyi, geniş hosting desteği, WordPress gibi CMS'lerde yaygın. PostgreSQL genelde 'doğru cevap' olarak kabul ediliyor çünkü her şeyi yapabilir. Yeni projeler için PostgreSQL önerilir. Django ve Rails varsayılan olarak her ikisini de destekler. Supabase PostgreSQL tabanlı bir BaaS (Backend as a Service).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "PostgreSQL vs MySQL, JSONB, ACID, PostGIS, Supabase.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "NLP'de tokenization yöntemleri neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tokenization metni parçalara ayırma işlemi. Yöntemler: Word-level — boşluklara göre ayır, basit ama büyük sözlük, bilinmeyen kelimeler sorun. Character-level — her harf bir token, sözlük küçük ama uzun diziler oluşur. Subword (alt kelime) — en popüler: BPE (Byte Pair Encoding) sık tekrarlanan karakter çiftlerini birleştirir, WordPiece (BERT'in kullandığı), SentencePiece (dil bağımsız, T5'in kullandığı), Unigram (olasılık tabanlı). Hugging Face tokenizers kütüphanesi çok hızlı — Rust ile yazılmış. Görkem'in wiki2bpe projesi BPE tokenizer eğitiyor. Tokenization seçimi model performansını doğrudan etkiler.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Tokenization, BPE, WordPiece, SentencePiece, Unigram, wiki2bpe.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem'in motivasyon kaynağı ne?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in motivasyonu birkaç yerden geliyor olabilir: sorun çözme tutkusu — bir problemi teknoloji ile çözmek tatmin edici. Öğrenme merakı — AI, NLP, CV gibi farklı alanlara dalıyor. Hackathon heyecanı — kısıtlı sürede ürün çıkarmak adrenalin veriyor. Topluma fayda — depression-phq9-analysis, build-your-target-body gibi projeler insanlara yardım etmeyi hedefliyor. Kariyer hedefleri — güçlü bir portfolyo oluşturmak, sektörde yer edinmek. Ve muhtemelen en büyük motivasyon: bir fikri gerçeğe dönüştürme — sıfırdan bir şey yaratmanın verdiği his başka hiçbir şeyde yok.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Motivasyon, sorun çözme, öğrenme, hackathon, topluma fayda, yaratma.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Python'da async/await nasıl çalışır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "async/await, Python'da asenkron programlama yapmak için kullanılır. Normal (senkron) kodda bir işlem bitene kadar program bekler. Asenkron kodda beklemek yerine başka işlere geçer — özellikle I/O işlemleri (HTTP istekleri, dosya okuma, veritabanı sorgusu) için çok verimli. async def ile asenkron fonksiyon tanımlarsın, await ile sonucu beklersin. asyncio kütüphanesi event loop yönetir. aiohttp ile asenkron HTTP istekleri, asyncpg ile asenkron PostgreSQL sorguları. FastAPI async destekler — yüksek performanslı API'lar için harika. Scraping işlemlerinde async kullanmak hızı dramatik artırır.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "async/await, asenkron programlama, asyncio, FastAPI, I/O.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "hangi IDE veya editör kullanmalıyım?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "IDE/editör seçimi kişisel tercih ama bazı öneriler: VS Code — en popüler, ücretsiz, her dil için eklenti var, hafif, Git entegrasyonu iyi. JetBrains (PyCharm, IntelliJ, WebStorm) — dil spesifik, güçlü refactoring, ücretli (öğrenci ücretsiz). Vim/Neovim — terminal tabanlı, öğrenmesi zor ama ustalaşınca çok hızlı. Cursor — VS Code fork, AI entegre. Zed — yeni, çok hızlı, Rust ile yazılmış. Başlangıç için VS Code kesinlikle en iyi seçim — büyük topluluk, bol kaynak. Extension'lar: Prettier, ESLint, GitLens, Python, Copilot. Tema ve font da önemli — gözlerini yormayan bir setup kur.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "IDE, VS Code, JetBrains, Vim, Cursor, Zed, extension'lar.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Redis ne işe yarar?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Redis, in-memory key-value store — verileri RAM'de tutar, bu yüzden son derece hızlı (mikrosaniye). Kullanım alanları: caching (en yaygın — veritabanı sorgularını cache'le), session yönetimi (kullanıcı oturum bilgileri), rate limiting, message queue (basit kuyruklar için), pub/sub messaging, leaderboard (sorted set ile), gerçek zamanlı analitik. String, hash, list, set, sorted set veri tipleri var. TTL (Time To Live) ile cache süresini ayarlarsın. Redis Cluster ile ölçeklenir. Neredeyse her büyük web uygulaması Redis kullanıyor. Upstash serverless Redis sunuyor.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Redis, in-memory, caching, session, rate limiting, pub/sub, Upstash.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem'e nasıl ulaşabilirim?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'e ulaşmak için birkaç kanal var. Portfolio sitesi: gorkemergune.github.io — burada iletişim bilgileri ve projeleri var. GitHub: github profili üzerinden proje bazlı iletişim kurabilirsin. LinkedIn: profesyonel ağ üzerinden bağlantı isteği gönderebilirsin. E-posta: portfolio sitesinde e-posta adresi olabilir. İş birliği, proje önerisi veya mentorluk için ulaşabilirsin. Hackathon'larda da karşılaşabilirsin. Açık kaynak projelerine katkıda bulunarak da etkileşime geçebilirsin. Nazik ve net bir mesaj ile ulaşman en iyisi — ne istediğini açıkça belirt.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "İletişim, portfolio, GitHub, LinkedIn, e-posta, iş birliği.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "AWS, Google Cloud, Azure arasında nasıl seçim yapılır?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Üç büyük bulut sağlayıcı da çoğu ihtiyacı karşılar ama farklılıklar var. AWS: en büyük pazar payı, en geniş servis yelpazesi, en çok iş ilanı, dokümantasyonu iyi. Google Cloud: AI/ML servisleri güçlü (Vertex AI, TPU), BigQuery veri analitiğinde lider, Kubernetes'i Google yarattı (GKE). Azure: Microsoft ekosistemiyle entegre (.NET, Active Directory), enterprise'da güçlü. Başlangıç için AWS önerilir — en çok kaynak ve iş imkanı var. Free tier ile ücretsiz deneyebilirsin. Sertifikalar (AWS Solutions Architect, GCP Associate) kariyer için değerli. Görkem'in AI projelerinde GCP'nin ML servisleri avantajlı olabilir.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "AWS vs GCP vs Azure, pazar payı, AI/ML, sertifikalar, free tier.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımcılar için faydalı araçlar neler?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Günlük iş akışını iyileştirecek araçlar: Terminal — iTerm2 (Mac), Windows Terminal, Oh My Zsh. Git GUI — GitKraken, Sourcetree veya komut satırı. API test — Postman, Insomnia, HTTPie. Veritabanı — DBeaver, TablePlus, pgAdmin. Tasarım — Figma (ücretsiz). Not alma — Notion, Obsidian. İletişim — Slack, Discord. Proje yönetimi — Linear, Jira, Trello. Dökümantasyon — Swagger, Docusaurus. Cloud — Docker Desktop, AWS CLI. AI asistan — GitHub Copilot, ChatGPT, Claude. Password yönetimi — 1Password, Bitwarden. Tüm bunları bilmen gerekmez ama zamanla araç kutusu oluşturursun.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Araçlar, terminal, Postman, Notion, Figma, Docker, Copilot.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "few-shot ve zero-shot learning ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Zero-shot learning: modelin hiç eğitim örneği görmeden bir görevi yapması. Mesela 'Bu metin olumlu mu olumsuz mu?' diye sorduğunda model etiketli veri görmeden cevaplıyor. GPT ve BERT gibi büyük modeller bunu yapabiliyor. Few-shot learning: çok az örnek (2-5 tane) ile öğrenme. Prompt'a birkaç örnek eklersin ve model kalıbı yakalar. In-context learning de denir. One-shot: tek örnekle öğrenme. Meta-learning bu alanın araştırma dalı — 'öğrenmeyi öğrenmek'. GPT-3'ün en etkileyici özelliği few-shot yeteneğiydi. Pratik açıdan: az veriniz varsa few-shot deneyin, hiç veriniz yoksa zero-shot deneyin.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Zero-shot, few-shot, in-context learning, meta-learning, GPT.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "Görkem bir günde neler yapıyor?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Görkem'in tipik bir günü muhtemelen şöyle: sabah üniversite dersleri veya proje çalışması, öğleden sonra kendi projeleri üzerinde kodlama, GitHub'a commit atma, yeni teknolojiler deneme, belki bir makale veya tutorial okuma. Hackathon dönemlerinde ekstra yoğun — takımla iletişim, prototip geliştirme, sunum hazırlama. Akşamları belki bir online kurs veya araştırma. Düzenli olarak GitHub profilini aktif tutuyor — contribution graph'ındaki yeşil kareler bunu gösteriyor. İş-yaşam dengesi önemli — sadece kod değil, sosyal aktiviteler ve dinlenme de var.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Görkem'in günü, üniversite, proje, GitHub, hackathon, denge.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "yazılımcı olarak ergonomi önemli mi?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Kesinlikle evet. Yazılımcılar günde 8-12 saat bilgisayar başında — ergonomi sağlığın için kritik. Sandalye: lomber destekli, yüksekliği ayarlanabilir. Monitör: göz hizasında, en az kol uzaklığında. Klavye ve fare: bilek desteği, ergonomik tasarım. 20-20-20 kuralı: her 20 dakikada 20 saniye 20 feet uzağa bak. Standing desk alternating — bazen ayakta bazen oturarak. Düzenli egzersiz — sırt, boyun, bilek esnemeleri. Carpal tunnel sendromu ve sırt ağrısı yazılımcılarda çok yaygın. Erken önlem al — tedavi önlemeden zor. İyi bir sandalye ve monitör yatırımdır, masraf değil.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "Ergonomi, sandalye, monitör, 20-20-20, standing desk, carpal tunnel.",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "test driven development (TDD) ne demek?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "TDD, önce testi yazıp sonra kodu yazma yaklaşımı. Döngü: Red (fail eden test yaz) → Green (testi geçecek minimum kodu yaz) → Refactor (kodu iyileştir). Avantajları: daha az bug, test coverage yüksek, tasarımı iyileştirir (test edilebilir kod yazmaya zorlar), güvenle refactoring yapabilirsin. Dezavantajları: başlangıçta yavaşlatır, öğrenme eğrisi var. Python: pytest, unittest. JavaScript: Jest, Vitest. Her zaman TDD yapmak zorunda değilsin ama kritik iş mantığı için çok değerli. 'Test yazmak zaman kaybı' değil — test yazmamak uzun vadede çok daha pahalı.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "TDD, Red-Green-Refactor, pytest, Jest, test coverage, refactoring.",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

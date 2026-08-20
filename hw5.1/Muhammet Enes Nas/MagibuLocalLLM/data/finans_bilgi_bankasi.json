@@ -1,0 +1,194 @@
+[
+  {
+    "title": "Hisse Senedi Nedir",
+    "text": "Hisse senedi, bir anonim sirketin sermayesinin esit paylara bolunmus her bir parcasini temsil eden kiymetli evraktir. Hisse senedi satin alan yatirimci sirkete borc vermis olmaz, sirketin ortagi olur. Ortaklik iki temel hak getirir: sirket kar dagittiginda temettu alma hakki ve genel kurulda oy kullanma hakki. Sirket iflas ederse hissedarlar alacaklilardan sonra gelir, bu yuzden hisse senedi tahvile gore daha yuksek riskli bir yatirim aracidir. Getirisi iki kaynaktan olusur: fiyat artisi (sermaye kazanci) ve temettu.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Tahvil ve Bono",
+    "text": "Tahvil, ihrac eden kurumun yatirimcidan borc almasini saglayan bir borclanma aracidir. Yatirimci sirketin ortagi olmaz, alacaklisi olur. Vadesi bir yildan uzun olan borclanma araclarina tahvil, bir yildan kisa olanlara bono denir. Devletin ihrac ettiklerine devlet tahvili ve hazine bonosu, sirketlerin ihrac ettiklerine ozel sektor tahvili denir. Tahvil sahibi vade boyunca kupon faizi alir ve vade sonunda anaparasini geri alir. Piyasa faizleri yukselirse mevcut tahvillerin fiyati duser; bu ters iliski tahvil yatirimindaki temel risktir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Temettu (Kar Payi)",
+    "text": "Temettu, bir sirketin elde ettigi donem karinin ortaklarina dagitilan kismidir. Dagitim karari genel kurulda alinir; sirket kar etse bile karini buyumek icin bunyesinde tutmayi secebilir, bu durumda temettu dagitilmaz. Temettu verimi, yillik temettu tutarinin hisse fiyatina bolunmesiyle bulunur ve yuzde olarak ifade edilir. Temettu odemesi yapildigi gun hisse fiyati yaklasik temettu kadar duser; buna temettu bosalmasi denir. Bu yuzden temettu bedava para degildir, sirketten yatirimciya deger transferidir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Fiyat Kazanc Orani (F/K)",
+    "text": "Fiyat kazanc orani, bir hissenin piyasa fiyatinin hisse basina dusen net kara bolunmesiyle hesaplanir. Sirketin kazandigi bir birim kar icin yatirimcinin kac birim odedigini gosterir. Ornegin F/K orani 10 ise yatirimci sirketin bir yillik karinin on katini odemektedir. Dusuk F/K hissenin ucuz oldugu anlamina gelmez; sirketin buyume beklentisinin dusuk oldugu ya da bilinen bir riski oldugu anlamina da gelebilir. F/K orani ancak ayni sektordeki sirketler arasinda karsilastirildiginda anlamlidir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Piyasa Degeri Defter Degeri Orani (PD/DD)",
+    "text": "Piyasa degeri defter degeri orani, sirketin borsadaki toplam piyasa degerinin bilancosundaki oz sermayesine bolunmesiyle bulunur. Oran 1'in altindaysa piyasa sirketi defter degerinin altinda fiyatliyor demektir; bu bazen firsat bazen de sirketin varliklarinin gercek degerinin dusuk oldugunun isaretidir. Bankalar ve sanayi sirketleri gibi varlik agirlikli sektorlerde anlamlidir. Yazilim gibi varliginin buyuk kismi maddi olmayan sektorlerde yaniltici sonuc verir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "BIST 100 Endeksi",
+    "text": "BIST 100, Borsa Istanbul'da islem goren paylar arasindan piyasa degeri ve islem hacmi olcutlerine gore secilen 100 sirketin fiyat hareketini olcen ana endekstir. Endeks, Turkiye pay piyasasinin genel gidisatini temsil eden gosterge kabul edilir. Endeksteki sirketlerin agirligi fiili dolasimdaki piyasa degerine gore belirlenir, yani buyuk sirketler endeksi daha cok etkiler. BIST 30 en likit 30 sirketi, BIST 50 ise 50 sirketi kapsar. Endeks bir sirket degildir, dogrudan satin alinamaz; ancak endeksi takip eden borsa yatirim fonlari araciligiyla yatirim yapilabilir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Halka Arz",
+    "text": "Halka arz, bir sirketin paylarini ilk kez genis yatirimci kitlesine satisa sunmasi ve borsada islem gormeye baslamasidir. Sirket bu yolla sermaye toplar, yatirimci ise sirkete ortak olur. Halka arzda paylar ya sermaye artirimi yoluyla yeni ihrac edilir ya da mevcut ortaklar paylarinin bir kismini satar. Talep arzdan fazlaysa dagitim orantili olarak yapilir ve yatirimci istedigi lot sayisini alamaz. Halka arz fiyati her zaman ucuz demek degildir; borsada islem gormeye basladiktan sonra fiyatin arz fiyatinin altina inmesi mumkundur.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Temel Analiz",
+    "text": "Temel analiz, bir sirketin gercek degerini finansal tablolarina ve faaliyet gostergelerine bakarak tahmin etme yontemidir. Analist gelir tablosu, bilanco ve nakit akis tablosunu inceler; karlilik, borcluluk ve buyume oranlarini hesaplar. Bunlarin uzerine sektorun durumu, rekabet ortami, yonetim kalitesi ve makroekonomik kosullar eklenir. Amac, hesaplanan gercek deger ile piyasa fiyatini karsilastirmaktir. Temel analiz uzun vadeli yatirim kararlari icin kullanilir; kisa vadeli fiyat hareketlerini aciklamakta zayiftir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Teknik Analiz",
+    "text": "Teknik analiz, gecmis fiyat ve islem hacmi verilerinden hareketle gelecekteki fiyat yonunu tahmin etmeye calisan yontemdir. Sirketin finansal tablolariyla ilgilenmez; grafik formasyonlari, destek ve direnc seviyeleri, hareketli ortalamalar ve momentum gostergeleri kullanir. Temel varsayimi fiyatin tum bilgiyi zaten icerdigi ve fiyat hareketlerinin egilimler halinde ilerledigidir. Teknik analiz sinyalleri olasilik ifade eder, kesinlik degil; ayni grafik farkli analistlerce farkli yorumlanabilir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Portfoy Cesitlendirmesi",
+    "text": "Cesitlendirme, yatirimin farkli varlik siniflarina, sektorlere ve cografyalara dagitilmasiyla toplam riskin azaltilmasidir. Temel mantik varliklarin ayni anda ayni yonde hareket etmemesidir; biri deger kaybederken digeri kazanabilir. Boylece portfoyun dalgalanmasi tek bir varliga gore duser. Cesitlendirme sirkete ozgu riski buyuk olcude ortadan kaldirir ancak tum piyasayi etkileyen sistematik riski yok edemez. Asiri cesitlendirme de getiriyi ortalamaya cekerek avantaji azaltabilir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Risk ve Volatilite",
+    "text": "Volatilite, bir varligin fiyatinin belirli bir donemde ne kadar dalgalandigini olcen istatistiksel bir gostergedir ve genellikle standart sapma ile ifade edilir. Yuksek volatilite fiyatin hem yukari hem asagi genis araliklarda hareket ettigini gosterir. Volatilite tek basina kotu demek degildir; yuksek getiri potansiyeli genellikle yuksek volatilite ile birlikte gelir. Yatirimcinin kendi risk toleransini, yani ne kadar dalgalanmaya tahammul edebilecegini bilmesi yatirim aracinin secilmesinden once gelir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Likidite",
+    "text": "Likidite, bir varligin fiyatini onemli olcude etkilemeden ne kadar hizli nakde cevrilebildigini ifade eder. Yuksek islem hacmine sahip buyuk sirket hisseleri likittir; alici ve satici her zaman bulunur. Dusuk hacimli hisselerde ise satmak istediginizde karsi tarafta yeterli alici olmayabilir ve fiyat aleyhinize kayar. Alis ve satis fiyati arasindaki fark olan makas likiditenin en pratik gostergesidir: makas ne kadar darsa varlik o kadar likittir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Emir Tipleri",
+    "text": "Limit emir, yatirimcinin belirledigi fiyattan veya daha iyisinden islem yapilmasini saglar; fiyat garantisi verir ama islemin gerceklesecegini garanti etmez. Piyasa emri ise mevcut en iyi fiyattan aninda islem yapar; gerceklesme garantisi verir ama fiyat garantisi vermez. Zarar durdur emri, fiyat belirlenen seviyeye geldiginde otomatik satis emri olusturarak zarari sinirlamayi amaclar. Hizli dusen piyasalarda zarar durdur emri beklenenden cok daha dusuk bir fiyattan gerceklesebilir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Kaldirac ve Marj",
+    "text": "Kaldirac, yatirimcinin kendi sermayesinden daha buyuk bir pozisyon almak icin borclanmasidir. Kaldirac hem kari hem zarari ayni oranda buyutur: on kat kaldiracla yuzde on aleyhte hareket sermayenin tamamini silebilir. Marj, pozisyonu acik tutmak icin hesapta bulundurulmasi gereken teminattir. Fiyat aleyhe gidip teminat yetersiz kalirsa marj tamamlama cagrisi gelir; yatirimci ek teminat yatirmazsa pozisyon zorla kapatilir. Kaldirac deneyimsiz yatirimci icin en hizli sermaye kaybi yollarindan biridir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Borsa Yatirim Fonu (ETF)",
+    "text": "Borsa yatirim fonu, bir endeksi veya varlik sepetini takip eden ve payi borsada hisse gibi alinip satilabilen yatirim fonudur. Tek bir islemle onlarca sirkete dagilmis bir portfoye sahip olmayi saglar, bu yuzden cesitlendirmenin en pratik yoludur. Yonetim ucretleri genellikle geleneksel yatirim fonlarindan dusuktur cunku aktif secim yapmak yerine endeksi taklit ederler. Takip farki, fonun getirisi ile takip ettigi endeksin getirisi arasindaki sapmadir ve fon kalitesinin olcusudur.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Yatirim Fonlari ve TEFAS",
+    "text": "Yatirim fonu, cok sayida yatirimcidan toplanan paranin profesyonel bir portfoy yonetim sirketi tarafindan menkul kiymetlere yatirilmasiyla olusan yapidir. Yatirimci fonun payini alir ve portfoyun getirisinden payi oraninda yararlanir. Turkiye'de fonlar Turkiye Elektronik Fon Alim Satim Platformu uzerinden alinip satilabilir; bu platform sayesinde yatirimci kendi bankasinda olmayan fonlara da erisebilir. Fonun gecmis getirisi gelecekteki getirisini garanti etmez; yonetim ucreti ve fonun risk duzeyi mutlaka incelenmelidir.",
+    "source": "TEFAS",
+    "url": "https://www.tefas.gov.tr"
+  },
+  {
+    "title": "Bilesik Getiri",
+    "text": "Bilesik getiri, kazanilan getirinin anaparaya eklenerek bir sonraki donemde onun da getiri uretmesidir. Etkisi kisa vadede kucuk, uzun vadede carpicidir: yillik yuzde on getiriyle bir yatirim yaklasik yedi yilda ikiye katlanir. Bu yuzden yatirimda en guclu degisken genellikle getiri orani degil, paranin yatirimda kaldigi suredir. Ayni mekanizma ters yonde de calisir: kredi kartinda birikmis borc, bilesik faizle hizla buyur.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Maliyet Ortalamasi Yontemi",
+    "text": "Maliyet ortalamasi yontemi, elinizdeki tum parayi tek seferde yatirmak yerine belirli araliklarla esit tutarlarda yatirmaktir. Fiyat dustugunde ayni parayla daha cok adet, yukseldiginde daha az adet alinir; bu da ortalama alis maliyetini dengeler. Yontemin asil faydasi matematiksel degil davranissaldir: piyasanin dibini yakalama caresizligini ve zirvede topluca alim yapma riskini ortadan kaldirir. Surekli yukselen bir piyasada tek seferde yatirim yapmaktan daha dusuk getiri saglar.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Boga ve Ayi Piyasasi",
+    "text": "Boga piyasasi, fiyatlarin genel olarak yukseldigi ve yatirimci guveninin yuksek oldugu uzun donemdir. Ayi piyasasi ise bir endeksin zirvesinden yaklasik yuzde yirmi veya daha fazla geriledigi ve karamsarligin hakim oldugu donemdir. Yuzde on civarindaki daha kucuk gerilemelere duzeltme denir ve yukselis trendi icinde normal kabul edilir. Bu donemlerin ne zaman baslayip bitecegi ancak sonradan kesinlikle bilinebilir; onceden zamanlamaya calismak profesyoneller icin bile guvenilir bir strateji degildir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Enflasyon ve Reel Getiri",
+    "text": "Enflasyon, genel fiyat duzeyinin surekli artmasi ve paranin satin alma gucunun azalmasidir. Nominal getiri yatirimin yuzde olarak kazandirdigi rakamdir; reel getiri ise enflasyondan arindirilmis, satin alma gucu cinsinden gercek kazanctir. Yillik yuzde kirk getiri saglayan bir yatirim, enflasyon yuzde elli ise aslinda deger kaybettirmistir. Yatirim kararlari degerlendirilirken nominal degil reel getiriye bakilmalidir.",
+    "source": "TCMB",
+    "url": "https://www.tcmb.gov.tr"
+  },
+  {
+    "title": "Politika Faizi ve Piyasalara Etkisi",
+    "text": "Politika faizi, merkez bankasinin para politikasini yurutmek icin belirledigi temel faiz oranidir. Turkiye'de bu oran Turkiye Cumhuriyet Merkez Bankasi Para Politikasi Kurulu tarafindan belirlenir. Faiz artisi kredi maliyetini yukseltir, harcamayi ve enflasyonu sogutmayi amaclar; mevduati cazip hale getirdigi icin genellikle hisse senedi piyasasi uzerinde baski yaratir. Faiz indirimi ise tersi yonde etki eder. Piyasalar cogu zaman kararin kendisine degil, beklentiden ne kadar saptigina tepki verir.",
+    "source": "TCMB",
+    "url": "https://www.tcmb.gov.tr"
+  },
+  {
+    "title": "Doviz Kuru ve Parite",
+    "text": "Doviz kuru, bir para biriminin baska bir para birimi cinsinden fiyatidir. Parite ise iki yabanci para biriminin birbirine oranidir; ornegin euro dolar paritesi bir euronun kac dolar ettigini gosterir. Kurlar faiz farklari, enflasyon beklentileri, dis ticaret dengesi ve sermaye akimlarindan etkilenir. Kur yukseldiginde ithalat pahalilanir ve ihracatci sirketlerin geliri artar; bu yuzden ayni kur hareketi borsadaki farkli sirketleri zit yonde etkileyebilir.",
+    "source": "TCMB",
+    "url": "https://www.tcmb.gov.tr"
+  },
+  {
+    "title": "Altin Yatirimi",
+    "text": "Altin, geleneksel olarak enflasyona ve belirsizlige karsi deger saklama araci kabul edilir. Uluslararasi piyasada ons cinsinden ve dolar uzerinden fiyatlanir; bir ons yaklasik 31,1 grama karsilik gelir. Turkiye'de gram altin fiyati hem ons fiyatindan hem de dolar kurundan etkilenir, bu yuzden ons dususe gecse bile kur yukselirse gram altin artabilir. Altin faiz veya temettu gibi bir nakit akisi uretmez; getirisi tamamen fiyat degisiminden gelir. Fiziki altinda isciligin ve alis satis makasinin maliyet yarattigi unutulmamalidir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Kripto Para Nedir",
+    "text": "Kripto para, merkezi bir otoriteye bagli olmadan blok zinciri uzerinde calisan dijital varliktir. Islemler dagitik bir ag tarafindan dogrulanir ve degistirilemez bir kayit defterine yazilir. Kripto paralarin arkasinda bir sirket bilancosu veya nakit akisi bulunmadigindan degerlemesi hisse senedinden temelden farklidir; fiyat buyuk olcude arz sinirlari ve talep beklentisiyle olusur. Volatilitesi geleneksel varliklara gore cok yuksektir ve piyasa yedi gun yirmi dort saat aciktir. Yatirimci koruma mekanizmalari borsa duzenlemelerine gore daha sinirlidir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Bitcoin ve Halving",
+    "text": "Bitcoin, 2009 yilinda calistirilan ilk kripto paradir ve toplam arzi yirmi bir milyon adetle sinirlidir. Yeni bitcoinler madencilik yoluyla uretilir; madenciler islemleri dogrular ve karsiliginda blok odulu alir. Yaklasik dort yilda bir gerceklesen halving olayinda bu blok odulu yariya duser, yani yeni arz hizi yavaslar. Sinirli arz nedeniyle bitcoin sik sik dijital altina benzetilir. Ancak fiyati son derece dalgalidir ve gecmiste kisa surelerde yuzde elliyi asan dususler yasanmistir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Stablecoin",
+    "text": "Stablecoin, degeri genellikle bir itibari para birimine sabitlenmis kripto varliktir; en yaygin ornekleri dolara birebir baglidir. Amaci kripto piyasasindaki dalgalanmadan kacinmak ve islemler arasinda deger saklamaktir. Sabitleme yontemi onemlidir: rezerv destekli stablecoinler karsiliginda gercek varlik tutar, algoritmik olanlar ise sabitlemeyi kod ile saglamaya calisir. Algoritmik modellerin gecmiste coktugu ornekler vardir; stablecoin adinin otomatik olarak guvenlik anlamina gelmedigi unutulmamalidir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "SPK ve Yatirimci Korumasi",
+    "text": "Sermaye Piyasasi Kurulu, Turkiye'de sermaye piyasalarini duzenleyen ve denetleyen kamu kurumudur. Halka acik sirketlerin kamuyu aydinlatma yukumluluklerini, araci kurumlarin faaliyet izinlerini ve piyasa duzenini denetler. Yatirimcinin en temel korumasi, islem yapacagi kurumun Kurul tarafindan yetkilendirilmis olmasini dogrulamaktir. Yuksek ve garantili getiri vaat eden, yetkisiz platformlar uzerinden yapilan islemler yasal koruma disindadir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "KAP ve Kamuyu Aydinlatma",
+    "text": "Kamuyu Aydinlatma Platformu, halka acik sirketlerin yatirimcilari etkileyebilecek bilgileri duyurmak zorunda oldugu resmi elektronik sistemdir. Finansal tablolar, genel kurul kararlari, yonetim degisiklikleri, onemli sozlesmeler ve ozel durum aciklamalari buradan yayimlanir. Bir hisse hakkinda dogrulanmis bilgiye ulasmanin en guvenilir yolu sosyal medya yorumlari degil bu platformdaki resmi aciklamalardir. Bilgi kamuya aciklanmadan once kullanilarak islem yapmak icerden ogrenenlerin ticareti sayilir ve sucdur.",
+    "source": "Kamuyu Aydinlatma Platformu",
+    "url": "https://www.kap.org.tr"
+  },
+  {
+    "title": "Alis Satis Makasi ve Islem Maliyetleri",
+    "text": "Alis satis makasi, bir varlik icin en yuksek alis emri ile en dusuk satis emri arasindaki farktir. Bu fark yatirimcinin islem yaptigi anda ustlendigi gorunmeyen bir maliyettir. Bunun uzerine araci kurum komisyonu, borsa payi ve varsa vergi eklenir. Sik islem yapan bir yatirimci icin bu maliyetler yil sonunda getirinin onemli bir kismini eritebilir. Bu yuzden bir stratejinin basarisi degerlendirilirken brut getiri degil, tum maliyetler dusuldukten sonraki net getiri hesaplanmalidir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Acik Pozisyon ve Aciga Satis",
+    "text": "Aciga satis, yatirimcinin sahip olmadigi bir menkul kiymeti odunc alarak satmasi ve fiyat dustugunde geri alip iade ederek kar etmesidir. Kar potansiyeli sinirlidir cunku fiyat en fazla sifira inebilir; zarar potansiyeli ise teorik olarak sinirsizdir cunku fiyatin ne kadar yukselebilecegi belli degildir. Bu asimetri aciga satisi normal alimdan cok daha riskli kilar. Yogun aciga satis olan bir hissede fiyat yukselirse pozisyon kapatma zorunlulugu yukselisi hizlandirabilir; buna sikisma denir.",
+    "source": "Borsa Istanbul",
+    "url": "https://www.borsaistanbul.com"
+  },
+  {
+    "title": "Acil Durum Fonu ve Yatirim Sirasi",
+    "text": "Yatirima baslamadan once genellikle uc ila alti aylik zorunlu giderleri karsilayacak, kolayca nakde cevrilebilen bir acil durum fonu olusturulmasi onerilir. Bu fonun amaci getiri elde etmek degil, beklenmedik bir gelir kaybinda yatirimlari zararina satmak zorunda kalmamaktir. Ayrica yuksek faizli tuketici borclarinin kapatilmasi, cogu yatirimin beklenen getirisinden daha yuksek ve garantili bir kazanc saglar. Yatirim sirasi genellikle su sekilde kurulur: once acil durum fonu, sonra pahali borclarin tasfiyesi, en son uzun vadeli yatirim.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  },
+  {
+    "title": "Yatirim Tavsiyesi ve Genel Yatirim Onerisi Farki",
+    "text": "Yatirim danismanligi, kisinin risk profili ve mali durumu degerlendirilerek ona ozel oneri sunulmasidir ve yalnizca yetkili kuruluslar tarafindan sozlesme kapsaminda verilebilir. Genel yatirim tavsiyesi ise belirli bir kisiye ozel olmayan, herkese acik yorum ve analizlerdir. Internette, sosyal medyada veya bir yapay zeka asistanindan alinan bilgiler kisiye ozel yatirim danismanligi sayilmaz. Bu bilgiler ancak arastirmaya baslangic noktasi olarak kullanilmalidir; karar yatirimcinin kendi sorumlulugundadir.",
+    "source": "Sermaye Piyasasi Kurulu",
+    "url": "https://www.spk.gov.tr"
+  }
+]

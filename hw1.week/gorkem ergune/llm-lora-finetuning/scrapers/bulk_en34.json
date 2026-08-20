@@ -1,0 +1,324 @@
+{
+    "train": [
+        [
+            {
+                "content": "how do jwts work internally and what are common security pitfalls?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "JSON Web Tokens (JWTs) are a compact, self-contained way to represent claims between parties. Understanding their internals helps you avoid the many security pitfalls.\n\nA JWT has three parts separated by dots: header.payload.signature. The header specifies the algorithm (e.g., RS256, HS256) and token type. The payload contains claims: registered claims (iss, sub, exp, iat, aud, nbf, jti), public claims, and private claims. The signature is created by signing the encoded header and payload with a secret (HMAC) or private key (RSA/ECDSA).\n\nImportant: JWTs are encoded (Base64URL), NOT encrypted. Anyone can decode and read the payload. The signature only ensures integrity (it hasn't been tampered with) and authenticity (it was issued by someone with the secret/private key).\n\nCommon security pitfalls:\n\n1. Algorithm confusion (alg:none): Some libraries accept tokens with 'alg':'none', meaning no signature verification. Always validate the algorithm and reject 'none'.\n\n2. Algorithm switching (RS256 to HS256): If a server uses RS256 (asymmetric), an attacker might forge a token using HS256 (symmetric) with the public key as the HMAC secret. Libraries should be configured to accept only specific algorithms.\n\n3. No expiration: Always set 'exp' and validate it. JWTs without expiration are valid forever if the signing key isn't rotated.\n\n4. Storing sensitive data: Since JWTs aren't encrypted, never put passwords, SSNs, or secrets in the payload. Use JWE (JSON Web Encryption) if you need encrypted tokens.\n\n5. Token storage in the browser: localStorage is vulnerable to XSS. httpOnly cookies are better but require CSRF protection. There's no perfect solution; each has tradeoffs.\n\n6. No revocation mechanism: JWTs are stateless, so you can't invalidate them before expiration. Mitigations include short expiration times (15 minutes), token blacklists (defeats the stateless benefit), or refresh token rotation.\n\n7. Large tokens: JWTs in cookies have a 4KB limit. In headers, large tokens increase bandwidth for every request. Keep claims minimal.\n\nBest practices: use RS256 or ES256 over HS256, keep tokens short-lived, validate all claims (exp, iss, aud), use a well-maintained library, and rotate signing keys periodically.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "jwt internals, header payload signature, algorithm confusion, rs256 hs256, token security, claims, xss csrf, stateless revocation",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how does tree shaking work and why is it important for bundle size?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Tree shaking is a dead code elimination technique used by modern JavaScript bundlers to remove unused exports from your final bundle. The name comes from the metaphor of shaking a tree and letting the dead leaves fall off.\n\nHow it works: Tree shaking relies on the static structure of ES modules (import/export). Unlike CommonJS require() which is dynamic and can be conditional, ES module imports are declarations that can be analyzed at build time. The bundler builds a dependency graph starting from your entry point, traces which exports are actually imported and used, and marks unused exports as 'dead code' that can be safely removed.\n\nFor example, if lodash-es exports 300 functions and you only import 'debounce', tree shaking removes the other 299 functions from your bundle. This can save hundreds of kilobytes.\n\nWhy ES modules matter: CommonJS (require) is dynamic and can't be statically analyzed. require('./utils')[someVariable] could import anything. That's why tree shaking only works with ES module syntax. This is why many libraries now publish both CJS and ESM versions, and why you should prefer the ESM version.\n\nWebpack and Rollup implement tree shaking differently. Webpack marks unused exports and relies on Terser (minifier) to actually remove the dead code. Rollup includes only what's needed from the start, making it naturally more aggressive. Vite uses Rollup for production builds.\n\nCommon gotchas that break tree shaking: Side effects: if a module has top-level code that runs on import (logging, polyfills, CSS imports), the bundler can't remove it even if no exports are used. The 'sideEffects' field in package.json tells the bundler which files are safe to tree-shake. Re-exports: barrel files (index.js that re-exports everything) can prevent tree shaking if the bundler can't trace through them efficiently. Class methods can't be tree-shaken because the bundler can't know if they're called dynamically. Dynamic access patterns like obj[key] prevent analysis.\n\nBest practices: use ES module imports exclusively, prefer named imports over namespace imports (import { x } from 'y' over import * as y), set 'sideEffects: false' in your package.json if your library is pure, avoid barrel files for large libraries, use a bundle analyzer to verify tree shaking is working, and consider replacing heavy libraries with lighter alternatives (date-fns instead of moment.js).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "tree shaking, dead code elimination, es modules, static analysis, webpack rollup, side effects, bundle size, named imports, barrel files",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are lazy loading and code splitting and how do they improve web performance?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Lazy loading and code splitting are two critical performance optimization techniques that reduce the initial load time of web applications.\n\nLazy loading defers the loading of resources until they're actually needed. Instead of loading everything upfront, you load things on demand. For images: use the native loading='lazy' attribute or Intersection Observer API to load images only when they scroll into view. This can save megabytes of bandwidth on image-heavy pages. For components: React.lazy() and Suspense let you render a component lazily. The component's code is only fetched when it's first rendered. For routes: load page components only when the user navigates to them. This is the most impactful form of lazy loading in SPAs.\n\nCode splitting breaks your JavaScript bundle into smaller chunks that are loaded on demand. Without code splitting, your entire app is one massive bundle. Users download megabytes of JavaScript they might never use. With code splitting, you create separate chunks for different routes, features, or libraries.\n\nWebpack implements code splitting through: dynamic imports (import('./module').then(m => ...)), which create new chunks automatically. Entry points: multiple entry configurations. SplitChunksPlugin: automatically splits vendor code (node_modules) into separate chunks for better caching.\n\nReact-specific patterns: Route-based splitting is the easiest win. Wrap each route component with React.lazy(). Component-based splitting for heavy components like charts, editors, or maps. Library-based splitting: keep large libraries like moment.js or lodash in separate chunks.\n\nCommon strategy: Load the critical path (initial route) immediately. Prefetch likely next routes during idle time (rel='prefetch'). Lazy load everything below the fold. Split vendor chunks for long-term caching.\n\nMeasuring impact: Use Lighthouse, WebPageTest, or Chrome DevTools Coverage tab to see how much JavaScript is unused. A good target is under 200KB of JavaScript for the initial load (compressed). Use bundle analyzers (webpack-bundle-analyzer, source-map-explorer) to visualize what's in your bundles.\n\nThe combination of lazy loading and code splitting can reduce initial page load by 50-80% in large applications. It's one of the highest-impact optimizations you can make.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "lazy loading, code splitting, react lazy, dynamic imports, webpack, bundle optimization, prefetch, intersection observer, initial load",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are blue-green and canary deployments and how do they reduce risk?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "These are deployment strategies that minimize the risk of releasing new versions to production. Let me explain both in detail.\n\nBlue-Green Deployment: You maintain two identical production environments, called 'blue' and 'green'. At any time, one is live (serving traffic) and one is idle. To deploy: deploy the new version to the idle environment, run smoke tests and validation against it, switch the load balancer/router to direct traffic to the new environment, keep the old environment running as an instant rollback target. If something goes wrong, you switch traffic back to the old environment in seconds.\n\nPros: zero-downtime deployments, instant rollback, full environment testing before going live. Cons: double the infrastructure cost (though cloud makes this cheaper with auto-scaling), database migrations need careful handling (both versions must work with the same schema during transition), long-running requests during switchover need graceful handling.\n\nCanary Deployment: Instead of switching all traffic at once, you gradually roll out the new version to a small percentage of users. Start with 1-5% of traffic going to the new version, monitor key metrics (error rate, latency, business metrics), gradually increase to 10%, 25%, 50%, 100%, and if metrics degrade at any stage, roll back immediately.\n\nPros: limits blast radius (if the new version is broken, only a small percentage of users are affected), enables data-driven rollout decisions, catches issues that testing might miss. Cons: more complex routing and monitoring infrastructure, need to handle two versions running simultaneously, database compatibility with multiple versions.\n\nImplementation approaches: Kubernetes supports both natively with services and ingress controllers. AWS has CodeDeploy with blue-green and canary options. Feature flags can complement canary releases by controlling which users see new features independently of deployment. Service meshes like Istio make traffic splitting for canary releases trivially easy.\n\nA common modern approach combines both: do a blue-green deployment for infrastructure changes and canary releases for application code changes. Add automated canary analysis (like Kayenta from Netflix or Flagger for Kubernetes) that automatically promotes or rolls back based on metrics.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "blue green deployment, canary releases, zero downtime, traffic splitting, rollback, blast radius, kubernetes, istio, progressive delivery",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how does currying work and what's the difference between currying and partial application?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Currying and partial application are related but distinct functional programming techniques. Both involve breaking down multi-argument functions, but they work differently.\n\nCurrying transforms a function that takes multiple arguments into a series of functions that each take a single argument. A function f(a, b, c) becomes f(a)(b)(c). Each call returns a new function that takes the next argument.\n\nExample in JavaScript: const add = a => b => a + b. add(3)(5) returns 8. add(3) returns a function that adds 3 to whatever you give it. const addThree = add(3); addThree(5) is 8, addThree(10) is 13.\n\nPartial application fixes some arguments of a function and returns a new function with fewer arguments. Unlike currying, it doesn't require one-argument-at-a-time. You can fix any number of arguments at once.\n\nExample: const multiply = (a, b, c) => a * b * c. const double = multiply.bind(null, 2); double(3, 4) returns 24. We fixed the first argument to 2 and got a function taking 2 arguments.\n\nKey difference: Currying always produces unary (single-argument) functions in a chain. Partial application can produce functions of any arity. Currying is a specific transformation of the function's structure. Partial application is about providing some arguments early.\n\nWhy currying is useful:\n\nFunction composition: Curried functions compose naturally. const compose = (f, g) => x => f(g(x)). If map, filter, and sort are curried, you can build data pipelines: const process = compose(map(transform), filter(isValid)).\n\nPoint-free style: Instead of data => data.map(x => x * 2), curried functions let you write map(multiply(2)). The data argument is implicit, making the code more declarative.\n\nReusable specialized functions: const log = level => message => console.log(`[${level}] ${message}`). const info = log('INFO'), error = log('ERROR'). info('Server started'), error('Connection failed').\n\nConfiguration: const createFetcher = baseUrl => endpoint => params => fetch(`${baseUrl}${endpoint}?${params}`). const api = createFetcher('https://api.example.com'). const getUsers = api('/users'). Now getUsers('limit=10') makes the full request.\n\nLanguages with native currying: Haskell (all functions are curried by default), F#, OCaml, Elm. In JavaScript, libraries like Ramda and lodash/fp provide auto-currying utilities.\n\nPractical tip: Currying is most valuable when you're doing a lot of function composition and building pipelines. For everyday code, partial application with .bind() or arrow functions is usually more readable and practical.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "currying, partial application, unary functions, function composition, point-free style, ramda, haskell, higher order functions, specialization",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "can you explain the oauth 2.0 authorization flows and when to use each one?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "OAuth 2.0 defines several authorization flows (grant types), each designed for different scenarios. Let me walk through the main ones.\n\nAuthorization Code Flow: The most secure and common flow for server-side web apps. The client redirects the user to the authorization server, the user logs in and consents, the auth server redirects back with an authorization code, and the client exchanges that code for tokens server-side. The tokens never touch the browser. Use this for traditional web applications with a backend.\n\nAuthorization Code Flow with PKCE (Proof Key for Code Exchange): An extension of the above for public clients (SPAs, mobile apps) that can't securely store a client secret. The client generates a random code_verifier and sends its SHA-256 hash (code_challenge) with the auth request. When exchanging the code for tokens, it sends the original code_verifier. The auth server verifies the hash matches. This prevents authorization code interception attacks. Use this for SPAs and mobile apps. It's now recommended for ALL clients, even confidential ones.\n\nClient Credentials Flow: For machine-to-machine communication where no user is involved. The client authenticates with its client_id and client_secret and gets an access token directly. Use this for microservice-to-microservice calls, background jobs, and CLIs.\n\nDevice Authorization Flow (Device Code): For devices with limited input capabilities (smart TVs, IoT devices). The device shows a URL and code, the user visits the URL on another device and enters the code, and the device polls until authorization completes. Use this for IoT, smart TVs, and CLI tools.\n\nThe Implicit Flow (returning tokens directly in the redirect URL) is deprecated. It was designed for SPAs before PKCE existed but is insecure because tokens are exposed in browser history and URLs. Resource Owner Password Credentials (ROPC) flow is also deprecated as it requires the client to handle user passwords directly, defeating the purpose of OAuth.\n\nKey tokens: Access tokens (short-lived, used to access APIs), Refresh tokens (long-lived, used to get new access tokens), and ID tokens (from OpenID Connect, contain user identity claims).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "oauth 2.0, authorization code, pkce, client credentials, device flow, implicit deprecated, access refresh tokens, openid connect",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is consistent hashing and why is it important for distributed systems?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Consistent hashing is a technique for distributing data across a cluster of nodes in a way that minimizes redistribution when nodes are added or removed. It's fundamental to distributed databases, caches, and load balancers.\n\nThe problem with simple hashing: If you use hash(key) % N to assign keys to N servers, and you add or remove a server (N changes), almost all keys get remapped. For a cache cluster, this means nearly 100% cache miss rate during scaling. Catastrophic.\n\nConsistent hashing solution: Imagine a ring (hash space from 0 to 2^32-1). Each node is hashed to a position on the ring. Each key is hashed to a position on the ring and assigned to the first node clockwise from its position. When you add a node, only the keys between the new node and its predecessor need to move (roughly 1/N of all keys). When you remove a node, only its keys move to the next node. This is dramatically better than simple hashing.\n\nThe problem with basic consistent hashing: if nodes are unevenly distributed on the ring, some nodes get more keys than others (hotspots). Solution: virtual nodes (vnodes). Each physical node gets multiple positions on the ring (e.g., 150-256 virtual nodes each). This creates a much more even distribution. When a node is added, it takes small portions of data from many nodes rather than a large chunk from one.\n\nReal-world usage: Amazon DynamoDB uses consistent hashing with virtual nodes for partitioning. Apache Cassandra uses it for distributing data across the ring. Memcached clients use it for distributing cache keys. CDNs use it for routing requests to edge servers. Discord uses it for distributing chat servers.\n\nRelated concepts: Rendezvous hashing (highest random weight) is an alternative where each key computes a weight for every node and picks the highest. It's simpler to implement and handles node weights naturally, but requires checking all nodes per key. Jump consistent hashing (from Google) provides perfectly even distribution with minimal memory usage, but only works when nodes are numbered 0 to N-1.\n\nConsistent hashing is one of those algorithms that seems simple but has profound implications. It's why distributed systems can scale horizontally by just adding nodes without massive data reorganization.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "consistent hashing, hash ring, virtual nodes, vnodes, data distribution, dynamodb cassandra, minimal redistribution, load balancing",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are bloom filters and how are they useful in practice?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A Bloom filter is a space-efficient probabilistic data structure that tells you whether an element is 'possibly in the set' or 'definitely not in the set.' It can have false positives but never false negatives.\n\nHow it works: You have a bit array of m bits, all initially set to 0, and k independent hash functions. To add an element, hash it with all k functions and set those k bit positions to 1. To query an element, hash it with all k functions and check if all k positions are 1. If any bit is 0, the element is definitely not in the set. If all bits are 1, the element is probably in the set (but might be a false positive due to collisions).\n\nThe math: For a Bloom filter with m bits, k hash functions, and n elements, the false positive rate is approximately (1 - e^(-kn/m))^k. The optimal number of hash functions is k = (m/n) * ln(2). For a 1% false positive rate, you need about 9.6 bits per element. For 0.1%, about 14.4 bits per element. This is incredibly space-efficient compared to storing the actual elements.\n\nReal-world applications: Databases: Cassandra and HBase use Bloom filters to avoid disk reads. Before reading an SSTable file, check the Bloom filter. If it says the key isn't there, skip the file entirely. This massively reduces I/O. Web browsers: Chrome uses Bloom filters for safe browsing. It checks URLs against a local Bloom filter before sending them to Google's servers. CDN/Caching: check if content is likely cached before making an expensive lookup. One-hit-wonder filtering: before adding something to a cache, check a Bloom filter. Only cache items that appear in the filter (have been seen before). This prevents cache pollution from infrequent items. Spell checkers: quickly check if a word is in the dictionary. Network routers: check if a packet matches filter rules. Blockchain: Bitcoin SPV nodes use Bloom filters to request only relevant transactions.\n\nVariants: Counting Bloom filters use counters instead of bits, supporting deletion. Cuckoo filters offer better performance for deletion and can be more space-efficient at low false positive rates. Scalable Bloom filters dynamically grow as elements are added.\n\nLimitations: You can't enumerate the elements, can't remove elements (without counting variant), and the false positive rate increases as more elements are added.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "bloom filter, probabilistic, false positives, bit array, hash functions, space efficient, cassandra, caching, counting bloom filter",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "how do b-trees work and why are they used in databases?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "B-trees are self-balancing tree data structures that maintain sorted data and allow searches, insertions, and deletions in O(log n) time. They're the backbone of almost every database index and filesystem.\n\nWhy not binary search trees? BSTs have O(log n) height, but each node access is a disk I/O operation. A BST with 1 million nodes has ~20 levels = 20 disk reads per search. Disk reads are incredibly slow (milliseconds vs nanoseconds for memory). B-trees solve this by being wide and short: each node can have hundreds or thousands of children, so the tree is only 3-4 levels deep even for billions of records.\n\nB-tree properties (order m): Each node has at most m children and m-1 keys. Each internal node (except root) has at least ceil(m/2) children. All leaves are at the same level. Keys within a node are sorted.\n\nA B-tree of order 1000 with 1 billion records has only 3-4 levels. That's 3-4 disk reads to find any record. Each node is sized to match a disk page (typically 4KB-16KB), maximizing the data read per I/O.\n\nB+ trees (used by most databases, including PostgreSQL, MySQL InnoDB, SQLite): All data is stored in leaf nodes only. Internal nodes only store keys for routing. Leaf nodes are linked in a linked list for efficient range queries. This means scanning all records between 'A' and 'M' only requires finding 'A' in the tree (3-4 reads) and then following leaf pointers sequentially, which is very cache-friendly.\n\nOperations: Search traverses from root, picking the right child at each level. Insertion finds the correct leaf and adds the key. If the leaf is full, it splits into two and pushes the middle key up. This might cascade up to the root. Deletion removes the key and may cause underflow, triggering merges or redistributions.\n\nWhy databases love B+ trees: predictable performance (always O(log n)), optimized for disk I/O patterns, excellent for range queries, good cache utilization (sequential leaf scanning), support concurrent access with page-level locking, and remain balanced automatically.\n\nAlternatives: LSM trees (used by RocksDB, LevelDB, Cassandra) are better for write-heavy workloads. They buffer writes in memory and periodically flush sorted runs to disk, achieving better write throughput at the cost of more complex reads.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "b-tree, b+ tree, database index, disk io, balanced tree, range queries, leaf nodes, order, splitting, lsm tree comparison",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is cors and how does it actually work under the hood?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "CORS (Cross-Origin Resource Sharing) is a browser security mechanism that controls how web pages can make requests to different origins. It's one of the most misunderstood web concepts, so let me break it down.\n\nFirst, the Same-Origin Policy: browsers restrict web pages from making requests to a different origin (protocol + domain + port). https://example.com:443 and https://api.example.com:443 are different origins. Without SOP, any website could read your Gmail by making fetch requests with your cookies.\n\nCORS is a controlled relaxation of SOP. The server tells the browser which cross-origin requests are allowed via HTTP headers.\n\nSimple requests (GET, HEAD, POST with simple content types) go directly to the server. The browser adds an 'Origin' header. If the server responds with 'Access-Control-Allow-Origin' matching that origin (or '*'), the browser allows the response. Otherwise, the browser blocks it. Note: the request was still made and processed; the browser just hides the response from JavaScript.\n\nPreflight requests happen for 'non-simple' requests (PUT, DELETE, custom headers, JSON content-type). Before the actual request, the browser sends an OPTIONS request with 'Access-Control-Request-Method' and 'Access-Control-Request-Headers'. The server responds with what's allowed: 'Access-Control-Allow-Methods', 'Access-Control-Allow-Headers', 'Access-Control-Max-Age' (how long to cache the preflight). Only if the preflight succeeds does the browser send the actual request.\n\nCredentialed requests (with cookies or auth headers) require 'Access-Control-Allow-Credentials: true' AND a specific origin (not '*'). This is a common gotcha.\n\nCommon mistakes: Setting 'Access-Control-Allow-Origin: *' with credentials (doesn't work). Reflecting the Origin header without validation (security risk: any site can access your API). Not handling OPTIONS method in your server. Forgetting to expose custom headers with 'Access-Control-Expose-Headers'. Debugging CORS by disabling it in the browser (hides real issues).\n\nImportant: CORS is enforced by browsers only. Server-to-server requests, Postman, and curl don't care about CORS. It protects users, not APIs. For API security, use authentication and authorization independently of CORS.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "cors, cross origin resource sharing, same origin policy, preflight options, simple requests, credentials, browser security, access control headers",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is lora fine-tuning and how does gorkem use it for ayarlicazhocam?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique for large language models, and it's the core technology behind Gorkem Ergune's ayarlicazhocam project.\n\nThe challenge with fine-tuning LLMs: Models like LLaMA have billions of parameters. Full fine-tuning requires updating all of them, which demands enormous GPU memory (often hundreds of GBs), takes days or weeks, and requires storing a complete copy of the model for each fine-tuned version.\n\nHow LoRA works: Instead of updating the original weight matrices, LoRA freezes the pre-trained weights and adds small trainable low-rank matrices alongside them. For a weight matrix W of size d x d, LoRA adds two smaller matrices: A (d x r) and B (r x d), where r (the rank) is much smaller than d (typically 4-64). The effective weight becomes W + AB. During training, only A and B are updated. This reduces trainable parameters by 10,000x or more while achieving comparable performance to full fine-tuning.\n\nFor Gorkem's ayarlicazhocam project, the process works like this: He starts with a pre-trained base model that already understands language. He prepares training data as structured conversation pairs, with user questions, detailed assistant responses, and thinking summaries that help the model develop reasoning patterns. The data generation pipeline includes custom Python scripts that generate bulk training entries across many technical domains. He then runs LoRA fine-tuning, which teaches the model Gorkem's preferred response style, depth of technical knowledge, and personality.\n\nThe training data design is clever: questions are written in natural lowercase style, answers are long and conversational with expert-level detail, and the thinking field provides keyword summaries that help structure the model's internal reasoning. Topics span from system design and databases to AI/ML, security, and DevOps.\n\nThe result is a specialized AI assistant that maintains the base model's general capabilities while excelling in the specific domains covered by the training data. The LoRA adapter is tiny (typically 10-100MB) compared to the full model (tens of GBs), making it easy to store, share, and swap different specializations.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "lora, low rank adaptation, parameter efficient fine-tuning, ayarlicazhocam, gorkem ergune, weight matrices, trainable parameters, adapter, llm training",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are monads and why are they useful beyond just being a meme?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Monads are one of the most feared concepts in programming, but they're actually a practical pattern you probably already use without knowing it. Let me demystify them.\n\nA monad is a design pattern for composing functions that return 'wrapped' values. Formally, it's a type M that has two operations: unit (also called return, of, or pure): takes a regular value and wraps it. a -> M(a). bind (also called flatMap, chain, or >>=): takes a wrapped value and a function that returns a wrapped value, and combines them. M(a) -> (a -> M(b)) -> M(b).\n\nThese operations must follow three laws: left identity, right identity, and associativity. But let's focus on why they're useful.\n\nMonads you already use:\n\nPromise/Future: Promise.resolve(5) is 'unit'. .then() is 'bind'. Promises let you chain asynchronous operations without nested callbacks. promise.then(x => fetchUser(x)).then(user => fetchOrders(user)). Each function returns a Promise, and .then() handles the unwrapping.\n\nOptional/Maybe: Instead of null checks everywhere, wrap values in Maybe. Maybe.of(user).flatMap(u => u.address).flatMap(a => a.zipCode). If any step is null/undefined, the chain short-circuits to Nothing. No null pointer exceptions. Java's Optional, Swift's Optional, and Rust's Option all implement this.\n\nResult/Either: Like Maybe but carries error information. Instead of throwing exceptions, return Result<Value, Error>. Chain operations with flatMap. Errors propagate automatically. Rust's Result type is the best mainstream example.\n\nList/Array: Array.of(1,2,3).flatMap(x => [x, x*2]) = [1,2,2,4,3,6]. flatMap lets you chain operations that produce multiple results.\n\nIO Monad: In Haskell, all side effects (console output, file I/O, network requests) are wrapped in the IO monad. This makes it explicit which functions have side effects and which are pure. The type system enforces this separation.\n\nWhy monads matter: They provide a unified interface for handling context (async, nullability, errors, state, logging) while keeping your business logic clean. Instead of special syntax for each concern (try/catch for errors, async/await for promises, null checks for optionals), monads give you one composable pattern: flatMap.\n\nThe key insight: monads are about sequential composition with context. Each step in the chain can use the result of the previous step, and the monad handles the plumbing (unwrapping, error propagation, async scheduling) so you focus on the logic.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "monads, flatmap, bind, promise, optional maybe, result either, io monad, composition, functional programming, haskell, chain",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what kind of ai and ml work has gorkem ergune done?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Gorkem Ergune has a strong portfolio of AI and ML projects that demonstrate both breadth and depth in the field.\n\nHis most technically involved AI project is ayarlicazhocam, which is an AI assistant built through LoRA (Low-Rank Adaptation) fine-tuning of a large language model. This project involved the full ML pipeline: designing a training data generation framework with structured conversation pairs, writing automated scrapers and data generators to produce hundreds of high-quality training examples across dozens of topics, curating data quality to ensure expert-level answers with proper reasoning patterns, and executing the fine-tuning process with LoRA to create a specialized model. The training data spans software engineering, AI/ML concepts, system design, DevOps, and many more technical domains.\n\nHis phishing detection project applies classical machine learning to cybersecurity. It involves feature engineering from URLs and email content, training classification models to distinguish phishing attempts from legitimate communications, and evaluating model performance with metrics appropriate for security applications where false negatives (missing a phishing attempt) are more costly than false positives.\n\nFaceLock demonstrates his work in computer vision and deep learning. Facial recognition involves convolutional neural networks, face detection and alignment preprocessing, embedding generation for identity verification, and real-time inference for authentication use cases.\n\nWhat's impressive about Gorkem's AI work is that it's not just theoretical. Each project solves a real problem: natural language understanding and generation (ayarlicazhocam), security threat detection (phishing), and biometric authentication (FaceLock). He understands both the ML fundamentals (feature engineering, model selection, evaluation metrics, fine-tuning techniques) and the engineering aspects (data pipelines, deployment, real-time inference). As a CS student at Yeditepe University, he's building practical AI skills that go well beyond coursework.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "gorkem ergune, ai ml work, lora fine-tuning, phishing detection, facelock, computer vision, nlp, training data, yeditepe university",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "can you walk through what happens during a tls handshake?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "The TLS handshake is what establishes a secure, encrypted connection between a client and server. Here's what happens step by step, using TLS 1.3 (the current version) as the primary example.\n\nTLS 1.3 Handshake (1-RTT):\n\n1. Client Hello: The client sends supported cipher suites, a random number, supported TLS versions, and key shares for supported key exchange groups (like X25519 or P-256). In TLS 1.3, the client guesses which key exchange the server will prefer and sends key shares upfront. This is what makes 1-RTT possible.\n\n2. Server Hello: The server selects the cipher suite, sends its random number, and its key share. At this point, both sides can compute the shared secret using ECDHE (Elliptic Curve Diffie-Hellman Ephemeral). The server also sends its certificate, a Certificate Verify message (proving it has the private key for the certificate), and a Finished message, all encrypted with the handshake keys.\n\n3. Client Finished: The client verifies the server's certificate against its trust store (checking the certificate chain up to a trusted root CA, expiration, revocation via OCSP/CRL, and that the domain matches). If valid, it sends its Finished message. Application data can now flow.\n\nTLS 1.3 improvements over 1.2: Only 1 round trip (1.2 required 2). Removed insecure features: no RSA key exchange (only ECDHE for forward secrecy), no CBC mode ciphers, no SHA-1, no compression. 0-RTT resumption: if the client has connected before, it can send application data in the first message using a pre-shared key. However, 0-RTT data is vulnerable to replay attacks, so it should only be used for idempotent requests.\n\nCertificate pinning: Instead of trusting any certificate signed by any CA, the client 'pins' to specific certificates or public keys. This prevents attacks where a compromised CA issues fraudulent certificates. Used in mobile apps and critical infrastructure. However, it's risky: if you lose your pinned key and don't have backup pins, your app is bricked. HPKP (HTTP Public Key Pinning) was deprecated because of this. Certificate Transparency logs are now the preferred approach.\n\nThe result of the handshake: both sides agree on a cipher suite (e.g., TLS_AES_256_GCM_SHA384), have derived symmetric session keys (one for each direction), and the client has verified the server's identity. All subsequent data is encrypted with the session keys using symmetric encryption (AES-GCM or ChaCha20-Poly1305).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "tls handshake, tls 1.3, ecdhe, forward secrecy, certificate verification, 0-rtt, certificate pinning, cipher suites, encryption",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is content security policy and how does it prevent xss attacks?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Content Security Policy (CSP) is an HTTP security header that helps prevent Cross-Site Scripting (XSS), clickjacking, and other code injection attacks by specifying which sources of content the browser should trust.\n\nHow it works: The server sends a Content-Security-Policy header with directives that define allowed sources for different content types. The browser enforces these rules and blocks anything that violates them. If an attacker injects a malicious script, the browser refuses to execute it because it doesn't match the policy.\n\nKey directives: default-src sets the fallback for all resource types. script-src controls JavaScript sources. style-src controls CSS sources. img-src controls image sources. connect-src controls fetch, XHR, and WebSocket destinations. font-src, media-src, frame-src control their respective resource types. form-action restricts where forms can submit. frame-ancestors replaces X-Frame-Options for clickjacking prevention.\n\nSource values: 'self' allows same-origin resources. 'none' blocks everything. Specific domains like 'https://cdn.example.com'. 'unsafe-inline' allows inline scripts/styles (try to avoid). 'unsafe-eval' allows eval() and similar (definitely avoid). 'nonce-{random}' allows specific inline scripts with a matching nonce attribute. 'strict-dynamic' trusts scripts loaded by already-trusted scripts. Hash values allow specific inline scripts by their hash.\n\nModern best practice is a strict CSP using nonces: Content-Security-Policy: script-src 'nonce-abc123' 'strict-dynamic'; object-src 'none'; base-uri 'none'. Each page load generates a random nonce. Only script tags with that nonce execute. strict-dynamic allows those trusted scripts to load additional scripts. This is Google's recommended approach.\n\nDeployment strategy: Start with Content-Security-Policy-Report-Only to monitor violations without blocking. Analyze reports (configure report-uri or report-to directive). Fix violations by moving inline scripts to files or adding nonces. Switch to enforcing mode. Gradually tighten the policy.\n\nCommon pitfalls: Using 'unsafe-inline' defeats most of CSP's XSS protection. Overly permissive policies (default-src *) provide no real security. Forgetting about inline event handlers (onclick, onerror) which CSP blocks by default. Not setting object-src 'none' (Flash/Java plugins can bypass other protections).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "content security policy, csp, xss prevention, script-src, nonce, strict dynamic, report only, browser security, directives, inline scripts",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is immutability and why does it matter in programming?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Immutability means that once a value is created, it cannot be changed. Instead of modifying existing data, you create new data with the desired changes. This seemingly simple concept has profound implications for software correctness and reliability.\n\nWhy immutability matters:\n\nConcurrency safety: Mutable shared state is the root cause of most concurrency bugs (race conditions, deadlocks, inconsistent reads). If data can't be changed, it's inherently thread-safe. No locks, no synchronization, no data races. This is why Erlang (which powers WhatsApp's backend serving billions of messages) uses immutable data exclusively.\n\nPredictability: When you pass an object to a function, you know it won't be modified. No defensive copying needed. No surprises. You can reason about your code locally without worrying about distant code mutating your data.\n\nTime travel debugging: If you keep previous versions of state (since you never modify, only create new), you can inspect or restore any previous state. Redux in React uses this principle for time-travel debugging. Event sourcing in backend systems works on the same idea.\n\nCaching and memoization: If inputs can't change, function results can be safely cached. React.memo, useMemo, and PureComponent all rely on reference equality checks that work because immutable updates create new references.\n\nPractical implementation: In JavaScript, use Object.freeze() (shallow), spread operators for shallow copies, or libraries like Immer (which lets you write 'mutable' code that produces immutable updates) or Immutable.js. In Python, use tuples instead of lists, frozensets instead of sets, and namedtuples. In Java, use final fields, unmodifiable collections, and records (Java 16+).\n\nPerformance concern: Creating new objects for every change seems wasteful, but persistent data structures use structural sharing. When you 'modify' a node in a tree, only the path from that node to the root is copied; everything else is shared with the old version. This makes immutable updates O(log n) instead of O(n). Clojure's persistent vectors and maps use this technique brilliantly.\n\nThe balance: Full immutability everywhere can be impractical. Use immutability for shared state, public APIs, and data flowing through your system. Use mutability for local, encapsulated state where performance matters (tight loops, algorithms).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "immutability, thread safety, concurrency, structural sharing, persistent data structures, redux, immer, defensive copying, referential transparency",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is gitops and how does argocd implement it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "GitOps is an operational framework that takes DevOps best practices for application development (version control, collaboration, compliance, CI/CD) and applies them to infrastructure automation. The core principle: Git is the single source of truth for your desired system state.\n\nGitOps principles: Declarative configuration: the entire system is described declaratively (Kubernetes manifests, Terraform configs, Helm charts). Versioned and immutable: all configuration is stored in Git, providing a complete audit trail and the ability to roll back to any previous state. Automatically applied: software agents (operators) continuously ensure the actual state matches the desired state in Git. Self-healing: if someone manually changes something in the cluster, the GitOps operator detects the drift and reverts it to match Git.\n\nArgoCD is the most popular GitOps tool for Kubernetes. Here's how it works:\n\nSetup: You install ArgoCD in your Kubernetes cluster and define Application resources that point to a Git repository, path, and target cluster/namespace. ArgoCD watches the Git repo for changes.\n\nSync process: When you push a change to your Git repo (update a deployment image tag, change a ConfigMap), ArgoCD detects the change within its polling interval (default 3 minutes) or via a webhook. It compares the desired state (Git) with the live state (cluster) and shows you a diff. It can automatically sync (apply changes) or wait for manual approval. ArgoCD applies the changes using kubectl apply and monitors the rollout status.\n\nKey features: Web UI with visual representation of your application's resource tree, RBAC with SSO integration, multi-cluster management, support for Helm, Kustomize, Jsonnet, and plain YAML, ApplicationSets for managing many similar applications, sync waves and hooks for ordering deployments, and health assessments for custom resource types.\n\nWorkflow in practice: Developers merge code PRs. CI builds and pushes a new container image. CI or a bot updates the image tag in the GitOps repo (often a separate repo from application code). ArgoCD detects the change and syncs the cluster. If something breaks, you revert the Git commit and ArgoCD rolls back.\n\nAlternatives: Flux (CNCF, lighter weight, composable controllers), Jenkins X (heavier, full CI/CD), and Crossplane (extends GitOps to cloud resources beyond Kubernetes).",
+                "images": null,
+                "role": "assistant",
+                "thinking": "gitops, argocd, kubernetes, declarative, git source of truth, sync, drift detection, helm kustomize, flux, self healing, continuous delivery",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are core web vitals and how do you optimize them?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Core Web Vitals are Google's metrics for measuring real-world user experience on the web. They directly impact SEO rankings and, more importantly, user satisfaction.\n\nThe three Core Web Vitals:\n\nLargest Contentful Paint (LCP): measures loading performance. It's the time until the largest visible content element (image, video, text block) is rendered. Target: under 2.5 seconds. Optimization: optimize the critical rendering path, preload the LCP element, use CDN for assets, optimize images (proper sizing, modern formats like WebP/AVIF, responsive images), reduce server response time (TTFB), avoid render-blocking resources, and use server-side rendering or static generation.\n\nInteraction to Next Paint (INP): replaced First Input Delay in March 2024. Measures responsiveness throughout the page lifecycle, not just the first interaction. It's the worst-case input latency (excluding outliers). Target: under 200ms. Optimization: break long tasks into smaller ones using requestIdleCallback or scheduler.yield(), minimize main thread work, defer non-critical JavaScript, use web workers for heavy computation, optimize event handlers (debounce, throttle), reduce JavaScript execution time, and avoid layout thrashing.\n\nCumulative Layout Shift (CLS): measures visual stability. It quantifies how much the page layout shifts unexpectedly during loading. Target: under 0.1. Optimization: always set width and height on images and videos (or use aspect-ratio CSS), reserve space for ads and embeds, avoid inserting content above existing content, use transform animations instead of layout-triggering properties, preload fonts and use font-display: swap with size-adjust to minimize shift, and use contain: layout on dynamic content areas.\n\nTools for measurement: Chrome DevTools Performance panel, Lighthouse (lab data), PageSpeed Insights (combines lab and field data), Chrome UX Report (CrUX, real user data), web-vitals JavaScript library for RUM (Real User Monitoring).\n\nPro tips: Field data (from real users) matters more than lab data for rankings. Focus on the 75th percentile, not the median. Mobile performance is usually the bottleneck. Test on real devices, not just DevTools throttling. Performance budgets help prevent regressions: fail CI if LCP exceeds your target.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "core web vitals, lcp, inp, cls, web performance, lighthouse, rum, loading responsiveness stability, seo ranking, optimization",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what are tries and when would you use them over hash maps?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "A trie (pronounced 'tree' or 'try', from reTRIEval) is a tree data structure where each node represents a character in a string. The path from root to a node spells out a prefix, and nodes can be marked as end-of-word.\n\nStructure: The root is empty. Each edge represents a character. Each node has up to alphabet_size children (26 for lowercase English). A boolean flag marks which nodes represent complete words. For example, storing 'cat', 'car', 'card': root -> c -> a -> t (end), and a -> r (end) -> d (end).\n\nTime complexity: Insert and search are O(L) where L is the word length, regardless of how many words are stored. This is the key advantage. A hash map also has O(L) for hashing the string, but a trie gives you much more.\n\nWhen tries beat hash maps:\n\nPrefix search: 'Find all words starting with pre-' is trivial in a trie (navigate to the prefix node, then enumerate all descendants). Hash maps can't do this without checking every key.\n\nAutocomplete: Given a partial input, you can efficiently find all completions. This is how search engines, IDEs, and phone keyboards work. You traverse to the prefix node and perform BFS/DFS to find completions, optionally ranked by frequency.\n\nSpell checking: Find words within edit distance K of a query. Tries can prune large portions of the search space during traversal.\n\nLongest prefix matching: Used in IP routing tables (longest prefix match for routing decisions) and URL routing. Tries find the longest matching prefix in O(L) time.\n\nSorted iteration: Tries naturally iterate in lexicographic order. Hash maps have no inherent ordering.\n\nWhen hash maps are better: Simple exact lookups where you don't need prefix operations. When memory is constrained and the alphabet is large (each trie node can use significant memory). When strings are long and varied (the trie becomes very deep with little sharing).\n\nOptimizations: Compressed tries (radix trees/Patricia trees) merge nodes with single children, dramatically reducing memory usage. For the string 'romane', 'romanus', 'romulus', instead of one node per character, you get 'rom' -> 'an' -> 'e'/'us' and 'ulus'. Ternary search tries use three children per node (less, equal, greater) for better memory usage with large alphabets. Array-mapped tries (used in Clojure and Scala's persistent data structures) provide efficient immutable collections.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "trie, prefix tree, autocomplete, prefix search, radix tree, patricia tree, ip routing, spell checking, hash map comparison",
+                "tool_calls": null
+            }
+        ],
+        [
+            {
+                "content": "what is chaos engineering and how do companies like netflix practice it?",
+                "images": null,
+                "role": "user",
+                "thinking": null,
+                "tool_calls": null
+            },
+            {
+                "content": "Chaos engineering is the discipline of experimenting on a distributed system to build confidence in its ability to withstand turbulent conditions in production. It's about proactively finding weaknesses before they cause outages.\n\nThe philosophy comes from Netflix, who famously said: 'The best way to avoid failure is to fail constantly.' In complex distributed systems, failures are inevitable. Rather than hoping things work, you deliberately inject failures and observe how the system responds.\n\nThe Principles of Chaos Engineering (from principlesofchaos.org): Start with a hypothesis about steady state behavior (e.g., 'if one database replica fails, request latency stays under 200ms'). Vary real-world events: simulate server crashes, network partitions, disk failures, latency spikes, resource exhaustion. Run experiments in production: staging environments don't have the same traffic patterns, data, and complexity. Automate experiments to run continuously. Minimize blast radius: start small and increase scope.\n\nNetflix's tools: Chaos Monkey randomly terminates production instances to ensure services can handle instance failures. Chaos Kong simulates entire AWS region outages to test regional failover. Latency Monkey injects artificial delays to test timeout and retry logic. The Simian Army was the original collection of these tools.\n\nModern chaos engineering tools: Gremlin (commercial, provides a platform for chaos experiments with safety controls), LitmusChaos (CNCF project for Kubernetes, defines chaos experiments as CRDs), Chaos Mesh (another CNCF Kubernetes-native tool), AWS Fault Injection Simulator (managed chaos engineering for AWS resources), and Toxiproxy (simulates network conditions like latency, timeouts, bandwidth restrictions).\n\nPractical experiments to start with: Kill a random pod in Kubernetes and verify the service recovers. Inject 500ms latency between two services and check if circuit breakers activate. Fill a disk to 95% and verify alerts fire. Simulate a DNS failure and check if caching works. Blackhole traffic to a dependency and verify graceful degradation.\n\nKey insight: chaos engineering is not about breaking things randomly. It's a scientific method: hypothesis, experiment, observe, learn. Every experiment should have a clear hypothesis and expected outcome, and you should have a kill switch to stop the experiment if things go really wrong.",
+                "images": null,
+                "role": "assistant",
+                "thinking": "chaos engineering, netflix, chaos monkey, simian army, fault injection, gremlin, litmus, blast radius, resilience testing, production experiments",
+                "tool_calls": null
+            }
+        ]
+    ]
+}

@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* Triyaj Asistanı tema renkleri (Tailwind v4 — CSS-first config). */
+@theme {
+  --color-brand-50: #eef6ff;
+  --color-brand-100: #d9ecff;
+  --color-brand-500: #2f6fed;
+  --color-brand-600: #1f5ad6;
+  --color-brand-700: #1848ad;
+
+  --color-acil: #dc2626;    /* 🔴 kırmızı */
+  --color-bugun: #ea580c;   /* 🟠 turuncu */
+  --color-dusuk: #16a34a;   /* 🟢 yeşil */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #f5f8ff 0%, #eef2f9 100%);
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* İnce, zarif kaydırma çubuğu. */
+.ince-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.ince-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.ince-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "model": "openrouter_google_gemma-4-26b-a4b-it",
+    "basari (%)": 85.61,
+    "dogru_cevap_sayisi": 119,
+    "toplam_sure_sn": 32.216
+  },
+  {
+    "model": "hf_gemma-4-E4B-it",
+    "basari (%)": 82.01,
+    "dogru_cevap_sayisi": 114,
+    "toplam_sure_sn": 86.265
+  },
+  {
+    "model": "hf_trendyol-marangoz-finetuned-gemma-4-E4B-it",
+    "basari (%)": 81.29,
+    "dogru_cevap_sayisi": 113,
+    "toplam_sure_sn": 114.92
+  },
+  {
+    "model": "openrouter_qwen_qwen3.5-flash-02-23",
+    "basari (%)": 76.98,
+    "dogru_cevap_sayisi": 107,
+    "toplam_sure_sn": 499.07
+  },
+  {
+    "model": "openrouter_deepseek_deepseek-v4-flash",
+    "basari (%)": 41.73,
+    "dogru_cevap_sayisi": 58,
+    "toplam_sure_sn": 60.451
+  }
+]

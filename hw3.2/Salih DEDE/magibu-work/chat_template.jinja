@@ -1,0 +1,56 @@
+{#-
+  Ozgun Chat Template (Jinja2)
+  Roller: system, user, assistant, tool
+  Ozel tokenlar: <|system|> <|user|> <|assistant|> <|end|>
+                 <|available_tools|> ... (sistem mesaji icinde, tool tanimlari)
+                 <|tool_call|> ... <|end_tool_call|>   (assistant, fonksiyon cagirir)
+                 <|tool_result|> ... <|end|>            (tool cagrisinin sonucu)
+
+  Beklenen degiskenler:
+    messages: [{role, content, tool_calls?, name?}, ...]
+      - role == "assistant" icin tool_calls: [{name, arguments}, ...] (opsiyonel)
+      - role == "tool" icin name: cagrilan tool'un adi (opsiyonel ama onerilir)
+    tools: [{name, description, parameters}, ...]  (opsiyonel, sadece sistem mesajina enjekte edilir)
+    add_generation_prompt: bool (true ise sona bos bir <|assistant|> acilisi eklenir)
+-#}
+{%- for message in messages -%}
+  {%- if message.role == "system" -%}
+<|system|>
+{{ message.content }}
+    {%- if tools %}
+<|available_tools|>
+{{ tools | tojson }}
+    {%- endif %}
+<|end|>
+
+  {%- elif message.role == "user" -%}
+<|user|>
+{{ message.content }}
+<|end|>
+
+  {%- elif message.role == "assistant" -%}
+<|assistant|>
+    {%- if message.content %}
+{{ message.content }}
+    {%- endif %}
+    {%- if message.tool_calls %}
+      {%- for tool_call in message.tool_calls %}
+<|tool_call|>
+{{ {"name": tool_call.name, "arguments": tool_call.arguments} | tojson }}
+<|end_tool_call|>
+      {%- endfor %}
+    {%- endif %}
+<|end|>
+
+  {%- elif message.role == "tool" -%}
+<|tool_result|>
+{{ {"name": message.name, "content": message.content} | tojson }}
+<|end|>
+
+  {%- else -%}
+    {{ raise_exception("Bilinmeyen role: " ~ message.role) }}
+  {%- endif -%}
+{%- endfor -%}
+{%- if add_generation_prompt -%}
+<|assistant|>
+{%- endif -%}

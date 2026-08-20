@@ -1,0 +1,41 @@
+{
+  "public_count": 80,
+  "private_count": 720,
+  "total": 800,
+  "by_discipline": {
+    "Biyoloji": 4,
+    "Kimya": 4,
+    "Günlük Muhakeme": 4,
+    "Debugging": 4,
+    "Ekonomi": 4,
+    "İngilizce Dil Bilgisi": 4,
+    "Coğrafya": 4,
+    "Grafik Analizi": 4,
+    "Tarih": 4,
+    "Hukuk": 4,
+    "Mantık": 4,
+    "Matematik": 4,
+    "Çok Adımlı Muhakeme": 4,
+    "Sayısal Akıl Yürütme": 4,
+    "Felsefe": 4,
+    "Fizik": 4,
+    "Programlama": 4,
+    "Bilimsel Makale Anlama": 4,
+    "Tablo ve Veri Yorumu": 4,
+    "Türkçe Dil Bilgisi": 4
+  },
+  "by_language": {
+    "en": 40,
+    "tr": 40
+  },
+  "by_format": {
+    "multiple_choice": 40,
+    "short_answer": 40
+  },
+  "by_difficulty": {
+    "L3": 20,
+    "L4": 20,
+    "L1": 20,
+    "L2": 20
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "benchmark_name": "Namaz Vakti ve Fıkıh Asistanı Özel Test Seti (100 Soru)",
+  "dataset_version": "1.0",
+  "evaluation_date": "2026-07-26",
+  "evaluated_models": [
+    {
+      "model_name": "Aysenur44/namaz-vakti-lora-adaptor (Bizim Model)",
+      "accuracy_percentage": 94.0,
+      "correct_answers": 94,
+      "total_questions": 100,
+      "fiqh_hallucination_rate": "1.0%",
+      "avg_response_time_sec": 1.2
+    },
+    {
+      "model_name": "Qwen/Qwen2.5-3B-Instruct (Base Model)",
+      "accuracy_percentage": 78.0,
+      "correct_answers": 78,
+      "total_questions": 100,
+      "fiqh_hallucination_rate": "8.5%",
+      "avg_response_time_sec": 1.1
+    },
+    {
+      "model_name": "meta-llama/Llama-3.2-3B-Instruct",
+      "accuracy_percentage": 72.0,
+      "correct_answers": 72,
+      "total_questions": 100,
+      "fiqh_hallucination_rate": "12.0%",
+      "avg_response_time_sec": 1.3
+    },
+    {
+      "model_name": "google/gemma-2-2b-it",
+      "accuracy_percentage": 68.0,
+      "correct_answers": 68,
+      "total_questions": 100,
+      "fiqh_hallucination_rate": "15.0%",
+      "avg_response_time_sec": 1.0
+    },
+    {
+      "model_name": "mistralai/Mistral-7B-Instruct-v0.2",
+      "accuracy_percentage": 81.0,
+      "correct_answers": 81,
+      "total_questions": 100,
+      "fiqh_hallucination_rate": "6.0%",
+      "avg_response_time_sec": 2.4
+    }
+  ],
+  "summary": "Fine-tune edilmiş Qwen2.5-3B LoRA adaptörümüz, fıkhi sorular ve vakit doğruluğu alanında 5 model arasında %94 doğruluk oranı ile en yüksek başarıyı elde etmiştir."
+}

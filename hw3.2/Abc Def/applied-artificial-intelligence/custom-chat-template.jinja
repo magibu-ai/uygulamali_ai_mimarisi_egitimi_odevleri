@@ -1,0 +1,45 @@
+{{ bos_token }}
+{%- if tools is defined and tools is not none -%}
+    {{ '<|system|>You have access to the following tools:\n' }}
+    {%- for tool in tools -%}
+        {{ '<|tool_definition|>\n' }}
+        {{ tool | tojson }}
+        {{ '\n<|tool_definition|>\n' }}
+    {%- endfor -%}
+    {{ 'Use them when necessary.<|system|>\n' }}
+{%- endif -%}
+
+{%- for message in messages -%}
+    {%- if message['role'] == 'system' -%}
+        {{ '<|system|>' + message['content'] + '<|system|>\n' }}
+    {%- elif message['role'] == 'user' -%}
+        {{ '<|user|>' + message['content'] + '<|user|>\n' }}
+    {%- elif message['role'] == 'assistant' -%}
+        {{ '<|assistant|>' }}
+        {%- if message.reasoning_content is defined and message.reasoning_content is not none -%}
+            {{ '<|channel>thought\n' + message.reasoning_content + '\n<channel|>' }}
+        {%- elif message.reasoning is defined and message.reasoning is not none -%}
+            {{ '<|channel>thought\n' + message.reasoning + '\n<channel|>' }}
+        {%- endif -%}
+        {%- if message['content'] -%}
+            {{ message['content'] }}
+        {%- endif -%}
+        {%- if message.tool_calls is defined and message.tool_calls is not none -%}
+            {%- for tool_call in message.tool_calls -%}
+                {{ '<|tool_call>' }}
+                {{ { "name": tool_call.function.name, "arguments": tool_call.function.arguments } | tojson }}
+                {{ '<tool_call|>\n' }}
+            {%- endfor -%}
+        {%- endif -%}}
+        {{ '<|assistant|>\n' }}
+    {%- elif message['role'] == 'tool' or message['role'] == 'tool_response' -%}
+        {{ '<|tool_response|>' + message['content'] + '<|tool_response|>\n' }}
+    {%- endif -%}
+{%- endfor -%}
+
+{%- if add_generation_prompt -%}
+    {{ '<|assistant|>' }}
+    {%- if enable_thinking | default(true) -%}
+        {{ '<|channel>thought\n' }}
+    {%- endif -%}
+{%- endif -%}

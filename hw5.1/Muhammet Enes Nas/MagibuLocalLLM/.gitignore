@@ -1,0 +1,15 @@
+# Python sanal ortami — asla commit edilmez (yuzlerce MB)
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Gizli anahtarlar
+.env
+
+# Vektor veritabani — index betigi ile yeniden uretilebilir
+chroma_db/
+
+# Isletim sistemi
+.DS_Store
+Thumbs.db

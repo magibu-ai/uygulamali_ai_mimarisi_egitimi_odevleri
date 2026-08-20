@@ -1,0 +1,3 @@
+- Fetches real-time weather metrics from the Open-Meteo API.
+- Uses "unsloth/gemma-4-12B-it" model
+- For now, works with limited number of cities: Istanbul, Tokyo and New York.
