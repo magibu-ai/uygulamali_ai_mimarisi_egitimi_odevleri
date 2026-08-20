@@ -24,5 +24,3 @@ hw<odev>/<Ogrenci Adi>/
 ## Notlar
 
 - Hugging Face dosyalari: https://huggingface.co/datasets/uyzem/uygulamali-ai-mimarisi
-- 100 MB ustu dosyalar GitHub limiti nedeniyle atlanmistir.
-- Toplam 406 repo, 549 gonderim, 8 odev.
